@@ -1,0 +1,21 @@
+{
+  "segments": [
+    "virtual_env", 
+    "username", 
+    "hostname",
+    "cwd",
+    "root",
+    "read_only",
+
+    "newline",
+    "time",
+    "uptime",
+    "battery",
+
+    "newline",
+    "git"
+  ],
+
+  "mode": "compatible",
+  "theme": "default"
+}
