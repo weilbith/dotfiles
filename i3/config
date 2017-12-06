@@ -215,7 +215,7 @@ bindsym $mod+Shift+b move container to workspace back_and_forth
 # Transparency
 exec --no-startup-id compton
 
-# Windowd Gap (only with i3 gaps)
+# Window Gap (only with i3 gaps)
 gap_size 7
 new_window 1pixel
 
@@ -258,7 +258,6 @@ bindsym $mod+n mode "focused"
 # Goto
 bindsym $mod+Shift+n exec ~/Skripte/i3_goto # own script
 
-# Gnome
-#exec --no-startup-id gnome-settings-deamon
-#exec --no-startup-id nm-applet
-#exec --no-startup-id gnome-sound-applet
+# Colors
+# class         border      backgr.     text    indicator child_border<Paste>
+client.focused  #b5bd68     #b5bd68     #b5bd68 #b5bd68
