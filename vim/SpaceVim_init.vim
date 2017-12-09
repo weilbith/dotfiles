@@ -19,6 +19,7 @@ call SpaceVim#layers#load('lang#vim')
 call SpaceVim#layers#load('lang#xml')
 call SpaceVim#layers#load('shell')   
 call SpaceVim#layers#load('tools#screensaver')
+call SpaceVim#layers#load('tags')
 let g:spacevim_enable_vimfiler_welcome = 1
 let g:spacevim_enable_debug = 1
 let g:deoplete#auto_complete_delay = 150
@@ -47,5 +48,27 @@ let g:spacevim_enable_powerline_fonts = 1
 let g:spacevim_statusline_separator = 'arrow'
 let s:orange = 'ctermfg=208 guifg=#d7ff00'
 let g:spacevim_guifont = 'DejaVu\ Sans\ Mono\ for\ Powerline\ 11'
-let g:spacevim_filemanager = 'nerdtree'
+let g:spacevim_filemanager = 'vimfiler'
 let g:spacevim_enable_vimfiler_gitstatus = 1
+let g:spacevim_enable_neomake = 1
+let g:spacevim_enable_tabline_filetype_icon = 1
+let g:spacevim_enable_os_fileformat_icon = 1
+let g:spacevim_enable_vimfiler_filetypeicon = 1
+let g:spacevim_enable_statusline_display_mode = 1
+let g:spacevim_statusline_unicode_symbols = 1
+
+let g:spacevim_custom_plugins = [
+    \ ['vim-scripts/ctags.vim', {'merged' : 0}]
+    \ ]
+
+function! SpaceVim#mapping#guide#theme#gruvbox#palette() abort
+    return [
+                \ ['#282a2e', '#5fd7ff', 239, 81],
+                \ ['#ffffff', '#005f87', 15, 24],
+                \ ['#ffffff', '#0087d7', 15, 32],
+                \ ['#282a2e', 239],
+                \ ['#282a2e', '#d7ff5f', 239, 191],
+                \ ['#ffffff', '#ff005f', 15, 197],
+                \ ['#282828', '#8ec07c', 235, 108],
+                \ ]
+endfunction
