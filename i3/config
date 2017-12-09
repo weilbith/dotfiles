@@ -208,12 +208,11 @@ exec --no-startup-id cd /home/thore/.cerebro && ./cerebro-0.3.1-x86_64.AppImage
 # Lockscreen 
 bindsym $mod+l exec --no-startup-id i3lock -i /home/thore/Nextcloud/Bilder/Wallpaper.png -d -n && sleep 1 mode "default"
 
-# Reverse workspace
-workspace_auto_back_and_forth yes
-bindsym $mod+Shift+b move container to workspace back_and_forth
-
 # Transparency
 exec --no-startup-id compton
+
+# Tilda DropDown Terminal
+for_window [class="tilda"] floating enable
 
 # Window Gap (only with i3 gaps)
 gap_size 7
@@ -259,5 +258,5 @@ bindsym $mod+n mode "focused"
 bindsym $mod+Shift+n exec ~/Skripte/i3_goto # own script
 
 # Colors
-# class         border      backgr.     text    indicator child_border<Paste>
-client.focused  #b5bd68     #b5bd68     #b5bd68 #b5bd68
+# class         border      backgr.     text    indicator   child_border<Paste>
+client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
