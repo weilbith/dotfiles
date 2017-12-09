@@ -255,7 +255,12 @@ bindsym $mod+n mode "focused"
 
 
 # Goto
-bindsym $mod+Shift+n exec ~/Skripte/i3_goto # own script
+bindsym $mod+Shift+n exec ~/.scripts/i3_goto # own script
+
+# Screenshot
+bindsym $mod+Print exec --no-startup-id ~/.scripts/screenshot.sh
+# Interaction to select seems not to work.
+#bindsym $mod+Shift+Print exec --no-startup-id ~/.scripts/screenshot.sh -a -s
 
 # Colors
 # class         border      backgr.     text    indicator   child_border<Paste>
