@@ -72,3 +72,11 @@ function! SpaceVim#mapping#guide#theme#gruvbox#palette() abort
                 \ ['#282828', '#8ec07c', 235, 108],
                 \ ]
 endfunction
+
+call SpaceVim#layers#load('shell',
+        \ {
+        \ 'default_position' : 'bottom',
+        \ 'default_height' : 15,
+        \ }
+        \ )
+
