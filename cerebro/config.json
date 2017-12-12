@@ -1,0 +1,24 @@
+{
+  "locale": "en-US",
+  "lang": "en",
+  "country": "DE",
+  "theme": "../dist/main/css/themes/blue_planet.css",
+  "hotkey": "Alt+Space",
+  "showInTray": true,
+  "firstStart": false,
+  "developerMode": false,
+  "cleanOnHide": false,
+  "skipDonateDialog": true,
+  "lastShownDonateDialog": 1510326812937,
+  "plugins": {},
+  "isMigratedPlugins": true,
+  "trackingEnabled": true,
+  "crashreportingEnabled": true,
+  "openAtLogin": true,
+  "positions": {
+    "14822516254048256": [
+      315,
+      120
+    ]
+  }
+}

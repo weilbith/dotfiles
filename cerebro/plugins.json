@@ -1,0 +1,27 @@
+{
+  "name": "cerebro-plugins",
+  "dependencies": {
+    "cerebro-math": "1.0.0",
+    "cerebro-converter": "1.0.3",
+    "cerebro-basic-apps": "1.0.11",
+    "cerebro-open-web": "1.0.0",
+    "cerebro-files-nav": "1.0.3",
+    "cerebro-linux-system": "0.2.8",
+    "cerebro-stackoverflow": "0.5.2",
+    "cerebro-github": "0.2.5",
+    "convert-color": "1.1.1",
+    "cerebro-shell": "0.1.5",
+    "cerebro-duck-duck-go": "1.0.0",
+    "cerebro-npm": "0.2.2",
+    "cerebro-clipboard": "1.2.1",
+    "cerebro-ip": "0.1.3",
+    "cerebro-google-maps": "1.0.0",
+    "cerebro-yandex-translate": "1.0.1",
+    "cerebro-kill": "0.1.1",
+    "cerebro-youtube": "1.0.2",
+    "cerebro-cheats": "0.1.0",
+    "cerebro-linux-system-settings": "0.0.3",
+    "cerebro-define": "1.0.1",
+    "cerebro-hash": "1.0.3"
+  }
+}
