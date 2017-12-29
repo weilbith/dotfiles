@@ -58,7 +58,7 @@ let g:spacevim_enable_statusline_display_mode = 1
 let g:spacevim_statusline_unicode_symbols = 1
 
 let g:spacevim_custom_plugins = [
-    \ ['vim-scripts/ctags.vim', {'merged' : 0}]
+    \ ['posva/vim-vue', {'merged' : 0}]
     \ ]
 
 function! SpaceVim#mapping#guide#theme#gruvbox#palette() abort
@@ -80,3 +80,7 @@ call SpaceVim#layers#load('shell',
         \ }
         \ )
 
+
+autocmd BufWritePre *.vue silent! :/<script>/+1,/<\/script>/-1 !standard --fix --stdin
+autocmd BufWritePre *.vue silent! :/<template>/+1,/<\/template>/-1 !html-beautify --stdin
+autocmd BufWritePre *.vue silent! :/<style lang="scss">/+1,/<\/style>/-1 !sass-convert --from scss --to scss --stdinighting
