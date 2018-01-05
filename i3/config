@@ -186,6 +186,9 @@ bar {
   i3bar_command ~/.i3-lemonbar/config/i3_lemonbar.sh
 }
 
+# Keyboard Layout
+setxkbmap -layout us,de
+
 
 # Set Wallpaper
 exec --no-startup-id feh --bg-scale /home/thore/Nextcloud/Bilder/Wallpaper.jpg
@@ -199,11 +202,12 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 
-# Start Nextcloud Client
+# Start Cloud Synchronization Clients
 exec --no-startup-id /usr/bin/nextcloud
+exec --no-startup-id /usr/bin/dropbox start
 
 # Start Cerebro
-exec --no-startup-id cd /home/thore/.cerebro && ./cerebro-0.3.1-x86_64.AppImage
+exec --no-startup-id cd /home/thore/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppImage
 
 # Lockscreen 
 bindsym $mod+l exec --no-startup-id i3lock -i /home/thore/Nextcloud/Bilder/Wallpaper.png -d -n && sleep 1 mode "default"
