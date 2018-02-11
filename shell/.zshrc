@@ -103,27 +103,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 # Powerline
-function powerline_precmd() {
-    PS1="$(powerline-shell --shell zsh $?)"
-}
-
-function install_powerline_precmd() {
-  for s in "${precmd_functions[@]}"; do
-    if [ "$s" = "powerline_precmd" ]; then
-      return
-    fi
-  done
-  precmd_functions+=(powerline_precmd)
-}
-
-if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
+if [[ -r /usr/local/lib/python3.5/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then 
+   source /usr/local/lib/python3.5/dist-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
-
 # Add my own script to the path.
-export PATH=/home/thore/Skripte:$PATH
+export PATH=/home/thore/.scripts:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# Set Vim as default editor.
+export EDITOR=nvim
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/thore/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/thore/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/thore/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/thore/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
