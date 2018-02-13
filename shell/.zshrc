@@ -103,6 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# User VIM style.
+bindkey -v
+
 # Powerline
 if [[ -r /usr/local/lib/python3.5/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then 
    source /usr/local/lib/python3.5/dist-packages/powerline/bindings/zsh/powerline.zsh
