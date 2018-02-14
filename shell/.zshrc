@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/thore/.oh-my-zsh
+export ZSH=/home/thore/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -40,12 +40,12 @@ ZSH_THEME="agnoster"
 ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -62,14 +62,15 @@ ENABLE_CORRECTION="true"
 plugins=(
   git,
   github,
-  history,
   jsontools,
   docker,
-  dirhistory,
   last-working-dir,
   per-directory-history,
   web-search,
-  wd
+  wd,
+  vi-mode,
+  history,
+  dirhistory
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,9 +120,3 @@ export PATH=/home/thore/.scripts:$PATH
 
 # Set Vim as default editor.
 export EDITOR=nvim
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/thore/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/thore/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/thore/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/thore/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
