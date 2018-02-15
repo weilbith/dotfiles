@@ -1,0 +1,237 @@
+set nocompatible
+syntax on
+filetype plugin indent on
+
+" Pathogen
+execute pathogen#infect()
+
+" Define the leaders.
+let mapleader = " "
+let maplocalleader = "\\"
+
+" Extend the command line history.
+set history=200
+
+" Expand '%%' in the command line to the path of the active buffer.
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+" Disable the arrow keys in normal mode.
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+
+" Indentation
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set autoindent
+
+" zsh like autocomplete for the command line.
+set wildmenu
+set wildmode=full
+
+" Allowe free buffer switches without have to save changes.
+set hidden
+
+" Show line number and relative numbers
+set nu
+set relativenumber
+
+" Wrap text to fit into the window.
+set wrap
+
+
+" Searching
+" Jump live to first result while typing.
+set incsearch
+
+" Highlight matchin of search.
+set hlsearch
+
+" Case insensitive search when type lower case and sensitive when use any
+" uppercase character.
+set ignorecase
+set smartcase
+
+" When found last search result, jump to the beginning of the buffer.
+set wrapscan
+
+" Show at least two lines below or above the current search result.
+set scrolloff=2
+
+" Use current selection to search.
+xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
+
+function! s:VSetSearch(cmdtype)
+  let temp = @s
+  norm! gv"sy
+  let @/ = '\V' . substitute(escape(@s, a:cmdtype.'\'), '\n', '\\n', 'g')
+  let @s = temp
+endfunction
+" ---
+
+" Plugin Configuration
+" Denite
+call denite#custom#filter('matcher_ignore_globs', 'ignore_globs', ['.git/',
+      \ '.git\'])
+" ---
+
+" NERDtree
+let NERDTreeShowHidden=1
+let NERDTreeWindowSize=20
+let NERDTreeHighlightCursorline=1
+let NERDTreeIgnore=['\.git$[[dir]]']
+let NERDTreeWinPos="left"
+" ---
+
+" Vim-Session
+let g:session_autoload="yes"
+let g:session_autosave="yes"
+let g:session_autosave_periodic=5
+let g:session_default_name = fnamemodify(getcwd(), ':t') " Not working yet...
+" ---
+
+" Airline
+" (Tab-|Tmux-)line
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tmuxline#enabled = 1
+
+" Style
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep='>'
+let g:airline_right_sep='<'
+
+" Misc
+let g:airline_skip_empty_sections = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#show_tab_nr = 1
+let g:airline#extensions#tabline#tab_nr_type= 2
+let g:airline#extensions#tabline#show_tab_type = 1
+let g:airline#extensions#tabline#buffers_label = 'BUFFERS'
+let g:airline#extensions#tabline#tabs_label = 'TABS'
+" ---
+
+" JellyBeans Theme
+let g:jellybeans_use_term_italics = 1
+" ---
+
+
+" Mappings
+" Buffers
+" Move between buffers.
+nnoremap <leader>bn :bnext<CR>
+nnoremap <leader>bp :bprevious<CR>
+
+" Delete buffer (without close the window displayed in).
+nnoremap <leader>bd :bp<bar>sp<bar>bn<bar>bd<CR>.
+
+" Search in all buffers with live filter in present list (use Denite plugin).
+nnoremap <leader>bb :Denite buffer<CR>
+" ---
+
+" Windows
+" Split new window
+nnoremap <leader>ws :split<CR>
+nnoremap <leader>wv :vsplit<CR>
+
+" Close window
+nnoremap <leader>wc :close<CR>
+
+" Move between windows of a split layout
+nnoremap <silent> <leader>wh :wincmd h<CR>
+nnoremap <silent> <leader>wj :wincmd j<CR>
+nnoremap <silent> <leader>wk :wincmd k<CR>
+nnoremap <silent> <leader>wl :wincmd l<CR>
+
+" Switch between tabs (use the Airline plugin).
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
+nmap <leader>- <Plug>AirlineSelectPrevTab
+nmap <leader>+ <Plug>AirlineSelectNextTab
+" ---
+
+
+" Files
+" Find files in current path with live filter in present list (use Denite
+" plugin).
+nnoremap <leader>ff :Denite file_rec<CR>
+
+" Same as before but in the folder of the currently active buffer.
+nnoremap <leader>fb :DeniteBufferDir file_rec<CR>
+
+" Same as before but use the word under the cursor for initial filter.
+nnoremap <leader>fw :DeniteCursorWord file_rec<CR>
+
+" Same as before but in the project folder set by 'denite-options-path'.
+nnoremap <leader>fp :DeniteProjectDir file_rec<CR>
+
+" Toogle the NERDtree window.
+nnoremap <leader>fn :NERDTreeToggle<CR>
+"---
+
+
+" Sessions
+" Save the current session (overwriting).
+nnoremap <leader>ss :SaveSession!<CR>
+
+" Open a session. Will open a menu to ask which session.
+nnoremap <leader>so :OpenSession<CR>
+
+" Delete a session. Will open a menu to ask which session.
+nnoremap <leader>sd :DeleteSession<CR>
+" ---
+
+" Close Vim
+" Close all buffers and windows without save anythin.
+nnoremap <leader>qq :qa!<CR>
+
+" Close as above, but save all buffers before.
+nnoremap <leader>qs :xa<CR>
+
+" Close, save all buffers and save session.
+nnoremap <leader>qS :SaveSession!<CR>:xa<CR>
+" ---
+
+
+" Save
+" Easy save current buffer.
+nnoremap <C-s> :w<CR>
+
+" Save all buffers.
+nnoremap <C-S> :wa<CR>
+" ---
+
+
+" Git
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gp :Gpush<CR>
+nnoremap <leader>gP :Gpull<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gd :Gsdiff<CR>
+" ---
+
+" Special
+" Move lines/selection and autoindent
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" Insert new line below or above without go into insert mode.
+nnoremap go o<esc>
+nnoremap gO O<esc>
