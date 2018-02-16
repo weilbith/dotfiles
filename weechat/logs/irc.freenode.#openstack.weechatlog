@@ -1,0 +1,165 @@
+2018-02-16 17:54:39	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 17:54:39	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 17:54:39	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:44:59
+2018-02-16 17:54:39	--	Channel #openstack: 754 nicks (2 ops, 1 voice, 751 normals)
+2018-02-16 17:54:42	--	URL for #openstack: http://www.openstack.org
+2018-02-16 17:54:53	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 17:55:40	--	irc: disconnected from server
+2018-02-16 17:57:07	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 17:57:07	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 17:57:07	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:44:59
+2018-02-16 17:57:07	--	Channel #openstack: 754 nicks (2 ops, 1 voice, 751 normals)
+2018-02-16 17:57:07	--	URL for #openstack: http://www.openstack.org
+2018-02-16 17:57:21	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 17:58:35	▬▬▶	luizbag (~luizbag@201.48.5.193) has joined #openstack
+2018-02-16 17:58:44	◀▬▬	VW (~vw@50.56.228.68) has quit (Ping timeout: 276 seconds)
+2018-02-16 17:58:55	▬▬▶	VW (~vw@50.56.228.68) has joined #openstack
+2018-02-16 18:00:15	◀▬▬	MarkBaker (~mab@cpc104186-ipsw4-2-0-cust1867.7-4.cable.virginm.net) has quit (Ping timeout: 248 seconds)
+2018-02-16 18:01:31	--	irc: disconnected from server
+2018-02-16 18:03:20	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 18:03:20	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 18:03:20	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:44:59
+2018-02-16 18:03:20	--	Channel #openstack: 754 nicks (2 ops, 1 voice, 751 normals)
+2018-02-16 18:03:20	--	URL for #openstack: http://www.openstack.org
+2018-02-16 18:03:35	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:55	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 18:07:55	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 18:07:55	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:45:02
+2018-02-16 18:07:55	--	Channel #openstack: 753 nicks (2 ops, 1 voice, 750 normals)
+2018-02-16 18:07:55	--	URL for #openstack: http://www.openstack.org
+2018-02-16 18:08:11	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 18:11:00	▬▬▶	SteffanW (~steffanw@ip4da40774.direct-adsl.nl) has joined #openstack
+2018-02-16 18:11:31	◀▬▬	luizbag (~luizbag@201.48.5.193) has quit (Remote host closed the connection)
+2018-02-16 18:11:50	--	irc: disconnected from server
+2018-02-16 18:13:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 18:13:19	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 18:13:19	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:44:59
+2018-02-16 18:13:19	--	Channel #openstack: 753 nicks (2 ops, 1 voice, 750 normals)
+2018-02-16 18:13:19	--	URL for #openstack: http://www.openstack.org
+2018-02-16 18:13:34	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 18:13:36	--	irc: disconnected from server
+2018-02-16 19:13:05	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 19:13:05	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 19:13:05	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:44:59
+2018-02-16 19:13:05	--	Channel #openstack: 755 nicks (2 ops, 1 voice, 752 normals)
+2018-02-16 19:13:07	--	URL for #openstack: http://www.openstack.org
+2018-02-16 19:13:17	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 19:13:49	▬▬▶	jadajada (~jadajada@92-110-216-28.cable.dynamic.v4.ziggo.nl) has joined #openstack
+2018-02-16 19:14:48	◀▬▬	racedo (~racedo@96.85.133.37.dynamic.jazztel.es) has quit (Read error: Connection reset by peer)
+2018-02-16 19:15:27	◀▬▬	bobh (~bobh@135.109.208.136) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:15:57	▬▬▶	racedo (~racedo@96.85.133.37.dynamic.jazztel.es) has joined #openstack
+2018-02-16 19:17:17	◀▬▬	geaaru (~geaaru@host170-152-static.43-88-b.business.telecomitalia.it) has quit (Quit: Leaving)
+2018-02-16 19:17:20	◀▬▬	brault (~brault@LFbn-1-3351-85.w90-127.abo.wanadoo.fr) has quit (Quit: Leaving...)
+2018-02-16 19:18:16	◀▬▬	racedo (~racedo@96.85.133.37.dynamic.jazztel.es) has quit (Read error: Connection reset by peer)
+2018-02-16 19:18:17	◀▬▬	szilard (~szilard@sessfw99-sesbfw99-82.ericsson.net) has quit (Quit: Leaving)
+2018-02-16 19:20:06	▬▬▶	cloudran_ (~cloudranc@cpe-24-55-10-231.austin.res.rr.com) has joined #openstack
+2018-02-16 19:20:38	◀▬▬	gvrangan (~gvrangan@183.82.38.42) has quit (Remote host closed the connection)
+2018-02-16 19:20:50	▬▬▶	CaptainTacoSauce (~justin@24-217-230-227.dhcp.stls.mo.charter.com) has joined #openstack
+2018-02-16 19:21:26	▬▬▶	gvrangan (~gvrangan@183.82.38.42) has joined #openstack
+2018-02-16 19:21:57	◀▬▬	cloudrancher (~cloudranc@cpe-24-55-10-231.austin.res.rr.com) has quit (Ping timeout: 264 seconds)
+2018-02-16 19:22:18	◀▬▬	SteffanW (~steffanw@ip4da40774.direct-adsl.nl) has quit (Read error: Connection reset by peer)
+2018-02-16 19:22:34	◀▬▬	gvrangan (~gvrangan@183.82.38.42) has quit (Remote host closed the connection)
+2018-02-16 19:22:52	◀▬▬	VW (~vw@50.56.228.68) has quit (Remote host closed the connection)
+2018-02-16 19:23:25	▬▬▶	VW (~vw@50.56.228.68) has joined #openstack
+2018-02-16 19:23:47	◀▬▬	VW (~vw@50.56.228.68) has quit (Read error: Connection reset by peer)
+2018-02-16 19:24:16	▬▬▶	AlexeyAbashkin (~Thunderbi@128-72-104-193.broadband.corbina.ru) has joined #openstack
+2018-02-16 19:24:20	▬▬▶	bobh (~bobh@135.109.208.136) has joined #openstack
+2018-02-16 19:24:34	▬▬▶	VW (~vw@50.56.229.9) has joined #openstack
+2018-02-16 19:25:44	▬▬▶	Shri (~Shrinivas@103.51.95.44) has joined #openstack
+2018-02-16 19:26:09	◀▬▬	ralonsoh_ (~Rodolfo@192.198.151.43) has quit (Quit: Leaving)
+2018-02-16 19:26:42	◀▬▬	tesseract (~tesseract@2a00:1028:83a2:66c6:5ee0:c5ff:fe71:efb2) has quit (Quit: ♪♫•*¨*•.¸¸♫♪♪♫•*¨*•.¸¸♫♪♪♫•*¨*•.¸¸♫♪♪♫•*¨*•.¸¸♫♪)
+2018-02-16 19:26:47	▬▬▶	schmots (~schmots@cpe-98-26-81-236.nc.res.rr.com) has joined #openstack
+2018-02-16 19:27:36	▬▬▶	crose (~crose@132.237.154.126) has joined #openstack
+2018-02-16 19:28:33	◀▬▬	AlexeyAbashkin (~Thunderbi@128-72-104-193.broadband.corbina.ru) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:28:47	◀▬▬	rossella_s (~rossella@net-93-144-86-51.cust.vodafonedsl.it) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:30:21	▬▬▶	rossella_s (~rossella@net-93-144-86-51.cust.dsl.teletu.it) has joined #openstack
+2018-02-16 19:30:42	◀▬▬	Shri (~Shrinivas@103.51.95.44) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:33:25	◀▬▬	RageLtMan (~rage@pool-72-70-61-204.bstnma.fios.verizon.net) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:35:14	◀▬▬	chito_ (~chito@119.ip-149-56-47.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:36:50	◀▬▬	eroux (~eroux@196-210-166-153.dynamic.isadsl.co.za) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:37:18	◀▬▬	r-daneel (~Thunderbi@2607:f748:9:1666:20e:c6ff:fef1:7435) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:38:11	▬▬▶	r-daneel (~Thunderbi@72.55.158.120) has joined #openstack
+2018-02-16 19:39:30	▬▬▶	germs (~germs@47.185.83.212) has joined #openstack
+2018-02-16 19:39:33	▬▬▶	etingof (ietingof@nat/redhat/x-yhygupwzvwsbgsjg) has joined #openstack
+2018-02-16 19:39:36	◀▬▬	jamesdenton (~jamesdent@cpe-65-29-220-107.cinci.res.rr.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 19:40:31	◀▬▬	schmots (~schmots@cpe-98-26-81-236.nc.res.rr.com) has quit (Quit: schmots)
+2018-02-16 19:44:03	◀▬▬	germs (~germs@47.185.83.212) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:44:10	◀▬▬	harlowja (~harlowja@64.202.160.233) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:48:15	▬▬▶	harlowja (~harlowja@107-194-154-154.lightspeed.sntcca.sbcglobal.net) has joined #openstack
+2018-02-16 19:50:02	--	weshay is now known as weshay|bbiab
+2018-02-16 19:52:31	▬▬▶	jbadiapa (~jubapa@184.red-81-37-142.dynamicip.rima-tde.net) has joined #openstack
+2018-02-16 19:54:30	◀▬▬	leveldoc (~leveldoc@c-73-15-162-12.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:54:43	◀▬▬	r-daneel (~Thunderbi@72.55.158.120) has quit (Remote host closed the connection)
+2018-02-16 19:55:09	▬▬▶	lpetrut (~lpetrut@79.114.11.150) has joined #openstack
+2018-02-16 19:57:47	▬▬▶	gvrangan (~gvrangan@183.82.38.42) has joined #openstack
+2018-02-16 19:58:16	▬▬▶	r-daneel (~Thunderbi@72.55.158.120) has joined #openstack
+2018-02-16 19:58:32	◀▬▬	aojea (~aojea@18.21.60.178.dynamic.reverse-mundo-r.com) has quit (Remote host closed the connection)
+2018-02-16 20:02:25	◀▬▬	clouddig (~clouddig@c-73-136-229-166.hsd1.tx.comcast.net) has quit (Remote host closed the connection)
+2018-02-16 20:03:34	◀▬▬	dnovosel (~dnovosel@128.203.210.128) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:05:08	▬▬▶	yamahata (~yamahata@192.55.54.60) has joined #openstack
+2018-02-16 20:06:37	▬▬▶	chito_ (~chito@119.ip-149-56-47.net) has joined #openstack
+2018-02-16 20:08:07	▬▬▶	dneary (dneary@Maemo/community/docmaster/dneary) has joined #openstack
+2018-02-16 20:09:11	▬▬▶	ymasson (~ymasson@LFbn-1-8899-115.w193-250.abo.wanadoo.fr) has joined #openstack
+2018-02-16 20:10:27	◀▬▬	harlowja (~harlowja@107-194-154-154.lightspeed.sntcca.sbcglobal.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2018-02-16 20:10:29	▬▬▶	masonjoyers_ (~masonjoye@cpe-174-104-41-40.neo.res.rr.com) has joined #openstack
+2018-02-16 20:12:33	◀▬▬	masonjoyers (~masonjoye@cpe-174-104-41-40.neo.res.rr.com) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:12:45	◀▬▬	lpetrut (~lpetrut@79.114.11.150) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:15:26	▬▬▶	clouddig (~clouddig@2601:2c3:897f:ef73:7ce7:2d2:6b73:a8ac) has joined #openstack
+2018-02-16 20:16:36	◀▬▬	gyee (~gyee@104-183-241-165.lightspeed.sntcca.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 20:18:54	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 20:18:54	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:45:02
+2018-02-16 20:18:54	--	Channel #openstack: 748 nicks (2 ops, 1 voice, 745 normals)
+2018-02-16 20:18:54	--	URL for #openstack: http://www.openstack.org
+2018-02-16 20:19:09	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 20:20:08	◀▬▬	clouddig (~clouddig@2601:2c3:897f:ef73:7ce7:2d2:6b73:a8ac) has quit (Client Quit)
+2018-02-16 20:20:41	▬▬▶	lpetrut (~lpetrut@79.114.11.150) has joined #openstack
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:27:08	▬▬▶	pchavva1 (pchavva@nat/redhat/x-xkrormfpczxazwxo) has joined #openstack
+2018-02-16 20:28:24	▬▬▶	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has joined #openstack
+2018-02-16 20:32:01	◀▬▬	somepoortech__ (~somepoort@72-0-128-212.static.firstlight.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:33:42	◀▬▬	Supun (~Supun@112.134.105.165) has quit (Quit: Leaving)
+2018-02-16 20:34:05	◀▬▬	pbandark (~Thunderbi@80.169.202.158) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:34:45	▬▬▶	Son_Goku (~King_InuY@fedora/ngompa) has joined #openstack
+2018-02-16 20:37:11	▬▬▶	kjackal (~quassel@ppp-94-65-231-251.home.otenet.gr) has joined #openstack
+2018-02-16 20:38:10	◀▬▬	bobh (~bobh@135.109.208.136) has quit (Remote host closed the connection)
+2018-02-16 20:41:34	▬▬▶	sar (~sar@90.3.95.88.customer.cdi.no) has joined #openstack
+2018-02-16 20:42:06	◀▬▬	pchavva1 (pchavva@nat/redhat/x-xkrormfpczxazwxo) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:38	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 20:44:38	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 20:44:38	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:44:59
+2018-02-16 20:44:38	--	Channel #openstack: 746 nicks (2 ops, 1 voice, 743 normals)
+2018-02-16 20:44:38	--	URL for #openstack: http://www.openstack.org
+2018-02-16 20:44:53	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 20:46:29	--	irc: disconnected from server
+2018-02-16 20:48:28	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #openstack
+2018-02-16 20:48:28	--	Topic for #openstack is " (Meeting topic: kolla)"
+2018-02-16 20:48:28	--	Topic set by openstack (~openstack@openstack/openstack) on Mi, 31 Jan 2018 18:44:59
+2018-02-16 20:48:28	--	Channel #openstack: 747 nicks (2 ops, 1 voice, 744 normals)
+2018-02-16 20:48:28	--	URL for #openstack: http://www.openstack.org
+2018-02-16 20:48:29	◀▬▬	dneary (dneary@Maemo/community/docmaster/dneary) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:48:44	--	Channel created on Mo, 28 Jun 2010 16:37:39
+2018-02-16 20:50:17	--	weshay|bbiab is now known as weshay
+2018-02-16 20:50:58	▬▬▶	harlowja (~harlowja@64.202.160.76) has joined #openstack
+2018-02-16 20:51:13	▬▬▶	germs (~germs@47.185.83.212) has joined #openstack
+2018-02-16 20:51:39	◀▬▬	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:52:09	▬▬▶	salmankhan (~Thunderbi@79-69-89-2.dynamic.dsl.as9105.com) has joined #openstack
+2018-02-16 20:52:49	▬▬▶	foul_owl (~foul_owl@75-172-106-114.tukw.qwest.net) has joined #openstack
+2018-02-16 20:53:17	▬▬▶	VW_ (~vw@50.56.228.68) has joined #openstack
+2018-02-16 20:53:44	◀▬▬	VW_ (~vw@50.56.228.68) has quit (Remote host closed the connection)
+2018-02-16 20:54:01	▬▬▶	VW_ (~vw@50.56.228.68) has joined #openstack
+2018-02-16 20:54:02	▬▬▶	dnovosel (dnovosel@2600:3c03::f03c:91ff:fe96:5796) has joined #openstack
+2018-02-16 20:56:42	◀▬▬	salmankhan (~Thunderbi@79-69-89-2.dynamic.dsl.as9105.com) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:57:30	◀▬▬	VW (~vw@50.56.229.9) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:57:40	▬▬▶	schmots (~schmots@cpe-98-26-81-236.nc.res.rr.com) has joined #openstack
+2018-02-16 20:57:51	◀▬▬	renmak__ (~renmak@172-9-236-77.lightspeed.sntcca.sbcglobal.net) has quit (Quit: Leaving)
+2018-02-16 20:57:52	◀▬▬	renmak_ (~renmak@172-9-236-77.lightspeed.sntcca.sbcglobal.net) has quit (Quit: Leaving)
+2018-02-16 20:57:53	◀▬▬	etingof (ietingof@nat/redhat/x-yhygupwzvwsbgsjg) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:58:22	◀▬▬	dnovosel (dnovosel@2600:3c03::f03c:91ff:fe96:5796) has quit (Remote host closed the connection)
+2018-02-16 20:58:24	▬▬▶	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has joined #openstack
+2018-02-16 20:58:29	◀▬▬	Son_Goku (~King_InuY@fedora/ngompa) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:58:39	▬▬▶	dnovosel (dnovosel@2600:3c03::f03c:91ff:fe96:5796) has joined #openstack
+2018-02-16 20:58:42	--	irc: disconnected from server

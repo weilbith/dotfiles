@@ -1,0 +1,521 @@
+2018-02-16 17:54:37	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 17:54:37	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 17:54:37	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:36
+2018-02-16 17:54:37	--	Channel #ubuntu: 1570 nicks (3 ops, 0 voices, 1567 normals)
+2018-02-16 17:54:39	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 17:54:40	◀▬▬	arunkumar413 (~arunkumar@103.96.18.10) has quit (Quit: Leaving)
+2018-02-16 17:54:42	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 17:54:42	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 17:54:45	◀▬▬	hishamn__ (~hisham@39.40.21.177) has quit (Client Quit)
+2018-02-16 17:54:50	▬▬▶	aimileus (~aimileus@2001:985:1d3d:1:647e:c7e8:c709:ead8) has joined #ubuntu
+2018-02-16 17:54:57	◀▬▬	Freejack (~quassel@unaffiliated/freejack) has quit (Ping timeout: 240 seconds)
+2018-02-16 17:54:59	▬▬▶	hishamn__ (~hisham@39.40.21.177) has joined #ubuntu
+2018-02-16 17:55:04	▬▬▶	builtjock17 (~R@197.0.21.198) has joined #ubuntu
+2018-02-16 17:55:30	EoflaOE	ikonia, on the emulated machine or on the host computer?
+2018-02-16 17:55:39	--	irc: disconnected from server
+2018-02-16 17:57:05	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 17:57:05	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 17:57:05	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:35
+2018-02-16 17:57:05	--	Channel #ubuntu: 1571 nicks (3 ops, 0 voices, 1568 normals)
+2018-02-16 17:57:07	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 17:57:07	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 17:57:07	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 17:57:24	▬▬▶	tami (~smuxi@96-39-187-132.dhcp.mdfd.or.charter.com) has joined #ubuntu
+2018-02-16 17:57:31	ikonia	shakerche: not sure what you're talking about, but could you please try to keep to the ubuntu support discussion
+2018-02-16 17:57:34	donofrio	lordcirth_work, here is what it returned ;( https://apaste.info/AB54
+2018-02-16 17:58:02	shakerche	ikonia: i am helper
+2018-02-16 17:58:14	shakerche	i am Dreaman lame
+2018-02-16 17:58:24	shakerche	ban  oper abuse
+2018-02-16 17:58:28	shakerche	bann me
+2018-02-16 17:58:28	◀▬▬	Rokixz (~rokas@5.199.160.9) has quit (Read error: Connection reset by peer)
+2018-02-16 17:58:45	--	Mode #ubuntu [+o ikonia] by ChanServ
+2018-02-16 17:58:45	◀▬▬	shakerche (~to@aa20111001946AB81595.userreverse.dion.ne.jp) has left #ubuntu (requested by ikonia (bye then))
+2018-02-16 17:58:45	--	Mode #ubuntu [-o ikonia] by ChanServ
+2018-02-16 17:58:57	▬▬▶	Rokixz (~rokas@5.199.160.9) has joined #ubuntu
+2018-02-16 17:59:00	◀▬▬	ioanachiorean (~ioanachio@5.2.199.196) has quit (Remote host closed the connection)
+2018-02-16 17:59:31	EoflaOE	ikonia, What file do I have to open? I am using Ultrix 4.0 on the emulated machine and Xubuntu 17.10 on the host computer
+2018-02-16 17:59:45	◀▬▬	dhil (~dhil@dhcp-90-078.inf.ed.ac.uk) has quit (Ping timeout: 248 seconds)
+2018-02-16 17:59:54	ikonia	no idea what ultrix is
+2018-02-16 17:59:57	ikonia	in terms of it's layout
+2018-02-16 18:00:15	◀▬▬	MarkBaker (~mab@cpc104186-ipsw4-2-0-cust1867.7-4.cable.virginm.net) has quit (Ping timeout: 248 seconds)
+2018-02-16 18:00:34	▬▬▶	shushi (~korn@ip-95-221-196-155.bb.netbynet.ru) has joined #ubuntu
+2018-02-16 18:00:44	EoflaOE	Ultrix is Unix which can be run on VAX/PDP machines
+2018-02-16 18:01:10	shushi	and ikonia
+2018-02-16 18:01:11	shushi	lame
+2018-02-16 18:01:27	▬▬▶	blake (~blake@141-126-037-165.dhcp.chtrptr.net) has joined #ubuntu
+2018-02-16 18:01:29	◀▬▬	v4ult (~V4ult@217.138.14.202) has quit (Quit: Leaving)
+2018-02-16 18:01:30	--	irc: disconnected from server
+2018-02-16 18:03:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 18:03:19	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 18:03:19	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:36
+2018-02-16 18:03:19	--	Channel #ubuntu: 1568 nicks (3 ops, 0 voices, 1565 normals)
+2018-02-16 18:03:20	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 18:03:20	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 18:03:20	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 18:03:25	▬▬▶	theoceaniscool (~theoceani@9.red-79-158-250.dynamicip.rima-tde.net) has joined #ubuntu
+2018-02-16 18:03:29	▬▬▶	jmv (~jmv@78-126-156.static.cyta.gr) has joined #ubuntu
+2018-02-16 18:04:09	▬▬▶	ritwik (~ritwik@223.231.106.196) has joined #ubuntu
+2018-02-16 18:04:12	--	irc: disconnected from server
+2018-02-16 18:07:53	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 18:07:53	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 18:07:53	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:38
+2018-02-16 18:07:54	--	Channel #ubuntu: 1572 nicks (3 ops, 0 voices, 1569 normals)
+2018-02-16 18:07:55	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 18:07:55	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 18:07:55	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 18:08:04	G3nka1	hello, so I installed vncserver on my ubuntu and tried to use vnc viewer from windows, but when logged in I just see a blank screen with mouse cursor looks like "x". mostly it is xfce.
+2018-02-16 18:08:04	nacc	EoflaOE: why are you seeking ultrix support in the ubuntu channel?
+2018-02-16 18:08:13	G3nka1	how do I see my ubuntu desktop through my viewer?
+2018-02-16 18:08:27	◀▬▬	shushi (~korn@ip-95-221-196-155.bb.netbynet.ru) has quit (Quit: one lame quit :))
+2018-02-16 18:08:31	◀▬▬	tmuwa (~thomas@gatekeeper.loca.net) has quit (Quit: WeeChat 1.9.1)
+2018-02-16 18:08:34	EoflaOE	I think so. Now, what file do I have to open to see DNS? ikonia
+2018-02-16 18:08:44	▬▬▶	Richard|Fastly (~Richard|F@188.29.165.35.threembb.co.uk) has joined #ubuntu
+2018-02-16 18:08:46	EoflaOE	nacc, if you read correctly, it is on SIMH emulator.
+2018-02-16 18:08:53	nacc	EoflaOE: what does that matter?
+2018-02-16 18:08:54	ikonia	EoflaOE: that's what I'm telling you, you need to know Ultrix to be able to debug the VM
+2018-02-16 18:08:59	nacc	EoflaOE: the OS is ultrix, afaict
+2018-02-16 18:09:11	ikonia	EoflaOE: you can debug the host (ubuntu) in here, but you can't debug the ultrix OS in here, if you don't know how ultrix works
+2018-02-16 18:09:15	Random832	EoflaOE, I don't know about Ultrix 4.0, but based on the source code to Ultrix-11 3.1, it looks like it *exclusively* uses /etc/hosts.
+2018-02-16 18:09:38	Random832	do commands like nslookup, host, dig, exist at all?
+2018-02-16 18:09:42	EoflaOE	ok ikonia, and Random832.
+2018-02-16 18:09:50	▬▬▶	piterke (~piterke@p4FFB4DE2.dip0.t-ipconnect.de) has joined #ubuntu
+2018-02-16 18:09:58	EoflaOE	there is ifconfig on there
+2018-02-16 18:10:11	▬▬▶	ckovacs (~ckovacs@vc-nat-gp-s-41-13-60-140.umts.vodacom.co.za) has joined #ubuntu
+2018-02-16 18:10:43	Random832	http://www.novell.com/zh-cn/documentation/nw5/nw5/usprint/unixpenu/data/h057bcrx.html
+2018-02-16 18:10:47	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #ubuntu
+2018-02-16 18:10:51	Random832	is there an /etc/resolv.cfg file
+2018-02-16 18:11:10	◀▬▬	zergut (uid221522@taskhive/translator/zergut) has quit (Quit: Connection closed for inactivity)
+2018-02-16 18:11:12	ikonia	we can't do ultrix support in here
+2018-02-16 18:11:14	nacc	EoflaOE: Random832: please take it elsewhere
+2018-02-16 18:11:17	▬▬▶	matthelmke (~matthelmk@50-81-140-110.client.mchsi.com) has joined #ubuntu
+2018-02-16 18:11:20	EoflaOE	no. Ultrix 4.0 does not have it
+2018-02-16 18:11:28	EoflaOE	and ok.
+2018-02-16 18:11:49	--	irc: disconnected from server
+2018-02-16 18:13:18	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 18:13:18	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 18:13:18	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:36
+2018-02-16 18:13:18	--	Channel #ubuntu: 1572 nicks (3 ops, 0 voices, 1569 normals)
+2018-02-16 18:13:19	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 18:13:19	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 18:13:19	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 18:13:21	◀▬▬	edong23 (~quassel@mptc-dhcp-52-50.mptelco.com) has quit (Quit: No Ping reply in 180 seconds.)
+2018-02-16 18:13:35	--	irc: disconnected from server
+2018-02-16 19:13:00	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 19:13:00	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 19:13:00	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:36
+2018-02-16 19:13:01	--	Channel #ubuntu: 1557 nicks (3 ops, 0 voices, 1554 normals)
+2018-02-16 19:13:07	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 19:13:07	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 19:13:07	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 19:13:07	▬▬▶	[MMDC090732] (~quassel@148.27.11.109.rev.sfr.net) has joined #ubuntu
+2018-02-16 19:13:46	▬▬▶	Afrix (~Afrix4@host-92-16-192-182.as13285.net) has joined #ubuntu
+2018-02-16 19:13:47	◀▬▬	waseem18 (~wasim@183.83.201.226) has quit (Quit: Ex-Chat)
+2018-02-16 19:13:59	◀▬▬	ShekharReddy (uid132367@gateway/web/irccloud.com/x-zmhzywooskwktmer) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:14:21	▬▬▶	timahvo1 (~rogue@41.90.137.164) has joined #ubuntu
+2018-02-16 19:15:06	▬▬▶	jizzmedeep (~TomTom@197.0.21.198) has joined #ubuntu
+2018-02-16 19:15:47	▬▬▶	pos (~pos@gateway/tor-sasl/pos) has joined #ubuntu
+2018-02-16 19:15:50	lordcirth_work	!ask | yakkety1
+2018-02-16 19:15:50	ubottu	yakkety1: Please don't ask to ask a question, simply ask the question (all on ONE line and in the channel, so that others can read and follow it easily). If anyone knows the answer they will most likely reply. :-) See also !patience
+2018-02-16 19:16:07	▬▬▶	giricz81 (~giricz81@ip4-83-240-38-90.cust.nbox.cz) has joined #ubuntu
+2018-02-16 19:16:14	lordcirth_work	donofrio, don't know, did you read the script?
+2018-02-16 19:16:29	◀▬▬	jizzmedeep (~TomTom@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:17:09	G3nka1	hello I couldn't find how I could use vnc with unity? a lot of examples are on xfce
+2018-02-16 19:17:10	▬▬▶	guntbert (~yesitsme@2a02:e00:ffff:fffb:216:3cff:fe2a:cd7d) has joined #ubuntu
+2018-02-16 19:17:10	◀▬▬	guntbert (~yesitsme@2a02:e00:ffff:fffb:216:3cff:fe2a:cd7d) has quit (Changing host)
+2018-02-16 19:17:10	▬▬▶	guntbert (~yesitsme@pdpc/supporter/active/guntbert) has joined #ubuntu
+2018-02-16 19:17:20	G3nka1	any idea how I can use unity?
+2018-02-16 19:18:15	▬▬▶	vush (~v4sh@2a02:908:1398:1e00:feaa:14ff:fe31:74c) has joined #ubuntu
+2018-02-16 19:19:05	▬▬▶	Guest19046 (~gene@CPEac202e7637f3-CMac202e7637f0.cpe.net.cable.rogers.com) has joined #ubuntu
+2018-02-16 19:20:13	◀▬▬	kpease_ (~kpease@72.22.182.166) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 19:20:21	▬▬▶	fedorafan (~fedorafan@unaffiliated/fedorafan) has joined #ubuntu
+2018-02-16 19:20:22	▬▬▶	slyrobot (c4370202@gateway/web/freenode/ip.196.55.2.2) has joined #ubuntu
+2018-02-16 19:21:01	slyrobot	Whenever I use ping, it shows "Temporary failure in name resolution
+2018-02-16 19:21:49	slyrobot	I tried to change the nameserver at /etc/resolv.conf but every time I restart the connection it sets itself back to localhost.
+2018-02-16 19:21:56	◀▬▬	swift110 (~swift110@unaffiliated/swift110) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:22:01	slyrobot	Any ideas on how to fix this.
+2018-02-16 19:22:54	▬▬▶	keonkim (keonkim@gateway/shell/panicbnc/x-dyqvbffsiodaqxoz) has joined #ubuntu
+2018-02-16 19:22:59	◀▬▬	rauno (~rauno@176.67.84.206) has quit (Remote host closed the connection)
+2018-02-16 19:23:10	▬▬▶	Sherry230 (~Sherry230@137.10.27.109.rev.sfr.net) has joined #ubuntu
+2018-02-16 19:23:24	◀▬▬	Sherry230 (~Sherry230@137.10.27.109.rev.sfr.net) has quit (Max SendQ exceeded)
+2018-02-16 19:23:27	◀▬▬	farid (~farid@iv2-technologies-gw1.ter1.prb.par.cust.as8218.eu) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:23:43	◀▬▬	mst89 (~mks@dslb-188-098-138-160.188.098.pools.vodafone-ip.de) has quit (Quit: bye bye)
+2018-02-16 19:23:45	slyrobot	I am not even able to surf the internet except when I am connected to my VPN. I think its the issue with resolv.conf file because when I connect my VPN it changes this nameserver file and the internet works. Else it fails.
+2018-02-16 19:23:49	yakkety1	i am unable to use old-releases.ubuntu.com mirror  when i apt update and install mediainfo package it is showing 404 error i observed it is attempting to download a version which is not available on the mirror.
+2018-02-16 19:24:12	▬▬▶	virtuosoj (~virtuosoj@2605:6000:eed9:2800:39b2:eea0:f3e2:ef0f) has joined #ubuntu
+2018-02-16 19:24:12	▬▬▶	Barones (~Barones@static-45-7-68-78.g3telecombsb.net.br) has joined #ubuntu
+2018-02-16 19:24:19	▬▬▶	Buxtehude_ (~rembrandt@dslb-178-002-060-235.178.002.pools.vodafone-ip.de) has joined #ubuntu
+2018-02-16 19:24:31	donofrio	not yet....how to unpack the file?
+2018-02-16 19:24:40	▬▬▶	Mitchell1992 (~textual@2601:191:8380:ef7c:388a:8b3b:e40d:e710) has joined #ubuntu
+2018-02-16 19:24:43	◀▬▬	Mitchell1992 (~textual@2601:191:8380:ef7c:388a:8b3b:e40d:e710) has quit (Changing host)
+2018-02-16 19:24:43	▬▬▶	Mitchell1992 (~textual@unaffiliated/mitchell1992) has joined #ubuntu
+2018-02-16 19:24:45	▬▬▶	pingaan (~tjohej@185.217.1.76) has joined #ubuntu
+2018-02-16 19:24:57	◀▬▬	Guest19046 (~gene@CPEac202e7637f3-CMac202e7637f0.cpe.net.cable.rogers.com) has quit (Ping timeout: 264 seconds)
+2018-02-16 19:25:00	▬▬▶	Ubuntivity (~Ubuntivit@37.238.143.23) has joined #ubuntu
+2018-02-16 19:25:04	◀▬▬	banisterfiend (~banister@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:25:10	▬▬▶	bovo (~bowen@c-73-59-24-204.hsd1.wa.comcast.net) has joined #ubuntu
+2018-02-16 19:25:13	donofrio	lordcirth_work,  I have no gui fwiw
+2018-02-16 19:25:32	▬▬▶	soee (~soee@afoh52.neoplus.adsl.tpnet.pl) has joined #ubuntu
+2018-02-16 19:25:49	▬▬▶	blkadder (~blkadder@64.201.243.34) has joined #ubuntu
+2018-02-16 19:25:53	◀▬▬	rhitik (~namaste@182.71.134.82) has quit (Quit: Ex-Chat)
+2018-02-16 19:25:58	Ubuntivity	Hello. I used to hibernate normally on my 16.04. But today I tried hibernation several times, but everytime it fails! What could be the problem?
+2018-02-16 19:26:03	▬▬▶	banisterfiend (~banister@ruby/staff/banisterfiend) has joined #ubuntu
+2018-02-16 19:26:28	◀▬▬	Buxtehude_ (~rembrandt@dslb-178-002-060-235.178.002.pools.vodafone-ip.de) has quit (Client Quit)
+2018-02-16 19:26:39	◀▬▬	timahvo1 (~rogue@41.90.137.164) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:27:05	yakkety1	hmm
+2018-02-16 19:27:26	yakkety1	great support
+2018-02-16 19:27:36	▬▬▶	arquebus (~arquebus@c-174-62-108-118.hsd1.ca.comcast.net) has joined #ubuntu
+2018-02-16 19:27:50	▬▬▶	timahvo1 (~rogue@41.90.137.164) has joined #ubuntu
+2018-02-16 19:29:44	◀▬▬	Mitchell1992 (~textual@unaffiliated/mitchell1992) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:30:29	◀▬▬	pingaan (~tjohej@185.217.1.76) has quit (Ping timeout: 260 seconds)
+2018-02-16 19:30:32	nacc	yakkety1: what's wrong?
+2018-02-16 19:30:38	nacc	yakkety1: the old-releases repos are not really supported
+2018-02-16 19:30:46	nacc	yakkety1: they are for you to eol upgrade your now eol system
+2018-02-16 19:30:54	▬▬▶	brunosfer (~brunosfer@193.137.28.206) has joined #ubuntu
+2018-02-16 19:30:58	▬▬▶	Guest19046 (~gene@CPEac202e7637f3-CMac202e7637f0.cpe.net.cable.rogers.com) has joined #ubuntu
+2018-02-16 19:31:06	▬▬▶	koffeinfriedhof (~schiggn@ubuntuusers/moderation/koffeinfriedhof) has joined #ubuntu
+2018-02-16 19:31:08	◀▬▬	memoryleak (uid126245@gateway/web/irccloud.com/x-dhckjozvllewxaqx) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:31:11	▬▬▶	theodor (~theodor@ppp-2-87-15-202.home.otenet.gr) has joined #ubuntu
+2018-02-16 19:31:20	yakkety1	i cant continue using yaketty ?
+2018-02-16 19:31:37	▬▬▶	chrmhoffmann (~chrmhoffm@christianhoffmann.info) has joined #ubuntu
+2018-02-16 19:32:05	nacc	yakkety1: you can do whatever you want
+2018-02-16 19:32:08	nacc	yakkety1: but it's not supported
+2018-02-16 19:32:29	▬▬▶	kpease (~kpease@72.22.182.166) has joined #ubuntu
+2018-02-16 19:32:38	▬▬▶	daniodkm (~lo@net-5-95-2-251.cust.vodafonedsl.it) has joined #ubuntu
+2018-02-16 19:33:05	▬▬▶	slowpokezzz (~slowpokez@197.0.21.198) has joined #ubuntu
+2018-02-16 19:33:10	▬▬▶	rhitik (~namaste@182.71.134.82) has joined #ubuntu
+2018-02-16 19:33:16	◀▬▬	theodor (~theodor@ppp-2-87-15-202.home.otenet.gr) has quit (Client Quit)
+2018-02-16 19:33:19	▬▬▶	CodexRaptr (~CodexRapt@2a0d:5600:3:9:201:200:0:10e7) has joined #ubuntu
+2018-02-16 19:33:26	--	SimonNL_Afk is now known as SimonNL
+2018-02-16 19:33:47	▬▬▶	dreamon (~dreamon@unaffiliated/dreamon) has joined #ubuntu
+2018-02-16 19:33:55	▬▬▶	neubrand (~neubrand@200116b82badcb01156547adc5c75f4c.dip.versatel-1u1.de) has joined #ubuntu
+2018-02-16 19:34:26	yakkety1	for  what reason old-releases.ubuntu.com is there???
+2018-02-16 19:34:40	◀▬▬	chamaeleon (ch@maeleon.odyssey.network) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:34:42	nacc	yakkety1: what i just told you
+2018-02-16 19:34:49	nacc	yakkety1: to let you upgrade
+2018-02-16 19:35:03	◀▬▬	koffeinfriedhof (~schiggn@ubuntuusers/moderation/koffeinfriedhof) has quit (Remote host closed the connection)
+2018-02-16 19:35:07	◀▬▬	bovo (~bowen@c-73-59-24-204.hsd1.wa.comcast.net) has quit (Quit: Leaving)
+2018-02-16 19:35:11	CarlFK	git clone kernel, make menuconfig, make.   to boot it, do I: make install, update-grub ?
+2018-02-16 19:35:49	◀▬▬	neubrand (~neubrand@200116b82badcb01156547adc5c75f4c.dip.versatel-1u1.de) has left #ubuntu
+2018-02-16 19:36:22	yakkety1	i dont wana upgrade and mess up what is already running on the server but want to install a package
+2018-02-16 19:36:24	CarlFK	im testing a driver, once I report pass/fail I'll re-install ubuntu, so don't worry about the box being unstable
+2018-02-16 19:36:29	◀▬▬	rhitik (~namaste@182.71.134.82) has quit (Remote host closed the connection)
+2018-02-16 19:36:39	▬▬▶	chamaeleon (ch@maeleon.odyssey.network) has joined #ubuntu
+2018-02-16 19:36:46	▬▬▶	usturus (~moi@2a01cb0c00ad9f00606c691f1ef7b11d.ipv6.abo.wanadoo.fr) has joined #ubuntu
+2018-02-16 19:36:49	▬▬▶	rhitik (~namaste@182.71.134.82) has joined #ubuntu
+2018-02-16 19:36:50	◀▬▬	eroux (~eroux@196-210-166-153.dynamic.isadsl.co.za) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:36:55	CarlFK	yakkety1: no one wants to mess up what is already running ;)
+2018-02-16 19:37:11	nacc	CarlFK: you're building the upstrea kernel?
+2018-02-16 19:37:20	yakkety1	so why saying to upgrade?
+2018-02-16 19:37:22	nacc	CarlFK: iirc `make install` should invoke update-grub for you
+2018-02-16 19:37:26	nacc	yakkety1: you are unsupported
+2018-02-16 19:37:35	nacc	yakkety1: you hve not received any security or bugfix updates in close to a year
+2018-02-16 19:37:38	nacc	yakkety1: think about that
+2018-02-16 19:37:38	CarlFK	nacc: yes - this: https://github.com/shenki/linux/tree/vizzini-4.13
+2018-02-16 19:37:54	◀▬▬	fedorafan (~fedorafan@unaffiliated/fedorafan) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:38:03	nacc	CarlFK: ah ok
+2018-02-16 19:38:07	◀▬▬	usturus (~moi@2a01cb0c00ad9f00606c691f1ef7b11d.ipv6.abo.wanadoo.fr) has quit (Client Quit)
+2018-02-16 19:38:10	yakkety1	i dont want security release just want to install a package
+2018-02-16 19:38:13	CarlFK	nacc: thanks.
+2018-02-16 19:38:27	nacc	yakkety1: sorry, you're not listening or don't understand
+2018-02-16 19:38:37	◀▬▬	pos (~pos@gateway/tor-sasl/pos) has quit (Remote host closed the connection)
+2018-02-16 19:38:55	▬▬▶	goyou (~hugo@51.16.136.77.rev.sfr.net) has joined #ubuntu
+2018-02-16 19:39:05	▬▬▶	pos (~pos@gateway/tor-sasl/pos) has joined #ubuntu
+2018-02-16 19:39:08	◀▬▬	untoreh (~untoreh@host120-173-dynamic.21-79-r.retail.telecomitalia.it) has quit (Read error: Connection reset by peer)
+2018-02-16 19:39:18	◀▬▬	rhitik (~namaste@182.71.134.82) has quit (Client Quit)
+2018-02-16 19:39:29	CarlFK	yakkety1: I know what you want, I have been there. the reality is: too bad.
+2018-02-16 19:39:32	▬▬▶	rhitik (~namaste@182.71.134.82) has joined #ubuntu
+2018-02-16 19:39:35	◀▬▬	Guest19046 (~gene@CPEac202e7637f3-CMac202e7637f0.cpe.net.cable.rogers.com) has quit (Ping timeout: 255 seconds)
+2018-02-16 19:39:40	▬▬▶	tomlukeywood (~quassel@host-92-19-232-58.static.as13285.net) has joined #ubuntu
+2018-02-16 19:39:53	nacc	yakkety1: you should stay on an lts if you don't want to hit this
+2018-02-16 19:40:15	◀▬▬	slyrobot (c4370202@gateway/web/freenode/ip.196.55.2.2) has quit (Ping timeout: 260 seconds)
+2018-02-16 19:40:40	▬▬▶	`Cam (~textual@ip-120-95-192-203.static.pipenetworks.com) has joined #ubuntu
+2018-02-16 19:40:43	yakkety1	hmm
+2018-02-16 19:40:51	◀▬▬	goyou (~hugo@51.16.136.77.rev.sfr.net) has quit (Client Quit)
+2018-02-16 19:41:01	◀▬▬	srv_twry (~srv_twry@14.139.194.24) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:41:25	▬▬▶	untoreh (~untoreh@host120-173-dynamic.21-79-r.retail.telecomitalia.it) has joined #ubuntu
+2018-02-16 19:41:28	◀▬▬	retoaded (~retoaded@c-71-63-16-174.hsd1.va.comcast.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:41:31	▬▬▶	wiiguy (~fake@unaffiliated/wiiguy) has joined #ubuntu
+2018-02-16 19:42:11	◀▬▬	wiiguy (~fake@unaffiliated/wiiguy) has quit (Client Quit)
+2018-02-16 19:42:20	yakkety1	is it possible to downgrade to 16.04 ?
+2018-02-16 19:42:27	▬▬▶	effortDee (~smuxi@67.57.208.46.dyn.plus.net) has joined #ubuntu
+2018-02-16 19:42:51	yakkety1	i dont know why my vps provider offering this short term os
+2018-02-16 19:42:52	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:42:53	nacc	yakkety1: no, you need to reinstall
+2018-02-16 19:43:04	tomreyn	!downgrade
+2018-02-16 19:43:04	ubottu	Attempting to downgrade to an older Ubuntu version is explicitly not supported and may break your system.
+2018-02-16 19:43:09	▬▬▶	DaGoaty (~dagoaty@host86-128-250-129.range86-128.btcentralplus.com) has joined #ubuntu
+2018-02-16 19:43:10	◀▬▬	daniodkm (~lo@net-5-95-2-251.cust.vodafonedsl.it) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:43:18	▬▬▶	bytetrial (~guest@62.147.242.8) has joined #ubuntu
+2018-02-16 19:43:22	▬▬▶	_Dbug_ (~Dbug@host-37-191-189-68.lynet.no) has joined #ubuntu
+2018-02-16 19:43:47	CarlFK	yakkety1: the 'best' way to get from where you are to where you want to be is upgrade.
+2018-02-16 19:44:22	CarlFK	yakkety1: anything else is asking for more problems and en the end you will still be in an undesirable state.
+2018-02-16 19:44:34	◀▬▬	pauljw (~pauljw@184.53.32.152) has quit (Quit: Leaving)
+2018-02-16 19:44:41	▬▬▶	thierry63 (~smuxi@41.141.217.9) has joined #ubuntu
+2018-02-16 19:44:45	▬▬▶	pingaan (~tjohej@c-261972d5.17-71-64736c10.cust.bredbandsbolaget.se) has joined #ubuntu
+2018-02-16 19:44:48	◀▬▬	bytetrial (~guest@62.147.242.8) has quit (Remote host closed the connection)
+2018-02-16 19:44:52	▬▬▶	wgma (~wgma00@138.51.60.94) has joined #ubuntu
+2018-02-16 19:45:24	◀▬▬	thierry63 (~smuxi@41.141.217.9) has quit (Remote host closed the connection)
+2018-02-16 19:45:32	▬▬▶	energizer (~energizer@unaffiliated/energizer) has joined #ubuntu
+2018-02-16 19:45:41	▬▬▶	jstein_ (~jstein@gentoo/developer/jstein) has joined #ubuntu
+2018-02-16 19:45:51	--	jstein_ is now known as jstein
+2018-02-16 19:45:55	yakkety1	ok
+2018-02-16 19:46:23	◀▬▬	rhitik (~namaste@182.71.134.82) has quit (Quit: Ex-Chat)
+2018-02-16 19:46:32	▬▬▶	junktext_ (junktext@fsf/member/junktext) has joined #ubuntu
+2018-02-16 19:46:33	▬▬▶	wafflejock (~wafflejoc@12.106.136.114) has joined #ubuntu
+2018-02-16 19:46:36	▬▬▶	zarzar (~zarzar@184.75.233.58) has joined #ubuntu
+2018-02-16 19:46:50	▬▬▶	rhitik (~namaste@182.71.134.82) has joined #ubuntu
+2018-02-16 19:47:31	▬▬▶	EdBoi (~nidzms@51.39.6.36) has joined #ubuntu
+2018-02-16 19:48:04	CarlFK	sudo make install ... http://paste.ubuntu.com/p/TmwQDR2TSR/  "Error! Your kernel headers for kernel 4.13.0-rc1+ cannot be found. ... or use the --kernelsourcedir option to tell DKMS where it's located"
+2018-02-16 19:48:30	CarlFK	but I am in the source dir - shouldn't it know where it is?
+2018-02-16 19:48:38	nacc	CarlFK: are you running some custom kernel alrady?
+2018-02-16 19:48:39	▬▬▶	NimeshNeema (uid2689@gateway/web/irccloud.com/x-rzhpwgmcxafqaalk) has joined #ubuntu
+2018-02-16 19:48:46	◀▬▬	vush (~v4sh@2a02:908:1398:1e00:feaa:14ff:fe31:74c) has quit (Quit: Leaving)
+2018-02-16 19:48:53	nacc	CarlFK: it's the post-hook in ubuntu trying to dkms build modules for your kernel
+2018-02-16 19:49:05	CarlFK	nacc: no - stock xenial
+2018-02-16 19:49:29	◀▬▬	DaGoaty (~dagoaty@host86-128-250-129.range86-128.btcentralplus.com) has quit (Remote host closed the connection)
+2018-02-16 19:49:31	◀▬▬	Pinkamena_D (~Pinkamena@69.136.102.83) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:49:35	nacc	CarlFK: right, it may not matter, if you don't need those dkms drivers
+2018-02-16 19:49:47	nacc	CarlFK: it's a side-effect of building a non-ubuntu kernel on ubuntu
+2018-02-16 19:50:00	▬▬▶	null00 (~null00@104.179.163.250) has joined #ubuntu
+2018-02-16 19:50:01	CarlFK	thanks - that was my guess.
+2018-02-16 19:51:08	◀▬▬	DenBeiren (~quassel@78-20-238-68.access.telenet.be) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:51:22	◀▬▬	`Cam (~textual@ip-120-95-192-203.static.pipenetworks.com) has quit (Quit: ZZZ)
+2018-02-16 19:51:32	▬▬▶	DenBeiren (~quassel@78-20-238-68.access.telenet.be) has joined #ubuntu
+2018-02-16 19:51:46	ChunkzZ	how can I test firefox quantam vs chromium on ubuntu 16?
+2018-02-16 19:51:55	ChunkzZ	like, the differences in speed etc.
+2018-02-16 19:52:11	▬▬▶	oerheks (~oerheks@ubuntu/member/oerheks) has joined #ubuntu
+2018-02-16 19:52:40	▬▬▶	retoaded (~retoaded@c-71-63-16-174.hsd1.va.comcast.net) has joined #ubuntu
+2018-02-16 19:52:54	▬▬▶	shredding (~shredding@ip5f5bd7c9.dynamic.kabel-deutschland.de) has joined #ubuntu
+2018-02-16 19:54:03	▬▬▶	TiLTTaLk (~TiLT@174-155-6-123.pools.spcsdns.net) has joined #ubuntu
+2018-02-16 19:54:29	◀▬▬	TiLTTaLk (~TiLT@174-155-6-123.pools.spcsdns.net) has quit (Client Quit)
+2018-02-16 19:54:32	lordcirth_work	donofrio, 'man dpkg-deb'
+2018-02-16 19:54:53	▬▬▶	nuno_nunes (~PC@89-180-108-126.net.novis.pt) has joined #ubuntu
+2018-02-16 19:55:45	donofrio	lordcirth_work, ok
+2018-02-16 19:56:13	▬▬▶	FastZ (~FastZ@173-120-249-250.pools.spcsdns.net) has joined #ubuntu
+2018-02-16 19:57:25	◀▬▬	slowpokezzz (~slowpokez@197.0.21.198) has quit (K-Lined)
+2018-02-16 19:59:01	▬▬▶	pauljw (~pauljw@184.53.32.152) has joined #ubuntu
+2018-02-16 19:59:17	▬▬▶	ioria (~ioria2_@host44-176-dynamic.57-82-r.retail.telecomitalia.it) has joined #ubuntu
+2018-02-16 19:59:26	▬▬▶	srv_twry (~srv_twry@14.139.194.24) has joined #ubuntu
+2018-02-16 19:59:34	◀▬▬	kenrin (~kenrin@23.226.133.70) has quit (Remote host closed the connection)
+2018-02-16 20:00:01	◀▬▬	rimd2r (~rimd2r@tm.rimd2r.info) has quit (Quit: Tiarra 0.1+svn-39209M: SIGTERM received; exit)
+2018-02-16 20:00:42	▬▬▶	renn0xtk9 (~max@ip-37-201-4-244.hsi13.unitymediagroup.de) has joined #ubuntu
+2018-02-16 20:00:46	▬▬▶	Tin_man (~Scare_cro@199.116.196.98) has joined #ubuntu
+2018-02-16 20:00:47	◀▬▬	Tin_man (~Scare_cro@199.116.196.98) has quit (Changing host)
+2018-02-16 20:00:47	▬▬▶	Tin_man (~Scare_cro@unaffiliated/tin-man/x-0046760) has joined #ubuntu
+2018-02-16 20:00:57	◀▬▬	pingaan (~tjohej@c-261972d5.17-71-64736c10.cust.bredbandsbolaget.se) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:00:58	▬▬▶	kenrin (~kenrin@23.226.133.72) has joined #ubuntu
+2018-02-16 20:01:09	▬▬▶	rimd2r (~rimd2r@tm.rimd2r.info) has joined #ubuntu
+2018-02-16 20:01:50	▬▬▶	fedorafan (~fedorafan@unaffiliated/fedorafan) has joined #ubuntu
+2018-02-16 20:02:10	virtuosoj	I am looking for a pomodoro timer app that plays an audible alarm when it's finished with the pomodoro - because I will be using the timer while doing off-the-computer tasks such as reading or practicing guitar.  Anyone here know of a good Ubuntu app for this?
+2018-02-16 20:02:10	◀▬▬	virtuosoj (~virtuosoj@2605:6000:eed9:2800:39b2:eea0:f3e2:ef0f) has quit (Remote host closed the connection)
+2018-02-16 20:02:14	◀▬▬	Ubuntivity (~Ubuntivit@37.238.143.23) has quit (Quit: WeeChat 1.4)
+2018-02-16 20:03:04	◀▬▬	Gizmo_Romick (~richard@34-172-58-66.gci.net) has quit (Quit: Konversation terminated!)
+2018-02-16 20:03:31	▬▬▶	Gizmo_Romick (~richard@34-172-58-66.gci.net) has joined #ubuntu
+2018-02-16 20:03:58	oerheks	https://snapcraft.io/pomodoro
+2018-02-16 20:03:59	◀▬▬	null00 (~null00@104.179.163.250) has quit (Quit: WeeChat 1.4)
+2018-02-16 20:04:12	oerheks	oh, gone in 0 seconds
+2018-02-16 20:04:27	◀▬▬	bicha (~bicha@161.105.209.130) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:04:31	▬▬▶	chealy (~chealy@p4FDC422A.dip0.t-ipconnect.de) has joined #ubuntu
+2018-02-16 20:04:39	◀▬▬	narinder (~narinderg@c-98-197-227-153.hsd1.tx.comcast.net) has quit (Quit: This computer has gone to sleep)
+2018-02-16 20:04:58	▬▬▶	Sean_McG (~irc@unaffiliated/sean-mcg/x-5334961) has joined #ubuntu
+2018-02-16 20:05:12	▬▬▶	koffeinfriedhof (~schiggn@ubuntuusers/moderation/koffeinfriedhof) has joined #ubuntu
+2018-02-16 20:05:14	◀▬▬	pos (~pos@gateway/tor-sasl/pos) has quit (Quit: pos)
+2018-02-16 20:05:42	▬▬▶	narinder (~narinderg@c-98-197-227-153.hsd1.tx.comcast.net) has joined #ubuntu
+2018-02-16 20:05:42	Sean_McG	hi #ubuntu
+2018-02-16 20:05:58	▬▬▶	kneeki (~kneeki@c-76-28-253-109.hsd1.wa.comcast.net) has joined #ubuntu
+2018-02-16 20:06:01	▬▬▶	ravi (~smuxi@123.201.83.10) has joined #ubuntu
+2018-02-16 20:06:06	◀▬▬	shredding (~shredding@ip5f5bd7c9.dynamic.kabel-deutschland.de) has quit (Remote host closed the connection)
+2018-02-16 20:06:08	◀▬▬	retoaded (~retoaded@c-71-63-16-174.hsd1.va.comcast.net) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:06:21	lordcirth_work	Sean_McG, hello.  Did you have a support question?
+2018-02-16 20:06:28	◀▬▬	wgma (~wgma00@138.51.60.94) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:06:37	Sean_McG	I can think of a few, but nothing in particular right now
+2018-02-16 20:07:28	▬▬▶	aditya (~aditya@183.82.135.130) has joined #ubuntu
+2018-02-16 20:07:33	◀▬▬	ravi (~smuxi@123.201.83.10) has quit (Remote host closed the connection)
+2018-02-16 20:07:45	◀▬▬	aditya (~aditya@183.82.135.130) has quit (Client Quit)
+2018-02-16 20:07:56	▬▬▶	pedro__ (~smuxi@87.13.74.145) has joined #ubuntu
+2018-02-16 20:08:23	◀▬▬	backnforth (~backnfort@142.167.50.19) has quit (Ping timeout: 265 seconds)
+2018-02-16 20:09:01	◀▬▬	pauljw (~pauljw@184.53.32.152) has quit (Quit: Leaving)
+2018-02-16 20:09:54	◀▬▬	pedro__ (~smuxi@87.13.74.145) has quit (Read error: Connection reset by peer)
+2018-02-16 20:09:59	▬▬▶	thiras (~thiras@unaffiliated/thiras) has joined #ubuntu
+2018-02-16 20:10:01	▬▬▶	webuser5224 (~webuser52@2001:4ba0:cafe:169f::1) has joined #ubuntu
+2018-02-16 20:10:20	▬▬▶	pauljw (~pauljw@184.53.32.152) has joined #ubuntu
+2018-02-16 20:10:24	▬▬▶	ravi (~ravi@123.201.83.10) has joined #ubuntu
+2018-02-16 20:10:36	◀▬▬	Sean_McG (~irc@unaffiliated/sean-mcg/x-5334961) has left #ubuntu
+2018-02-16 20:10:44	ravi	hi
+2018-02-16 20:11:07	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #ubuntu
+2018-02-16 20:11:27	◀▬▬	lmike (~lmike@187.34.163.209) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:11:31	◀▬▬	za1b1tsu (~za1b1tsu@79.112.86.25) has quit (Quit: Leaving)
+2018-02-16 20:11:58	◀▬▬	ravi (~ravi@123.201.83.10) has quit (Client Quit)
+2018-02-16 20:14:05	◀▬▬	yakkety1 (75d8010c@gateway/web/freenode/ip.117.216.1.12) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:14:06	▬▬▶	evert (~evert@2a02:a03f:4ce8:c300:b956:b57:86b2:dcbd) has joined #ubuntu
+2018-02-16 20:15:02	◀▬▬	FastZ (~FastZ@173-120-249-250.pools.spcsdns.net) has quit
+2018-02-16 20:15:21	▬▬▶	sasho199 (4e5a3061@gateway/web/freenode/ip.78.90.48.97) has joined #ubuntu
+2018-02-16 20:15:27	▬▬▶	xangua (uid19036@gateway/web/irccloud.com/x-pfofxpbporfnjeqv) has joined #ubuntu
+2018-02-16 20:15:59	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:52	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 20:18:52	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 20:18:52	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:38
+2018-02-16 20:18:53	--	Channel #ubuntu: 1583 nicks (3 ops, 0 voices, 1580 normals)
+2018-02-16 20:18:54	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 20:18:54	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 20:18:54	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 20:18:54	▬▬▶	zergut (uid221522@taskhive/translator/zergut) has joined #ubuntu
+2018-02-16 20:19:32	brainwash	sasho199: is that a valid syntax?
+2018-02-16 20:19:44	▬▬▶	wiiguy (~fake@unaffiliated/wiiguy) has joined #ubuntu
+2018-02-16 20:19:59	▬▬▶	chris__ (~chris@75-145-29-133-Washington.hfc.comcastbusiness.net) has joined #ubuntu
+2018-02-16 20:20:02	◀▬▬	tieinv (~tieinv@S0106bcee7b6f7560.vf.shawcable.net) has quit (Quit: Gone)
+2018-02-16 20:20:09	◀▬▬	wiiguy (~fake@unaffiliated/wiiguy) has quit (Client Quit)
+2018-02-16 20:20:13	▬▬▶	al2o3-cr (~gr33n7007@unaffiliated/gr33n7007h) has joined #ubuntu
+2018-02-16 20:20:18	▬▬▶	shredding (~shredding@ip5f5bd7c9.dynamic.kabel-deutschland.de) has joined #ubuntu
+2018-02-16 20:20:35	◀▬▬	Mr_Keyser_Soze (~Mr_Keyser@c-69-246-32-17.hsd1.la.comcast.net) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:20:37	sasho199	brainwash: I don't know. It was supposed to be acpi_osi=! "acpi_osi=Windows 2015" but the system freezes with that one. So I changed it back to this one.
+2018-02-16 20:21:00	brainwash	sasho199: mmh. you should tell us which hardware features aren't working for you
+2018-02-16 20:21:08	chris__	Has anyone got alt/tab working correctly in unity on 17? ccsm is completely missing the "grab key" buttons now and doesn't seem to be possible to fix the alt/tab bindings now since tab is not an option
+2018-02-16 20:21:24	brainwash	sasho199: basically the reason why you need a workaround/fix
+2018-02-16 20:21:29	▬▬▶	matt8109 (~matt8109@FXYNQD2-VHB09.LAW.NYU.EDU) has joined #ubuntu
+2018-02-16 20:21:52	▬▬▶	lmike (~lmike@187.34.163.209) has joined #ubuntu
+2018-02-16 20:22:20	sasho199	brainwash: The blotooth and airplane mode are acting very weirdly. They turn on and off normally, but if I press Fn+F2 they suddenly dont react even if I change them with my mouse.
+2018-02-16 20:22:49	sasho199	brainwash: They go back to normal if I restart.
+2018-02-16 20:23:16	▬▬▶	DrWatson (~DrWatson_@tmo-110-150.customers.d1-online.com) has joined #ubuntu
+2018-02-16 20:24:01	sasho199	brainwash: I was following this tutorial, but ir worked partially as you can see from the line, since it was not completed properly: http://iam.tj/prototype/enhancements/Windows-acpi_osi.html
+2018-02-16 20:24:35	◀▬▬	al2o3-cr (~gr33n7007@unaffiliated/gr33n7007h) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:24:45	brainwash	sasho199: and with  acpi_osi=! acpi_osi="Windows 2009"
+2018-02-16 20:24:47	brainwash	sasho199: ?
+2018-02-16 20:24:57	◀▬▬	[MMDC090732] (~quassel@148.27.11.109.rev.sfr.net) has quit (Ping timeout: 264 seconds)
+2018-02-16 20:25:09	sasho199	brainwash: I will try it and I will be right back.
+2018-02-16 20:25:10	◀▬▬	lmike (~lmike@187.34.163.209) has quit (Client Quit)
+2018-02-16 20:25:24	▬▬▶	preyalone (uid21561@gateway/web/irccloud.com/x-nlzkslnkodganohc) has joined #ubuntu
+2018-02-16 20:26:23	◀▬▬	chris__ (~chris@75-145-29-133-Washington.hfc.comcastbusiness.net) has quit (Quit: leaving)
+2018-02-16 20:26:24	▬▬▶	butthead (~butthead@109.95.20.20) has joined #ubuntu
+2018-02-16 20:26:32	butthead	hi
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:26:47	--	butthead is now known as Guest92680
+2018-02-16 20:26:59	▬▬▶	parapan (d9077113@gateway/web/freenode/ip.217.7.113.19) has joined #ubuntu
+2018-02-16 20:27:05	Guest92680	hi
+2018-02-16 20:27:57	◀▬▬	banisterfiend (~banister@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:28:16	◀▬▬	Guest92680 (~butthead@109.95.20.20) has quit (Client Quit)
+2018-02-16 20:28:24	▬▬▶	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has joined #ubuntu
+2018-02-16 20:28:25	▬▬▶	haylon (~quassel@ruby/user/haylon) has joined #ubuntu
+2018-02-16 20:29:27	◀▬▬	multifractal (~multifrac@host-92-3-213-138.as43234.net) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:29:49	◀▬▬	sasho199 (4e5a3061@gateway/web/freenode/ip.78.90.48.97) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:29:51	◀▬▬	G3nka1 (~hubatrix@unaffiliated/hubatrix) has quit (Quit: Leaving)
+2018-02-16 20:30:23	◀▬▬	Silmarilion (~Silmarili@87.116.176.129) has quit (Remote host closed the connection)
+2018-02-16 20:31:31	▬▬▶	sasho199 (4e5a3061@gateway/web/freenode/ip.78.90.48.97) has joined #ubuntu
+2018-02-16 20:32:01	◀▬▬	somepoortech__ (~somepoort@72-0-128-212.static.firstlight.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:32:23	◀▬▬	strive (~strive@unaffiliated/strive/x-8457361) has quit (Ping timeout: 255 seconds)
+2018-02-16 20:32:55	▬▬▶	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has joined #ubuntu
+2018-02-16 20:33:10	sasho199	brainwash: I tried it and it boots, when with Windows 2012 or 2015 it did not. The Bluetooth and airplane interaction is very glitchy, sometimes it does not turn on, sometimes it does not even detect the hardware for the bluetooth. Fn+f2 still makes no sense.
+2018-02-16 20:33:21	▬▬▶	derekz_ (~derekz@rrcs-74-218-9-162.central.biz.rr.com) has joined #ubuntu
+2018-02-16 20:33:23	◀▬▬	dar123 (~dar@107-203-254-117.lightspeed.sntcca.sbcglobal.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:33:29	▬▬▶	rangerdude (~Ranger15@unaffiliated/ranger15) has joined #ubuntu
+2018-02-16 20:33:38	▬▬▶	vlada-ch (~vlada@2a02:1205:c6ab:4c90:39ea:a867:8f0b:182e) has joined #ubuntu
+2018-02-16 20:33:57	◀▬▬	vlada-ch (~vlada@2a02:1205:c6ab:4c90:39ea:a867:8f0b:182e) has quit (Client Quit)
+2018-02-16 20:34:14	▬▬▶	vlada-ch (~vlada@2a02:1205:c6ab:4c90:25d3:7bad:4652:f4b2) has joined #ubuntu
+2018-02-16 20:34:15	◀▬▬	matt8109 (~matt8109@FXYNQD2-VHB09.LAW.NYU.EDU) has quit (Quit: ZZZzzz…)
+2018-02-16 20:34:19	▬▬▶	stepan_ (~smuxi@37.44.22.44) has joined #ubuntu
+2018-02-16 20:34:29	brainwash	sasho199: did you check the system log yet?
+2018-02-16 20:34:38	▬▬▶	charles (~charles@2a01:cb10:8002:c900:89a5:9bb6:1b74:b3f0) has joined #ubuntu
+2018-02-16 20:34:39	◀▬▬	stepan_ (~smuxi@37.44.22.44) has quit (Remote host closed the connection)
+2018-02-16 20:34:39	◀▬▬	eitch (~eitch@231.212.7.85.dynamic.wline.res.cust.swisscom.ch) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:34:43	◀▬▬	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has quit (Remote host closed the connection)
+2018-02-16 20:34:56	sasho199	brainwash: I
+2018-02-16 20:34:59	◀▬▬	CodexRaptr (~CodexRapt@2a0d:5600:3:9:201:200:0:10e7) has quit (Quit: Devil flied)
+2018-02-16 20:35:01	--	charles is now known as Guest8297
+2018-02-16 20:35:10	▬▬▶	CodexRaptr (~CodexRapt@2a0d:5600:3:9:201:200:0:10e7) has joined #ubuntu
+2018-02-16 20:35:18	◀▬▬	suhdood (~Thaelim@2601:281:c502:25d9:5cd:bbd3:d92b:e035) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:35:21	▬▬▶	ALowther (~quassel@70.126.224.181) has joined #ubuntu
+2018-02-16 20:35:22	sasho199	brainwash: I am new to using linux in general, I am not sure what I can do or how. I have not.
+2018-02-16 20:35:28	▬▬▶	^peter^ (~peter@30.0.168.125.sta.wbroadband.net.au) has joined #ubuntu
+2018-02-16 20:35:38	◀▬▬	Guest8297 (~charles@2a01:cb10:8002:c900:89a5:9bb6:1b74:b3f0) has quit (Client Quit)
+2018-02-16 20:35:47	◀▬▬	atol (~sami@88-113-177-31.elisa-laajakaista.fi) has quit (Quit: This computer has gone to sleep)
+2018-02-16 20:36:18	◀▬▬	Ranger15 (Ranger15@gateway/vpn/privateinternetaccess/ranger15) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:36:43	brainwash	sasho199: run "dmesg" in a terminal window
+2018-02-16 20:36:56	▬▬▶	strive (~strive@unaffiliated/strive/x-8457361) has joined #ubuntu
+2018-02-16 20:37:05	◀▬▬	ghostcube (~ghostcube@unaffiliated/ghostcube) has quit (Quit: Verlassend)
+2018-02-16 20:37:25	sasho199	brainwash: Without sudo, right?
+2018-02-16 20:37:27	brainwash	sasho199: the newest lines could related to you triggering the hardware events
+2018-02-16 20:37:27	◀▬▬	cedra (cedra@clustered.space) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:37:31	brainwash	yes, without
+2018-02-16 20:38:00	▬▬▶	rauno (~rauno@81.171.98.171) has joined #ubuntu
+2018-02-16 20:39:09	◀▬▬	ALowther (~quassel@70.126.224.181) has quit (Read error: Connection reset by peer)
+2018-02-16 20:39:10	▬▬▶	suhdood (~Thaelim@2600:380:9914:a394:9857:b7f0:21ce:c792) has joined #ubuntu
+2018-02-16 20:39:18	▬▬▶	ALowther (~quassel@70.126.224.181) has joined #ubuntu
+2018-02-16 20:39:18	sasho199	brainwash: Is this log something that is used widely when troubleshooting in linux?
+2018-02-16 20:39:36	brainwash	yes
+2018-02-16 20:40:07	brainwash	kernel messages are very important when doing some debugging
+2018-02-16 20:41:26	◀▬▬	davr0s (~textual@host86-147-196-14.range86-147.btcentralplus.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2018-02-16 20:41:30	brainwash	sasho199: is that ubuntu 16.04?
+2018-02-16 20:41:49	◀▬▬	Guest11439 (~Numline1@178.62.208.6) has quit (Changing host)
+2018-02-16 20:41:49	▬▬▶	Guest11439 (~Numline1@unaffiliated/numline1) has joined #ubuntu
+2018-02-16 20:41:59	▬▬▶	hfan (~hfan_____@cpe-173-174-124-118.austin.res.rr.com) has joined #ubuntu
+2018-02-16 20:42:08	▬▬▶	cedra (cedra@clustered.space) has joined #ubuntu
+2018-02-16 20:42:21	▬▬▶	_ADN_ (~username@2a02:c7d:5e18:200:313b:971e:76e5:b6) has joined #ubuntu
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:36	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 20:44:36	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 20:44:36	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:36
+2018-02-16 20:44:37	--	Channel #ubuntu: 1582 nicks (3 ops, 0 voices, 1579 normals)
+2018-02-16 20:44:38	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 20:44:38	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 20:44:38	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 20:45:05	sasho199	brainwash: What am I looking for?
+2018-02-16 20:45:07	oerheks	Use journalctl https://askubuntu.com/questions/763638/no-more-boot-logging-since-16-04
+2018-02-16 20:45:07	◀▬▬	neurre (~tsuoranta@62.209.167.43) has quit (Ping timeout: 265 seconds)
+2018-02-16 20:45:09	◀▬▬	mhhh (~mhh@p54875BCA.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:45:30	▬▬▶	sere (~sere@108-220-14-104.lightspeed.rcsntx.sbcglobal.net) has joined #ubuntu
+2018-02-16 20:45:52	▬▬▶	virtuosoj (~virtuosoj@2605:6000:eed9:2800:39b2:eea0:f3e2:ef0f) has joined #ubuntu
+2018-02-16 20:45:58	brainwash	sasho199: like I said, mainly look at the latest line (ideally after you've trigger the buggy hardware events)
+2018-02-16 20:45:59	◀▬▬	eXino_ (~exino@2a01:4f8:140:10b0::2) has left #ubuntu ("Leaving")
+2018-02-16 20:46:25	brainwash	lines that are printed at the bottom
+2018-02-16 20:46:28	--	irc: disconnected from server
+2018-02-16 20:48:26	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #ubuntu
+2018-02-16 20:48:26	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: http://ubottu.com/y/gl | This channel supports Ubuntu and its official flavors; versions 14.04, 16.04, and 17.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: http://ubottu.com/y/irc | Pastes to http://paste.ubuntu.com/ | Download: http://ubottu.com/y/dl | PM spam? /mode yournickhere +R"
+2018-02-16 20:48:26	--	Topic set by dax (dax@freenode/staff/dax) on So, 14 Jan 2018 07:41:36
+2018-02-16 20:48:27	--	Channel #ubuntu: 1580 nicks (3 ops, 0 voices, 1577 normals)
+2018-02-16 20:48:28	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2018-02-16 20:48:28	--	URL for #ubuntu: http://www.ubuntu.com
+2018-02-16 20:48:28	--	Channel created on So, 26 Nov 2006 07:42:41
+2018-02-16 20:48:35	◀▬▬	Lynnwood_ (~Lynnwood@96.36.231.98) has left #ubuntu ("Textual IRC Client: www.textualapp.com")
+2018-02-16 20:48:52	sasho199	brainwash: I get these 2 lines: [ 1278.381542] IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready [ 1278.436924] IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+2018-02-16 20:49:06	▬▬▶	pingaan (~tjohej@c-261972d5.17-71-64736c10.cust.bredbandsbolaget.se) has joined #ubuntu
+2018-02-16 20:50:01	sasho199	brainwash: I think my laptop has an complatibilty issue with linux, at least thats what TJ- told me some days ago, he is the creator of that tutorial  followed.
+2018-02-16 20:50:34	brainwash	sasho199: so, testing with 18.04 may be a good idea
+2018-02-16 20:50:49	▬▬▶	matt8109 (~matt8109@FXYNQD2-VHB09.LAW.NYU.EDU) has joined #ubuntu
+2018-02-16 20:50:49	▬▬▶	blake (~blake@141-126-037-165.dhcp.chtrptr.net) has joined #ubuntu
+2018-02-16 20:51:03	▬▬▶	Mark_744 (~smuxi@host55-50-dynamic.19-79-r.retail.telecomitalia.it) has joined #ubuntu
+2018-02-16 20:51:12	--	blake is now known as Guest45987
+2018-02-16 20:51:33	sasho199	brainwash: Since this is a fresh install I could also just install it. I dont have anything on this computer right now.
+2018-02-16 20:51:39	◀▬▬	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:52:04	brainwash	sasho199: you could, but 18.04 is still a dev release
+2018-02-16 20:52:10	◀▬▬	beefjoe (~beefjoe@unaffiliated/beefjoe) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:52:23	sasho199	brainwash: What does that mean?
+2018-02-16 20:52:30	nacc	brainwash: sasho199: iiuc, TJ's workaround is for buggy firwmare
+2018-02-16 20:52:36	nacc	so it's unlikely that 18.04 will fix it
+2018-02-16 20:52:39	▬▬▶	al2o3-cr (~gr33n7007@unaffiliated/gr33n7007h) has joined #ubuntu
+2018-02-16 20:52:43	◀▬▬	Mark_744 (~smuxi@host55-50-dynamic.19-79-r.retail.telecomitalia.it) has quit (Remote host closed the connection)
+2018-02-16 20:52:49	▬▬▶	foul_owl (~foul_owl@75-172-106-114.tukw.qwest.net) has joined #ubuntu
+2018-02-16 20:52:59	brainwash	sasho199: it receives many package updates, and many of them are not tested at all yet
+2018-02-16 20:53:29	brainwash	sasho199: thing could just break (software wise)
+2018-02-16 20:54:51	brainwash	nacc: at least it's easy to test
+2018-02-16 20:55:03	sasho199	nacc: brainwash: I think thats what he suspected. This is really strange since my laptop is brand new.
+2018-02-16 20:55:22	brainwash	18.04 comes with a newer kernel version
+2018-02-16 20:55:24	nacc	brainwash: yeah, i'd just do a live usb
+2018-02-16 20:55:29	▬▬▶	atr3y0 (~Osvaldo@conm200-116-96-31.epm.net.co) has joined #ubuntu
+2018-02-16 20:55:30	▬▬▶	rauno (~rauno@176.67.84.162) has joined #ubuntu
+2018-02-16 20:55:36	nacc	sasho199: which makes it actually less likely to be tested with linux
+2018-02-16 20:55:37	brainwash	exactly
+2018-02-16 20:55:54	◀▬▬	rangerdude (~Ranger15@unaffiliated/ranger15) has quit (Quit: Leaving)
+2018-02-16 20:56:12	▬▬▶	tvw (~tv@2a04:4540:6b03:8501:54b1:91b5:e482:2de3) has joined #ubuntu
+2018-02-16 20:56:14	◀▬▬	gvhoecke_ (~admin@109.130.60.9) has quit (Read error: Connection reset by peer)
+2018-02-16 20:56:15	▬▬▶	Ranger15 (~Ranger15@unaffiliated/ranger15) has joined #ubuntu
+2018-02-16 20:56:42	▬▬▶	DevAntoine (~DevAntoin@46.29.126.206) has joined #ubuntu
+2018-02-16 20:56:46	sasho199	nacc: brainwash: You kinda lost me there, can you explain what you mean?
+2018-02-16 20:57:04	nacc	sasho199: brand new hardware, unless the vendor does it, is often not tested with linux
+2018-02-16 20:57:05	oerheks	sasho199, this guide says: "acpi_osi= acpi_backlight=native" > https://medium.com/cognitio/install-linux-mint-18-2-on-asus-x550vx-bebf3db51afb   ### and this one just gives: "nouveau.modeset=0" https://askubuntu.com/questions/820423/cannot-install-ubuntu-16-04-lts-on-asus-rog-laptop
+2018-02-16 20:57:29	oerheks	last one *after installing Nvidia driver
+2018-02-16 20:57:39	▬▬▶	PanMezjacz (~pan@adoe210.neoplus.adsl.tpnet.pl) has joined #ubuntu
+2018-02-16 20:57:46	▬▬▶	DocHopper (~DocHopper@unaffiliated/dochopper) has joined #ubuntu
+2018-02-16 20:57:58	▬▬▶	CookieM (~tomek@affd199.neoplus.adsl.tpnet.pl) has joined #ubuntu
+2018-02-16 20:58:24	▬▬▶	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has joined #ubuntu
+2018-02-16 20:58:41	--	irc: disconnected from server

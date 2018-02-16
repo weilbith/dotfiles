@@ -1,0 +1,314 @@
+2018-02-16 17:54:38	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 17:54:38	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 17:54:38	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:30
+2018-02-16 17:54:38	--	Channel #Node.js: 929 nicks (7 ops, 0 voices, 922 normals)
+2018-02-16 17:54:42	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 17:54:42	--	URL for #node.js: http://nodejs.org/
+2018-02-16 17:54:43	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 17:55:40	--	irc: disconnected from server
+2018-02-16 17:57:06	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 17:57:06	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 17:57:06	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:30
+2018-02-16 17:57:06	--	Channel #Node.js: 930 nicks (7 ops, 0 voices, 923 normals)
+2018-02-16 17:57:07	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 17:57:07	--	URL for #node.js: http://nodejs.org/
+2018-02-16 17:57:08	▬▬▶	sterns (~matt@199.244.108.87) has joined #Node.js
+2018-02-16 17:57:11	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 17:58:06	▬▬▶	notewell (~textual@82.197.136.118) has joined #Node.js
+2018-02-16 17:58:23	◀▬▬	mack_ooo_ (~mack@2.236.101.114) has quit (Read error: Connection reset by peer)
+2018-02-16 17:59:25	▬▬▶	cliq (~cliq@85-23-74-41.bb.dnainternet.fi) has joined #Node.js
+2018-02-16 18:00:36	◀▬▬	coot (~coot@plutocluster.cavehill.uwi.edu) has quit (Ping timeout: 256 seconds)
+2018-02-16 18:01:31	--	irc: disconnected from server
+2018-02-16 18:03:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 18:03:19	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 18:03:19	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:30
+2018-02-16 18:03:19	--	Channel #Node.js: 930 nicks (7 ops, 0 voices, 923 normals)
+2018-02-16 18:03:20	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 18:03:20	--	URL for #node.js: http://nodejs.org/
+2018-02-16 18:03:25	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 18:07:54	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 18:07:54	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:33
+2018-02-16 18:07:54	--	Channel #Node.js: 930 nicks (7 ops, 0 voices, 923 normals)
+2018-02-16 18:07:55	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 18:07:55	--	URL for #node.js: http://nodejs.org/
+2018-02-16 18:08:01	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 18:10:02	jaawerth	the main resource consideration is that all garbage-collected languages generally need more memory since you can't easily optimize how or when reserved memory is released
+2018-02-16 18:10:47	▬▬▶	wsieroci (~wsieroci@89-64-0-69.dynamic.chello.pl) has joined #Node.js
+2018-02-16 18:10:51	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #Node.js
+2018-02-16 18:11:09	▬▬▶	roomcayz (~roomcayz@83.175.146.185.koba.pl) has joined #Node.js
+2018-02-16 18:11:49	--	irc: disconnected from server
+2018-02-16 18:13:18	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 18:13:18	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 18:13:18	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:30
+2018-02-16 18:13:18	--	Channel #Node.js: 934 nicks (7 ops, 0 voices, 927 normals)
+2018-02-16 18:13:19	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 18:13:19	--	URL for #node.js: http://nodejs.org/
+2018-02-16 18:13:24	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 18:13:35	--	irc: disconnected from server
+2018-02-16 19:13:03	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 19:13:03	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 19:13:03	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:30
+2018-02-16 19:13:03	--	Channel #Node.js: 934 nicks (7 ops, 0 voices, 927 normals)
+2018-02-16 19:13:07	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 19:13:07	--	URL for #node.js: http://nodejs.org/
+2018-02-16 19:13:07	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 19:13:59	◀▬▬	ShekharReddy (uid132367@gateway/web/irccloud.com/x-zmhzywooskwktmer) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:14:23	▬▬▶	kfoonamalik (~kfoonamal@208.93.244.250) has joined #Node.js
+2018-02-16 19:15:24	◀▬▬	linocisco (~tommy@116.206.138.82) has quit (Remote host closed the connection)
+2018-02-16 19:15:57	▬▬▶	kidnextdoor (~igor@unaffiliated/imaginarius) has joined #Node.js
+2018-02-16 19:16:28	kidnextdoor	hi
+2018-02-16 19:18:04	▬▬▶	coot (~coot@plutocluster.cavehill.uwi.edu) has joined #Node.js
+2018-02-16 19:22:49	▬▬▶	texinwien_ (~texinwien@46.125.249.83) has joined #Node.js
+2018-02-16 19:23:07	▬▬▶	WebertRLZ (~WebertRLZ@187.104.21.148) has joined #Node.js
+2018-02-16 19:23:18	▬▬▶	halil (~halil@unaffiliated/halil) has joined #Node.js
+2018-02-16 19:23:19	▬▬▶	eshortis (~eshortis@rrcs-64-183-7-2.west.biz.rr.com) has joined #Node.js
+2018-02-16 19:24:17	▬▬▶	Keanu73 (~Keanu73@2ProIntl/User/Geek/Keanu73) has joined #Node.js
+2018-02-16 19:24:31	◀▬▬	eshortis (~eshortis@rrcs-64-183-7-2.west.biz.rr.com) has quit (Remote host closed the connection)
+2018-02-16 19:24:47	▬▬▶	eshortis (~eshortis@rrcs-64-183-7-2.west.biz.rr.com) has joined #Node.js
+2018-02-16 19:25:32	▬▬▶	soee (~soee@afoh52.neoplus.adsl.tpnet.pl) has joined #Node.js
+2018-02-16 19:26:38	◀▬▬	jarco_ (~jarco@37.230.124.83) has quit (Remote host closed the connection)
+2018-02-16 19:27:15	◀▬▬	texinwien (~texinwien@78.137.157.66) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:29:07	--	kidnextdoor is now known as badasspissedkid
+2018-02-16 19:29:52	--	badasspissedkid is now known as kidnextdoor
+2018-02-16 19:31:23	◀▬▬	leptone (~leptone@4.7.12.50) has quit (Remote host closed the connection)
+2018-02-16 19:33:44	◀▬▬	tlent (~t@pool-108-54-149-188.nycmny.fios.verizon.net) has quit (Quit: Lost terminal)
+2018-02-16 19:34:17	◀▬▬	ahmed_elgabri (~ahmedelga@2a02:a441:9f5:1:b992:b8fa:c599:ef98) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:37:33	▬▬▶	chargen_ (~chargen@196.82.21.95.dynamic.jazztel.es) has joined #Node.js
+2018-02-16 19:39:55	◀▬▬	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has quit (Remote host closed the connection)
+2018-02-16 19:40:17	▬▬▶	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has joined #Node.js
+2018-02-16 19:42:40	◀▬▬	chargen_ (~chargen@196.82.21.95.dynamic.jazztel.es) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:42:52	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:43:31	▬▬▶	texinwien (~texinwien@46.125.249.83) has joined #Node.js
+2018-02-16 19:43:47	▬▬▶	VanceCole (40b8931e@gateway/web/freenode/ip.64.184.147.30) has joined #Node.js
+2018-02-16 19:44:21	▬▬▶	Laptop_mini (~laptopmin@199-83-220-238.PUBLIC.monkeybrains.net) has joined #Node.js
+2018-02-16 19:45:21	◀▬▬	coot (~coot@plutocluster.cavehill.uwi.edu) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:46:06	▬▬▶	YungMoonHodler_ (~me@2a02:810c:c7c0:1965:d43a:fe10:9c5f:c89c) has joined #Node.js
+2018-02-16 19:46:06	◀▬▬	YungMoonHodler_ (~me@2a02:810c:c7c0:1965:d43a:fe10:9c5f:c89c) has quit (Changing host)
+2018-02-16 19:46:06	▬▬▶	YungMoonHodler_ (~me@unaffiliated/boscop) has joined #Node.js
+2018-02-16 19:46:33	▬▬▶	wafflejock (~wafflejoc@12.106.136.114) has joined #Node.js
+2018-02-16 19:46:42	▬▬▶	daveylib (5304495c@gateway/web/freenode/ip.83.4.73.92) has joined #Node.js
+2018-02-16 19:47:05	◀▬▬	texinwien_ (~texinwien@46.125.249.83) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:48:20	▬▬▶	sergey (~sergey@212.115.245.19) has joined #Node.js
+2018-02-16 19:49:04	▬▬▶	JosDzG (~Thunderbi@189.195.156.226) has joined #Node.js
+2018-02-16 19:49:24	◀▬▬	YungMoonHodler (~me@unaffiliated/boscop) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:50:41	▬▬▶	darkSeid (~textual@2a02:c7d:281c:e200:9957:7592:f38b:8e8c) has joined #Node.js
+2018-02-16 19:50:57	daveylib	Hey guys! Please take a moment to look at this fiddle: https://jsfiddle.net/yeqaute3/ It's actually example from MDN web docs with added only one line of code (the last one), but it will help me to explain my problem to you.
+2018-02-16 19:51:51	▬▬▶	komali2 (~calebjay@c-98-207-251-82.hsd1.ca.comcast.net) has joined #Node.js
+2018-02-16 19:52:18	VanceCole	daveylib: whats the problem? looks like it works as expected
+2018-02-16 19:53:01	daveylib	Inside asyncCall() function I'm connecting to the API server, but in a place where now there is "Fuck" I need to have data, which I downloaded in the function.
+2018-02-16 19:53:09	◀▬▬	Franckapik (~franckapi@181.6.224.188.rev.sfr.net) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:53:25	▬▬▶	Thyri (~thyriaen@x55b319ef.dyn.telefonica.de) has joined #Node.js
+2018-02-16 19:53:36	daveylib	That's why I'm using blocking sync-request node.js module (https://www.npmjs.com/package/sync-request)
+2018-02-16 19:53:43	VanceCole	Well you are using an async call, so the data won't be available until the callback returns
+2018-02-16 19:54:00	daveylib	Yeah, you're right.
+2018-02-16 19:54:50	daveylib	Just tell me first whether my idea for the application is correct. Maybe can I do it differently?
+2018-02-16 19:54:56	VanceCole	https://jsfiddle.net/yeqaute3/1/
+2018-02-16 19:54:57	◀▬▬	darutoko (~rakudo@37.21.220.55) has quit (Quit: Any sufficiently advanced technology is indistinguishable from magic. (Arthur C. Clarke))
+2018-02-16 19:55:01	VanceCole	do something like that
+2018-02-16 19:55:10	◀▬▬	JosDzG (~Thunderbi@189.195.156.226) has quit (Quit: JosDzG)
+2018-02-16 19:55:22	◀▬▬	eckhardt (~eckhardt@ruby/jackass) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 19:55:49	▬▬▶	JosDzG (~Thunderbi@189.195.156.226) has joined #Node.js
+2018-02-16 19:56:58	▬▬▶	InterAl (~InterAl@ec2-34-207-213-0.compute-1.amazonaws.com) has joined #Node.js
+2018-02-16 19:57:00	◀▬▬	Thyriaen (~thyriaen@x55b56da6.dyn.telefonica.de) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:57:07	◀▬▬	notewell (~textual@82.197.136.118) has quit (Quit: My Mac Pro has gone to sleep. ZZZzzz…)
+2018-02-16 19:57:12	daveylib	Okay, it's a good idea, but ... Does it make any difference when I'm creating react app?
+2018-02-16 19:58:08	▬▬▶	zx225 (~zx225@greenflea.ipglobal.net) has joined #Node.js
+2018-02-16 19:58:22	VanceCole	Well this is like async/promise architecture 101, you should read and understand how async code works in general before trying to implement into an app
+2018-02-16 19:59:00	VanceCole	But there is nothing wrong with using a promise approach in any framework, such as React, in fact it is the way you should do things
+2018-02-16 19:59:29	◀▬▬	b3rnd (~b3rnd@pD9EC2925.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2018-02-16 19:59:42	VanceCole	For example, if you made that function with a non async approach, your entire react app would freeze for 2 seconds while awaiting the return
+2018-02-16 19:59:43	▬▬▶	Bendr (~Bendr@unaffiliated/innocent99) has joined #Node.js
+2018-02-16 20:00:39	daveylib	Yeah, it will freeze, but ... There is nothing to show when there are no data downloaded from a few different servers :D
+2018-02-16 20:00:55	cannap	a loading gif
+2018-02-16 20:00:56	cannap	:P
+2018-02-16 20:01:11	doodadjs	There are other requests
+2018-02-16 20:01:12	VanceCole	Well you may not have anything your app wants to do, but the user might have other ideas, f.x. clicking on buttons
+2018-02-16 20:01:20	cannap	put them in a promise
+2018-02-16 20:01:36	daveylib	Yeah, 'a loading gif' ...
+2018-02-16 20:01:48	VanceCole	You should basically never do anything in a blocking sync call unless it is like super super important that literally everything else stops until it finishes
+2018-02-16 20:02:27	daveylib	If I still use my code I won't actually show a loading gif for users. Am I right?
+2018-02-16 20:02:29	◀▬▬	darkSeid (~textual@2a02:c7d:281c:e200:9957:7592:f38b:8e8c) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 20:03:11	VanceCole	you would have to implement one if you wanted it
+2018-02-16 20:03:18	◀▬▬	Thyri (~thyriaen@x55b319ef.dyn.telefonica.de) has quit (Remote host closed the connection)
+2018-02-16 20:03:33	▬▬▶	Thyriaen (~thyriaen@x55b319ef.dyn.telefonica.de) has joined #Node.js
+2018-02-16 20:04:15	cannap	i just talk i dont know whats the problem :è
+2018-02-16 20:04:43	daveylib	There is no problem now, because I must rewrite my code :D
+2018-02-16 20:05:41	▬▬▶	^esc (~esc-ape@77.119.129.85.wireless.dyn.drei.com) has joined #Node.js
+2018-02-16 20:05:44	daveylib	But let's imagine situation when I show a loading gif to users and then download data from a server (using my blocking code). The gif will freeze?
+2018-02-16 20:05:45	cannap	wait i have a friend which had some problem he also telled me to use sync request
+2018-02-16 20:05:49	cannap	but i forgot why
+2018-02-16 20:06:02	cannap	no
+2018-02-16 20:06:16	cannap	the gif was a joke..
+2018-02-16 20:06:26	daveylib	:D
+2018-02-16 20:06:32	cannap	blocking menas not the whole thing is frozen
+2018-02-16 20:06:40	cannap	but the next step in js
+2018-02-16 20:07:01	cannap	you use sync request now you want to show alert(''fefef')
+2018-02-16 20:07:10	cannap	the alert will shown after the sync stuff
+2018-02-16 20:07:58	◀▬▬	lpin (~textual@212-124-190-143.v4.ngi.it) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 20:08:01	▬▬▶	ahmed_elgabri (~ahmedelga@2a02:a441:9f5:1:b992:b8fa:c599:ef98) has joined #Node.js
+2018-02-16 20:08:10	daveylib	yea, of course. I understand
+2018-02-16 20:08:17	▬▬▶	chargen_ (~chargen@196.82.21.95.dynamic.jazztel.es) has joined #Node.js
+2018-02-16 20:08:18	▬▬▶	knx (~lol@unaffiliated/knx) has joined #Node.js
+2018-02-16 20:08:39	daveylib	I just must try something in my code now
+2018-02-16 20:09:21	cannap	show code
+2018-02-16 20:09:36	knx	is it possible to format a string stored in a variable using nodejs? the equivalent in python is using format() like str = "Hi {name}"; str.format("John") -> "Hi John"
+2018-02-16 20:09:54	cannap	string templates
+2018-02-16 20:10:26	cannap	const stored = 'John' const output = `Hi, ${stored}`
+2018-02-16 20:10:29	daveylib	cannap: it's a lot of files and I also can't show you this actually - only a part :P
+2018-02-16 20:10:37	◀▬▬	justicefries (~justicefr@2601:282:4100:454a:6134:257:f95c:b82b) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:11:07	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #Node.js
+2018-02-16 20:11:10	cannap	const stored = 'John' const output = `Hi, ${format(stored)}` :P
+2018-02-16 20:11:32	knx	that's a bit different, I was hoping there'd be something like format(), but thanks
+2018-02-16 20:11:37	cannap	hm
+2018-02-16 20:11:44	cannap	printf
+2018-02-16 20:11:48	cannap	ah no
+2018-02-16 20:12:00	doodadjs	daveylib: If that interest you, that link is first of a series of articles explaining async in JS : https://medium.com/dailyjs/asynchronous-adventures-in-javascript-understanding-the-event-loop-fc6f968d5f72
+2018-02-16 20:12:16	doodadjs	knx: Maybe require('util').format
+2018-02-16 20:12:22	daveylib	doodadjs: thanks, it may help ;)
+2018-02-16 20:12:32	knx	just saw taht doodadjs, thanks :)
+2018-02-16 20:12:35	knx	that*
+2018-02-16 20:12:35	◀▬▬	chargen_ (~chargen@196.82.21.95.dynamic.jazztel.es) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:12:38	knx	https://nodejs.org/docs/latest/api/util.html#util_util_format_format_args
+2018-02-16 20:12:46	◀▬▬	rendar (~rendar@unaffiliated/rendar) has quit
+2018-02-16 20:12:49	jaawerth	util.format is based on printf, yes
+2018-02-16 20:13:13	▬▬▶	spacewalker_supe (~bradbaris@unaffiliated/spacewalker-supe/x-8906275) has joined #Node.js
+2018-02-16 20:13:30	cannap	@knx, https://gist.github.com/cannap/afbde359c119dd33cb4c0aa99bb5e824 :P
+2018-02-16 20:15:59	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:16:00	cannap	but yea its very primitive
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:53	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 20:18:53	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 20:18:53	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:33
+2018-02-16 20:18:53	--	Channel #Node.js: 942 nicks (7 ops, 0 voices, 935 normals)
+2018-02-16 20:18:54	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 20:18:54	--	URL for #node.js: http://nodejs.org/
+2018-02-16 20:18:59	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 20:19:52	▬▬▶	steveinatorx (~textual@c-24-21-14-13.hsd1.or.comcast.net) has joined #Node.js
+2018-02-16 20:20:00	◀▬▬	steveinatorx (~textual@c-24-21-14-13.hsd1.or.comcast.net) has quit (Client Quit)
+2018-02-16 20:20:08	▬▬▶	brandly (~brandly@50.225.192.102) has joined #Node.js
+2018-02-16 20:21:26	◀▬▬	texinwien (~texinwien@46.125.249.83) has quit (Ping timeout: 265 seconds)
+2018-02-16 20:25:14	daveylib	Guys! I have checked my code with async function. And it doesn't work. ;)
+2018-02-16 20:25:32	daveylib	I can give you only some fragments, but I'm sure it's enough: https://jsfiddle.net/yeqaute3/6/
+2018-02-16 20:26:01	daveylib	There are react fragment, not working fragment of backWeather class and working fragment ...
+2018-02-16 20:26:09	cannap	yea you run js in css :P
+2018-02-16 20:26:10	cannap	jk
+2018-02-16 20:26:16	daveylib	:D
+2018-02-16 20:26:36	daveylib	I wanted to divide code :P
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:26:45	cannap	you have syntax error
+2018-02-16 20:26:49	VanceCole	daveylib: you need to read up on async and build some simple working demos before you try to port existing code to an async architecture
+2018-02-16 20:27:16	jaawerth	not really meant as a practical suggestion for runtime template strings, but :D https://repl.it/repls/AlienatedTanGigahertz
+2018-02-16 20:27:16	▬▬▶	JosDzGx (~Thunderbi@189.195.156.226) has joined #Node.js
+2018-02-16 20:28:42	daveylib	VanceCole: but I understand how asynchrous code works. That's why I have use(d) blocking code inside my methods in the class.
+2018-02-16 20:28:48	cannap	so oyu made a new template engine @jaawerth  ?
+2018-02-16 20:28:49	cannap	:P
+2018-02-16 20:29:10	jaawerth	in 10 lines of code!
+2018-02-16 20:29:11	daveylib	React doesn't "catch" data when I use async in that way.
+2018-02-16 20:29:30	cannap	what has react todo with that?
+2018-02-16 20:29:32	jaawerth	it's certainly easier than writing a parser if you want to handle things like nested ${}
+2018-02-16 20:29:38	◀▬▬	JosDzG (~Thunderbi@189.195.156.226) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:29:42	cannap	i never used map :/
+2018-02-16 20:29:53	cannap	i only know i can use it to remove duplicated stuff^^
+2018-02-16 20:30:03	daveylib	cannap: react shows my data to users
+2018-02-16 20:30:09	cannap	i know
+2018-02-16 20:30:33	cannap	but that async/sync stuff has nothing todo with react itself
+2018-02-16 20:30:34	jaawerth	cannap: there actually IS a newish template engine that works on the same principle. I've been keeping my eye on it https://github.com/Polymer/lit-html
+2018-02-16 20:30:36	cannap	its just js
+2018-02-16 20:30:59	GreenJello	jaawerth, other fun thing you could do is template`\foo, \bar, and \baz` to exploit the strings.raw thing
+2018-02-16 20:31:00	jaawerth	all built on template tags
+2018-02-16 20:31:05	cannap	yea know that
+2018-02-16 20:31:09	jaawerth	GreenJello: oh good point
+2018-02-16 20:31:15	GreenJello	of course, requires a parser to some extent
+2018-02-16 20:31:29	▬▬▶	horsey (~horsey@106.51.24.38) has joined #Node.js
+2018-02-16 20:31:36	cannap	atm i dont read anything else than vue
+2018-02-16 20:31:41	jaawerth	cannap: yeah it's basically just taking the hack I just wrote to its furtheset conclusion
+2018-02-16 20:31:44	daveylib	cannap: yes, it is. i'm trying to figure out how my whole application will work.
+2018-02-16 20:31:44	cannap	every other stuff will confuse me :P
+2018-02-16 20:31:58	jaawerth	what I like about it is that, for when you want minimalism, it's hard to beat
+2018-02-16 20:32:17	◀▬▬	Arcaelyx (~Arcaelyx@69.12.80.147.adsl.inet-telecom.org) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:32:19	daveylib	cannap: it doesn't even work with this dumb example, so how can I start work?
+2018-02-16 20:32:36	cannap	so tell me again what is you goal?
+2018-02-16 20:32:45	jaawerth	GreenJello: yeah, you could also just write up a basic parser for {foo} and do that
+2018-02-16 20:33:04	jaawerth	but leveraging template strings' parsers is a handy workaround
+2018-02-16 20:33:10	jaawerth	built-in parser*
+2018-02-16 20:33:14	daveylib	cannap: Inside my methods in the class I connect to a few servers and download data
+2018-02-16 20:33:20	cannap	so
+2018-02-16 20:33:23	GreenJello	daveylib, that's not blocking code, that's syntax sugar for a function that returns a promise
+2018-02-16 20:33:25	cannap	every connection is await
+2018-02-16 20:33:26	daveylib	cannap: the goal is to show this data to users
+2018-02-16 20:33:30	cannap	in a async function?
+2018-02-16 20:33:45	GreenJello	daveylib, react requires you to describe your view at all points in time
+2018-02-16 20:33:50	cannap	and after every promise(await) is resolved
+2018-02-16 20:33:58	cannap	you change the view
+2018-02-16 20:34:02	GreenJello	jaawerth, yeah, it's a cool idea
+2018-02-16 20:34:46	cannap	i have no plan about react
+2018-02-16 20:34:57	cannap	you can make a example on https://codesandbox.io/
+2018-02-16 20:34:58	daveylib	cannap: yeah, every connection is await and then I return my data. That's how my all methods work
+2018-02-16 20:35:29	daveylib	cannap: but how to change the view when the promise is resolved?
+2018-02-16 20:35:57	cannap	i dont know react
+2018-02-16 20:36:03	cannap	just tell the state or what ever
+2018-02-16 20:36:09	cannap	react is data driven
+2018-02-16 20:36:18	wafflejock	daveylib in general you update the state with this.setState then that triggers render
+2018-02-16 20:36:20	cannap	you need to manipulate the data array/objects/string
+2018-02-16 20:36:26	◀▬▬	horsey (~horsey@106.51.24.38) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:36:58	wafflejock	https://www.robinwieruch.de/the-road-to-learn-react/
+2018-02-16 20:37:05	cannap	but every lib angular/vue/react wtf.. ever just update the state from the local component or the global via flux what ever
+2018-02-16 20:37:11	wafflejock	learning myself that's been a good resource for someone new and looking to learn good practices
+2018-02-16 20:38:31	jaawerth	GreenJello: js-lit looks pretty promising as a light vdom alternative though
+2018-02-16 20:39:03	▬▬▶	justicefries (~justicefr@2601:282:4100:454a:b5e3:34ec:bc16:fc5b) has joined #Node.js
+2018-02-16 20:39:10	jaawerth	also the name is
+2018-02-16 20:39:18	jaawerth	🔥
+2018-02-16 20:39:48	▬▬▶	notewell (~textual@82.197.136.118) has joined #Node.js
+2018-02-16 20:41:06	cannap	@daveylib, how long you work with react?
+2018-02-16 20:41:09	◀▬▬	notewell (~textual@82.197.136.118) has quit (Client Quit)
+2018-02-16 20:41:15	cannap	or still learning when yes how long?
+2018-02-16 20:41:23	▬▬▶	_ritchie_ (~ritchie@p2E505F91.dip0.t-ipconnect.de) has joined #Node.js
+2018-02-16 20:41:25	cannap	maybe try vuejs :P
+2018-02-16 20:42:08	▬▬▶	nsuchy (d13a8ea0@gateway/web/freenode/ip.209.58.142.160) has joined #Node.js
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:37	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 20:44:37	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 20:44:37	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:30
+2018-02-16 20:44:37	--	Channel #Node.js: 945 nicks (8 ops, 0 voices, 937 normals)
+2018-02-16 20:44:38	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 20:44:38	--	URL for #node.js: http://nodejs.org/
+2018-02-16 20:44:43	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 20:44:44	◀▬▬	zhalla_ (~zhalla@148.63.31.93) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:45:00	nsuchy	I am interesting to porting Node.js to the Nintendo 3DS, we have access to an ARM 11 CPU, as well as a full C/C++ development kit https://wiki.gbatemp.net/wiki/3DS_Homebrew_Development#Install_devkitARM - would this be enough to get a sorta working NodeJS Binary for the 3DS, what changes and challenges need to be solved?
+2018-02-16 20:45:41	◀▬▬	Fishrock123 (~Fishrock1@oshwon9562w-lp140-09-74-12-199-7.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-02-16 20:46:08	wafflejock	nsuchy not sure off hand but would look into node implementations on raspberry pi since it is also ARM based, not sure about exact architecture versions though
+2018-02-16 20:46:19	▬▬▶	Fishrock123 (~Fishrock1@oshwon9562w-lp140-09-74-12-199-7.dsl.bell.ca) has joined #Node.js
+2018-02-16 20:46:20	--	Mode #Node.js [+o Fishrock123] by ChanServ
+2018-02-16 20:46:27	nsuchy	It's ARM11, it's not running a full linux system that's a big issue
+2018-02-16 20:46:27	◀▬▬	Fishrock123 (~Fishrock1@oshwon9562w-lp140-09-74-12-199-7.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-02-16 20:46:29	--	irc: disconnected from server
+2018-02-16 20:48:27	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #Node.js
+2018-02-16 20:48:27	--	Topic for #Node.js is "Can't talk? Get registered on freenode ( https://git.io/vaTS2 ) | Latest: v9.5.0 (LTS: Carbon v8.9.4, Boron v6.12.3, Argon v4.8.7) | Mission Statement: http://bit.ly/node-irc-mission-statement | Info: http://nodeirc.info | Logs: http://logs.nodejs.org/node.js/index | On codes of conduct: http://j.mp/1RFlyvr http://blog.izs.me/post/30036893703/policy-on-trolling"
+2018-02-16 20:48:27	--	Topic set by ljharb (sid43720@oftn/oswg-member/ljharb) on Fr, 02 Feb 2018 07:35:30
+2018-02-16 20:48:27	--	Channel #Node.js: 942 nicks (7 ops, 0 voices, 935 normals)
+2018-02-16 20:48:28	--	PvNotice(ChanServ): Node.js JavaScript runtime ✨ 🐢 🚀 ✨ https://nodejs.org
+2018-02-16 20:48:28	--	URL for #node.js: http://nodejs.org/
+2018-02-16 20:48:34	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 20:50:45	doodadjs	nsuchy: Maybe https://github.com/NodeOS/NodeOS
+2018-02-16 20:51:14	samsch	nsuchy, You might want to take a look at https://www.espruino.com/ It's not Node, but it is a JS runtime on very minimal (and ARM based) hardware.
+2018-02-16 20:51:59	▬▬▶	Arcaelyx (~Arcaelyx@173.254.196.59.adsl.inet-telecom.org) has joined #Node.js
+2018-02-16 20:52:09	▬▬▶	Fishrock123 (~Fishrock1@oshwon9562w-lp140-09-74-12-199-7.dsl.bell.ca) has joined #Node.js
+2018-02-16 20:52:10	--	Mode #Node.js [+o Fishrock123] by ChanServ
+2018-02-16 20:52:10	◀▬▬	beefjoe (~beefjoe@unaffiliated/beefjoe) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:52:29	nsuchy	There's https://github.com/smealum/ctrulib which might be helpful to look at, getting node.js running on the Nintendo 3DS would be a huge milestone for both the Node.js team to say we run node everywhere as well as for the homebrew community, I'm not the best javascipt developer outthere, but implemntation wise I may be able to provide my knowledge of things so we can get something working
+2018-02-16 20:52:34	◀▬▬	bradfordli123 (~bradfordl@c-73-158-14-36.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2018-02-16 20:52:35	samsch	Well, it's 95% of a JS runtime anyway :P
+2018-02-16 20:52:50	nsuchy	That's also be cool to see ported
+2018-02-16 20:53:13	◀▬▬	Fishrock123 (~Fishrock1@oshwon9562w-lp140-09-74-12-199-7.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-02-16 20:53:15	nsuchy	It's limited what you can run when you only have devKitARM and ctrulib I know, I'm curious to see if something could get done
+2018-02-16 20:54:24	▬▬▶	Fishrock123 (~Fishrock1@oshwon9562w-lp140-09-74-12-199-7.dsl.bell.ca) has joined #Node.js
+2018-02-16 20:54:24	--	Mode #Node.js [+o Fishrock123] by ChanServ
+2018-02-16 20:54:25	◀▬▬	sasheto (~sasheto@94.26.13.180) has quit (Quit: WeeChat 1.9.1)
+2018-02-16 20:54:28	◀▬▬	leptone (~leptone@4.7.12.50) has quit (Remote host closed the connection)
+2018-02-16 20:55:09	nsuchy	Would it to better to read out to the NodeOS Development Team? Even then wouldn't Node.js need to be ported first?
+2018-02-16 20:55:50	▬▬▶	atr3y0 (~Osvaldo@conm200-116-96-31.epm.net.co) has joined #Node.js
+2018-02-16 20:56:12	▬▬▶	tvw (~tv@2a04:4540:6b03:8501:54b1:91b5:e482:2de3) has joined #Node.js
+2018-02-16 20:58:12	▬▬▶	leptone (~leptone@4.7.12.50) has joined #Node.js
+2018-02-16 20:58:41	--	irc: disconnected from server

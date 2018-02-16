@@ -1,0 +1,42 @@
+2018-02-16 17:54:38	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #bash
+2018-02-16 17:54:38	--	Topic for #bash is "FAQ: http://mywiki.wooledge.org/BashFAQ | Guide: http://mywiki.wooledge.org/BashGuide | Ref: http://gnu.org/s/bash/manual | http://wiki.bash-hackers.org/ | http://mywiki.wooledge.org/Quotes | Check your script: http://www.shellcheck.net/ | Mailing list: https://lists.gnu.org/mailman/listinfo/help-bash | Devel: https://git.savannah.gnu.org/cgit/bash.git?h=devel"
+2018-02-16 17:54:38	--	Topic set by izabera on So, 21 Mai 2017 18:29:27
+2018-02-16 17:54:39	--	Channel #bash: 1275 nicks (1 op, 0 voices, 1274 normals)
+2018-02-16 17:54:42	--	PvNotice(ChanServ): Welcome to #bash, we discuss the GNU bash shell.  Be explicit if your question is about another shell.  Don't trust the Internet on bash, learn from the resources in the topic instead.
+2018-02-16 17:54:51	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 17:55:32	▬▬▶	Elw3 (~elw@x2f7f75f.dyn.telefonica.de) has joined #bash
+2018-02-16 17:55:40	--	irc: disconnected from server
+2018-02-16 17:57:06	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #bash
+2018-02-16 17:57:06	--	Topic for #bash is "FAQ: http://mywiki.wooledge.org/BashFAQ | Guide: http://mywiki.wooledge.org/BashGuide | Ref: http://gnu.org/s/bash/manual | http://wiki.bash-hackers.org/ | http://mywiki.wooledge.org/Quotes | Check your script: http://www.shellcheck.net/ | Mailing list: https://lists.gnu.org/mailman/listinfo/help-bash | Devel: https://git.savannah.gnu.org/cgit/bash.git?h=devel"
+2018-02-16 17:57:06	--	Topic set by izabera on So, 21 Mai 2017 18:29:27
+2018-02-16 17:57:07	--	Channel #bash: 1274 nicks (1 op, 0 voices, 1273 normals)
+2018-02-16 17:57:07	--	PvNotice(ChanServ): Welcome to #bash, we discuss the GNU bash shell.  Be explicit if your question is about another shell.  Don't trust the Internet on bash, learn from the resources in the topic instead.
+2018-02-16 17:57:07	◀▬▬	angrysnarl (~angrysnar@unaffiliated/angrysnarl) has quit (Ping timeout: 252 seconds)
+2018-02-16 17:57:19	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 17:58:04	▬▬▶	rpgio (~rpgio@196-215-7-171.dynamic.isadsl.co.za) has joined #bash
+2018-02-16 17:58:38	▬▬▶	bn_work (uid268505@gateway/web/irccloud.com/x-uurrhzoaqigawjug) has joined #bash
+2018-02-16 17:58:41	◀▬▬	clemens3 (~clemens@mx.eniso-partners.com) has quit (Ping timeout: 248 seconds)
+2018-02-16 18:00:30	▬▬▶	KeyJoo (~keyjoo@62.176.30.76) has joined #bash
+2018-02-16 18:00:55	◀▬▬	friedrich (~friedrich@aextron.de) has quit (Ping timeout: 256 seconds)
+2018-02-16 18:01:31	--	irc: disconnected from server
+2018-02-16 18:03:20	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #bash
+2018-02-16 18:03:20	--	Topic for #bash is "FAQ: http://mywiki.wooledge.org/BashFAQ | Guide: http://mywiki.wooledge.org/BashGuide | Ref: http://gnu.org/s/bash/manual | http://wiki.bash-hackers.org/ | http://mywiki.wooledge.org/Quotes | Check your script: http://www.shellcheck.net/ | Mailing list: https://lists.gnu.org/mailman/listinfo/help-bash | Devel: https://git.savannah.gnu.org/cgit/bash.git?h=devel"
+2018-02-16 18:03:20	--	Topic set by izabera on So, 21 Mai 2017 18:29:27
+2018-02-16 18:03:20	--	Channel #bash: 1272 nicks (1 op, 0 voices, 1271 normals)
+2018-02-16 18:03:20	--	PvNotice(ChanServ): Welcome to #bash, we discuss the GNU bash shell.  Be explicit if your question is about another shell.  Don't trust the Internet on bash, learn from the resources in the topic instead.
+2018-02-16 18:03:33	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 18:04:01	▬▬▶	angrysnarl (~angrysnar@unaffiliated/angrysnarl) has joined #bash
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #bash
+2018-02-16 18:07:54	--	Topic for #bash is "FAQ: http://mywiki.wooledge.org/BashFAQ | Guide: http://mywiki.wooledge.org/BashGuide | Ref: http://gnu.org/s/bash/manual | http://wiki.bash-hackers.org/ | http://mywiki.wooledge.org/Quotes | Check your script: http://www.shellcheck.net/ | Mailing list: https://lists.gnu.org/mailman/listinfo/help-bash | Devel: https://git.savannah.gnu.org/cgit/bash.git?h=devel"
+2018-02-16 18:07:54	--	Topic set by izabera on So, 21 Mai 2017 18:29:27
+2018-02-16 18:07:55	--	Channel #bash: 1277 nicks (1 op, 0 voices, 1276 normals)
+2018-02-16 18:07:55	--	PvNotice(ChanServ): Welcome to #bash, we discuss the GNU bash shell.  Be explicit if your question is about another shell.  Don't trust the Internet on bash, learn from the resources in the topic instead.
+2018-02-16 18:08:02	▬▬▶	eliasr (uid27497@gateway/web/irccloud.com/x-oxxhnlqdmihnlzmu) has joined #bash
+2018-02-16 18:08:10	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 18:08:10	ccl	globs and extglobs (if enabled) only
+2018-02-16 18:09:23	▬▬▶	jetchisel (~jetchisel@opensuse/member/jetchisel) has joined #bash
+2018-02-16 18:10:20	▬▬▶	ashar (~ashar@117.222.25.106) has joined #bash
+2018-02-16 18:10:27	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #bash
+2018-02-16 18:11:12	◀▬▬	CurryWurst (~CurryWurs@2001:1b48:203::1:1000) has quit (Read error: Connection reset by peer)
+2018-02-16 18:11:50	--	irc: disconnected from server

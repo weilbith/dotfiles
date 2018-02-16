@@ -1,0 +1,270 @@
+2018-02-16 17:54:38	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 17:54:38	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.1 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 17:54:38	--	Topic set by Eugene (eugene@kashpureff.org) on Do, 15 Feb 2018 02:07:54
+2018-02-16 17:54:38	--	Channel #git: 1230 nicks (1 op, 12 voices, 1217 normals)
+2018-02-16 17:54:45	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 17:54:57	▬▬▶	pwnz0r (~pwnz0r@ip72-203-95-109.oc.oc.cox.net) has joined #git
+2018-02-16 17:55:25	◀▬▬	sammyg (~sammyg@unaffiliated/sammyg) has quit (Quit: Leaving)
+2018-02-16 17:55:40	--	irc: disconnected from server
+2018-02-16 17:57:06	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 17:57:06	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.1 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 17:57:06	--	Topic set by Eugene (eugene@kashpureff.org) on Do, 15 Feb 2018 02:07:54
+2018-02-16 17:57:06	--	Channel #git: 1231 nicks (1 op, 12 voices, 1218 normals)
+2018-02-16 17:57:13	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 17:57:33	▬▬▶	pfleck (~Thunderbi@79.108.33.125.dyn.user.ono.com) has joined #git
+2018-02-16 17:59:22	▬▬▶	cagomez (~cagomez@sb0-cf9a61b1.dsl.impulse.net) has joined #git
+2018-02-16 17:59:47	▬▬▶	chekbo_ (~chekbo@105.101.255.100) has joined #git
+2018-02-16 18:00:30	▬▬▶	KeyJoo (~keyjoo@62.176.30.76) has joined #git
+2018-02-16 18:01:31	--	irc: disconnected from server
+2018-02-16 18:03:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 18:03:19	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.1 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 18:03:19	--	Topic set by Eugene (eugene@kashpureff.org) on Do, 15 Feb 2018 02:07:54
+2018-02-16 18:03:20	--	Channel #git: 1232 nicks (1 op, 12 voices, 1219 normals)
+2018-02-16 18:03:25	▬▬▶	theoceaniscool (~theoceani@9.red-79-158-250.dynamicip.rima-tde.net) has joined #git
+2018-02-16 18:03:26	◀▬▬	dreiss (~dreiss@c-73-71-123-17.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 18:03:27	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 18:03:39	◀▬▬	solaris (~solaris@c-76-102-4-245.hsd1.ca.comcast.net) has quit (Quit: solaris)
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 18:07:54	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.1 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 18:07:54	--	Topic set by Eugene (eugene@kashpureff.org) on Do, 15 Feb 2018 02:07:57
+2018-02-16 18:07:54	--	Channel #git: 1231 nicks (1 op, 12 voices, 1218 normals)
+2018-02-16 18:08:03	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 18:09:06	◀▬▬	pfleck (~Thunderbi@79.108.33.125.dyn.user.ono.com) has quit (Ping timeout: 256 seconds)
+2018-02-16 18:10:06	▬▬▶	ashar4 (~ashar@117.222.25.106) has joined #git
+2018-02-16 18:10:20	▬▬▶	ashar (~ashar@117.222.25.106) has joined #git
+2018-02-16 18:10:23	▬▬▶	chaosruler (~chaosrule@unaffiliated/chaosruler) has joined #git
+2018-02-16 18:10:28	◀▬▬	ashar4 (~ashar@117.222.25.106) has quit (Client Quit)
+2018-02-16 18:10:40	Some_Person	Can I change a commit message without changing any other metadata about it (author, date/time, etc)?
+2018-02-16 18:10:44	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #git
+2018-02-16 18:11:00	▬▬▶	SteffanW (~steffanw@ip4da40774.direct-adsl.nl) has joined #git
+2018-02-16 18:11:07	_ikke_	Some_Person: git commit --amend
+2018-02-16 18:11:09	▬▬▶	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has joined #git
+2018-02-16 18:11:18	_ikke_	Some_Person: by default, commiter / comitted date *is* changed
+2018-02-16 18:11:31	Some_Person	How can I do it without changing those?
+2018-02-16 18:11:49	--	irc: disconnected from server
+2018-02-16 18:13:18	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 18:13:18	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.1 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 18:13:18	--	Topic set by Eugene (eugene@kashpureff.org) on Do, 15 Feb 2018 02:07:54
+2018-02-16 18:13:19	--	Channel #git: 1233 nicks (1 op, 12 voices, 1220 normals)
+2018-02-16 18:13:26	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 18:13:28	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #git
+2018-02-16 18:13:35	--	irc: disconnected from server
+2018-02-16 19:13:03	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 19:13:03	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.1 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 19:13:03	--	Topic set by Eugene (eugene@kashpureff.org) on Do, 15 Feb 2018 02:07:54
+2018-02-16 19:13:04	--	Channel #git: 1232 nicks (1 op, 11 voices, 1220 normals)
+2018-02-16 19:13:09	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 19:13:42	▬▬▶	vrishab (vrishab@gateway/shell/panicbnc/x-bzycdhdkcosbafyz) has joined #git
+2018-02-16 19:13:59	◀▬▬	ShekharReddy (uid132367@gateway/web/irccloud.com/x-zmhzywooskwktmer) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:14:02	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:14:23	▬▬▶	kfoonamalik (~kfoonamal@208.93.244.250) has joined #git
+2018-02-16 19:15:58	▬▬▶	jizzmedeep (~TomTom@197.0.21.198) has joined #git
+2018-02-16 19:16:29	◀▬▬	jizzmedeep (~TomTom@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:16:38	▬▬▶	cahoots (~J@static-47-180-123-201.lsan.ca.frontiernet.net) has joined #git
+2018-02-16 19:16:51	◀▬▬	olbat (~olbat@unaffiliated/olbat) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:17:09	◀▬▬	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has quit (Ping timeout: 264 seconds)
+2018-02-16 19:17:52	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #git
+2018-02-16 19:18:15	▬▬▶	vush (~v4sh@2a02:908:1398:1e00:feaa:14ff:fe31:74c) has joined #git
+2018-02-16 19:19:10	▬▬▶	leeN (~leeN@82.206.67.199) has joined #git
+2018-02-16 19:19:28	▬▬▶	tunekey (~tunekey@unaffiliated/tunekey) has joined #git
+2018-02-16 19:19:49	◀▬▬	tt_ (~chinggis6@unaffiliated/chinggis6) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 19:20:13	◀▬▬	kpease_ (~kpease@72.22.182.166) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 19:22:18	◀▬▬	SteffanW (~steffanw@ip4da40774.direct-adsl.nl) has quit (Read error: Connection reset by peer)
+2018-02-16 19:22:35	▬▬▶	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has joined #git
+2018-02-16 19:22:49	▬▬▶	texinwien_ (~texinwien@46.125.249.83) has joined #git
+2018-02-16 19:23:05	▬▬▶	qpdb (~qpdb@unaffiliated/qpdb) has joined #git
+2018-02-16 19:23:28	◀▬▬	wandering_vagran (~wandering@157.119.106.190) has quit (Quit: Hasta la vista, baby)
+2018-02-16 19:25:04	◀▬▬	banisterfiend (~banister@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:25:50	▬▬▶	banisterfiend (~banister@ruby/staff/banisterfiend) has joined #git
+2018-02-16 19:27:02	_ikke_	.version
+2018-02-16 19:27:03	--	gitinfo has changed topic for #git from "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.1 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more." to "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.2 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 19:27:09	▬▬▶	sammyg (~sammyg@unaffiliated/sammyg) has joined #git
+2018-02-16 19:27:15	◀▬▬	texinwien (~texinwien@78.137.157.66) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:27:18	◀▬▬	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:27:35	▬▬▶	crose (~crose@132.237.154.126) has joined #git
+2018-02-16 19:29:46	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:30:11	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #git
+2018-02-16 19:31:16	◀▬▬	qpdb (~qpdb@unaffiliated/qpdb) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:32:23	▬▬▶	kpease (~kpease@72.22.182.166) has joined #git
+2018-02-16 19:33:56	▬▬▶	slowpokezzz (~slowpokez@197.0.21.198) has joined #git
+2018-02-16 19:34:40	◀▬▬	chamaeleon (ch@maeleon.odyssey.network) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:34:41	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Client Quit)
+2018-02-16 19:34:58	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #git
+2018-02-16 19:35:02	◀▬▬	Gurkenglas (~Gurkengla@dslb-094-223-133-187.094.223.pools.vodafone-ip.de) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:36:39	▬▬▶	chamaeleon (ch@maeleon.odyssey.network) has joined #git
+2018-02-16 19:36:50	◀▬▬	eroux (~eroux@196-210-166-153.dynamic.isadsl.co.za) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:38:00	▬▬▶	qpdb (~qpdb@unaffiliated/qpdb) has joined #git
+2018-02-16 19:39:23	▬▬▶	netlar (~netlar@ip70-187-133-41.oc.oc.cox.net) has joined #git
+2018-02-16 19:40:57	◀▬▬	dmone (~dmone@195.46.31.29) has quit (Quit: Leaving)
+2018-02-16 19:42:43	▬▬▶	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has joined #git
+2018-02-16 19:42:52	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:43:09	▬▬▶	DaGoaty (~dagoaty@host86-128-250-129.range86-128.btcentralplus.com) has joined #git
+2018-02-16 19:43:31	▬▬▶	texinwien (~texinwien@46.125.249.83) has joined #git
+2018-02-16 19:44:08	◀▬▬	mlopezviedma (~mlopezvie@190.97.16.66) has quit (Read error: Connection reset by peer)
+2018-02-16 19:45:14	▬▬▶	mlopezviedma (~mlopezvie@190.97.16.66) has joined #git
+2018-02-16 19:45:32	▬▬▶	energizer (~energizer@unaffiliated/energizer) has joined #git
+2018-02-16 19:45:41	▬▬▶	jstein_ (~jstein@gentoo/developer/jstein) has joined #git
+2018-02-16 19:45:51	--	jstein_ is now known as jstein
+2018-02-16 19:46:36	▬▬▶	zarzar (~zarzar@184.75.233.58) has joined #git
+2018-02-16 19:47:05	◀▬▬	texinwien_ (~texinwien@46.125.249.83) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:47:29	◀▬▬	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:48:19	▬▬▶	NimeshNeema (uid2689@gateway/web/irccloud.com/x-rzhpwgmcxafqaalk) has joined #git
+2018-02-16 19:48:46	◀▬▬	vush (~v4sh@2a02:908:1398:1e00:feaa:14ff:fe31:74c) has quit (Quit: Leaving)
+2018-02-16 19:49:29	◀▬▬	DaGoaty (~dagoaty@host86-128-250-129.range86-128.btcentralplus.com) has quit (Remote host closed the connection)
+2018-02-16 19:50:05	◀▬▬	staafl__ (~staafl@94.155.168.66) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:51:35	◀▬▬	akushner (~textual@2620:10d:c090:200::7:4b18) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 19:51:52	▬▬▶	akushner (~textual@2620:10d:c090:200::7:4b18) has joined #git
+2018-02-16 19:53:11	▬▬▶	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has joined #git
+2018-02-16 19:53:47	▬▬▶	ibiam (~ibiam@hymax.hyperia.com) has joined #git
+2018-02-16 19:56:13	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:56:43	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #git
+2018-02-16 19:57:25	◀▬▬	slowpokezzz (~slowpokez@197.0.21.198) has quit (K-Lined)
+2018-02-16 19:57:30	◀▬▬	piggah_ (~textual@dt0a1ndd.tampabay.res.rr.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:57:35	▬▬▶	rafasc (~rafasc@93.108.154.101) has joined #git
+2018-02-16 19:58:40	◀▬▬	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:58:54	◀▬▬	southernirc (~southrenm@66.241.33.145) has quit (Quit: I used to think I was indecisive, but now I'm not too sure.)
+2018-02-16 19:59:13	▬▬▶	Mike11 (~Mike@unaffiliated/mike11) has joined #git
+2018-02-16 19:59:32	◀▬▬	Mike11 (~Mike@unaffiliated/mike11) has quit (Max SendQ exceeded)
+2018-02-16 19:59:56	◀▬▬	alezandro (~ab@2601:601:9680:72f:717a:a3d2:e681:645d) has quit (Ping timeout: 252 seconds)
+2018-02-16 20:00:37	▬▬▶	applecrumble (~applecrum@65.196.51.162) has joined #git
+2018-02-16 20:01:09	▬▬▶	Sasazuka (~Sasazuka@unaffiliated/sasazuka) has joined #git
+2018-02-16 20:01:20	◀▬▬	mckendricks (~mckendric@173.0.112.18) has quit (Read error: Connection reset by peer)
+2018-02-16 20:02:54	▬▬▶	cdown (~cdown@my83-216-74-28.cust.relish.net) has joined #git
+2018-02-16 20:03:07	--	qpdb is now known as Guest17656
+2018-02-16 20:03:07	◀▬▬	Guest17656 (~qpdb@unaffiliated/qpdb) has quit (Killed (leguin.freenode.net (Nickname regained by services)))
+2018-02-16 20:03:12	▬▬▶	qpdb (~qpdb@unaffiliated/qpdb) has joined #git
+2018-02-16 20:04:15	▬▬▶	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has joined #git
+2018-02-16 20:04:22	zarzar	just pushed a commit of 2.11GiB with git and tortoisehg, git is hung at command line, never returns, commit is not showing up on remote
+2018-02-16 20:04:28	▬▬▶	jnavila (~jnavila@ita73-1-82-239-31-145.fbx.proxad.net) has joined #git
+2018-02-16 20:04:58	▬▬▶	ferdna (~ferdna@68-73-71-246.lightspeed.elpstx.sbcglobal.net) has joined #git
+2018-02-16 20:05:00	zarzar	shows up with tortoisehg and bitbucket, but not with git
+2018-02-16 20:05:59	◀▬▬	Eryn_1983_FL (~Eryn_1983@c-73-24-115-100.hsd1.fl.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2018-02-16 20:06:18	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:06:22	▬▬▶	Eryn_1983_FL (~Eryn_1983@c-73-24-115-100.hsd1.fl.comcast.net) has joined #git
+2018-02-16 20:06:22	--	qpdb is now known as Guest82501
+2018-02-16 20:06:27	▬▬▶	qpdb (~qpdb@unaffiliated/qpdb) has joined #git
+2018-02-16 20:07:18	◀▬▬	Guest82501 (~qpdb@unaffiliated/qpdb) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:08:26	◀▬▬	Murr (~Murr@212-51-143-5.fiber7.init7.net) has quit (Remote host closed the connection)
+2018-02-16 20:08:41	▬▬▶	Murr (~Murr@212-51-143-5.fiber7.init7.net) has joined #git
+2018-02-16 20:09:29	◀▬▬	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:09:59	▬▬▶	mosab (~mosab@217.115.8.73) has joined #git
+2018-02-16 20:10:09	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #git
+2018-02-16 20:10:24	◀▬▬	frederfred (~frederfre@81.187.88.97) has quit (Quit: frederfred)
+2018-02-16 20:11:13	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #git
+2018-02-16 20:12:59	▬▬▶	mosab_ (~mosab@217.115.8.73) has joined #git
+2018-02-16 20:13:05	◀▬▬	mosab (~mosab@217.115.8.73) has quit (Client Quit)
+2018-02-16 20:13:25	▬▬▶	spacewalker_supe (~bradbaris@unaffiliated/spacewalker-supe/x-8906275) has joined #git
+2018-02-16 20:13:50	--	mosab_ is now known as mosab
+2018-02-16 20:14:41	◀▬▬	nowhere_man (~pierre@37.169.98.139) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:14:43	◀▬▬	Tobbi (~Tobbi@supertux/tobbi) has quit (Remote host closed the connection)
+2018-02-16 20:15:37	◀▬▬	mosab (~mosab@217.115.8.73) has quit (Read error: Connection reset by peer)
+2018-02-16 20:15:37	▬▬▶	mosab_ (~mosab@217.115.8.73) has joined #git
+2018-02-16 20:15:59	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:16:03	--	mosab_ is now known as mosab
+2018-02-16 20:16:28	tobiasvl	zarzar: what do you mean that it shows up with tortoisehg (which is a mercurial client) and bitbucket (which is a website), but not git?
+2018-02-16 20:16:36	tobiasvl	where does it show up and how?
+2018-02-16 20:16:38	◀▬▬	ibiam (~ibiam@hymax.hyperia.com) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:53	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 20:18:53	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.2 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 20:18:53	--	Topic set by gitinfo (jast@bot.gitirc.eu) on Fr, 16 Feb 2018 19:27:06
+2018-02-16 20:18:53	--	Channel #git: 1234 nicks (1 op, 11 voices, 1222 normals)
+2018-02-16 20:19:01	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 20:20:06	▬▬▶	Tobbi (~Tobbi@supertux/tobbi) has joined #git
+2018-02-16 20:21:11	tobiasvl	ok... not sure what tortoisehg has to do with git though. sure you don't mean tortoisegit?
+2018-02-16 20:21:13	zarzar	also i created a branch, committed and pushed, then commited again and tried to push but got a message fatal: The current branch cfapi_config_xml_1 has no upstream branch, what gives? i had already pushed with the branch once
+2018-02-16 20:21:13	◀▬▬	synthroid (synthroid@gateway/vpn/privateinternetaccess/synthroid) has quit (Remote host closed the connection)
+2018-02-16 20:21:17	tobiasvl	are you pushing with git to bitbucket as well?
+2018-02-16 20:21:26	◀▬▬	texinwien (~texinwien@46.125.249.83) has quit (Ping timeout: 265 seconds)
+2018-02-16 20:21:55	zarzar	just an observation, mercurial and bitbucket seemed to handle the large push but git and visual studio failed
+2018-02-16 20:22:03	▬▬▶	synthroid (synthroid@gateway/vpn/privateinternetaccess/synthroid) has joined #git
+2018-02-16 20:22:12	▬▬▶	yqt (~yqt@81.88.230.28) has joined #git
+2018-02-16 20:22:15	tobiasvl	ah ok
+2018-02-16 20:23:02	zarzar	the failed multi gig push may be a visual studio team services issue
+2018-02-16 20:23:12	tobiasvl	so the hg repo has a commit of the same size, which pushed fine to bitbucket, but git is failing to push a similar (identical?) commit, also to bitbucket?
+2018-02-16 20:23:22	tobiasvl	ok, I barely know what visual studio is so can't help you there
+2018-02-16 20:23:59	zarzar	similar commit with same files. all new files, vert large files, git push is to visual studio team services remote git hosing
+2018-02-16 20:24:06	zarzar	*hosting
+2018-02-16 20:24:29	▬▬▶	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has joined #git
+2018-02-16 20:25:19	zarzar	why do i need to set a remote origin for a branch that i have already pushed to remote?
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:27:57	◀▬▬	banisterfiend (~banister@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:28:08	tobiasvl	zarzar: did you ever set the local branch to track a remote branch? how did you push it the first time it succeeded, and how did you push it the second time?
+2018-02-16 20:29:00	▬▬▶	Raed|Laptop (~Raed@2601:18c:8601:c7e9:262:406e:319c:7768) has joined #git
+2018-02-16 20:29:10	◀▬▬	mattcen (~mattcen@c122-108-68-124.sunsh1.vic.optusnet.com.au) has quit (Ping timeout: 265 seconds)
+2018-02-16 20:29:14	tobiasvl	it should default to origin if you don't have it tracking an upstream branch, but if you have another remote than origin it won't guess for you
+2018-02-16 20:29:16	zarzar	first time, commit then push, i didn't take notes, it just worked
+2018-02-16 20:29:32	◀▬▬	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:30:05	zarzar	if i create a branch, push it to remote, then why would that not track the remote branch?
+2018-02-16 20:30:18	zarzar	maddeningly illogical
+2018-02-16 20:31:06	◀▬▬	chekbo_ (~chekbo@105.101.255.100) has quit (Quit: chekbo_)
+2018-02-16 20:31:52	tobiasvl	zarzar: hm. how is that illogical?
+2018-02-16 20:32:06	tobiasvl	you can push a branch to many remotes, and still not want it to track any of them
+2018-02-16 20:32:15	tobiasvl	tracking is used for more than push
+2018-02-16 20:32:17	◀▬▬	Arcaelyx (~Arcaelyx@69.12.80.147.adsl.inet-telecom.org) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:32:55	▬▬▶	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has joined #git
+2018-02-16 20:33:08	▬▬▶	dpyro (~dpyro@96-40-57-115.dhcp.lnbh.ca.charter.com) has joined #git
+2018-02-16 20:34:05	◀▬▬	pbandark (~Thunderbi@80.169.202.158) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:34:10	▬▬▶	eindoofus (~eindoofus@167.246.61.35) has joined #git
+2018-02-16 20:34:35	◀▬▬	jnavila (~jnavila@ita73-1-82-239-31-145.fbx.proxad.net) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:34:41	eindoofus	is there a way to commit with a future time/date?
+2018-02-16 20:34:43	◀▬▬	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has quit (Remote host closed the connection)
+2018-02-16 20:34:48	_ikke_	time travel
+2018-02-16 20:34:59	▬▬▶	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has joined #git
+2018-02-16 20:35:18	◀▬▬	suhdood (~Thaelim@2601:281:c502:25d9:5cd:bbd3:d92b:e035) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:35:26	tobiasvl	zarzar: if you want to track, track. it can be done pretty simply, just add -u when pushing for example
+2018-02-16 20:35:43	tobiasvl	"push it here, and also set up tracking for me so I don't need to think about it again"
+2018-02-16 20:35:49	grawity	eindoofus: authorship date, or committer date?
+2018-02-16 20:36:05	zarzar	tobiasvl: that sounds very advanced, perhaps only rarely needed feature, seems like git is never assuming anything even if it the 99% likely case
+2018-02-16 20:36:36	eindoofus	grawity, not sure what authorship date is but i believe i'm looking for the commit date. sounds like it'd be both for a new file?
+2018-02-16 20:36:48	eindoofus	commiter* date
+2018-02-16 20:37:04	tobiasvl	zarzar: yes, that is an accurate assessment. git rarely assumes anything. however, there is a lot of default behavior. so "git push" will not assume you want to set up tracking, but it will push to a default remote (origin) if you don't specify one, for example.
+2018-02-16 20:37:35	▬▬▶	Sonderblade (~bjourne@2001:6b0:1:1041:6257:18ff:fe4a:99fd) has joined #git
+2018-02-16 20:37:41	grawity	eindoofus: git commits have separate fields for who (when) authored the patch, and who (when) committed it to the repo
+2018-02-16 20:37:55	grawity	eindoofus: the former has convenient command line options (and it's what you see in `git log` etc.)
+2018-02-16 20:37:59	◀▬▬	Contessa (~Sundancer@unaffiliated/sundancertp) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:38:10	grawity	eindoofus: the latter is only visible in `git log --frmat=fuller` and settable via environment variables
+2018-02-16 20:38:26	zarzar	tobiasvl: " but it will push to a default remote (origin) if you don't specify one, for example" that doesnt seem to be true in this case
+2018-02-16 20:38:40	grawity	env GIT_AUTHOR_DATE="..." GIT_COMMITTER_DATE="..." git commit -m "I'm in the future!"
+2018-02-16 20:38:46	eindoofus	is `git log` what's displayed in the github commit list?
+2018-02-16 20:39:10	▬▬▶	suhdood (~Thaelim@2600:380:9914:a394:9857:b7f0:21ce:c792) has joined #git
+2018-02-16 20:39:17	▬▬▶	Arcaelyx (~Arcaelyx@173.254.196.59.adsl.inet-telecom.org) has joined #git
+2018-02-16 20:39:27	◀▬▬	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:40:40	▬▬▶	Raging_Hog (~heikki@82-181-38-176.bb.dnainternet.fi) has joined #git
+2018-02-16 20:41:01	▬▬▶	mattcen (~mattcen@c122-108-68-124.sunsh1.vic.optusnet.com.au) has joined #git
+2018-02-16 20:41:30	▬▬▶	kurkale61 (~kurkale6k@84.45.99.125) has joined #git
+2018-02-16 20:42:21	▬▬▶	_ADN_ (~username@2a02:c7d:5e18:200:313b:971e:76e5:b6) has joined #git
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:37	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 20:44:37	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.2 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 20:44:37	--	Topic set by gitinfo (jast@bot.gitirc.eu) on Fr, 16 Feb 2018 19:27:03
+2018-02-16 20:44:37	--	Channel #git: 1235 nicks (1 op, 11 voices, 1223 normals)
+2018-02-16 20:44:45	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 20:44:58	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #git
+2018-02-16 20:45:45	◀▬▬	applecrumble (~applecrum@65.196.51.162) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 20:46:01	▬▬▶	applecrumble (~applecrum@65.196.51.162) has joined #git
+2018-02-16 20:46:29	--	irc: disconnected from server
+2018-02-16 20:48:27	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #git
+2018-02-16 20:48:27	--	Topic for #git is "Welcome to #git, the place for git help and platonic remotes | First visit? Read: https://gitirc.eu | Current stable version: 2.16.2 | Getting "cannot send to channel"? /msg gitinfo .voice | What is git love? Oh baby don't commit me, no more."
+2018-02-16 20:48:27	--	Topic set by gitinfo (jast@bot.gitirc.eu) on Fr, 16 Feb 2018 19:27:03
+2018-02-16 20:48:27	--	Channel #git: 1234 nicks (1 op, 11 voices, 1222 normals)
+2018-02-16 20:48:36	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 20:50:16	▬▬▶	Arcaelyx (~Arcaelyx@173.254.196.59.adsl.inet-telecom.org) has joined #git
+2018-02-16 20:50:32	--	McKraken is now known as McKraken_zzzzz
+2018-02-16 20:50:45	▬▬▶	marianina8 (~marianina@cpe-75-82-104-84.socal.res.rr.com) has joined #git
+2018-02-16 20:50:53	▬▬▶	frederfred (~frederfre@81.187.88.97) has joined #git
+2018-02-16 20:52:30	◀▬▬	applecrumble (~applecrum@65.196.51.162) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 20:52:46	▬▬▶	applecrumble (~applecrum@65.196.51.162) has joined #git
+2018-02-16 20:52:49	▬▬▶	foul_owl (~foul_owl@75-172-106-114.tukw.qwest.net) has joined #git
+2018-02-16 20:52:53	◀▬▬	applecrumble (~applecrum@65.196.51.162) has quit (Client Quit)
+2018-02-16 20:53:11	▬▬▶	applecrumble (~applecrum@65.196.51.162) has joined #git
+2018-02-16 20:53:27	◀▬▬	applecrumble (~applecrum@65.196.51.162) has quit (Client Quit)
+2018-02-16 20:53:31	◀▬▬	SoniEx3 (bd6fbc0a@gateway/web/cgi-irc/kiwiirc.com/ip.189.111.188.10) has quit (Remote host closed the connection)
+2018-02-16 20:54:00	▬▬▶	applecrumble (~applecrum@65.196.51.162) has joined #git
+2018-02-16 20:54:25	◀▬▬	sasheto (~sasheto@94.26.13.180) has quit (Quit: WeeChat 1.9.1)
+2018-02-16 20:55:12	▬▬▶	mad_hatter (~madhatter@cpe-66-26-243-37.triad.res.rr.com) has joined #git
+2018-02-16 20:55:32	▬▬▶	atr3y0 (~Osvaldo@conm200-116-96-31.epm.net.co) has joined #git
+2018-02-16 20:56:12	▬▬▶	tvw (~tv@2a04:4540:6b03:8501:54b1:91b5:e482:2de3) has joined #git
+2018-02-16 20:58:09	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 20:58:42	--	irc: disconnected from server

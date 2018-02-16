@@ -1,0 +1,710 @@
+2018-02-16 17:54:37	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 17:54:37	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 17:54:37	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 17:54:38	--	Channel ##linux: 2158 nicks (1 op, 0 voices, 2157 normals)
+2018-02-16 17:54:41	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 17:54:42	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 17:54:42	--	URL for ##linux: http://linux.chat
+2018-02-16 17:54:45	◀▬▬	hishamn__ (~hisham@39.40.21.177) has quit (Client Quit)
+2018-02-16 17:54:49	▬▬▶	xorkle (~zoral@unaffiliated/matrixiumn) has joined ##linux
+2018-02-16 17:54:57	▬▬▶	pwnz0r (~pwnz0r@ip72-203-95-109.oc.oc.cox.net) has joined ##linux
+2018-02-16 17:54:57	◀▬▬	Freejack (~quassel@unaffiliated/freejack) has quit (Ping timeout: 240 seconds)
+2018-02-16 17:55:13	▬▬▶	hishamn__ (~hisham@39.40.21.177) has joined ##linux
+2018-02-16 17:55:39	--	irc: disconnected from server
+2018-02-16 17:57:05	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 17:57:05	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 17:57:05	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 17:57:06	--	Channel ##linux: 2160 nicks (1 op, 0 voices, 2159 normals)
+2018-02-16 17:57:07	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 17:57:07	--	URL for ##linux: http://linux.chat
+2018-02-16 17:57:09	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 17:57:29	◀▬▬	neoncortex (~neoncorte@unaffiliated/xispirito) has quit (Quit: WeeChat 1.6)
+2018-02-16 17:57:42	JimBunbtu	phinxy, `for device in $(ls /sys/bus/usb/devices/*/product); do echo $device;cat $device;done`
+2018-02-16 17:57:43	◀▬▬	Haudegen (~quassel@212-186-77-29.static.upcbusiness.at) has quit (Read error: Connection reset by peer)
+2018-02-16 17:58:04	▬▬▶	rpgio (~rpgio@196-215-7-171.dynamic.isadsl.co.za) has joined ##linux
+2018-02-16 17:58:28	◀▬▬	Rokixz (~rokas@5.199.160.9) has quit (Read error: Connection reset by peer)
+2018-02-16 17:58:33	JimBunbtu	It might be easier once you have that info. What program are you attaching it to?
+2018-02-16 17:58:41	◀▬▬	clemens3 (~clemens@mx.eniso-partners.com) has quit (Ping timeout: 248 seconds)
+2018-02-16 17:58:57	▬▬▶	Rokixz (~rokas@5.199.160.9) has joined ##linux
+2018-02-16 17:58:59	phinxy	Python with pyserial
+2018-02-16 17:59:04	twainwek	a quickie: is 640 permission a good permission setting for a php script to be run by an apache group while everyone else out?
+2018-02-16 17:59:06	▬▬▶	Cybermax (~Cybermax@115.98.187.63) has joined ##linux
+2018-02-16 17:59:15	 *	toothe has used pyserial.
+2018-02-16 17:59:22	▬▬▶	cagomez (~cagomez@sb0-cf9a61b1.dsl.impulse.net) has joined ##linux
+2018-02-16 17:59:25	▬▬▶	cliq (~cliq@85-23-74-41.bb.dnainternet.fi) has joined ##linux
+2018-02-16 17:59:29	JimBunbtu	phinxy, Then you shouldn't have an issue. I used to use that hardware with Python and pySerial. I don't remember having any issue
+2018-02-16 17:59:35	◀▬▬	detseg (~segv@c-73-190-22-29.hsd1.mi.comcast.net) has quit (Ping timeout: 240 seconds)
+2018-02-16 18:00:14	◀▬▬	Cybermax (~Cybermax@115.98.187.63) has quit (Client Quit)
+2018-02-16 18:00:21	▬▬▶	v01t (~v01t@i59F55F05.versanet.de) has joined ##linux
+2018-02-16 18:00:26	phinxy	JimBunbtu• It was a matter of reading to the EOF on the wiki.  It says there at the bottom how to list all available ports etc
+2018-02-16 18:00:30	▬▬▶	KeyJoo (~keyjoo@62.176.30.76) has joined ##linux
+2018-02-16 18:00:42	▬▬▶	Cybermax (~Cybermax@115.98.187.63) has joined ##linux
+2018-02-16 18:00:55	JimBunbtu	phinxy, no doubt. I am actually looking for my old code, may have a snippet that will also help
+2018-02-16 18:01:00	▬▬▶	d1zz (~gt@unaffiliated/gtt) has joined ##linux
+2018-02-16 18:01:18	▬▬▶	daszorz (~daszorz@cpc106809-live29-2-0-cust896.17-2.cable.virginm.net) has joined ##linux
+2018-02-16 18:01:29	◀▬▬	v4ult (~V4ult@217.138.14.202) has quit (Quit: Leaving)
+2018-02-16 18:01:30	--	irc: disconnected from server
+2018-02-16 18:03:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 18:03:19	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 18:03:19	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 18:03:19	--	Channel ##linux: 2162 nicks (1 op, 0 voices, 2161 normals)
+2018-02-16 18:03:20	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 18:03:20	--	URL for ##linux: http://linux.chat
+2018-02-16 18:03:23	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 18:03:26	◀▬▬	m1n (~m1n@unaffiliated/m1ntfr3sh) has quit (Client Quit)
+2018-02-16 18:03:44	◀▬▬	Cybermax (~Cybermax@115.98.187.63) has quit (Client Quit)
+2018-02-16 18:04:00	▬▬▶	longxia (~irc@unaffiliated/longxia) has joined ##linux
+2018-02-16 18:04:07	◀▬▬	d1zzle (~gt@unaffiliated/gtt) has quit (Ping timeout: 256 seconds)
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 18:07:54	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 18:07:54	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 18:07:54	--	Channel ##linux: 2162 nicks (1 op, 0 voices, 2161 normals)
+2018-02-16 18:07:55	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 18:07:55	--	URL for ##linux: http://linux.chat
+2018-02-16 18:08:00	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 18:08:10	jim	G3nka1, that's what an x display looks like that has nothing running
+2018-02-16 18:08:15	revel	G3nka1: That doesn't sound like xfce.
+2018-02-16 18:08:16	revel	^
+2018-02-16 18:08:20	◀▬▬	sanroot (~sanbot@2405:204:972e:f60:7c55:3de6:4b9:d27b) has quit (Remote host closed the connection)
+2018-02-16 18:08:25	▬▬▶	BrandonBT (~btardio@2602:306:bc83:ec30:c273:fb4b:a3:238) has joined ##linux
+2018-02-16 18:08:28	◀▬▬	milp (~milp@pd907eab8.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2018-02-16 18:08:31	◀▬▬	d1zz (~gt@unaffiliated/gtt) has quit (Read error: Connection reset by peer)
+2018-02-16 18:08:50	◀▬▬	sdoherty (sdoherty@nat/redhat/x-jqkloxutnqnoluqe) has quit (Quit: Leaving)
+2018-02-16 18:09:05	G3nka1	jim so how do I set it up to display my ubuntu desktop? I just did apt-get and started vncserver
+2018-02-16 18:09:05	◀▬▬	kimi_ (~kimi@99-97-23-161.lightspeed.bkfdca.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2018-02-16 18:09:14	G3nka1	is there anything more I should be doing
+2018-02-16 18:09:15	G3nka1	?
+2018-02-16 18:09:55	▬▬▶	stevenxl (uid133530@gateway/web/irccloud.com/x-fqbxnfyibcssffkn) has joined ##linux
+2018-02-16 18:10:06	▬▬▶	ashar4 (~ashar@117.222.25.106) has joined ##linux
+2018-02-16 18:10:11	▬▬▶	ckovacs (~ckovacs@vc-nat-gp-s-41-13-60-140.umts.vodacom.co.za) has joined ##linux
+2018-02-16 18:10:11	▬▬▶	uz3r (~uz3r@cpc97616-walt24-2-0-cust183.13-2.cable.virginm.net) has joined ##linux
+2018-02-16 18:10:12	◀▬▬	kaipee (~kaipee@81.128.200.210) has quit (Quit: Leaving)
+2018-02-16 18:10:20	▬▬▶	ashar (~ashar@117.222.25.106) has joined ##linux
+2018-02-16 18:10:24	G3nka1	?
+2018-02-16 18:10:26	revel	G3nka1: Did you start xfce in any way?
+2018-02-16 18:10:28	◀▬▬	ashar4 (~ashar@117.222.25.106) has quit (Client Quit)
+2018-02-16 18:10:35	--	uz3r is now known as Guest53527
+2018-02-16 18:10:36	G3nka1	nope I didn't revel
+2018-02-16 18:10:37	compdoc	vncserver usually requires editing a file to deal with the display
+2018-02-16 18:11:09	compdoc	vnc is ok, but clipboard often doesnt work
+2018-02-16 18:11:10	◀▬▬	zergut (uid221522@taskhive/translator/zergut) has quit (Quit: Connection closed for inactivity)
+2018-02-16 18:11:12	◀▬▬	CurryWurst (~CurryWurs@2001:1b48:203::1:1000) has quit (Read error: Connection reset by peer)
+2018-02-16 18:11:14	▬▬▶	jetchisel (~jetchisel@opensuse/member/jetchisel) has joined ##linux
+2018-02-16 18:11:28	compdoc	stopped using it ages ago
+2018-02-16 18:11:39	revel	G3nka1: Kill Xorg and vnc, then run startxfce4, then try again, maybe.
+2018-02-16 18:11:48	EnchanterTim	rdp is better
+2018-02-16 18:11:49	--	irc: disconnected from server
+2018-02-16 18:13:18	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 18:13:18	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 18:13:18	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 18:13:18	--	Channel ##linux: 2160 nicks (1 op, 0 voices, 2159 normals)
+2018-02-16 18:13:19	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 18:13:19	--	URL for ##linux: http://linux.chat
+2018-02-16 18:13:22	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 18:13:30	◀▬▬	d1zz (~gt@unaffiliated/gtt) has quit (Read error: Connection reset by peer)
+2018-02-16 18:13:35	--	irc: disconnected from server
+2018-02-16 19:13:01	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 19:13:01	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 19:13:01	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 19:13:03	--	Channel ##linux: 2174 nicks (1 op, 0 voices, 2173 normals)
+2018-02-16 19:13:07	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 19:13:07	--	URL for ##linux: http://linux.chat
+2018-02-16 19:13:07	▬▬▶	[MMDC090732] (~quassel@148.27.11.109.rev.sfr.net) has joined ##linux
+2018-02-16 19:13:07	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 19:13:19	◀▬▬	kaipee (~kaipee@2a00:23c4:a81b:5f00:201:6cff:fe64:4b29) has quit (Quit: Leaving)
+2018-02-16 19:13:23	◀▬▬	DrYockel (~Thunderbi@185.32.8.228) has quit (Quit: DrYockel)
+2018-02-16 19:13:41	▬▬▶	jizzmedeep (~TomTom@197.0.21.198) has joined ##linux
+2018-02-16 19:13:59	◀▬▬	ShekharReddy (uid132367@gateway/web/irccloud.com/x-zmhzywooskwktmer) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:14:23	◀▬▬	pualj_ (~pualj@196.145.98.197) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:14:24	▬▬▶	cheako (~cheako@2601:440:4100:4d1f::834) has joined ##linux
+2018-02-16 19:14:28	cheako	Hello, a long time ago(back when I was running windowmaker and twm) I came across an application(I think it was tk-something) that presented a bunch of buttons where u could click your way to creating a command line and then execute it.  Anyone remember what it was?
+2018-02-16 19:14:42	▬▬▶	Wulf (~Wulf@unaffiliated/wulf) has joined ##linux
+2018-02-16 19:15:13	_zach	Mateon1: that's odd. I can't find it anymore, either.
+2018-02-16 19:15:23	_zach	Mateon1: https://linux.die.net/man/1/sponge
+2018-02-16 19:15:25	revel	cheako: Maybe something to do with expect?
+2018-02-16 19:15:26	▬▬▶	ithil (~ithil@37.228.238.34) has joined ##linux
+2018-02-16 19:15:45	_zach	Mateon1: looks like it's part of the `moreutils` package.
+2018-02-16 19:15:47	▬▬▶	pos (~pos@gateway/tor-sasl/pos) has joined ##linux
+2018-02-16 19:15:52	_zach	Mateon1: https://packages.debian.org/sid/moreutils
+2018-02-16 19:15:57	▬▬▶	kidnextdoor (~igor@unaffiliated/imaginarius) has joined ##linux
+2018-02-16 19:16:11	Mateon1	_zach: Ah, that wouldn't exactly work anyway
+2018-02-16 19:16:13	▬▬▶	jeffree (~jeffree@unaffiliated/jeffree) has joined ##linux
+2018-02-16 19:16:18	kidnextdoor	hi
+2018-02-16 19:16:22	Mateon1	I need to pipe it to other commands, which are slow to take input
+2018-02-16 19:16:29	◀▬▬	jizzmedeep (~TomTom@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:16:30	cheako	revel: no, it was an x app.
+2018-02-16 19:16:38	Mateon1	But I am only dealing with 10kb of output at most (in most cases)
+2018-02-16 19:16:51	◀▬▬	olbat (~olbat@unaffiliated/olbat) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:16:53	Mateon1	So a 64k buffer is enough
+2018-02-16 19:17:03	koala_man	Mateon1: Linux pipes have a 64k buffer
+2018-02-16 19:17:09	▬▬▶	zerox2a (~saedelaer@unaffiliated/saedelaere) has joined ##linux
+2018-02-16 19:17:16	Mateon1	Hm, weird
+2018-02-16 19:17:24	_zach	I see. Hmm no I don't know I guess. Good luck && sorry I couldn't help any more.
+2018-02-16 19:17:25	mawk	you're sure of that koala_man ?
+2018-02-16 19:17:28	mawk	in my memory it's 4k
+2018-02-16 19:17:32	▬▬▶	pettingill (~frymier@197.0.21.198) has joined ##linux
+2018-02-16 19:17:57	mawk	linux/limits.h:#define PIPE_BUF        4096     /* # bytes in atomic write to a pipe */
+2018-02-16 19:18:19	◀▬▬	pettingill (~frymier@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:18:28	koala_man	mawk: yep
+2018-02-16 19:18:29	revel	cheako: Well, what is it supposed to do? What do you mean "create a command line"?
+2018-02-16 19:18:39	◀▬▬	gzuh (~gzuh@172.56.7.255) has quit (Remote host closed the connection)
+2018-02-16 19:18:39	◀▬▬	pi4 (~pi@172.56.7.255) has quit (Remote host closed the connection)
+2018-02-16 19:18:58	▬▬▶	Who_ (~who@197.0.21.198) has joined ##linux
+2018-02-16 19:19:00	mawk	and _POSIX_PIPE_BUF is 512
+2018-02-16 19:19:03	revel	cheako: Tk-CursorControl, Tk-JPEG-Lite, Tk-TableMatrix. Any of those?
+2018-02-16 19:19:27	cheako	revel: First you'd click on a button with a command name, mv/cp/rm...  Then select a file and then a directory.
+2018-02-16 19:19:28	▬▬▶	tunekey (~tunekey@unaffiliated/tunekey) has joined ##linux
+2018-02-16 19:19:32	◀▬▬	Who_ (~who@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:19:43	mawk	a GUI to write bash scripts then ?
+2018-02-16 19:19:48	revel	cheako: Are you sure it's not a frontend to expect?
+2018-02-16 19:19:49	◀▬▬	tt_ (~chinggis6@unaffiliated/chinggis6) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 19:19:56	koala_man	mawk: the atomic write size and the pipe buffer size are different things
+2018-02-16 19:19:56	revel	Something to make an expect script?
+2018-02-16 19:20:00	▬▬▶	m_t (~m_t@p5DDA3B7B.dip0.t-ipconnect.de) has joined ##linux
+2018-02-16 19:20:35	▬▬▶	numbug (~user@p5DDC491A.dip0.t-ipconnect.de) has joined ##linux
+2018-02-16 19:21:00	cheako	It might have been a frontend to expect, but I'm almost positive it was for shell.
+2018-02-16 19:21:23	revel	Well, expect can do shell things :P
+2018-02-16 19:21:26	koala_man	mawk: it was 4k in linux 2.4 though, maybe that's what you remember
+2018-02-16 19:21:45	▬▬▶	Sherry230 (~Sherry230@137.10.27.109.rev.sfr.net) has joined ##linux
+2018-02-16 19:21:56	◀▬▬	swift110 (~swift110@unaffiliated/swift110) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:22:10	◀▬▬	zzero1 (5e45342f@gateway/web/freenode/ip.94.69.52.47) has quit (Ping timeout: 260 seconds)
+2018-02-16 19:23:01	▬▬▶	qpdb (~qpdb@unaffiliated/qpdb) has joined ##linux
+2018-02-16 19:23:24	◀▬▬	Sherry230 (~Sherry230@137.10.27.109.rev.sfr.net) has quit (Max SendQ exceeded)
+2018-02-16 19:23:44	▬▬▶	jizzmedeep (~TomTom@197.0.21.198) has joined ##linux
+2018-02-16 19:24:03	mawk	alright
+2018-02-16 19:24:09	◀▬▬	jizzmedeep (~TomTom@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:24:28	◀▬▬	ibalerio (~ibalerio@200.124.192.29) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2018-02-16 19:24:42	▬▬▶	nanamen (~blueasa@197.0.21.198) has joined ##linux
+2018-02-16 19:24:43	◀▬▬	Dracunos (~Dracunos@cpe-66-74-76-163.dc.res.rr.com) has quit (Read error: Connection reset by peer)
+2018-02-16 19:25:04	◀▬▬	banisterfiend (~banister@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:25:44	Psi-Jack	Welp. I decided to go with the Samsung 860 EVO 500GiB for my system/cache drive, and, hopefully this doesn't burn me, but the 2016 model Seagate Barracuda 3TiB for /home.
+2018-02-16 19:25:44	▬▬▶	Dracunos (~Dracunos@cpe-66-74-76-163.dc.res.rr.com) has joined ##linux
+2018-02-16 19:25:45	◀▬▬	nanamen (~blueasa@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:25:56	▬▬▶	psychnosis (~psychnosi@541D74E7.cm-5-6b.dynamic.ziggo.nl) has joined ##linux
+2018-02-16 19:25:57	revel	cheako: Actually, I think I was thinking of tcl-expect.
+2018-02-16 19:25:57	▬▬▶	banisterfiend (~banister@ruby/staff/banisterfiend) has joined ##linux
+2018-02-16 19:25:59	Vamava	Hey mawk, dagmar, care to give me some more advice in the max3100-driver problem from yesterday? I found that the driver is part of raspbian (https://github.com/raspberrypi/linux/blob/rpi-4.9.y/drivers/tty/serial/max3100.c), but I'm not sure how to proceed
+2018-02-16 19:26:00	geosmin	if i do 'dd if=/dev/zero of=/dev/null status=progress' what exactly am i measuring?
+2018-02-16 19:26:13	▬▬▶	zzero1 (5e45342f@gateway/web/freenode/ip.94.69.52.47) has joined ##linux
+2018-02-16 19:26:17	▬▬▶	Calisto (~Calisto@197.0.21.198) has joined ##linux
+2018-02-16 19:26:18	◀▬▬	Logg (~Logg@76.72.182.219) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:26:25	◀▬▬	Sabotender (~Sabotende@unaffiliated/sabotender) has quit (Quit: 1000 Needles!)
+2018-02-16 19:26:27	▬▬▶	enterprisey (~enterpris@wikipedia/enterprisey) has joined ##linux
+2018-02-16 19:26:30	revel	geosmin: Not disk writes, that's for sure.
+2018-02-16 19:26:39	geosmin	hehe, nope
+2018-02-16 19:26:40	◀▬▬	Calisto (~Calisto@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:26:55	Psi-Jack	Actually I may even end up melding /home directly on the SSD and just mount the spinning disk and symlink to it for certain things, like Downloads, and such.
+2018-02-16 19:26:59	◀▬▬	mkoskar (~mkoskar@unaffiliated/mkoskar) has quit (Ping timeout: 255 seconds)
+2018-02-16 19:27:01	▬▬▶	suprmum (~suprmum@197.0.21.198) has joined ##linux
+2018-02-16 19:27:04	revel	I'm not sure. RAM read/write speed maybe?
+2018-02-16 19:27:07	revel	Or just read?
+2018-02-16 19:27:13	▬▬▶	mkoskar (~mkoskar@unaffiliated/mkoskar) has joined ##linux
+2018-02-16 19:27:19	zzero1	mawk I know think you didn't do much, however I just wanted to say thanks
+2018-02-16 19:27:20	geosmin	revel: /dev/zero isn't ram though
+2018-02-16 19:27:29	◀▬▬	suprmum (~suprmum@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:27:30	geosmin	hint? it's using 100% of 1 core
+2018-02-16 19:27:34	▬▬▶	wlarip (~tc@71.220.212.192) has joined ##linux
+2018-02-16 19:27:53	▬▬▶	xlx (~xlx@197.0.21.198) has joined ##linux
+2018-02-16 19:27:54	zzero1	I found a way to compile my module
+2018-02-16 19:28:09	◀▬▬	NetTerminalGene (~NetTermin@unaffiliated/dontknow) has quit (Quit: Leaving)
+2018-02-16 19:28:15	--	xlx is now known as Guest28424
+2018-02-16 19:28:28	◀▬▬	Guest28424 (~xlx@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:28:33	revel	geosmin: Well, reading and writing to/from /dev/{zero,null} shouldn't access anything aside from RAM afaik.
+2018-02-16 19:28:51	▬▬▶	boyslv4real (~boyslv4re@197.0.21.198) has joined ##linux
+2018-02-16 19:29:05	koala_man	Psi-Jack: that's my preferred setup, especially these days with steam/cabal/npm/etc installing software to /home
+2018-02-16 19:29:07	--	kidnextdoor is now known as badasspissedkid
+2018-02-16 19:29:19	cheako	geosmin: Most of the time will be spent in syscall, basically the kernel runs functions that are like 5 lines long...  after id dives thrgh all the functions it needs to run to discover that's the function to run.
+2018-02-16 19:29:27	◀▬▬	FrozenFire (~FrozenFir@pdpc/supporter/active/frozenfire) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:29:28	Psi-Jack	koala_man: Yeah. I had never done it before, but it seems like an ideal setup these days.
+2018-02-16 19:29:36	Psi-Jack	With SSDs being more reliable. :)
+2018-02-16 19:29:47	◀▬▬	boyslv4real (~boyslv4re@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:29:52	--	badasspissedkid is now known as kidnextdoor
+2018-02-16 19:29:53	Psi-Jack	And fast. ehh
+2018-02-16 19:30:03	koala_man	geosmin: syscall throughput
+2018-02-16 19:30:06	X-Jester	i dunno how i feel about seagates
+2018-02-16 19:30:14	X-Jester	they have not historically been kind to me
+2018-02-16 19:30:26	▬▬▶	lindalou347 (~lindalou3@197.0.21.198) has joined ##linux
+2018-02-16 19:30:40	X-Jester	also, like 25 years later, and a screen session remains the most efficient way to, uh, well, do anything remotely
+2018-02-16 19:30:49	▬▬▶	ztychr (~ztychr@unaffiliated/ztychr) has joined ##linux
+2018-02-16 19:30:59	revel	What about tmux :<
+2018-02-16 19:31:08	Psi-Jack	X-Jester: Same. But the specific model I was looking at has a high value to it. Performance close to a WD Black, but at a much more affordable price point.
+2018-02-16 19:31:10	▬▬▶	Todden (~Todden@94.15.194.147) has joined ##linux
+2018-02-16 19:31:16	◀▬▬	lindalou347 (~lindalou3@197.0.21.198) has quit (Max SendQ exceeded)
+2018-02-16 19:31:16	◀▬▬	qpdb (~qpdb@unaffiliated/qpdb) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:31:31	◀▬▬	cheako (~cheako@2601:440:4100:4d1f::834) has left ##linux ("Leaving")
+2018-02-16 19:31:42	▬▬▶	slowpokezzz (~slowpokez@197.0.21.198) has joined ##linux
+2018-02-16 19:31:47	▬▬▶	pualj_ (~pualj@196.145.127.186) has joined ##linux
+2018-02-16 19:31:50	X-Jester	revel: newfangled hoodlem stuff!
+2018-02-16 19:31:51	Psi-Jack	I kept originally looking at 4TB drives, but those seem to not be "ideal" in performance/price.
+2018-02-16 19:32:06	◀▬▬	SkunkyFone (~skunky@unaffiliated/skunky) has quit (Remote host closed the connection)
+2018-02-16 19:32:06	▬▬▶	pajpax (~pajpax@bband-dyn120.178-40-208.t-com.sk) has joined ##linux
+2018-02-16 19:32:13	Psi-Jack	The 3TiB however, seems more performant, and better bang for buck.
+2018-02-16 19:32:30	◀▬▬	speedtester (~speedtest@229.237.1.85.dynamic.wline.res.cust.swisscom.ch) has quit (Remote host closed the connection)
+2018-02-16 19:32:35	▬▬▶	CaptainTacoSauce (~justin@24-217-230-227.dhcp.stls.mo.charter.com) has joined ##linux
+2018-02-16 19:32:42	--	Mode ##linux [+o LocaMocha] by ChanServ
+2018-02-16 19:32:44	--	Mode ##linux [+b *!*@197.0.21.198] by LocaMocha
+2018-02-16 19:32:45	--	Mode ##linux [-o LocaMocha] by ChanServ
+2018-02-16 19:32:59	▬▬▶	damntourists (~none@out-62-48.dreamworks.com) has joined ##linux
+2018-02-16 19:33:21	mawk	no problems zzero1
+2018-02-16 19:33:44	◀▬▬	tlent (~t@pool-108-54-149-188.nycmny.fios.verizon.net) has quit (Quit: Lost terminal)
+2018-02-16 19:34:07	▬▬▶	coellobranco (~FoRcEr@60.32.117.91.dynamic.reverse-mundo-r.com) has joined ##linux
+2018-02-16 19:34:40	◀▬▬	chamaeleon (ch@maeleon.odyssey.network) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:34:48	◀▬▬	migul (~mig@pdpc/supporter/student/migul) has quit (Quit: Leaving)
+2018-02-16 19:36:17	◀▬▬	Jesterboxboy (~Thunderbi@84-115-150-8.cable.dynamic.surfer.at) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:36:39	▬▬▶	chamaeleon (ch@maeleon.odyssey.network) has joined ##linux
+2018-02-16 19:36:50	◀▬▬	eroux (~eroux@196-210-166-153.dynamic.isadsl.co.za) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:37:08	▬▬▶	FrozenFire (~FrozenFir@pdpc/supporter/active/frozenfire) has joined ##linux
+2018-02-16 19:37:57	▬▬▶	qpdb (~qpdb@unaffiliated/qpdb) has joined ##linux
+2018-02-16 19:38:30	◀▬▬	Fantonaut (~tadaaa@whz.nat.whka.de) has quit (Remote host closed the connection)
+2018-02-16 19:38:37	◀▬▬	pos (~pos@gateway/tor-sasl/pos) has quit (Remote host closed the connection)
+2018-02-16 19:39:05	▬▬▶	pos (~pos@gateway/tor-sasl/pos) has joined ##linux
+2018-02-16 19:39:07	▬▬▶	LiPi (~lipi@245.red-79-150-35.dynamicip.rima-tde.net) has joined ##linux
+2018-02-16 19:39:08	◀▬▬	untoreh (~untoreh@host120-173-dynamic.21-79-r.retail.telecomitalia.it) has quit (Read error: Connection reset by peer)
+2018-02-16 19:39:21	▬▬▶	blip99 (~blip-@unaffiliated/blip-) has joined ##linux
+2018-02-16 19:39:40	LiPi	Hi!, for testing purposes I want to create a custom /proc/cpuinfo file. I though about creating a kernel module to do so, but have you ever played with that? any idea?
+2018-02-16 19:39:40	▬▬▶	tomlukeywood (~quassel@host-92-19-232-58.static.as13285.net) has joined ##linux
+2018-02-16 19:40:24	▬▬▶	nogic (~nogic@96-18-65-226.cpe.cableone.net) has joined ##linux
+2018-02-16 19:40:42	▬▬▶	`Cam (~textual@ip-120-95-192-203.static.pipenetworks.com) has joined ##linux
+2018-02-16 19:41:05	▬▬▶	untoreh (~untoreh@host120-173-dynamic.21-79-r.retail.telecomitalia.it) has joined ##linux
+2018-02-16 19:42:02	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 19:42:08	◀▬▬	AsciiWolf (~drusek@ip4-46-39-166-4.cust.nbox.cz) has quit (Remote host closed the connection)
+2018-02-16 19:42:27	Vamava	I need to install a driver (https://github.com/raspberrypi/linux/blob/rpi-4.9.y/drivers/tty/serial/max3100.c) in raspbian. How do I do this?
+2018-02-16 19:42:38	◀▬▬	DTZUZU (~DTZUZU@S0106bcd16584b0aa.vs.shawcable.net) has quit (Quit: WeeChat 1.9)
+2018-02-16 19:43:09	◀▬▬	epochman (~jcj@2604:6000:7302:f100:4a4d:7eff:fec0:e9a4) has quit (Quit: Leaving.)
+2018-02-16 19:43:09	▬▬▶	DaGoaty (~dagoaty@host86-128-250-129.range86-128.btcentralplus.com) has joined ##linux
+2018-02-16 19:43:28	▬▬▶	epochman (~jcj@2604:6000:7302:f100:4a4d:7eff:fec0:e9a4) has joined ##linux
+2018-02-16 19:43:39	LiPi	Vamava, modprobe max3100
+2018-02-16 19:44:07	Vamava	modprobe: FATAL: module max3100 not found
+2018-02-16 19:45:03	◀▬▬	tclover_ (~tclover@92.216.188.26) has quit (Quit: bb)
+2018-02-16 19:45:14	◀▬▬	mujjingun (uid228218@gateway/web/irccloud.com/x-cvtnqdklgicvxhdx) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:45:28	◀▬▬	epochman (~jcj@2604:6000:7302:f100:4a4d:7eff:fec0:e9a4) has left ##linux
+2018-02-16 19:45:32	▬▬▶	energizer (~energizer@unaffiliated/energizer) has joined ##linux
+2018-02-16 19:46:05	◀▬▬	psychnosis (~psychnosi@541D74E7.cm-5-6b.dynamic.ziggo.nl) has quit (Remote host closed the connection)
+2018-02-16 19:46:20	▬▬▶	nkambo_ (~Naresh@122.175.19.4) has joined ##linux
+2018-02-16 19:46:26	▬▬▶	psychnosis (~psychnosi@541D74E7.cm-5-6b.dynamic.ziggo.nl) has joined ##linux
+2018-02-16 19:46:33	▬▬▶	wafflejock (~wafflejoc@12.106.136.114) has joined ##linux
+2018-02-16 19:46:36	▬▬▶	zarzar (~zarzar@184.75.233.58) has joined ##linux
+2018-02-16 19:46:41	◀▬▬	nkambo (~Naresh@122.175.18.209) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:46:42	Vamava	(in directory /lib/modules/4.9.59+)
+2018-02-16 19:47:09	▬▬▶	MrELLi0T (~guillaume@81.171.81.137) has joined ##linux
+2018-02-16 19:47:30	LiPi	probably you will have to recompile the kernel
+2018-02-16 19:47:35	◀▬▬	pajpax (~pajpax@bband-dyn120.178-40-208.t-com.sk) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:47:47	▬▬▶	migul (~mig@pdpc/supporter/student/migul) has joined ##linux
+2018-02-16 19:47:50	LiPi	or search for the module in your package manager
+2018-02-16 19:47:59	▬▬▶	nkambo__ (~Naresh@122.175.19.5) has joined ##linux
+2018-02-16 19:48:26	▬▬▶	pajpax (~pajpax@adsl-dyn225.91-127-228.t-com.sk) has joined ##linux
+2018-02-16 19:48:37	LiPi	sorry i am not familiar with raspberry
+2018-02-16 19:48:44	◀▬▬	Todden (~Todden@94.15.194.147) has quit (Read error: Connection reset by peer)
+2018-02-16 19:48:50	◀▬▬	LeadGuit (~mfluor@46-127-9-115.dynamic.hispeed.ch) has quit (Read error: No route to host)
+2018-02-16 19:49:04	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Quit: byeee)
+2018-02-16 19:49:11	FRWB__	is there a teamspeak irc?
+2018-02-16 19:49:14	revel	Vamava: I'm not sure, but you might have to enable the serial interfaces.
+2018-02-16 19:49:14	▬▬▶	Todden (~Todden@94.15.194.147) has joined ##linux
+2018-02-16 19:49:18	▬▬▶	Darkclaw (~darkclaw@unaffiliated/darkclaw) has joined ##linux
+2018-02-16 19:49:19	▬▬▶	thyme (~fireant@5.80.28.160) has joined ##linux
+2018-02-16 19:49:19	Darkclaw	I am trying to get this to work find . -type f -not -name "*.JPG","*.jpg". Not sure how to have multiple conditions
+2018-02-16 19:49:23	▬▬▶	v01d4lph4 (~silent_fr@112.196.144.124) has joined ##linux
+2018-02-16 19:49:29	◀▬▬	DaGoaty (~dagoaty@host86-128-250-129.range86-128.btcentralplus.com) has quit (Remote host closed the connection)
+2018-02-16 19:49:33	Darkclaw	how can I tweak that statement to allow for multiple conditions?
+2018-02-16 19:49:40	▬▬▶	erikw (~Erik@p5B3C5056.dip0.t-ipconnect.de) has joined ##linux
+2018-02-16 19:49:42	revel	Vamava: For example, I had to do something to enable ethernet over USB at boot time.
+2018-02-16 19:49:57	◀▬▬	LiPi (~lipi@245.red-79-150-35.dynamicip.rima-tde.net) has quit (Quit: Me'n vaig)
+2018-02-16 19:49:59	revel	Vamava: Check raspi-config
+2018-02-16 19:50:09	◀▬▬	fengshaun (~fengshaun@unaffiliated/fengshaun) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:50:22	Vamava	mawk: could it be possible to load it as a kernel module?
+2018-02-16 19:50:35	Vamava	revel: the serial interface has been enabled, and the SPI is working as well
+2018-02-16 19:50:39	◀▬▬	dee_two (~dee_two@116.75.57.7) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:50:44	▬▬▶	isak__ (~isak__@c83-254-70-251.bredband.comhem.se) has joined ##linux
+2018-02-16 19:50:49	EnchanterTim	Is there a command line program that has internet radios and plays them?
+2018-02-16 19:50:51	EnchanterTim	:)
+2018-02-16 19:50:51	◀▬▬	nkambo_ (~Naresh@122.175.19.4) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:50:51	Vamava	I'll give raspi-config a run tthough
+2018-02-16 19:51:14	revel	Vamava: Might have to get the module through apt then maybe?
+2018-02-16 19:51:22	◀▬▬	`Cam (~textual@ip-120-95-192-203.static.pipenetworks.com) has quit (Quit: ZZZ)
+2018-02-16 19:51:41	revel	It should invovle editing /boot/config.txt either directly or indirectly and rebooting, afaik.
+2018-02-16 19:51:45	▬▬▶	monst (49836df9@gateway/web/freenode/ip.73.131.109.249) has joined ##linux
+2018-02-16 19:51:49	▬▬▶	LeadGuit (~mfluor@46-127-9-115.dynamic.hispeed.ch) has joined ##linux
+2018-02-16 19:51:59	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 19:52:11	▬▬▶	oerheks (~oerheks@ubuntu/member/oerheks) has joined ##linux
+2018-02-16 19:52:12	revel	They probably have a channel.
+2018-02-16 19:52:13	◀▬▬	pualj_ (~pualj@196.145.127.186) has quit (Read error: No route to host)
+2018-02-16 19:52:15	Vamava	I'll see if I can find it there. But how to I interpret that the file is to be found here https://github.com/raspberrypi/linux/blob/rpi-4.9.y/drivers/tty/serial/max3100.c ? Does this mean it should be installed by default in some way?
+2018-02-16 19:52:23	EnchanterTim	http://www.coderholic.com/pyradio/
+2018-02-16 19:52:53	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 19:52:53	◀▬▬	technickel (~tn@8.44.166.2) has quit (Read error: Connection reset by peer)
+2018-02-16 19:53:10	revel	It could be compiled into the kernel rather than as a module.
+2018-02-16 19:53:21	▬▬▶	technickel (~tn@8.44.166.2) has joined ##linux
+2018-02-16 19:53:37	▬▬▶	kopper (~mrbabar@unaffiliated/kopper) has joined ##linux
+2018-02-16 19:53:38	revel	The modalias bit is commented out, so, maybe.
+2018-02-16 19:53:41	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 19:53:45	◀▬▬	MrELLi0T (~guillaume@81.171.81.137) has quit (Remote host closed the connection)
+2018-02-16 19:53:46	▬▬▶	gronke (~gronke@2600:1700:b00:bc50:79df:69ef:deb8:bdc0) has joined ##linux
+2018-02-16 19:54:14	gronke	I downloaded the latest tgz file here: https://github.com/CSB5/lofreq/tree/master/dist but when I run tar -xvzf on the file it says "gzip: stdin: not in gzip format", what gives?
+2018-02-16 19:54:23	revel	Actually, there's module stuff at the bottom.
+2018-02-16 19:54:23	◀▬▬	v01d4lph4 (~silent_fr@112.196.144.124) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:54:53	▬▬▶	nuno_nunes (~PC@89-180-108-126.net.novis.pt) has joined ##linux
+2018-02-16 19:54:56	Vamava	true
+2018-02-16 19:55:03	revel	Might get more help at #raspberrypi or #raspbia
+2018-02-16 19:55:06	revel	#raspbian
+2018-02-16 19:55:07	▬▬▶	pualj_ (~pualj@196.145.127.186) has joined ##linux
+2018-02-16 19:55:23	Vamava	but modprobe or lsprobe should have revealed if it was installed, right?
+2018-02-16 19:55:59	Vamava	I'll try #raspbia, but there is much more activity here usually
+2018-02-16 19:56:00	◀▬▬	Guest6858 (~user@104.158.239.183) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:56:13	▬▬▶	FastZ (~FastZ@173-120-249-250.pools.spcsdns.net) has joined ##linux
+2018-02-16 19:56:27	revel	There's no /proc/config.gz and I don't know what the kernel config is like. It could just be compiled in.
+2018-02-16 19:56:36	blip99	hi all. Got Pulse audio.  internal soundcard + usb sound device.  When I set USB as default output, then reboot - it resets back to internal.  any idea why?
+2018-02-16 19:56:38	◀▬▬	vintux1 (~vintux@82.102.16.153) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 19:56:40	◀▬▬	tonsofpcs (~mythbuntu@2001:470:e0b2:1:cda0:e8bf:86e7:5762) has quit (Changing host)
+2018-02-16 19:56:40	▬▬▶	tonsofpcs (~mythbuntu@rivendell/member/tonsofpcs) has joined ##linux
+2018-02-16 19:56:59	Vamava	There is no reference for it in the kernel config, I checked that before
+2018-02-16 19:57:25	◀▬▬	slowpokezzz (~slowpokez@197.0.21.198) has quit (K-Lined)
+2018-02-16 19:57:30	◀▬▬	piggah_ (~textual@dt0a1ndd.tampabay.res.rr.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:57:33	◀▬▬	user4 (~user@185.65.134.169) has quit (Quit: WeeChat 1.9.1)
+2018-02-16 19:58:08	◀▬▬	arennow (~arennow@c-73-82-66-115.hsd1.ga.comcast.net) has quit (Quit: arennow)
+2018-02-16 19:59:12	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Quit: byeee)
+2018-02-16 19:59:27	◀▬▬	Happyhobo (~shane@c-71-62-148-243.hsd1.va.comcast.net) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:59:29	◀▬▬	b3rnd (~b3rnd@pD9EC2925.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2018-02-16 19:59:34	◀▬▬	kenrin (~kenrin@23.226.133.70) has quit (Remote host closed the connection)
+2018-02-16 19:59:47	▬▬▶	SteveGriff (~SteveGrif@88.96.227.110) has joined ##linux
+2018-02-16 19:59:57	◀▬▬	vitur (~viturvar@27.56.155.168) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:00:02	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:00:11	▬▬▶	arennow (~arennow@c-73-82-66-115.hsd1.ga.comcast.net) has joined ##linux
+2018-02-16 20:00:26	▬▬▶	haZ- (~NeverMind@93-138-224-144.adsl.net.t-com.hr) has joined ##linux
+2018-02-16 20:00:26	◀▬▬	haZ- (~NeverMind@93-138-224-144.adsl.net.t-com.hr) has quit (Changing host)
+2018-02-16 20:00:26	▬▬▶	haZ- (~NeverMind@unaffiliated/haz-) has joined ##linux
+2018-02-16 20:00:42	▬▬▶	renn0xtk9 (~max@ip-37-201-4-244.hsi13.unitymediagroup.de) has joined ##linux
+2018-02-16 20:00:52	▬▬▶	kenrin (~kenrin@23.226.133.72) has joined ##linux
+2018-02-16 20:01:00	▬▬▶	applecrumble (~applecrum@65.196.51.162) has joined ##linux
+2018-02-16 20:01:20	◀▬▬	mckendricks (~mckendric@173.0.112.18) has quit (Read error: Connection reset by peer)
+2018-02-16 20:01:22	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:01:31	◀▬▬	pinPoint (~pinPoint@about/windows/regular/pinpoint) has quit (Quit: Incoming fire has the right of way.)
+2018-02-16 20:02:18	◀▬▬	ldar (~cdchapm2@wikimedia/enthdegree) has quit (Remote host closed the connection)
+2018-02-16 20:02:54	▬▬▶	cdown (~cdown@my83-216-74-28.cust.relish.net) has joined ##linux
+2018-02-16 20:03:07	▬▬▶	qpdb_ (~qpdb@unaffiliated/qpdb) has joined ##linux
+2018-02-16 20:03:07	--	qpdb is now known as Guest17656
+2018-02-16 20:03:07	◀▬▬	Guest17656 (~qpdb@unaffiliated/qpdb) has quit (Killed (leguin.freenode.net (Nickname regained by services)))
+2018-02-16 20:03:07	--	qpdb_ is now known as qpdb
+2018-02-16 20:03:11	▬▬▶	cdchapm2 (~cdchapm2@general.asu.edu) has joined ##linux
+2018-02-16 20:04:49	◀▬▬	iveqy (~fug@h-118-245.A137.corp.bahnhof.se) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:04:58	▬▬▶	ferdna (~ferdna@68-73-71-246.lightspeed.elpstx.sbcglobal.net) has joined ##linux
+2018-02-16 20:05:10	▬▬▶	avi_IRC (~androirc@183.82.23.230) has joined ##linux
+2018-02-16 20:05:14	◀▬▬	pos (~pos@gateway/tor-sasl/pos) has quit (Quit: pos)
+2018-02-16 20:05:41	▬▬▶	^esc (~esc-ape@77.119.129.85.wireless.dyn.drei.com) has joined ##linux
+2018-02-16 20:05:59	◀▬▬	Eryn_1983_FL (~Eryn_1983@c-73-24-115-100.hsd1.fl.comcast.net) has quit (Quit: WeeChat 1.0.1)
+2018-02-16 20:06:11	▬▬▶	colatkinson (~colatkins@cpe-67-240-56-42.nycap.res.rr.com) has joined ##linux
+2018-02-16 20:06:19	▬▬▶	raefe (uid193627@gateway/web/irccloud.com/x-xxrbwpupxqgfcixd) has joined ##linux
+2018-02-16 20:06:21	▬▬▶	Eryn_1983_FL (~Eryn_1983@c-73-24-115-100.hsd1.fl.comcast.net) has joined ##linux
+2018-02-16 20:06:22	▬▬▶	qpdb_ (~qpdb@unaffiliated/qpdb) has joined ##linux
+2018-02-16 20:06:22	--	qpdb is now known as Guest82501
+2018-02-16 20:06:22	--	qpdb_ is now known as qpdb
+2018-02-16 20:06:42	◀▬▬	avi_IRC (~androirc@183.82.23.230) has quit (Client Quit)
+2018-02-16 20:06:44	▬▬▶	iveqy (~fug@h-118-245.A137.corp.bahnhof.se) has joined ##linux
+2018-02-16 20:07:18	◀▬▬	Guest82501 (~qpdb@unaffiliated/qpdb) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:07:22	◀▬▬	ttoocs (~ttoocs@S0106bcaec5c4f1ed.cg.shawcable.net) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 20:07:48	▬▬▶	greenmile (d5cdfb86@gateway/web/freenode/ip.213.205.251.134) has joined ##linux
+2018-02-16 20:08:37	rcm888	hi
+2018-02-16 20:08:55	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:08:57	rcm888	show is programmer?
+2018-02-16 20:09:03	rcm888	*who
+2018-02-16 20:09:59	▬▬▶	thiras (~thiras@unaffiliated/thiras) has joined ##linux
+2018-02-16 20:10:28	greenmile	rcm888: me is programmer
+2018-02-16 20:10:56	◀▬▬	pualj_ (~pualj@196.145.127.186) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:10:57	◀▬▬	migul (~mig@pdpc/supporter/student/migul) has quit (Quit: Leaving)
+2018-02-16 20:11:02	RadicalEd	whats up everyone
+2018-02-16 20:11:15	▬▬▶	hehehe (uid219408@gateway/web/irccloud.com/x-tqontsotzvxxfctb) has joined ##linux
+2018-02-16 20:11:25	▬▬▶	clete2 (~clete2@1360654-v114.1254-static.bltnilaa.metronetinc.net) has joined ##linux
+2018-02-16 20:11:31	◀▬▬	za1b1tsu (~za1b1tsu@79.112.86.25) has quit (Quit: Leaving)
+2018-02-16 20:11:32	▬▬▶	dieggsy (~user@unaffiliated/dieggsy) has joined ##linux
+2018-02-16 20:11:39	rcm888	greenmile: could you please say a word about this: http://codepad.org/jcqc4PwY
+2018-02-16 20:12:05	◀▬▬	ztychr (~ztychr@unaffiliated/ztychr) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:12:27	hehehe	hey folks
+2018-02-16 20:12:35	◀▬▬	d1zz (~gt@unaffiliated/gtt) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:12:36	greenmile	rcm888: Would you consider "wtf" to be a word?
+2018-02-16 20:12:46	◀▬▬	rendar (~rendar@unaffiliated/rendar) has quit
+2018-02-16 20:12:52	▬▬▶	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has joined ##linux
+2018-02-16 20:12:56	hehehe	I have installed a deb package on lubuntu live, and software icon is yet to appear
+2018-02-16 20:12:59	◀▬▬	monst (49836df9@gateway/web/freenode/ip.73.131.109.249) has quit (Quit: Page closed)
+2018-02-16 20:13:07	hehehe	how I can troubleshoot it?
+2018-02-16 20:13:17	mawk	disconnect and reconnect
+2018-02-16 20:13:19	▬▬▶	spacewalker_supe (~bradbaris@unaffiliated/spacewalker-supe/x-8906275) has joined ##linux
+2018-02-16 20:13:20	RadicalEd	what software was it?
+2018-02-16 20:13:35	◀▬▬	secuvim (~stephan@2001:7c7:20ce:147:a7f3:5c61:cfa3:8116) has quit (Read error: No route to host)
+2018-02-16 20:13:39	oerheks	rcm888, doing homework?
+2018-02-16 20:13:45	◀▬▬	enterprisey (~enterpris@wikipedia/enterprisey) has quit (Remote host closed the connection)
+2018-02-16 20:13:47	siiky	is it possible for X to turn off any USB peripheral (like a mouse or KB) after a certain timeout?
+2018-02-16 20:13:48	hehehe	airpnv gui client
+2018-02-16 20:13:52	rcm888	greenmile: yes, wtf?!
+2018-02-16 20:14:10	mawk	Vamava: you need to find that module
+2018-02-16 20:14:17	mawk	to compile it, to be more precise
+2018-02-16 20:14:18	EnchanterTim	What are some good games in debian for playing racing? maybe?
+2018-02-16 20:14:23	EnchanterTim	you play ames?
+2018-02-16 20:14:32	mawk	you need to get a source tree and compile that specific module, but I've never done taht
+2018-02-16 20:14:32	EnchanterTim	I'm bored.
+2018-02-16 20:14:35	mawk	shouldn't be too hard tho
+2018-02-16 20:14:43	◀▬▬	Tobbi (~Tobbi@supertux/tobbi) has quit (Remote host closed the connection)
+2018-02-16 20:14:45	▬▬▶	d1zz (~gt@unaffiliated/gtt) has joined ##linux
+2018-02-16 20:15:01	RadicalEd	EnchanterTim: supertuxcart
+2018-02-16 20:15:02	◀▬▬	FastZ (~FastZ@173-120-249-250.pools.spcsdns.net) has quit
+2018-02-16 20:15:11	EnchanterTim	https://blends.debian.org/games/tasks/
+2018-02-16 20:15:36	hehehe	RadicalEd: maybe something went wrong during deb install?
+2018-02-16 20:15:38	hehehe	...
+2018-02-16 20:15:46	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Quit: byeee)
+2018-02-16 20:15:56	siiky	my KB and mouse seem to be turned off after a while (~1s it seems). if i hit a key/click, they turn back on
+2018-02-16 20:15:56	▬▬▶	linux_dream (~linux_dre@unaffiliated/linux-dream/x-5839402) has joined ##linux
+2018-02-16 20:16:03	hehehe	I kinda want vpn cause I am in Russia now lol
+2018-02-16 20:16:05	RadicalEd	hehehe: how did you install the deb? did you use the commandline? if so was there an error?
+2018-02-16 20:16:30	hehehe	RadicalEd: I have simply clicked on it, and it went on installig itself
+2018-02-16 20:16:34	revel	hehehe: I'm sure you can just trust Roskomnadzor with all of your data.
+2018-02-16 20:16:40	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:16:41	hehehe	revel: ha
+2018-02-16 20:16:42	hehehe	\
+2018-02-16 20:16:45	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:53	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 20:18:53	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 20:18:53	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 20:18:53	--	Channel ##linux: 2181 nicks (1 op, 0 voices, 2180 normals)
+2018-02-16 20:18:54	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 20:18:54	--	URL for ##linux: http://linux.chat
+2018-02-16 20:18:54	siiky	i did update some packages yesterday, but none were X related, and i even rebooted after the updates
+2018-02-16 20:18:57	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 20:19:02	siiky	tatertotz: i wish the prob was batteries
+2018-02-16 20:19:05	siiky	theyre wired
+2018-02-16 20:19:14	MrElendig	siiky: using tlp/similar?
+2018-02-16 20:19:30	◀▬▬	stevenxl (uid133530@gateway/web/irccloud.com/x-fqbxnfyibcssffkn) has quit (Quit: Connection closed for inactivity)
+2018-02-16 20:19:30	siiky	MrElendig: actually yes, tlp
+2018-02-16 20:19:36	hehehe	RadicalEd: fixing it
+2018-02-16 20:19:38	MrElendig	siiky: it does silly things like that
+2018-02-16 20:19:41	▬▬▶	zergut (uid221522@taskhive/translator/zergut) has joined ##linux
+2018-02-16 20:19:48	MrElendig	siiky: tell it to not touch your mouse/keyboard anymore
+2018-02-16 20:19:57	MrElendig	(or don't use tlp)
+2018-02-16 20:20:02	▬▬▶	Tobbi (~Tobbi@supertux/tobbi) has joined ##linux
+2018-02-16 20:20:02	◀▬▬	tieinv (~tieinv@S0106bcee7b6f7560.vf.shawcable.net) has quit (Quit: Gone)
+2018-02-16 20:20:24	siiky	MrElendig: hm but i havent changed the settings ever (since 1yr+ ago)
+2018-02-16 20:20:35	◀▬▬	Mr_Keyser_Soze (~Mr_Keyser@c-69-246-32-17.hsd1.la.comcast.net) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:20:50	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:20:58	siiky	dont even remember where the settings are :| will check it out, thanks for the tip MrElendig
+2018-02-16 20:21:13	◀▬▬	synthroid (synthroid@gateway/vpn/privateinternetaccess/synthroid) has quit (Remote host closed the connection)
+2018-02-16 20:21:24	▬▬▶	matt8109 (~matt8109@FXYNQD2-VHB09.LAW.NYU.EDU) has joined ##linux
+2018-02-16 20:22:03	▬▬▶	synthroid (synthroid@gateway/vpn/privateinternetaccess/synthroid) has joined ##linux
+2018-02-16 20:22:40	▬▬▶	Elzair (~elzair@user-24-214-62-41.knology.net) has joined ##linux
+2018-02-16 20:22:48	◀▬▬	haZ- (~NeverMind@unaffiliated/haz-) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:22:55	MrElendig	bluetooth mouse/keyboard btw?
+2018-02-16 20:23:05	◀▬▬	sahteCoban (~manjaro-u@h-4-157-176.A163.priv.bahnhof.se) has quit (Read error: Connection reset by peer)
+2018-02-16 20:23:07	▬▬▶	stacheldrahtje (~natasha@94.215.41.247) has joined ##linux
+2018-02-16 20:23:14	MrElendig	like how the tlp faq just goes "nope, tlp would never do that"
+2018-02-16 20:23:26	▬▬▶	sahteCoban (~manjaro-u@h-4-157-176.A163.priv.bahnhof.se) has joined ##linux
+2018-02-16 20:23:43	◀▬▬	stacheldrahtje (~natasha@94.215.41.247) has quit (Client Quit)
+2018-02-16 20:23:48	revel	tlp?
+2018-02-16 20:24:00	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:24:06	siiky	MrElendig: no, both KB and mouse are wired, connected by USB to my PC
+2018-02-16 20:24:26	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:24:37	siiky	i found the config file and theres an option to turn off, so ill try that, reboot and come back with feedback
+2018-02-16 20:24:49	◀▬▬	spare (~user@unaffiliated/spareproject) has quit (Quit: leaving)
+2018-02-16 20:24:50	▬▬▶	preyalone (uid21561@gateway/web/irccloud.com/x-pgcjazhkxcaeiord) has joined ##linux
+2018-02-16 20:24:51	◀▬▬	preyalone (uid21561@gateway/web/irccloud.com/x-pgcjazhkxcaeiord) has quit (Max SendQ exceeded)
+2018-02-16 20:24:57	◀▬▬	[MMDC090732] (~quassel@148.27.11.109.rev.sfr.net) has quit (Ping timeout: 264 seconds)
+2018-02-16 20:25:10	◀▬▬	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has quit (Quit: Leaving)
+2018-02-16 20:25:10	▬▬▶	preyalone (uid21561@gateway/web/irccloud.com/x-nlzkslnkodganohc) has joined ##linux
+2018-02-16 20:25:31	▬▬▶	stacheldrahtje (~natasha@5ED729F7.cm-7-8a.dynamic.ziggo.nl) has joined ##linux
+2018-02-16 20:25:35	◀▬▬	stacheldrahtje (~natasha@5ED729F7.cm-7-8a.dynamic.ziggo.nl) has quit (Remote host closed the connection)
+2018-02-16 20:25:44	▬▬▶	hpz (~thisguy@159-118-247-135.cpe.cableone.net) has joined ##linux
+2018-02-16 20:25:49	▬▬▶	qwayde (~weechat@unaffiliated/icetooth) has joined ##linux
+2018-02-16 20:26:00	▬▬▶	Ikoru (~Ikoru@host86-183-243-35.range86-183.btcentralplus.com) has joined ##linux
+2018-02-16 20:26:10	▬▬▶	stacheldrahtje (~stacheldr@5ED729F7.cm-7-8a.dynamic.ziggo.nl) has joined ##linux
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:27:11	▬▬▶	cstk421 (~cstk421@mobile-166-177-57-53.mycingular.net) has joined ##linux
+2018-02-16 20:27:34	▬▬▶	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has joined ##linux
+2018-02-16 20:27:57	◀▬▬	banisterfiend (~banister@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:28:24	▬▬▶	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has joined ##linux
+2018-02-16 20:28:39	▬▬▶	haZ- (~NeverMind@93.138.227.10) has joined ##linux
+2018-02-16 20:28:39	◀▬▬	haZ- (~NeverMind@93.138.227.10) has quit (Changing host)
+2018-02-16 20:28:39	▬▬▶	haZ- (~NeverMind@unaffiliated/haz-) has joined ##linux
+2018-02-16 20:28:45	▬▬▶	Raed|Laptop (~Raed@2601:18c:8601:c7e9:262:406e:319c:7768) has joined ##linux
+2018-02-16 20:28:53	▬▬▶	DTZUZU (~DTZUZU@S0106bcd16584b0aa.vs.shawcable.net) has joined ##linux
+2018-02-16 20:28:55	◀▬▬	stacheldrahtje (~stacheldr@5ED729F7.cm-7-8a.dynamic.ziggo.nl) has quit (Client Quit)
+2018-02-16 20:29:51	◀▬▬	G3nka1 (~hubatrix@unaffiliated/hubatrix) has quit (Quit: Leaving)
+2018-02-16 20:29:53	▬▬▶	caecias (~caecias@unaffiliated/caecias) has joined ##linux
+2018-02-16 20:30:04	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Quit: byeee)
+2018-02-16 20:30:11	▬▬▶	Happyhobo (~shane@c-71-62-148-243.hsd1.va.comcast.net) has joined ##linux
+2018-02-16 20:30:22	mawk	what's the kernel module for bridges ?
+2018-02-16 20:30:23	◀▬▬	Silmarilion (~Silmarili@87.116.176.129) has quit (Remote host closed the connection)
+2018-02-16 20:30:31	mawk	it says operation not supported when I add a bridge
+2018-02-16 20:30:34	▬▬▶	Jesterboxboy (~Thunderbi@84-115-150-8.cable.dynamic.surfer.at) has joined ##linux
+2018-02-16 20:30:35	mawk	I just updated my distro and now it does that
+2018-02-16 20:30:43	mawk	kernel didn't got updated tho
+2018-02-16 20:30:48	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:30:48	mawk	I think
+2018-02-16 20:30:54	◀▬▬	rpgio (~rpgio@196-215-7-171.dynamic.isadsl.co.za) has quit (Quit: Lost terminal)
+2018-02-16 20:31:00	mawk	no it was updated
+2018-02-16 20:31:09	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:31:09	▬▬▶	lead_pipe23 (~lead_pipe@c-71-59-62-216.hsd1.ga.comcast.net) has joined ##linux
+2018-02-16 20:31:17	◀▬▬	lead_pipe23 (~lead_pipe@c-71-59-62-216.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2018-02-16 20:31:34	▬▬▶	lead_pipe23 (~lead_pipe@c-71-59-62-216.hsd1.ga.comcast.net) has joined ##linux
+2018-02-16 20:31:41	◀▬▬	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has quit (Client Quit)
+2018-02-16 20:31:43	▬▬▶	Gencade (c6d1a273@gateway/web/freenode/ip.198.209.162.115) has joined ##linux
+2018-02-16 20:31:44	Vamava	mawk, thanks. I haven't done that before either, but I'll see if I can figure it out.
+2018-02-16 20:31:44	revel	mawk: Kernel config says "bridge"
+2018-02-16 20:31:48	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:32:01	◀▬▬	somepoortech__ (~somepoort@72-0-128-212.static.firstlight.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:32:15	mawk	I don't have that module
+2018-02-16 20:32:17	◀▬▬	Arcaelyx (~Arcaelyx@69.12.80.147.adsl.inet-telecom.org) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:32:23	◀▬▬	strive (~strive@unaffiliated/strive/x-8457361) has quit (Ping timeout: 255 seconds)
+2018-02-16 20:32:28	mawk	oh no ok, there's just a bug in it
+2018-02-16 20:32:38	mawk	it's the spectre fix that did that
+2018-02-16 20:32:44	mawk	just what I needed
+2018-02-16 20:32:55	▬▬▶	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has joined ##linux
+2018-02-16 20:33:26	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:33:38	mawk	in dmesg it says a ton of [16245.120645] llc: Unknown symbol __x86_indirect_thunk_r15 (err 0)
+2018-02-16 20:33:57	◀▬▬	caecias (~caecias@unaffiliated/caecias) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:34:15	◀▬▬	matt8109 (~matt8109@FXYNQD2-VHB09.LAW.NYU.EDU) has quit (Quit: ZZZzzz…)
+2018-02-16 20:34:20	MrElendig	that sounds like a module that have not been rebuilt
+2018-02-16 20:34:24	revel	mawk: What version of GCC was it compiled with?
+2018-02-16 20:34:25	MrElendig	or similar
+2018-02-16 20:34:28	mawk	yeah
+2018-02-16 20:34:30	mawk	same for xfs, jfs, minix, ntfs, hfsplus, qnx4, ufs, fuse
+2018-02-16 20:34:36	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:34:39	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:34:43	◀▬▬	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has quit (Remote host closed the connection)
+2018-02-16 20:34:47	revel	Oh, yeah, modules should be rebuilt.
+2018-02-16 20:35:13	▬▬▶	Gunmanic (~GunnZ0@188-139-209-31.xdsl.hringdu.is) has joined ##linux
+2018-02-16 20:35:18	◀▬▬	suhdood (~Thaelim@2601:281:c502:25d9:5cd:bbd3:d92b:e035) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:35:33	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:35:36	mawk	I didn't build that kernel, it's from the distro
+2018-02-16 20:35:37	◀▬▬	nogic (~nogic@96-18-65-226.cpe.cableone.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:35:45	◀▬▬	colatkinson (~colatkins@cpe-67-240-56-42.nycap.res.rr.com) has quit (Quit: colatkinson)
+2018-02-16 20:35:52	mawk	let's reboot to see
+2018-02-16 20:35:56	revel	Well, still, just curious.
+2018-02-16 20:36:04	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:36:47	rcm888	oerheks: what would you tell?
+2018-02-16 20:36:56	▬▬▶	strive (~strive@unaffiliated/strive/x-8457361) has joined ##linux
+2018-02-16 20:36:58	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:37:07	revel	Since there's two variants of retpoline fixes in the kernel, afaik.
+2018-02-16 20:37:19	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:37:27	◀▬▬	cedra (cedra@clustered.space) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:37:31	◀▬▬	cstk421 (~cstk421@mobile-166-177-57-53.mycingular.net) has quit
+2018-02-16 20:37:34	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:37:35	▬▬▶	Sonderblade (~bjourne@2001:6b0:1:1041:6257:18ff:fe4a:99fd) has joined ##linux
+2018-02-16 20:37:45	revel	Full compiler retpoline support vs lighter retpoline if there's no retpoline support in the kernel.
+2018-02-16 20:37:48	mawk	it fixed it
+2018-02-16 20:38:04	mawk	how do I know the gcc version ?
+2018-02-16 20:38:11	mawk	I tried objdump on the kernel image but it's all stripped
+2018-02-16 20:38:13	revel	uname -a should tell you.
+2018-02-16 20:38:18	revel	Or cat /proc/version
+2018-02-16 20:38:22	mawk	I already tried that
+2018-02-16 20:38:24	mawk	alright
+2018-02-16 20:38:30	d1zz	can files weight different sizes in different filesystems?
+2018-02-16 20:38:31	mawk	gcc version 7.3.0 (Debian 7.3.0-3)
+2018-02-16 20:38:31	revel	That doesn't report it?
+2018-02-16 20:38:39	mawk	the uname didn't, but /proc/version did
+2018-02-16 20:38:42	revel	Full retpoline support then.
+2018-02-16 20:38:48	revel	uname -a doesn't?
+2018-02-16 20:38:51	mawk	no
+2018-02-16 20:38:58	revel	Oh, I guess it doesn't.
+2018-02-16 20:39:01	▬▬▶	Logg (~Logg@76.72.182.219) has joined ##linux
+2018-02-16 20:39:06	revel	I thought it did.
+2018-02-16 20:39:07	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:39:10	▬▬▶	suhdood (~Thaelim@2600:380:9914:a394:9857:b7f0:21ce:c792) has joined ##linux
+2018-02-16 20:39:32	mawk	it reports everything in /proc/version except the email address, gcc version, the exact version
+2018-02-16 20:39:38	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:39:38	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:39:47	◀▬▬	erikw (~Erik@p5B3C5056.dip0.t-ipconnect.de) has quit (Quit: Lost terminal)
+2018-02-16 20:39:53	▬▬▶	marcurling (~marcurlin@put92-2-82-66-41-61.fbx.proxad.net) has joined ##linux
+2018-02-16 20:40:03	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:40:10	mawk	yes d1zz , if by weigh you mean size occupied on the disk
+2018-02-16 20:40:12	revel	Email version? I don't have that :P
+2018-02-16 20:40:16	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:40:20	revel	s/ version//
+2018-02-16 20:40:20	▬▬▶	erikw (~Erik@p5B3C5056.dip0.t-ipconnect.de) has joined ##linux
+2018-02-16 20:40:31	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:40:43	mawk	email is debian-kernel@lists.debian.org and exact version is  #1 SMP Debian 4.14.17-1
+2018-02-16 20:41:26	◀▬▬	davr0s (~textual@host86-147-196-14.range86-147.btcentralplus.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2018-02-16 20:41:26	▬▬▶	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has joined ##linux
+2018-02-16 20:41:30	▬▬▶	kurkale61 (~kurkale6k@84.45.99.125) has joined ##linux
+2018-02-16 20:41:30	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Client Quit)
+2018-02-16 20:41:46	▬▬▶	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:42:14	◀▬▬	xdexter (~xdexter@2804:14c:f280:838b:f2bf:97ff:fece:4613) has quit (Quit: Ex-Chat)
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:37	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 20:44:37	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 20:44:37	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 20:44:37	--	Channel ##linux: 2183 nicks (1 op, 0 voices, 2182 normals)
+2018-02-16 20:44:38	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 20:44:38	--	URL for ##linux: http://linux.chat
+2018-02-16 20:44:41	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 20:44:57	phogg	there's a small per-file overhead plus an overhead for the filesystem itself plus an overhead based on the size of the partition
+2018-02-16 20:45:43	▬▬▶	thuryn (~justinmcn@216.106.72.146.reverse.socket.net) has joined ##linux
+2018-02-16 20:45:45	◀▬▬	applecrumble (~applecrum@65.196.51.162) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 20:45:58	◀▬▬	eXino_ (~exino@2a01:4f8:140:10b0::2) has left ##linux
+2018-02-16 20:46:05	oerheks	rcm888, i would tell: i aqmnot doing your homework
+2018-02-16 20:46:15	oerheks	-q
+2018-02-16 20:46:27	phogg	most filesystems have a minimum block size so e.g. if it's 4KiB any file under that size still consumes 4KiB of space in the filesystem structure. That minimum allocation size, and whether you can sometimes pack multiple files in to one block or not, also contributes to actual space required by a file
+2018-02-16 20:46:29	--	irc: disconnected from server
+2018-02-16 20:48:27	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##linux
+2018-02-16 20:48:27	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Spammers or trolls? use !ops <troll's nick> <reason>". | For op assistance, join ##linux-ops | Set /umode +R if you're getting tons of nonsensical PMs | Feel at home and enjoy your stay!"
+2018-02-16 20:48:27	--	Topic set by bocaneri on So, 04 Dez 2016 08:21:22
+2018-02-16 20:48:27	--	Channel ##linux: 2180 nicks (1 op, 0 voices, 2179 normals)
+2018-02-16 20:48:28	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2018-02-16 20:48:28	--	URL for ##linux: http://linux.chat
+2018-02-16 20:48:32	--	Channel created on Sa, 10 Feb 2001 00:16:24
+2018-02-16 20:49:29	▬▬▶	Arcaelyx (~Arcaelyx@173.254.196.59.adsl.inet-telecom.org) has joined ##linux
+2018-02-16 20:49:39	◀▬▬	sunnny (~sunnny@176.116.80.8.nat-pool.grand-telcom.net.ua) has quit (Quit: init 0)
+2018-02-16 20:49:44	ayecee	ls
+2018-02-16 20:49:46	ayecee	doh
+2018-02-16 20:49:59	◀▬▬	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has quit (Quit: Leaving)
+2018-02-16 20:50:04	◀▬▬	Tuxand (~tuxand@130.red-83-40-52.dynamicip.rima-tde.net) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 20:50:07	◀▬▬	keith20 (~keith20@96.44.189.195.adsl.inet-telecom.org) has quit (Quit: byeee)
+2018-02-16 20:50:09	▬▬▶	caecias (~caecias@unaffiliated/caecias) has joined ##linux
+2018-02-16 20:50:13	 *	qwayde laughs like nelson from the simpsons at ayecee
+2018-02-16 20:50:22	--	k12 is now known as XtremeHugsAndCud
+2018-02-16 20:50:38	--	XtremeHugsAndCud is now known as XtremeHugsNCuddl
+2018-02-16 20:50:40	▬▬▶	matt8109 (~matt8109@FXYNQD2-VHB09.LAW.NYU.EDU) has joined ##linux
+2018-02-16 20:50:41	ayecee	at least it wasn't my password this time
+2018-02-16 20:50:47	◀▬▬	linux_dream (~linux_dre@unaffiliated/linux-dream/x-5839402) has quit (Quit: Leaving)
+2018-02-16 20:50:59	phogg	ayecee: maybe next time
+2018-02-16 20:51:06	revel	/ns identify ******
+2018-02-16 20:51:39	◀▬▬	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:52:10	◀▬▬	beefjoe (~beefjoe@unaffiliated/beefjoe) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:52:45	▬▬▶	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has joined ##linux
+2018-02-16 20:52:49	▬▬▶	foul_owl (~foul_owl@75-172-106-114.tukw.qwest.net) has joined ##linux
+2018-02-16 20:53:05	MrElendig	****** is a pretty crappy password
+2018-02-16 20:53:33	snake2k	My password is the best: *************************
+2018-02-16 20:53:34	revel	The ircd just filters it out in cases like this.
+2018-02-16 20:53:36	revel	:P
+2018-02-16 20:53:40	snake2k	revel: lol
+2018-02-16 20:53:59	Mateon1	Oh, let me try: hunter2
+2018-02-16 20:54:03	▬▬▶	mareex (~mareex@dslb-088-070-149-037.088.070.pools.vodafone-ip.de) has joined ##linux
+2018-02-16 20:54:14	vultyre	Meteon1, all I see is *******
+2018-02-16 20:54:15	sy	let me try
+2018-02-16 20:54:25	◀▬▬	sasheto (~sasheto@94.26.13.180) has quit (Quit: WeeChat 1.9.1)
+2018-02-16 20:54:29	snake2k	Mateon1: Can't read it :/
+2018-02-16 20:54:34	jim	-my- password has star quality!
+2018-02-16 20:54:40	sy	/ns identify 9adb2e1e4eca48f0c90ae383b50cf
+2018-02-16 20:54:50	revel	jim: Is it ★★★★★★★ ?
+2018-02-16 20:54:57	▬▬▶	day__ (~Unknown@unaffiliated/day) has joined ##linux
+2018-02-16 20:55:00	▬▬▶	brutser (51f44f77@gateway/web/freenode/ip.81.244.79.119) has joined ##linux
+2018-02-16 20:55:07	Mateon1	Should have said "asterisk-quality"
+2018-02-16 20:55:08	mawk	/ns identify sy 9adb2e1e4eca48f0c90ae383b50cf
+2018-02-16 20:55:12	MrElendig	/ns identify luggage 12324567
+2018-02-16 20:55:13	▬▬▶	aBound (~aBound@unaffiliated/abound) has joined ##linux
+2018-02-16 20:55:13	jim	billionz and billionz of starz!
+2018-02-16 20:55:18	◀▬▬	snake2k (snake2k@gateway/vpn/privateinternetaccess/snake2k) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 20:55:22	revel	★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★v
+2018-02-16 20:55:23	▬▬▶	atr3y0 (~Osvaldo@conm200-116-96-31.epm.net.co) has joined ##linux
+2018-02-16 20:55:24	revel	?
+2018-02-16 20:55:45	▬▬▶	scramble_suit (~pulpfree@217.78.6.189) has joined ##linux
+2018-02-16 20:56:09	rcm888	any programmers here who wish to talk?
+2018-02-16 20:56:09	vultyre	That's the kinda thing an idiot would have on his luggage!
+2018-02-16 20:56:18	◀▬▬	gronke (~gronke@2600:1700:b00:bc50:79df:69ef:deb8:bdc0) has quit (Quit: Leaving)
+2018-02-16 20:56:42	▬▬▶	DevAntoine (~DevAntoin@46.29.126.206) has joined ##linux
+2018-02-16 20:56:49	◀▬▬	day (~Unknown@unaffiliated/day) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:56:55	▬▬▶	id4rk (~id4rk@reactos/tester/id4rk) has joined ##linux
+2018-02-16 20:56:55	--	day__ is now known as day
+2018-02-16 20:57:37	sy	mawk: rude
+2018-02-16 20:57:46	▬▬▶	DocHopper (~DocHopper@unaffiliated/dochopper) has joined ##linux
+2018-02-16 20:58:00	◀▬▬	d1zz (~gt@unaffiliated/gtt) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:58:05	◀▬▬	Retr0id (~Retr0id@unaffiliated/retr0id) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:58:07	aBound	jim, Dem starz. :P
+2018-02-16 20:58:24	▬▬▶	somepoortech_ (~somepoort@72-0-128-26.static.firstlight.net) has joined ##linux
+2018-02-16 20:58:41	--	irc: disconnected from server

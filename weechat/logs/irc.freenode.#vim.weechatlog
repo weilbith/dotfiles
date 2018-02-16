@@ -1,0 +1,258 @@
+2018-02-16 17:54:38	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 17:54:38	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 17:54:38	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 17:54:38	--	Channel #vim: 1154 nicks (0 ops, 0 voices, 1154 normals)
+2018-02-16 17:54:42	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 17:54:42	--	URL for #vim: http://vi-improved.org
+2018-02-16 17:54:49	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 17:55:15	phy1729	I have   let g:is_posix=1   in my .vimrc
+2018-02-16 17:55:28	phy1729	Although honestly I don't why that isn't the default yet.
+2018-02-16 17:55:40	--	irc: disconnected from server
+2018-02-16 17:57:06	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 17:57:06	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 17:57:06	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 17:57:06	--	Channel #vim: 1156 nicks (0 ops, 0 voices, 1156 normals)
+2018-02-16 17:57:07	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 17:57:07	--	URL for #vim: http://vi-improved.org
+2018-02-16 17:57:14	 *	Zathrus is still a bit bitter over that
+2018-02-16 17:57:17	phy1729	POSIX or gtfo I'm not going to bother supporting you
+2018-02-16 17:57:17	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 17:57:43	◀▬▬	Haudegen (~quassel@212-186-77-29.static.upcbusiness.at) has quit (Read error: Connection reset by peer)
+2018-02-16 17:59:15	Zathrus	phy1729: seriously, we had some piece of crap program that would emit scripts with #!/bin/sh hardcoded into them (as in... you didn't put that line in the code, but the program would put it in). Caused unending headaches as people didn't understand that "export FOO=bar" didn't work on Solaris, and only there.
+2018-02-16 17:59:22	▬▬▶	cagomez (~cagomez@sb0-cf9a61b1.dsl.impulse.net) has joined #vim
+2018-02-16 17:59:40	hoylemd	Ah, `let g:is_bash = 1` did the trick! Thanks!
+2018-02-16 17:59:55	▬▬▶	pt1 (~pt1@31-208-142-54.cust.bredband2.com) has joined #vim
+2018-02-16 18:00:24	phy1729	ZFS and dtrace are cool, but a non-POSIX /bin/sh ruins a lot
+2018-02-16 18:00:36	◀▬▬	coot (~coot@plutocluster.cavehill.uwi.edu) has quit (Ping timeout: 256 seconds)
+2018-02-16 18:00:42	▬▬▶	troys (~troys@23-24-139-177-static.hfc.comcastbusiness.net) has joined #vim
+2018-02-16 18:00:44	Zathrus	phy1729: to be clear, that was Solaris 8, which is ancient history. I don't know about Solaris 10
+2018-02-16 18:00:47	 *	phy1729 is too young to have admined real UNIX systems
+2018-02-16 18:01:03	 *	Zathrus remembers SunOS
+2018-02-16 18:01:27	Zathrus	although I think the first *nix I logged into was either Dynix or Ultrix
+2018-02-16 18:01:31	--	irc: disconnected from server
+2018-02-16 18:03:20	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 18:03:20	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 18:03:20	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 18:03:20	--	Channel #vim: 1159 nicks (0 ops, 0 voices, 1159 normals)
+2018-02-16 18:03:20	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 18:03:20	--	URL for #vim: http://vi-improved.org
+2018-02-16 18:03:26	◀▬▬	m1n (~m1n@unaffiliated/m1ntfr3sh) has quit (Client Quit)
+2018-02-16 18:03:28	▬▬▶	jacob_ (~jacob@d40a09f3.rev.stofanet.dk) has joined #vim
+2018-02-16 18:03:31	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 18:03:52	--	jacob_ is now known as Guest98348
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 18:07:54	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 18:07:54	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 18:07:54	--	Channel #vim: 1157 nicks (0 ops, 0 voices, 1157 normals)
+2018-02-16 18:07:55	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 18:07:55	--	URL for #vim: http://vi-improved.org
+2018-02-16 18:08:07	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 18:08:44	▬▬▶	Richard|Fastly (~Richard|F@188.29.165.35.threembb.co.uk) has joined #vim
+2018-02-16 18:09:21	▬▬▶	jalalsfs (~jalalsfs@unaffiliated/jalalsfs) has joined #vim
+2018-02-16 18:09:57	◀▬▬	badfilms (~badfilms@c-va-d714594eea-34536-1.tingfiber.com) has quit (Ping timeout: 264 seconds)
+2018-02-16 18:10:16	▬▬▶	jetchisel (~jetchisel@opensuse/member/jetchisel) has joined #vim
+2018-02-16 18:11:50	--	irc: disconnected from server
+2018-02-16 18:13:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 18:13:19	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 18:13:19	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 18:13:19	--	Channel #vim: 1159 nicks (0 ops, 0 voices, 1159 normals)
+2018-02-16 18:13:19	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 18:13:19	--	URL for #vim: http://vi-improved.org
+2018-02-16 18:13:28	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #vim
+2018-02-16 18:13:30	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 18:13:36	--	irc: disconnected from server
+2018-02-16 19:13:04	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 19:13:04	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 19:13:04	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 19:13:05	--	Channel #vim: 1157 nicks (0 ops, 0 voices, 1157 normals)
+2018-02-16 19:13:07	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 19:13:07	--	URL for #vim: http://vi-improved.org
+2018-02-16 19:13:13	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 19:14:02	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:15:26	▬▬▶	ithil (~ithil@37.228.238.34) has joined #vim
+2018-02-16 19:17:09	▬▬▶	zerox2a (~saedelaer@unaffiliated/saedelaere) has joined #vim
+2018-02-16 19:17:52	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #vim
+2018-02-16 19:18:02	▬▬▶	coot (~coot@plutocluster.cavehill.uwi.edu) has joined #vim
+2018-02-16 19:18:49	◀▬▬	crobbins (~crobbins@mobile-166-172-123-103.mycingular.net) has quit (Ping timeout: 260 seconds)
+2018-02-16 19:19:01	▬▬▶	PeterMader (~Thunderbi@p5DD20FED.dip0.t-ipconnect.de) has joined #vim
+2018-02-16 19:19:10	▬▬▶	leeN (~leeN@82.206.67.199) has joined #vim
+2018-02-16 19:19:28	▬▬▶	tunekey (~tunekey@unaffiliated/tunekey) has joined #vim
+2018-02-16 19:19:49	◀▬▬	tt_ (~chinggis6@unaffiliated/chinggis6) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 19:20:00	▬▬▶	m_t (~m_t@p5DDA3B7B.dip0.t-ipconnect.de) has joined #vim
+2018-02-16 19:20:48	◀▬▬	s4ro (~saro@222-9-159-88.business.edutel.nl) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:22:57	◀▬▬	inad922 (~inad925@78-131-82-48.pool.digikabel.hu) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:24:39	◀▬▬	nobitano_ (~nobitanob@211.red-83-34-44.dynamicip.rima-tde.net) has quit
+2018-02-16 19:25:04	◀▬▬	banisterfiend (~banister@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:26:42	◀▬▬	tesseract (~tesseract@2a00:1028:83a2:66c6:5ee0:c5ff:fe71:efb2) has quit (Quit: ♪♫•*¨*•.¸¸♫♪♪♫•*¨*•.¸¸♫♪♪♫•*¨*•.¸¸♫♪♪♫•*¨*•.¸¸♫♪)
+2018-02-16 19:26:59	◀▬▬	mkoskar (~mkoskar@unaffiliated/mkoskar) has quit (Ping timeout: 255 seconds)
+2018-02-16 19:27:11	▬▬▶	banisterfiend (~banister@ruby/staff/banisterfiend) has joined #vim
+2018-02-16 19:27:44	▬▬▶	mkoskar (~mkoskar@unaffiliated/mkoskar) has joined #vim
+2018-02-16 19:28:52	◀▬▬	PeterMader (~Thunderbi@p5DD20FED.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2018-02-16 19:29:27	◀▬▬	ArturShaik (~artur-sha@212.112.100.88) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:29:46	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:29:53	▬▬▶	whizzl (~whizzl@2a02:c7f:ca3f:b500:15f3:282a:bd50:e238) has joined #vim
+2018-02-16 19:30:11	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #vim
+2018-02-16 19:30:18	◀▬▬	whizzl (~whizzl@2a02:c7f:ca3f:b500:15f3:282a:bd50:e238) has quit (Remote host closed the connection)
+2018-02-16 19:30:46	▬▬▶	whizzl (~whizzl@2a02:c7f:ca3f:b500:15f3:282a:bd50:e238) has joined #vim
+2018-02-16 19:30:58	◀▬▬	whizzl (~whizzl@2a02:c7f:ca3f:b500:15f3:282a:bd50:e238) has quit (Remote host closed the connection)
+2018-02-16 19:30:58	▬▬▶	m_ben (~m_ben@unaffiliated/m-ben/x-5917362) has joined #vim
+2018-02-16 19:31:22	▬▬▶	whizzl (~whizzl@2a02:c7f:ca3f:b500:15f3:282a:bd50:e238) has joined #vim
+2018-02-16 19:31:23	◀▬▬	leptone (~leptone@4.7.12.50) has quit (Remote host closed the connection)
+2018-02-16 19:33:04	▬▬▶	pt1 (~pt1@31-208-142-54.cust.bredband2.com) has joined #vim
+2018-02-16 19:34:07	▬▬▶	coellobranco (~FoRcEr@60.32.117.91.dynamic.reverse-mundo-r.com) has joined #vim
+2018-02-16 19:34:17	◀▬▬	ahmed_elgabri (~ahmedelga@2a02:a441:9f5:1:b992:b8fa:c599:ef98) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:34:41	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Client Quit)
+2018-02-16 19:34:58	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #vim
+2018-02-16 19:35:04	▬▬▶	Serpent7776 (~serpent@90-156-31-193.internetia.net.pl) has joined #vim
+2018-02-16 19:37:16	◀▬▬	whizzl (~whizzl@2a02:c7f:ca3f:b500:15f3:282a:bd50:e238) has quit (Quit: whizzl)
+2018-02-16 19:37:33	▬▬▶	chargen_ (~chargen@196.82.21.95.dynamic.jazztel.es) has joined #vim
+2018-02-16 19:38:06	▬▬▶	whizzl (~whizzl@2a02:c7f:ca3f:b500:15f3:282a:bd50:e238) has joined #vim
+2018-02-16 19:38:28	▬▬▶	nwm (~nwm@d50-92-21-95.bchsia.telus.net) has joined #vim
+2018-02-16 19:39:46	◀▬▬	pt1 (~pt1@31-208-142-54.cust.bredband2.com) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:40:24	▬▬▶	nogic (~nogic@96-18-65-226.cpe.cableone.net) has joined #vim
+2018-02-16 19:40:47	◀▬▬	qazo (~code@102.253.150.187) has quit (Read error: Connection reset by peer)
+2018-02-16 19:41:44	▬▬▶	most_enter (~most_ente@62-46-241-101.adsl.highway.telekom.at) has joined #vim
+2018-02-16 19:42:18	▬▬▶	crobbins (~crobbins@50-246-41-51-static.hfc.comcastbusiness.net) has joined #vim
+2018-02-16 19:42:40	◀▬▬	chargen_ (~chargen@196.82.21.95.dynamic.jazztel.es) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:44:16	◀▬▬	fragamus (~textual@99-161-168-122.lightspeed.rcklca.sbcglobal.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:45:03	◀▬▬	tclover_ (~tclover@92.216.188.26) has quit (Quit: bb)
+2018-02-16 19:45:21	◀▬▬	coot (~coot@plutocluster.cavehill.uwi.edu) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:45:44	▬▬▶	jstein_ (~jstein@gentoo/developer/jstein) has joined #vim
+2018-02-16 19:45:51	--	jstein_ is now known as jstein
+2018-02-16 19:45:58	▬▬▶	qazo (~code@41.247.151.24) has joined #vim
+2018-02-16 19:48:43	▬▬▶	NimeshNeema (uid2689@gateway/web/irccloud.com/x-rzhpwgmcxafqaalk) has joined #vim
+2018-02-16 19:49:23	▬▬▶	v01d4lph4 (~silent_fr@112.196.144.124) has joined #vim
+2018-02-16 19:49:40	▬▬▶	erikw (~Erik@p5B3C5056.dip0.t-ipconnect.de) has joined #vim
+2018-02-16 19:50:44	▬▬▶	isak__ (~isak__@c83-254-70-251.bredband.comhem.se) has joined #vim
+2018-02-16 19:51:24	◀▬▬	MindSpark (~Mind@p548C922B.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2018-02-16 19:53:03	◀▬▬	mecromace (~mace@c-69-244-255-208.hsd1.fl.comcast.net) has quit (Read error: Connection reset by peer)
+2018-02-16 19:54:23	◀▬▬	v01d4lph4 (~silent_fr@112.196.144.124) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:55:22	▬▬▶	mecromace (~mace@c-69-244-255-208.hsd1.fl.comcast.net) has joined #vim
+2018-02-16 19:56:13	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:56:26	▬▬▶	bytespir_ (~bytespiri@134.174.140.198) has joined #vim
+2018-02-16 19:56:37	▬▬▶	Guest29 (~textual@185.235.136.238) has joined #vim
+2018-02-16 19:56:43	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #vim
+2018-02-16 19:56:58	▬▬▶	InterAl (~InterAl@ec2-34-207-213-0.compute-1.amazonaws.com) has joined #vim
+2018-02-16 19:57:30	◀▬▬	piggah_ (~textual@dt0a1ndd.tampabay.res.rr.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:57:44	◀▬▬	bytespirit (~bytespiri@cway-users-pat.med.harvard.edu) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:58:11	◀▬▬	maximus (~maximus@46.39.249.119) has quit (Quit: Lost terminal)
+2018-02-16 19:58:31	▬▬▶	maximus (~maximus@46.39.249.119) has joined #vim
+2018-02-16 19:59:02	◀▬▬	Guest29 (~textual@185.235.136.238) has quit (Client Quit)
+2018-02-16 19:59:10	◀▬▬	bytespir_ (~bytespiri@134.174.140.198) has quit (Client Quit)
+2018-02-16 20:00:39	◀▬▬	yunusemrecan (~yunusemre@95.183.227.98) has quit (Ping timeout: 265 seconds)
+2018-02-16 20:00:54	▬▬▶	Sasazuka (~Sasazuka@unaffiliated/sasazuka) has joined #vim
+2018-02-16 20:01:20	◀▬▬	mckendricks (~mckendric@173.0.112.18) has quit (Read error: Connection reset by peer)
+2018-02-16 20:02:54	▬▬▶	cdown (~cdown@my83-216-74-28.cust.relish.net) has joined #vim
+2018-02-16 20:03:36	▬▬▶	kristian_on_linu (~kristian@0170201069.0.fullrate.ninja) has joined #vim
+2018-02-16 20:03:37	▬▬▶	bytespirit (~bytespiri@134.174.140.198) has joined #vim
+2018-02-16 20:03:40	m_ben	is anyone using mucomplete here?
+2018-02-16 20:06:18	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:07:07	▬▬▶	tbodt (~textual@130.86.97.185) has joined #vim
+2018-02-16 20:07:15	◀▬▬	tbodt (~textual@130.86.97.185) has quit (Client Quit)
+2018-02-16 20:07:54	▬▬▶	Davs (~Davs@nas05.bratislava.digicable.sk) has joined #vim
+2018-02-16 20:08:10	▬▬▶	ahmed_elgabri (~ahmedelga@2a02:a441:9f5:1:b992:b8fa:c599:ef98) has joined #vim
+2018-02-16 20:08:17	▬▬▶	chargen_ (~chargen@196.82.21.95.dynamic.jazztel.es) has joined #vim
+2018-02-16 20:08:54	▬▬▶	douglascorrea (~douglasco@165.237.199.130) has joined #vim
+2018-02-16 20:10:01	▬▬▶	mosab (~mosab@217.115.8.73) has joined #vim
+2018-02-16 20:10:10	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #vim
+2018-02-16 20:10:41	◀▬▬	gryzli (~gryzli@94.155.42.130) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:11:31	◀▬▬	za1b1tsu (~za1b1tsu@79.112.86.25) has quit (Quit: Leaving)
+2018-02-16 20:12:35	◀▬▬	chargen_ (~chargen@196.82.21.95.dynamic.jazztel.es) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:12:43	▬▬▶	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has joined #vim
+2018-02-16 20:12:59	▬▬▶	mosab_ (~mosab@217.115.8.73) has joined #vim
+2018-02-16 20:13:05	◀▬▬	mosab (~mosab@217.115.8.73) has quit (Client Quit)
+2018-02-16 20:13:50	--	mosab_ is now known as mosab
+2018-02-16 20:14:05	▬▬▶	mandingo (~mandingo@83-233-136-205.cust.bredband2.com) has joined #vim
+2018-02-16 20:15:37	◀▬▬	mosab (~mosab@217.115.8.73) has quit (Read error: Connection reset by peer)
+2018-02-16 20:15:37	▬▬▶	mosab_ (~mosab@217.115.8.73) has joined #vim
+2018-02-16 20:16:03	--	mosab_ is now known as mosab
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 20:18:54	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 20:18:54	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 20:18:54	--	Channel #vim: 1167 nicks (0 ops, 0 voices, 1167 normals)
+2018-02-16 20:18:54	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 20:18:54	--	URL for #vim: http://vi-improved.org
+2018-02-16 20:19:05	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 20:19:17	▬▬▶	Raimondii (~israelcha@c-174-61-104-164.hsd1.fl.comcast.net) has joined #vim
+2018-02-16 20:22:33	◀▬▬	Raimondi (~israelcha@184.75.215.178) has quit (Ping timeout: 264 seconds)
+2018-02-16 20:22:35	--	Raimondii is now known as Raimondi
+2018-02-16 20:23:05	◀▬▬	sahteCoban (~manjaro-u@h-4-157-176.A163.priv.bahnhof.se) has quit (Read error: Connection reset by peer)
+2018-02-16 20:23:26	▬▬▶	sahteCoban (~manjaro-u@h-4-157-176.A163.priv.bahnhof.se) has joined #vim
+2018-02-16 20:24:07	m_ben	slax0r: you could run :verbose hi to see where highlighting is set
+2018-02-16 20:25:10	◀▬▬	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has quit (Quit: Leaving)
+2018-02-16 20:25:28	▬▬▶	preyalone (uid21561@gateway/web/irccloud.com/x-nlzkslnkodganohc) has joined #vim
+2018-02-16 20:26:29	Zathrus	slax0r: odds are it's using the default color scheme, guessing at your background color, and being wrong. Does :set bg=dark (if a dark bg) or :set bg=light (if light) make the colors better?
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:27:09	▬▬▶	fasolt (~fafner@p54BA8F6B.dip0.t-ipconnect.de) has joined #vim
+2018-02-16 20:27:34	▬▬▶	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has joined #vim
+2018-02-16 20:27:42	▬▬▶	DerDuddle (~Duddle@p200300D4DBD05E00B46E05A32AD2D89A.dip0.t-ipconnect.de) has joined #vim
+2018-02-16 20:27:57	◀▬▬	banisterfiend (~banister@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:28:00	m_ben	slax0r: what does ":color" print?
+2018-02-16 20:31:07	▬▬▶	romainl (~Adium@176.186.242.162) has joined #vim
+2018-02-16 20:31:41	◀▬▬	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has quit (Client Quit)
+2018-02-16 20:32:03	▬▬▶	karsten_ (~karsten__@185.68.76.167) has joined #vim
+2018-02-16 20:32:14	◀▬▬	mandingo (~mandingo@83-233-136-205.cust.bredband2.com) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 20:32:17	◀▬▬	Arcaelyx (~Arcaelyx@69.12.80.147.adsl.inet-telecom.org) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:32:44	▬▬▶	yunusemrecan (~yunusemre@95.183.227.98) has joined #vim
+2018-02-16 20:32:55	▬▬▶	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has joined #vim
+2018-02-16 20:34:04	▬▬▶	mandingo (~mandingo@83-233-136-205.cust.bredband2.com) has joined #vim
+2018-02-16 20:34:41	◀▬▬	fragamus (~textual@091.131-205-66.ftth.swbr.surewest.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:34:43	◀▬▬	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has quit (Remote host closed the connection)
+2018-02-16 20:35:18	◀▬▬	suhdood (~Thaelim@2601:281:c502:25d9:5cd:bbd3:d92b:e035) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:35:37	◀▬▬	nogic (~nogic@96-18-65-226.cpe.cableone.net) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:35:55	▬▬▶	DerDuddle_ (~Duddle@p200300D4DBD05E00816B816C944B61DB.dip0.t-ipconnect.de) has joined #vim
+2018-02-16 20:36:44	▬▬▶	nZac (~Kingino@96-3-201-72-static.midco.net) has joined #vim
+2018-02-16 20:37:59	◀▬▬	mandingo (~mandingo@83-233-136-205.cust.bredband2.com) has quit (Client Quit)
+2018-02-16 20:38:13	▬▬▶	mandingo (~mandingo@83-233-136-205.cust.bredband2.com) has joined #vim
+2018-02-16 20:38:35	▬▬▶	fragamus (~textual@091.131-205-66.ftth.swbr.surewest.net) has joined #vim
+2018-02-16 20:39:10	▬▬▶	suhdood (~Thaelim@2600:380:9914:a394:9857:b7f0:21ce:c792) has joined #vim
+2018-02-16 20:39:45	◀▬▬	mandingo (~mandingo@83-233-136-205.cust.bredband2.com) has quit (Client Quit)
+2018-02-16 20:39:47	◀▬▬	erikw (~Erik@p5B3C5056.dip0.t-ipconnect.de) has quit (Quit: Lost terminal)
+2018-02-16 20:39:47	◀▬▬	DerDuddle (~Duddle@p200300D4DBD05E00B46E05A32AD2D89A.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:40:20	▬▬▶	erikw (~Erik@p5B3C5056.dip0.t-ipconnect.de) has joined #vim
+2018-02-16 20:40:25	▬▬▶	Arcaelyx (~Arcaelyx@173.254.196.59.adsl.inet-telecom.org) has joined #vim
+2018-02-16 20:40:40	▬▬▶	Raging_Hog (~heikki@82-181-38-176.bb.dnainternet.fi) has joined #vim
+2018-02-16 20:40:44	▬▬▶	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has joined #vim
+2018-02-16 20:41:33	▬▬▶	kurkale61 (~kurkale6k@84.45.99.125) has joined #vim
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:37	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 20:44:37	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 20:44:37	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 20:44:38	--	Channel #vim: 1170 nicks (0 ops, 0 voices, 1170 normals)
+2018-02-16 20:44:38	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 20:44:38	--	URL for #vim: http://vi-improved.org
+2018-02-16 20:44:49	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 20:44:50	▬▬▶	pt1 (~pt1@31-208-142-54.cust.bredband2.com) has joined #vim
+2018-02-16 20:44:58	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #vim
+2018-02-16 20:46:29	--	irc: disconnected from server
+2018-02-16 20:48:28	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #vim
+2018-02-16 20:48:28	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.0.1161 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2018-02-16 20:48:28	--	Topic set by ntnn on Sa, 30 Sep 2017 10:13:39
+2018-02-16 20:48:28	--	Channel #vim: 1168 nicks (0 ops, 0 voices, 1168 normals)
+2018-02-16 20:48:28	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2018-02-16 20:48:28	--	URL for #vim: http://vi-improved.org
+2018-02-16 20:48:40	--	Channel created on So, 26 Nov 2006 07:42:44
+2018-02-16 20:49:49	◀▬▬	pt1 (~pt1@31-208-142-54.cust.bredband2.com) has quit (Ping timeout: 252 seconds)
+2018-02-16 20:49:59	◀▬▬	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has quit (Quit: Leaving)
+2018-02-16 20:50:22	--	k12 is now known as XtremeHugsAndCud
+2018-02-16 20:50:38	--	XtremeHugsAndCud is now known as XtremeHugsNCuddl
+2018-02-16 20:51:44	◀▬▬	alx741 (~alx741@190.152.56.58) has quit (Quit: alx741)
+2018-02-16 20:52:02	▬▬▶	siiky (~siiky@bl6-174-56.dsl.telepac.pt) has joined #vim
+2018-02-16 20:52:07	▬▬▶	Arcaelyx (~Arcaelyx@173.254.196.59.adsl.inet-telecom.org) has joined #vim
+2018-02-16 20:52:17	◀▬▬	R2robot (~r2ro@dsl-tpool9-190.cvctx.com) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:52:49	▬▬▶	foul_owl (~foul_owl@75-172-106-114.tukw.qwest.net) has joined #vim
+2018-02-16 20:53:31	◀▬▬	SoniEx3 (bd6fbc0a@gateway/web/cgi-irc/kiwiirc.com/ip.189.111.188.10) has quit (Remote host closed the connection)
+2018-02-16 20:54:25	◀▬▬	sasheto (~sasheto@94.26.13.180) has quit (Quit: WeeChat 1.9.1)
+2018-02-16 20:54:28	◀▬▬	leptone (~leptone@4.7.12.50) has quit (Remote host closed the connection)
+2018-02-16 20:55:37	slax0r	m_ben: default
+2018-02-16 20:56:10	slax0r	Zathrus: setting bg=light makes the colors "right" yes
+2018-02-16 20:56:28	slax0r	but I have a dark background, so...hm
+2018-02-16 20:56:54	▬▬▶	plww (~plw@abqf6.neoplus.adsl.tpnet.pl) has joined #vim
+2018-02-16 20:57:40	Zathrus	then you're probably used to weird/wrong colors and are crazy =)
+2018-02-16 20:57:49	m_ben	what terminal?
+2018-02-16 20:58:06	slax0r	termite
+2018-02-16 20:58:09	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 20:58:12	▬▬▶	leptone (~leptone@4.7.12.50) has joined #vim
+2018-02-16 20:58:42	--	irc: disconnected from server

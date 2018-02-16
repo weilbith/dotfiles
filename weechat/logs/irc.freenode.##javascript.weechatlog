@@ -1,0 +1,382 @@
+2018-02-16 17:54:38	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 17:54:38	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 17:54:38	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:18:57
+2018-02-16 17:54:38	--	Channel ##javascript: 1175 nicks (1 op, 0 voices, 1174 normals)
+2018-02-16 17:54:40	◀▬▬	arunkumar413 (~arunkumar@103.96.18.10) has quit (Quit: Leaving)
+2018-02-16 17:54:47	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 17:54:50	◀▬▬	bkeating (~anonymous@cpe-184-58-187-197.wi.res.rr.com) has quit (Quit: bkeating)
+2018-02-16 17:54:53	◀▬▬	m1su (~m1su@adsl-89-135-200-163.monradsl.monornet.hu) has quit
+2018-02-16 17:54:57	◀▬▬	Yxaaaaaaa (~FrozenSou@77.70.8.10) has quit (Ping timeout: 248 seconds)
+2018-02-16 17:55:07	cjohnson	n> [/[+]/.test('+'), /[+]/.test('+'),
+2018-02-16 17:55:08	jellobot	cjohnson, Failed to parse code: Unexpected token (1:35)
+2018-02-16 17:55:20	stennowork	[
+2018-02-16 17:55:25	◀▬▬	sammyg (~sammyg@unaffiliated/sammyg) has quit (Quit: Leaving)
+2018-02-16 17:55:30	◀▬▬	kpattich__ (kpattich@nat/redhat/x-nillxpglqtkxrnzx) has quit (Ping timeout: 256 seconds)
+2018-02-16 17:55:40	--	irc: disconnected from server
+2018-02-16 17:57:06	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 17:57:06	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 17:57:06	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:18:57
+2018-02-16 17:57:06	--	Channel ##javascript: 1170 nicks (1 op, 0 voices, 1169 normals)
+2018-02-16 17:57:15	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 17:58:00	▬▬▶	ympek (~ympek@asu169.neoplus.adsl.tpnet.pl) has joined ##javascript
+2018-02-16 17:58:23	◀▬▬	mack_ooo_ (~mack@2.236.101.114) has quit (Read error: Connection reset by peer)
+2018-02-16 17:58:53	▬▬▶	bkeating (~anonymous@cpe-184-58-187-197.wi.res.rr.com) has joined ##javascript
+2018-02-16 17:59:22	▬▬▶	cagomez (~cagomez@sb0-cf9a61b1.dsl.impulse.net) has joined ##javascript
+2018-02-16 17:59:25	▬▬▶	cliq (~cliq@85-23-74-41.bb.dnainternet.fi) has joined ##javascript
+2018-02-16 18:00:42	▬▬▶	troys (~troys@23-24-139-177-static.hfc.comcastbusiness.net) has joined ##javascript
+2018-02-16 18:01:31	--	irc: disconnected from server
+2018-02-16 18:03:20	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 18:03:20	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 18:03:20	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:18:57
+2018-02-16 18:03:20	--	Channel ##javascript: 1172 nicks (1 op, 0 voices, 1171 normals)
+2018-02-16 18:03:26	◀▬▬	m1n (~m1n@unaffiliated/m1ntfr3sh) has quit (Client Quit)
+2018-02-16 18:03:29	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 18:04:00	◀▬▬	bkeating (~anonymous@cpe-184-58-187-197.wi.res.rr.com) has quit (Quit: bkeating)
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 18:07:54	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 18:07:54	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:19:00
+2018-02-16 18:07:54	--	Channel ##javascript: 1173 nicks (1 op, 0 voices, 1172 normals)
+2018-02-16 18:08:05	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 18:08:37	▬▬▶	BrandonBT (~btardio@2602:306:bc83:ec30:c273:fb4b:a3:238) has joined ##javascript
+2018-02-16 18:08:39	◀▬▬	bkeating (~anonymous@cpe-184-58-187-197.wi.res.rr.com) has quit (Client Quit)
+2018-02-16 18:08:44	◀▬▬	BrandonBT (~btardio@2602:306:bc83:ec30:c273:fb4b:a3:238) has left ##javascript
+2018-02-16 18:08:59	▬▬▶	BrandonBT (~btardio@2602:306:bc83:ec30:c273:fb4b:a3:238) has joined ##javascript
+2018-02-16 18:09:00	▬▬▶	Yxaaaaaaa (~FrozenSou@77.70.8.10) has joined ##javascript
+2018-02-16 18:09:55	▬▬▶	stevenxl (uid133530@gateway/web/irccloud.com/x-fqbxnfyibcssffkn) has joined ##javascript
+2018-02-16 18:10:47	▬▬▶	wsieroci (~wsieroci@89-64-0-69.dynamic.chello.pl) has joined ##javascript
+2018-02-16 18:10:47	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined ##javascript
+2018-02-16 18:11:01	Durbley	if I have an async function calling another async function, do both need try-catch blocks?
+2018-02-16 18:11:10	◀▬▬	zergut (uid221522@taskhive/translator/zergut) has quit (Quit: Connection closed for inactivity)
+2018-02-16 18:11:19	▬▬▶	bkeating (~anonymous@cpe-184-58-187-197.wi.res.rr.com) has joined ##javascript
+2018-02-16 18:11:50	--	irc: disconnected from server
+2018-02-16 18:13:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 18:13:19	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 18:13:19	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:18:57
+2018-02-16 18:13:19	--	Channel ##javascript: 1175 nicks (1 op, 0 voices, 1174 normals)
+2018-02-16 18:13:28	▬▬▶	obb (~obb@gateway/tor-sasl/obb) has joined ##javascript
+2018-02-16 18:13:28	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 18:13:35	--	irc: disconnected from server
+2018-02-16 19:13:04	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 19:13:04	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 19:13:04	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:18:57
+2018-02-16 19:13:04	--	Channel ##javascript: 1193 nicks (1 op, 0 voices, 1192 normals)
+2018-02-16 19:13:07	cthulchu	var width = window.innerWidth || document.body.clientWidth;
+2018-02-16 19:13:11	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 19:13:11	▬▬▶	RahulAN_ (b7534eac@gateway/web/freenode/ip.183.83.78.172) has joined ##javascript
+2018-02-16 19:13:23	◀▬▬	DrYockel (~Thunderbi@185.32.8.228) has quit (Quit: DrYockel)
+2018-02-16 19:13:30	RahulAN_	Hi all
+2018-02-16 19:13:51	graingert	!hi @ RahulAN_
+2018-02-16 19:13:51	ecmabot	RahulAN_: Welcome! We're a community of friendly, helpful people who are happy to help any time 24/7/365. Please make yourself at home and consider adding us to your autojoin :) Please make sure you read the channel status for channel commands and updates.
+2018-02-16 19:13:51	RahulAN_	I have a input element which have autocomplete location
+2018-02-16 19:13:59	◀▬▬	ShekharReddy (uid132367@gateway/web/irccloud.com/x-zmhzywooskwktmer) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:14:23	▬▬▶	kfoonamalik (~kfoonamal@208.93.244.250) has joined ##javascript
+2018-02-16 19:14:35	RahulAN_	graingert: Hello !!
+2018-02-16 19:15:13	RahulAN_	I want to parse state city and country when auto complete is clicked or selected
+2018-02-16 19:15:43	RahulAN_	Now if i try , it wont wait for google's complete to be in box and do parsing
+2018-02-16 19:15:57	▬▬▶	kidnextdoor (~igor@unaffiliated/imaginarius) has joined ##javascript
+2018-02-16 19:16:16	kidnextdoor	hi
+2018-02-16 19:16:16	cthulchu	use different trigger
+2018-02-16 19:16:25	cthulchu	run the lookup on submit
+2018-02-16 19:16:37	cthulchu	or rather on btn click
+2018-02-16 19:16:46	RahulAN_	cthulchu: but i want to make it on fly
+2018-02-16 19:16:53	RahulAN_	do i give a time out ?
+2018-02-16 19:16:58	cthulchu	no
+2018-02-16 19:17:02	cthulchu	try onchange
+2018-02-16 19:17:05	◀▬▬	so_lost (~carlherne@86.89.2.82) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:17:07	cthulchu	listen to the change
+2018-02-16 19:17:39	cthulchu	but it's a poor solution
+2018-02-16 19:17:40	RahulAN_	cthulchu: https://bpaste.net/show/73357e045ebe
+2018-02-16 19:17:44	bytespirit	Today is one of those days. Spend most of the day wondering why on earth someone would publish a lib with object spread syntax and of course tried to fix this with babel, which in return required me to upgrade half of my versions. Turns out I imported src/ rather than dist/
+2018-02-16 19:17:45	qswz	how can I detect if somethig is a pojo or an instance or some shit?
+2018-02-16 19:17:57	▬▬▶	so_lost (~carlherne@86.89.2.82) has joined ##javascript
+2018-02-16 19:18:15	▬▬▶	vush (~v4sh@2a02:908:1398:1e00:feaa:14ff:fe31:74c) has joined ##javascript
+2018-02-16 19:18:57	◀▬▬	nvahalik (~nvahalik@cpe-173-173-31-152.hot.res.rr.com) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:19:23	qswz	bytespirit: use rollup
+2018-02-16 19:19:40	bytespirit	qswz sure. You come over and change my stack?
+2018-02-16 19:19:42	qswz	oh a lib
+2018-02-16 19:20:04	qswz	link?
+2018-02-16 19:20:14	renlo	compile lib to es5 and require it or something?
+2018-02-16 19:20:17	▬▬▶	K__L (907926c2@gateway/web/freenode/ip.144.121.38.194) has joined ##javascript
+2018-02-16 19:20:37	◀▬▬	Guest21538 (6758571b@gateway/web/freenode/ip.103.88.87.27) has quit (Quit: Page closed)
+2018-02-16 19:20:45	RahulAN_	cthulchu: any other suggestion
+2018-02-16 19:20:47	bytespirit	No don't worry, it was my fault. I pointed to the src/ folder in the npm package, which of course wasn't meant to be imported
+2018-02-16 19:21:43	bytespirit	in this case at least
+2018-02-16 19:22:08	cthulchu	RahulAN_, why you want it on autocomplete?
+2018-02-16 19:22:23	cthulchu	I suspect autocomplete may generate an event you can listen to
+2018-02-16 19:22:29	cthulchu	I would expect as much from G
+2018-02-16 19:22:36	◀▬▬	Treaktor (b898a106@gateway/web/freenode/ip.184.152.161.6) has quit (Quit: Page closed)
+2018-02-16 19:22:41	K__L	Hey guys, I'm trying to handle filtering on FullCalendar.io. My issue is trying to do it dynamically. I have this working for the most part, but on click of a checkbox it seems to high all of the events, as opposed to the ones that match the checkbox's data. Any ideas? https://bpaste.net/show/b607c62a2484
+2018-02-16 19:22:49	▬▬▶	texinwien_ (~texinwien@46.125.249.83) has joined ##javascript
+2018-02-16 19:22:57	◀▬▬	inad922 (~inad925@78-131-82-48.pool.digikabel.hu) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:23:19	▬▬▶	\void (~void@unaffiliated/ctrlaltdev) has joined ##javascript
+2018-02-16 19:23:58	qswz	n> const o={}; Object.getPrototypeOf(o)
+2018-02-16 19:24:00	jellobot	(okay) {}
+2018-02-16 19:24:37	▬▬▶	Mitchell1992 (~textual@2601:191:8380:ef7c:388a:8b3b:e40d:e710) has joined ##javascript
+2018-02-16 19:24:43	◀▬▬	Mitchell1992 (~textual@2601:191:8380:ef7c:388a:8b3b:e40d:e710) has quit (Changing host)
+2018-02-16 19:24:43	▬▬▶	Mitchell1992 (~textual@unaffiliated/mitchell1992) has joined ##javascript
+2018-02-16 19:24:50	firefox1337	wew
+2018-02-16 19:25:10	firefox1337	apparently there was a school shooting right by where i live but nothing confirmed yet its all over the news tho
+2018-02-16 19:25:25	firefox1337	i heard sirens
+2018-02-16 19:25:32	▬▬▶	soee (~soee@afoh52.neoplus.adsl.tpnet.pl) has joined ##javascript
+2018-02-16 19:25:38	K__L	stay safe @firefox1337
+2018-02-16 19:25:46	▬▬▶	mohsen_ (~Mohsen@80.82.79.189) has joined ##javascript
+2018-02-16 19:26:30	qswz	n> const o={}; class Shit{}; const s = new Shit(); [Object.getPrototypeOf(Object.getPrototypeOf(o)), Object.getPrototypeOf(Object.getPrototypeOf(s))]
+2018-02-16 19:26:32	jellobot	(okay) [ null, {} ]
+2018-02-16 19:26:34	qswz	is this a safe way?
+2018-02-16 19:26:49	qswz	proto of proto is null for a POJO
+2018-02-16 19:27:09	▬▬▶	sammyg (~sammyg@unaffiliated/sammyg) has joined ##javascript
+2018-02-16 19:27:15	◀▬▬	texinwien (~texinwien@78.137.157.66) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:29:07	--	kidnextdoor is now known as badasspissedkid
+2018-02-16 19:29:44	◀▬▬	Mitchell1992 (~textual@unaffiliated/mitchell1992) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:29:52	--	badasspissedkid is now known as kidnextdoor
+2018-02-16 19:31:23	◀▬▬	leptone (~leptone@4.7.12.50) has quit (Remote host closed the connection)
+2018-02-16 19:32:59	▬▬▶	damntourists (~none@out-62-48.dreamworks.com) has joined ##javascript
+2018-02-16 19:34:16	GreenJello	qswz, yeah, but that's pretty arbitrary
+2018-02-16 19:34:17	◀▬▬	ahmed_elgabri (~ahmedelga@2a02:a441:9f5:1:b992:b8fa:c599:ef98) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:34:31	GreenJello	also could be one less level
+2018-02-16 19:34:38	qswz	ok
+2018-02-16 19:34:41	ThePendulum	js> true + true
+2018-02-16 19:34:41	ecmabot	ThePendulum: (number) 2
+2018-02-16 19:34:45	GreenJello	in very rare cases
+2018-02-16 19:34:48	qswz	I want to tune http://npm.im/deepmerge
+2018-02-16 19:34:55	qswz	to skip complex instances
+2018-02-16 19:35:10	GreenJello	why do people keep using js> :-(
+2018-02-16 19:35:23	qswz	Object.getPrototypeOf(null)
+2018-02-16 19:35:29	qswz	n> Object.getPrototypeOf(null)
+2018-02-16 19:35:31	jellobot	(okay) undefined:5 __jelloTrack("1:1-1:28", Object.getPrototypeOf(null)); ^ TypeError: Cannot convert undefined or null to object at Function.getPrototypeOf (<anonymous>)
+2018-02-16 19:36:11	JoWie	your test will fail for function Foo(){}; Foo.prototype = null;
+2018-02-16 19:36:16	JoWie	err
+2018-02-16 19:36:18	JoWie	wrong paste
+2018-02-16 19:36:25	JoWie	this one
+2018-02-16 19:36:26	JoWie	function Foo(){}; Foo.prototype = Object.create(null);
+2018-02-16 19:36:33	cannap	>n hi
+2018-02-16 19:38:04	JoWie	you could use Object.getPrototypeOf(o) === Object.prototype but that will not work cross-realm
+2018-02-16 19:38:30	◀▬▬	Fantonaut (~tadaaa@whz.nat.whka.de) has quit (Remote host closed the connection)
+2018-02-16 19:39:02	JoWie	you can make it work cross realm with an eval trick though :P
+2018-02-16 19:39:37	▬▬▶	Rashad (~chatzilla@5.45.136.62) has joined ##javascript
+2018-02-16 19:39:55	◀▬▬	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has quit (Remote host closed the connection)
+2018-02-16 19:40:17	▬▬▶	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has joined ##javascript
+2018-02-16 19:41:00	▬▬▶	wojack_ (~Lingo@181.167.127.134) has joined ##javascript
+2018-02-16 19:41:01	◀▬▬	wojack (~Lingo@181.167.127.134) has quit (Read error: Connection reset by peer)
+2018-02-16 19:42:38	◀▬▬	DTZUZU (~DTZUZU@S0106bcd16584b0aa.vs.shawcable.net) has quit (Quit: WeeChat 1.9)
+2018-02-16 19:42:44	▬▬▶	schneide_ (~schneider@unaffiliated/schneider) has joined ##javascript
+2018-02-16 19:42:52	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:43:31	▬▬▶	texinwien (~texinwien@46.125.249.83) has joined ##javascript
+2018-02-16 19:43:33	◀▬▬	stiv3n (~stiv3n@wsip-174-76-158-2.sb.sd.cox.net) has quit (Ping timeout: 264 seconds)
+2018-02-16 19:44:16	▬▬▶	Laptop_mini (~laptopmin@199-83-220-238.PUBLIC.monkeybrains.net) has joined ##javascript
+2018-02-16 19:44:29	▬▬▶	iAmerikan (~dwshrewt@unaffiliated/iamerikan) has joined ##javascript
+2018-02-16 19:45:08	◀▬▬	theology (~theology@unaffiliated/not-mike/x-4399907) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:45:32	▬▬▶	energizer (~energizer@unaffiliated/energizer) has joined ##javascript
+2018-02-16 19:45:32	▬▬▶	glumanda (~Glumanda@unaffiliated/glumanda) has joined ##javascript
+2018-02-16 19:45:52	▬▬▶	OtherAllan (uid180785@gateway/web/irccloud.com/x-hlxoyatugwljenvc) has joined ##javascript
+2018-02-16 19:46:49	◀▬▬	Yxaaaaaaa (~FrozenSou@77.70.8.10) has quit (Ping timeout: 260 seconds)
+2018-02-16 19:47:05	◀▬▬	texinwien_ (~texinwien@46.125.249.83) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:47:27	◀▬▬	schneide_ (~schneider@unaffiliated/schneider) has quit (Ping timeout: 256 seconds)
+2018-02-16 19:47:49	◀▬▬	Justce_W (~CommandeR@ong-staff.ognet.se) has quit (Read error: Connection reset by peer)
+2018-02-16 19:47:56	◀▬▬	bradleymeck (~bradleyme@50-254-112-171-static.hfc.comcastbusiness.net) has quit (Quit: bradleymeck)
+2018-02-16 19:48:20	▬▬▶	sergey (~sergey@212.115.245.19) has joined ##javascript
+2018-02-16 19:48:46	◀▬▬	vush (~v4sh@2a02:908:1398:1e00:feaa:14ff:fe31:74c) has quit (Quit: Leaving)
+2018-02-16 19:49:04	▬▬▶	JosDzG (~Thunderbi@189.195.156.226) has joined ##javascript
+2018-02-16 19:49:22	▬▬▶	v01d4lph4 (~silent_fr@112.196.144.124) has joined ##javascript
+2018-02-16 19:50:39	◀▬▬	dee_two (~dee_two@116.75.57.7) has quit (Ping timeout: 248 seconds)
+2018-02-16 19:50:41	▬▬▶	darkSeid (~textual@2a02:c7d:281c:e200:9957:7592:f38b:8e8c) has joined ##javascript
+2018-02-16 19:51:15	◀▬▬	tilerendering (~tilerende@c-base/crew/conx) has quit (Quit: tilerendering)
+2018-02-16 19:51:15	◀▬▬	wojack_ (~Lingo@181.167.127.134) has quit (Read error: Connection reset by peer)
+2018-02-16 19:51:46	▬▬▶	wojack_ (~Lingo@181.167.127.134) has joined ##javascript
+2018-02-16 19:54:23	◀▬▬	v01d4lph4 (~silent_fr@112.196.144.124) has quit (Ping timeout: 268 seconds)
+2018-02-16 19:54:57	◀▬▬	darutoko (~rakudo@37.21.220.55) has quit (Quit: Any sufficiently advanced technology is indistinguishable from magic. (Arthur C. Clarke))
+2018-02-16 19:55:10	◀▬▬	JosDzG (~Thunderbi@189.195.156.226) has quit (Quit: JosDzG)
+2018-02-16 19:55:49	▬▬▶	JosDzG (~Thunderbi@189.195.156.226) has joined ##javascript
+2018-02-16 19:56:25	▬▬▶	bytespir_ (~bytespiri@134.174.140.198) has joined ##javascript
+2018-02-16 19:56:43	▬▬▶	Treaktor (b898a106@gateway/web/freenode/ip.184.152.161.6) has joined ##javascript
+2018-02-16 19:56:58	▬▬▶	InterAl (~InterAl@ec2-34-207-213-0.compute-1.amazonaws.com) has joined ##javascript
+2018-02-16 19:57:44	◀▬▬	bytespirit (~bytespiri@cway-users-pat.med.harvard.edu) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:57:52	▬▬▶	motaka2 (~Thunderbi@wtmp244.urv.es) has joined ##javascript
+2018-02-16 19:57:57	motaka2	can istalled windows program read cookies values?
+2018-02-16 19:59:01	Success	i don't se wh ynot
+2018-02-16 19:59:10	◀▬▬	bytespir_ (~bytespiri@134.174.140.198) has quit (Client Quit)
+2018-02-16 19:59:17	▬▬▶	roonsauce (~roonsauce@144.121.119.190) has joined ##javascript
+2018-02-16 19:59:33	▬▬▶	theology (~theology@unaffiliated/not-mike/x-4399907) has joined ##javascript
+2018-02-16 19:59:43	▬▬▶	Bendr (~Bendr@unaffiliated/innocent99) has joined ##javascript
+2018-02-16 19:59:46	◀▬▬	kraucrow (~polarizin@37.139.24.230) has quit (Quit: leaving)
+2018-02-16 20:00:01	▬▬▶	kraucrow (~polarizin@37.139.24.230) has joined ##javascript
+2018-02-16 20:00:18	Treaktor	cjohnson I took your advice and updated my code to use Object.keys. Works fine but can you tell me how I can target the key's values? I've posted a quick pen that shows json structure as well as my function: https://codepen.io/anon/pen/jZajQM
+2018-02-16 20:00:26	▬▬▶	niekniek (~niekniek@164-205-145-85.ftth.glasoperator.nl) has joined ##javascript
+2018-02-16 20:00:35	◀▬▬	nomic (~nomic4@host31-51-94-100.range31-51.btcentralplus.com) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:00:37	◀▬▬	robertmaxrees (~robert0@unaffiliated/duch-kazatel/x-0361328) has quit
+2018-02-16 20:01:05	Treaktor	key works, just not sure how to grab a value....key[country] didn't work
+2018-02-16 20:01:24	progysm	let obj = data[e.target.value].countries[0];  Object.keys(obj).forEach(key => {  let value = obj[key]
+2018-02-16 20:01:42	◀▬▬	roonsauce (~roonsauce@144.121.119.190) has quit (Remote host closed the connection)
+2018-02-16 20:01:56	▬▬▶	roonsauce (~roonsauce@144.121.119.190) has joined ##javascript
+2018-02-16 20:02:29	◀▬▬	darkSeid (~textual@2a02:c7d:281c:e200:9957:7592:f38b:8e8c) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 20:02:49	◀▬▬	gloomy (~gloomy@78-22-198-177.access.telenet.be) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:03:29	▬▬▶	bytespirit (~bytespiri@134.174.140.198) has joined ##javascript
+2018-02-16 20:05:20	◀▬▬	Joeni (~Joeni@75-169-43-115.slkc.qwest.net) has quit (Quit: Leaving)
+2018-02-16 20:05:52	RahulAN_	cthulchu: I got the solution :) Thanks we have a listener "Place_chaged"
+2018-02-16 20:05:58	▬▬▶	kneeki (~kneeki@c-76-28-253-109.hsd1.wa.comcast.net) has joined ##javascript
+2018-02-16 20:06:22	▬▬▶	colatkinson (~colatkins@cpe-67-240-56-42.nycap.res.rr.com) has joined ##javascript
+2018-02-16 20:07:17	◀▬▬	niekniek (~niekniek@164-205-145-85.ftth.glasoperator.nl) has quit (Quit: niekniek)
+2018-02-16 20:08:01	▬▬▶	ahmed_elgabri (~ahmedelga@2a02:a441:9f5:1:b992:b8fa:c599:ef98) has joined ##javascript
+2018-02-16 20:09:25	Treaktor	progysm what is that supposed to do? I see making the variables for caching but let value = obj[key] is just assigning the key to a var, no?
+2018-02-16 20:10:22	K__L	Bumping this for the people who just entered:
+2018-02-16 20:10:23	K__L	I'm trying to handle filtering on FullCalendar.io. My issue is trying to do it dynamically. I have this working for the most part, but on click of a checkbox it seems to high all of the events, as opposed to the ones that match the checkbox's data. Any ideas? https://bpaste.net/show/b607c62a2484
+2018-02-16 20:11:02	Treaktor	I can get the key to display already. Just trying to fix the option.value statement so it takes the country value from the json below it's key
+2018-02-16 20:11:23	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined ##javascript
+2018-02-16 20:11:33	progysm	Treaktor, var obj = {a:1};  'a' is the key, obj['a'] is the value 1
+2018-02-16 20:11:55	◀▬▬	rstandy (~rastandy@net-2-40-233-163.cust.dsl.teletu.it) has quit (Quit: ERC (IRC client for Emacs 24.5.1))
+2018-02-16 20:12:46	◀▬▬	rendar (~rendar@unaffiliated/rendar) has quit
+2018-02-16 20:13:11	▬▬▶	spacewalker_supe (~bradbaris@unaffiliated/spacewalker-supe/x-8906275) has joined ##javascript
+2018-02-16 20:14:01	◀▬▬	DrPotato (~textual@cpc113714-basl12-2-0-cust482.20-1.cable.virginm.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 20:15:00	▬▬▶	ALowther (~alowther@70.126.224.181) has joined ##javascript
+2018-02-16 20:15:59	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:16:09	▬▬▶	jayjo (jayjo@gateway/vpn/privateinternetaccess/jayjo) has joined ##javascript
+2018-02-16 20:16:33	Success	i have an array of promises, how can i make a function that chains them all together? i.e. [a, b, c] => a.then(b).then(c)
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:53	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 20:18:53	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 20:18:53	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:19:00
+2018-02-16 20:18:54	--	Channel ##javascript: 1198 nicks (1 op, 0 voices, 1197 normals)
+2018-02-16 20:19:03	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 20:19:18	◀▬▬	glumanda (~Glumanda@unaffiliated/glumanda) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 20:19:29	◀▬▬	ALowther (~alowther@70.126.224.181) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:19:30	◀▬▬	stevenxl (uid133530@gateway/web/irccloud.com/x-fqbxnfyibcssffkn) has quit (Quit: Connection closed for inactivity)
+2018-02-16 20:20:02	▬▬▶	brandly (~brandly@50.225.192.102) has joined ##javascript
+2018-02-16 20:20:37	Success	i have an idea ig thanks guys
+2018-02-16 20:20:50	Treaktor	progysm I should just be able to put option.value = {key:0}, yes? It's still just returning the key...not the value under key
+2018-02-16 20:21:10	▬▬▶	niekniek (~niekniek@164-205-145-85.ftth.glasoperator.nl) has joined ##javascript
+2018-02-16 20:21:13	◀▬▬	synthroid (synthroid@gateway/vpn/privateinternetaccess/synthroid) has quit (Remote host closed the connection)
+2018-02-16 20:21:15	▬▬▶	Donitzo (~Donitzo@88-115-149-34.elisa-laajakaista.fi) has joined ##javascript
+2018-02-16 20:21:26	◀▬▬	texinwien (~texinwien@46.125.249.83) has quit (Ping timeout: 265 seconds)
+2018-02-16 20:21:57	progysm	option.value = value;
+2018-02-16 20:22:03	▬▬▶	synthroid (synthroid@gateway/vpn/privateinternetaccess/synthroid) has joined ##javascript
+2018-02-16 20:23:36	▬▬▶	ALowther (~quassel@70.126.224.181) has joined ##javascript
+2018-02-16 20:24:04	progysm	I don't understand how setting value to an object would help... just use the variable value
+2018-02-16 20:24:27	cannap	some['string'] = yo
+2018-02-16 20:24:53	cannap	option['value'] = 'some'
+2018-02-16 20:25:45	▬▬▶	glumanda (~Glumanda@unaffiliated/glumanda) has joined ##javascript
+2018-02-16 20:26:04	progysm	without the let obj = ...; it would be this big: Object.keys(data[e.target.value].countries[0]).forEach(key => {  let value = data[e.target.value].countries[0][key];
+2018-02-16 20:26:11	sillyslux_	K__L, you're mixing a lot of stuff there, it doesn't fit, modern js is const/let, don't mix it with var, replace [].slice.call with [...doc.query()] or Array.from(), if (inputsChecked.length > 0) is the same as if (inputsChecked.length), don't forEach/push, jquery and dom/js native stuff... all this in 20 loc, create a fiddle and you get much more than a solution to what you asked for
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:26:47	Success	yeah in the chainThem function f.then is not a function
+2018-02-16 20:26:57	progysm	then f is not a promise
+2018-02-16 20:27:07	sillyslux_	!eslint @K__L
+2018-02-16 20:27:08	ecmabot	K__L: ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013. Code linting is a type of static analysis that is used to find problematic patterns or code that doesnt adhere to certain style guidelines. There are code linters for most programming languages, and compilers sometimes incorporate linting into the compilation process. http://eslint.org/docs/user-guide/getting-started
+2018-02-16 20:27:16	▬▬▶	JosDzGx (~Thunderbi@189.195.156.226) has joined ##javascript
+2018-02-16 20:27:26	progysm	a.then(b).then(c) assume that a, b, c are promise
+2018-02-16 20:27:34	▬▬▶	nomic (~nomic4@host86-184-200-38.range86-184.btcentralplus.com) has joined ##javascript
+2018-02-16 20:27:51	progysm	well, promise, function, function
+2018-02-16 20:28:53	▬▬▶	DTZUZU (~DTZUZU@S0106bcd16584b0aa.vs.shawcable.net) has joined ##javascript
+2018-02-16 20:29:38	◀▬▬	JosDzG (~Thunderbi@189.195.156.226) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:29:48	▬▬▶	Kosingas (~Kosingas@178.220.114.120) has joined ##javascript
+2018-02-16 20:29:58	Success	n> async function a (it) { return 'a' + await it }; async function b (it) { return 'b' + it }; function chain(...promises) { promises.reduce(($1, $2) => $1.then($2) }; chain(a, a, a, b)('hi')
+2018-02-16 20:29:58	jellobot	Success, Failed to parse code: Unexpected token, expected , (1:163)
+2018-02-16 20:30:02	Success	n> async function a (it) { return 'a' + await it }; async function b (it) { return 'b' + it }; function chain(...promises) { promises.reduce(($1, $2) => $1.then($2) }; chain(a, a, a, b)
+2018-02-16 20:30:02	jellobot	Success, Failed to parse code: Unexpected token, expected , (1:163)
+2018-02-16 20:30:04	Success	eh
+2018-02-16 20:30:07	◀▬▬	pingo (~pingo@93-103-23-41.dynamic.t-2.net) has quit
+2018-02-16 20:31:43	Success	n> async function a (it) { return 'a' + await it }; async function b (it) { return 'b' + it }; function chain(...promises) { return promises.reduce(function ($1, $2) { return $1.then($2) }) }; chain(a, a, a, b)
+2018-02-16 20:31:45	jellobot	(okay) undefined:11 return __jelloTrack("1:173-1:184", $1.then($2)); ^ TypeError: $1.then is not a function at Array.reduce (<anonymous>)
+2018-02-16 20:31:45	Success	there we go
+2018-02-16 20:31:57	sillyslux_	lol
+2018-02-16 20:32:40	Success	and this works just fine
+2018-02-16 20:32:41	Success	n> async function a (it) { return 'a' + await it }; async function b (it) { return 'b' + it }; a('hi').then(a).then(a).then(b).then(console.log.bind(console))
+2018-02-16 20:32:42	jellobot	(okay) {} baaahi
+2018-02-16 20:32:55	▬▬▶	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has joined ##javascript
+2018-02-16 20:32:58	◀▬▬	ALowther (~quassel@70.126.224.181) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2018-02-16 20:33:03	▬▬▶	thelostfaith (~alex@cpe-75-185-150-17.neo.res.rr.com) has joined ##javascript
+2018-02-16 20:33:24	▬▬▶	enterhere (~quassel@70.126.224.181) has joined ##javascript
+2018-02-16 20:33:35	--	enterhere is now known as ALowther
+2018-02-16 20:33:54	◀▬▬	RahulAN_ (b7534eac@gateway/web/freenode/ip.183.83.78.172) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:34:14	◀▬▬	ALowther (~quassel@70.126.224.181) has quit (Client Quit)
+2018-02-16 20:34:33	▬▬▶	ALowther (~quassel@70.126.224.181) has joined ##javascript
+2018-02-16 20:34:43	◀▬▬	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has quit (Remote host closed the connection)
+2018-02-16 20:34:44	progysm	n> let chainThem = a => a.reduce( (f,s) => f.then(() => s) ); chainThem([Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)]).then(console.log)
+2018-02-16 20:34:46	jellobot	(okay) {} 3
+2018-02-16 20:34:50	K__L	@sillyslux, thanks for this, I'll try and make a fiddle to explain!
+2018-02-16 20:35:18	◀▬▬	suhdood (~Thaelim@2601:281:c502:25d9:5cd:bbd3:d92b:e035) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:35:18	◀▬▬	iAmDecim (~iAmDecim@2600:1702:ad0:3b90:b94d:b15f:f66b:7527) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:35:45	◀▬▬	colatkinson (~colatkins@cpe-67-240-56-42.nycap.res.rr.com) has quit (Quit: colatkinson)
+2018-02-16 20:36:14	thelostfaith	Im having a hard time understanding why exactly Im getting the following error with the following code
+2018-02-16 20:36:15	thelostfaith	https://pastebin.com/x2zYiAtG
+2018-02-16 20:36:20	thelostfaith	Uncaught TypeError: Cannot read property 'setMap' of undefined
+2018-02-16 20:36:39	thelostfaith	its referring to line 47 in the paste
+2018-02-16 20:37:14	Emil	Hmm
+2018-02-16 20:37:34	Emil	Anyone have a good specification on what the encryption required on the push notification is
+2018-02-16 20:38:15	thelostfaith	And looking at it now, if the key 'i' has 2 items, its only showing the first item.
+2018-02-16 20:38:17	progysm	thelostfaith, i is outside the range after the loop
+2018-02-16 20:38:23	Success	thanks progysm
+2018-02-16 20:39:09	◀▬▬	ALowther (~quassel@70.126.224.181) has quit (Read error: Connection reset by peer)
+2018-02-16 20:39:10	▬▬▶	suhdood (~Thaelim@2600:380:9914:a394:9857:b7f0:21ce:c792) has joined ##javascript
+2018-02-16 20:39:18	progysm	oh wait, nevermind, wrong variable name... it's getting difficult to read for loop
+2018-02-16 20:39:18	▬▬▶	ALowther (~quassel@70.126.224.181) has joined ##javascript
+2018-02-16 20:39:22	Success	wow it's kinda lame how rest parameters have to be the last parameter of a list
+2018-02-16 20:39:41	cannap	https://gyazo.com/e19928cc78dc3225003c3ef33a060fe2 :P
+2018-02-16 20:40:11	progysm	thelostfaith, flightPath is a polyline, not sure why you are using it like an array at 47.
+2018-02-16 20:40:16	thelostfaith	progysm, if I move flightPath[i].setMap(map); within the for loop on line 36, it works
+2018-02-16 20:40:47	Success	n> const [head, ...body, tail] = [1, 2, 3, 4, 5]; [head, body, tail]
+2018-02-16 20:40:47	jellobot	Success, Failed to parse code: Unexpected token, expected ] (1:21)
+2018-02-16 20:40:48	Success	rip
+2018-02-16 20:41:18	◀▬▬	qswz (~caub@vau06-3-82-247-80-102.fbx.proxad.net) has quit (Quit: Lost terminal)
+2018-02-16 20:41:23	▬▬▶	_ritchie_ (~ritchie@p2E505F91.dip0.t-ipconnect.de) has joined ##javascript
+2018-02-16 20:41:39	progysm	SyntaxError: rest element may not have a trailing comma
+2018-02-16 20:41:50	sillyslux_	oh man, my computer is such a big mess, i could cry
+2018-02-16 20:42:01	progysm	you should
+2018-02-16 20:42:10	sillyslux_	i probably will
+2018-02-16 20:42:26	sillyslux_	still dry, but i don't feel well
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:37	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 20:44:37	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 20:44:37	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:18:57
+2018-02-16 20:44:37	--	Channel ##javascript: 1197 nicks (1 op, 0 voices, 1196 normals)
+2018-02-16 20:44:47	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 20:45:37	thelostfaith	let me cook up a fiddle, there's something going on with the polylInes that caused that misunderstanding
+2018-02-16 20:46:17	◀▬▬	nomic (~nomic4@host86-184-200-38.range86-184.btcentralplus.com) has quit (Quit: Leaving)
+2018-02-16 20:46:26	◀▬▬	Treaktor (b898a106@gateway/web/freenode/ip.184.152.161.6) has quit (Quit: Page closed)
+2018-02-16 20:46:29	--	irc: disconnected from server
+2018-02-16 20:48:27	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined ##javascript
+2018-02-16 20:48:27	--	Topic for ##javascript is "JavaScript is *not* Java. | Just ask your question. | Say "!mdn abc" for docs on "abc". | Don't paste code in the channel."
+2018-02-16 20:48:27	--	Topic set by buu (~buu@99-74-60-251.lightspeed.hstntx.sbcglobal.net) on Sa, 20 Jan 2018 21:18:57
+2018-02-16 20:48:28	--	Channel ##javascript: 1194 nicks (1 op, 0 voices, 1193 normals)
+2018-02-16 20:48:35	◀▬▬	Donitzo (~Donitzo@88-115-149-34.elisa-laajakaista.fi) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:48:38	--	Channel created on So, 26 Nov 2006 07:42:45
+2018-02-16 20:48:46	thelostfaith	`for
+2018-02-16 20:49:04	▬▬▶	nomic (~nomic4@host86-184-200-38.range86-184.btcentralplus.com) has joined ##javascript
+2018-02-16 20:49:28	sillyslux_	!iteration @thelostfaith
+2018-02-16 20:49:28	ecmabot	thelostfaith: ECMAScript's Array contains a number of built-in methods for iteration (e.g., map, reduce, every, some, filter, and forEach). They relieve the need for manual iteration, provide better abstraction than a `for` loop, and make it clear what your iteration is doing. See https://gist.github.com/ljharb/58faf1cfcb4e6808f74aae4ef7944cff
+2018-02-16 20:49:28	▬▬▶	Donitzo (~Donitzo@88-115-149-34.elisa-laajakaista.fi) has joined ##javascript
+2018-02-16 20:49:30	▬▬▶	Farad41 (~Thunderbi@nat-130-245-192-26.resnet.stonybrook.edu) has joined ##javascript
+2018-02-16 20:50:22	--	k12 is now known as XtremeHugsAndCud
+2018-02-16 20:50:32	K__L	Alright, this is kind of a bigger fiddle but should suffice to explain. So each event gets classes tacked onto it. the only event right now that has classes is "8 presents". Which means, when clicking either the checkbox for "FR", "Sales-Hub" or "Video-training", it should show this and hide the event that says "New Event". But right now, it hides them both.
+2018-02-16 20:50:36	K__L	https://jsfiddle.net/suhf9t3z/10/
+2018-02-16 20:50:38	--	XtremeHugsAndCud is now known as XtremeHugsNCuddl
+2018-02-16 20:50:46	◀▬▬	Donitzo (~Donitzo@88-115-149-34.elisa-laajakaista.fi) has quit (Client Quit)
+2018-02-16 20:50:48	sillyslux_	thelostfaith, i, m and p are globals there
+2018-02-16 20:51:08	sillyslux_	there's so much that can go wrong with for loops
+2018-02-16 20:51:16	K__L	The code in question would mostlikely be line 12 in the eventRender
+2018-02-16 20:51:41	box2	im looking at Event.timeStamp but having trouble understanding what Event means in this context, like isn't window.open an event that you can listen for? shouldn't i be  able to view the open.timeStamp ?
+2018-02-16 20:52:10	◀▬▬	beefjoe (~beefjoe@unaffiliated/beefjoe) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:52:13	sillyslux_	window.open is a function
+2018-02-16 20:52:34	◀▬▬	bradfordli123 (~bradfordl@c-73-158-14-36.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2018-02-16 20:52:36	progysm	event is the model concept, right?
+2018-02-16 20:52:51	▬▬▶	GreenDog (~greendog@cpe-76-176-54-209.san.res.rr.com) has joined ##javascript
+2018-02-16 20:53:52	thelostfaith	sillyslux_, so what you're saying is I should opt for foreach instead?
+2018-02-16 20:54:25	◀▬▬	sasheto (~sasheto@94.26.13.180) has quit (Quit: WeeChat 1.9.1)
+2018-02-16 20:54:28	◀▬▬	leptone (~leptone@4.7.12.50) has quit (Remote host closed the connection)
+2018-02-16 20:54:34	◀▬▬	Lamiae (~lamiae@41.142.65.28) has quit (Ping timeout: 256 seconds)
+2018-02-16 20:54:35	sillyslux_	no, you already have forEach but you use it with push
+2018-02-16 20:54:54	sillyslux_	you'll probably better use array#map
+2018-02-16 20:55:20	box2	i dont seem to understand the difference between a function and event
+2018-02-16 20:55:23	sillyslux_	but give me a moment to clean this a little up first
+2018-02-16 20:55:28	▬▬▶	Lamiae (~lamiae@41.142.65.28) has joined ##javascript
+2018-02-16 20:55:57	thelostfaith	whats interesting is that I have several maps using the same code, that have different sets of data
+2018-02-16 20:56:01	thelostfaith	all entered the same way
+2018-02-16 20:56:15	thelostfaith	1 place has 2 items that have no issues, the other 2 places have 2 items that have issues
+2018-02-16 20:56:45	◀▬▬	Farad41 (~Thunderbi@nat-130-245-192-26.resnet.stonybrook.edu) has quit (Ping timeout: 264 seconds)
+2018-02-16 20:56:49	thelostfaith	there's a random polyline connecting 2 seemingly arbitrary points
+2018-02-16 20:57:08	◀▬▬	GreenDog (~greendog@cpe-76-176-54-209.san.res.rr.com) has quit (Ping timeout: 252 seconds)
+2018-02-16 20:57:16	thelostfaith	when I view each item separately, they're fine
+2018-02-16 20:57:52	progysm	K_L event.className is a string right ?
+2018-02-16 20:58:12	▬▬▶	leptone (~leptone@4.7.12.50) has joined ##javascript
+2018-02-16 20:58:17	▬▬▶	bradleymeck (~bradleyme@c-73-136-254-30.hsd1.tx.comcast.net) has joined ##javascript
+2018-02-16 20:58:42	--	irc: disconnected from server

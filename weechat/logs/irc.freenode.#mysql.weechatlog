@@ -1,0 +1,119 @@
+2018-02-16 17:54:39	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 17:54:39	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 17:54:39	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 17:54:39	--	Channel #mysql: 523 nicks (0 ops, 0 voices, 523 normals)
+2018-02-16 17:54:43	▬▬▶	snoyes (~scnoyes@2600:1700:c950:e378:2dbf:16c1:388e:bafa) has joined #mysql
+2018-02-16 17:54:55	--	Channel created on So, 26 Nov 2006 07:42:43
+2018-02-16 17:55:16	◀▬▬	aradapil_ (~trey_raym@2601:86:0:2d61:3929:fbea:8d46:c236) has quit (Ping timeout: 252 seconds)
+2018-02-16 17:55:40	--	irc: disconnected from server
+2018-02-16 17:57:07	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 17:57:07	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 17:57:07	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 17:57:07	--	Channel #mysql: 523 nicks (0 ops, 0 voices, 523 normals)
+2018-02-16 17:57:23	--	Channel created on So, 26 Nov 2006 07:42:43
+2018-02-16 17:58:28	◀▬▬	Rokixz (~rokas@5.199.160.9) has quit (Read error: Connection reset by peer)
+2018-02-16 17:58:57	▬▬▶	Rokixz (~rokas@5.199.160.9) has joined #mysql
+2018-02-16 17:59:55	▬▬▶	chekbo_ (~chekbo@105.101.255.100) has joined #mysql
+2018-02-16 18:01:31	--	irc: disconnected from server
+2018-02-16 18:03:20	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 18:03:20	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 18:03:20	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 18:03:20	--	Channel #mysql: 524 nicks (0 ops, 0 voices, 524 normals)
+2018-02-16 18:03:37	--	Channel created on So, 26 Nov 2006 07:42:43
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:55	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 18:07:55	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 18:07:55	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 18:07:55	--	Channel #mysql: 523 nicks (0 ops, 0 voices, 523 normals)
+2018-02-16 18:08:13	--	Channel created on So, 26 Nov 2006 07:42:43
+2018-02-16 18:08:44	▬▬▶	lolek (~lolek@unaffiliated/marcin) has joined #mysql
+2018-02-16 18:11:10	◀▬▬	zergut (uid221522@taskhive/translator/zergut) has quit (Quit: Connection closed for inactivity)
+2018-02-16 18:11:50	--	irc: disconnected from server
+2018-02-16 18:13:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 18:13:19	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 18:13:19	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 18:13:19	--	Channel #mysql: 524 nicks (0 ops, 0 voices, 524 normals)
+2018-02-16 18:13:36	--	irc: disconnected from server
+2018-02-16 19:13:05	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 19:13:05	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 19:13:05	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 19:13:06	--	Channel #mysql: 529 nicks (0 ops, 0 voices, 529 normals)
+2018-02-16 19:13:19	--	Channel created on So, 26 Nov 2006 07:42:43
+2018-02-16 19:13:59	◀▬▬	ShekharReddy (uid132367@gateway/web/irccloud.com/x-zmhzywooskwktmer) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:14:14	bewbs	ug but it's engine is csv
+2018-02-16 19:14:21	bewbs	can i careate a primary key on a csv
+2018-02-16 19:14:50	bewbs	nope
+2018-02-16 19:19:49	◀▬▬	tt_ (~chinggis6@unaffiliated/chinggis6) has quit (Quit: WeeChat 2.0.1)
+2018-02-16 19:20:10	◀▬▬	jsmyth (~jsmyth@unaffiliated/jsmyth) has quit (Quit: Leaving.)
+2018-02-16 19:23:04	epiduo	snoyes: --skip-grant-tables allowed me to log in into console, here is the output of the select query: https://pastebin.com/XnGSTyjv but still I cannot set password, got this error: https://pastebin.com/rw8EQD1z
+2018-02-16 19:23:07	▬▬▶	WebertRLZ (~WebertRLZ@187.104.21.148) has joined #mysql
+2018-02-16 19:23:41	snoyes	epiduo: FLUSH PRIVILEGES;
+2018-02-16 19:23:49	snoyes	then you alter user statement will work.
+2018-02-16 19:24:06	snoyes	then you can restart normally (without the skip-grant-tables)
+2018-02-16 19:24:40	snoyes	and while you're at it, you might set the plugin to mysql_native_password for that user
+2018-02-16 19:25:02	snoyes	I think the caching_sha2 plugin has been giving some people a bit of rouble
+2018-02-16 19:25:08	epiduo	snoyes: ERROR 1396 (HY000): Operation ALTER USER failed for 'root'@'localhost'
+2018-02-16 19:26:27	snoyes	Hm. UPDATE mysql.user SET authentication_string = PASSWORD('someLongPassword'), plugin = 'mysql_native_password' WHERE user = 'root';
+2018-02-16 19:26:29	snoyes	then restart.
+2018-02-16 19:29:17	bewbs	i think i have a rigged way to do it...
+2018-02-16 19:31:08	◀▬▬	memoryleak (uid126245@gateway/web/irccloud.com/x-dhckjozvllewxaqx) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:32:48	▬▬▶	Jardayn (~Jardayn_d@balticom-248-43.balticom.lv) has joined #mysql
+2018-02-16 19:33:57	bewbs	ok i am inserting all update queries into a table in the db that match a certain criteria every 10 minutes then truncating the table
+2018-02-16 19:34:09	bewbs	that *should* work
+2018-02-16 19:38:14	epiduo	snoyes: before you've answered, I've found a tip to remove and create user again... the result is new root account with working password but without root privileges... now I cannot run `GRANT ALL PRIVILEGES...` - any idea how to fix that?
+2018-02-16 19:39:01	snoyes	you'll have to be logged in as a user that has all those, or start it with --skip-grant-tables again.
+2018-02-16 19:49:15	◀▬▬	CaptTofu (~capttofu@pool-71-241-140-92.burl.east.myfairpoint.net) has quit (Remote host closed the connection)
+2018-02-16 19:52:14	◀▬▬	bgoggin (~bgoggin@c-73-249-26-94.hsd1.ct.comcast.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 19:53:03	◀▬▬	mecromace (~mace@c-69-244-255-208.hsd1.fl.comcast.net) has quit (Read error: Connection reset by peer)
+2018-02-16 19:53:14	◀▬▬	test1600 (~test1600@unaffiliated/test1600) has quit (Ping timeout: 276 seconds)
+2018-02-16 19:55:22	▬▬▶	mecromace (~mace@c-69-244-255-208.hsd1.fl.comcast.net) has joined #mysql
+2018-02-16 19:55:49	◀▬▬	mecromace (~mace@c-69-244-255-208.hsd1.fl.comcast.net) has left #mysql
+2018-02-16 19:56:40	◀▬▬	tonsofpcs (~mythbuntu@2001:470:e0b2:1:cda0:e8bf:86e7:5762) has quit (Changing host)
+2018-02-16 19:56:40	▬▬▶	tonsofpcs (~mythbuntu@rivendell/member/tonsofpcs) has joined #mysql
+2018-02-16 19:58:54	◀▬▬	southernirc (~southrenm@66.241.33.145) has quit (Quit: I used to think I was indecisive, but now I'm not too sure.)
+2018-02-16 20:00:47	▬▬▶	bgoggin (~bgoggin@c-73-249-26-94.hsd1.ct.comcast.net) has joined #mysql
+2018-02-16 20:03:16	◀▬▬	rsx (~rsx@ppp-46-244-249-169.dynamic.mnet-online.de) has quit (Remote host closed the connection)
+2018-02-16 20:03:41	◀▬▬	Checkmate (~Checkmate@unaffiliated/checkmate) has quit (Quit: Leaving)
+2018-02-16 20:04:58	▬▬▶	ferdna (~ferdna@68-73-71-246.lightspeed.elpstx.sbcglobal.net) has joined #mysql
+2018-02-16 20:05:41	▬▬▶	^esc (~esc-ape@77.119.129.85.wireless.dyn.drei.com) has joined #mysql
+2018-02-16 20:10:36	▬▬▶	sameerynho (~lxsameer@unaffiliated/lxsameer) has joined #mysql
+2018-02-16 20:11:35	◀▬▬	evilman_work (~evilman@87.244.6.228) has quit
+2018-02-16 20:13:01	▬▬▶	spacewalker_supe (~bradbaris@unaffiliated/spacewalker-supe/x-8906275) has joined #mysql
+2018-02-16 20:16:16	▬▬▶	jexmex_ (~jexmex@c-73-145-34-209.hsd1.mi.comcast.net) has joined #mysql
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 20:18:54	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 20:18:54	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 20:18:54	--	Channel #mysql: 525 nicks (0 ops, 0 voices, 525 normals)
+2018-02-16 20:19:11	--	Channel created on So, 26 Nov 2006 07:42:43
+2018-02-16 20:19:18	◀▬▬	jexmex (~jexmex@2601:405:8600:da8:400d:e525:19b2:1b9e) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:19:33	▬▬▶	zergut (uid221522@taskhive/translator/zergut) has joined #mysql
+2018-02-16 20:20:14	epiduo	snoyes: thank you for help, everything is fine now!
+2018-02-16 20:21:13	◀▬▬	synthroid (synthroid@gateway/vpn/privateinternetaccess/synthroid) has quit (Remote host closed the connection)
+2018-02-16 20:22:03	▬▬▶	synthroid (synthroid@gateway/vpn/privateinternetaccess/synthroid) has joined #mysql
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:31:06	◀▬▬	chekbo_ (~chekbo@105.101.255.100) has quit (Quit: chekbo_)
+2018-02-16 20:32:55	▬▬▶	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has joined #mysql
+2018-02-16 20:34:09	▬▬▶	ToreadorVampire (~ToreadorV@cpc136898-bsfd10-2-0-cust338.5-3.cable.virginm.net) has joined #mysql
+2018-02-16 20:34:09	◀▬▬	ToreadorVampire (~ToreadorV@cpc136898-bsfd10-2-0-cust338.5-3.cable.virginm.net) has quit (Changing host)
+2018-02-16 20:34:09	▬▬▶	ToreadorVampire (~ToreadorV@unaffiliated/toreadorvampire) has joined #mysql
+2018-02-16 20:34:43	◀▬▬	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has quit (Remote host closed the connection)
+2018-02-16 20:35:18	◀▬▬	suhdood (~Thaelim@2601:281:c502:25d9:5cd:bbd3:d92b:e035) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:38:50	◀▬▬	epiduo (d583ee1c@gateway/web/freenode/ip.213.131.238.28) has quit (Quit: Page closed)
+2018-02-16 20:39:10	▬▬▶	suhdood (~Thaelim@2600:380:9914:a394:9857:b7f0:21ce:c792) has joined #mysql
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:38	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 20:44:38	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 20:44:38	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 20:44:38	--	Channel #mysql: 523 nicks (0 ops, 0 voices, 523 normals)
+2018-02-16 20:44:55	--	Channel created on So, 26 Nov 2006 07:42:43
+2018-02-16 20:45:28	◀▬▬	hartmut_ (~hartmut@aftr-37-24-145-210.unity-media.net) has quit (Remote host closed the connection)
+2018-02-16 20:46:29	--	irc: disconnected from server
+2018-02-16 20:48:28	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #mysql
+2018-02-16 20:48:28	--	Topic for #mysql is "MySQL help channel || 5.7.20 GA, 5.6.38, 5.5.58 || Register/identify with NickServ to talk goo.gl/dQ26k9 || hastebin.com or sqlfiddle.com (NOT pastebin.com) || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || Workbench help -> #workbench || Cluster help -> #mysql-ndb || We help you find solutions, not give answers || Humour mandatory"
+2018-02-16 20:48:28	--	Topic set by Vacuity on Di, 21 Nov 2017 14:59:59
+2018-02-16 20:48:28	--	Channel #mysql: 523 nicks (0 ops, 0 voices, 523 normals)
+2018-02-16 20:48:46	--	Channel created on So, 26 Nov 2006 07:42:43
+2018-02-16 20:52:10	◀▬▬	beefjoe (~beefjoe@unaffiliated/beefjoe) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:54:25	◀▬▬	sasheto (~sasheto@94.26.13.180) has quit (Quit: WeeChat 1.9.1)
+2018-02-16 20:58:42	--	irc: disconnected from server

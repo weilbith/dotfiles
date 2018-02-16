@@ -1,0 +1,175 @@
+2018-02-16 17:54:39	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 17:54:39	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 17:54:39	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 17:54:39	--	Channel #nginx: 811 nicks (2 ops, 0 voices, 809 normals)
+2018-02-16 17:54:42	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 17:54:56	benbrown	Right. I don't think that's possible then, without fixing whatever's setting that incorrect header.
+2018-02-16 17:54:57	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 17:55:02	vbou	benbrown: Ideally, I would like to set a map from $http_x_forwarded_for to $http_x_forwarded_for but it is not allowed
+2018-02-16 17:55:40	--	irc: disconnected from server
+2018-02-16 17:57:07	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 17:57:07	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 17:57:07	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 17:57:07	--	Channel #nginx: 812 nicks (2 ops, 0 voices, 810 normals)
+2018-02-16 17:57:07	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 17:57:25	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 17:58:28	◀▬▬	Rokixz (~rokas@5.199.160.9) has quit (Read error: Connection reset by peer)
+2018-02-16 17:58:47	@ngxbot	Paste from benbrown forked by benbrown: [ https://paste.ngx.cc/3c ]
+2018-02-16 17:58:57	▬▬▶	Rokixz (~rokas@5.199.160.9) has joined #nginx
+2018-02-16 17:59:13	jdewald	Couldn't you use the real_ip module and then not use the geoip_proxy ?
+2018-02-16 17:59:41	benbrown	Possibly
+2018-02-16 18:00:38	▬▬▶	troys (~troys@23-24-139-177-static.hfc.comcastbusiness.net) has joined #nginx
+2018-02-16 18:00:55	◀▬▬	friedrich (~friedrich@aextron.de) has quit (Ping timeout: 256 seconds)
+2018-02-16 18:01:07	 *	benbrown -> pub
+2018-02-16 18:01:31	--	irc: disconnected from server
+2018-02-16 18:03:20	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 18:03:20	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 18:03:20	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 18:03:20	--	Channel #nginx: 813 nicks (2 ops, 0 voices, 811 normals)
+2018-02-16 18:03:20	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 18:03:39	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 18:03:44	vbou	I'm also looking for informations about real_ip
+2018-02-16 18:04:13	--	irc: disconnected from server
+2018-02-16 18:07:55	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 18:07:55	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 18:07:55	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 18:07:55	--	Channel #nginx: 813 nicks (2 ops, 0 voices, 811 normals)
+2018-02-16 18:07:55	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 18:08:15	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 18:10:32	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #nginx
+2018-02-16 18:11:50	--	irc: disconnected from server
+2018-02-16 18:13:19	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 18:13:19	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 18:13:19	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 18:13:19	--	Channel #nginx: 810 nicks (2 ops, 0 voices, 808 normals)
+2018-02-16 18:13:19	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 18:13:28	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #nginx
+2018-02-16 18:13:36	--	irc: disconnected from server
+2018-02-16 19:13:06	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 19:13:06	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 19:13:06	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 19:13:06	--	Channel #nginx: 806 nicks (2 ops, 0 voices, 804 normals)
+2018-02-16 19:13:07	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 19:13:21	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 19:14:02	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:14:10	fission6	if i need to annotate but need to filter on the query i should look to subquery right
+2018-02-16 19:15:33	MTecknology	I'm not sure I've heard "annotate" in the context of nginx before.
+2018-02-16 19:17:52	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #nginx
+2018-02-16 19:18:10	MTecknology	fission6: Are you sure that's an nginx question?
+2018-02-16 19:18:17	fission6	nope wrong channel
+2018-02-16 19:22:35	◀▬▬	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-16 19:24:41	▬▬▶	sol1x (~sol1x@2a02:810d:4440:1a03:791f:5d87:3a69:2041) has joined #nginx
+2018-02-16 19:26:20	▬▬▶	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #nginx
+2018-02-16 19:29:46	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:30:11	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #nginx
+2018-02-16 19:31:08	◀▬▬	memoryleak (uid126245@gateway/web/irccloud.com/x-dhckjozvllewxaqx) has quit (Quit: Connection closed for inactivity)
+2018-02-16 19:34:07	▬▬▶	coellobranco (~FoRcEr@60.32.117.91.dynamic.reverse-mundo-r.com) has joined #nginx
+2018-02-16 19:34:35	▬▬▶	slowpokezzz (~slowpokez@197.0.21.198) has joined #nginx
+2018-02-16 19:34:41	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Client Quit)
+2018-02-16 19:34:58	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #nginx
+2018-02-16 19:42:52	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-02-16 19:45:54	▬▬▶	OtherAllan (uid180785@gateway/web/irccloud.com/x-hlxoyatugwljenvc) has joined #nginx
+2018-02-16 19:48:20	▬▬▶	sergey (~sergey@212.115.245.19) has joined #nginx
+2018-02-16 19:52:53	◀▬▬	technickel (~tn@8.44.166.2) has quit (Read error: Connection reset by peer)
+2018-02-16 19:52:54	▬▬▶	shredding (~shredding@ip5f5bd7c9.dynamic.kabel-deutschland.de) has joined #nginx
+2018-02-16 19:53:28	▬▬▶	technickel (~tn@8.44.166.2) has joined #nginx
+2018-02-16 19:55:31	▬▬▶	type1team (~type1team@fixed-187-190-157-229.totalplay.net) has joined #nginx
+2018-02-16 19:56:13	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 19:56:19	▬▬▶	bytespir_ (~bytespiri@134.174.140.198) has joined #nginx
+2018-02-16 19:56:43	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #nginx
+2018-02-16 19:56:59	type1team	Hello!
+2018-02-16 19:57:11	type1team	Any know company that offers VPS servers with nginx?
+2018-02-16 19:57:25	◀▬▬	slowpokezzz (~slowpokez@197.0.21.198) has quit (K-Lined)
+2018-02-16 19:57:34	MTecknology	I'm pretty sure any VPS you get will let you install nginx
+2018-02-16 19:57:44	◀▬▬	bytespirit (~bytespiri@cway-users-pat.med.harvard.edu) has quit (Ping timeout: 252 seconds)
+2018-02-16 19:58:58	type1team	@MTecknology How can I protect the Bots and UA's server?
+2018-02-16 19:59:10	◀▬▬	bytespir_ (~bytespiri@134.174.140.198) has quit (Client Quit)
+2018-02-16 19:59:17	▬▬▶	roonsauce (~roonsauce@144.121.119.190) has joined #nginx
+2018-02-16 19:59:23	MTecknology	That question makes no sense and doesn't sound like it has anything to do with nginx.
+2018-02-16 20:00:21	◀▬▬	tyranny12 (~blarg@unaffiliated/tyranny12) has quit (Ping timeout: 264 seconds)
+2018-02-16 20:01:29	▬▬▶	tyranny12 (~blarg@81.111.47.16) has joined #nginx
+2018-02-16 20:01:29	◀▬▬	tyranny12 (~blarg@81.111.47.16) has quit (Changing host)
+2018-02-16 20:01:29	▬▬▶	tyranny12 (~blarg@unaffiliated/tyranny12) has joined #nginx
+2018-02-16 20:01:31	◀▬▬	pinPoint (~pinPoint@about/windows/regular/pinpoint) has quit (Quit: Incoming fire has the right of way.)
+2018-02-16 20:01:42	◀▬▬	roonsauce (~roonsauce@144.121.119.190) has quit (Remote host closed the connection)
+2018-02-16 20:01:56	▬▬▶	roonsauce (~roonsauce@144.121.119.190) has joined #nginx
+2018-02-16 20:03:29	▬▬▶	bytespirit (~bytespiri@134.174.140.198) has joined #nginx
+2018-02-16 20:04:08	type1team	How to protect or manage the server to prevent a PBN network from suffering from Bots attacks and UA's
+2018-02-16 20:06:06	◀▬▬	shredding (~shredding@ip5f5bd7c9.dynamic.kabel-deutschland.de) has quit (Remote host closed the connection)
+2018-02-16 20:06:18	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:06:38	MTecknology	right- still makes no sense
+2018-02-16 20:08:27	type1team	You can not help me
+2018-02-16 20:08:37	MTecknology	not if you can't explain something clearly.
+2018-02-16 20:10:10	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #nginx
+2018-02-16 20:10:41	◀▬▬	gryzli (~gryzli@94.155.42.130) has quit (Ping timeout: 276 seconds)
+2018-02-16 20:11:07	▬▬▶	tarkus (~tarkus@109.230.144.161) has joined #nginx
+2018-02-16 20:11:10	type1team	I want to configure a server with nginx, which are the best practices to protect it from bot attacks. I will use the server to install a CMS of static pages and I will create a PBN of niche sites.
+2018-02-16 20:11:21	▬▬▶	Bryson (~anonymous@ip68-108-89-198.lv.lv.cox.net) has joined #nginx
+2018-02-16 20:11:26	◀▬▬	Bryson (~anonymous@ip68-108-89-198.lv.lv.cox.net) has quit (Client Quit)
+2018-02-16 20:11:51	MTecknology	!limit_req
+2018-02-16 20:11:51	@ngxbot	http://ngx.cc/r/limit_req
+2018-02-16 20:12:35	◀▬▬	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:12:46	◀▬▬	rendar (~rendar@unaffiliated/rendar) has quit
+2018-02-16 20:14:23	▬▬▶	edrocks (~ed@66-194-206-178.static.twtelecom.net) has joined #nginx
+2018-02-16 20:15:12	jaybe	%fs ddos
+2018-02-16 20:15:12	@ngxbot	An actual DDoS is actually more like this: http://i.imgur.com/QHXv0r3.gifv
+2018-02-16 20:15:20	jaybe	%learn ddos is "https://www.digitalattackmap.com/understanding-ddos/"
+2018-02-16 20:15:20	@ngxbot	Succeeded.
+2018-02-16 20:15:59	◀▬▬	tarkus (~tarkus@109.230.144.161) has quit (Ping timeout: 260 seconds)
+2018-02-16 20:16:52	--	irc: disconnected from server
+2018-02-16 20:18:54	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 20:18:54	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 20:18:54	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 20:18:54	--	Channel #nginx: 807 nicks (2 ops, 0 voices, 805 normals)
+2018-02-16 20:18:54	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 20:19:13	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 20:19:19	MTecknology	holy crap that's an ugly mess of "stuff"
+2018-02-16 20:20:00	type1team	What is the best practice?
+2018-02-16 20:20:18	▬▬▶	shredding (~shredding@ip5f5bd7c9.dynamic.kabel-deutschland.de) has joined #nginx
+2018-02-16 20:20:26	MTecknology	considering you have yet to define an actual problem, that github project is probably exactly the thing you want.
+2018-02-16 20:21:36	▬▬▶	JohnDoe42 (~frederik@2a01:170:109a:1:694b:d9e5:8878:cb99) has joined #nginx
+2018-02-16 20:23:29	▬▬▶	`VL (~vl@broadband-46-188-31-14.2com.net) has joined #nginx
+2018-02-16 20:24:12	type1team	ok
+2018-02-16 20:24:54	◀▬▬	edrocks (~ed@66-194-206-178.static.twtelecom.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-02-16 20:25:04	type1team	@MTecknology  You could help me with a list of companies: Digitalocean, vultr for install nginx?
+2018-02-16 20:25:19	▬▬▶	edrocks (~ed@66-194-206-178.static.twtelecom.net) has joined #nginx
+2018-02-16 20:25:40	MTecknology	http://lmgtfy.com/?q=vps+providers
+2018-02-16 20:26:38	◀▬▬	LocaMocha (bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2018-02-16 20:27:12	MTecknology	jaybe: FRICK! That is the most perfect image of a DDoS attack ever!
+2018-02-16 20:27:18	jaybe	i know!
+2018-02-16 20:27:31	jaybe	i came across that by chance and realized how awesome it is
+2018-02-16 20:28:12	 *	ngxbot also loves it
+2018-02-16 20:29:05	◀▬▬	daj8 (~daj8@jupiter.fea.unicamp.br) has quit (Remote host closed the connection)
+2018-02-16 20:29:05	▬▬▶	Azlux (~Azlux@unaffiliated/azlux) has joined #nginx
+2018-02-16 20:32:17	◀▬▬	Arcaelyx (~Arcaelyx@69.12.80.147.adsl.inet-telecom.org) has quit (Ping timeout: 248 seconds)
+2018-02-16 20:32:55	▬▬▶	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has joined #nginx
+2018-02-16 20:34:43	◀▬▬	suhdood_ (~Thaelim@2600:380:9914:a394:5cd:bbd3:d92b:e035) has quit (Remote host closed the connection)
+2018-02-16 20:35:18	◀▬▬	suhdood (~Thaelim@2601:281:c502:25d9:5cd:bbd3:d92b:e035) has quit (Ping timeout: 240 seconds)
+2018-02-16 20:37:13	▬▬▶	Arcaelyx (~Arcaelyx@173.254.196.59.adsl.inet-telecom.org) has joined #nginx
+2018-02-16 20:39:10	▬▬▶	suhdood (~Thaelim@2600:380:9914:a394:9857:b7f0:21ce:c792) has joined #nginx
+2018-02-16 20:42:11	◀▬▬	jpevarnek (jpevarnek@nat/google/x-nopqpwzwgjlvlhmu) has quit (Remote host closed the connection)
+2018-02-16 20:42:21	▬▬▶	_ADN_ (~username@2a02:c7d:5e18:200:313b:971e:76e5:b6) has joined #nginx
+2018-02-16 20:42:27	--	irc: disconnected from server
+2018-02-16 20:44:38	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 20:44:38	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 20:44:38	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 20:44:38	--	Channel #nginx: 808 nicks (2 ops, 0 voices, 806 normals)
+2018-02-16 20:44:38	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 20:44:57	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 20:44:58	▬▬▶	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has joined #nginx
+2018-02-16 20:46:29	--	irc: disconnected from server
+2018-02-16 20:48:28	▬▬▶	weilbith (~weilbith@37.120.20.72) has joined #nginx
+2018-02-16 20:48:28	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.8] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-02-16 20:48:28	--	Topic set by thresh on Di, 26 Dez 2017 17:14:06
+2018-02-16 20:48:28	--	Channel #nginx: 809 nicks (2 ops, 0 voices, 807 normals)
+2018-02-16 20:48:28	--	PvNotice(ChanServ): Community Nginx support channel. Don't ask to ask; just ask! Config pastes via http://p.ngx.cc only. This channel is publicly logged.
+2018-02-16 20:48:48	--	Channel created on Sa, 30 Jan 2010 08:48:24
+2018-02-16 20:52:03	▬▬▶	panther_ (6cc5a261@gateway/web/freenode/ip.108.197.162.97) has joined #nginx
+2018-02-16 20:52:03	▬▬▶	Arcaelyx (~Arcaelyx@173.254.196.59.adsl.inet-telecom.org) has joined #nginx
+2018-02-16 20:52:49	▬▬▶	foul_owl (~foul_owl@75-172-106-114.tukw.qwest.net) has joined #nginx
+2018-02-16 20:54:39	panther_	Good afternoon. I have a question regarding default inside map. Is it possible to make a conditional statement for default? Here's what I want to do. How can do an if statement like this default "if dev, use A, if stage use B, if prod use C";
+2018-02-16 20:55:30	panther_	I'm sorry, I just figured I can do 2 maps
+2018-02-16 20:56:41	▬▬▶	DevAntoine (~DevAntoin@46.29.126.206) has joined #nginx
+2018-02-16 20:58:09	◀▬▬	bjoe2k4 (bjoe2k4@beryllium.d9c.eu) has quit (Quit: ZNC - http://znc.in)
+2018-02-16 20:58:34	▬▬▶	philipgough (~philipgou@51.37.46.175) has joined #nginx
+2018-02-16 20:58:42	--	irc: disconnected from server
