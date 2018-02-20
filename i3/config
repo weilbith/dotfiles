@@ -203,8 +203,8 @@ mode $focused_mode {
   bindsym f [class="(?i)firefox"] focus; mode $default_mode
 
   # keybindings for marking and jumping to clients
-  bindsym m exec i3-input -F 'mark %s' -P 'Mark name: '
-  bindsym g exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
+  bindsym m exec i3-input -F 'mark %s' -P 'Mark name: '; mode $default_mode
+  bindsym g exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '; mode $default_mode
 
   # Quick mark assign by numbers.
   bindsym Shift+1 mark $mark1; mode $default_mode
