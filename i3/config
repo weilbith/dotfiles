@@ -3,9 +3,13 @@ set $wallpaper ~/Bilder/Wallpapers/Wallpaper.png
 
 # ---
 
+
 # Basics
 ## Define the mod key. Here: Super/Win
 set $mod Mod4
+
+## Enable window focus by mouse (to do not annoy others).
+focus_follows_mouse yes
 
 ## Define the font to use for the windows.
 font pango:monospace 8
@@ -48,7 +52,7 @@ bindsym $mod+Control+h split h
 bindsym $mod+Control+v split v
 
 ## Toogle fullscreen for active window.
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 ## Change window layout.
 bindsym $mod+s layout stacking
@@ -176,37 +180,37 @@ client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
 
 
 # Mark & Jump
-bindsym $mod+n mode "focused"
+bindsym $mod+f mode "focused"
 
 mode "focused" {
   # Hardcoded focus keybindinig.
-  bindsym f [class="(?i)firefox"] focus, mode "default"
+  bindsym f [class="(?i)firefox"] focus; mode "default"
 
   # keybindings for marking and jumping to clients
   bindsym m exec i3-input -F 'mark %s' -P 'Mark name: '
   bindsym g exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
 
-  # Assign marks to keys 1-5
-  bindsym Shift+1 mark "mark1" mode "default"
-  bindsym Shift+2 mark "mark2" mode "default"
-  bindsym Shift+3 mark "mark3" mode "default"
-  bindsym Shift+4 mark "mark4" mode "default"
-  bindsym Shift+5 mark "mark5" mode "default"
+  # Quick mark assign by numbers.
+  bindsym Shift+1 mark "mark1"; mode "default"
+  bindsym Shift+2 mark "mark2"; mode "default"
+  bindsym Shift+3 mark "mark3"; mode "default"
+  bindsym Shift+4 mark "mark4"; mode "default"
+  bindsym Shift+5 mark "mark5"; mode "default"
 
-  # Jump to clients marked 1-5
-  bindsym 1 [con_mark="mark1"] focus
-  bindsym 2 [con_mark="mark2"] focus
-  bindsym 3 [con_mark="mark3"] focus
-  bindsym 4 [con_mark="mark4"] focus
-  bindsym 5 [con_mark="mark5"] focus
+  # Quick mark jump to numbers.
+  bindsym 1 [con_mark="mark1"] focus; mode "default"
+  bindsym 2 [con_mark="mark2"] focus; mode "default"
+  bindsym 3 [con_mark="mark3"] focus; mode "default"
+  bindsym 4 [con_mark="mark4"] focus; mode "default"
+  bindsym 5 [con_mark="mark5"] focus; mode "default"
 
-  # Exit to the default mode
+  # Exit to the default mode (only necessary if do nothing)
   bindsym Return mode "default"
 }
 
 
 ## Interactiv GoTo
-bindsym $mod+Shift+g exec ~/.scripts/i3_goto 
+bindsym $mod+g exec ~/.scripts/i3_goto 
 
 # ---
 
