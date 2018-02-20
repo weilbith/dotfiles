@@ -1,5 +1,18 @@
 # Variables
+## The path to the wallpaper for the background and lockscreen.
 set $wallpaper ~/Bilder/Wallpapers/Wallpaper.png
+
+## Standard mark names
+set $mark1 1
+set $mark2 2
+set $mark3 3
+set $mark4 4
+set $mark5 5
+
+## Mode names (variables are not allowed to start with 'mode'!)
+set $default_mode default
+set $resize_mode resize
+set $focused_mode focused
 
 # ---
 
@@ -26,7 +39,10 @@ setxkbmap -layout us,de
 exec --no-startup-id feh --bg-scale $wallpaper
 
 # Define Lockscreen  (png required)
-bindsym $mod+Control+l exec --no-startup-id i3lock -i $wallpaper -d -n && sleep 1 mode "default"
+bindsym $mod+Control+l exec --no-startup-id i3lock -i $wallpaper -d -n && sleep 1 mode $default_mode
+
+# Open Shutdown/Suspend/... Menu
+bindsym $mod+t exec --no-startup-id ~/.scripts/i3_dmenu_runstate
 
 # ---
 
@@ -67,9 +83,9 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 ## Resize focused window.
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode $resize_mode
 
-mode "resize" {
+mode $resize_mode {
   # Grow and shrink the width and height.
   bindsym h resize grow width 10 px or 10 ppt
   bindsym l resize shrink width 10 px or 10 ppt
@@ -77,7 +93,7 @@ mode "resize" {
   bindsym k resize grow height 10 px or 10 ppt
 
   # Leave mode.
-  bindsym Return mode "default"
+  bindsym Return mode $default_mode
 }
 
 ## ---
@@ -180,34 +196,33 @@ client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
 
 
 # Mark & Jump
-bindsym $mod+f mode "focused"
+bindsym $mod+f mode $focused_mode
 
-mode "focused" {
+mode $focused_mode {
   # Hardcoded focus keybindinig.
-  bindsym f [class="(?i)firefox"] focus; mode "default"
+  bindsym f [class="(?i)firefox"] focus; mode $default_mode
 
   # keybindings for marking and jumping to clients
   bindsym m exec i3-input -F 'mark %s' -P 'Mark name: '
   bindsym g exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
 
   # Quick mark assign by numbers.
-  bindsym Shift+1 mark "mark1"; mode "default"
-  bindsym Shift+2 mark "mark2"; mode "default"
-  bindsym Shift+3 mark "mark3"; mode "default"
-  bindsym Shift+4 mark "mark4"; mode "default"
-  bindsym Shift+5 mark "mark5"; mode "default"
+  bindsym Shift+1 mark $mark1; mode $default_mode
+  bindsym Shift+2 mark $mark2; mode $default_mode
+  bindsym Shift+3 mark $mark3; mode $default_mode
+  bindsym Shift+4 mark $mark4; mode $default_mode
+  bindsym Shift+5 mark $mark5; mode $default_mode
 
   # Quick mark jump to numbers.
-  bindsym 1 [con_mark="mark1"] focus; mode "default"
-  bindsym 2 [con_mark="mark2"] focus; mode "default"
-  bindsym 3 [con_mark="mark3"] focus; mode "default"
-  bindsym 4 [con_mark="mark4"] focus; mode "default"
-  bindsym 5 [con_mark="mark5"] focus; mode "default"
+  bindsym 1 [con_mark=$mark1] focus; mode $default_mode
+  bindsym 2 [con_mark=$mark2] focus; mode $default_mode
+  bindsym 3 [con_mark=$mark3] focus; mode $default_mode
+  bindsym 4 [con_mark=$mark4] focus; mode $default_mode
+  bindsym 5 [con_mark=$mark5] focus; mode $default_mode
 
   # Exit to the default mode (only necessary if do nothing)
-  bindsym Return mode "default"
+  bindsym Return mode $default_mode
 }
-
 
 ## Interactiv GoTo
 bindsym $mod+g exec ~/.scripts/i3_goto 
@@ -218,3 +233,4 @@ bindsym $mod+g exec ~/.scripts/i3_goto
 # MISC
 ## Screenshot
 bindsym $mod+Print exec --no-startup-id ~/.scripts/screenshot.sh
+
