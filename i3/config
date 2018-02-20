@@ -12,7 +12,7 @@ set $mark5 5
 ## Mode names (variables are not allowed to start with 'mode'!)
 set $default_mode default
 set $resize_mode resize
-set $focused_mode focused
+set $mark_mode mark
 
 # ---
 
@@ -195,10 +195,10 @@ client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
 # ---
 
 
-# Mark & Jump
-bindsym $mod+f mode $focused_mode
+# Marks & Find
+bindsym $mod+apostrophe mode $mark_mode
 
-mode $focused_mode {
+mode $mark_mode {
   # Hardcoded focus keybindinig.
   bindsym f [class="(?i)firefox"] focus; mode $default_mode
 
@@ -224,8 +224,11 @@ mode $focused_mode {
   bindsym Return mode $default_mode
 }
 
-## Interactiv GoTo
-bindsym $mod+g exec ~/.scripts/i3_goto 
+## Interactiv go to by mark
+bindsym $mod+g exec ~/.scripts/i3_goto
+
+## Interactive go to by title
+bindsym $mod+f exec ~/.scripts/i3_find
 
 # ---
 
