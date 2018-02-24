@@ -1,8 +1,14 @@
 # Powerline9k configurations
+## Define the font mode to use (have to be loaded before the theme source).
 POWERLEVEL9K_MODE='nerdfont-complete'
+
+## Source the theme itself.
 source $HOME/Projects/powerlevel9k/powerlevel9k.zsh-theme
 
-## Define the font mode to use.
+## Increase the segment distance (one space is default).
+POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS="  "
+POWERLEVEL9K_WHITESPACE_BETWEEN_RIGHT_SEGMENTS="  "
+
 
 ## The segements.
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon custom_user custom_host dir custom_writable newline vcs vi_mode)
@@ -13,7 +19,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version status command_execution_time a
 ### User
 powerlevel9k_custom_user() {
   local user="%n"
-  echo "\uf2bd  $user"
+  echo "\uf2bd $user"
 }
 
 POWERLEVEL9K_CUSTOM_USER="powerlevel9k_custom_user"
@@ -26,7 +32,7 @@ POWERLEVEL9K_CUSTOM_USER_FOREGROUND="15"
 ### Host
 powerlevel9k_custom_host() {
   local host="%m"
-  echo "\uf108  $host"
+  echo "\uf108 $host"
 }
 
 POWERLEVEL9K_CUSTOM_HOST="powerlevel9k_custom_host"
