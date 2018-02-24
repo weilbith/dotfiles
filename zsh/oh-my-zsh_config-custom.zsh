@@ -4,4 +4,5 @@ ENABLE_CORRECTION="true"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 ## Plugin List
-plugins=(git, github, jsontools, docker, last-working-dir, per-directory-history, web-search, wd, history, dirhistory) 
+# plugins=(git, github, jsontools, docker, last-working-dir, per-directory-history, web-search, wd, history, dirhistory)
+plugins=(wd, vi-mode)
