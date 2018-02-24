@@ -42,7 +42,7 @@ exec --no-startup-id feh --bg-scale $wallpaper
 bindsym $mod+Control+l exec --no-startup-id i3lock -i $wallpaper -d -n && sleep 1 mode $default_mode
 
 # Open Shutdown/Suspend/... Menu
-bindsym $mod+t exec --no-startup-id ~/.scripts/i3_dmenu_runstate
+bindsym $mod+t exec --no-startup-id ~/.scripts/i3_runstate.zsh
 
 # ---
 
@@ -225,10 +225,10 @@ mode $mark_mode {
 }
 
 ## Interactiv go to by mark
-bindsym $mod+g exec ~/.scripts/i3_goto
+bindsym $mod+g exec ~/.scripts/i3_goto.zsh
 
 ## Interactive go to by title
-bindsym $mod+f exec ~/.scripts/i3_find
+bindsym $mod+f exec ~/.scripts/i3_find.zsh
 
 # ---
 
