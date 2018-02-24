@@ -21,21 +21,20 @@ set KEYTIMEOUT=1
 
 
 # Source
-# Framworks
+source $XDG_DATA_HOME/zsh/oh-my-zsh_config-custom.zsh
 source $XDG_DATA_HOME/zsh/powerlevel9k_config-custom.zsh
 source $ZSH/oh-my-zsh.sh
 # source $HOME/.fzf.zsh
-source $XDG_DATA_HOME/zsh/oh-my-zsh_config-custom.zsh
+
 # ---
 
 
 # Aliases
+source $XDG_DATA_HOME/zsh/alias.zsh
 
 # ---
 
 
 # Path
-## Add my own default script folder.
-export PATH=/home/thore/.scripts:$PATH
 
 # ---
