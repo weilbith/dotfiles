@@ -13,17 +13,17 @@ cpu_alert=75                        # % cpu use
 net_alert=5                         # K net use
 
 # update setting, in seconds (conky update in i3_lemonbar_conky
-upd_vol=3                           # Volume update
+upd_vol=1                           # Volume update
 upd_mail=300                        # Mail check update
 upd_mpd=5                           # MPD song update
 
 # color definitions 
-color_back="#FF1D1F21"              # Default background
+color_back="#001D1F21"              # Default background
 color_fore="#FFFFFF"                # Default foreground
 color_head="#5fd7ff"
 color_sec_b1="#FF282A2E"            # Background for section 1
 color_sec_b2="#005f87"            # Background for section 2
-color_sec_b3="#FF60676E"            # Background for section 3
+color_sec_b3="#0087d7"            # Background for section 3
 color_icon="#FFFFFF"                # For icons
 color_mail="#FFCE935F"              # Background color for mail alert
 color_chat="#FFCC6666"              # Background color for chat alert
