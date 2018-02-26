@@ -15,6 +15,12 @@ set $resize_mode resize
 set $move_mode move
 set $mark_mode mark
 
+## Step sizes
+set $resize_step_small 5
+set $resize_step_big 15
+set $move_step_small 3
+set $move_step_big 50
+
 # ---
 
 
@@ -88,10 +94,16 @@ bindsym $mod+r mode $resize_mode
 
 mode $resize_mode {
   # Grow and shrink the width and height.
-  bindsym h resize grow width 10 px or 10 ppt
-  bindsym l resize shrink width 10 px or 10 ppt
-  bindsym j resize shrink height 10 px or 10 ppt
-  bindsym k resize grow height 10 px or 10 ppt
+  bindsym h resize grow width $resize_step_small px or $resize_step_small ppt
+  bindsym l resize shrink width $resize_step_small px or $resize_step_small ppt
+  bindsym j resize shrink height $resize_step_small px or $resize_step_small ppt
+  bindsym k resize grow height $resize_step_small px or $resize_step_small ppt
+
+  # The same but with larger steps.
+  bindsym Shift+h resize grow width $resize_step_big px or $resize_step_big ppt
+  bindsym Shift+l resize shrink width $resize_step_big px or $resize_step_big ppt
+  bindsym Shift+j resize shrink height $resize_step_big px or $resize_step_big ppt
+  bindsym Shift+k resize grow height $resize_step_big px or $resize_step_big ppt
 
   # Leave mode.
   bindsym Return mode $default_mode
@@ -105,10 +117,15 @@ mode $move_mode {
     bindsym space focus right
 
   # Move window in all directions.
-  bindsym h move left
-  bindsym j move down
-  bindsym k move up
-  bindsym l move right
+  bindsym h move left $move_step_small px
+  bindsym j move down $move_step_small px
+  bindsym k move up $move_step_small px
+  bindsym l move right $move_step_small px
+
+  bindsym Shift+h move left $move_step_big px
+  bindsym Shift+j move down $move_step_big px
+  bindsym Shift+k move up $move_step_big px
+  bindsym Shift+l move right $move_step_big px
 
   # Leave mode.
   bindsym Return mode $default_mode
