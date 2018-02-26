@@ -1,6 +1,7 @@
 # Exports
-export ZSH=$HOME/.oh-my-zsh
+## Paths
 export XDG_DATA_HOME=$HOME/.config
+export ANTIGEN=$HOME/.antigen
 
 # ---
 
@@ -21,9 +22,9 @@ set KEYTIMEOUT=1
 
 
 # Source
-source $XDG_DATA_HOME/zsh/oh-my-zsh_config-custom.zsh
 source $XDG_DATA_HOME/zsh/powerlevel9k_config-custom.zsh
-source $ZSH/oh-my-zsh.sh
+source $ANTIGEN/antigen.zsh
+source $XDG_DATA_HOME/zsh/antigen_config-custom.zsh
 # source $HOME/.fzf.zsh
 
 # ---
