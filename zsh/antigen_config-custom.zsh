@@ -7,6 +7,9 @@ antigen bundle wd
 antigen bundle git
 antigen bundle colored-man-pages
 antigen bundle command-not-found
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
 
 # Active everything
 antigen apply

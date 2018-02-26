@@ -25,6 +25,7 @@ set KEYTIMEOUT=1
 source $XDG_DATA_HOME/zsh/powerlevel9k_config-custom.zsh
 source $ANTIGEN/antigen.zsh
 source $XDG_DATA_HOME/zsh/antigen_config-custom.zsh
+source $XDG_DATA_HOME/zsh/plugins_config-custom.zsh
 # source $HOME/.fzf.zsh
 
 # ---
