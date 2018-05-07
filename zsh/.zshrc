@@ -40,3 +40,19 @@ source $XDG_DATA_HOME/zsh/alias.zsh
 # Path
 
 # ---
+
+
+# ZLE
+# Start each prompt in vi nodemal mode.
+zle-line-init() { zle -K vicmd; }
+zle -N zle-line-init
+
+# ---
+
+
+# NodeJS
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# ---
