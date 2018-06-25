@@ -36,7 +36,7 @@ font pango:monospace 8
 
 # Status Bar
 bar {
-  i3bar_command ~/.i3-lemonbar/config/i3_lemonbar.sh
+  i3bar_command ~/Projects/powerstatus10k/powerstatus10k.sh
 }
 
 # Keyboard Layout
