@@ -11,7 +11,12 @@ POWERSTATUS10K_DIR=$HOME/Tools/powerstatus10k
 
 if [[ ! -d "$POWERSTATUS10K_DIR" ]] ; then
   mkdir -p $POWERSTATUS10K_DIR
-  git clone --depth 1 https://github.com/weilbith/powerstatus10k.git $POWERSTATUS10K_DIR
+  git clone --depth 1 --recurse-submodules https://github.com/weilbith/powerstatus10k.git $POWERSTATUS10K_DIR
+  base=$(pwd)
+  cd $POWERSTATUS10K_DIR/bar
+  sudo make
+  sudo make install
+  cd $base
 fi
 
 ln -sf $(pwd)/powerstatus10k_custom.conf $POWERSTATUS10K_DIR/config/custom.conf
