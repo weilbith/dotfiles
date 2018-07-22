@@ -1,0 +1,16 @@
+# Oh-My-Zsh Basics
+robbyrussell/oh-my-zsh folder:lib
+robbyrussell/oh-my-zsh folder:completions
+
+# Oh-My-Zsh Plugins
+robbyrussell/oh-my-zsh folder:plugins/vi-mode
+robbyrussell/oh-my-zsh folder:plugins/wd
+robbyrussell/oh-my-zsh folder:plugins/git
+robbyrussell/oh-my-zsh folder:plugins/colored-man-pages
+robbyrussell/oh-my-zsh folder:plugins/command-not-found
+robbyrussell/oh-my-zsh folder:plugins/npm
+
+# Other plugins.
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
