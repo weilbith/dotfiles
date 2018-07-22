@@ -4,12 +4,12 @@ sudo apt-get install zsh # For Debian/Ubuntu
 
 ZSH_DIR=$HOME/.config/zsh
 mkdir -p $ZSH_DIR
-ln -sf $(pwd)/* $ZSH_DIR/
-ln -sf $(pwd)/.zshrc $HOME/
+ln -sf $(pwd)/zsh/* $ZSH_DIR/
+ln -sf $(pwd)/zsh/.zshrc $HOME/
 
 # Install Antibody and all Zsh plugins.
 curl -sL git.io/antibody | sh -s
-antibody bundle < $(pwd)/plugin-list.txt > $(pwd)/plugin-list.sh
+antibody bundle < $(pwd)/zsh/plugin-list.txt > $(pwd)/zsh/plugin-list.sh
 
 # Install Powerlevel9k.
 POWERLEVEL9K_DIR=$HOME/Tools/powerlevel9k
