@@ -21,8 +21,8 @@ set KEYTIMEOUT=1
 
 # Source
 source $CONFIG_DIR/antibody.zsh # Load plugins.
-source $CONFIG_DIR/powerlevel9k_config-custom.zsh # Prompt styling and segments.
-source $CONFIG_DIR/plugins_config-custom.zsh # All other configurations for plugins.
+source $CONFIG_DIR/powerlevel9k-config.zsh # Prompt styling and segments.
+source $CONFIG_DIR/plugin-config.zsh # All other configurations for plugins.
 # source $HOME/.fzf.zsh
 
 # ---
