@@ -3,7 +3,7 @@
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 ## Source the theme itself.
-source $HOME/Projects/powerlevel9k/powerlevel9k.zsh-theme
+source $HOME/Tools/powerlevel9k/powerlevel9k.zsh-theme
 
 ## Increase the segment distance (one space is default).
 POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS="  "
@@ -44,8 +44,8 @@ POWERLEVEL9K_CUSTOM_HOST_FOREGROUND="239"
 
 ### Writable
 powerlevel9k_custom_writable() {
-  if [[ ! -w "$PWD" ]]; then 
-	echo "\uf0c1"
+  if [[ ! -w "$PWD" ]]; then
+  echo "\uf0c1"
   fi
 }
 
@@ -61,7 +61,7 @@ POWERLEVEL9K_CUSTOM_WRITABLE_FOREGROUND="15"
 POWERLEVEL9K_OS_ICON_BACKGROUND="24"
 POWERLEVEL9K_OS_ICON_FOREGROUND="15"
 
-### --- 
+### ---
 
 
 ### VI Mode Segment
@@ -99,7 +99,7 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="15"
 POWERLEVEL9K_HOME_ICON="\uf07b"
 POWERLEVEL9K_DIR_PATH_SEPARATOR_ICON="\uE0BB"
 POWERLEVEL9K_DIR_PATH_SEPARATOR=" $(print_icon 'DIR_PATH_SEPARATOR_ICON') "
-POWERLEVEL9K_HOME_FOLDER_ABBREVIATION="" 
+POWERLEVEL9K_HOME_FOLDER_ABBREVIATION=""
 
 ### ---
 

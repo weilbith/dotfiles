@@ -11,6 +11,10 @@ ln -sf $(pwd)/.zshrc $HOME/
 curl -sL git.io/antibody | sh -s
 antibody bundle < $(pwd)/plugin-list.txt > $(pwd)/plugin-list.sh
 
+# Install Powerlevel9k.
+POWERLEVEL9K_DIR=$HOME/Tools/powerlevel9k
+git clone --depth 1 https://github.com/weilbith/powerlevel9k.git $POWERLEVEL_9K_DIR
+
 # Install RipGrep.
 RG_DEB=/tmp/ripgrep.deb
 curl -L https://github.com/BurntSushi/ripgrep/releases/download/0.8.1/ripgrep_0.8.1_amd64.deb > $RG_DEB
