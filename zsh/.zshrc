@@ -12,8 +12,9 @@ export EDITOR=nvim
 
 ## User VIM style.
 bindkey -v
+setopt vi
 
-## Reduce the delay on switching modes (0.x seconds, default 0.4)
+## Reduce the delay on switching modes.
 set KEYTIMEOUT=1
 
 # ---
@@ -21,9 +22,9 @@ set KEYTIMEOUT=1
 
 # Source
 source $CONFIG_DIR/antibody.zsh # Load plugins.
+source $HOME/Tools/fzf/.fzf.zsh # Load fuzzy filter tools.
 source $CONFIG_DIR/powerlevel9k-config.zsh # Prompt styling and segments.
 source $CONFIG_DIR/plugin-config.zsh # All other configurations for plugins.
-# source $HOME/.fzf.zsh
 
 # ---
 
