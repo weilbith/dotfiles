@@ -1,7 +1,5 @@
 # Exports
-## Paths
-export XDG_DATA_HOME=$HOME/.config
-export ANTIGEN=$HOME/.antigen
+export CONFIG_DIR=$HOME/.config/zsh
 
 # ---
 
@@ -22,22 +20,16 @@ set KEYTIMEOUT=1
 
 
 # Source
-source $XDG_DATA_HOME/zsh/powerlevel9k_config-custom.zsh
-source $ANTIGEN/antigen.zsh
-source $XDG_DATA_HOME/zsh/antigen_config-custom.zsh
-source $XDG_DATA_HOME/zsh/plugins_config-custom.zsh
+source $CONFIG_DIR/antibody.zsh # Load plugins.
+source $CONFIG_DIR/powerlevel9k_config-custom.zsh # Prompt styling and segments.
+source $CONFIG_DIR/plugins_config-custom.zsh # All other configurations for plugins.
 # source $HOME/.fzf.zsh
 
 # ---
 
 
 # Aliases
-source $XDG_DATA_HOME/zsh/alias.zsh
-
-# ---
-
-
-# Path
+source $CONFIG_DIR/alias.zsh # Auto-build alias for specific script folders.
 
 # ---
 
