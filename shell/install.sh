@@ -13,7 +13,17 @@ antibody bundle < $(pwd)/zsh/plugin-list.txt > $(pwd)/zsh/plugin-list.sh
 
 # Install Powerlevel9k.
 POWERLEVEL9K_DIR=$HOME/Tools/powerlevel9k
-git clone --depth 1 https://github.com/weilbith/powerlevel9k.git $POWERLEVEL_9K_DIR
+mkdir -p $POWERLEVEL9K_DIR
+git clone --depth 1 https://github.com/weilbith/powerlevel9k.git $POWERLEVEL9K_DIR
+
+# Install TMux
+sudo apt-get install tmux # For Debian/Ubuntu
+ln -sf $(pwd)/.tmux.conf ~/
+
+# Install TMux plugin manager.
+TPM_DIR=$HOME/.tmux/plugins/tpm
+mkdir -p $TPM_DIR
+git clone https://github.com/tmux-plugins/tpm $TPM_DIR
 
 # Install RipGrep.
 RG_DEB=/tmp/ripgrep.deb
@@ -26,5 +36,4 @@ mkdir -p $FZF_DIR
 git clone --depth 1 https://github.com/junegunn/fzf.git $FZF_DIR
 bash $FZF_DIR/install
 mv ~/.fzf* $FZF_DIR/
-
 
