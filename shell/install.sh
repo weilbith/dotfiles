@@ -41,5 +41,13 @@ mv ~/.fzf* $FZF_DIR/
 EXA_DIR=$HOME/Tools/exa
 mkdir -p $EXA_DIR
 git clone --depth 1 https://github.com/ogham/exa.git $EXA_DIR
+
 cd $EXA_DIR
 sudo cargo install --no-default-features exa # Do not use the git feature, what requires a extra library.
+
+# Install Bat
+BAT_DIR=$HOME/Tools/bat
+mkdir -p $BAT_DIR
+git clone --depth 1 https://github.com/sharkdp/bat.git $BAT_DIR
+cd $BAT_DIR
+cargo install bat

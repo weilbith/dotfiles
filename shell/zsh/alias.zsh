@@ -31,3 +31,4 @@ createScriptAliases $SCRIPT_DIR
 
 # Define some more alias manually.
 [[ -n "$(whereis exa)" ]] && alias -g ls="exa"
+[[ -n "$(whereis bat)" ]] && alias -g cat="bat --paging never --theme DarkNeon"
