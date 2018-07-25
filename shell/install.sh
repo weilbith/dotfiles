@@ -23,7 +23,7 @@ ln -sf $(pwd)/.tmux.conf ~/
 # Install TMux plugin manager.
 TPM_DIR=$HOME/.tmux/plugins/tpm
 mkdir -p $TPM_DIR
-git clone https://github.com/tmux-plugins/tpm $TPM_DIR
+git clone --depth 1 https://github.com/tmux-plugins/tpm $TPM_DIR
 
 # Install RipGrep.
 RG_DEB=/tmp/ripgrep.deb
@@ -37,3 +37,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git $FZF_DIR
 bash $FZF_DIR/install
 mv ~/.fzf* $FZF_DIR/
 
+# Install Exa
+EXA_DIR=$HOME/Tools/exa
+mkdir -p $EXA_DIR
+git clone --depth 1 https://github.com/ogham/exa.git $EXA_DIR
+cd $EXA_DIR
+sudo cargo install --no-default-features exa # Do not use the git feature, what requires a extra library.

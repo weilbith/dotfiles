@@ -16,7 +16,7 @@ function createScriptAliases {
 
   for file in $1/* ; do
     ext=$file:e
-    
+
     if [[ $ext = 'sh' || $ext = 'zsh' ]] ; then
       name=${${file:t}%.*}
       alias -g $name="$file"
@@ -28,3 +28,6 @@ function createScriptAliases {
 # Create aliases for private scripts.
 createScriptAliases $SCRIPT_DIR
 
+
+# Define some more alias manually.
+[[ -n "$(whereis exa)" ]] && alias -g ls="exa"

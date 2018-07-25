@@ -29,12 +29,6 @@ source $CONFIG_DIR/plugin-config.zsh # All other configurations for plugins.
 # ---
 
 
-# Aliases
-source $CONFIG_DIR/alias.zsh # Auto-build alias for specific script folders.
-
-# ---
-
-
 # ZLE
 # Start each prompt in vi nodemal mode.
 zle-line-init() { zle -K vicmd; }
@@ -47,6 +41,17 @@ zle -N zle-line-init
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# ---
+
+
+# Rust
+[[ -d $HOME/.cargo/bin ]] && PATH="$HOME/.cargo/bin:$PATH"
+[[ -f $HOME/.cargo/env ]] && source $HOME/.cargo/env
+
+
+# Aliases
+source $CONFIG_DIR/alias.zsh # Auto-build alias for specific script folders.
 
 # ---
 
