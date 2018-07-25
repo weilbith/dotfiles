@@ -64,7 +64,7 @@ if command -v tmux>/dev/null; then
   #
   function startTmux {
     # Get the current list of sessions with their names.
-    sessionList=$(tmux list-sessions)
+    sessionList=$(tmux list-sessions 2> /dev/null)
 
     # Make sure any session is available.
     if [[ -n "$sessionList" ]] ; then
