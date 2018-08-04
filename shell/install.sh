@@ -51,3 +51,10 @@ mkdir -p $BAT_DIR
 git clone --depth 1 https://github.com/sharkdp/bat.git $BAT_DIR
 cd $BAT_DIR
 cargo install bat
+
+# Install Reddit Terminal-Viewer
+pip install --user rtv
+
+# Install some packages as tools for the shell.
+sudo apt-get install -y htop
+sudo apt-get install -y pdfgrep
