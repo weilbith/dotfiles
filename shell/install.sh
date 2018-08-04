@@ -55,6 +55,14 @@ cargo install bat
 # Install Reddit Terminal-Viewer
 pip install --user rtv
 
+# Install Cheat.sh
+sudo apt-get install xsel rlwrap
+CHT_DIR=$HOME/Tools/chtsh
+CHT_FILE=$CHT_DIR/cht.sh
+mkdir -p $CHT_DIR
+curl https://cht.sh/:cht.sh > $CHT_FILE
+chmod +x $CHT_FILE
+
 # Install some packages as tools for the shell.
 sudo apt-get install -y htop
 sudo apt-get install -y pdfgrep

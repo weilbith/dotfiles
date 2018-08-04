@@ -28,7 +28,10 @@ function createScriptAliases {
 # Create aliases for private scripts.
 createScriptAliases $SCRIPT_DIR
 
-
 # Define some more alias manually.
 [[ -n "$(whereis exa)" ]] && alias -g ls="exa"
 [[ -n "$(whereis bat)" ]] && alias -g cat="bat --paging never --theme DarkNeon"
+
+# Alias for use Cheat.sh manually.
+CHT_SH=$HOME/Tools/chtsh/cht.sh
+[[ -f "$CHT_SH" ]] && alias -g chtsh="bash $CHT_SH"
