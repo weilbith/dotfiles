@@ -18,7 +18,7 @@ git clone --depth 1 https://github.com/weilbith/powerlevel9k.git $POWERLEVEL9K_D
 
 # Install TMux
 sudo apt-get install tmux # For Debian/Ubuntu
-ln -sf $(pwd)/.tmux.conf ~/
+ln -sf $(pwd)/tmux.conf ~/.tmux.conf
 
 # Install TMux plugin manager.
 TPM_DIR=$HOME/.tmux/plugins/tpm
@@ -41,7 +41,6 @@ mv ~/.fzf* $FZF_DIR/
 EXA_DIR=$HOME/Tools/exa
 mkdir -p $EXA_DIR
 git clone --depth 1 https://github.com/ogham/exa.git $EXA_DIR
-
 cd $EXA_DIR
 sudo cargo install --no-default-features exa # Do not use the git feature, what requires a extra library.
 
@@ -58,10 +57,20 @@ pip install --user rtv
 # Install Cheat.sh
 sudo apt-get install xsel rlwrap
 CHT_DIR=$HOME/Tools/chtsh
-CHT_FILE=$CHT_DIR/cht.sh
 mkdir -p $CHT_DIR
-curl https://cht.sh/:cht.sh > $CHT_FILE
-chmod +x $CHT_FILE
+curl https://cht.sh/:cht.sh > $CHT_DIR/cht.sh
+curl https://cht.sh/:zsh > $CHT_DIR/zsh-completion.sh
+chmod +x $CHT_DIR/cht.sh
+
+# Install BashMount
+BM_DIR=$HOME/Tools/bashmount
+BM_CONFIG_DIR=$HOME/.config/bashmount
+mkdir -p $BM_DIR
+mkdir -p $BM_CONFIG_DIR
+git clone --depth 1 https://github.com/jamielinux/bashmount.git $BM_DIR
+cd $BM_DIR
+sudo install -m755 bashmount /usr/bin/bashmount
+ln -sf $(pwd)/bashmount.conf $BM_CONFIG_DIR/config
 
 # Install some packages as tools for the shell.
 sudo apt-get install -y htop

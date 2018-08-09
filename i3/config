@@ -218,7 +218,7 @@ exec --no-startup-id /usr/bin/nextcloud
 exec --no-startup-id /usr/bin/dropbox start
 
 ## Start Cerebro (smart launcher)
-exec --no-startup-id cd ~/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppImage
+exec --no-startup-id cd ~/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppImage > /tmp/cerebro.log
 
 ## Start Compton (make transparency possible)
 exec --no-startup-id compton
