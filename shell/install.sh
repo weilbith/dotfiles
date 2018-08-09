@@ -72,6 +72,12 @@ cd $BM_DIR
 sudo install -m755 bashmount /usr/bin/bashmount
 ln -sf $(pwd)/bashmount.conf $BM_CONFIG_DIR/config
 
+# Install Wuzz
+WUZZ_DEST=/usr/bin/wuzz
+WUZZ_SOURCE=$(curl -s https://api.github.com/repos/asciimoo/wuzz/releases/latest | grep browser_download_url | cut -d '"' -f 4 | grep linux_amd64)
+sudo bash -c "curl -L $WUZZ_SOURCE > $WUZZ_DEST"
+sudo chmod +x $WUZZ_DEST
+
 # Install some packages as tools for the shell.
 sudo apt-get install -y htop
 sudo apt-get install -y pdfgrep
