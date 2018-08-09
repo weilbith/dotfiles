@@ -45,8 +45,9 @@ setxkbmap -layout us,de
 # Set Wallpaper
 exec --no-startup-id feh --bg-scale $wallpaper
 
-# Define Lockscreen  (png required)
-bindsym $mod+Control+l exec --no-startup-id i3lock -i $wallpaper -d -n && sleep 1 mode $default_mode
+# Define Lockscreen command and auto-lock (png required)
+bindsym $mod+Control+l exec --no-startup-id i3lock -i $wallpaper -d -n -f && sleep 1 mode $default_mode
+exec xautolock -time 1 -locker "i3lock -i $wallpaper -d -n"
 
 # Open Shutdown/Suspend/... Menu
 bindsym $mod+t exec --no-startup-id ~/.scripts/i3_runstate.zsh

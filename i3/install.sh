@@ -20,3 +20,6 @@ if [[ ! -d "$POWERSTATUS10K_DIR" ]] ; then
 fi
 
 ln -sf $(pwd)/powerstatus10k_custom.conf $POWERSTATUS10K_DIR/config/custom.conf
+
+# Install xautolock
+sudo apt-get install -y xautolock
