@@ -46,7 +46,7 @@ setxkbmap -layout us,de
 exec --no-startup-id feh --bg-scale $wallpaper
 
 # Define Lockscreen command and auto-lock (png required)
-exec xautolock -corners ---- -time 1 -locker "i3lock -i $wallpaper -d -n -qf" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to preven.'"
+exec xautolock -corners ---- -time 1 -locker "i3lock -i $wallpaper -dnf" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
 bindsym $mod+Control+l exec --no-startup-id xautolock -locknow
 
 # Open Shutdown/Suspend/... Menu
