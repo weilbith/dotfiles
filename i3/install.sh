@@ -22,4 +22,10 @@ fi
 ln -sf $(pwd)/powerstatus10k_custom.conf $POWERSTATUS10K_DIR/config/custom.conf
 
 # Install xautolock
-sudo apt-get install -y xautolock
+sudo acman -S --noconfirm xautolock
+
+# Dunst
+sudo pacman -S --noconfirm dunst
+DUNST_CONFIG_DIR=$HOME/.config/dunst/
+mkdir -p $DUNST_CONFIG_DIR
+ln -sf $(pwd)/dunstrc $DUNST_CONDIG_DIR

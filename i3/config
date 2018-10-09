@@ -224,6 +224,9 @@ exec --no-startup-id cd ~/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppIma
 ## Start Compton (make transparency possible)
 exec --no-startup-id compton -b -d:0
 
+## Notification Deamon
+exec --no-startup-id dunst
+
 # ---
 
 
