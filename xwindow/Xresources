@@ -3,4 +3,4 @@
 #include ".Xresources.d/fonts"
 
 ! Cursor
-Xcursor.size: 48
+Xcursor.size: 40

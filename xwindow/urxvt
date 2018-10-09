@@ -1,12 +1,12 @@
 ! Fonts
-URxvt.font:        xft:SauceCodePro Nerd Font:style=mono:size=6
-URxvt.letterSpace: 1
+URxvt.font:        xft:SauceCodePro Nerd Font Mono:size=10
+URxvt.letterSpace: 0
 URxvt.lineSpace:   2
 
 ! Colors
-Urxvt.depth:      32
-Urxvt.foreground: #5fd7ff
-Urxvt.background: [70]#000000
+URxvt.depth:      32
+URxvt.foreground: #5fd7ff
+URxvt.background: [70]#000000
 
 ! Style
 URxvt.scrollBar:   false

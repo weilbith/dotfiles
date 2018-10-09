@@ -1,5 +1,6 @@
 # Exports
 export CONFIG_DIR=$HOME/.config/zsh
+export TOOLS_DIR=$HOME/Tools
 
 # ---
 
@@ -19,10 +20,9 @@ set KEYTIMEOUT=1
 
 # ---
 
-
 # Source
 source $CONFIG_DIR/antibody.zsh # Load plugins.
-source $HOME/Tools/fzf/.fzf.zsh # Load fuzzy filter tools.
+source $TOOLS_DIR/fzf/.fzf.zsh # Load fuzzy filter tools.
 source $CONFIG_DIR/powerlevel9k-config.zsh # Prompt styling and segments.
 source $CONFIG_DIR/plugin-config.zsh # All other configurations for plugins.
 
@@ -55,8 +55,11 @@ source $CONFIG_DIR/alias.zsh # Auto-build alias for specific script folders.
 
 # ---
 
+# Start Environment
+## Xorg
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx
 
-# Start TMux on startup if it exist.
+## Start TMux on startup if it exist.
 if command -v tmux>/dev/null; then
   # List of default TMux session names.
   SESSION_NAMES=(Berlin Amsterdam London Paris Rom Florence Edinburgh)

@@ -1,3 +1,8 @@
+# Install Antibody and all Zsh plugins (do so before zsh to get links work).
+curl -sL git.io/antibody | sh -s
+antibody bundle < $(pwd)/zsh/plugin-list.txt > $(pwd)/zsh/plugin-list.sh
+chmod +x $(pwd)/zsh/*
+
 # Install Zsh.
 sudo apt-get install zsh # For Debian/Ubuntu
 [[ -n "$(cat /etc/shells | grep zsh)" ]] && sudo chsh -s $(which zsh) # Set as default shell.
@@ -7,9 +12,6 @@ mkdir -p $ZSH_DIR
 ln -sf $(pwd)/zsh/* $ZSH_DIR/
 ln -sf $(pwd)/zsh/.zshrc $HOME/
 
-# Install Antibody and all Zsh plugins.
-curl -sL git.io/antibody | sh -s
-antibody bundle < $(pwd)/zsh/plugin-list.txt > $(pwd)/zsh/plugin-list.sh
 
 # Install Powerlevel9k.
 POWERLEVEL9K_DIR=$HOME/Tools/powerlevel9k

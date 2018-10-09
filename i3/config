@@ -32,7 +32,7 @@ set $mod Mod4
 focus_follows_mouse yes
 
 ## Define the font to use for the windows.
-font pango:monospace 8
+font xft:SauceCodePro Nerd Font:size=6
 
 # Status Bar
 bar {
@@ -40,13 +40,13 @@ bar {
 }
 
 # Keyboard Layout
-setxkbmap -layout us,de
+#setxkbmap -layout us,de
 
 # Set Wallpaper
 exec --no-startup-id feh --bg-scale $wallpaper
 
 # Define Lockscreen command and auto-lock (png required)
-exec xautolock -corners ---- -time 1 -locker "i3lock -i $wallpaper -dnf" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
+exec xautolock -corners ---- -time 1 -locker "i3lock -i $wallpaper -dnft" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
 bindsym $mod+Control+l exec --no-startup-id xautolock -locknow
 
 # Open Shutdown/Suspend/... Menu
@@ -183,8 +183,8 @@ bindsym $mod+s scratchpad show
 
 
 # Launching
-## Launch a terminal emulator.
-bindsym $mod+Return exec i3-sensible-terminal
+## Launch a terminal emulator and start Zsh inside.
+bindsym $mod+Return exec i3-sensible-terminal -e zsh
 
 
 # i3 Control
@@ -215,24 +215,27 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 
 # Autostart
 ## Start Cloud Synchronization Clients
-exec --no-startup-id /usr/bin/nextcloud
-exec --no-startup-id /usr/bin/dropbox start
+#exec --no-startup-id /usr/bin/nextcloud
+#exec --no-startup-id /usr/bin/dropbox start
 
 ## Start Cerebro (smart launcher)
 exec --no-startup-id cd ~/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppImage > /tmp/cerebro.log
 
 ## Start Compton (make transparency possible)
-exec --no-startup-id compton
+exec --no-startup-id compton -b -d:0
 
 # ---
 
 
 # i3 Gaps Configuration
 ## Gap between windows.
-gap_size 7
+gaps inner 10
+gaps outer 0
+smart_gaps on
+smart_borders on 
 
 ## The window title height.
-new_window 1pixel
+new_window pixel 2
 
 ## Colors
 ### class       border      backgr.     text    indicator   child_border<Paste>

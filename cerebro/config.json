@@ -12,9 +12,9 @@
   "lastShownDonateDialog": 1510326812937,
   "plugins": {},
   "isMigratedPlugins": true,
+  "openAtLogin": true,
   "trackingEnabled": true,
   "crashreportingEnabled": true,
-  "openAtLogin": true,
   "positions": {
     "14822516254048256": [
       315,
