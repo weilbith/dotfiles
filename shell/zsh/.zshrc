@@ -34,6 +34,9 @@ source $CONFIG_DIR/plugin-config.zsh # All other configurations for plugins.
 zle-line-init() { zle -K vicmd; }
 zle -N zle-line-init
 
+# Fix vi-escape issues at Arch-URxvt-TMux-Zsh
+bindkey '\e' vi-cmd-mode
+
 # ---
 
 
