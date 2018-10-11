@@ -1,6 +1,6 @@
 [global]
     ### Display ###
-    follow = keyboard
+    monitor = 0
     geometry = "300x5-6+30"
     indicate_hidden = yes
     shrink = no
