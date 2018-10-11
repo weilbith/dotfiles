@@ -90,6 +90,9 @@ bindsym $mod+Shift+space floating toggle
 ### Switch between tiled and floated windows.
 bindsym $mod+space focus mode_toggle
 
+### Toggle current floating window sticky ability.
+bindsym $mod+Control+space sticky toggle
+
 ## Resize focused window.
 bindsym $mod+r mode $resize_mode
 
@@ -153,6 +156,13 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+## Move focused container between outputs.
+bindsym $mod+left move container to output left
+bindsym $mod+right move container to output right
+
+## Swap container
+bindsym $mod+Control+s exec i3-input -F 'swap container with mark %s' -P 'Mark Name: '
+
 # ---
 
 
@@ -168,6 +178,10 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+
+## Move focused workspace between outputs.
+bindsym $mod+Control+j move workspace to output left
+bindsym $mod+Control+k move workspace to output right
 
 # ---
 
@@ -241,7 +255,7 @@ smart_borders on
 new_window pixel 2
 
 ## Colors
-### class       border      backgr.     text    indicator   child_border<Paste>
+### class       border      backgr.     text    indicator   child_border
 client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
 
 # ---
@@ -289,3 +303,5 @@ bindsym $mod+f exec ~/.scripts/i3_find.zsh
 ## Screenshot
 bindsym $mod+Print exec --no-startup-id ~/.scripts/screenshot.sh
 
+## Disable internal display, if two more are connected externally.
+exec --no-startup-id [[ $(xrandr | grep ' connected' | wc -l) -gt 2 ]] && xrandr --output eDP-1 --off
