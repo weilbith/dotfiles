@@ -3,7 +3,7 @@
   "lang": "en",
   "country": "DE",
   "theme": "../dist/main/css/themes/blue_planet.css",
-  "hotkey": "Alt+Space",
+  "hotkey": "Super+;",
   "showInTray": true,
   "firstStart": false,
   "developerMode": false,
@@ -12,13 +12,19 @@
   "lastShownDonateDialog": 1510326812937,
   "plugins": {},
   "isMigratedPlugins": true,
-  "openAtLogin": true,
   "trackingEnabled": true,
   "crashreportingEnabled": true,
+  "openAtLogin": true,
+  "customTheme": false,
+  "customTheme_bgColor": "#ffffff",
+  "customTheme_fontColor": "#000000",
+  "customTheme_borderColor": "#000000",
+  "customTheme_selectColor": "#c0c0c0",
+  "customTheme_specialColor": "#ffffff",
   "positions": {
     "14822516254048256": [
-      315,
-      120
+      913,
+      493
     ]
   }
 }
