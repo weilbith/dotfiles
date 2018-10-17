@@ -64,21 +64,18 @@ curl https://cht.sh/:cht.sh > $CHT_DIR/cht.sh
 curl https://cht.sh/:zsh > $CHT_DIR/zsh-completion.sh
 chmod +x $CHT_DIR/cht.sh
 
-# Install BashMount
-BM_DIR=$HOME/Tools/bashmount
-BM_CONFIG_DIR=$HOME/.config/bashmount
-mkdir -p $BM_DIR
-mkdir -p $BM_CONFIG_DIR
-git clone --depth 1 https://github.com/jamielinux/bashmount.git $BM_DIR
-cd $BM_DIR
-sudo install -m755 bashmount /usr/bin/bashmount
-ln -sf $(pwd)/bashmount.conf $BM_CONFIG_DIR/config
-
 # Install Wuzz
 WUZZ_DEST=/usr/bin/wuzz
 WUZZ_SOURCE=$(curl -s https://api.github.com/repos/asciimoo/wuzz/releases/latest | grep browser_download_url | cut -d '"' -f 4 | grep linux_amd64)
 sudo bash -c "curl -L $WUZZ_SOURCE > $WUZZ_DEST"
 sudo chmod +x $WUZZ_DEST
+
+# Install Translate-Shell
+TS_DIR=$HOME/.translate-shell
+sudo pacman -S --noconfirm translate-shell
+mkdir -p $TS_DIR
+ln -sf $(pwd)/*.trans $TS_DIR/
+
 
 # Install some packages as tools for the shell.
 sudo apt-get install -y htop
