@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Bashmount
+Comment=CLI based device manager
+Exec=urxvt -e bashmount
+Type=Application
