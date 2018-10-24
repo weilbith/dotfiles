@@ -1,0 +1,37 @@
+[general]
+status_path = "/home/thore/.config/vdirsyncer/status/"
+
+[pair brainbot_gsuite_contacts]
+a = "brainbot_gsuite_contacts_local"
+b = "brainbot_gsuite_contacts_remote"
+collections = ["from a", "from b"]
+metadata = ["color", "displayname"]
+
+[storage brainbot_gsuite_contacts_local]
+type = "filesystem"
+path = "/home/thore/Contacts/brainbot_gsuite"
+fileext = ".vcf"
+
+[storage brainbot_gsuite_contacts_remote]
+type = "google_contacts"
+token_file = "/home/thore/.cache/vdirsyncer/brainbot_gsuite_contacts_remote"
+client_id = "910527417936-3goktnbahkvf4m54fo0ca7c7k73nh0ll.apps.googleusercontent.com"
+client_secret.fetch = ["command", "gpg", "--for-your-eyes-only", "--no-tty", "-qd", "/home/thore/.config/vdirsyncer/brainbot_gsuite_pass"]
+
+
+[pair brainbot_gsuite_calendar]
+a = "brainbot_gsuite_calendar_local"
+b = "brainbot_gsuite_calendar_remote"
+collections = ["from a", "from b"]
+metadata = ["color", "displayname"]
+
+[storage brainbot_gsuite_calendar_local]
+type = "filesystem"
+path = "/home/thore/Calendar/brainbot_gsuite"
+fileext = ".ics"
+
+[storage brainbot_gsuite_calendar_remote]
+type = "google_calendar"
+token_file = "/home/thore/.cache/vdirsyncer/brainbot_gsuite_calendar_remote"
+client_id = "910527417936-3goktnbahkvf4m54fo0ca7c7k73nh0ll.apps.googleusercontent.com"
+client_secret.fetch = ["command", "gpg", "--for-your-eyes-only", "--no-tty", "-qd", "/home/thore/.config/vdirsyncer/brainbot_gsuite_pass"]

@@ -1,0 +1,77 @@
+# Accounts
+set my_acc_private = ~/.mutt/accounts/private
+set my_acc_brainbot = ~/.mutt/accounts/brainbot
+
+source $my_acc_private
+
+macro index <f2> "<sync-mailbox><refresh><enter-command>source $my_acc_private<enter><change-folder>!<enter>"
+macro index <f3> "<sync-mailbox><refresh><enter-command>source $my_acc_brainbot<enter><change-folder>!<enter>"
+
+set realname = 'Thore Weilbier'
+
+# Sourcing
+source ~/.mutt/colors
+
+# Index Pane
+set sort = threads
+set date_format = "%H:%M %a %d.%m.%Y"
+set index_format = "%-20.20F  %?M? [%M]? %s%* (%D)"
+set pager_index_lines = 15
+set pager_context = 4
+
+# HTML
+auto_view text/html
+
+# Sidebar
+set sidebar_visible
+set mail_check_stats
+set sidebar_width = 25
+set sidebar_divider_char = '  '
+set sidebar_format = "%-7.7B %?F?[%F]?%* %N/%-4S"
+set sidebar_short_path
+set sidebar_component_depth = 1
+set sidebar_delim_chars = '/'
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+# More Bindings
+## Index
+bind index G last-entry
+bind index \Cu half-up
+bind index \Cd half-down
+macro index <f9> "!mbsync $my_acc_mbsync && notmuch new<enter>" "Syncronise account $my_acc_mbsync"
+
+## Pager
+bind pager g top
+bind pager G bottom
+bind pager k previous-line
+bind pager j next-line
+bind pager \Cu half-up
+bind pager \Cd half-down
+bind pager \Ck previous-entry
+bind pager \Cj next-entry
+macro pager A "<pipe-message>ripmime -i - -d "
+
+# Notmuch
+set nm_default_uri = ~/Mail/
+bind index,pager S vfolder-from-query
+# startup-hook 'exec mbsync -a && notmuch new'
+# shutdown-hook 'push "<shell-escape>notmuch new<enter>"'
+
+# Contacts
+set query_command = "khard email --parsable '%s'"
+bind editor <Tab> complete-query
+bind editor ^T complete
+bind query k previous-line
+bind query j next-line
+
+# Caching
+set header_cache = ~/.cache/mutt/header
+
+# MISC
+set mark_old = no
+set abort_noattach = ask-yes
+set abort_noattach_regex = "\\<attach(|ed|ments?)\\>"
+
+# vim: filetype=neomuttrc

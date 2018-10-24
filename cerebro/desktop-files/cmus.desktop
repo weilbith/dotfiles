@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=CMus
+Comment=CLI based music player
+Exec=urxvt -e cmus
+Type=Application

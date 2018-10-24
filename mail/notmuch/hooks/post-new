@@ -1,0 +1,6 @@
+#!/bin/bash
+python $HOME/.scripts/notmuch-notify.py
+python $HOME/Tools/powerstatus10k/segments/custom/powerstatus10k_notmuch/notmuch_hook.py
+
+
+# vim: filetype=sh

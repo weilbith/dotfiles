@@ -1,0 +1,22 @@
+set header_color_partial = yes
+
+# Standard
+color normal  color38   default
+color indicator color15   color32
+color status  color15   color24
+color error color197  default
+color tree  color191  default
+
+# Index signal colors
+color index_author color215 default '.*'
+color index_subject color191 default '~N'
+color index_subject color197 default '~T'
+color index color235 color197 '~D'
+color index_author color235 color197 '~D'
+
+
+color sidebar_divider color24    color24
+color sidebar_highlight color239   color81
+color sidebar_indicator color15    color32
+
+# vim: filetype=neomuttrc

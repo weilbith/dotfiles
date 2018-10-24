@@ -8,3 +8,6 @@ ln -sf $(pwd)/config.json $CERBRO_DIR/
 ln -sf $(pwd)/plugins.json $CEREBRO_DIR/plugins/package.json
 cd $CEREBRO_DIR/plugins
 yarn install
+
+# Link desktop files for CLI based applications.
+sudo ln -sf $(pwd)/desktop-files/* /usr/share/applications/

@@ -1,0 +1,7 @@
+[Unit]
+Description=VDir synchronization service
+
+[Service]
+Type=oneshot
+After=network.target network-online.target dbus.socket
+ExecStart=/usr/bin/vdirsyncer sync

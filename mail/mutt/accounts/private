@@ -1,0 +1,10 @@
+set mbox_type = Maildir
+set folder = ~/Mail/private/
+set spoolfile = +inbox
+set my_acc_mbsync = private
+
+folder-hook ~/Mail/private 'mailboxes +inbox +sent +drafts +spam +junk;\
+  set postponed = ~/Mail/private/drafts;\
+  set record = ~/Mail/private/sent'
+
+# vim: filetype=neomuttrc

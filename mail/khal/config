@@ -1,0 +1,34 @@
+[calendars]
+[[brainbot_gsuite_calendar_local]]
+path = /home/thore/Calendar/brainbot_gsuite/*
+type = discover
+color = dark red
+
+[[brainbot_gsuite_contacts_local]]
+path = /home/thore/Contacts/brainbot_gsuite/*
+type = discover
+
+[locale]
+dateformat = %d.%m.%Y
+datetimeformat = %d.%m.%Y %H:%M
+firstweekday = 0
+longdateformat = %d.%m.%Y
+longdatetimeformat = %d.%m.%Y %H:%M
+timeformat = %H:%M
+unicode_symbols = true
+weeknumbers = right
+
+[default]
+default_calendar = thore@brainbot.com
+default_command = calendar
+highlight_event_days = true
+print_new = event
+timedelta = 5d
+
+[highlight_days]
+default_color = black
+method = foreground
+
+[view]
+dynamic_days = true
+frame = top

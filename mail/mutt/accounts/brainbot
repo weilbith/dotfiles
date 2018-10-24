@@ -1,0 +1,9 @@
+set mbox_type = Maildir
+set folder = ~/Mail/brainbot/
+set spoolfile = +inbox
+set my_acc_mbsync = brainbot
+
+folder-hook ~/Mail/brainbot 'mailboxes +inbox'
+
+# vim: filetype=neomuttrc
+

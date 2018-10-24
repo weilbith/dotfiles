@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Midnight Commander
+Comment=CLI based file explorer
+Exec=urxvt -e mc
+Type=Application
