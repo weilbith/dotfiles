@@ -53,10 +53,18 @@ addPackage yarn eslint-plugin-import
 addPackage yarn eslint-plugin-promise
 addPackage yarn eslint-plugin-react
 
+## TSLint
+addPackage yarn tslint
+addPackage yarn tslint-config-standard
+addPackage yarn tslint-config-standard
+
 ## Prettier
+addPackage pacman prettier
 addPackage yarn prettier
 addPackage yarn eslint-plugin-prettier
 addPackage yarn eslint-config-prettier
+addPackage yarn tslint-config-prettier
+
 
 
 
@@ -77,4 +85,5 @@ sudo pip install $PIP_LIST
 # Linking
 ln -sf $(pwd)/soliumrc.json ~/.soliumrc.json
 ln -sf $(pwd)/eslintrc ~/.eslintrc
+ln -sf $(pwd)/tslint.json ~/.tslint.json
 ln -sf $(pwd)/prettierrc.json ~/.prettierrc.json
