@@ -229,8 +229,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 
 # Autostart
 ## Start Cloud Synchronization Clients
-#exec --no-startup-id /usr/bin/nextcloud
-#exec --no-startup-id /usr/bin/dropbox start
+exec --no-startup-id /usr/bin/nextcloud
 
 ## Start Cerebro (smart launcher)
 exec --no-startup-id cd ~/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppImage > /tmp/cerebro.log
@@ -249,7 +248,7 @@ exec --no-startup-id dunst
 gaps inner 10
 gaps outer 0
 smart_gaps on
-smart_borders on 
+smart_borders on
 
 ## The window title height.
 new_window pixel 2
