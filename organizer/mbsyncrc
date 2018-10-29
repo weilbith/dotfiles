@@ -5,9 +5,9 @@
 IMAPAccount brainbot
 Host mail.brainbot.com
 User thore
-PassCmd "gpg --for-your-eyes-only --no-tty -dq ~/.mutt/accounts/brainbot_pass"
+PassCmd "gpg --for-your-eyes-only --no-tty --batch -dq -r 483DA28D /home/thore/.config/mutt/accounts/brainbot_pass"
 SSLType IMAPS
-CertificateFile ~/.mutt/accounts/brainbot_cert
+CertificateFile ~/.config/mutt/accounts/brainbot_cert
 
 # Remote
 IMAPStore brainbot-remote
@@ -35,9 +35,9 @@ Channel brainbot-inbox
 IMAPAccount private
 Host imap.1und1.de
 User thore@weilbier.net
-PassCmd "gpg --for-your-eyes-only --no-tty -dq ~/.mutt/accounts/private_pass"
+PassCmd "gpg --for-your-eyes-only --no-tty -dq -r 483DA28D /home/thore/.config/mutt/accounts/private_pass"
 SSLType IMAPS
-CertificateFile ~/.mutt/accounts/private_cert
+CertificateFile ~/.config/mutt/accounts/private_cert
 
 # Remote
 IMAPStore private-remote

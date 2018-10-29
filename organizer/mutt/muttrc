@@ -1,6 +1,6 @@
 # Accounts
-set my_acc_private = ~/.mutt/accounts/private
-set my_acc_brainbot = ~/.mutt/accounts/brainbot
+set my_acc_private = ~/.config/mutt/accounts/private
+set my_acc_brainbot = ~/.config/mutt/accounts/brainbot
 
 source $my_acc_private
 
@@ -10,7 +10,7 @@ macro index <f3> "<sync-mailbox><refresh><enter-command>source $my_acc_brainbot<
 set realname = 'Thore Weilbier'
 
 # Sourcing
-source ~/.mutt/colors
+source ~/.config/mutt/colors
 
 # Index Pane
 set sort = threads
