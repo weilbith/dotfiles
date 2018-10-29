@@ -1,3 +1,5 @@
+colorscheme blueplanet
+# Output.
 set output_plugin=alsa
 set dsp.alsa.device=default
 set mixer.alsa.device=default
