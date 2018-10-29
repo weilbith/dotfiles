@@ -52,6 +52,7 @@ bind pager \Cd half-down
 bind pager \Ck previous-entry
 bind pager \Cj next-entry
 macro pager A "<pipe-message>ripmime -i - -d "
+macro pager U "<pipe-message> urlscan --compact<Enter>"
 
 # Notmuch
 set nm_default_uri = ~/Mail/
