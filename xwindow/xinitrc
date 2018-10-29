@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Specify configuration files.
+XRESOURCES=$HOME/.Xresources
+XMODMAP=$HOME/.Xmodmap
+
+# Merge/load configurations if they exist.
+[[ -f "$XRESOURCES" ]] && xrdb -merge $XRESOURCES
+[[ -f "$XMODMAP" ]] && xmodmap $XMODMAP
+
+
+# Start i3 as window manager.
+exec i3
