@@ -2,7 +2,10 @@
 
 # Wicd
 trizen -S wicd-patched
+sudo chmod -R 600 $(pwd)/wicd/*
+sudo chmod -R 700 $(pwd)/wicd/scripts/*
+sudo ln -sf $(pwd)/wicd/* /etc/wicd/
 sudo gpasswd -a thore users
-sudo chmod 600 $(pwc)/wicd/*.conf
-sudo ln -sf $(pwd)/wicd/*.conf /etc/wicd/
 sudo systemctl enable wicd.service
+
+# MacChanger
