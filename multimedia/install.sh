@@ -21,3 +21,8 @@ trizen -S rawtherapee-git
 
 # PDF
 sudo pacman -S evince
+
+
+# Video
+sudo pacman -S vlc
+# Select theme after start at Tools > Preferences > Interface > User custom skin
