@@ -32,7 +32,7 @@ FZF_COMPLETION_TRIGGER='**'
 FASD_CACHE="${ZSH_CACHE_DIR}/fasd-init-cache"
 
 if [ "$(command -v fasd)" -nt "$FASD_CACHE" -o ! -s "$FASD_CACHE" ]; then
-  fasd --init zsh-hook zsh-wcomp zsh-wcomp-install >| "$FASD_CACHE"
+  fasd --init auto >| "$FASD_CACHE"
 fi
 
 source "$FASD_CACHE"
