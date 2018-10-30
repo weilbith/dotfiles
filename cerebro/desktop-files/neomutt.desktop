@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Neomutt
+Comment=CLI based mail interface
+Exec=urxvt -e neomutt
+Type=Application

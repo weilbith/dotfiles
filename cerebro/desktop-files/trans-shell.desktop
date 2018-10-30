@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=TransShell
+Comment=CLI based translation tool
+Exec=urxvt -e trans --shell
+Type=Application
