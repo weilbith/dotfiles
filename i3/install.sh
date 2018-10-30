@@ -30,3 +30,11 @@ sudo pacman -S --noconfirm dunst
 DUNST_CONFIG_DIR=$HOME/.config/dunst/
 mkdir -p $DUNST_CONFIG_DIR
 ln -sf $(pwd)/dunstrc $DUNST_CONDIG_DIR
+
+# RedShift
+sudo pamcan -S redshift
+RS_DIR=$HOME/.config/redshift
+mkdir -p $RS_DIR
+ln -sf $(pwd)/redshift.conf $RS_DIR/
+systemctl --user enable redshift.service
+systemctl --user start redshift.service
