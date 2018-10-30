@@ -46,7 +46,7 @@ bar {
 exec --no-startup-id feh --bg-scale $wallpaper
 
 # Define Lockscreen command and auto-lock (png required)
-exec xautolock -corners ---- -time 1 -locker "i3lock -i $wallpaper -dnft" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
+exec xautolock -corners ---- -time 1 -locker "bash ~/.scripts/i3lock.sh $wallpaper" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
 bindsym $mod+Control+l exec --no-startup-id xautolock -locknow
 
 # Open Shutdown/Suspend/... Menu
@@ -228,8 +228,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 
 
 # Autostart
-## Start Cloud Synchronization Clients
-exec --no-startup-id /usr/bin/nextcloud
+## Start Cloud Synchronization Client in background
+exec --no-startup-id /usr/bin/nextcloud --logfile /var/log/nextcloud-sync-client.log &
 
 ## Start Cerebro (smart launcher)
 exec --no-startup-id cd ~/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppImage > /tmp/cerebro.log
