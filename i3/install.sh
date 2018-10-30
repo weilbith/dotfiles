@@ -1,5 +1,6 @@
-# Install i3 gaps.
-# TODO: Install it...
+# Install packages.
+sudo pacman -S i3-gaps xautolock compoton dmenu pulseaudio
+trizen -S i3lock-color nerd-fonts-source-code-pro rxvt-unicode-patched 
 
 I3_CONFIG_DIR=$HOME/.config/i3
 mkdir -p $I3_CONFIG_DIR
@@ -22,7 +23,7 @@ fi
 ln -sf $(pwd)/powerstatus10k_custom.conf $POWERSTATUS10K_DIR/config/custom.conf
 
 # Install xautolock
-sudo acman -S --noconfirm xautolock
+sudo pacman -S --noconfirm xautolock
 
 # Dunst
 sudo pacman -S --noconfirm dunst

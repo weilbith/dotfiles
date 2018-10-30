@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Install packages
+sudo pacman -S xorg xsel xclip xautolock
+
+# Configuration files
 CONFIG_DIR=$HOME/.Xresources.d
 mkdir -p $CONFIG_DIR
 

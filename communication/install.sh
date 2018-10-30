@@ -1,3 +1,3 @@
-trizen -S nctelegram-git signal
+trizen -S nctelegram-git telegram-cli-git signal
 
 telegram-cli

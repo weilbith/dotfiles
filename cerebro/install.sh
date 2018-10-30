@@ -1,3 +1,6 @@
+# Install dependencies.
+sudo pacman -S nodejs yarn fuse readline
+
 # Put the AppImage to the right place.
 
 CEREBRO_DIR=$HOME/.config/Cerebro

@@ -36,6 +36,10 @@ function addPackage {
 }
 
 
+# NodeJS
+add Package pacman nodejs
+add Package pacman yarn
+
 # Linter/Formatter
 ## Uncrustify
 addPackage pacman uncrustify
