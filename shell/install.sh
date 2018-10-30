@@ -1,5 +1,5 @@
 # Install a bunch of small packages.
-sudo pacman -S zsh-theme-powerlevel9k ripgrep fzf exa bat htop pdfgrep nmon openssh
+sudo pacman -S zsh-theme-powerlevel9k ripgrep fzf fasd-git exa bat htop pdfgrep nmon openssh
 trizen -S wuzz
 pip install --user rtv
 

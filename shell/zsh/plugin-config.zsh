@@ -27,3 +27,16 @@ FZF_CTRL_T_OPTS='
   --bind "alt-e:execute(nvim {})+abort"
   '
 FZF_COMPLETION_TRIGGER='**'
+
+# Fasd
+FASD_CACHE="${ZSH_CACHE_DIR}/fasd-init-cache"
+
+if [ "$(command -v fasd)" -nt "$FASD_CACHE" -o ! -s "$FASD_CACHE" ]; then
+  fasd --init zsh-hook zsh-wcomp zsh-wcomp-install >| "$FASD_CACHE"
+fi
+
+source "$FASD_CACHE"
+unset FASD_CACHE
+
+bindkey '^[f' fasd-complete-f # Alt + f
+bindkey '^[d' fasd-complete-d # Alt + d
