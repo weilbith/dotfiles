@@ -18,6 +18,10 @@ setopt vi
 ## Reduce the delay on switching modes.
 set KEYTIMEOUT=1
 
+# Completion initialization.
+autoload -Uz compinit
+compinit
+
 # ---
 
 
