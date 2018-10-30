@@ -3,7 +3,6 @@
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 ## Source the theme itself.
-#source $HOME/Tools/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
 ## Increase the segment distance (one space is default).
