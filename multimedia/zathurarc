@@ -1,0 +1,77 @@
+# Zoom
+## Steps
+set zoom-step 20
+set scroll-step 80
+
+## Commands
+map <C-i> zoom in
+map <C-o> zoom out
+
+
+# Clipboard
+set selection-clipboard clipboard
+
+# Search
+set incremental-search true
+
+# Appearance
+set recolor true
+set guioptions "sv"
+
+## Titles
+set window-title-basename true
+set statusbar-basename true
+
+## Padding
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 10
+
+
+# Colors
+set default-bg "#000000"
+set default-fg "#5fd7ff"
+
+## Input
+set inputbar-bg "#005f87"
+set inputbar-fg "#ffffff"
+
+### Completion
+set completion-bg "#282a2e"
+set completion-fg "#5fd7ff"
+set completion-group-bg "#0087d7"
+set completion-group-fg "#ffffff"
+set completion-highlight-bg "#5fd7ff"
+set completion-highlight-fg "#282a2e"
+set notification-bg "#d7ff5f"
+
+## Notification
+set notification-fg "#282a2e"
+set notification-error-bg "#ff005f"
+set notification-error-fg "#ffffff"
+set notification-warning-fg "#ff005f"
+set notification-warning-fg "#ffffff"
+
+## Tabbar
+#set tabbar-bg "#005f97"
+#set tabbar-fg "#ffffff"
+#set tabbar-focus-bg "#5fd7ff"
+#set tabbar-focus-fg "#282a2e"
+
+## Statusbar
+set statusbar-bg "#005f97"
+set statusbar-fg "#ffffff"
+
+## Highlighting
+set highlight-color "#5fd7ff"
+set highlight-active-color "#d7ff5f"
+
+## Recolor
+set recolor-darkcolor "#ffffff"
+set recolor-lightcolor "#282a2e"
+
+## Indexer
+set index-bg "#005f87"
+set index-fg "#ffffff"
+set index-active-fg "#282a2e"
+set index-active-bg "#5fd7ff"

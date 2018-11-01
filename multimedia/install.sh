@@ -20,7 +20,9 @@ sudo pacman -S gimp
 trizen -S rawtherapee-git
 
 # PDF
-sudo pacman -S evince
+sudo pacman -S zathura zathura-pdf-mupdf tabbed
+ZATHURA_DIR=$HOME/.config/zathura
+ln -sf $(pwd)/zathurarc $ZATHURA_DIR/
 
 
 # Video
