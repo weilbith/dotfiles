@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Compton
+GenericName=A compositor for X11
+Exec=compton -b -d:0
+Terminal=false
+Type=Application

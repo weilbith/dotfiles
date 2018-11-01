@@ -1,0 +1,305 @@
+# Variables
+## The path to the wallpaper for the background and lockscreen.
+set $wallpaper ~/Bilder/Wallpapers/Wallpaper.png
+
+## Standard mark names
+set $mark1 1
+set $mark2 2
+set $mark3 3
+set $mark4 4
+set $mark5 5
+
+## Mode names (variables are not allowed to start with 'mode'!)
+set $default_mode default
+set $resize_mode resize
+set $move_mode move
+set $mark_mode mark
+
+## Step sizes
+set $resize_step_small 5
+set $resize_step_big 15
+set $move_step_small 3
+set $move_step_big 50
+
+# ---
+
+
+# Basics
+## Define the mod key. Here: Super/Win
+set $mod Mod4
+
+## Enable window focus by mouse (to do not annoy others).
+focus_follows_mouse yes
+
+## Define the font to use for the windows.
+font xft:SauceCodePro Nerd Font:size=6
+
+# Status Bar
+bar {
+  i3bar_command bash ~/Tools/powerstatus10k/powerstatus10k.sh > ~/Tools/powerstatus10k/log 2>&1
+}
+
+# Keyboard Layout
+#setxkbmap -layout us,de
+
+# Set Wallpaper
+exec --no-startup-id feh --bg-scale $wallpaper
+
+# Define Lockscreen command and auto-lock (png required)
+exec xautolock -corners ---- -time 1 -locker "bash ~/.scripts/i3lock.sh $wallpaper" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
+bindsym $mod+Control+l exec --no-startup-id xautolock -locknow
+
+# Open Shutdown/Suspend/... Menu
+bindsym $mod+t exec --no-startup-id ~/.scripts/i3_runstate.zsh
+
+# ---
+
+
+# Windows
+## Kill focused window.
+bindsym $mod+q kill
+
+## Move between windows.
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+## Move focused window.
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+## Change windows split. (default horizontal)
+bindsym $mod+Control+h split h
+bindsym $mod+Control+v split v
+
+## Toogle fullscreen for active window.
+bindsym $mod+Shift+f fullscreen toggle
+
+## Change window layout.
+# bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+## Floating Windows
+### Toogle floating for active window.
+bindsym $mod+Shift+space floating toggle
+
+### Switch between tiled and floated windows.
+bindsym $mod+space focus mode_toggle
+
+### Toggle current floating window sticky ability.
+bindsym $mod+Control+space sticky toggle
+
+## Resize focused window.
+bindsym $mod+r mode $resize_mode
+
+mode $resize_mode {
+  # Grow and shrink the width and height.
+  bindsym h resize grow width $resize_step_small px or $resize_step_small ppt
+  bindsym l resize shrink width $resize_step_small px or $resize_step_small ppt
+  bindsym j resize shrink height $resize_step_small px or $resize_step_small ppt
+  bindsym k resize grow height $resize_step_small px or $resize_step_small ppt
+
+  # The same but with larger steps.
+  bindsym Shift+h resize grow width $resize_step_big px or $resize_step_big ppt
+  bindsym Shift+l resize shrink width $resize_step_big px or $resize_step_big ppt
+  bindsym Shift+j resize shrink height $resize_step_big px or $resize_step_big ppt
+  bindsym Shift+k resize grow height $resize_step_big px or $resize_step_big ppt
+
+  # Leave mode.
+  bindsym Return mode $default_mode
+}
+
+# Move floated windows
+bindsym $mod+m mode $move_mode; focus floating
+
+mode $move_mode {
+  # Switch to next window.
+    bindsym space focus right
+
+  # Move window in all directions.
+  bindsym h move left $move_step_small px
+  bindsym j move down $move_step_small px
+  bindsym k move up $move_step_small px
+  bindsym l move right $move_step_small px
+
+  bindsym Shift+h move left $move_step_big px
+  bindsym Shift+j move down $move_step_big px
+  bindsym Shift+k move up $move_step_big px
+  bindsym Shift+l move right $move_step_big px
+
+  # Leave mode.
+  bindsym Return mode $default_mode
+}
+
+## ---
+# ---
+
+
+# Container
+## Focus parent or cild container.
+bindsym $mod+a focus parent
+bindsym $mod+d focus child
+
+## Move focused container to workspace.
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+## Move focused container between outputs.
+bindsym $mod+left move container to output left
+bindsym $mod+right move container to output right
+
+## Swap container
+bindsym $mod+Control+s exec i3-input -F 'swap container with mark %s' -P 'Mark Name: '
+
+# ---
+
+
+# Workspaces
+## Switch workspace.
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+## Move focused workspace between outputs.
+bindsym $mod+Control+j move workspace to output left
+bindsym $mod+Control+k move workspace to output right
+
+# ---
+
+
+# Scratchpad
+## Move active window to the scratchpad and toggle its visibility.
+bindsym $mod+Shift+s move scratchpad
+bindsym $mod+s scratchpad show
+# bindsym $mod+s exec gnome-terminal --geometry 270x25
+# for_window [instance="scratchpad"] move to scratchpad
+
+# ---
+
+
+# Launching
+## Launch a terminal emulator and start Zsh inside.
+bindsym $mod+Return exec i3-sensible-terminal -e zsh
+
+
+# i3 Control
+## Reload configuration.
+bindsym $mod+Shift+c reload
+
+## Restart in place (do not logout).
+bindsym $mod+Shift+r restart
+
+## Exit (with logout)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# ---
+
+
+# Device Control
+## Screen Brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id sudo ~/.scripts/brightness.sh up
+bindsym XF86MonBrightnessDown exec --no-startup-id sudo ~/.scripts/brightness.sh down
+
+## Volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+
+#---
+
+
+# Autostart
+## Start Cloud Synchronization Client in background
+exec --no-startup-id /usr/bin/nextcloud --logfile /var/log/nextcloud-sync-client.log &
+
+## Start Cerebro (smart launcher)
+exec --no-startup-id cd ~/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppImage > /tmp/cerebro.log
+
+## Start Compton (make transparency possible)
+exec --no-startup-id compton -b -d:0
+
+## Notification Deamon
+exec --no-startup-id dunst
+
+# ---
+
+
+# i3 Gaps Configuration
+## Gap between windows.
+gaps inner 10
+gaps outer 5
+smart_gaps on
+
+## The window title height.
+new_window pixel 2
+
+## Colors
+### class       border      backgr.     text    indicator   child_border
+client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
+
+# ---
+
+
+# Marks & Find
+bindsym $mod+apostrophe mode $mark_mode
+
+mode $mark_mode {
+  # Hardcoded focus keybindinig.
+  bindsym f [class="(?i)firefox"] focus; mode $default_mode
+
+  # keybindings for marking and jumping to clients
+  bindsym m exec i3-input -F 'mark %s' -P 'Mark name: '; mode $default_mode
+  bindsym g exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '; mode $default_mode
+
+  # Quick mark assign by numbers.
+  bindsym Shift+1 mark $mark1; mode $default_mode
+  bindsym Shift+2 mark $mark2; mode $default_mode
+  bindsym Shift+3 mark $mark3; mode $default_mode
+  bindsym Shift+4 mark $mark4; mode $default_mode
+  bindsym Shift+5 mark $mark5; mode $default_mode
+
+  # Quick mark jump to numbers.
+  bindsym 1 [con_mark=$mark1] focus; mode $default_mode
+  bindsym 2 [con_mark=$mark2] focus; mode $default_mode
+  bindsym 3 [con_mark=$mark3] focus; mode $default_mode
+  bindsym 4 [con_mark=$mark4] focus; mode $default_mode
+  bindsym 5 [con_mark=$mark5] focus; mode $default_mode
+
+  # Exit to the default mode (only necessary if do nothing)
+  bindsym Return mode $default_mode
+}
+
+## Interactiv go to by mark
+bindsym $mod+g exec ~/.scripts/i3_goto.zsh
+
+## Interactive go to by title
+bindsym $mod+f exec ~/.scripts/i3_find.zsh
+
+# ---
+
+
+# MISC
+## Screenshot
+bindsym $mod+Print exec --no-startup-id ~/.scripts/screenshot.sh
+
+## Disable internal display, if two more are connected externally.
+exec --no-startup-id [[ $(xrandr | grep ' connected' | wc -l) -gt 2 ]] && xrandr --output eDP-1 --off
