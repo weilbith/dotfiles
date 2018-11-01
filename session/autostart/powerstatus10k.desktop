@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Powerstatus10k
+GenericName=Powerful statusbar
+Exec=/home/thore/Tools/powerstatus10k/powerstatus10k.sh
+Terminal=false
+Type=Application

@@ -1,7 +1,4 @@
 # Variables
-## The path to the wallpaper for the background and lockscreen.
-set $wallpaper ~/Bilder/Wallpapers/Wallpaper.png
-
 ## Standard mark names
 set $mark1 1
 set $mark2 2
@@ -34,19 +31,7 @@ focus_follows_mouse yes
 ## Define the font to use for the windows.
 font xft:SauceCodePro Nerd Font:size=6
 
-# Status Bar
-bar {
-  i3bar_command bash ~/Tools/powerstatus10k/powerstatus10k.sh > ~/Tools/powerstatus10k/log 2>&1
-}
-
-# Keyboard Layout
-#setxkbmap -layout us,de
-
-# Set Wallpaper
-exec --no-startup-id feh --bg-scale $wallpaper
-
-# Define Lockscreen command and auto-lock (png required)
-exec xautolock -corners ---- -time 1 -locker "bash ~/.scripts/i3lock.sh $wallpaper" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
+# Lockscreen activation command
 bindsym $mod+Control+l exec --no-startup-id xautolock -locknow
 
 # Open Shutdown/Suspend/... Menu
@@ -227,22 +212,6 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 #---
 
 
-# Autostart
-## Start Cloud Synchronization Client in background
-exec --no-startup-id /usr/bin/nextcloud --logfile /var/log/nextcloud-sync-client.log &
-
-## Start Cerebro (smart launcher)
-exec --no-startup-id cd ~/Tools/cerebro/release && ./cerebro-0.3.2-x86_64.AppImage > /tmp/cerebro.log
-
-## Start Compton (make transparency possible)
-exec --no-startup-id compton -b -d:0
-
-## Notification Deamon
-exec --no-startup-id dunst
-
-# ---
-
-
 # i3 Gaps Configuration
 ## Gap between windows.
 gaps inner 10
@@ -303,3 +272,5 @@ bindsym $mod+Print exec --no-startup-id ~/.scripts/screenshot.sh
 
 ## Disable internal display, if two more are connected externally.
 exec --no-startup-id [[ $(xrandr | grep ' connected' | wc -l) -gt 2 ]] && xrandr --output eDP-1 --off
+
+# vim: filetype=i3

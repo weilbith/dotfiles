@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=X-Autolock
+GenericName=Screen-locker
+Exec=xautolock -corners ---- -time 1 -locker "bash /home/thore/.scripts/i3lock.sh /home/thore/Bilder/Wallpapers/Wallpaper.png" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
+Terminal=false
+Type=Application

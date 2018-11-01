@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages.
-sudo pacman -S xorg xsel xclip xautolock i3-gaps compoton dmenu pulseaudio
+sudo pacman -S xorg xsel xclip xautolock i3-gaps compoton dmenu pulseaudio dex
 trizen -S i3lock-color nerd-fonts-source-code-pro rxvt-unicode-patched 
 
 # Xresources
@@ -33,6 +33,7 @@ if [[ ! -d "$POWERSTATUS10K_DIR" ]] ; then
 fi
 
 ln -sf $(pwd)/powerstatus10k_custom.conf $POWERSTATUS10K_DIR/config/custom.conf
+chmod +x $POWERSTATUS10K_DIR/powerstatus10k.sh
 
 # Dunst
 sudo pacman -S --noconfirm dunst
