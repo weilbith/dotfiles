@@ -32,7 +32,7 @@ mkdir -p $DUNST_CONFIG_DIR
 ln -sf $(pwd)/dunstrc $DUNST_CONDIG_DIR
 
 # RedShift
-sudo pamcan -S redshift
+trizen -S redshift-minimal
 RS_DIR=$HOME/.config/redshift
 mkdir -p $RS_DIR
 ln -sf $(pwd)/redshift.conf $RS_DIR/

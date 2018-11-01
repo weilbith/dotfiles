@@ -246,9 +246,8 @@ exec --no-startup-id dunst
 # i3 Gaps Configuration
 ## Gap between windows.
 gaps inner 10
-gaps outer 0
+gaps outer 5
 smart_gaps on
-smart_borders on
 
 ## The window title height.
 new_window pixel 2
