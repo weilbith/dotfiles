@@ -1,2 +1,3 @@
 organizer/vdirsyncer/status/
-.zcompdump
+shell/zsh/.zcompdump
+data/mc/panels.ini
