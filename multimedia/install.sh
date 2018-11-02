@@ -2,10 +2,7 @@
 ## CMus
 sudo pacman -S --noconfirm asla-lib
 trizen -S cmus-git
-
-CMUS_DIR=$HOME/.config/cmus
-mkdir -p $CMUS_DIR
-ln -sf $(pwd)/cmus/* $CMUS_DIR/
+ln -sf $(pwd)/cmus $XDG_CONFIG_HOME/
 
 ## Plex
 trizen -S plex-media-player
@@ -21,8 +18,7 @@ trizen -S rawtherapee-git
 
 # PDF
 sudo pacman -S zathura zathura-pdf-mupdf tabbed
-ZATHURA_DIR=$HOME/.config/zathura
-ln -sf $(pwd)/zathurarc $ZATHURA_DIR/
+ln -sf $(pwd)/zathura $XDG_CONFIG_HOME
 
 
 # Video
