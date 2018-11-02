@@ -17,3 +17,7 @@ sudo pacman -S texlive-most cmanminus
 trizen -S python-proselint
 sudo cpan -i YAML::Tiny File::HomeDir Unicode::GCString Log::Log4perl Log:Dispatch
 
+# CTags
+sudo pacman -S --noconfirm universal_ctags-git
+ln -sf $(pwd)/ctags $HOME/.ctags.d
+
