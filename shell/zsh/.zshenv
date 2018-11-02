@@ -13,3 +13,6 @@ export XDG_RUNTIME_DIR=$HOME/.runtime
 # Zsh related
 #export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 export HISTFILE=$XDG_DATA_HOME/zsh/history
+
+# MISC
+export NOTMUCH_CONFIG=$XDG_CONFIG_HOME/notmuch/notmuchrc

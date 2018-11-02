@@ -10,15 +10,8 @@ set KEYTIMEOUT=1
 autoload -Uz compinit
 compinit
 
-# ZLE
-# Start each prompt in vi nodemal mode.
-zle-line-init() { zle -K vicmd; }
-zle -N zle-line-init
-
-# Fix vi-escape issues at Arch-URxvt-TMux-Zsh
-bindkey '\e' vi-cmd-mode
-
 # ---
+
 
 
 # Sourcing
@@ -27,7 +20,19 @@ source $ZDOTDIR/powerlevel9k-config.zsh # Prompt styling and segments.
 source $ZDOTDIR/plugin-config.zsh # All other configurations for plugins.
 source /usr/share/fzf/key-bindings.zsh # Load fuzzy filter tools.
 source /usr/share/fzf/completion.zsh # Load fuzzy filter tools.
-source $ZDOTDIR/alias.zsh # Auto-build alias for specific script folders and more.
+source $ZDOTDIR/alias.zsh # Auto-build alias for specific script folders and more (after plugin alias).
+
+# ---
+
+
+# ZLE
+# Start each prompt in vi normal mode.
+# Have to be done after the oh-my-zsh vi-plugin sourced.
+zle-line-init() { zle -K vicmd; }
+zle -N zle-line-init
+
+# Fix vi-escape issues at Arch-URxvt-TMux-Zsh
+bindkey '\e' vi-cmd-mode
 
 # ---
 
