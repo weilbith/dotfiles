@@ -1,3 +1,1 @@
-trizen -S nctelegram-git telegram-cli-git signal
-
-telegram-cli
+trizen -S nctelegram-git telegram-cli-git signal zoom
