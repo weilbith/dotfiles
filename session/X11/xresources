@@ -1,0 +1,6 @@
+! Includes
+#include "./urxvt"
+#include "./fonts"
+
+! Cursor
+Xcursor.size: 40

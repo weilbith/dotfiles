@@ -14,7 +14,7 @@
   "isMigratedPlugins": true,
   "trackingEnabled": false,
   "crashreportingEnabled": false,
-  "openAtLogin": false,
+  "openAtLogin": true,
   "customTheme": false,
   "customTheme_bgColor": "#ffffff",
   "customTheme_fontColor": "#000000",
@@ -27,8 +27,8 @@
       483
     ],
     "10922240404019968": [
-      941,
-      439
+      969,
+      452
     ]
   }
 }

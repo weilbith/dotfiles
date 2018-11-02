@@ -103,7 +103,7 @@ bindsym $mod+m mode $move_mode; focus floating
 
 mode $move_mode {
   # Switch to next window.
-    bindsym space focus right
+  bindsym space focus right
 
   # Move window in all directions.
   bindsym h move left $move_step_small px
@@ -125,7 +125,7 @@ mode $move_mode {
 
 
 # Container
-## Focus parent or cild container.
+## Focus parent or child container.
 bindsym $mod+a focus parent
 bindsym $mod+d focus child
 

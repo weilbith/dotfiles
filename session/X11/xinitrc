@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Specify configuration files.
-XRESOURCES=$HOME/.Xresources
-XMODMAP=$HOME/.Xmodmap
+XRESOURCES=$XDG_CONFIG_HOME/X11/xresources
+XMODMAP=$HOME/xmodmap
 
 # Merge/load configurations if they exist.
 [[ -f "$XRESOURCES" ]] && xrdb -merge $XRESOURCES
