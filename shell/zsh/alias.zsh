@@ -29,8 +29,9 @@ function createScriptAliases {
 createScriptAliases $SCRIPT_DIR
 
 # Define some more alias manually.
-[[ -n "$(whereis exa)" ]] && alias -g ls="exa"
-[[ -n "$(whereis bat)" ]] && alias -g cat="bat --paging never --theme DarkNeon"
+command -v tmux>/dev/null && alias -g tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
+command -v exa>/dev/null && alias -g ls="exa"
+command -v bat>/dev/null && alias -g cat="bat --paging never --theme DarkNeon"
 
 # Alias for use Cheat.sh manually.
 CHT_SH=$HOME/Tools/chtsh/cht.sh

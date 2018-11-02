@@ -3,28 +3,33 @@ sudo pacman -S zsh-theme-powerlevel9k ripgrep fzf fasd-git exa bat htop pdfgrep 
 trizen -S wuzz
 pip install --user rtv
 
+# Create XDG-Directories
+mkdir -p $XDG_CONFIG_HOME
+mkdir -p $XDG_CACHE_HOME
+mkdir -p $XDG_DATA_HOME
+mkdir -p $XDG_RUNTIME_DIR
+
+
 # Install Antibody and all Zsh plugins (do so before zsh to get links work).
-trizen -S anitbody
+trizen -S antibody
 antibody bundle < $(pwd)/zsh/plugin-list.txt > $(pwd)/zsh/plugin-list.sh
-chmod +x $(pwd)/zsh/*
 
-# Install Zsh.
+# Install Zsh
 sudo pacman -S zsh zsh-completion
+ln -sf $(pwd)/zsh $XDG_CONFIG_HOME/
+mkdir -p $XDG_DATA_HOME/zsh
+sudo echo "ZDOTDIR=$XDG_CONFIG_HOME/zsh" >> /etc/zsh/zshenv # Avoid to have any Zsh directly at $HOME/
 [[ -n "$(cat /etc/shells | grep zsh)" ]] && sudo chsh -s $(which zsh) # Set as default shell.
-
-ZSH_DIR=$HOME/.config/zsh
-mkdir -p $ZSH_DIR
-ln -sf $(pwd)/zsh/* $ZSH_DIR/
-ln -sf $(pwd)/zsh/.zshrc $HOME/
 
 # Install TMux
 sudo pacman -S tmux
-ln -sf $(pwd)/tmux.conf ~/.tmux.conf
+ln -sf $(pwd)/tmux $XDG_CONFIG_HOME/
+mkdir -p $XDG_CACHE_HOME/tmux/tpm
 
 # Install TMux plugin manager.
-TPM_DIR=$HOME/.tmux/plugins/tpm
+TPM_DIR=$XDG_CACHE_HOME/tmux/plugins/tpm
 mkdir -p $TPM_DIR
-git clone --depth 1 https://github.com/tmux-plugins/tpm $TPM_DIR
+git clone --depth 1 https://github.com/weilbith/tpm.git $TPM_DIR
 
 # Install Cheat.sh
 sudo pacman -S xsel rlwrap
@@ -35,6 +40,4 @@ chmod +x $CHT_DIR/cht.sh
 
 # Install Translate-Shell
 trizen -S translate-shell
-TS_DIR=$HOME/.translate-shell
-mkdir -p $TS_DIR
-ln -sf $(pwd)/*.trans $TS_DIR/
+ln -sf $(pwd)/translate-shell $XDG_CONFIG_HOME/

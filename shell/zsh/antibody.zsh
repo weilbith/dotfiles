@@ -1,6 +1,5 @@
 # Exports
-export PLUGIN_LIST_RAW=$CONFIG_DIR/plugin-list.txt # Used to generate the plugin list with Antibody.
-export PLUGIN_LIST=$CONFIG_DIR/plugin-list.sh # The generated plugin list to source.
+export PLUGIN_LIST=$ZDOTDIR/plugin-list.sh # The generated plugin list to source.
 
 # Some variables required by Oh-My-Zsh
 export ZSH=$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
