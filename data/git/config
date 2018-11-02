@@ -1,0 +1,8 @@
+[user]
+	name = Thore Weilbier
+	email = thore@weilbier.net
+	signingkey = DBEFB434
+[commit]
+	gpgsign = true
+[core]
+	pager = less -F -X

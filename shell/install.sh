@@ -1,5 +1,5 @@
 # Install a bunch of small packages.
-sudo pacman -S zsh-theme-powerlevel9k ripgrep fzf fasd-git exa bat htop pdfgrep nmon openssh
+sudo pacman -S zsh-theme-powerlevel9k ripgrep fzf exa bat htop pdfgrep nmon openssh
 trizen -S wuzz
 pip install --user rtv
 
@@ -37,7 +37,13 @@ CHT_DIR=$HOME/Tools/chtsh
 mkdir -p $CHT_DIR
 curl https://cht.sh/:cht.sh > $CHT_DIR/cht.sh
 chmod +x $CHT_DIR/cht.sh
+ln -sf $(pwd)/chtsh $XDG_CACHE_HOME/
 
 # Install Translate-Shell
 trizen -S translate-shell
 ln -sf $(pwd)/translate-shell $XDG_CONFIG_HOME/
+
+# Fasd
+sudo pacman -S fasd-git
+ln -sf $(pwd)/fasdrc ~/.fasdrc
+mkdir -p $XDG_DATA_HOME/fasd

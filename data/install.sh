@@ -1,3 +1,7 @@
+# Git
+sudo pacman -S git
+ln -sf $(pwd)/git $XDG_CONFIG_HOME/
+
 # UDisk
 sudo pacman -S --noconfirm udisks2
 sudo ln -sf $(pwd)/udisk/99-udisks2.rules /etc/udev/rules.d/
