@@ -2,3 +2,8 @@ organizer/vdirsyncer/status/
 shell/zsh/.zcompdump
 data/mc/panels.ini
 programming/javascript/yarn/global/
+multimedia/cmus/autosave
+multimedia/cmus/cache
+multimedia/cmus/command-history
+multimedia/cmus/search-history
+multimedia/cmus/lib.pl
