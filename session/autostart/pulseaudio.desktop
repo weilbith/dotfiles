@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=PulseAudio Sound System
+Comment=Start the PulseAudio Sound System
+Exec=pulseaudio --start -D
+Terminal=false
+Type=Application
