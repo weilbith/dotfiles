@@ -29,6 +29,7 @@ function createScriptAliases {
 createScriptAliases $SCRIPT_DIR
 
 # Define some more alias manually.
+command -v startx>/dev/null && alias -g startx="startx $XDG_CONFIG_HOME/X11/xinitrc"
 command -v tmux>/dev/null && alias -g tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
 command -v mbsync>/dev/null && alias -g mbsync="mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc"
 command -v exa>/dev/null && alias -g ls="exa"

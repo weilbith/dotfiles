@@ -3,6 +3,7 @@ export LANG=en_US.UTF-8
 export EDITOR=nvim
 export VISUAL=$EDITOR
 export MAIL=$HOME/Mail
+export TERM="xterm-256color"
 
 # XDG Standard
 export XDG_CONFIG_HOME=$HOME/.config

@@ -2,7 +2,7 @@
 
 # Specify configuration files.
 XRESOURCES=$XDG_CONFIG_HOME/X11/xresources
-XMODMAP=$XDG_CONFIG_HOME/xmodmap
+XMODMAP=$XDG_CONFIG_HOME/X11/xmodmap
 
 # Merge/load configurations if they exist.
 [[ -f "$XRESOURCES" ]] && xrdb -merge $XRESOURCES
