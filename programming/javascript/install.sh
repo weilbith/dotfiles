@@ -37,8 +37,8 @@ function addPackage {
 
 
 # NodeJS
-add Package pacman nodejs
-add Package pacman yarn
+addPackage pacman nodejs
+addPackage pacman yarn
 
 # Linter/Formatter
 ## Uncrustify
@@ -80,7 +80,7 @@ echo "Trizen:  $TRIZEN_LIST"
 trizen -S $TRIZEN_LIST
 
 echo "Yarn:  $YARN_LIST"
-yarn global add $YARN_LIST
+sudo yarn global add $YARN_LIST
 
 echo "Pip:  $PIP_LIST"
 sudo pip install $PIP_LIST
@@ -91,3 +91,5 @@ ln -sf $(pwd)/soliumrc.json ~/.soliumrc.json
 ln -sf $(pwd)/eslintrc ~/.eslintrc
 ln -sf $(pwd)/tslint.json ~/.tslint.json
 ln -sf $(pwd)/prettierrc.json ~/.prettierrc.json
+ln -sf $(pwd)/yarn $XDG_CONFIG_HOME/
+ln -sf $(pwd)/npm $XDG_CONFIG_HOME/

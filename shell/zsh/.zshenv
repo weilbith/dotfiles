@@ -18,11 +18,22 @@ export XSERVERRC=$XDG_CONFIG_HOME/X11/xserverrc
 #export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 export HISTFILE=$XDG_DATA_HOME/zsh/history
 
-# MISC
+# XDG adjustments for applications
+## Config
 export NOTMUCH_CONFIG=$XDG_CONFIG_HOME/notmuch/notmuchrc
 export CHTSH_CONF=$XDG_CONFIG_HOME/chtsh/chtsh.conf
 export ELINKS_CONFDIR=$XDG_CONFIG_HOME/elinks
 export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
-export RXVT_SOCKET=$XDG_RUNTIME_DIR/urxvtd
-export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
+export DOCKER_CONFIG=$XDG_CONFIG_HOME/docker
+export WGETRC=$XDG_CONFIG_HOME/wget/wgetrc
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java
+
+## Data
+export NVM_DIR=$XDG_DATA_HOME/nvm
 export LESSHISTFILE=$XDG_DATA_DIR/less/history
+export GRADLE_USER_HOME=$XDG_DATA_HOME/gradle
+
+## Runtime
+export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
+export RXVT_SOCKET=$XDG_RUNTIME_DIR/urxvtd

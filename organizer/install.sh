@@ -24,11 +24,11 @@ mkdir -p $VDIRSYNCER_CACHE
 
 # Link dotfiles to the respective locations.
 ln -sf $(pwd)/mailcap $HOME/.mailcap
-ln -sf $(pwd)/mbsyncrc $HOME/.mbsyncrc
 ln -sf $(pwd)/notmuch/hooks $NOTMUCH_DATABASE_PATH/
 
 ln -sf $(pwd)/mutt $XDG_CONFIG_HOME/
 ln -sf $(pwd)/notmuch $XDG_CONFIG_HOME/
+ln -sf $(pwd)/isync $XDG_CONFIG_HOME/
 ln -sf $(pwd)/msmtp $XDG_CONFIG_HOME/
 ln -sf $(pwd)/vdirsyncer $XDG_CONFIG_HOME/
 ln -sf $(pwd)/khal $XDG_CONFIG_HOME/

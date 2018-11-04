@@ -47,3 +47,8 @@ ln -sf $(pwd)/translate-shell $XDG_CONFIG_HOME/
 sudo pacman -S fasd-git
 ln -sf $(pwd)/fasdrc ~/.fasdrc
 mkdir -p $XDG_DATA_HOME/fasd
+
+# WGet
+sudo pacman -S wget
+ln -sf $(pwd)/wget $XDG_CONFIG_HOME/
+mkdir -p XDG_CACHE_HOME/wget

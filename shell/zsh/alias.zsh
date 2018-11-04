@@ -30,8 +30,10 @@ createScriptAliases $SCRIPT_DIR
 
 # Define some more alias manually.
 command -v tmux>/dev/null && alias -g tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
+command -v mbsync>/dev/null && alias -g mbsync="mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc"
 command -v exa>/dev/null && alias -g ls="exa"
 command -v bat>/dev/null && alias -g cat="bat --paging never --theme DarkNeon"
+command -v gpg>/dev/null && alias -g gpg="gpg --homedir $XDG_CONFIG_HOME/gnupg"
 
 # Alias for use Cheat.sh manually.
 CHT_SH=$HOME/Tools/chtsh/cht.sh

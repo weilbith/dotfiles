@@ -82,5 +82,5 @@ if [[ -n $(echo tmux) ]] || command -v tmux>/dev/null; then
 
   # Make sure to do not nest TMux sessions.
   # Do not start TMux on login shell.
-  [[ ! $TERM =~ screen ]] && [ -n $DISPLAY ] && [ -z $TMUX ] && startTmux
+  # [[ ! $TERM =~ screen ]] && [ -n $DISPLAY ] && [ -z $TMUX ] && startTmux
 fi
