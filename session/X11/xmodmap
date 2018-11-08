@@ -1,4 +1,5 @@
 ! Map caps-lock and escape
-remove Lock = Caps_Lock
-keysym Caps_Lock = Escape
-add Lock = Caps_Lock
+keycode 66 = Escape
+
+! Disable escape (learn process)
+keycode 9 = NoSymbol
