@@ -32,8 +32,11 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java
 
 ## Data
 export NVM_DIR=$XDG_DATA_HOME/nvm
+export NODE_REPL_HISTORY=$XDG_DATA_HOME/node_repl_history
 export LESSHISTFILE=$XDG_DATA_DIR/less/history
 export GRADLE_USER_HOME=$XDG_DATA_HOME/gradle
+export CARGO_HOME=$XDG_DATA_HOME/cargo
+export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 
 ## Runtime
 export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
