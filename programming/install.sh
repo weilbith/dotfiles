@@ -11,6 +11,8 @@ curl https://sh.rustup.rs -sSf | sh
 
 # Docker
 sudo pacman -S --noconfirm docker docker-compose
+sudo groupadd -f docker
+sudo usermod -aG docker $USER
 
 # LaTeX
 sudo pacman -S texlive-most cmanminus
@@ -21,3 +23,8 @@ sudo cpan -i YAML::Tiny File::HomeDir Unicode::GCString Log::Log4perl Log:Dispat
 sudo pacman -S --noconfirm universal_ctags-git
 ln -sf $(pwd)/ctags $HOME/.ctags.d
 
+# TOML
+BIN_NAME="toml"
+wget https://github.com/vmchale/tomlcheck/releases/download/0.1.0.37/tomlcheck-x86_64-unkown-linux-gnu > $BIN_NAME
+sudo mv $BIN_NAME /usr/bin/
+sudo chmod a+x /usr/bin/$BIN_NAME
