@@ -208,9 +208,20 @@ bindsym XF86MonBrightnessUp exec --no-startup-id sudo ~/.scripts/brightness.sh u
 bindsym XF86MonBrightnessDown exec --no-startup-id sudo ~/.scripts/brightness.sh down
 
 ## Volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+### Command to control the volumne
+set $cmd_vol_mute exec --no-startup-id pactl set-sink-mute 0 toggle
+set $cmd_vol_lower exec --no-startup-id pactl set-sink-volume 0 -5%
+set $cmd_vol_raise exec --no-startup-id pactl set-sink-volume 0 +5%
+
+### Bind commands to latop volume keys.
+bindsym XF86AudioMute $cmd_vol_mute
+bindsym XF86AudioLowerVolume $cmd_vol_lower
+bindsym XF86AudioRaiseVolume $cmd_vol_raise
+
+### Bind commands to functions keys for normal keyboard.
+bindsym $mod+F1 $cmd_vol_mute
+bindsym $mod+F2 $cmd_vol_lower
+bindsym $mod+F3 $cmd_vol_raise
 
 #---
 
