@@ -28,3 +28,11 @@ BIN_NAME="toml"
 wget https://github.com/vmchale/tomlcheck/releases/download/0.1.0.37/tomlcheck-x86_64-unkown-linux-gnu > $BIN_NAME
 sudo mv $BIN_NAME /usr/bin/
 sudo chmod a+x /usr/bin/$BIN_NAME
+
+# Shell/Bash/Zsh
+sudo pacman -S shellcheck
+
+# Editing
+## NeoVim
+trizen -S neovim-git
+sudo pip install neovim
