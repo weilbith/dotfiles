@@ -1,5 +1,7 @@
 # Python
 sudo pacman -S python-pip
+pip install --user autopep8
+ln -sf $(pwd)/.pycodestyle $XDG_CONFIG_HOME/
 
 # VimL
 ## Vint
@@ -31,6 +33,9 @@ sudo chmod a+x /usr/bin/$BIN_NAME
 
 # Shell/Bash/Zsh
 sudo pacman -S shellcheck
+
+# JSON
+yarn global add jsonlint
 
 # Editing
 ## NeoVim
