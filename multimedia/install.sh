@@ -13,12 +13,13 @@ sudo pacman -S easytag
 
 
 # Photos
-sudo pacman -S gimp
+sudo pacman -S gimp feh
 trizen -S rawtherapee-git
+ln -sf $(pwd)/feh $XDG_CONFIG_HOME/
 
 # PDF
 sudo pacman -S zathura zathura-pdf-mupdf tabbed
-ln -sf $(pwd)/zathura $XDG_CONFIG_HOME
+ln -sf $(pwd)/zathura $XDG_CONFIG_HOME/
 
 
 # Video
