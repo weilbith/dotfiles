@@ -37,4 +37,4 @@ bind -f common q :quit
 # MISC
 colorscheme blueplanet
 set start_view=tree
-set status_display_program=/home/thore/Projects/powerstatus10k_cmus/hook.sh
+set status_display_program=/home/thore/.cache/powerstatus10k/segments/powerstatus10k_cmus/hook.sh
