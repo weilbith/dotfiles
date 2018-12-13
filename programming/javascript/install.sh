@@ -69,7 +69,8 @@ addPackage yarn eslint-plugin-prettier
 addPackage yarn eslint-config-prettier
 addPackage yarn tslint-config-prettier
 
-
+## Tern
+addPackage yarn tern
 
 
 # Install package lists.

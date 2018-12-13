@@ -1,8 +1,8 @@
 # Python
 sudo pacman -S python-pip
 
-## Pep8
-pip install --user flake8
+## Flake8/Pep8
+pip install --user flake8 pep8 pep8-naming
 
 ## AutoPep8
 pip install --user autopep8
