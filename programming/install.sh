@@ -1,7 +1,15 @@
 # Python
 sudo pacman -S python-pip
+
+## Pep8
+pip install --user flake8
+
+## AutoPep8
 pip install --user autopep8
 ln -sf $(pwd)/.pycodestyle $XDG_CONFIG_HOME/
+
+## Jedi
+pip install --user jedi
 
 # VimL
 ## Vint
@@ -25,6 +33,9 @@ sudo cpan -i YAML::Tiny File::HomeDir Unicode::GCString Log::Log4perl Log:Dispat
 sudo pacman -S --noconfirm universal_ctags-git
 ln -sf $(pwd)/ctags $HOME/.ctags.d
 
+## Markdown2Ctags
+git clone --depth 1 https://github.com/jszakmeister/markdown2ctags.git $HOME/Tools/
+
 # TOML
 BIN_NAME="toml"
 wget https://github.com/vmchale/tomlcheck/releases/download/0.1.0.37/tomlcheck-x86_64-unkown-linux-gnu > $BIN_NAME
@@ -41,3 +52,6 @@ yarn global add jsonlint
 ## NeoVim
 trizen -S neovim-git
 sudo pip install neovim
+
+## EditorConfig
+sudo pacman -S editorconfig-core-c
