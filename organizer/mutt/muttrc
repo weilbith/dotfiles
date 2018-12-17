@@ -40,6 +40,10 @@ bind index,pager \CO sidebar-open
 bind index G last-entry
 bind index \Cu half-up
 bind index \Cd half-down
+bind index ? search-reverse
+bind index N search-opposite
+bind index u toggle-new
+bind index <f8> help
 macro index <f9> "!mbsync $my_acc_mbsync && notmuch new<enter>" "Syncronise account $my_acc_mbsync"
 
 ## Pager
