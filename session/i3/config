@@ -280,6 +280,12 @@ bindsym $mod+f exec ~/.scripts/i3_find.zsh
 # ---
 
 
+# Window Preferences
+for_window [class="Yad"] floating enable
+
+# ---
+
+
 # MISC
 ## Screenshot
 bindsym $mod+Print exec --no-startup-id ~/.scripts/screenshot.sh
