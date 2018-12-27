@@ -186,7 +186,7 @@ bindsym $mod+s scratchpad show
 
 # Launching
 ## Launch a terminal emulator and start Zsh inside.
-bindsym $mod+Return exec i3-sensible-terminal -e zsh
+bindsym $mod+Return exec i3-sensible-terminal
 
 
 # i3 Control
