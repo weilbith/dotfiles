@@ -19,6 +19,7 @@ source $ZDOTDIR/powerlevel9k-config.zsh # Prompt styling and segments.
 source $ZDOTDIR/plugin-config.zsh # All other configurations for plugins.
 source /usr/share/fzf/key-bindings.zsh # Load fuzzy filter tools.
 source /usr/share/fzf/completion.zsh # Load fuzzy filter tools.
+source $ZDOTDIR/fzf-widgets.zsh # Additional fuzzy widgets.
 source /usr/share/nvm/init-nvm.sh # Initialize node version manager.
 source $ZDOTDIR/alias.zsh # Auto-build alias for specific script folders and more (after plugin alias).
 

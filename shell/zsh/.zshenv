@@ -41,3 +41,7 @@ export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 ## Runtime
 export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
 export RXVT_SOCKET=$XDG_RUNTIME_DIR/urxvtd
+
+
+# Path
+export PATH=$PATH:~/.local/bin

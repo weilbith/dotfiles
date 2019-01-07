@@ -16,6 +16,7 @@ ZSH_HIGHLIGHT_STYLES[precommand]='fg=191'
 ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=191'
 
 # Fzf
+## Options
 FZF_DEFAULT_OPTS='
   --height 40%
   --color fg:38,hl:191,fg+:81,bg+:16,info:197,prompt:197,spinner:197,pointer:197,marker:191,header:15
@@ -28,6 +29,11 @@ FZF_CTRL_T_OPTS='
   '
 FZF_COMPLETION_TRIGGER='**'
 
+## Mappings
+bindkey '^f' fzf-file-widget
+bindkey '^d' fzf-cd-widget
+bindkey '^h' fzf-history-widget
+
 # Fasd
 FASD_CACHE="${ZSH_CACHE_DIR}/fasd-init-cache"
 
@@ -38,5 +44,8 @@ fi
 source "$FASD_CACHE"
 unset FASD_CACHE
 
-bindkey '^[f' fasd-complete-f # Alt + f
-bindkey '^[d' fasd-complete-d # Alt + d
+bindkey '^[f' fasd_fzf_file_selection      # Alt + f
+bindkey '^[d' fasd_fzf_directory_selection # Alt + d
+
+# Exa
+EXA_COLORS="di=38;5;24"
