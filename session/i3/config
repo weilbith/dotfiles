@@ -12,11 +12,19 @@ set $resize_mode resize
 set $move_mode move
 set $mark_mode mark
 
-## Step sizes
+## Step sizes (mind high resolution display)
+### Window resizing
 set $resize_step_small 5
 set $resize_step_big 15
+
+### Window movement
 set $move_step_small 3
 set $move_step_big 50
+
+## Cursor movement
+set $cursor_step_small 10
+set $cursor_step_big 200
+set $scroll_height 5
 
 # ---
 
@@ -51,7 +59,7 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 ## Select window by easy-focus.
-bindsym $mod+Mod1+space exec --no-startup-id ~/.scripts/i3-easyfocus --all
+bindsym $mod+space exec --no-startup-id ~/.scripts/i3-easyfocus --all
 
 ## Move focused window.
 bindsym $mod+Shift+h move left
@@ -76,7 +84,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 ### Switch between tiled and floated windows.
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Mod1+space focus mode_toggle
 
 ### Toggle current floating window sticky ability.
 bindsym $mod+Control+space sticky toggle
@@ -145,8 +153,8 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 ## Move focused container between outputs.
-bindsym $mod+left move container to output left
-bindsym $mod+right move container to output right
+bindsym $mod+Mod1+j move container to output left
+bindsym $mod+Mod1+k move container to output right
 
 ## Swap container
 bindsym $mod+Control+s exec i3-input -F 'swap container with mark %s' -P 'Mark Name: '
@@ -202,6 +210,28 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # ---
 
 
+# Cursor Control
+## Move
+bindsym $mod+Left exec --no-startup-id xdotool mousemove_relative -- -$cursor_step_small 0
+bindsym $mod+Shift+Left exec --no-startup-id xdotool mousemove_relative -- -$cursor_step_big 0
+
+bindsym $mod+Up exec --no-startup-id xdotool mousemove_relative -- 0 -$cursor_step_small
+bindsym $mod+Shift+Up exec --no-startup-id xdotool mousemove_relative -- 0 -$cursor_step_big
+
+bindsym $mod+Right exec --no-startup-id xdotool mousemove_relative -- $cursor_step_small 0
+bindsym $mod+Shift+Right exec --no-startup-id xdotool mousemove_relative -- $cursor_step_big 0
+
+bindsym $mod+Down exec --no-startup-id xdotool mousemove_relative -- 0 $cursor_step_small
+bindsym $mod+Shift+Down exec --no-startup-id xdotool mousemove_relative -- 0 $cursor_step_big
+
+## Scroll
+bindsym $mod+Mod1+Up exec --no-startup-id xdotool click --repeat $scroll_height 4
+bindsym $mod+Mod1+Down exec --no-startup-id xdotool click --repeat $scroll_height 5
+
+## Prevent locking
+bindsym $mod+Mod1+l exec --no-startup-id xdotool mousemove 0 0
+
+
 # Device Control
 ## Screen Brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id sudo ~/.scripts/brightness.sh up
@@ -243,13 +273,13 @@ client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
 
 
 # Marks & Find
-bindsym $mod+apostrophe mode $mark_mode
+bindsym $mod+grave mode $mark_mode
 
 mode $mark_mode {
-  # Hardcoded focus keybindinig.
+  # Hard-coded focus binding.
   bindsym f [class="(?i)firefox"] focus; mode $default_mode
 
-  # keybindings for marking and jumping to clients
+  # Mark and jump to windows.
   bindsym m exec i3-input -F 'mark %s' -P 'Mark name: '; mode $default_mode
   bindsym g exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '; mode $default_mode
 

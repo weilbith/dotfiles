@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages.
-sudo pacman -S xorg xsel xclip xautolock compoton dmenu pulseaudio dex xdg-user-dirs
+sudo pacman -S xorg xsel xclip xautolock compoton dmenu pulseaudio dex xdg-user-dirs xdotool
 trizen -S i3lock-color nerd-fonts-source-code-pro rxvt-unicode-patched 
 
 # Xresources
@@ -33,6 +33,9 @@ ln -sf $(pwd)/autostart $XDG_CONFIG_HOME/
 
 # User directories
 ln -sf $(pwd)/user-dirs/* $XDG_CONFIG_HOME/
+
+# SSH
+mkdir -p $XDG_CACHE_HOME/ssh
 
 
 # Messy stuff
