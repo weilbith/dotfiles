@@ -2,6 +2,7 @@ set mbox_type = Maildir
 set folder = ~/Mail/brainbot/
 set spoolfile = +inbox
 set my_acc_mbsync = brainbot
+set from = "thore.weilbier@brainbot.de"
 
 folder-hook ~/Mail/brainbot 'mailboxes +inbox'
 

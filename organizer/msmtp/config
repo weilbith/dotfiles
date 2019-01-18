@@ -8,7 +8,7 @@ passwordeval "gpg --for-your-eyes-only --no-tty -dq ~/.config/mutt/accounts/brai
 from thore.weilbier@brainbot.com
 tls on
 tls_starttls on
-tls_fingerprint 0A:10:CD:5A:98:D0:2B:04:C3:D1:5A:7A:82:FD:41:83:EC:EE:1F:7E
+tls_fingerprint 13:FC:7D:75:FB:BB:AD:AA:C9:4F:31:58:5D:AB:51:BB:9E:11:23:55
 
 account private
 host smtp.1und1.de
@@ -20,4 +20,4 @@ passwordeval "gpg --for-your-eyes-only --no-tty -dq ~/.config/mutt/accounts/priv
 from thore@weilbier.net
 tls on
 tls_starttls on
-tls_fingerprint 31:A7:07:F9:18:CB:C1:E7:09:13:75:FF:58:6B:B7:9E:C3:FE:BE:05
+tls_fingerprint EC:AE:7B:FD:0F:1C:F5:F3:38:53:D6:D8:1E:9A:37:A9:0B:6D:96:74

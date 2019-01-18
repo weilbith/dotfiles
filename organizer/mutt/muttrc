@@ -7,7 +7,12 @@ source $my_acc_private
 macro index <f2> "<sync-mailbox><refresh><enter-command>source $my_acc_private<enter><change-folder>!<enter>"
 macro index <f3> "<sync-mailbox><refresh><enter-command>source $my_acc_brainbot<enter><change-folder>!<enter>"
 
-set realname = 'Thore Weilbier'
+
+# Send Mails
+set sendmail = "msmtp -a $my_acc_mbsync"
+set realname = "Thore Weilbier"
+set sendmail = "/usr/bin/msmtp --file /home/thore/.config/msmtp/config -a private"
+set use_from
 
 # Sourcing
 source ~/.config/mutt/colors
