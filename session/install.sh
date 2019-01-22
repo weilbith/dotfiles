@@ -36,6 +36,7 @@ ln -sf $(pwd)/user-dirs/* $XDG_CONFIG_HOME/
 
 # SSH
 mkdir -p $XDG_CACHE_HOME/ssh
+ln -sf $(pwd)/ssh/config $HOME/.ssh/config
 
 
 # Messy stuff
