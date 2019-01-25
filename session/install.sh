@@ -14,7 +14,7 @@ ln -sf $(pwd)/Xmodmap $HOME/.Xmodmap
 ln -sf $(pwd)/Xresources.d $HOME/.Xresources.d
 
 # i3
-sudo pacman -S i3-gaps
+sudo pacman -S i3-gaps perl-json-xs perl-anyevent-i3
 ln -sf $(pwd)/i3 $XDG_CONFIG_HOME/
 
 # Dunst
@@ -27,6 +27,10 @@ ln -sf $(pwd)/redshift $XDG_CONFIG_HOME/
 
 # Link desktop files for CLI based applications.
 sudo ln -sf $(pwd)/desktop-files/* /usr/share/applications/
+
+# Powerstatus10k
+curl -s https://raw.githubusercontent.com/weilbith/powerstatus10k/master/install.sh | bash -s - install
+
 
 # Autostart
 ln -sf $(pwd)/autostart $XDG_CONFIG_HOME/
@@ -53,19 +57,3 @@ ln -sf $(pwd)/cerebro/config.json $CERBRO_DIR/
 ln -sf $(pwd)/cerebro/plugins.json $CEREBRO_DIR/plugins/package.json
 cd $CEREBRO_DIR/plugins
 yarn install
-
-
-# Install Powerstatus10k
-POWERSTATUS10K_DIR=$HOME/Tools/powerstatus10k
-
-if [[ ! -d "$POWERSTATUS10K_DIR" ]] ; then
-  mkdir -p $POWERSTATUS10K_DIR
-  git clone --depth 1 --recurse-submodules https://github.com/weilbith/powerstatus10k.git $POWERSTATUS10K_DIR
-  base=$(pwd)
-  cd $POWERSTATUS10K_DIR/bar
-  sudo make
-  sudo make install
-  cd $base
-fi
-
-ln -sf $(pwd)/powerstatus10k/powerstatus10k.conf $POWERSTATUS10K_DIR/config/custom.conf

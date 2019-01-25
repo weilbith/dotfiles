@@ -33,11 +33,14 @@ set $scroll_height 5
 ## Define the mod key. Here: Super/Win
 set $mod Mod4
 
-## Enable window focus by mouse (to do not annoy others).
+## Focus
 focus_follows_mouse yes
+focus_on_window_activation smart
 
 ## Define the font to use for the windows.
 font xft:SauceCodePro Nerd Font:size=6
+
+show_marks yes
 
 # Lockscreen activation command
 bindsym $mod+Control+l exec --no-startup-id xautolock -locknow
@@ -312,6 +315,7 @@ bindsym $mod+f exec ~/.scripts/i3_find.zsh
 
 # Window Preferences
 for_window [class="Yad"] floating enable
+for_window [class="URxvt" instance="organized-poller"] floating enable
 
 # ---
 

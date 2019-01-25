@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=WICD
 Comment=CLI based network manager
-Exec=urxvt -e wicd-curses
+Exec=urxvt -e sh -c "bash ~/.scripts/wicd_stabilizer.sh"
 Type=Application

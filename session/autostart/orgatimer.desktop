@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Orgatime
 GenericName=Timer to update/sync all organizer tools
-Exec=/home/thore/.scripts/orgatimer.sh
+Exec=orgatimer
 Terminal=false
 Type=Application
