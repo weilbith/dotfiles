@@ -32,7 +32,7 @@ set sidebar_visible
 set mail_check_stats
 set sidebar_width = 25
 set sidebar_divider_char = '  '
-set sidebar_format = "%-7.7B %?F?[%F]?%* %N/%-4S"
+set sidebar_format = "%-7.7B %?F?[%F]?%* %N/%-5S"
 set sidebar_short_path
 set sidebar_component_depth = 1
 set sidebar_delim_chars = '/'

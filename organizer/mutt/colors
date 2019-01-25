@@ -5,7 +5,7 @@ color normal  color38   default
 color indicator color15   color32
 color status  color15   color24
 color error color197  default
-color tree  color191  default
+color tree  color38  default
 
 # Index signal colors
 color index_author color215 default '.*'

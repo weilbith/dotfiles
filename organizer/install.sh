@@ -3,6 +3,9 @@ sudo pacman -S --noconfirm neomutt isync msmtp notmuch lynx khard khal
 trizen -S vdirsyncer ripmime urlscan-git
 pip install --user requests-oauthlib
 
+# Install other tools.
+curl -s https://raw.githubusercontent.com/weilbith/orgatimer/master/install.sh | bash -s - install
+
 # Define directory variables.
 CONTACT_DIR=$HOME/Contacts
 CALENDAR_DIR=$HOME/Calendar
@@ -34,6 +37,7 @@ ln -sf $(pwd)/vdirsyncer $XDG_CONFIG_HOME/
 ln -sf $(pwd)/khal $XDG_CONFIG_HOME/
 ln -sf $(pwd)/khard $XDG_CONFIG_HOME/
 ln -sf $(pwd)/urlscan $XDG_CONFIG_HOME/
+ln -sf $(pwd)/orgatimer $XDG_CONFIG_HOME/
 
 
 # Make sure the Notmuch hooks are executable by user.
