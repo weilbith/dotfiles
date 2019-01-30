@@ -11,6 +11,7 @@ set $default_mode default
 set $resize_mode resize
 set $move_mode move
 set $mark_mode mark
+set $music_mode music
 
 ## Step sizes (mind high resolution display)
 ### Window resizing
@@ -311,6 +312,25 @@ bindsym $mod+g exec ~/.scripts/i3_goto.zsh
 bindsym $mod+f exec ~/.scripts/i3_find.zsh
 
 # ---
+
+
+# Music Control
+bindsym $mod+Shift+m mode $music_mode
+
+mode $music_mode {
+  set $music_control_command bash ~/.scripts/cmus_control.sh
+
+  # Execute and exit mode immediately.
+  bindsym space exec --no-startup-id $music_control_command toggle_play; mode $default_mode
+  bindsym l exec --no-startup-id $music_control_command toggle_shuffle; mode $default_mode
+
+  # Execute possibly multiple times before exit mode.
+  bindsym n exec --no-startup-id $music_control_command next
+  bindsym p exec --no-startup-id $music_control_command previous
+
+  # Exit to the default mode.
+  bindsym Return mode $default_mode
+}
 
 
 # Window Preferences
