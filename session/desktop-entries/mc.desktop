@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Midnight Commander
 Comment=CLI based file explorer
-Exec=urxvt -e mc ~/
+Exec=kitty --detach mc ~/
 Type=Application

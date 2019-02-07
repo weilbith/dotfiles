@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=WICD
 Comment=CLI based network manager
-Exec=urxvt -e sh -c "bash ~/.scripts/wicd_stabilizer.sh"
+Exec=kitty --detach sh -c "bash ~/.scripts/wicd_stabilizer.sh"
 Type=Application

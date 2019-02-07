@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=TransShell
 Comment=CLI based translation tool
-Exec=urxvt -e trans --shell
+Exec=kitty --detach sh -c "trans --shell"
 Type=Application

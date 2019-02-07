@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Neomutt
 Comment=CLI based mail interface
-Exec=urxvt -e sh -c "neomutt && notmuch new"
+Exec=kitty --detach sh -c "neomutt && notmuch new"
 Type=Application
