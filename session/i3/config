@@ -322,7 +322,7 @@ mode $music_mode {
 
   # Execute and exit mode immediately.
   bindsym space exec --no-startup-id $music_control_command toggle_play; mode $default_mode
-  bindsym l exec --no-startup-id $music_control_command toggle_shuffle; mode $default_mode
+  bindsym s exec --no-startup-id $music_control_command toggle_shuffle; mode $default_mode
 
   # Execute possibly multiple times before exit mode.
   bindsym n exec --no-startup-id $music_control_command next
@@ -335,7 +335,8 @@ mode $music_mode {
 
 # Window Preferences
 for_window [class="Yad"] floating enable
-for_window [class="URxvt" instance="organized-poller"] floating enable
+for_window [class="kitty" instance="orgatimer"] floating enable
+for_window [class="kitty" instance="ilayout3r"] floating enable
 
 # ---
 

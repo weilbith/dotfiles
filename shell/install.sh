@@ -9,6 +9,10 @@ mkdir -p $XDG_CACHE_HOME
 mkdir -p $XDG_DATA_HOME
 mkdir -p $XDG_RUNTIME_DIR
 
+# Install Kitty terminal emulator.
+sudo pacman -S kitty
+ln -sf $(pwd)/kitty $XDG_CONFIG_HOME/
+
 
 # Install Antibody and all Zsh plugins (do so before zsh to get links work).
 trizen -S antibody
