@@ -13,7 +13,7 @@ POWERLEVEL9K_WHITESPACE_BETWEEN_RIGHT_SEGMENTS=" "
 ## The segements.
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon custom_user custom_host dir custom_writable newline vcs vi_mode)
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version status command_execution_time aws newline docker_machine)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version status command_execution_time aws newline custom_dockerhub)
 
 ## Custom Segments
 ### User
@@ -26,8 +26,6 @@ POWERLEVEL9K_CUSTOM_USER="powerlevel9k_custom_user"
 POWERLEVEL9K_CUSTOM_USER_BACKGROUND="32"
 POWERLEVEL9K_CUSTOM_USER_FOREGROUND="15"
 
-### ---
-
 
 ### Host
 powerlevel9k_custom_host() {
@@ -38,8 +36,6 @@ powerlevel9k_custom_host() {
 POWERLEVEL9K_CUSTOM_HOST="powerlevel9k_custom_host"
 POWERLEVEL9K_CUSTOM_HOST_BACKGROUND="81"
 POWERLEVEL9K_CUSTOM_HOST_FOREGROUND="239"
-
-### ---
 
 
 ### Writable
@@ -53,6 +49,18 @@ POWERLEVEL9K_CUSTOM_WRITABLE="powerlevel9k_custom_writable"
 POWERLEVEL9K_CUSTOM_WRITABLE_BACKGROUND="9"
 POWERLEVEL9K_CUSTOM_WRITABLE_FOREGROUND="15"
 
+
+### DockerHub
+powerlevel9k_custom_dockerhub() {
+  command -v docker>/dev/null && name="$(docker info | sed '/Username:/!d;s/.* //')"
+  [[ -z "$name" ]] && name="offline"
+  echo "\uf308 $name"
+}
+
+POWERLEVEL9K_CUSTOM_DOCKERHUB="powerlevel9k_custom_dockerhub"
+POWERLEVEL9K_CUSTOM_DOCKERHUB_BACKGROUND="24"
+POWERLEVEL9K_CUSTOM_DOCKERHUB_FOREGROUND="15"
+
 ## ---
 
 
@@ -61,15 +69,10 @@ POWERLEVEL9K_CUSTOM_WRITABLE_FOREGROUND="15"
 POWERLEVEL9K_OS_ICON_BACKGROUND="24"
 POWERLEVEL9K_OS_ICON_FOREGROUND="15"
 
-### ---
-
-
 ### VI Mode Segment
 #### Mode Symbols
-# POWERLEVEL9K_VI_INSERT_MODE_STRING="🅘 "
-# POWERLEVEL9K_VI_COMMAND_MODE_STRING="🅝 "
-POWERLEVEL9K_VI_INSERT_MODE_STRING="I"
-POWERLEVEL9K_VI_COMMAND_MODE_STRING="N"
+POWERLEVEL9K_VI_INSERT_MODE_STRING="🅘"
+POWERLEVEL9K_VI_COMMAND_MODE_STRING="🅝"
 
 #### Colors
 POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND="191"
@@ -111,25 +114,10 @@ POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="81"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="239"
 
-### ---
-
-
 ### AWS Segment
 AWS_DEFAULT_PROFILE="tw_edu"
 POWERLEVEL9K_AWS_BACKGROUND="32"
 POWERLEVEL9K_AWS_FOREGROUND="15"
 
-### ---
-
-
-### Docker Segment
-DOCKER_MACHINE_NAME="penguin"
-POWERLEVEL9K_DOCKER_MACHINE_BACKGROUND="24"
-POWERLEVEL9K_DOCKER_MACHINE_FOREGROUND="15"
-
-### ---
-
 ### Node Version Segment
 POWERLEVEL9K_NODE_VERSION_PROJECT_ONLY=true
-
-### ---
