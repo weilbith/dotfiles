@@ -1,12 +1,18 @@
 # Music
 ## CMus
-sudo pacman -S --noconfirm asla-lib
-trizen -S cmus-git
-ln -sf $(pwd)/cmus $XDG_CONFIG_HOME/
+# sudo pacman -S --noconfirm asla-lib
+# trizen -S cmus-git
+# ln -sf $(pwd)/cmus $XDG_CONFIG_HOME/
 
-## Plex
-trizen -S plex-media-player
-# Open the application and link the device with the code.
+## Mopidy
+trizen -S mopidy
+pip install Mopidy-Local-SQLite Mopidy-YouTube
+ln -sf "$(pwd)/mopidy" "$XDG_CONFIG_HOME/"
+
+## Ncmpcpp
+sudo pacman -S ncmpcpp
+ln -sf "$(pwd)/ncmpcpp" "$XDG_CONFIG_HOME/"
+mkdir -p "$XDG_CONFIG_HOME/ncmpcpp"
 
 ## Tag-Editing
 sudo pacman -S easytag

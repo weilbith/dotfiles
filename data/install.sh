@@ -16,8 +16,13 @@ trizen -S bashmount
 ln -sf $(pwd)/bashmount $XDG_CONFIG_HOME/
 
 # Midnight Commander
-sudo pacman -S --noconfirm mc
-ln -sf $(pwd)/mc $XDG_CONFIG_HOME/
-$MC_SHARE=$HOME/.local/share/mc
-mkdir -p $MC_SHARE
-ln -sf $(pwd)/mc/skins $MC_SHARE/
+# sudo pacman -S --noconfirm mc
+# ln -sf $(pwd)/mc $XDG_CONFIG_HOME/
+# $MC_SHARE=$HOME/.local/share/mc
+# mkdir -p $MC_SHARE
+# ln -sf $(pwd)/mc/skins $MC_SHARE/
+
+# Ranger
+sudo pacman -S ranger
+pip install --user pillow paramiko
+ln -sf "$(pwd)/ranger" "$XDG_CONFIG_HOME/"

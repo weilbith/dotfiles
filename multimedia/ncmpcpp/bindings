@@ -1,0 +1,98 @@
+# Movement
+
+def_key "k"
+  scroll_up
+
+def_key "j"
+  scroll_down
+
+def_key "ctrl-u"
+  page_up 
+
+def_key "ctrl-d"
+  page_down 
+
+def_key "l"
+  next_column
+  slave_screen
+
+def_key "h"
+  previous_column
+  master_screen
+
+def_key "g"
+  move_home
+
+def_key "G"
+  move_end
+
+def_key "."
+  jump_to_playing_song
+
+
+# Music Control
+
+def_key "space"
+  pause
+
+def_key "ctrl-l"
+  next
+
+def_key "ctrl-h"
+  previous
+
+
+# Search
+
+def_key "n"
+  next_found_item
+
+def_key "N"
+  previous_found_item
+
+
+# Selection
+
+def_key "J"
+  select_item
+  scroll_down
+
+def_key "K"
+  select_item
+  scroll_up
+
+def_key "a"
+  add_selected_items
+
+def_key "A"
+  select_found_items
+
+def_key "ctrl-a"
+  select_album
+
+def_key "alt-a"
+  select_range
+
+def_key "r"
+  remove_selection
+
+def_key "ctrl-r"
+  reverse_selection
+
+def_key "alt-j"
+  move_selected_items_down
+
+def_key "alt-k"
+  move_selected_items_up
+
+
+# Toggling
+
+def_key "R"
+  toggle_repeat
+
+def_key "S"
+  toggle_random
+
+def_key "v"
+  toggle_screen_lock

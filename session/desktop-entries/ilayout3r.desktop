@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=iLayout3r
+Comment=Spawn i3 layouts in a smart manner
+Exec=kitty --name ilayout3r --detach -o initial_window_width=550 -o initial_window_height=320 -o remember_window_size=no nohup sh -c "python ~/Projects/iLayout3r/iLayout3r.py"
+Type=Application

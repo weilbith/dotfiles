@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Mopidy
+GenericName=An extenable music player daeomon
+Exec=mopidy
+Terminal=false
+Type=Application

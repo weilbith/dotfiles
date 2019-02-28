@@ -13,3 +13,6 @@ dex -a &
 
 # Start i3 as window manager.
 exec i3
+
+# Make user directories available
+xdg-user-dirs-update
