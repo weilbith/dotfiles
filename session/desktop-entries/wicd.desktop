@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=WICD
-Comment=CLI based network manager
-Exec=kitty --detach sh -c "bash ~/.scripts/wicd_stabilizer.sh"
-Type=Application
