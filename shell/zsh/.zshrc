@@ -6,9 +6,9 @@ setopt vi
 ## Reduce the delay on switching modes.
 set KEYTIMEOUT=1
 
-# Completion initialization.
+## Completion initialization.
 autoload -Uz compinit
-compinit
+compinit -d $XDG_DATA_HOME/zsh/zcompdump-$ZSH_VERSION
 
 # ---
 
