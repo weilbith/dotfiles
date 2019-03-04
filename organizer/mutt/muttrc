@@ -13,6 +13,11 @@ set sendmail = "msmtp -a $my_acc_mbsync"
 set realname = "Thore Weilbier"
 set sendmail = "/usr/bin/msmtp --file /home/thore/.config/msmtp/config -a private"
 set use_from
+set edit_headers
+set fast_reply
+set include
+set abort_noattach
+set abort_noattach_regex = "\<attach(|ed|ments?)|Anhang|Anhänge\\>"
 
 # Sourcing
 source ~/.config/mutt/colors
@@ -49,7 +54,7 @@ bind index ? search-reverse
 bind index N search-opposite
 bind index u toggle-new
 bind index <f8> help
-macro index <f9> "!mbsync $my_acc_mbsync && notmuch new<enter>" "Syncronise account $my_acc_mbsync"
+macro index <f9> "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc $my_acc_mbsync && notmuch new<enter>" "Syncronise account $my_acc_mbsync"
 
 ## Pager
 bind pager g top
@@ -66,6 +71,7 @@ macro pager U "<pipe-message> urlscan --compact<Enter>"
 # Notmuch
 set nm_default_uri = ~/Mail/
 bind index,pager S vfolder-from-query
+macro index <f10> "<sync-mailbox><shell-escape>notmuch new<enter>" "Update notmuch database"
 # startup-hook 'exec mbsync -a && notmuch new'
 # shutdown-hook 'push "<shell-escape>notmuch new<enter>"'
 
@@ -83,5 +89,6 @@ set header_cache = ~/.cache/mutt/header
 set mark_old = no
 set abort_noattach = ask-yes
 set abort_noattach_regex = "\\<attach(|ed|ments?)\\>"
+set wait_key = no
 
 # vim: filetype=neomuttrc
