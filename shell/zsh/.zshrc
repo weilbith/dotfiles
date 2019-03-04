@@ -17,6 +17,7 @@ compinit
 source $ZDOTDIR/antibody.zsh # Load plugins.
 source $ZDOTDIR/powerlevel9k-config.zsh # Prompt styling and segments.
 source $ZDOTDIR/plugin-config.zsh # All other configurations for plugins.
+source $MARKER_HOME/bin/marker.sh # Command template tooling.
 source /usr/share/fzf/key-bindings.zsh # Load fuzzy filter tools.
 source /usr/share/fzf/completion.zsh # Load fuzzy filter tools.
 source $ZDOTDIR/fzf-widgets.zsh # Additional fuzzy widgets.

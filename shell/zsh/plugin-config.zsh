@@ -49,3 +49,13 @@ bindkey '^[d' fasd_fzf_directory_selection # Alt + d
 
 # Exa
 EXA_COLORS="di=38;5;24"
+
+# Marker
+## Locations
+MARKER_HOME="$HOME/Tools/marker"
+MARKER_DATA_HOME="$XDG_DATA_HOME/marker"
+
+## Key Bindings
+MARKER_KEY_GET='^[m'
+MARKER_KEY_MARK=''
+MARKER_KEY_NEXT_PLACEHOLDER='^ '

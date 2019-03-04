@@ -1,0 +1,2 @@
+git clone https://github.com/pindexis/marker.git##git clone
+scp -i ~/.ssh/{{public_key_file}} -p {{443}} {{local_file}} {{remote_host}}:{{/path/remote_file}}##scp with identity file and port definition
