@@ -3,11 +3,15 @@
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 ## Source the theme itself.
-source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+source "$HOME/Tools/gitstatus/gitstatus.plugin.zsh"
+source "$HOME/Tools/powerlevel10k/powerlevel10k.zsh-theme"
 
 ## Increase the segment distance (one space is default).
 POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS=" "
 POWERLEVEL9K_WHITESPACE_BETWEEN_RIGHT_SEGMENTS=" "
+
+## Use the improved gitstatus tool for the VCS segement.
+POWERLEVEL9K_VCS_STATUS_COMMAND=gitstatus_query_dir
 
 
 ## The segements.

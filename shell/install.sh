@@ -1,7 +1,7 @@
 BASE_DIRECTORY="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 
 # Install a bunch of small packages.
-sudo pacman -S zsh-theme-powerlevel9k ripgrep fzf exa bat htop pdfgrep nmon openssh
+sudo pacman -S ripgrep fzf exa bat htop pdfgrep nmon openssh
 trizen -S wuzz
 pip install --user rtv
 
@@ -35,6 +35,11 @@ mkdir -p "$XDG_CACHE_HOME/tmux/tpm"
 TPM_DIR="$XDG_CACHE_HOME/tmux/plugins/tpm"
 mkdir -p "$TPM_DIR"
 git clone --depth 1 https://github.com/weilbith/tpm.git "$TPM_DIR"
+
+# Powerstatus
+# sudo pacman -S zsh-theme-powerlevel9k
+git clone https://github.com/romkatv/gitstatus.git "$HOME/Tools/gitstatus"
+git clone https://github.com/romkatv/powerlevel10k.git "$HOME/Tools/powerlevel10k"
 
 # Install Cheat.sh
 sudo pacman -S xsel rlwrap
