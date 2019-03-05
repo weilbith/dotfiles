@@ -1,2 +1,2 @@
-text/html; lynx -dump -width=78 -nolist %s | sed ‘s/^   //’
-# text/html; lynx -dump -width=78 -nolist %s | sed ‘s/^   //’; copiousoutput; needsterminal; nametemplate=%s.html
+text/html; lynx -dump -width=78 -nolist %s; copiousoutput; needsterminal; nametemplate=%s.html
+application/ics; bash ~/.scripts/print_ics.sh %s; copiousoutput;
