@@ -6,6 +6,7 @@
   b = "brainbot_gsuite_contacts_remote"
   collections = ["from a", "from b"]
   metadata = ["color", "displayname"]
+  conflict_resolution = ["command", "nvim", "-d"]
 
   [storage brainbot_gsuite_contacts_local]
     type = "filesystem"
@@ -24,6 +25,7 @@
   b = "brainbot_gsuite_calendar_remote"
   collections = ["from a", "from b"]
   metadata = ["color", "displayname"]
+  conflict_resolution = ["command", "nvim", "-d"]
 
   [storage brainbot_gsuite_calendar_local]
     type = "filesystem"
@@ -42,6 +44,7 @@
   b = "nextcloud_contacts_remote"
   collections = ["from a", "from b"]
   metadata = ["color", "displayname"]
+  conflict_resolution = ["command", "nvim", "-d"]
 
   [storage nextcloud_contacts_local]
     type = "filesystem"
@@ -62,6 +65,7 @@
   b = "nextcloud_calendars_remote"
   collections = ["from a", "from b"]
   metadata = ["color", "displayname"]
+  conflict_resolution = ["command", "nvim", "-d"]
 
   [storage nextcloud_calendars_local]
     type = "filesystem"
@@ -75,3 +79,5 @@
     password.fetch = ["command", "gpg", "--for-your-eyes-only", "--no-tty", "-qd", "-r", "483DA28D", "/home/thore/.config/vdirsyncer/nextcloud_pass"]
     verify_fingerprint = "C3:5C:45:18:9A:F1:1B:A1:66:19:F7:67:6C:76:D7:7E:C3:78:16:D2:60:22:B0:17:0E:B8:29:98:CA:7E:A9:D9"
     verify = false
+
+# vim: filetype=toml

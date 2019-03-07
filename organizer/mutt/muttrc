@@ -1,3 +1,31 @@
+# Global variables
+set my_mail_folder = "/home/thore/Mail"
+set my_virtual_query_base = "notmuch://?query"
+
+# Notmuch
+set nm_default_uri = "notmuch://$my_mail_folder"
+tag-transforms \
+  "attachment" " " \
+  "replied" " " \
+  "flagged" " " \
+  "signed" " " \
+  "encrypted" " " \
+
+tag-formats \
+  "attachment" "GA" \
+  "replied" "GR" \
+  "flagged" "GF" \
+  "signed" "GS" \
+  "encrypted" "GE" \
+
+set hidden_tags = ""
+macro index <f10> "<sync-mailbox><shell-escape>notmuch new --quiet<enter>" "Update notmuch database"
+bind index,pager \\ vfolder-from-query
+bind index,pager \Cv sidebar-toggle-virtual
+
+# startup-hook 'exec mbsync -a && notmuch new --quiet'
+# shutdown-hook 'push "<shell-escape>notmuch new<enter>"'
+
 # Accounts
 set my_acc_private = ~/.config/mutt/accounts/private
 set my_acc_brainbot = ~/.config/mutt/accounts/brainbot
@@ -9,16 +37,18 @@ macro index <f3> "<sync-mailbox><refresh><enter-command>source $my_acc_brainbot<
 
 
 # Send Mails
-set sendmail = "msmtp -a $my_acc_mbsync"
+set sendmail = "msmtp -a $my_account"
 set realname = "Thore Weilbier"
 set sendmail = "/usr/bin/msmtp --file /home/thore/.config/msmtp/config -a private"
-set abort_noattach = ask-yes
+set abort_noattach = ask-no
 set abort_noattach_regex = "\<attach(|ed|ments?)|Anhang|Anhänge\\>"
 set use_from
 set edit_headers
 set fast_reply
 set include
 set forward_format = "Fwd: %s"
+set reverse_name
+set reverse_realname
 
 # Sourcing
 source ~/.config/mutt/colors
@@ -32,14 +62,16 @@ set assumed_charset = "utf-8"
 set sort = threads
 set sort_aux = "last-date-received"
 set date_format = "%H:%M %a %d.%m.%Y"
-set index_format = "%-20.20F  %?M? [%M]? %s%GA%g%* (%D)"
+set index_format = "%-20.20F  %?M? [%M]? %s %GA%GR%GF%GS%GE%* (%D)"
 set collapse_all
 unset collapse_unread
 set uncollapse_jump
 
 # Pager Pane
 ignore *
-unignore from to subject date cc bcc
+unignore from: to subject date cc bcc
+unhdr_order *
+hdr_order from to Subject date cc bcc
 set pager_index_lines = 15
 
 ## Autoviews
@@ -49,31 +81,36 @@ auto_view application/ics
 # Sidebar
 set sidebar_visible
 set mail_check_stats
-set sidebar_width = 25
+set sidebar_width = 30
 set sidebar_divider_char = '  '
-set sidebar_format = "%-7.7B %?F?[%F]?%* %N/%-5S"
+set sidebar_format = "%-10.10B %?F?[%F]?%* %N/%-5S"
 set sidebar_short_path
 set sidebar_component_depth = 1
 set sidebar_delim_chars = '/'
-bind index,pager \CP sidebar-prev
-bind index,pager \CN sidebar-next
-bind index,pager \CO sidebar-open
 
 # More Bindings
 ## Index & Pager
 bind index,pager <f8> help
 bind index,pager \C\<Return> entire-thread
 bind index,pager r group-reply
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
 
 ## Index
 bind index G last-entry
 bind index \Cu half-up
 bind index \Cd half-down
+bind index j next-entry
+bind index k previous-entry
 bind index ? search-reverse
 bind index N search-opposite
 bind index u toggle-new
+bind index U read-thread
 bind index z collapse-thread
-macro index <f9> "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc $my_acc_mbsync && notmuch new<enter>" "Syncronise account $my_acc_mbsync"
+bind index D undelete-message
+macro index c "<change-folder>?"
+macro index <f9> "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc $my_account && notmuch new --quiet<enter>" "Syncronise account $my_account"
 
 ## Pager
 bind pager g top
@@ -87,16 +124,6 @@ bind pager \Cj next-entry
 macro pager A "<pipe-message>ripmime -i - -d "
 macro pager U "<pipe-message> urlscan --compact<Enter>"
 
-# Notmuch
-set nm_default_uri = "notmuch:///home/thore/Mail"
-tag-transforms "attachment" "@"
-tag-formats "attachment" "GA"
-set hidden_tags = ""
-macro index <f10> "<sync-mailbox><shell-escape>notmuch new<enter>" "Update notmuch database"
-bind index,pager \\ vfolder-from-query
-bind index,pager \Cv sidebar-toggle-virtual
-# startup-hook 'exec mbsync -a && notmuch new'
-# shutdown-hook 'push "<shell-escape>notmuch new<enter>"'
 
 # Contacts
 set query_command = "khard email --parsable '%s'"
@@ -114,8 +141,12 @@ unset wait_key
 unset mark_old
 unset menu_move_off
 set menu_scroll
+set pager_stop
+unset confirmappend
 
 # MISC
 unset markers
+unset help
+
 
 # vim: filetype=neomuttrc
