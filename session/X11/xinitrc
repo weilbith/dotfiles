@@ -11,8 +11,8 @@ XMODMAP=$XDG_CONFIG_HOME/X11/xmodmap
 # Autostart applications.
 dex -a &
 
-# Start i3 as window manager.
-exec i3
-
 # Make user directories available
 xdg-user-dirs-update
+
+# Start i3 as window manager.
+exec i3

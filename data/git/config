@@ -10,8 +10,18 @@
 [core]
 	pager = less -F -X
 
+[alias]
+	s = status
+  ss = status .
+  rv = remote -v
+  ch = checkout HEAD
+
 [merge]
   tool = fugitive
 
 [mergetool "fugitive"]
   cmd = nvim -f -c \"Gdiff\" \"$MERGED\"
+
+[filter "black"]
+  clean = black -
+  smudge = black -l 120 -
