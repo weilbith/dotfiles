@@ -58,11 +58,17 @@ set charset = "utf-8"
 set send_charset = "utf-8"
 set assumed_charset = "utf-8"
 
+# Format Strings
+set date_format = "%H:%M %a %d.%m.%Y"
+set index_format = "  %-20.20F  %?M?%M פּ ?%s %GA%GR%GF%GS%GE%*    %D "
+set sidebar_format = "  %-8.8B %?F?%F ?%* %N/%-5S "
+set status_format = "                                %?f?%f?%?u?   %u?%?t?   %t?%?F?   %F?%?d?   %d?%> %P  "
+set compose_format = "                                Compose  %?a?   %a? "
+set pager_format = "                                 %F  -  %s "
+
 # Index Pane
 set sort = threads
 set sort_aux = "last-date-received"
-set date_format = "%H:%M %a %d.%m.%Y"
-set index_format = "%-20.20F  %?M? [%M]? %s %GA%GR%GF%GS%GE%* (%D)"
 set collapse_all
 unset collapse_unread
 set uncollapse_jump
@@ -83,7 +89,6 @@ set sidebar_visible
 set mail_check_stats
 set sidebar_width = 30
 set sidebar_divider_char = '  '
-set sidebar_format = "%-10.10B %?F?[%F]?%* %N/%-5S"
 set sidebar_short_path
 set sidebar_component_depth = 1
 set sidebar_delim_chars = '/'
@@ -143,6 +148,7 @@ unset menu_move_off
 set menu_scroll
 set pager_stop
 unset confirmappend
+unset delete
 
 # MISC
 unset markers
