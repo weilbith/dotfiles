@@ -38,8 +38,7 @@ git clone --depth 1 https://github.com/weilbith/tpm.git "$TPM_DIR"
 
 # Powerstatus
 # sudo pacman -S zsh-theme-powerlevel9k
-git clone https://github.com/romkatv/gitstatus.git "$HOME/Tools/gitstatus"
-git clone https://github.com/romkatv/powerlevel10k.git "$HOME/Tools/powerlevel10k"
+trizen -S zsh-theme-powerlevel10k-git 
 
 # Install Cheat.sh
 sudo pacman -S xsel rlwrap
