@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=CMus
 Comment=CLI based music player
-Exec=kitty --detach cmus
+Exec=kitty --detach --class CMus cmus
 Type=Application

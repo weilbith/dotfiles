@@ -13,6 +13,17 @@ set $move_mode move
 set $mark_mode mark
 set $music_mode music
 
+## Workspace names
+set $workspace1 
+set $workspace2 
+set $workspace3 
+set $workspace4 
+set $workspace5 5
+set $workspace6 6
+set $workspace7 7
+set $workspace8 8
+set $workspace9 9
+
 ## Step sizes (mind high resolution display)
 ### Window resizing
 set $resize_step_small 5
@@ -145,16 +156,15 @@ bindsym $mod+a focus parent
 bindsym $mod+d focus child
 
 ## Move focused container to workspace.
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
 
 ## Move focused container between outputs.
 bindsym $mod+Mod1+j move container to output left
@@ -168,16 +178,15 @@ bindsym $mod+Control+s exec i3-input -F 'swap container with mark %s' -P 'Mark N
 
 # Workspaces
 ## Switch workspace.
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
 
 ## Move focused workspace between outputs.
 bindsym $mod+Control+j move workspace to output left
@@ -338,8 +347,7 @@ mode $music_mode {
 # Window Preferences
 for_window [class="Yad"] floating enable
 for_window [class="kitty" instance="orgatimer"] floating enable
-for_window [class="kitty" instance="ilayout3r"] floating enable
-for_window [class="kitty" instance="music-player_float"] floating enable
+for_window [class="kitty" instance="floating"] floating enable
 
 # ---
 

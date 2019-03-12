@@ -26,7 +26,7 @@ trizen -S redshift-minimal
 ln -sf $(pwd)/redshift $XDG_CONFIG_HOME/
 
 # Link desktop files for CLI based applications.
-sudo ln -sf $(pwd)/desktop-files/* /usr/share/applications/
+sudo ln -sf $(pwd)/desktop-entries/* /usr/share/applications/
 
 # Powerstatus10k
 curl -s https://raw.githubusercontent.com/weilbith/powerstatus10k/master/install.sh | bash -s - install

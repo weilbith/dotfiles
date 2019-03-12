@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Ranger
 Comment=CLI based file manager
-Exec=kitty --detach ranger
+Exec=kitty --detach --class Ranger ranger
 Type=Application
