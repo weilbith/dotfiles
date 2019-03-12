@@ -3,10 +3,10 @@
 bindkey -v
 setopt vi
 
-## Reduce the delay on switching modes.
+# Reduce the delay on switching modes.
 set KEYTIMEOUT=1
 
-## Completion initialization.
+# Completion initialization.
 autoload -Uz compinit
 compinit -d $XDG_DATA_HOME/zsh/zcompdump-$ZSH_VERSION
 
@@ -41,7 +41,7 @@ zle -N zle-line-init
 # Fix vi-escape issues at Arch-URxvt-TMux-Zsh
 bindkey '\e' vi-cmd-mode
 
-# ---
+#---
 
 
 # SSH-Agent
@@ -59,6 +59,12 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
   # Load variables from cache.
   eval "$(<$SSH_AGENT_CACHE)"
 fi
+
+# ---
+
+
+# Python
+VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # ---
 
@@ -110,3 +116,10 @@ if [[ -n $(echo tmux) ]] || command -v tmux>/dev/null; then
   # Make sure to do not nest TMux sessions.
   [[ ! -o login ]] && [ -z $TMUX ] && startTmux
 fi
+
+
+# # Do not start TMux on login shell.
+# # Make sure to do not nest TMux sessions.
+# if [[ ! -o login ]] && [ -z $TMUX ]; then
+#   bash ~/.scripts/tmux_session_handler.sh
+# fi

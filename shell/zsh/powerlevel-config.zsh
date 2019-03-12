@@ -16,8 +16,7 @@ POWERLEVEL9K_VCS_STATUS_COMMAND=gitstatus_query_dir
 
 ## The segements.
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon custom_user custom_host dir custom_writable newline vcs vi_mode)
-
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version status command_execution_time aws newline custom_dockerhub)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv node_version status command_execution_time aws newline custom_dockerhub)
 
 ## Custom Segments
 ### User
