@@ -18,7 +18,7 @@ set $workspace1 
 set $workspace2 
 set $workspace3 
 set $workspace4 
-set $workspace5 5
+set $workspace5 
 set $workspace6 6
 set $workspace7 7
 set $workspace8 8
@@ -266,6 +266,9 @@ bindsym $mod+F1 $cmd_vol_mute
 bindsym $mod+F2 $cmd_vol_lower
 bindsym $mod+F3 $cmd_vol_raise
 
+## Update monitor usage
+bindsym $mod+F4 exec --no-startup-id autorandr --change
+
 #---
 
 
@@ -347,7 +350,7 @@ mode $music_mode {
 # Window Preferences
 for_window [class="Yad"] floating enable
 for_window [class="kitty" instance="orgatimer"] floating enable
-for_window [class="kitty" instance="floating"] floating enable
+for_window [instance="floating"] floating enable
 
 # ---
 
