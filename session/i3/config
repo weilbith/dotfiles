@@ -33,11 +33,6 @@ set $resize_step_big 15
 set $move_step_small 3
 set $move_step_big 50
 
-## Cursor movement
-set $cursor_step_small 10
-set $cursor_step_big 200
-set $scroll_height 5
-
 # ---
 
 
@@ -53,12 +48,6 @@ focus_on_window_activation smart
 font xft:SauceCodePro Nerd Font:size=6
 
 show_marks yes
-
-# Lockscreen activation command
-bindsym $mod+Control+l exec --no-startup-id xautolock -locknow
-
-# Open Shutdown/Suspend/... Menu
-bindsym $mod+t exec --no-startup-id ~/.scripts/i3_runstate.zsh
 
 # ---
 
@@ -195,99 +184,6 @@ bindsym $mod+Control+k move workspace to output right
 # ---
 
 
-# Scratchpad
-## Move active window to the scratchpad and toggle its visibility.
-bindsym $mod+Shift+s move scratchpad
-bindsym $mod+s scratchpad show
-# bindsym $mod+s exec gnome-terminal --geometry 270x25
-# for_window [instance="scratchpad"] move to scratchpad
-
-# ---
-
-
-# Launching
-## Launch a terminal emulator and start Zsh inside.
-bindsym $mod+Return exec i3-sensible-terminal
-
-
-# i3 Control
-## Reload configuration.
-bindsym $mod+Shift+c reload
-
-## Restart in place (do not logout).
-bindsym $mod+Shift+r restart
-
-## Exit (with logout)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-# ---
-
-
-# Cursor Control
-## Move
-bindsym $mod+Left exec --no-startup-id xdotool mousemove_relative -- -$cursor_step_small 0
-bindsym $mod+Shift+Left exec --no-startup-id xdotool mousemove_relative -- -$cursor_step_big 0
-
-bindsym $mod+Up exec --no-startup-id xdotool mousemove_relative -- 0 -$cursor_step_small
-bindsym $mod+Shift+Up exec --no-startup-id xdotool mousemove_relative -- 0 -$cursor_step_big
-
-bindsym $mod+Right exec --no-startup-id xdotool mousemove_relative -- $cursor_step_small 0
-bindsym $mod+Shift+Right exec --no-startup-id xdotool mousemove_relative -- $cursor_step_big 0
-
-bindsym $mod+Down exec --no-startup-id xdotool mousemove_relative -- 0 $cursor_step_small
-bindsym $mod+Shift+Down exec --no-startup-id xdotool mousemove_relative -- 0 $cursor_step_big
-
-## Scroll
-bindsym $mod+Mod1+Up exec --no-startup-id xdotool click --repeat $scroll_height 4
-bindsym $mod+Mod1+Down exec --no-startup-id xdotool click --repeat $scroll_height 5
-
-## Prevent locking
-bindsym $mod+Mod1+l exec --no-startup-id xdotool mousemove 0 0
-
-
-# Device Control
-## Screen Brightness
-bindsym XF86MonBrightnessUp exec --no-startup-id sudo ~/.scripts/brightness.sh up
-bindsym XF86MonBrightnessDown exec --no-startup-id sudo ~/.scripts/brightness.sh down
-
-## Volume
-### Command to control the volume
-set $cmd_vol_mute exec --no-startup-id pactl set-sink-mute $(pacmd list-sinks | grep '* index' | awk -F ':' '{print $2}' | tr -d '[:space:]') toggle
-set $cmd_vol_lower exec --no-startup-id pactl set-sink-volume $(pacmd list-sinks | grep '* index' | awk -F ':' '{print $2}' | tr -d '[:space:]') -5%
-set $cmd_vol_raise exec --no-startup-id pactl set-sink-volume $(pacmd list-sinks | grep '* index' | awk -F ':' '{print $2}' | tr -d '[:space:]') +5%
-
-### Bind commands to latop volume keys.
-bindsym XF86AudioMute $cmd_vol_mute
-bindsym XF86AudioLowerVolume $cmd_vol_lower
-bindsym XF86AudioRaiseVolume $cmd_vol_raise
-
-### Bind commands to functions keys for normal keyboard.
-bindsym $mod+F1 $cmd_vol_mute
-bindsym $mod+F2 $cmd_vol_lower
-bindsym $mod+F3 $cmd_vol_raise
-
-## Update monitor usage
-bindsym $mod+F4 exec --no-startup-id autorandr --change
-
-#---
-
-
-# i3 Gaps Configuration
-## Gap between windows.
-gaps inner 10
-gaps outer 5
-smart_gaps on
-
-## The window title height.
-new_window pixel 2
-
-## Colors
-### class       border      backgr.     text    indicator   child_border
-client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
-
-# ---
-
-
 # Marks & Find
 bindsym $mod+grave mode $mark_mode
 
@@ -346,20 +242,50 @@ mode $music_mode {
   bindsym Return mode $default_mode
 }
 
+# ---
+ 
 
-# Window Preferences
-for_window [class="Yad"] floating enable
-for_window [class="kitty" instance="orgatimer"] floating enable
-for_window [instance="floating"] floating enable
+# Scratchpad
+bindsym $mod+Shift+s move scratchpad
+bindsym $mod+s scratchpad show
 
 # ---
 
 
-# MISC
-## Screenshot
-bindsym $mod+Print exec --no-startup-id ~/.scripts/screenshot.sh
+# i3 Control
+## Reload configuration.
+bindsym $mod+Shift+c reload
 
-## Disable internal display, if two more are connected externally.
-exec --no-startup-id [[ $(xrandr | grep ' connected' | wc -l) -gt 2 ]] && xrandr --output eDP-1 --off
+## Restart in place (do not logout).
+bindsym $mod+Shift+r restart
+
+## Exit (with logout)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# ---
+
+
+# i3 Gaps Configuration
+## Gap between windows.
+gaps inner 10
+gaps outer 5
+smart_gaps on
+
+## The window title height.
+new_window pixel 2
+
+## Colors
+### class       border      backgr.     text    indicator   child_border
+client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
+
+# ---
+
+
+# Window Preferences
+for_window [class="Yad"] floating enable
+for_window [instance="floating"] floating enable
+
+# ---
+
 
 # vim: filetype=i3

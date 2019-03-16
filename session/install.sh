@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages.
-sudo pacman -S xorg xsel xclip xautolock compoton dmenu pulseaudio dex xdg-user-dirs xdotool
+sudo pacman -S xorg xsel xclip xautolock compoton dmenu pulseaudio dex xdg-user-dirs xdotool xbindkeys
 trizen -S i3lock-color nerd-fonts-source-code-pro autorandr
 
 # Xresources
@@ -30,7 +30,6 @@ sudo ln -sf "$(pwd)/desktop-entries/*" /usr/share/applications/
 
 # Powerstatus10k
 curl -s https://raw.githubusercontent.com/weilbith/powerstatus10k/master/install.sh | bash -s - install
-
 
 # Autostart
 ln -sf "$(pwd)/autostart" "$XDG_CONFIG_HOME/"

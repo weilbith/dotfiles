@@ -3,10 +3,12 @@
 # Specify configuration files.
 XRESOURCES=$XDG_CONFIG_HOME/X11/xresources
 XMODMAP=$XDG_CONFIG_HOME/X11/xmodmap
+XBINDKEYS=$XDG_CONFIG_HOME/X11/xbindkeysrc
 
 # Merge/load configurations if they exist.
-[[ -f "$XRESOURCES" ]] && xrdb -merge $XRESOURCES
-[[ -f "$XMODMAP" ]] && xmodmap $XMODMAP
+[[ -f "$XRESOURCES" ]] && xrdb -merge "$XRESOURCES"
+[[ -f "$XMODMAP" ]] && xmodmap "$XMODMAP"
+[[ -f "$XBINDKEYS" ]] && xbindkeys --file "$XBINDKEYS"
 
 # Autostart applications.
 dex -a &
