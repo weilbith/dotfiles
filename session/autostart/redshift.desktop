@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Redshift
-GenericName=Display color temperature adjustment
-Exec=/usr/bin/redshift
-Terminal=false
-Type=Application

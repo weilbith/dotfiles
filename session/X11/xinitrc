@@ -1,21 +1,26 @@
 #!/bin/bash
 
-# Specify configuration files.
+# Specify X11 configuration files.
 XRESOURCES=$XDG_CONFIG_HOME/X11/xresources
 XMODMAP=$XDG_CONFIG_HOME/X11/xmodmap
 XBINDKEYS=$XDG_CONFIG_HOME/X11/xbindkeysrc
 
-# Merge/load configurations if they exist.
+# Merge/load X11 configurations if they exist.
 [[ -f "$XRESOURCES" ]] && xrdb -merge "$XRESOURCES"
 [[ -f "$XMODMAP" ]] && xmodmap "$XMODMAP"
 [[ -f "$XBINDKEYS" ]] && xbindkeys --file "$XBINDKEYS"
 
-# MISC
+# Setups
 xdg-user-dirs-update
-unclutter &
 
-# Autostart applications.
+# Daemons
+unclutter &
+redshift &
+pulseaudio --start -D &
+mopidy &
+
+# Autostart
 dex -a &
 
-# Start i3 as window manager.
+# Window Manager
 exec i3

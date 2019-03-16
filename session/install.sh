@@ -45,16 +45,15 @@ ln -sf "$(pwd)/ssh/config" "$HOME/.ssh/config"
 ln -sf "$(pwd)/autorandr" "$XDG_CONFIG_HOME/"
 
 
-# Messy stuff
 # Cerebro
-# Install dependencies.
+## Install dependencies.
 sudo pacman -S nodejs yarn fuse readline
 
-# Configuration
+## Configuration
 CEREBRO_DIR=$HOME/.config/Cerebro
 mkdir -p "$CEREBRO_DIR"
 ln -sf "$(pwd)/cerebro/config.json" "$CEREBRO_DIR/"
 
-# Start the application ones to create some stuff at the configuration directory.
+## Start the application ones to create some stuff at the configuration directory.
 ln -sf "$(pwd)/cerebro/plugins.json" "$CEREBRO_DIR/plugins/package.json"
 cd "$CEREBRO_DIR/plugins" && yarn install
