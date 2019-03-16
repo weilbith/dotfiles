@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages.
-sudo pacman -S xorg xsel xclip xautolock compoton dmenu pulseaudio dex xdg-user-dirs xdotool xbindkeys
+sudo pacman -S xorg xsel xclip xautolock compoton dmenu pulseaudio dex xdg-user-dirs xdotool xbindkeys unclutter
 trizen -S i3lock-color nerd-fonts-source-code-pro autorandr
 
 # Xresources

@@ -10,11 +10,12 @@ XBINDKEYS=$XDG_CONFIG_HOME/X11/xbindkeysrc
 [[ -f "$XMODMAP" ]] && xmodmap "$XMODMAP"
 [[ -f "$XBINDKEYS" ]] && xbindkeys --file "$XBINDKEYS"
 
+# MISC
+xdg-user-dirs-update
+unclutter &
+
 # Autostart applications.
 dex -a &
-
-# Make user directories available
-xdg-user-dirs-update
 
 # Start i3 as window manager.
 exec i3
