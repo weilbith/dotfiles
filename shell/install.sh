@@ -41,11 +41,7 @@ git clone --depth 1 https://github.com/weilbith/tpm.git "$TPM_DIR"
 trizen -S zsh-theme-powerlevel10k-git 
 
 # Install Cheat.sh
-sudo pacman -S xsel rlwrap
-CHT_DIR=$HOME/Tools/chtsh
-mkdir -p "$CHT_DIR"
-curl https://cht.sh/:cht.sh > "$CHT_DIR/cht.sh"
-chmod +x "$CHT_DIR/cht.sh"
+trizen -S cht.sh
 ln -sf "$BASE_DIRECTORY/chtsh" "$XDG_CACHE_HOME/"
 
 # Install Translate-Shell
@@ -53,8 +49,9 @@ trizen -S translate-shell
 ln -sf "$BASE_DIRECTORY/translate-shell" "$XDG_CONFIG_HOME/"
 
 # Fasd
-sudo pacman -S fasd-git
-ln -sf "$BASE_DIRECTORY/fasdrc" ~/.fasdrc
+echo "printf '\033[0;31mEdit the package source to the fork of \'whjvenyl\'\033[0m'"
+trizen -S fasd-git
+ln -sf "$BASE_DIRECTORY/fasd" "$XDG_CONFIG_HOME/"
 mkdir -p "$XDG_DATA_HOME/fasd"
 
 # Marker
