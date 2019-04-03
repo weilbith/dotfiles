@@ -2,3 +2,8 @@ host github.com
   HostName github.com
   User git
   IdentityFile ~/.ssh/github
+
+host twcths.ddns.net
+  HostName cubietruck
+  User weilbith
+  IdentityFile ~/.ssh/cubietruck
