@@ -35,3 +35,6 @@ command -v mbsync>/dev/null && alias -g mbsync="mbsync -c $XDG_CONFIG_HOME/isync
 command -v exa>/dev/null && alias -g ls="exa"
 command -v bat>/dev/null && alias -g cat="bat --paging never --theme DarkNeon"
 command -v gpg>/dev/null && alias -g gpg="gpg --homedir $XDG_CONFIG_HOME/gnupg"
+
+cursedtag="$HOME/Tools/cursedtag/cursedtag"
+[[ -f "$cursedtag" ]] && alias -g ct="bash $cursedtag"

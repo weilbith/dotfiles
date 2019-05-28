@@ -20,7 +20,7 @@ source $ZDOTDIR/plugin-config.zsh # All other configurations for plugins.
 source $MARKER_HOME/bin/marker.sh # Command template tooling.
 source /usr/share/fzf/key-bindings.zsh # Load fuzzy filter tools.
 source /usr/share/fzf/completion.zsh # Load fuzzy filter tools.
-source $ZDOTDIR/fzf-widgets.zsh # Additional fuzzy widgets.
+source $ZDOTDIR/widgets.zsh # Additional functions and widgets.
 source $ZDOTDIR/alias.zsh # Auto-build alias for specific script folders and more (after plugin alias).
 
 # ---

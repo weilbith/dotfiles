@@ -12,3 +12,6 @@ robbyrussell/oh-my-zsh path:plugins/docker
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
+
+# Completion
+#deadc0de6/dotdrop path:completion/_dotdrop-completion.zsh
