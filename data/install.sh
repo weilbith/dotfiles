@@ -2,6 +2,10 @@
 sudo pacman -S git
 ln -sf $(pwd)/git $XDG_CONFIG_HOME/
 
+# (Git)Hub
+trizen -S hub
+ln -f "$(pwd)/hub" "$XDG_CONFIG_HOME/"
+
 # Mounting
 sudo pacman -S ntfs-3g
 ## UDisk

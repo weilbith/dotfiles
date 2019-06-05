@@ -1,17 +1,18 @@
 [user]
-	name = Thore Weilbier
-	email = thore@weilbier.net
-	signingkey = DBEFB434
+  name = Thore Weilbier
+  email = thore@weilbier.net
+  signingkey = DBEFB434
 
 [commit]
-	gpgsign = true
+  gpgsign = true
   verbose = true
 
 [core]
-	pager = less -F -X
+  pager = less -F -X
+  excludesfile = ~/.config/git/gitignore
 
 [alias]
-	s = status
+  s = status
   ss = status .
   rv = remote -v
   ch = checkout HEAD
@@ -19,9 +20,15 @@
 [merge]
   tool = fugitive
 
+[mergetool]
+  keepBackup = false
+
 [mergetool "fugitive"]
   cmd = nvim -f -c \"Gdiff\" \"$MERGED\"
 
 [filter "black"]
   clean = black -
   smudge = black -l 120 -
+
+[hub]
+  protocol = git
