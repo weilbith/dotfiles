@@ -1,0 +1,26 @@
+[[verbs]]
+invocation = "p"
+execution = ":parent"
+
+[[verbs]]
+invocation = "edit"
+shortcut = "e"
+execution = "$EDITOR {file}"
+
+[[verbs]]
+name = "make directory"
+invocation = "mkdir {subpath}"
+execution = "mkdir -p {directory}/{subpath}"
+
+[[verbs]]
+name = "print file"
+invocation = "print"
+shortcut = "P"
+execution = "bat {file}"
+
+[[verbs]]
+name = "view file"
+invocation = "view"
+shortcut = "v"
+execution = "less {file}"
+
