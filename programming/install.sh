@@ -17,7 +17,11 @@ pip install --user vim-vint
 ln -sf $(pwd)/vintrc.yaml ~/.vintrc.yaml
 
 # Rust
-curl https://sh.rustup.rs -sSf | sh
+trizen -S rustup
+rustup toolchain install nightly
+rustup default nightly
+rustup component add rustfmt
+cargo install racer
 
 # Docker
 sudo pacman -S --noconfirm docker docker-compose
@@ -38,12 +42,12 @@ git clone --depth 1 https://github.com/jszakmeister/markdown2ctags.git $HOME/Too
 
 # TOML
 BIN_NAME="toml"
-wget https://github.com/vmchale/tomlcheck/releases/download/0.1.0.37/tomlcheck-x86_64-unkown-linux-gnu > $BIN_NAME
+wget https://github.com/vmchale/tomlcheck/releases/download/0.1.0.37/tomlcheck-x86_64-unkown-linux-gnu >$BIN_NAME
 sudo mv $BIN_NAME /usr/bin/
 sudo chmod a+x /usr/bin/$BIN_NAME
 
 # Shell/Bash/Zsh
-sudo pacman -S shellcheck
+sudo pacman -S shellcheck shfmt
 
 # JSON
 yarn global add jsonlint

@@ -2,7 +2,7 @@
 ## Double bind to non-functional keys
 ## Mute volume
 "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-  XF86AudioMute 
+  XF86AudioMute
 
 "pactl set-sink-mute @DEFAULT_SINK@ toggle"
   Mod4 + F1
@@ -44,11 +44,11 @@
 # Screen Lock
 ## Manual lock
 "xautolock -locknow"
-  Control + l
+  Control + Mod4 + l
 
 ## Prevent by move cursor to corner
 "xdotool mousemove 0 0"
-  Control+Alt + l
+  Mod4 + Alt + l
 
 # ---
 

@@ -12,29 +12,29 @@ PIP_LIST=""
 #   $1 - list name (must exist)
 #   $2 - package name to add
 #
-function addPackage {
+function addPackage() {
   case "$1" in
-    pacman )
-      PACMAN_LIST="$PACMAN_LIST  $2"
-      ;;
+  pacman)
+    PACMAN_LIST="$PACMAN_LIST  $2"
+    ;;
 
-    trizen )
-      TRIZEN_LIST="$TRIZEN_LIST  $2"
-      ;;
+  trizen)
+    TRIZEN_LIST="$TRIZEN_LIST  $2"
+    ;;
 
-    yarn )
-      YARN_LIST="$YARN_LIST $2"
-      ;;
+  yarn)
+    YARN_LIST="$YARN_LIST $2"
+    ;;
 
-    pip )
-      PIP_LIST="$PIP_LIST $2"
-      ;;
+  pip)
+    PIP_LIST="$PIP_LIST $2"
+    ;;
 
-    * )
-      echo "Unknown list ($1) for package $2!"
+  *)
+    echo "Unknown list ($1) for package $2!"
+    ;;
   esac
 }
-
 
 # NodeJS
 addPackage pacman nodejs
@@ -44,8 +44,9 @@ addPackage pacman yarn
 ## Uncrustify
 addPackage pacman uncrustify
 
-## Solium
+## Solium && SolHint
 addPackage yarn solium
+addPackage yarn solhint
 
 ## FixJSON
 addPackage yarn fixjson
@@ -72,7 +73,6 @@ addPackage yarn tslint-config-prettier
 ## Tern
 addPackage yarn tern
 
-
 # Install package lists.
 echo "Pacman:  $PACMAN_LIST"
 sudo pacman -Sy --noconfirm $PACMAN_LIST
@@ -85,7 +85,6 @@ sudo yarn global add $YARN_LIST
 
 echo "Pip:  $PIP_LIST"
 sudo pip install $PIP_LIST
-
 
 # Linking
 ln -sf $(pwd)/soliumrc.json ~/.soliumrc.json
