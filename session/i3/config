@@ -243,7 +243,7 @@ mode $music_mode {
 }
 
 # ---
- 
+
 
 # Scratchpad
 bindsym $mod+Shift+s move scratchpad
@@ -284,6 +284,7 @@ client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
 # Window Preferences
 for_window [class="Yad"] floating enable
 for_window [instance="floating"] floating enable
+for_window [class="Rocket.Chat" instance="rocket.chat"] move scratchpad, scratchpad show
 
 # ---
 
