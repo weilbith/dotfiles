@@ -1,0 +1,23 @@
+account brainbot
+host mail.brainbot.com
+port 20025
+protocol smtp
+auth on
+user thore
+passwordeval "gpg --for-your-eyes-only --no-tty -dq ~/.config/mutt/accounts/brainbot_pass"
+from thore.weilbier@brainbot.com
+tls on
+tls_starttls on
+tls_fingerprint 13:FC:7D:75:FB:BB:AD:AA:C9:4F:31:58:5D:AB:51:BB:9E:11:23:55
+
+account private
+host smtp.1und1.de
+port 25
+protocol smtp
+auth on
+user thore@weilbier.net
+passwordeval "gpg --for-your-eyes-only --no-tty -dq ~/.config/mutt/accounts/private_pass"
+from thore@weilbier.net
+tls on
+tls_starttls on
+tls_fingerprint EC:AE:7B:FD:0F:1C:F5:F3:38:53:D6:D8:1E:9A:37:A9:0B:6D:96:74

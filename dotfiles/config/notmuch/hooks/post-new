@@ -1,0 +1,5 @@
+#!/bin/bash
+python "$HOME/Projects/notmuch_notifier/notmuch_notifier/main.py"
+python "$XDG_CACHE_HOME/powerstatus10k/segments/powerstatus10k_notmuch/notmuch_hook.py"
+
+# vim: filetype=sh

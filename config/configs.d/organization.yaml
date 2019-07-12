@@ -1,0 +1,97 @@
+config:
+  dotpath: ../../dotfiles
+
+dotfiles:
+  mutt:
+    actions:
+      - install_by_package_manager neomutt
+      - install_by_package_manager ripmime
+      - install_by_package_manager lynx
+      - make_directory '{{@@ env["MAIL_DIR"] @@}}'
+      - make_directory '{{@@ env["MUTT_CACHE"] @@}}'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt'
+    src: config/mutt
+
+  isync:
+    actions:
+      - install_by_package_manager gnupg
+      - install_by_package_manager gnupg
+      - make_directory '{{@@ env["MAIL_DIR"] @@}}'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/isync'
+    src: config/isync
+
+  notmuch:
+    actions:
+      - install_by_package_manager notmuch
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/notmuch'
+    src: config/notmuch
+
+  notmuch_hooks:
+    actions:
+      - change_mode 700 '{{@@ env["NOTMUCH_HOOKS_DIR"] @@}}/*'
+    dst: '{{@@ env["NOTMUCH_HOOKS_DIR"] @@}}'
+    src: config/notmuch/hooks
+
+  msmtp:
+    actions:
+      - install_by_package_manager msmtp
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/msmtp'
+    src: config/msmtp
+
+  urlscan:
+    actions:
+      - install_by_package_manager urlscan-git
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/urlscan'
+    src: config/urlscan
+
+  mailcap:
+    dst: '{{@@ env["HOME"] @@}}/.mailcap'
+    src: config/mailcap
+
+  vdirsyncer:
+    actions:
+      - install_by_package_manager vdirsyncer
+      - install_by_package_manager python-requests-oauthlib
+      - install_by_package_manager gnupg
+      - make_directory '{{@@ env["CONTACT_DIR"] @@}}'
+      - make_directory '{{@@ env["CALENDAR_DIR"] @@}}'
+      - make_directory '{{@@ env["VDIRSYNCER_CACHE"] @@}}'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/vdirsyncer'
+    src: config/vdirsyncer
+
+  khal:
+    actions:
+      - install_by_package_manager khal
+      - make_directory '{{@@ env["CALENDAR_DIR"] @@}}'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/khal'
+    src: config/khal
+
+  khard:
+    actions:
+      - install_by_package_manager khard
+      - make_directory '{{@@ env["CONTACT_DIR"] @@}}'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/khard'
+    src: config/khard
+
+  orgatimer:
+    actions:
+      - install_by_script https://raw.githubusercontent.com/weilbith/orgatimer/master/install.sh install
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/orgatimer'
+    src: config/orgatimer
+
+profiles:
+  organization:
+    dotfiles:
+      - mutt
+      - isync
+      - notmuch
+      - notmuch_hooks
+      - msmtp
+      - urlscan
+      - mailcap
+      - vdirsyncer
+      - khal
+      - khard
+      - orgatimer
+
+# vim: nospell

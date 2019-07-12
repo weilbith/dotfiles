@@ -1,0 +1,29 @@
+variables:
+  git_available: >-
+    command -v git > /dev/null ||
+    (
+    echo "Install git...";
+    sudo pacman -Sy --noconfirm --needed git &&
+    echo "Git installed."
+    )
+
+  trizen_install: >-
+    echo "Install trizen...";
+    rm -rf /tmp/trizen;
+    git clone https://aur.archlinux.org/trizen.git /tmp/trizen &&
+    cd /tmp/trizen &&
+    makepkg --syncdeps --install --noconfirm &&
+    echo "Trizen installed."
+
+  trizen_available: >-
+    command -v trizen > /dev/null ||
+    (
+    ({{@@ git_available @@}}) &&
+    ({{@@ trizen_install @@}})
+    )
+
+  install_package: >-
+    ({{@@ trizen_available @@}}) &&
+    trizen -S --needed --noconfirm
+
+# vim: nospell

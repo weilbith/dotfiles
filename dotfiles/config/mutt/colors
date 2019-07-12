@@ -1,0 +1,45 @@
+set header_color_partial = yes
+
+# Standard
+color normal  color38   default
+color indicator color15   color32
+color status  color15   color24
+color error color197  default
+color tree  color38  default
+color progress color15 color24
+
+
+# Signal colors
+color index color235 color191 '~N'
+color index color197 default '~T'
+color index color235 color197 '~D'
+color index color197 color191 '~T~N'
+color index color191 color197 '~D~N'
+
+color index_author color215 default '.*'
+color index_author color235 color191 '~N'
+color index_author color197 default '~T'
+color index_author color235 color197 '~D'
+color index_author color197 color191 '~T~N'
+color index_author color191 color197 '~D~N'
+
+color index_subject color235 color191 '~N'
+color index_subject color197 default '~T'
+color index_subject color235 color197 '~D'
+color index_subject color197 color191 '~T~N'
+color index_subject color191 color197 '~D~N'
+
+color index_tags color81 default
+color index_tag color215 default 'attachment'
+color index_tag color215 default 'replied'
+color index_tag color215 default 'flagged'
+color index_tag color215 default 'signed'
+color index_tag color215 default 'encrypted'
+
+# Sidebar
+color sidebar_divider color24    color24
+color sidebar_highlight color239   color81
+color sidebar_indicator color15    color32
+color sidebar_new color239 color191
+
+# vim: filetype=neomuttrc

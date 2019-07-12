@@ -1,0 +1,50 @@
+# Names
+First name : 
+Last name  : 
+Additional : 
+Nickname : 
+
+# Dates
+Birthday : 
+Anniversary : 
+
+# Work
+Organisation : 
+Role  : 
+
+# Phone
+# 3.0 -  home, work, voice, video, cell, fax, pager, pref, bbs, car, isdn, msg, modem, pcs
+# 4.0 -  home, work, voice, video, cell, fax, pager, pref, text, textphone
+Phone :
+  cell : 
+  home : 
+
+# E-Mail
+# 3.0 - home, work, internet, pref, x400
+# 4.0 - home, work, internet, pref
+Email :
+  home : 
+  work : 
+
+# Post
+# 3.0 - home, work, pref, dom, intl, parcel, postal
+# 4.0 - home, work, pref
+Address :
+  home :
+    Street   : 
+    Code     : 
+    City     : 
+    Region   : 
+    Country  : 
+
+# Tags
+Categories : 
+
+# Private Objects
+# Private :
+#     Jabber  : 
+#     Skype   : 
+#     Twitter : 
+
+# Notes
+Note : 

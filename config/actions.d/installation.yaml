@@ -1,0 +1,6 @@
+actions:
+  pre:
+    install_by_package_manager: '{{@@ install_package @@}} {0}'
+    install_by_script: curl -s {0} | sudo bash -s - {1}
+
+# vim: nospell

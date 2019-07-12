@@ -1,0 +1,31 @@
+set my_account = "brainbot"
+set my_folder = "$my_mail_folder/$my_account"
+set my_virtual_query_folder = "$my_virtual_query_base=folder:$my_account"
+
+set mbox_type = Maildir
+set folder = "$my_folder"
+set spoolfile = "$my_folder/inbox"
+set from = "thore.weilbier@brainbot.de"
+
+set virtual_spoolfile
+
+unalternates *
+alternates \
+  thore@brainbot.com \
+  thore.weilbier@brainbot.com
+
+
+unvirtual-mailboxes *
+virtual-mailboxes \
+    "Inbox" "$my_virtual_query_folder/inbox" \
+    "Trustlines" "$my_virtual_query_folder/inbox and trustlines" \
+    "Raiden" "$my_virtual_query_folder/inbox and raiden" \
+    "Bi-Weekly" "$my_virtual_query_folder/inbox and subject:Bi-Weekly" \
+
+unmailboxes *
+mailboxes \
+  "$my_folder/inbox"
+
+
+# vim: filetype=neomuttrc
+
