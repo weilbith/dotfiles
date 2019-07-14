@@ -35,8 +35,6 @@ dotfiles:
     dst: /tmp/fake
     # src: '{{@@ fake_file_source @@}}'
     src: fake
-    actions:
-
 
   bashmount:
     actions:

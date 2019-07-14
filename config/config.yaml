@@ -1,6 +1,7 @@
 config:
   dotpath: ../dotfiles
   showdiff: true
+  keepdot: true # required by Zsh for example
   link_on_import: link
   link_dotfile_default: link
   import_variables:
