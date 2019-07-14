@@ -1,15 +1,20 @@
 config:
   dotpath: ../dotfiles
   showdiff: true
-  link_on_import: 'link'
-  link_dotfile_default: 'link'
+  link_on_import: link
+  link_dotfile_default: link
   import_variables:
-    - variables.d/installation_utils.yaml
+    - variables.d/installation.yaml
+    - variables.d/fake.yaml
+
   import_actions:
     - actions.d/common.yaml
     - actions.d/installation.yaml
+    - actions.d/fake.yaml
+
   import_configs:
     - configs.d/organization.yaml
+    - configs.d/data.yaml
 
 ? dotfiles
 
@@ -17,5 +22,6 @@ profiles:
   kautz:
     include:
       - organization
+      - data
 
 # vim: nospell

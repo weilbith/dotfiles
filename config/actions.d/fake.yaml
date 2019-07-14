@@ -1,0 +1,7 @@
+actions:
+  pre:
+    link_permissioned: sudo ln -sf '{{@@ _dotdrop_dotpath @@}}/{0}' {1}
+  post:
+    remove_fake_file: rm -rf '{{@@ fake_file_destination @@}}'
+
+# vim: nospell

@@ -2,5 +2,15 @@ actions:
   pre:
     install_by_package_manager: '{{@@ install_package @@}} {0}'
     install_by_script: curl -s {0} | sudo bash -s - {1}
+    install_by_pip: '{{@@ install_pip @@}} {0}'
+
+  post:
+    # Mind that in the test Docker container no PID-1 systemd is available.
+    enable_start_service: >-
+      sudo systemctl 2&>1 /dev/null && 
+      (
+      sudo systemctl enable {0} &&
+      sudo systemctl start {0}
+      ) || echo
 
 # vim: nospell

@@ -1,0 +1,68 @@
+config:
+  dotpath: ../../dotfiles
+
+dotfiles:
+  git:
+    actions:
+      - install_by_package_manager git
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/git'
+    src: config/git
+
+  hub:
+    actions:
+      - install_by_package_manager hub
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/hub'
+    src: config/hub
+
+  ranger:
+    actions:
+      - install_by_package_manager ranger
+      - install_by_package_manager python-paramiko
+      - install_by_package_manager python-pillow
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/ranger'
+    src: config/ranger
+
+  udisk:
+    actions:
+      - install_by_package_manager udisks2
+      - install_by_package_manager ntfs-3g
+      - link_permissioned config/udisk/99-udisk2.rules /etc/udev/rules.d/
+      - link_permissioned config/udisk/media.conf /etc/tmpfiles.d/
+      - enable_start_service udisks2.service
+      - remove_fake_file
+    # TODO: Fix this variable shit:
+    # dst: '{{@@ fake_file_destination @@}}'
+    dst: /tmp/fake
+    # src: '{{@@ fake_file_source @@}}'
+    src: fake
+    actions:
+
+
+  bashmount:
+    actions:
+      - install_by_package_manager bashmount
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/bashmount'
+    src: config/bashmount
+
+  midnight_commander:
+    actions:
+      - install_by_package_manager mc
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/mc'
+    src: config/mc
+
+  midnight_commander_skins:
+    dst: '{{@@ env["XDG_DATA_HOME"] @@}}/mc'
+    src: config/mc/skins
+
+profiles:
+  data:
+    dotfiles:
+      - git
+      - hub
+      - ranger
+      - udisk
+      - bashmount
+      - midnight_commander # outdated in favor of ranger
+      - midnight_commander_skins # outdated in favor of ranger
+
+# vim: nospell
