@@ -10,7 +10,7 @@ dotfiles:
       - make_directory '{{@@ env["MAIL_DIR"] @@}}'
       - make_directory '{{@@ env["MUTT_CACHE"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt'
-    src: config/mutt
+    src: mutt
 
   isync:
     actions:
@@ -18,35 +18,35 @@ dotfiles:
       - install_by_package_manager gnupg
       - make_directory '{{@@ env["MAIL_DIR"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/isync'
-    src: config/isync
+    src: isync
 
   notmuch:
     actions:
       - install_by_package_manager notmuch
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/notmuch'
-    src: config/notmuch
+    src: notmuch
 
   notmuch_hooks:
     actions:
       - change_mode 700 '{{@@ env["NOTMUCH_HOOKS_DIR"] @@}}/*'
     dst: '{{@@ env["NOTMUCH_HOOKS_DIR"] @@}}'
-    src: config/notmuch/hooks
+    src: notmuch/hooks
 
   msmtp:
     actions:
       - install_by_package_manager msmtp
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/msmtp'
-    src: config/msmtp
+    src: msmtp
 
   urlscan:
     actions:
       - install_by_package_manager urlscan-git
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/urlscan'
-    src: config/urlscan
+    src: urlscan
 
   mailcap:
     dst: '{{@@ env["HOME"] @@}}/.mailcap'
-    src: config/mailcap
+    src: mailcap
 
   vdirsyncer:
     actions:
@@ -57,27 +57,27 @@ dotfiles:
       - make_directory '{{@@ env["CALENDAR_DIR"] @@}}'
       - make_directory '{{@@ env["VDIRSYNCER_CACHE"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/vdirsyncer'
-    src: config/vdirsyncer
+    src: vdirsyncer
 
   khal:
     actions:
       - install_by_package_manager khal
       - make_directory '{{@@ env["CALENDAR_DIR"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/khal'
-    src: config/khal
+    src: khal
 
   khard:
     actions:
       - install_by_package_manager khard
       - make_directory '{{@@ env["CONTACT_DIR"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/khard'
-    src: config/khard
+    src: khard
 
   orgatimer:
     actions:
       - install_by_script https://raw.githubusercontent.com/weilbith/orgatimer/master/install.sh install
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/orgatimer'
-    src: config/orgatimer
+    src: orgatimer
 
 profiles:
   organization:

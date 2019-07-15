@@ -6,13 +6,13 @@ dotfiles:
     actions:
       - install_by_package_manager git
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/git'
-    src: config/git
+    src: git
 
   hub:
     actions:
       - install_by_package_manager hub
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/hub'
-    src: config/hub
+    src: hub
 
   ranger:
     actions:
@@ -20,14 +20,14 @@ dotfiles:
       - install_by_package_manager python-paramiko
       - install_by_package_manager python-pillow
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/ranger'
-    src: config/ranger
+    src: ranger
 
   udisk:
     actions:
       - install_by_package_manager udisks2
       - install_by_package_manager ntfs-3g
-      - link_permissioned config/udisk/99-udisk2.rules /etc/udev/rules.d/
-      - link_permissioned config/udisk/media.conf /etc/tmpfiles.d/
+      - link_permissioned cudisk/99-udisk2.rules /etc/udev/rules.d/
+      - link_permissioned udisk/media.conf /etc/tmpfiles.d/
       - enable_start_service udisks2.service
       - remove_fake_file
     # TODO: Fix this variable shit:
@@ -40,17 +40,17 @@ dotfiles:
     actions:
       - install_by_package_manager bashmount
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/bashmount'
-    src: config/bashmount
+    src: bashmount
 
   midnight_commander:
     actions:
       - install_by_package_manager mc
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/mc'
-    src: config/mc
+    src: mc
 
   midnight_commander_skins:
     dst: '{{@@ env["XDG_DATA_HOME"] @@}}/mc'
-    src: config/mc/skins
+    src: mc/skins
 
 profiles:
   data:
