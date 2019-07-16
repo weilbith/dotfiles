@@ -1,6 +1,6 @@
 actions:
   post:
-    make_directory: mkdir -vp {0}
+    make_directory: mkdir -p {0}
     change_mode: chmod -R {0} {1}
 
 # vim: nospell

@@ -11,7 +11,7 @@ SyncState ~~/.cache/.cache/mbsync/
 IMAPAccount brainbot
 Host mail.brainbot.com
 User thore
-PassCmd "gpg --for-your-eyes-only --no-tty --batch -dq -r 483DA28D /home/thore/.config/mutt/accounts/brainbot_pass"
+PassCmd "gpg --for-your-eyes-only --no-tty --batch --quiet --decrypt --recipient 483DA28D /home/thore/.config/mutt/accounts/brainbot_pass"
 SSLType IMAPS
 CertificateFile ~/.config/mutt/accounts/brainbot_cert
 
@@ -41,7 +41,7 @@ Channel brainbot-inbox
 IMAPAccount private
 Host imap.1und1.de
 User thore@weilbier.net
-PassCmd "gpg --for-your-eyes-only --no-tty -dq -r 483DA28D /home/thore/.config/mutt/accounts/private_pass"
+PassCmd "gpg --for-your-eyes-only --no-tty --batch --quiet --decrypt --recipient 483DA28D /home/thore/.config/mutt/accounts/private_pass"
 SSLType IMAPS
 CertificateFile ~/.config/mutt/accounts/private_cert
 

@@ -1,5 +1,6 @@
 config:
   dotpath: ../../dotfiles
+  link_dotfile_default: link
 
 dotfiles:
   mutt:
@@ -9,26 +10,32 @@ dotfiles:
       - install_by_package_manager lynx
       - make_directory '{{@@ env["MAIL_DIR"] @@}}'
       - make_directory '{{@@ env["MUTT_CACHE"] @@}}'
+      - change_mode u+rwx,g=,o= '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt/accounts'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt'
     src: mutt
 
   isync:
     actions:
-      - install_by_package_manager gnupg
+      - install_by_package_manager isync
       - install_by_package_manager gnupg
       - make_directory '{{@@ env["MAIL_DIR"] @@}}'
+      - make_directory '{{@@ env["ISYNC_CACHE_DIR"] @@}}'
+      - make_directory '{{@@ env["ISYNC_STORE_DIR_LIST"] @@}}'
+      - isync_sync
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/isync'
     src: isync
 
   notmuch:
     actions:
       - install_by_package_manager notmuch
+      - make_directory '{{@@ env["MAIL_DIR"] @@}}'
+      - notmuch_index
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/notmuch'
     src: notmuch
 
   notmuch_hooks:
     actions:
-      - change_mode 700 '{{@@ env["NOTMUCH_HOOKS_DIR"] @@}}/*'
+      - change_mode +X '{{@@ env["NOTMUCH_HOOKS_DIR"] @@}}/*'
     dst: '{{@@ env["NOTMUCH_HOOKS_DIR"] @@}}'
     src: notmuch/hooks
 
@@ -55,7 +62,8 @@ dotfiles:
       - install_by_package_manager gnupg
       - make_directory '{{@@ env["CONTACT_DIR"] @@}}'
       - make_directory '{{@@ env["CALENDAR_DIR"] @@}}'
-      - make_directory '{{@@ env["VDIRSYNCER_CACHE"] @@}}'
+      - make_directory '{{@@ env["VDIRSYNCER_CACHE_DIR"] @@}}'
+      - vdirsyncer_sync
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/vdirsyncer'
     src: vdirsyncer
 

@@ -1,3 +1,4 @@
+# Dotfiles
 dotfiles/config/vdirsyncer/status/
 dotfiles/config/mc/panels.ini
 dotfiles/config/yarn/global/
@@ -6,3 +7,6 @@ dotfiles/config/cmus/cache
 dotfiles/config/cmus/command-history
 dotfiles/config/cmus/search-history
 dotfiles/config/cmus/lib.pl
+
+# Tests
+test/gpgkeys/

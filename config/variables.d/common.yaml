@@ -1,0 +1,11 @@
+variables:
+  yes_no_text: Continue? [yN]
+  yes_no_variable: answer
+  yes_no_question: >-
+    [[ -n "$ZSH_NAME" ]] &&
+    read -k "{{@@ yes_no_variable @@}}?{{@@ yes_no_text @@}} " ||
+    read -p "{{@@ yes_no_text @@}} " -n 1 "{{@@ yes_no_variable @@}}" &&
+    printf '\n' &&
+    [[ "${{@@ yes_no_variable @@}}" =~ ^[Yy]$ ]]
+
+# vim: nospell

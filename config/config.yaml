@@ -5,12 +5,15 @@ config:
   link_on_import: link
   link_dotfile_default: link
   import_variables:
+    - variables.d/common.yaml
     - variables.d/installation.yaml
+    - variables.d/unique.yaml
     - variables.d/fake.yaml
 
   import_actions:
     - actions.d/common.yaml
     - actions.d/installation.yaml
+    - actions.d/unique.yaml
     - actions.d/fake.yaml
 
   import_configs:
@@ -23,6 +26,6 @@ profiles:
   kautz:
     include:
       - organization
-      - data
+      # - data
 
 # vim: nospell
