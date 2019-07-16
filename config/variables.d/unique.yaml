@@ -2,6 +2,6 @@ variables:
   mail_accounts_available: test -d '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt/accounts'
   command_isync_sync: mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc" --all
   command_notmuch_index: notmuch new
-  command_vdirsyncer_sync: yes | vdirsyncer -v DEBUG discover brainbot_gsuite_calendar
+  command_vdirsyncer_sync: vdirsyncer discover brainbot_gsuite_calendar && vdirsyner sync
 
 # vim: nospell

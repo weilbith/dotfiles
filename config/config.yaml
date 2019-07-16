@@ -26,6 +26,6 @@ profiles:
   kautz:
     include:
       - organization
-      # - data
+      - data
 
 # vim: nospell

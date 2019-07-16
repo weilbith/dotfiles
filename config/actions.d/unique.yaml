@@ -3,7 +3,7 @@ actions:
     isync_sync: >-
       {{@@ mail_accounts_available @@}} &&
       (
-      printf "\nisync - Attempt to synchronize mails. " &&
+      printf "\n{{@@ _dotfile_key @@}} - Attempt to synchronize mails. " &&
       ({{@@ yes_no_question @@}}) &&
       {{@@ command_isync_sync @@}} ||
       echo "You can synchronize manually with: {{@@ command_isync_sync @@}}"
@@ -11,13 +11,13 @@ actions:
       echo "Mail account files are not available needed to synchronize. Install 'mutt' target first."
 
     notmuch_index: >-
-      printf "\nnotmuch - Attempt to index local mail directory. " &&
+      printf "\n{{@@ _dotfile_key @@}} - Attempt to index local mail directory. " &&
       ({{@@ yes_no_question @@}}) &&
       {{@@ command_notmuch_index @@}} ||
       echo "You can index manually with: {{@@ command_notmuch_index @@}}"
 
     vdirsyncer_sync: >-
-      printf "\nvdirsyncer - Attempt to synchronize contacts and calendars. " &&
+      printf "\n{{@@ _dotfile_key @@}} - Attempt to synchronize contacts and calendars. " &&
       ({{@@ yes_no_question @@}}) &&
       {{@@ command_vdirsyncer_sync @@}} ||
       echo "You can synchronize manually with: {{@@ command_vdirsyncer_sync @@}}"

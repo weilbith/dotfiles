@@ -1,5 +1,6 @@
 config:
   dotpath: ../../dotfiles
+  link_dotfile_default: link
 
 dotfiles:
   git:
@@ -11,6 +12,7 @@ dotfiles:
   hub:
     actions:
       - install_by_package_manager hub
+      - message '{{@@ _dotfile_key @@}} - Make sure to provide an access token to {{@@ env["XDG_CONFIG_HOME"] @@}}/hub!'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/hub'
     src: hub
 
@@ -60,7 +62,7 @@ profiles:
       - ranger
       - udisk
       - bashmount
-      - midnight_commander # outdated in favor of ranger
-      - midnight_commander_skins # outdated in favor of ranger
+      # - midnight_commander # outdated in favor of ranger
+      # - midnight_commander_skins # outdated in favor of ranger
 
 # vim: nospell
