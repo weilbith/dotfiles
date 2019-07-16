@@ -28,7 +28,7 @@ dotfiles:
     actions:
       - install_by_package_manager udisks2
       - install_by_package_manager ntfs-3g
-      - link_permissioned cudisk/99-udisk2.rules /etc/udev/rules.d/
+      - link_permissioned udisk/99-udisk2.rules /etc/udev/rules.d/
       - link_permissioned udisk/media.conf /etc/tmpfiles.d/
       - enable_start_service udisks2.service
       - remove_fake_file

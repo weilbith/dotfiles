@@ -20,6 +20,7 @@ config:
     - configs.d/organization.yaml
     - configs.d/data.yaml
     - configs.d/multimedia.yaml
+    - configs.d/networking.yaml
 
 ? dotfiles
 
@@ -29,5 +30,6 @@ profiles:
       - organization
       - data
       - multimedia
+      - networking
 
 # vim: nospell

@@ -1,8 +1,12 @@
 variables:
-  mail_accounts_available: test -d '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt/accounts'
+  # Commands
   command_isync_sync: mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc" --all
   command_notmuch_index: notmuch new
   command_vdirsyncer_sync: vdirsyncer discover brainbot_gsuite_calendar && vdirsyner sync
   command_mopidy_scan_local: mopidy local scan
+
+  # MISC
+  mail_accounts_available: test -d '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt/accounts'
+  networkmanager_dispatcher_dir: /etc/NetworkManager/dispatcher.d/
 
 # vim: nospell

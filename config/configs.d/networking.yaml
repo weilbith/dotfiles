@@ -1,0 +1,54 @@
+config:
+  dotpath: ../../dotfiles
+  link_dotfile_default: link
+
+dotfiles:
+  networkmanager:
+    actions:
+      - install_by_package_manager networkmanager
+      - copy_permissioned network-manager/dispatcher.d/* '{{@@ networkmanager_dispatcher_dir @@}}'
+      - change_mode u=rwx,g=rw,o=rw '{{@@ networkmanager_dispatcher_dir @@}}'
+      - message "Mention to shut down all possible other network manager services!"
+      - enable_start_service NetworkManager.service
+      - enable_start_service NetworkManager-dispatcher.service
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  macchanger:
+    actions:
+      - install_by_package_manager macchanger
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  bluetooth:
+    actions:
+      - install_by_package_manager bluez
+      - install_by_package_manager bluez-utils
+      - install_by_package_manager pulseaudio-bluetooth
+      - enable_start_service bluetooth.service
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  printing:
+    actions:
+      - install_by_package_manager cups
+      - install_by_package_manager avahi
+      - install_by_package_manager nss-mdns
+      - enable_start_service avahi-daemon.service
+      - enable_start_service org.cups.cupsd.service
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+profiles:
+  networking:
+    dotfiles:
+      - networkmanager
+      - macchanger
+      - bluetooth
+      - printing
+
+# vim: nospell
