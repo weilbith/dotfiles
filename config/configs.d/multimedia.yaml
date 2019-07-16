@@ -1,0 +1,99 @@
+config:
+  dotpath: ../../dotfiles
+  link_dotfile_default: link
+
+dotfiles:
+  feh:
+    actions:
+      - install_by_package_manager feh
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/feh'
+    src: feh
+
+  cmus:
+    actions:
+      - install_by_package_manager cmus-git
+      - install_by_package_manager alsa-lib
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/cmus'
+    src: cmus
+
+  mopidy:
+    actions:
+      - install_by_package_manager mopidy
+      - install_by_package_manager alsa-lib
+      - install_by_pip 2 Mopidy-Local-SQLite
+      - install_by_pip 2 Mopidy-YouTube
+      - make_directory '{{@@ env["MOPIDY_CACHE_DIR"] @@}}'
+      - make_directory '{{@@ env["MOPIDY_DATA_DIR"] @@}}'
+      - make_directory '{{@@ env["MOPIDY_DATABASE_DIR"] @@}}'
+      - mopidy_scan_local
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/mopidy'
+    src: mopidy
+
+  ncmpcpp:
+    actions:
+      - install_by_package_manager ncmpcpp
+      - make_directory '{{@@ env["NCMCPP_CACHE_DIR"] @@}}'
+      - make_directory '{{@@ env["NCMCPP_LYRICS_DIR"] @@}}'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/ncmpcpp'
+    src: ncmpcpp
+
+  easytag:
+    actions:
+      - install_by_package_manager easytag
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  cursedtag:
+    actions:
+      - clone_tool https://github.com/hellricer/cursedtag.git cursedtag
+      - install_by_package_manager mutagen-git
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  zathura:
+    actions:
+      - install_by_package_manager zathura
+      - install_by_package_manager zathura-pdf-mupdf
+      - install_by_package_manager tabbed
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/zathura'
+    src: zathura
+
+  gimp:
+    actions:
+      - install_by_package_manager gimp
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  rawtherapee:
+    actions:
+      - install_by_package_manager rawtherapee-git
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  vlc:
+    actions:
+      - install_by_package_manager vlc
+      - message 'Import the color theme (Tools > Prefrences > Interface > User custom skin) from {{@@ _dotdrop_dotpath @@}}/vlc'
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+profiles:
+  multimedia:
+    dotfiles:
+      - feh
+      # - cmus # depreacted in favor of Mopdidy
+      - mopidy
+      - ncmpcpp
+      # - easytag # depracted in favor of CursedTag
+      - cursedtag
+      - zathura
+      - gimp
+      - rawtherapee
+      - vlc
+
+# vim: nospell

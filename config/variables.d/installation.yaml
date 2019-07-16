@@ -7,6 +7,10 @@ variables:
     echo "Git installed."
     )
 
+  git_clone: >-
+    ({{@@ git_available @@}}) &&
+    git clone
+
   trizen_install: >-
     echo "Install trizen...";
     rm -rf /tmp/trizen;
@@ -25,5 +29,21 @@ variables:
   install_package: >-
     ({{@@ trizen_available @@}}) &&
     trizen -S --needed --noconfirm
+
+  pip2_available: >-
+    command -v pip2 > /dev/null ||
+    ({{@@ install_package @@}} python2-pip)
+
+  install_pip2: >-
+    ({{@@ pip2_available @@}}) &&
+    sudo pip2 install
+
+  pip3_available: >-
+    command -v pip3 > /dev/null ||
+    ({{@@ install_package @@}} python-pip)
+
+  install_pip3: >-
+    ({{@@ pip3_available @@}}) &&
+    sudo pip3 install
 
 # vim: nospell

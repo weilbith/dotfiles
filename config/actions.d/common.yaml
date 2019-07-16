@@ -2,6 +2,6 @@ actions:
   post:
     make_directory: mkdir -p {0}
     change_mode: chmod -R {0} {1}
-    message: echo -e "\e[1;32m{0}\e[0m"
+    message: echo -e "\e[1;32m {{@@ _dotfile_key @@}} - {0}\e[0m"
 
 # vim: nospell

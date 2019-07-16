@@ -1,0 +1,40 @@
+# Output.
+set output_plugin=alsa
+set dsp.alsa.device=default
+set mixer.alsa.device=default
+set mixer.alsa.channel=Master
+
+# Formatting
+set format_current= 奈 %a - %t [%l]
+set format_title=%a - %t [%l]
+set format_treewin_artist= %a
+set format_trackwin_album= %l
+set format_trackwin=   %2n. %t
+set format_statusline=  %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}- %{total} %{?stream?buf: %{buffer} }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle}
+
+# Mapping
+bind -f common space player-pause
+bind -f common ^N player-next
+bind -f common ^P player-prev
+bind -f common j win-down
+bind -f common k win-up
+bind -f common h win-next
+bind -f common l win-next
+bind -f common ^U win-page-up
+bind -f common ^D win-page-down
+bind -f common g win-top
+bind -f common G win-bottom
+bind -f common r toggle repeat
+bind -f common R toggle repeat_current
+bind -f common s toggle shuffle
+bind -f common c toggle continue
+bind -f common m toggle aaa_mode
+bind -f common n search-next
+bind -f common N search-prev
+bind -f common . win-sel-cur
+bind -f common q :quit
+
+# MISC
+colorscheme blueplanet
+set start_view=tree
+set status_display_program=/home/thore/.cache/powerstatus10k/segments/powerstatus10k_cmus/hook.sh

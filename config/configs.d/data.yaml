@@ -12,7 +12,7 @@ dotfiles:
   hub:
     actions:
       - install_by_package_manager hub
-      - message '{{@@ _dotfile_key @@}} - Make sure to provide an access token to {{@@ env["XDG_CONFIG_HOME"] @@}}/hub!'
+      - message 'Make sure to provide an access token to {{@@ env["XDG_CONFIG_HOME"] @@}}/hub!'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/hub'
     src: hub
 

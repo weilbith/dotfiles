@@ -19,6 +19,7 @@ config:
   import_configs:
     - configs.d/organization.yaml
     - configs.d/data.yaml
+    - configs.d/multimedia.yaml
 
 ? dotfiles
 
@@ -27,5 +28,6 @@ profiles:
     include:
       - organization
       - data
+      - multimedia
 
 # vim: nospell

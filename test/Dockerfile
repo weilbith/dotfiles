@@ -23,10 +23,14 @@ RUN chown -R "$USER:$USER" "$HOME"
 
 USER $USER
 WORKDIR $HOME
-COPY --chown=thore . $DOTDROP_DIR
 
+# Import GPG keys
+COPY --chown=thore ./test $DOTDROP_DIR/test
 RUN bash "$DOTDROP_DIR/test/scripts/import_gpg_keys.sh"
-RUN export GPG_TTY=$(tty)
+
+# Get the Dotdrop relevant data
+COPY --chown=thore ./dotfiles $DOTDROP_DIR/dotfiles
+COPY --chown=thore ./config $DOTDROP_DIR/config
 
 # Unfortunatley making the required evironment available via bashrc do not work.
 CMD ["bash", "-c", "set -a && source ~/dotfiles/config/env && source ~/venv/bin/activate && dotdrop install"]

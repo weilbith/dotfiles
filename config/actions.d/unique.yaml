@@ -5,7 +5,7 @@ actions:
       (
       printf "\n{{@@ _dotfile_key @@}} - Attempt to synchronize mails. " &&
       ({{@@ yes_no_question @@}}) &&
-      {{@@ command_isync_sync @@}} ||
+      ({{@@ command_isync_sync @@}}) ||
       echo "You can synchronize manually with: {{@@ command_isync_sync @@}}"
       ) ||
       echo "Mail account files are not available needed to synchronize. Install 'mutt' target first."
@@ -13,13 +13,23 @@ actions:
     notmuch_index: >-
       printf "\n{{@@ _dotfile_key @@}} - Attempt to index local mail directory. " &&
       ({{@@ yes_no_question @@}}) &&
-      {{@@ command_notmuch_index @@}} ||
+      ({{@@ command_notmuch_index @@}}) ||
       echo "You can index manually with: {{@@ command_notmuch_index @@}}"
 
     vdirsyncer_sync: >-
       printf "\n{{@@ _dotfile_key @@}} - Attempt to synchronize contacts and calendars. " &&
       ({{@@ yes_no_question @@}}) &&
-      {{@@ command_vdirsyncer_sync @@}} ||
+      ({{@@ command_vdirsyncer_sync @@}}) ||
       echo "You can synchronize manually with: {{@@ command_vdirsyncer_sync @@}}"
+
+    mopidy_scan_local: >-
+      printf "\n{{@@ _dotfile_key @@}} - Attempt to scan local audio files for database. " &&
+      ({{@@ yes_no_question @@}}) &&
+      (
+      ([[ -z "$(ps a | grep /usr/bin/mopidy | grep -v grep)" ]] && mopidy & );
+      {{@@ command_mopidy_scan_local @@}};
+      pkill mopidy
+      ) ||
+      echo "You can scan manually with: {{@@ command_mopidy_scan_local @@}}"
 
 # vim: nospell
