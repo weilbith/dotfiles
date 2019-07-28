@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=TransShell
+Comment=CLI based translation tool
+Exec=kitty --detach --class TransShell sh -c "trans --shell"
+Type=Application

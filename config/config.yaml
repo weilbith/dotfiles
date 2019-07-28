@@ -21,6 +21,7 @@ config:
     - configs.d/data.yaml
     - configs.d/multimedia.yaml
     - configs.d/networking.yaml
+    - configs.d/session.yaml
 
 ? dotfiles
 
@@ -31,5 +32,6 @@ profiles:
       - data
       - multimedia
       - networking
+      - session
 
 # vim: nospell

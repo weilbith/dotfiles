@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Powerstatus10k
+GenericName=Powerful statusbar
+Exec=powerstatus10k
+Terminal=false
+Type=Application

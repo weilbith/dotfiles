@@ -1,12 +1,12 @@
 # Dotfiles
-dotfiles/config/vdirsyncer/status/
-dotfiles/config/mc/panels.ini
-dotfiles/config/yarn/global/
-dotfiles/config/cmus/autosave
-dotfiles/config/cmus/cache
-dotfiles/config/cmus/command-history
-dotfiles/config/cmus/search-history
-dotfiles/config/cmus/lib.pl
+dotfiles/vdirsyncer/status/
+dotfiles/mc/panels.ini
+dotfiles/yarn/global/
+dotfiles/cmus/autosave
+dotfiles/cmus/cache
+dotfiles/cmus/command-history
+dotfiles/cmus/search-history
+dotfiles/cmus/lib.pl
 
 # Tests
 test/gpgkeys/

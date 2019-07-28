@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=NeoVim
+Comment=CLI based text editor
+Exec=kitty --detach --class NeoVim nvim
+Type=Application

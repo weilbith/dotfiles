@@ -32,4 +32,12 @@ actions:
       ) ||
       echo "You can scan manually with: {{@@ command_mopidy_scan_local @@}}"
 
+    # cerebro_place_appimage: >-
+    #   mkdir -p {{@@ cerebro_appimage_location @@}} &&
+    #   find {{@@ _dotdrop_dotpath @@}}/cerebro -type f -name '*.AppImage' \
+    #   -exec ln -sf {} {{@@ cerebro_appimage_location @@}}/
+    #
+    # cerebro_start_temporally: >-
+    #   TODO: start, sleep short, stop, install npm packages
+
 # vim: nospell

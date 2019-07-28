@@ -1,0 +1,114 @@
+config:
+  dotpath: ../../dotfiles
+  link_dotfile_default: link
+
+dotfiles:
+  x11_basics:
+    actions:
+      - install_by_package_manager xorg
+      - install_by_package_manager xsel
+      - install_by_package_manager xclip
+      - install_by_package_manager xbindkeys
+      - install_by_package_manager xdotool
+      - install_by_package_manager xautolock
+      - install_by_package_manager i3-lock-color
+      - link_permissioned X11/xorg.conf.d /etc/X11/
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/X11'
+    src: X11
+
+  i3:
+    actions:
+      - install_by_package_manager i3-gaps
+      - install_by_package_manager compton
+      - install_by_package_manager dmenu
+      - install_by_package_manager xf86-input-synaptics
+      - install_by_package_manager pulseaudio
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/i3'
+    src: i3
+
+  dunst:
+    actions:
+      - install_by_package_manager dunst
+      - install_by_package_manager dmenu
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/dunst'
+    src: dunst
+
+  redshift:
+    actions:
+      - install_by_package_manager redshift-minimal
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/redshift'
+    src: redshift
+
+  ssh:
+    actions:
+      - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/ssh'
+    dst: '{{@@ env["HOME"] @@}}/.ssh/'
+    link: link_children
+    src: ssh
+
+  autorandr:
+    actions:
+      - install_by_package_manager autorandr
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/autorandr'
+    src: autorandr
+
+  powerstatus10k:
+    actions:
+      - install_by_script https://raw.githubusercontent.com/weilbith/powerstatus10k/master/install.sh install
+      - install_by_package_manager nerd-fonts-source-code-pro
+      - install_by_package_manager inotify-tools
+      - install_by_package_manager bluez-tools
+      - install_by_package_manager python
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/powerstatus10k'
+    src: powerstatus10k
+
+  autostart:
+    actions:
+      - install_by_package_manager dex
+      - install_by_package_manager xautolock
+      - install_by_package_manager i3-lock-color
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/autostart'
+    src: autostart
+
+  xdg_dirs:
+    actions:
+      - install_by_package_manager xdg-user-dirs
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/'
+    link: link_children
+    src: user-dirs
+
+  desktop_files:
+    actions:
+      - link_permissioned desktop-entries/* /usr/share/applications/
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  cerebro:
+    actions:
+      - install_by_package_manager nodejs
+      - install_by_package_manager yarn
+      - install_by_package_manager fuse
+      - install_by_package_manager readline
+      # - cerebro_place_appimage
+      # - cerebro_start_temporally
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/Cerebro'
+    link: link_children
+    src: cerebo
+
+profiles:
+  networking:
+    dotfiles:
+      - x11_basics
+      - i3
+      - dunst
+      - redshift
+      - ssh
+      - autorandr
+      - powerstatus10k
+      - autostart
+      - xdg_dirs
+      - desktop_files
+      - cerebro
+
+# vim: nospell

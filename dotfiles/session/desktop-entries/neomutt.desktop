@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Neomutt
+Comment=CLI based mail interface
+Exec=kitty --detach --class NeoMutt sh -c "neomutt && notmuch new"
+Type=Application
