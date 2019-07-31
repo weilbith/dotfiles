@@ -8,10 +8,11 @@ robbyrussell/oh-my-zsh path:plugins/colored-man-pages
 robbyrussell/oh-my-zsh path:plugins/npm
 robbyrussell/oh-my-zsh path:plugins/docker
 
-# Other plugins.
-zsh-users/zsh-syntax-highlighting
+# Completion
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
+hlissner/zsh-autopair
 
-# Completion
-#deadc0de6/dotdrop path:completion/_dotdrop-completion.zsh
+# MISC
+romkatv/powerlevel10k
+zsh-users/zsh-syntax-highlighting

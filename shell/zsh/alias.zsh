@@ -29,13 +29,13 @@ function createScriptAliases {
 createScriptAliases $SCRIPT_DIR
 
 # Define some more alias manually.
-command -v startx>/dev/null && alias -g startx="startx $XDG_CONFIG_HOME/X11/xinitrc"
-command -v tmux>/dev/null && alias -g tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
-command -v mbsync>/dev/null && alias -g mbsync="mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc"
-command -v exa>/dev/null && alias -g ls="exa"
-command -v bat>/dev/null && alias -g cat="bat --paging never --theme DarkNeon"
-command -v gpg>/dev/null && alias -g gpg="gpg --homedir $XDG_CONFIG_HOME/gnupg"
-command -v hub>/dev/null && alias -g git="hub"
+command -v startx > /dev/null && alias -g startx="startx $XDG_CONFIG_HOME/X11/xinitrc"
+command -v tmux > /dev/null && alias -g tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
+command -v mbsync > /dev/null && alias -g mbsync="mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc"
+command -v exa > /dev/null && alias -g ls="exa"
+command -v bat > /dev/null && alias -g cat="bat --paging never --theme DarkNeon"
+command -v gpg > /dev/null && alias -g gpg="gpg --homedir $XDG_CONFIG_HOME/gnupg"
+command -v hub > /dev/null && alias -g git="hub"
 
 cursedtag="$HOME/Tools/cursedtag/cursedtag"
 [[ -f "$cursedtag" ]] && alias -g ct="bash $cursedtag"

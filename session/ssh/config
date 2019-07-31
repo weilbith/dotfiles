@@ -10,12 +10,17 @@ host gitlab.tubit.tu-berlin.de
   User git
   IdentityFile ~/.ssh/tu_gitlab
 
-host twcths.ddns.net
+host cubietruck
   HostName cubietruck
   User weilbith
   IdentityFile ~/.ssh/cubietruck
 
 host ibot
   HostName 134.209.253.144
+  User root
+  IdentityFile ~/.ssh/give_away
+
+host masterthesis
+  HostName 167.71.61.72
   User root
   IdentityFile ~/.ssh/give_away

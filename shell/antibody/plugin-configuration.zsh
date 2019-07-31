@@ -1,22 +1,30 @@
-# Powerline9k configurations
-## Define the font mode to use (have to be loaded before the theme source).
+# Oh-My-Zsh
+DISABLE_AUTO_UPDATE=true # Antibody handle this.
+
+# Zsh Autosuggestion
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=32'
+bindkey '^[\r' autosuggest-execute # Alt + Return
+bindkey '^[\t' autosuggest-accept # Alt + Tab
+
+# Zsh Syntax Highlighting
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=191'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=191'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=191'
+ZSH_HIGHLIGHT_STYLES[function]='fg=191'
+ZSH_HIGHLIGHT_STYLES[command]='fg=191'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=191'
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=191'
+
+
+# Powerlevel
 POWERLEVEL9K_MODE='nerdfont-complete'
-
-## Source the theme itself.
-source /usr/share/zsh-theme-powerlevel10k/gitstatus/gitstatus.plugin.zsh
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-## Increase the segment distance (one space is default).
-POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS=" "
-POWERLEVEL9K_WHITESPACE_BETWEEN_RIGHT_SEGMENTS=" "
 
 ## Use the improved gitstatus tool for the VCS segement.
 POWERLEVEL9K_VCS_STATUS_COMMAND=gitstatus_query_dir
 
-
-## The segements.
+## The Segements
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon custom_user custom_host dir custom_writable newline vcs vi_mode)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv node_version status command_execution_time aws newline custom_dockerhub)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv node_version status command_execution_time aws custom_dockerhub)
 
 ## Custom Segments
 ### User
@@ -52,6 +60,8 @@ POWERLEVEL9K_CUSTOM_WRITABLE="powerlevel9k_custom_writable"
 POWERLEVEL9K_CUSTOM_WRITABLE_BACKGROUND="9"
 POWERLEVEL9K_CUSTOM_WRITABLE_FOREGROUND="15"
 
+## ---
+
 
 ### DockerHub
 powerlevel9k_custom_dockerhub() {
@@ -68,16 +78,14 @@ POWERLEVEL9K_CUSTOM_DOCKERHUB_FOREGROUND="15"
 
 
 ## Standard Segments
-### OS Segment
+### OS
 POWERLEVEL9K_OS_ICON_BACKGROUND="24"
 POWERLEVEL9K_OS_ICON_FOREGROUND="15"
 
 ### VI Mode Segment
-#### Mode Symbols
 POWERLEVEL9K_VI_INSERT_MODE_STRING="🅘"
 POWERLEVEL9K_VI_COMMAND_MODE_STRING="🅝"
 
-#### Colors
 POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND="191"
 POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND="239"
 
@@ -88,12 +96,10 @@ POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND="15"
 
 
 ### Dir Segment
-#### Short Path
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_SHORTEN_DELIMITER=".."
 
-#### Colors
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="239"
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="15"
 
@@ -103,7 +109,6 @@ POWERLEVEL9K_DIR_HOME_FOREGROUND="15"
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="239"
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="15"
 
-#### Icons & Separators
 POWERLEVEL9K_HOME_ICON="\uf07b"
 POWERLEVEL9K_DIR_PATH_SEPARATOR_ICON="\uE0BB"
 POWERLEVEL9K_DIR_PATH_SEPARATOR=" $(print_icon 'DIR_PATH_SEPARATOR_ICON') "
@@ -112,15 +117,15 @@ POWERLEVEL9K_HOME_FOLDER_ABBREVIATION=""
 ### ---
 
 
-### Command Execution Time Segment
+### Command Execution Time
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="81"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="239"
 
-### AWS Segment
+### AWS
 AWS_DEFAULT_PROFILE="tw_edu"
 POWERLEVEL9K_AWS_BACKGROUND="32"
 POWERLEVEL9K_AWS_FOREGROUND="15"
 
-### Node Version Segment
+### Node Version
 POWERLEVEL9K_NODE_VERSION_PROJECT_ONLY=true

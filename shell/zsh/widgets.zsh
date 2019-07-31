@@ -6,6 +6,10 @@
 #   $1 - argument for fasd defining the source and for the related fzf command
 #
 fasd_fzf_helper() {
+  if ! command -v fzf > /dev/null || ! command -v fasd > /dev/null; then
+    return
+  fi
+
   local args=(${(z)LBUFFER})
   local cmd="${args[1]}"
 
