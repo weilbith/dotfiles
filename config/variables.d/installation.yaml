@@ -9,7 +9,7 @@ variables:
 
   git_clone: >-
     ({{@@ git_available @@}}) &&
-    git clone
+    git clone --depth 1
 
   trizen_install: >-
     echo "Install trizen...";

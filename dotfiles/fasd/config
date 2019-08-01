@@ -1,0 +1,5 @@
+_FASD_DATA=$XDG_DATA_HOME/fasd/data
+_FASD_VIMINFO=$XDG_DATA_HOME/nvim/files/info/viminfo
+_FASD_BACKENDS="native"
+
+# vim: filetype=sh

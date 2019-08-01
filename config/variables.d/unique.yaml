@@ -4,6 +4,7 @@ variables:
   command_notmuch_index: notmuch new
   command_vdirsyncer_sync: vdirsyncer discover brainbot_gsuite_calendar && vdirsyner sync
   command_mopidy_scan_local: mopidy local scan
+  command_zsh_set_as_default_shell: grep -q 'zsh' < /etc/shells && chsh -s "$(command -v zsh)"
 
   # MISC
   mail_accounts_available: test -d '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt/accounts'

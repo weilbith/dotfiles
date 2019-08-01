@@ -33,6 +33,6 @@ COPY --chown=thore ./dotfiles $DOTDROP_DIR/dotfiles
 COPY --chown=thore ./config $DOTDROP_DIR/config
 
 # Unfortunatley making the required evironment available via bashrc do not work.
-CMD ["bash", "-c", "set -a && source ~/dotfiles/config/env && source ~/venv/bin/activate && dotdrop install"]
+ENTRYPOINT ["bash", "-c", "set -a && source ~/dotfiles/config/env && source ~/venv/bin/activate && dotdrop install"]
 
 # vim: nospell

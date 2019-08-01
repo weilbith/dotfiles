@@ -41,6 +41,7 @@ dotfiles:
 
   ssh:
     actions:
+      - install_by_package_manager openssh
       - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/ssh'
     dst: '{{@@ env["HOME"] @@}}/.ssh/'
     link: link_children

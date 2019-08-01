@@ -1,0 +1,104 @@
+config:
+  dotpath: ../../dotfiles
+  link_dotfile_default: link
+  keepdot: true # Required for zsh
+
+dotfiles:
+  kitty:
+    actions:
+      - install_by_package_manager kitty
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/kitty'
+    src: kitty
+
+  zsh:
+    actions:
+      - install_by_package_manager zsh
+      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/zsh'
+      - zsh_set_configuration_directory
+      - zsh_set_as_default_shell
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/zsh'
+    src: zsh
+
+  antibody:
+    actions:
+      - install_by_package_manager antibody
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/zsh'
+    src: zsh
+
+  tmux:
+    actions:
+      - install_by_package_manager tmux
+      - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/tmux/plugins'
+      - clone_free https://github.com/weilbith/tpm.git '{{@@ env["XDG_CACHE_HOME"] @@}}/tmux/plugins/tpm'
+      - message 'Make sure to install the plugins via the plugin manager using `prefix + I`.'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/tmux'
+    src: tmux
+
+  fzf:
+    actions:
+      - install_by_package_manager fzf
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/fzf'
+    src: fzf
+
+  fasd:
+    actions:
+      - install_by_package_manager fasd-git
+      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/fasd'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/fasd'
+    src: fasd
+
+  cheatsh:
+    actions:
+      - install_by_package_manager cht.sh
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/chtsh'
+    src: chtsh
+
+  translate_shell:
+    actions:
+      - install_by_package_manager translate-shell
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/translate-shell'
+    src: translate-shell
+
+  broot:
+    actions:
+      - install_by_package_manager broot
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/broot'
+    link: link_children
+    src: broot
+
+  wget:
+    actions:
+      - install_by_package_manager wget
+      - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/wget'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/wget'
+    src: wget
+
+  tool_collection:
+    actions:
+      - install_by_package_manager ripgrep
+      - install_by_package_manager exa
+      - install_by_package_manager bat
+      - install_by_package_manager htop
+      - install_by_package_manager pdfgrep
+      - install_by_package_manager nmon
+      - install_by_package_manager wuzz
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+profiles:
+  shell:
+    dotfiles:
+      - kitty
+      - zsh
+      - antibody
+      - tmux
+      - fzf
+      - fasd
+      - cheatsh
+      - translate_shell
+      - broot
+      - wget
+      - tool_collection
+
+# vim: nospell

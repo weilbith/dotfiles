@@ -1,0 +1,18 @@
+# Oh-My-Zsh Basics
+robbyrussell/oh-my-zsh path:lib
+
+# Oh-My-Zsh Plugins
+robbyrussell/oh-my-zsh path:plugins/vi-mode
+robbyrussell/oh-my-zsh path:plugins/git
+robbyrussell/oh-my-zsh path:plugins/colored-man-pages
+robbyrussell/oh-my-zsh path:plugins/npm
+robbyrussell/oh-my-zsh path:plugins/docker
+
+# Completion
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+hlissner/zsh-autopair
+
+# MISC
+romkatv/powerlevel10k
+zsh-users/zsh-syntax-highlighting

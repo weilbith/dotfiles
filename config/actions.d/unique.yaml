@@ -32,6 +32,15 @@ actions:
       ) ||
       echo "You can scan manually with: {{@@ command_mopidy_scan_local @@}}"
 
+    zsh_set_configuration_directory: >-
+      echo 'ZDOTDIR={{@@ env["XDG_CONFIG_HOME"] @@}}/zsh' | sudo tee -a /etc/zsh/zshenv
+
+    zsh_set_as_default_shell: >-
+      printf "\n{{@@ _dotfile_key @@}} - Attempt to set 'zsh' as default shell. " &&
+      ({{@@ yes_no_question @@}}) &&
+      ({{@@ command_zsh_set_as_default_shell @@}}) ||
+      echo "You can set it manually with: {{@@ command_zsh_set_as_default_shell @@}}"
+
     # cerebro_place_appimage: >-
     #   mkdir -p {{@@ cerebro_appimage_location @@}} &&
     #   find {{@@ _dotdrop_dotpath @@}}/cerebro -type f -name '*.AppImage' \

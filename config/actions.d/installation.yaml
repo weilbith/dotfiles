@@ -7,6 +7,7 @@ actions:
       elif [[ {0} -eq 3 ]]; then ({{@@ install_pip3 @@}} {1});
       fi
 
+    clone_free: 'mkdir -p $(dirname {1}) && {{@@ git_clone @@}} {0} {1}'
     clone_tool: '{{@@ git_clone @@}} {0} {{@@ env["TOOLS_DIR"] @@}}/{1}'
 
   post:
