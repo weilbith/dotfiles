@@ -1,7 +1,6 @@
 # shellcheck disable=2116
 
-# Start TMux on startup if it is available (mention the possible alias).
-if [[ -n "$(echo tmux)" ]] || command -v tmux >/dev/null; then
+if type "tmux" >/dev/null; then
   # List of default TMux session names.
   SESSION_NAMES=(Berlin Amsterdam London Paris Rom Florence Edinburgh)
 
