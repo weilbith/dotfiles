@@ -70,9 +70,8 @@ dotfiles:
   rawtherapee:
     actions:
       - install_by_package_manager rawtherapee-git
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/RawTherapee'
+    src: RawTherapee
 
   vlc:
     actions:
