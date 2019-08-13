@@ -98,7 +98,7 @@ dotfiles:
     src: cerebo
 
 profiles:
-  networking:
+  session:
     dotfiles:
       - x11_basics
       - i3

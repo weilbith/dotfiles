@@ -9,4 +9,4 @@ dotfiles/cmus/search-history
 dotfiles/cmus/lib.pl
 
 # Tests
-test/gpgkeys/
+tests/gpgkeys/

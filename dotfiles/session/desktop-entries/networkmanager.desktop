@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=NetworkManager
-Comment=CLI based network manager
-Exec=kitty --detach --class NetworkManager nmtui
-Type=Application

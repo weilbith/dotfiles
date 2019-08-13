@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Bashmount
-Comment=CLI based device manager
-Exec=kitty --detach --class BashMount bashmount
-Type=Application

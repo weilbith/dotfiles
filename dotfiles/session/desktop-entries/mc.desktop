@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Midnight Commander
-Comment=CLI based file explorer
-Exec=kitty --detach --class MidnightCommander mc ~/
-Type=Application

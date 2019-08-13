@@ -14,6 +14,8 @@ function createScriptAliases {
   local name
   local ext
 
+  [[ ! -d "$1" ]] && return
+
   for file in $1/* ; do
     ext=$file:e
 

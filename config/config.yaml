@@ -23,6 +23,7 @@ config:
     - configs.d/networking.yaml
     - configs.d/session.yaml
     - configs.d/shell.yaml
+    - configs.d/writing.yaml
 
 ? dotfiles
 
@@ -35,5 +36,6 @@ profiles:
       - networking
       - session
       - shell
+      - writing
 
 # vim: nospell
