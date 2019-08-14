@@ -97,6 +97,14 @@ dotfiles:
     link: link_children
     src: cerebo
 
+  ntp:
+    actions:
+      - install_by_package_manager ntp
+      - enable_start_service ntpd.service
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
 profiles:
   session:
     dotfiles:
