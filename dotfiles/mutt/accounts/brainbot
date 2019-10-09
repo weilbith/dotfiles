@@ -6,6 +6,7 @@ set mbox_type = Maildir
 set folder = "$my_folder"
 set spoolfile = "$my_folder/inbox"
 set from = "thore.weilbier@brainbot.de"
+set signature = ~/.config/mutt/accounts/brainbot_signature
 
 set virtual_spoolfile
 
