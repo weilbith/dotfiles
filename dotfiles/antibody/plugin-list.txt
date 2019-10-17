@@ -16,3 +16,5 @@ hlissner/zsh-autopair
 # MISC
 romkatv/powerlevel10k
 zsh-users/zsh-syntax-highlighting
+DarrinTisdale/zsh-aliases-exa
+arzzen/calc.plugin.zsh
