@@ -16,12 +16,17 @@ function createScriptAliases {
 
   [[ ! -d "$1" ]] && return
 
-  for file in $1/* ; do
+  for file in $1/**/* ; do
     ext=$file:e
 
-    if [[ $ext = 'sh' || $ext = 'zsh' ]] ; then
+    if [[ ! -f "$file" ]]; then
+      continue
+    fi
+
+    if [[ $ext = 'sh' || $ext = 'zsh' || $ext = 'py' || $ext = '' ]] ; then
       name=${${file:t}%.*}
-      alias -g $name="$file"
+      name_adjusted="${name/_/-}"
+      alias -g $name_adjusted="$file"
     fi
   done
 }
