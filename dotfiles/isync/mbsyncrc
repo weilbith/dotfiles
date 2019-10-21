@@ -21,8 +21,8 @@ Account brainbot
 
 # Local
 MaildirStore brainbot-local
-Path ~/Mail/brainbot/
-Inbox ~/Mail/brainbot/Inbox
+Path ~/mails/brainbot/
+Inbox ~/mails/brainbot/Inbox
 
 Channel brainbot-inbox
 Master :brainbot-remote:"Inbox"
@@ -51,8 +51,8 @@ Account private
 
 # Local
 MaildirStore private-local
-Path ~/Mail/private/
-Inbox ~/Mail/private/Inbox
+Path ~/mails/private/
+Inbox ~/mails/private/Inbox
 
 Channel private-inbox
 Master :private-remote:"Inbox"

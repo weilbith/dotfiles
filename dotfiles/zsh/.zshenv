@@ -38,11 +38,16 @@ export LESSHISTFILE=$XDG_DATA_DIR/less/history
 export GRADLE_USER_HOME=$XDG_DATA_HOME/gradle
 export CARGO_HOME=$XDG_DATA_HOME/cargo
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
+export GOPATH=$XDG_DATA_HOME/go
 
 ## Runtime
 export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
 export RXVT_SOCKET=$XDG_RUNTIME_DIR/urxvtd
 
 
-# Path
-export PATH=$PATH:~/.local/bin
+# Alias
+## Source them here for supporting non-interactive shells
+## The problem is that the `.zshrc` is only loaded in interactive mode.
+## Processes like i3, xbindkeys, xautolock etc. will/can not spawn an
+## interactive Zsh. But they need access to the aliases.
+source $ZDOTDIR/alias.zsh

@@ -26,16 +26,27 @@
 # ---
 
 
+# Music Control
+"zsh -c 'control-music toggle_play'"
+  XF86AudioPlay
+
+"zsh -c 'control-music next'"
+  XF86AudioNext
+
+"zsh -c 'control-music previous'"
+  XF86AudioPrev
+
+
 # Display
 ## Monitor setup
 "autorandr --change"
   Mod4 + F4
 
 ## Internal monitor brightness
-"sudo ~/.scripts/brightness.sh up"
+"zsh -c 'sudo control-brightness up'"
   XF86MonBrightnessUp
 
-"sudo ~/.scripts/brightness.sh down"
+"zsh -c 'sudo control-brightness down'"
   XF86MonBrightnessDown
 
 # ---
@@ -69,8 +80,12 @@
 "kitty"
   Mod4 + Return
 
+## Rofi
+"rofi -no-lazy-grab -show drun"
+  Mod4 + semicolon
+
 ## Take a screenshot
-"bash $HOME/.scripts/screenshot.sh"
+"zsh -c take-screenshot"
   Print
 
 

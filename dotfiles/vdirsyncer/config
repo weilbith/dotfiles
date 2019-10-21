@@ -29,7 +29,7 @@
 
   [storage brainbot_gsuite_calendar_local]
     type = "filesystem"
-    path = "/home/thore/Calendars/brainbot_gsuite"
+    path = "/home/thore/calendars/brainbot_gsuite"
     fileext = ".ics"
 
   [storage brainbot_gsuite_calendar_remote]
@@ -69,7 +69,7 @@
 
   [storage nextcloud_calendars_local]
     type = "filesystem"
-    path = "/home/thore/Calendars/nextcloud"
+    path = "/home/thore/calendars/nextcloud"
     fileext = ".ics"
 
   [storage nextcloud_calendars_remote]

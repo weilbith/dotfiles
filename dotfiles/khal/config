@@ -1,11 +1,11 @@
 [calendars]
   [[brainbot_gsuite]]
-    path = /home/thore/Calendars/brainbot_gsuite/*
+    path = /home/thore/calendars/brainbot_gsuite/*
     type = discover
     color = dark red
 
   [[nextcloud]]
-    path = /home/thore/Calendars/nextcloud/*
+    path = /home/thore/calendars/nextcloud/*
     type = discover
     color = light blue
 

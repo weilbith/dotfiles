@@ -1,5 +1,5 @@
 # Global variables
-set my_mail_folder = "/home/thore/Mail"
+set my_mail_folder = "/home/thore/mails"
 set my_virtual_query_base = "notmuch://?query"
 
 # Notmuch

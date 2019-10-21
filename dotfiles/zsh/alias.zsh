@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Variables
-SCRIPT_DIR=$HOME/.scripts # The directory where the scripts are placed.
+SCRIPT_DIR=$HOME/tools/scripts # The directory where the scripts are placed.
 
 
 # Function to create alias for each script in a defined folder.

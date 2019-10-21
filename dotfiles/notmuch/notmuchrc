@@ -1,5 +1,5 @@
 [database]
-path=Mail
+path=mails
 
 [user]
 name=Thore Weilbier

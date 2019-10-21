@@ -1,3 +1,4 @@
+/home/thore/.config/zsh/alias.zsh:9: condition expected: $ext
 #!/bin/bash
 
 # Specify X11 configuration files.
@@ -9,9 +10,6 @@ XBINDKEYS=$XDG_CONFIG_HOME/X11/xbindkeysrc
 [[ -f "$XRESOURCES" ]] && xrdb -merge "$XRESOURCES"
 [[ -f "$XMODMAP" ]] && xmodmap "$XMODMAP"
 [[ -f "$XBINDKEYS" ]] && xbindkeys --file "$XBINDKEYS"
-
-# Setups
-xdg-user-dirs-update
 
 # Daemons
 unclutter &
