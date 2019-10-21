@@ -12,18 +12,11 @@ SCRIPT_DIR=$HOME/tools/scripts # The directory where the scripts are placed.
 #
 function createScriptAliases {
   local name
-  local ext
 
   [[ ! -d "$1" ]] && return
 
   for file in $1/**/* ; do
-    ext=$file:e
-
-    if [[ ! -f "$file" ]]; then
-      continue
-    fi
-
-    if [[ $ext = 'sh' || $ext = 'zsh' || $ext = 'py' || $ext = '' ]] ; then
+    if [[ -f "$file" ]] && [[ -x "$file" ]]; then
       name=${${file:t}%.*}
       name_adjusted="${name/_/-}"
       alias -g $name_adjusted="$file"
