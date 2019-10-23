@@ -1,3 +1,13 @@
+# Get an instant prompt
+local prompt_cache_file="$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh"
+
+if [[ -r "$prompt_cache_file" ]]; then
+  source "$prompt_cache_file"
+fi
+
+# ---
+
+
 # Zsh specific configurations
 bindkey -v
 setopt vi

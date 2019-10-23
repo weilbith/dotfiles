@@ -38,3 +38,5 @@ command -v gpg > /dev/null && alias -g gpg="gpg --homedir $XDG_CONFIG_HOME/gnupg
 
 cursedtag="$HOME/Tools/cursedtag/cursedtag"
 [[ -f "$cursedtag" ]] && alias -g ct="bash $cursedtag"
+
+return 0
