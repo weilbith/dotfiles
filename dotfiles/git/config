@@ -25,7 +25,7 @@
   keepBackup = false
 
 [mergetool "fugitive"]
-  cmd = nvim -f -c \"Gdiff\" \"$MERGED\"
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 
 [filter "black"]
   clean = black -
