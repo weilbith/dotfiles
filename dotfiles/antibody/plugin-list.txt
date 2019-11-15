@@ -5,8 +5,9 @@ robbyrussell/oh-my-zsh path:lib
 robbyrussell/oh-my-zsh path:plugins/vi-mode
 robbyrussell/oh-my-zsh path:plugins/git
 robbyrussell/oh-my-zsh path:plugins/colored-man-pages
-robbyrussell/oh-my-zsh path:plugins/npm
 robbyrussell/oh-my-zsh path:plugins/docker
+robbyrussell/oh-my-zsh path:plugins/npm
+robbyrussell/oh-my-zsh path:plugins/sudo
 
 # Completion
 zsh-users/zsh-autosuggestions
@@ -17,4 +18,5 @@ hlissner/zsh-autopair
 romkatv/powerlevel10k
 zsh-users/zsh-syntax-highlighting
 DarrinTisdale/zsh-aliases-exa
-arzzen/calc.plugin.zsh
+darvid/zsh-poetry kind:poetry.zsh
+# changyuheng/zsh-interactive-cd

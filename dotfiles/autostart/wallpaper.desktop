@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Wallpaper
 GenericName=Set the X11 wallaper
-Exec=feh --bg-scale --no-fehbg /thore/images/wallpapers/wallpaper.png
+Exec=feh --bg-scale --no-fehbg /home/thore/images/wallpapers/wallpaper.png
 Terminal=false
 Type=Application

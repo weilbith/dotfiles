@@ -34,6 +34,12 @@ dotfiles:
     dst: /tmp/fake
     src: fake
 
+  languagetool:
+    actions:
+      - install_by_package_manager languagetool
+    dst: '{{@@ env["XDG_CONFIG_HOME"]}}/'
+    src: languagetool.cfg
+
   linting:
     actions:
       - install_by_package_manager shellcheck # Shell

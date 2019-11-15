@@ -28,6 +28,7 @@ dotfiles:
   notmuch:
     actions:
       - install_by_package_manager notmuch
+      - install_by_pip 3 not-much-fire
       - make_directory '{{@@ env["MAIL_DIR"] @@}}'
       - notmuch_index
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/notmuch'

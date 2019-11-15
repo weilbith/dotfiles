@@ -82,6 +82,7 @@ dotfiles:
       - install_by_package_manager pdfgrep
       - install_by_package_manager nmon
       - install_by_package_manager wuzz
+      - install_by_package_manager thefuck
       - remove_fake_file
     dst: /tmp/fake
     src: fake

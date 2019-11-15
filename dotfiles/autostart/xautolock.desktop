@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=X-Autolock
 GenericName=Screen-locker
-Exec=xautolock -corners ---- -time 1 -locker "i3-lock > /tmp/i3.log 2>&1" -notify 10 -notifier "notify-send 'i3lock' 'The screen will be locked soon! Do some action to prevent.'"
+Exec=xautolock -corners ---- -time 1 -locker "zsh -c i3-lock" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
 Terminal=false
 Type=Application

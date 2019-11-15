@@ -19,7 +19,7 @@ dotfiles:
   i3:
     actions:
       - install_by_package_manager i3-gaps
-      - install_by_package_manager compton
+      - install_by_package_manager compton-rounded-corners
       - install_by_package_manager dmenu
       - install_by_package_manager xf86-input-synaptics
       - install_by_package_manager pulseaudio
@@ -71,31 +71,12 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/autostart'
     src: autostart
 
-  xdg_dirs:
-    actions:
-      - install_by_package_manager xdg-user-dirs
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/'
-    link: link_children
-    src: user-dirs
-
   desktop_files:
     actions:
       - link_permissioned desktop-entries/* /usr/share/applications/
       - remove_fake_file
     dst: /tmp/fake
     src: fake
-
-  cerebro:
-    actions:
-      - install_by_package_manager nodejs
-      - install_by_package_manager yarn
-      - install_by_package_manager fuse
-      - install_by_package_manager readline
-      # - cerebro_place_appimage
-      # - cerebro_start_temporally
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/Cerebro'
-    link: link_children
-    src: cerebo
 
   ntp:
     actions:
@@ -116,8 +97,6 @@ profiles:
       - autorandr
       - powerstatus10k
       - autostart
-      - xdg_dirs
       - desktop_files
-      - cerebro
 
 # vim: nospell

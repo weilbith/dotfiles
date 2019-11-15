@@ -60,18 +60,25 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/zathura'
     src: zathura
 
-  gimp:
+  digikam:
     actions:
-      - install_by_package_manager gimp
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
+      - install_by_package_manager digikam
+      - install_by_package_manager qt5-imageformats
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/digikamrc'
+    src: digikamrc
 
   rawtherapee:
     actions:
       - install_by_package_manager rawtherapee-git
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/RawTherapee'
     src: RawTherapee
+
+  gimp:
+    actions:
+      - install_by_package_manager gimp
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
 
   vlc:
     actions:

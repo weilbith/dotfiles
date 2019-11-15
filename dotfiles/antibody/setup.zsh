@@ -14,6 +14,7 @@ fi
 # Some variables required by Oh-My-Zsh
 export ZSH=$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
 export ZSH_CACHE_DIR="$ZSH/cache"
+export COMPLETION_WAITING_DOTS=true
 
 # Load plugins and their configuration
 source "$PLUGIN_LIST_DESTINATION"

@@ -1,3 +1,4 @@
+/home/thore/.config/zsh/alias.zsh:9: condition expected: $ext
 actions:
   post:
     isync_sync: >-
@@ -40,13 +41,5 @@ actions:
       ({{@@ yes_no_question @@}}) &&
       ({{@@ command_zsh_set_as_default_shell @@}}) ||
       echo "You can set it manually with: {{@@ command_zsh_set_as_default_shell @@}}"
-
-    # cerebro_place_appimage: >-
-    #   mkdir -p {{@@ cerebro_appimage_location @@}} &&
-    #   find {{@@ _dotdrop_dotpath @@}}/cerebro -type f -name '*.AppImage' \
-    #   -exec ln -sf {} {{@@ cerebro_appimage_location @@}}/
-    #
-    # cerebro_start_temporally: >-
-    #   TODO: start, sleep short, stop, install npm packages
 
 # vim: nospell

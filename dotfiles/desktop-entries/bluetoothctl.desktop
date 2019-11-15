@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=BluetoothCtl
+Comment=Control bluetooth from the command line
+Exec=kitty --name floating --class BluetootCtl --detach -o initial_window_width=450 -o initial_window_height=570 -o remember_window_size=no bluetoothctl
+Type=Application

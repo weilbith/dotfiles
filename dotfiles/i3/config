@@ -1,4 +1,6 @@
 # Variables
+set $shell zsh -c
+
 ## Standard mark names
 set $mark1 1
 set $mark2 2
@@ -63,7 +65,7 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 ## Select window by easy-focus.
-bindsym $mod+space exec --no-startup-id ~/.scripts/i3-easyfocus --all
+bindsym $mod+space exec --no-startup-id $shell 'i3-easyfocus --all'
 
 ## Move focused window.
 bindsym $mod+Shift+h move left
@@ -214,11 +216,11 @@ mode $mark_mode {
 }
 
 ## Interactiv go to by mark
-bindsym $mod+g exec ~/.scripts/i3_goto.zsh
+bindsym $mod+g exec $shell i3-goto
 
 ## Interactive go to by title
-bindsym $mod+f exec ~/.scripts/i3_find.zsh
 
+bindsym $mod+f exec $shell i3-find
 # ---
 
 
@@ -226,17 +228,15 @@ bindsym $mod+f exec ~/.scripts/i3_find.zsh
 bindsym $mod+Shift+m mode $music_mode
 
 mode $music_mode {
-  set $music_control_command bash ~/.scripts/music_control.sh
-
   # Execute and exit mode immediately.
   bindsym p exec --no-startup-id dex /usr/share/applications/ncmpcpp.desktop; mode $default_mode
-  bindsym space exec --no-startup-id $music_control_command toggle_play; mode $default_mode
-  bindsym r exec --no-startup-id $music_control_command toggle_random; mode $default_mode
-  bindsym s exec --no-startup-id $music_control_command stop; mode $default_mode
+  bindsym space exec --no-startup-id $shell 'control-music toggle_play' > /tmp/fuck 2>&1; mode $default_mode
+  bindsym r exec --no-startup-id $shell 'control-music toggle_random'; mode $default_mode
+  bindsym s exec --no-startup-id $shell 'control-music stop'; mode $default_mode
 
   # Execute possibly multiple times before exit mode.
-  bindsym n exec --no-startup-id $music_control_command next
-  bindsym p exec --no-startup-id $music_control_command previous
+  bindsym n exec --no-startup-id $shell 'control-music next'
+  bindsym p exec --no-startup-id $shell 'control-music previous'
 
   # Exit to the default mode.
   bindsym Return mode $default_mode
@@ -260,7 +260,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 ## Exit (with logout)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -b 'Yes' 'i3-msg exit'"
 
 # ---
 

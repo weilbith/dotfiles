@@ -1,3 +1,4 @@
+/home/thore/.config/zsh/alias.zsh:9: condition expected: $ext
 variables:
   # Commands
   command_isync_sync: mbsync -c "$XDG_CONFIG_HOME/isync/mbsyncrc" --all
@@ -9,6 +10,5 @@ variables:
   # MISC
   mail_accounts_available: test -d '{{@@ env["XDG_CONFIG_HOME"] @@}}/mutt/accounts'
   networkmanager_dispatcher_dir: /etc/NetworkManager/dispatcher.d/
-  cerebro_appimage_location: '{{@@ env["TOOLS_DIR"] @@}}/cerebro/release/'
 
 # vim: nospell

@@ -1,7 +1,11 @@
 ######################
 ####### Global #######
 ######################
-SyncState ~~/.cache/.cache/mbsync/
+SyncState ~/.cache/mbsync/
+Expunge Both
+CopyArrivalDate yes
+Create Both
+Remove Both
 
 
 ######################
@@ -27,8 +31,6 @@ Inbox ~/mails/brainbot/Inbox
 Channel brainbot-inbox
 Master :brainbot-remote:"Inbox"
 Slave :brainbot-local:inbox
-Create Both
-Expunge Both
 
 Group brainbot
 Channel brainbot-inbox
@@ -57,36 +59,21 @@ Inbox ~/mails/private/Inbox
 Channel private-inbox
 Master :private-remote:"Inbox"
 Slave :private-local:inbox
-Create Both
-Expunge Both
 
 Channel private-sent
 Master :private-remote:"Sent"
 Slave :private-local:sent
-Create Both
-Expunge Both
 
 Channel private-drafts
 Master :private-remote:"Drafts"
 Slave :private-local:drafts
-Create Both
-Expunge Both
 
 Channel private-spam
 Master :private-remote:"Spam"
 Slave :private-local:spam
-Create Both
-Expunge Both
-
-Channel private-junk
-Master :private-remote:"Junk"
-Slave :private-local:junk
-Create Both
-Expunge Both
 
 Group private
 Channel private-inbox
 Channel private-sent
 Channel private-drafts
 Channel private-spam
-Channel private-junk
