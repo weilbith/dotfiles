@@ -17,6 +17,7 @@
   rv = remote -v
   ch = checkout HEAD
   bv = branch -vv
+  recent = "!r(){ git for-each-ref --sort=-committerdate refs/heads --color=always --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)'|column -ts'|';}; r"
 
 [merge]
   tool = fugitive
