@@ -26,7 +26,7 @@ virtual-mailboxes \
     "PayPal" "$my_virtual_query_folder/inbox and from:paypal" \
     "Xletix" "$my_virtual_query_folder/inbox and from:xletix.com" \
     "DHL" "$my_virtual_query_folder/inbox and from:dhl.de" \
-    "DigitalOcean" "my_virtual_query_folder/inbox and from:digitalocean" \
+    "DigitalOcean" "$my_virtual_query_folder/inbox and from:digitalocean" \
 
 unmailboxes *
 mailboxes \
