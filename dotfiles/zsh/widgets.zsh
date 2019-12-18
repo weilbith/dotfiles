@@ -54,16 +54,6 @@ fasd_fzf_directory_selection() {
 }
 
 
-# Broot function for external commands
-function br {
-  tmp_file=$(mktemp)
-  broot --outcmd "$tmp_file" "$@"
-  cmd_content=$(cat "$tmp_file")
-  rm -f "$tmp_file"
-  eval "$cmd_content"
-}
-
-
 # Define widgets.
 zle -N fasd_fzf_file_selection
 zle -N fasd_fzf_directory_selection

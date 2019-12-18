@@ -59,13 +59,6 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/translate-shell'
     src: translate-shell
 
-  broot:
-    actions:
-      - install_by_package_manager broot
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/broot'
-    link: link_children
-    src: broot
-
   wget:
     actions:
       - install_by_package_manager wget
@@ -98,7 +91,6 @@ profiles:
       - fasd
       - cheatsh
       - translate_shell
-      - broot
       - wget
       - tool_collection
 
