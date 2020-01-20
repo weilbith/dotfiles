@@ -1,3 +1,4 @@
+load_external_source_file:source:4: no such file or directory: 
 config:
   dotpath: ../../dotfiles
   link_dotfile_default: link
@@ -9,6 +10,10 @@ dotfiles:
       - install_by_package_manager kitty
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/kitty'
     src: kitty
+
+  environment_d:
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/environment.d'
+    src: environment.d
 
   zsh:
     actions:
@@ -84,6 +89,7 @@ profiles:
   shell:
     dotfiles:
       - kitty
+      - environment_d
       - zsh
       - antibody
       - tmux
