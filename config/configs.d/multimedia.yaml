@@ -21,7 +21,6 @@ dotfiles:
       - install_by_package_manager mopidy
       - install_by_package_manager alsa-lib
       - install_by_pip 2 Mopidy-Local-SQLite
-      - install_by_pip 2 Mopidy-YouTube
       - make_directory '{{@@ env["MOPIDY_CACHE_DIR"] @@}}'
       - make_directory '{{@@ env["MOPIDY_DATA_DIR"] @@}}'
       - make_directory '{{@@ env["MOPIDY_DATABASE_DIR"] @@}}'
@@ -36,6 +35,18 @@ dotfiles:
       - make_directory '{{@@ env["NCMCPP_LYRICS_DIR"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/ncmpcpp'
     src: ncmpcpp
+
+  beets:
+    actions:
+      - install_by_pip 3 beets
+      - install_by_pip 3 requests # beets: fetchart plugin
+      - install_by_pip 3 pylast # beets: lastgenre plugin
+      - install_by_package_manager python-pyacoustid # chroma plugin
+      - install_by_package_manager imagemagic # art related plugins
+      - make_directory '{{@@ env["BEETS_DATA_DIR"] @@}}'
+      - make_directory '{{@@ env["BEETS_CACHE_DIR"] @@}}'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/beets'
+    src: beets
 
   easytag:
     actions:
@@ -64,6 +75,8 @@ dotfiles:
     actions:
       - install_by_package_manager digikam
       - install_by_package_manager qt5-imageformats
+      - make_directory '{{@@ env["DIGIKAM_CACHE_DIR"] @@}}'
+      - make_directory '{{@@ env["DIGIKAM_DATA_DIR"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/digikamrc'
     src: digikamrc
 

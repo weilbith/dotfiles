@@ -1,0 +1,70 @@
+library: ~/.local/share/beets/library.db
+directory: ~/audio/music
+asciify_paths: yes
+import:
+  write: yes
+  move: yes
+  timid: yes
+  log: ~/.cache/beets/beets.log
+  languages: en
+  detail: yes
+
+match:
+  required: artist album year
+
+paths:
+  default: ${albumartist}/${album}%aunique{}/${track}_${albumartist}-${title}
+
+replace:
+  # Basics from default setting
+  '[\\/]': _
+  '^\.': _
+  '[\x00-\x1f]': _
+  '[<>:"\?\*\|]': _
+  '\.$': _
+  '^-': _
+  # Custom pattern
+  '\(.*\)': ''
+  'Deluxe': ''
+  'Explicit': ''
+  '[\[\],&]': ''
+  '\s': '' # Keep as last to remove spaces left by other replace pattern.
+
+# Plugins
+plugins: chroma edit embedart fetchart ftintitle lastgenre lyrics playlist zero importadded badfiles fuzzy hook
+embedart:
+  ifempty: yes
+  maxwidth: 600
+  remove_art_file: yes
+
+fetchart:
+  minwidth: 600
+  maxwidth: 600
+  enfore_ratio: yes
+  soures: itunes amazon albumart *
+
+ftintitle:
+  format: (feat. {0})
+
+lastgenre:
+  count: 3
+  min_weight: 40
+
+playlist:
+  auto: yes
+  relative_to: ~/audio
+  playlist_dir: ~/audio/playlists
+
+zero:
+  fields: comments month day
+  update_database: yes
+
+importadded:
+  preserve_mtimes: yes
+
+hook:
+  hooks:
+    - event: import
+      command: zsh -c 'command -v mopidy >/dev/null && mopidy local scan'
+
+# vim: nospell
