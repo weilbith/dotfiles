@@ -1,2 +1,4 @@
 env/
 .tern-port
+.nvimrc
+.exrc

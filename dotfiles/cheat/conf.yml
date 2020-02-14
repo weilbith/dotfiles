@@ -8,6 +8,6 @@ cheatpaths:
     readonly: true
 
   - name: personal
-    path: ~/.cache/cheat/personal
+    path: ~/.config/cheat/personal
     tags: [personal]
     readonly: false

@@ -16,6 +16,8 @@
   ss = status .
   rv = remote -v
   ch = checkout HEAD
+  cb = checkout -b
+  cm = checkout master
   bv = branch -vv
   recent = "!r(){ git for-each-ref --sort=-committerdate refs/heads --color=always --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)'|column -ts'|';}; r"
 
@@ -27,6 +29,9 @@
 
 [mergetool "fugitive"]
   cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+
+[rebase]
+  autosquash = true
 
 [filter "black"]
   clean = black -

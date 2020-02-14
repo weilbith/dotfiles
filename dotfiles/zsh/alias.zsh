@@ -40,4 +40,8 @@ command -v thefuck > /dev/null && eval $(thefuck --alias)
 cursedtag="$HOME/Tools/cursedtag/cursedtag"
 [[ -f "$cursedtag" ]] && alias -g ct="bash $cursedtag"
 
+# My custom aliases.
+command -v rg > /dev/null && alias -g rf="rg --files | grep" || alias -g rf="find -type f | grep"
+command -v exa > /dev/null && alias -g la="exa -lbhHigmuSa --time-style=long-iso --git --color-scale"
+
 return 0

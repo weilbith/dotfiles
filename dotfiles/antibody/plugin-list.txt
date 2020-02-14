@@ -20,3 +20,4 @@ zsh-users/zsh-syntax-highlighting
 DarrinTisdale/zsh-aliases-exa
 darvid/zsh-poetry kind:poetry.zsh
 # changyuheng/zsh-interactive-cd
+andyrichardson/zsh-node-path
