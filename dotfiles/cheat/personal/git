@@ -1,0 +1,5 @@
+# Rename current branch
+git branch -m <NEW_NAME>
+
+# Remove file from stage area
+git reset <FILE>
