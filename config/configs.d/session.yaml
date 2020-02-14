@@ -91,6 +91,14 @@ dotfiles:
     dst: /tmp/fake
     src: fake
 
+  greenclip:
+    actions:
+      - install_by_package_manager rofi-greenclip
+      - enable_start_service_user greenclip.service
+      - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/greenclip'
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/greenclip.cfg'
+    src: greenclip.cfg
+
 profiles:
   session:
     dotfiles:
@@ -104,5 +112,6 @@ profiles:
       - powerstatus10k
       - autostart
       - desktop_files
+      - greenclip
 
 # vim: nospell

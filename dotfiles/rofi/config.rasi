@@ -1,7 +1,7 @@
 configuration {
   // General
   columns: 2;
-  modi: "drun,calc,window,run";
+  modi: "drun,calc,clipboard:greenclip print";
   disable-history: true;
 
   // Appearance
