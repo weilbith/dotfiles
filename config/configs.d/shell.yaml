@@ -1,4 +1,3 @@
-load_external_source_file:source:4: no such file or directory: 
 config:
   dotpath: ../../dotfiles
   link_dotfile_default: link

@@ -89,9 +89,9 @@ dotfiles:
   gimp:
     actions:
       - install_by_package_manager gimp
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/GIMP/2.10'
+    link: link_children
+    src: gimp
 
   vlc:
     actions:

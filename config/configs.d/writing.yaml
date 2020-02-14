@@ -8,6 +8,14 @@ dotfiles:
     actions:
       - install_by_package_manager neovim-git
       - install_by_pip 3 neovim
+      - install_by_package_manager yad
+      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/session'
+      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/spell'
+      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/tags'
+      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/files/backup'
+      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/files/undo'
+      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/files/info'
+      # TODO dein plugin manager
       - message 'Start NeoVim once to trigger installation of plugins automatically in asynchronous mode.'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/nvim'
     src: nvim
