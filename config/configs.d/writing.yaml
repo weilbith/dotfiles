@@ -44,18 +44,11 @@ dotfiles:
     actions:
       - install_by_package_manager shellcheck # Shell
       - install_by_package_manager uncrustify # C/Java-related
-      - install_by_yarn eslint # EcmaScript
-      - install_by_yarn babel-eslint # EcmaScript
-      - install_by_yarn eslint-plugin-import # EcmaScript
-      - install_by_yarn eslint-plugin-promise # EcmaScript
-      - install_by_yarn eslint-plugin-vue # EcmaScript
-      - install_by_yarn eslint-plugin-react # EcmaScript
-      - install_by_yarn tslint # TypeScript
-      - install_by_yarn tslint-config-standard # TypeScript
+      - install_by_package_manager nodejs-jsonlint # JSON
+      - install_by_package_manager eslint # Javascript
       - install_by_pip 3 vim-vint # Vim
-      - install_by_yarn jsonlint # JSON
       - download_binary https://github.com/vmchale/tomlcheck/releases/download/0.1.0.38/tomlcheck-x86_64-unkown-linux-gnu tomlcheck # TOML
-      - install_by_yarn ethlint # Solidity
+      - install_by_package_manager solium # Solidity
       - install_by_yarn solhint # Solidity
       - install_by_pip 3 flake8 # Python
       - install_by_pip 3 mypy # Python
@@ -69,13 +62,9 @@ dotfiles:
     actions:
       - install_by_package_manager shfmt # Shell
       - install_by_package_manager prettier # Omni-web-related
-      - install_by_yarn prettier # Omni-web-related
-      - install_by_yarn eslint-plugin-prettier # EcmaScript
-      - install_by_yarn eslint-config-prettier # EcmaScript
-      - install_by_yarn tslint-config-prettier # TypeScript
-      - install_by_yarn fixjson # JSON
+      - install_by_package_manager fixjson # JSON
       - install_by_pip 3 black # Python
-      - install_by_pip 3 isort # Python
+      - install_by_package_manager python-isort # Python
       - install_by_pip 3 docformatter # Python
       - install_by_rustup rustfmt # Rust
       - remove_fake_file
@@ -85,7 +74,7 @@ dotfiles:
 
   completion:
     actions:
-      - install_by_yarn tern # JavaScript
+      - install_by_package_manager tern # JavaScript
       - install_by_pip 3 jedi # Python
       - remove_fake_file
     dst: /tmp/fake
