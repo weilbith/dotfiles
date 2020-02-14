@@ -20,16 +20,21 @@ dotfiles:
     actions:
       - install_by_package_manager i3-gaps
       - install_by_package_manager compton-rounded-corners
-      - install_by_package_manager dmenu
       - install_by_package_manager xf86-input-synaptics
       - install_by_package_manager pulseaudio
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/i3'
     src: i3
 
+  rofi:
+    actions: install_by_package_manager rofi
+      install_by_package_manager rofi-dmenu
+      install_by_package_manager rofi-calc
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/rofi'
+    src: rofi
+
   dunst:
     actions:
       - install_by_package_manager dunst
-      - install_by_package_manager dmenu
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/dunst'
     src: dunst
 
@@ -91,6 +96,7 @@ profiles:
     dotfiles:
       - x11_basics
       - i3
+      - rofi
       - dunst
       - redshift
       - ssh

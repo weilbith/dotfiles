@@ -1,0 +1,25 @@
+configuration {
+  // General
+  columns: 2;
+  modi: "drun,calc,window,run";
+  disable-history: true;
+
+  // Appearance
+  show-icons: true;
+  theme: "themes/list_view.rasi";
+  icon-theme: "Paper";
+
+  // Key mappings
+  kb-accept-entry: "Return";
+  kb-remove-to-eol: "";
+  kb-row-up: "Control+k";
+  kb-row-down: "Control+j";
+  kb-row-left: "Control+h";
+  kb-row-right: "Control+l";
+  kb-remove-char-back: "BackSpace";
+  kb-mode-next: "Tab";
+  kb-mode-previous: "Shift+Tab";
+  kb-row-tab: "";
+}
+
+// vim: filetype=scss

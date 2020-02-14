@@ -1,0 +1,54 @@
+@import "shared/settings.rasi"
+
+* {
+  background-color: @color-transparent;
+  text-color: @color-deep-sky-blue-3;
+  font: @text-font;
+}
+
+#window {
+  padding: @list-8-window-padding;
+}
+
+inputbar,
+prompt,
+textbox-prompt-colon,
+entry {
+  background-color: @color-gray-30;
+}
+
+#inputbar {
+  children: [ prompt, textbox-prompt-colon, entry ];
+}
+
+#prompt {
+  padding: @prompt-padding;
+  background-color: @color-steel-blue-1;
+  text-color: @color-gray-30;
+}
+
+#textbox-prompt-colon {
+  expand: false;
+  str: " ➭ ";
+  padding: @apps-textbox-prompt-colon-padding;
+}
+
+#entry {
+  text-color: @color-steel-blue-1;
+  padding: @entry-padding;
+}
+
+#element {
+  padding: @list-element-padding;
+  margin: @list-element-margin;
+  border: @list-element-border;
+  background-color: @color-gray-30;
+  border-color: @color-gray-30;
+}
+
+#element.selected {
+  background-color: @color-gray-29;
+  text-color: @color-steel-blue-1;
+  border-color: @color-steel-blue-1;
+}
+

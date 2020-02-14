@@ -1,0 +1,11 @@
+* {
+  color-transparent: #ff000000;
+  color-white: #ffffff;
+  color-steel-blue-1: #5fd7ff;
+  color-deep-sky-blue-3: #00afd7;
+  color-deep-sky-blue-4: #005f87;
+  color-gray-30: #282a2e;
+  color-gray-29: #3a3a3a;
+}
+
+// vim: filetype=scss
