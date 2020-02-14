@@ -54,6 +54,12 @@ dotfiles:
     dst: '{{@@ env["XDG_DATA_HOME"] @@}}/mc'
     src: mc/skins
 
+  syncthing:
+    actions:
+      - install_by_package_manager syncthing
+      - install_by_package_manager inotify-tools
+      - enable_start_service_user syncthing.service
+
 profiles:
   data:
     dotfiles:

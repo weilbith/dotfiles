@@ -22,4 +22,11 @@ actions:
       sudo systemctl start {0}
       ) || echo
 
+    enable_start_service_user: >-
+      sudo systemctl 2&>1 /dev/null && 
+      (
+      sudo systemctl --user enable {0} &&
+      sudo systemctl --user start {0}
+      ) || echo
+
 # vim: nospell
