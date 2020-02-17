@@ -19,11 +19,13 @@ dotfiles:
   mopidy:
     actions:
       - install_by_package_manager mopidy
+      - install_by_package_manager mopidy-local
+      - install_by_package_manager mopidy-mpd
       - install_by_package_manager alsa-lib
-      - install_by_pip 2 Mopidy-Local-SQLite
       - make_directory '{{@@ env["MOPIDY_CACHE_DIR"] @@}}'
       - make_directory '{{@@ env["MOPIDY_DATA_DIR"] @@}}'
       - make_directory '{{@@ env["MOPIDY_DATABASE_DIR"] @@}}'
+      - enable_start_service_user_custom mopidy.service
       - mopidy_scan_local
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/mopidy'
     src: mopidy

@@ -1,0 +1,10 @@
+[Unit]
+Description=Mopidy music server
+After=dbus.service
+After=sound.target
+
+[Service]
+ExecStart=mopidy
+
+[Install]
+WantedBy=default.target

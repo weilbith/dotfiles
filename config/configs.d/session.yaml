@@ -94,8 +94,8 @@ dotfiles:
   greenclip:
     actions:
       - install_by_package_manager rofi-greenclip
-      - enable_start_service_user greenclip.service
       - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/greenclip'
+      - enable_start_service_user greenclip.service
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/greenclip.cfg'
     src: greenclip.cfg
 

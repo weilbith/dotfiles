@@ -15,7 +15,6 @@ XBINDKEYS=$XDG_CONFIG_HOME/X11/xbindkeysrc
 unclutter &
 redshift &
 pulseaudio --start -D &
-mopidy &
 
 # Autostart
 dex -a &

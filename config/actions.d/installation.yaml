@@ -29,4 +29,11 @@ actions:
       sudo systemctl --user start {0}
       ) || echo
 
+    enable_start_service_user_custom: >-
+      sudo systemctl 2&>1 /dev/null && 
+      (
+      sudo systemctl --user enable {{@@ _dotdrop_dotpath @@}}/{0} &&
+      sudo systemctl --user start {0}
+      ) || echo
+
 # vim: nospell
