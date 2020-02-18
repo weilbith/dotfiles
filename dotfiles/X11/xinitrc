@@ -1,4 +1,3 @@
-/home/thore/.config/zsh/alias.zsh:9: condition expected: $ext
 #!/bin/bash
 
 # Specify X11 configuration files.
@@ -11,13 +10,13 @@ XBINDKEYS=$XDG_CONFIG_HOME/X11/xbindkeysrc
 [[ -f "$XMODMAP" ]] && xmodmap "$XMODMAP"
 [[ -f "$XBINDKEYS" ]] && xbindkeys --file "$XBINDKEYS"
 
-# Daemons
-unclutter &
-redshift &
-pulseaudio --start -D &
+# Adopt the monitor setup (do that before the window manager starts)
+command -v autorandr >/dev/null && autorandr --change
 
 # Autostart
-dex -a &
+command -v dex >/dev/null && dex -a &
 
 # Window Manager
 exec i3
+
+# vim: filetype=sh

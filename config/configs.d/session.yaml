@@ -16,14 +16,21 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/X11'
     src: X11
 
-  i3:
+  i3wm:
     actions:
       - install_by_package_manager i3-gaps
       - install_by_package_manager compton-rounded-corners
-      - install_by_package_manager xf86-input-synaptics
-      - install_by_package_manager pulseaudio
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/i3'
     src: i3
+
+  pulse_audio:
+    actions:
+      - install_by_package_manager pulseaudio
+      - install_by_package_manager xf86-input-synaptics
+      - enable_start_service_user pulseaudio.service
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
 
   rofi:
     actions: install_by_package_manager rofi
@@ -41,6 +48,7 @@ dotfiles:
   redshift:
     actions:
       - install_by_package_manager redshift-minimal
+      - enable_start_service_user redshift.service
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/redshift'
     src: redshift
 
@@ -99,11 +107,19 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/greenclip.cfg'
     src: greenclip.cfg
 
+  unclutter:
+    actions:
+      - install_by_package_manager unclutter
+      - enable_start_service_user_custom unclutter.service
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/unclutter'
+    src: unclutter
+
 profiles:
   session:
     dotfiles:
       - x11_basics
-      - i3
+      - i3wm
+      - pulse_audio
       - rofi
       - dunst
       - redshift
@@ -113,5 +129,6 @@ profiles:
       - autostart
       - desktop_files
       - greenclip
+      - unclutter
 
 # vim: nospell

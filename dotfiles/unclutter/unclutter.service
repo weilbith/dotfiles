@@ -1,0 +1,8 @@
+[Unit]
+Description=Hide mouse cursors on inactivity
+
+[Service]
+ExecStart=echo Display $DISPLAY
+
+[Install]
+WantedBy=default.target

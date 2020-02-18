@@ -18,6 +18,7 @@ ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=191'
 
 # Powerlevel
 POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_INSTANT_PROMPT='quiet'
 
 ## Use the improved gitstatus tool for the VCS segement.
 POWERLEVEL9K_VCS_STATUS_COMMAND=gitstatus_query_dir
