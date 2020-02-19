@@ -19,9 +19,15 @@ dotfiles:
   i3wm:
     actions:
       - install_by_package_manager i3-gaps
-      - install_by_package_manager compton-rounded-corners
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/i3'
     src: i3
+
+  picom:
+    actions:
+      - install_by_package_manager picom
+      - enable_start_service_user_custom picom.service
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/picom'
+    src: picom
 
   pulse_audio:
     actions:
@@ -119,6 +125,7 @@ profiles:
     dotfiles:
       - x11_basics
       - i3wm
+      - picom
       - pulse_audio
       - rofi
       - dunst

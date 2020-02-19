@@ -10,6 +10,9 @@ XBINDKEYS=$XDG_CONFIG_HOME/X11/xbindkeysrc
 [[ -f "$XMODMAP" ]] && xmodmap "$XMODMAP"
 [[ -f "$XBINDKEYS" ]] && xbindkeys --file "$XBINDKEYS"
 
+# TODO: Fix that by the systemd script
+systemctl --user import-environment DISPLAY XAUTHORITY
+
 # Adopt the monitor setup (do that before the window manager starts)
 command -v autorandr >/dev/null && autorandr --change
 

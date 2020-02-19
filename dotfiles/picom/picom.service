@@ -1,0 +1,8 @@
+[Unit]
+Description=Window compositor for X11
+
+[Service]
+ExecStart=picom
+
+[Install]
+WantedBy=default.target

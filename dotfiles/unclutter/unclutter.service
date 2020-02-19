@@ -2,7 +2,7 @@
 Description=Hide mouse cursors on inactivity
 
 [Service]
-ExecStart=echo Display $DISPLAY
+ExecStart=unclutter
 
 [Install]
 WantedBy=default.target
