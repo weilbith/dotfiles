@@ -26,6 +26,11 @@ set $workspace7 7
 set $workspace8 8
 set $workspace9 9
 
+## Monitor outputs
+set $internal_laptop eDP-1
+set $external_hdmi HDMI-2
+set $external_display_port DP-1
+
 ## Step sizes (mind high resolution display)
 ### Window resizing
 set $resize_step_small 5
@@ -287,6 +292,13 @@ for_window [instance="floating"] floating enable
 for_window [class="Rocket.Chat" instance="rocket.chat"] move scratchpad, scratchpad show
 
 # ---
+
+
+# Workspace Preferences
+workspace $workspace1 output $internal_laptop $external_display_port
+workspace $workspace2 output $internal_laptop $external_hdmi
+workspace $workspace3 output $internal_laptop $external_display_port
+workspace $workspace4 output $internal_laptop $external_hdmi
 
 
 # vim: filetype=i3
