@@ -5,7 +5,7 @@ set my_virtual_query_folder = "$my_virtual_query_base=folder:$my_account"
 set mbox_type = Maildir
 set folder = "$my_folder"
 set spoolfile = "$my_folder/inbox"
-set from = "thore.weilbier@brainbot.de"
+set from = "thore.strassburg@brainbot.com"
 set signature = ~/.config/mutt/accounts/brainbot_signature
 
 set virtual_spoolfile
@@ -13,6 +13,7 @@ set virtual_spoolfile
 unalternates *
 alternates \
   thore@brainbot.com \
+  thore.strassburg@brainbot.com
   thore.weilbier@brainbot.com
 
 
