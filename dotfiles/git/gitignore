@@ -2,3 +2,5 @@ env/
 .tern-port
 .nvimrc
 .exrc
+vault.pwd
+__pycache__/
