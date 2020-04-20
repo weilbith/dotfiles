@@ -7,7 +7,8 @@ dotfiles:
   neovim:
     actions:
       - install_by_package_manager neovim-git
-      - install_by_pip 3 neovim
+      - install_by_package_manager python-pynvim
+      - install_by_package_manager neovim-remote
       - install_by_package_manager yad
       - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/session'
       - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/spell'
@@ -62,6 +63,9 @@ dotfiles:
       - install_by_pip 3 mypy # Python
       - install_by_cargo racer # Rust
       - install_by_package_manager proselint # Actual Text
+      - install_by_package_manager ansible-lint
+      - install_by_package_manager tflint
+      - install_by_package_manager luacheck
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/'
     link: link_children
     src: linting
@@ -75,6 +79,7 @@ dotfiles:
       - install_by_package_manager python-isort # Python
       - install_by_pip 3 docformatter # Python
       - install_by_rustup rustfmt # Rust
+      - install_by_rustup nodejs-lua-fmt # Lua
       - remove_fake_file
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/'
     link: link_children
@@ -83,10 +88,14 @@ dotfiles:
   completion:
     actions:
       - install_by_package_manager tern # JavaScript
-      - install_by_pip 3 jedi # Python
       - remove_fake_file
     dst: /tmp/fake
     src: fake
+
+  language_servers:
+    actions:
+      - install_by_package_manager python-language-server
+      - install_by_package_manager python-rope
 
 profiles:
   writing:
