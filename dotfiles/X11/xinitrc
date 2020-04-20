@@ -11,7 +11,8 @@ XBINDKEYS=$XDG_CONFIG_HOME/X11/xbindkeysrc
 [[ -f "$XBINDKEYS" ]] && xbindkeys --file "$XBINDKEYS"
 
 # TODO: Fix that by the systemd script
-systemctl --user import-environment DISPLAY XAUTHORITY
+systemctl --user import-environment DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS
+systemctl --user restart xautolock redshift picom unclutter greenclip
 
 # Adopt the monitor setup (do that before the window manager starts)
 command -v autorandr >/dev/null && autorandr --change
