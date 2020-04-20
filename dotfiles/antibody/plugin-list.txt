@@ -18,6 +18,7 @@ hlissner/zsh-autopair
 romkatv/powerlevel10k
 zsh-users/zsh-syntax-highlighting
 DarrinTisdale/zsh-aliases-exa
-darvid/zsh-poetry kind:poetry.zsh
+#darvid/zsh-poetry kind:poetry.zsh
+weilbith/zsh-poetry kind:poetry.zsh branch:bugfix/support_poetry_v0.12.17
 # changyuheng/zsh-interactive-cd
 andyrichardson/zsh-node-path
