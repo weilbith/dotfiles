@@ -13,7 +13,7 @@ set virtual_spoolfile
 unalternates *
 alternates \
   thore@brainbot.com \
-  thore.strassburg@brainbot.com
+  thore.strassburg@brainbot.com \
   thore.weilbier@brainbot.com
 
 

@@ -3,3 +3,6 @@ git branch -m <NEW_NAME>
 
 # Remove file from stage area
 git reset <FILE>
+
+# Show log of single file
+git log -p <FILE>
