@@ -10,8 +10,6 @@ dotfiles:
       - install_by_package_manager xclip
       - install_by_package_manager xbindkeys
       - install_by_package_manager xdotool
-      - install_by_package_manager xautolock
-      - install_by_package_manager i3-lock-color
       - link_permissioned X11/xorg.conf.d /etc/X11/
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/X11'
     src: X11
@@ -48,6 +46,7 @@ dotfiles:
   dunst:
     actions:
       - install_by_package_manager dunst
+      - enable_start_service_user dunst.service
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/dunst'
     src: dunst
 
@@ -57,6 +56,14 @@ dotfiles:
       - enable_start_service_user redshift.service
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/redshift'
     src: redshift
+
+  xautolock:
+    actions:
+      - install_by_package_manager xautolock
+      - install_by_package_manager i3-lock-color
+      - enable_start_service_user_custom xautostart.service
+    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/xautostart'
+    src: xautostart
 
   ssh:
     actions:
@@ -85,8 +92,6 @@ dotfiles:
   autostart:
     actions:
       - install_by_package_manager dex
-      - install_by_package_manager xautolock
-      - install_by_package_manager i3-lock-color
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/autostart'
     src: autostart
 
@@ -130,6 +135,7 @@ profiles:
       - rofi
       - dunst
       - redshift
+      - xautolock
       - ssh
       - autorandr
       - powerstatus10k
