@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Dunst
-GenericName=A customizable and lightweight notification-daemon
-Exec=dunst
-Terminal=false
-Type=Application
