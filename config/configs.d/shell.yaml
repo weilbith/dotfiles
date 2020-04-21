@@ -72,7 +72,7 @@ dotfiles:
 
   tool_collection:
     actions:
-      - install_by_package_manager ripgrep
+      - install_by_package_manager ripgrep-all-git
       - install_by_package_manager exa
       - install_by_package_manager bat
       - install_by_package_manager htop
