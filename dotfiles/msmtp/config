@@ -5,7 +5,7 @@ protocol smtp
 auth on
 user thore
 passwordeval "gpg --for-your-eyes-only --no-tty -dq ~/.config/mutt/accounts/brainbot_pass"
-from thore.weilbier@brainbot.com
+from thore.strassburg@brainbot.com
 tls on
 tls_starttls on
 tls_fingerprint 13:FC:7D:75:FB:BB:AD:AA:C9:4F:31:58:5D:AB:51:BB:9E:11:23:55
