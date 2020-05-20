@@ -59,6 +59,16 @@ dotfiles:
       - install_by_package_manager syncthing
       - install_by_package_manager inotify-tools
       - enable_start_service_user syncthing.service
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
+
+  restic:
+    actions:
+      - install_by_package_manager restic
+      - remove_fake_file
+    dst: /tmp/fake
+    src: fake
 
 profiles:
   data:
@@ -68,6 +78,8 @@ profiles:
       - ranger
       - udisk
       - bashmount
+      - syncthing
+      - restic
       # - midnight_commander # outdated in favor of ranger
       # - midnight_commander_skins # outdated in favor of ranger
 
