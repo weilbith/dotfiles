@@ -2,7 +2,8 @@
 DISABLE_AUTO_UPDATE=true # Antibody handle this.
 
 # Zsh Autosuggestion
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=32'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
+ZSH_AUTOSUGGEST_USE_ASYNC='true'
 bindkey '^[\r' autosuggest-execute # Alt + Return
 bindkey '^[\t' autosuggest-accept # Alt + Tab
 
@@ -15,6 +16,12 @@ ZSH_HIGHLIGHT_STYLES[command]='fg=191'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=191'
 ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=191'
 
+# Zsh Autocompletion
+zstyle ':completion:correct-word:*' max-errors 0
+zle -N complete-word && complete-word() { zle .complete-word; }
+add-zsh-hook -d precmd _zsh_autocomplete__h__keymap-specific_keys
+# bindkey -M menuselect $key[Tab] menu-complete
+# bindkey -M menuselect $key[BackTab] reverse-menu-complete
 
 # Powerlevel
 POWERLEVEL9K_MODE='nerdfont-complete'

@@ -34,7 +34,6 @@ command -v tmux > /dev/null && alias -g tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux
 command -v mbsync > /dev/null && alias -g mbsync="mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc"
 command -v exa > /dev/null && alias -g ls="exa"
 command -v bat > /dev/null && alias -g cat="bat --paging never --theme DarkNeon"
-command -v gpg > /dev/null && alias -g gpg="gpg --homedir $XDG_CONFIG_HOME/gnupg"
 command -v thefuck > /dev/null && eval $(thefuck --alias)
 
 cursedtag="$HOME/Tools/cursedtag/cursedtag"
