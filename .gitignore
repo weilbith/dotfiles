@@ -8,6 +8,8 @@ dotfiles/cmus/command-history
 dotfiles/cmus/search-history
 dotfiles/cmus/lib.pl
 dotfiles/beets/state.pickle
+dotfiles/nvim/dictionaries/*
+dotfiles/zsh/.zcompdump
 
 # Tests
 tests/gpgkeys/
