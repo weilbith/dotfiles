@@ -40,11 +40,12 @@ dotfiles:
 
   beets:
     actions:
-      - install_by_pip 3 beets
-      - install_by_pip 3 requests # beets: fetchart plugin
-      - install_by_pip 3 pylast # beets: lastgenre plugin
-      - install_by_package_manager python-pyacoustid # chroma plugin
-      - install_by_package_manager imagemagic # art related plugins
+      - install_by_package_manager beets
+      - install_by_package_manager --asdeps python-confuse # configuration stuff
+      - install_by_package_manager --asdeps python-requests # fetchart plugin
+      - install_by_package_manager --asdeps python-pylast # lastgenre plugin
+      - install_by_package_manager --asdeps python-pyacoustid # chroma plugin
+      - install_by_package_manager --asdeps imagemagic # art related plugins
       - make_directory '{{@@ env["BEETS_DATA_DIR"] @@}}'
       - make_directory '{{@@ env["BEETS_CACHE_DIR"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/beets'
