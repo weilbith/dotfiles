@@ -95,7 +95,20 @@ dotfiles:
   language_servers:
     actions:
       - install_by_package_manager python-language-server
-      - install_by_package_manager python-rope
+      - install_by_package_manager python-rope # TODO: install as dependecy for pyls
+      - install_by_package_manager typescript-language-server-bin
+      - install_by_package_manager bash-language-server
+      - install_by_package_manager vscode-css-languageserver-bin
+      - install_by_package_manager dockerfile-language-server-bin
+      - install_by_package_manager vscode-html-languageserver-bin
+      - install_by_package_manager vscode-json-languageserver-bin
+      - install_by_package_manager rust-analyzer-bin
+      - install_by_package_manager terraform-lsp-bin
+      - install_by_package_manager texlab-git
+      - install_by_package_manager vim-language-server
+      - install_by_package_manager vue-language-server
+      - install_by_package_manager yaml-language-server-bin
+      # - install_by_package_manager lua-dkjson
 
 profiles:
   writing:
