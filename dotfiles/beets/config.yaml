@@ -3,7 +3,7 @@ directory: ~/audio/music
 asciify_paths: yes
 import:
   write: yes
-  move: yes
+  move: no
   timid: yes
   log: ~/.cache/beets/beets.log
   languages: en
@@ -22,16 +22,18 @@ replace:
   '[\x00-\x1f]': _
   '[<>:"\?\*\|]': _
   '\.$': _
-  '^-': _
+  "^-": _
   # Custom pattern
-  '\(.*\)': ''
-  'Deluxe': ''
-  'Explicit': ''
-  '[\[\],&]': ''
-  '\s': '' # Keep as last to remove spaces left by other replace pattern.
+  '\(.*\)': ""
+  "Deluxe": ""
+  "Explicit": ""
+  '[\[\],&]': ""
+  "’": ""
+  "'": ""
+  '\s': "" # Keep as last to remove spaces left by other replace pattern.
 
 # Plugins
-plugins: chroma edit embedart fetchart ftintitle lastgenre lyrics playlist zero importadded badfiles fuzzy hook
+plugins: chroma edit embedart fetchart ftintitle lastgenre lyrics playlist zero importadded badfiles fuzzy hook tagmod
 embedart:
   ifempty: yes
   maxwidth: 600
@@ -61,6 +63,16 @@ zero:
 
 importadded:
   preserve_mtimes: yes
+
+tagmod:
+  modifications:
+    title:
+      "(demo)": ""
+      "Deluxe": ""
+      "Explicit": ""
+      "’": "'"
+      '^\s+': ""
+      '\s+$': ""
 
 hook:
   hooks:
