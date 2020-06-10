@@ -18,10 +18,10 @@ ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=191'
 
 # Zsh Autocompletion
 zstyle ':completion:correct-word:*' max-errors 0
-zle -N complete-word && complete-word() { zle .complete-word; }
-add-zsh-hook -d precmd _zsh_autocomplete__h__keymap-specific_keys
-# bindkey -M menuselect $key[Tab] menu-complete
-# bindkey -M menuselect $key[BackTab] reverse-menu-complete
+zstyle ':autocomplete:*' groups 'always'
+zstyle ':autocomplete:(slash|space):*' magic 'off'
+zstyle ':autocomplete:tab:*' completion 'cycle'
+zstyle ':autocomplete:tab:*' completion 'select'
 
 # Powerlevel
 POWERLEVEL9K_MODE='nerdfont-complete'
