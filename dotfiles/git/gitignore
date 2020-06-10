@@ -4,3 +4,4 @@ env/
 .exrc
 vault.pwd
 __pycache__/
+.notags

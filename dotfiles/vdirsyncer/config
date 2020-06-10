@@ -10,7 +10,7 @@
 
   [storage brainbot_gsuite_contacts_local]
     type = "filesystem"
-    path = "/home/thore/Contacts/brainbot_gsuite"
+    path = "/home/thore/contacts/brainbot_gsuite"
     fileext = ".vcf"
 
   [storage brainbot_gsuite_contacts_remote]
@@ -48,7 +48,7 @@
 
   [storage nextcloud_contacts_local]
     type = "filesystem"
-    path = "/home/thore/Contacts/nextcloud"
+    path = "/home/thore/contacts/nextcloud"
     fileext = ".vcf"
 
   [storage nextcloud_contacts_remote]
