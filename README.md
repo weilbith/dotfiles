@@ -41,8 +41,9 @@ it always makes sure that the system is aligned with the configuration here. So
 it can be used for initialization, but also to update. Running the provisioning
 multiple times without any changes leaves your system unaffected.
 
-Run `make provide-all` to do a full setup. Checkout the section `Provision Targets`
-on `make help fro more focuseed sub-targets like only multimedia related stuff.
+Run `make provide-all` to do a full setup. If you want to provide only
+a sub-group of the setup, use the `make provide-group GROUP=<name-here>` target.
+Checkout `make provide-list` to get a list of available group names.
 
 ## Testing
 

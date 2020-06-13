@@ -1,0 +1,3 @@
+- name: Install i3wm package
+  aur: name=i3-gaps
+  become: yes

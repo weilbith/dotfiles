@@ -1,8 +1,6 @@
 - name: Install git package
   aur: name=git
   become: yes
-  become_user: root
-  become_method: sudo
 
 - name: Link configuration files
   file:

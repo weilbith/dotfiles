@@ -1,0 +1,4 @@
+- name: Setup focused on data storage related stuff
+  hosts: kautz
+  roles:
+    - git
