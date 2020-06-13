@@ -1,0 +1,13 @@
+- name: Install git package
+  aur: name=git
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- name: Link configuration files
+  file:
+    src: "{{ role_path }}/files/"
+    dest: "{{ xdg_config_home }}/git"
+    state: link
+    force: yes
+  become: true

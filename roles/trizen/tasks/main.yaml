@@ -1,0 +1,7 @@
+- name: Install trizen as AUR packager
+  aur:
+    name: trizen
+    use: makepkg
+  become: true
+  become_user: root
+  become_method: sudo

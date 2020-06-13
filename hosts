@@ -1,0 +1,5 @@
+[kautz]
+localhost
+
+[kautz:vars]
+ansible_connection=local

@@ -1,0 +1,11 @@
+- name: Setup working machine
+  hosts: kautz
+  vars:
+    user_home: "{{ lookup('env','HOME') }}"
+    # xdg_config_home: "{{ lookup('env', 'XDG_CONFIG_HOME') }}"
+    xdg_config_home: "/tmp/test"
+  roles:
+    - kewlfft.aur
+    - trizen
+    # The order above mus be forced like this.
+    - git
