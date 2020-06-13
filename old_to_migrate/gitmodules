@@ -1,3 +1,3 @@
 [submodule "dotfiles/nvim"]
-  path = dotfiles/nvim
+	path = old_to_migrate/dotfiles/nvim
   url = git@github.com:weilbith/vim-blueplanet.git
