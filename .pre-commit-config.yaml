@@ -1,0 +1,22 @@
+exclude: "^roles/*/files/*|^old_to_migrate/*"
+fail_fast: true
+repos:
+  - repo: http://github.com/pre-commit/pre-commit-hooks
+    rev: v3.1.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: detect-private-key
+
+  - repo: https://github.com/prettier/prettier
+    rev: 2.0.5
+    hooks:
+      - id: prettier
+
+  - repo: https://github.com/ansible/ansible-lint
+    rev: v4.2.0
+    hooks:
+      - id: ansible-lint

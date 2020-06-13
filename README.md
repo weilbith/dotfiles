@@ -31,6 +31,11 @@ Run `make prepare-all` to initialize the full setup. Checkout the section
 _Preparation Targets_ on `make help` for more focused sub-targets like only
 testing.
 
+Please be aware that these targets actually install packages on your operation
+system and is not limited to this projects repository. Anyways you can still
+cancel when get asked to provide your password for executing commands with root
+permissions.
+
 ## Provision
 
 This is the actual heart of this project. It provides your **local** machine to
@@ -47,4 +52,6 @@ Checkout `make provide-list` to get a list of available group names.
 
 ## Testing
 
-Not implemented yet.
+There are different targets to test the setup. They intend to test the validity
+of the workhorse setup, not the configuration of the tools that get provisioned.
+Watch-out for the `Testing Targets` section when you call `make help`.
