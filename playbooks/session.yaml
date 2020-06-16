@@ -1,4 +1,4 @@
 - name: Setup focused on session related stuff
-  hosts: kautz
+  hosts: warhorse
   roles:
     - i3wm

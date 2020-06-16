@@ -1,6 +1,6 @@
-[kautz]
+[warhorse]
 localhost
 
-[kautz:vars]
+[warhorse:vars]
 ansible_connection=local
 xdg_config_home=/tmp/test
