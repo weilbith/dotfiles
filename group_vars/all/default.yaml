@@ -1,0 +1,4 @@
+xdg_config_home: "{{ lookup('env','HOME') }}/.config"
+xdg_cache_home: "{{ lookup('env','HOME') }}/.cache"
+xdg_data_home: "{{ lookup('env', 'HOME') }}/.local/share"
+xdg_runtime_dir: "{{ lookup('env', 'HOME') }}/.runtime"
