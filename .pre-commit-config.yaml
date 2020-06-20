@@ -20,3 +20,10 @@ repos:
     rev: v4.2.0
     hooks:
       - id: ansible-lint
+
+  - repo: local
+    hooks:
+      - id: vagrant
+        name: vagrant
+        entry: vagrant validate
+        language: ruby
