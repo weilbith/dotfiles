@@ -1,5 +1,0 @@
-[warhorse]
-localhost
-
-[warhorse:vars]
-ansible_connection=local
