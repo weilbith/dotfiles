@@ -5,7 +5,7 @@
 .PHONY:
 
 
-ASK_BECOME_PASS_ARG := $(shell [ $$USER != 'vagrant' ] && echo '--ask-become-pass' || echo '')
+ASK_BECOME_PASS_ARG := $(shell [ $$USER != 'vagrant' -a $$USER != 'circleci' ] && echo '--ask-become-pass' || echo '')
 
 provide-all: ## Provide everything
 	@ansible-playbook ./main.yaml $(ASK_BECOME_PASS_ARG)

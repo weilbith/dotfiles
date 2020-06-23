@@ -1,6 +1,7 @@
 FROM archlinux
 
-RUN pacman -Sy --noconfirm sudo
+RUN pacman -Syu --noconfirm
+RUN pacman -S --noconfirm sudo base-devel git
 RUN useradd --create-home circleci
 RUN echo 'circleci ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers
 

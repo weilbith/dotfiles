@@ -10,7 +10,7 @@ SCRIPT
 Vagrant.configure("2") do |config|
   config.vm.box = "archlinux/archlinux"
   config.vm.hostname = "warhorse"
-  config.vm.provider "libvirt"
+  config.vm.provider "virtualbox"
   config.vm.provision "shell",
     inline: $script,
     privileged: false

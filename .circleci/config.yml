@@ -1,0 +1,25 @@
+version: 2.1
+
+executors:
+  arch_linux:
+    docker:
+      - image: weilbith/warhorse-circleci
+    working_directory: ~/repository
+
+jobs:
+  lint:
+    executor: arch_linux
+    steps:
+      - checkout
+      - run:
+          name: Run preparation
+          command: make prepare-testing
+      - run:
+          name: Run test lint
+          command: make test-lint
+
+workflows:
+  version: 2
+  default:
+    jobs:
+      - lint
