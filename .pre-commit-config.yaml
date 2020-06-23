@@ -26,4 +26,5 @@ repos:
       - id: vagrant
         name: vagrant
         entry: vagrant validate
-        language: ruby
+        language: system
+        files: ^Vagrantfile$
