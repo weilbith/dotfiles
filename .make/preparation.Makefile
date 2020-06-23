@@ -24,6 +24,8 @@ prepare-testing: ## Setup tools for testing
 	@vagrant plugin install vagrant-libvirt
 	@sudo usermod -a -G libvirt ${USER}
 	@echo It might need a restart of the OS to make the network component working when building Vagrant!
+	@echo Install CircleCI relevant dependencies
+	@trizen -S --needed --noconfirm docker
 
 install-trizen: ## Install Trizen as AUR helper
 	@if ! command -v trizen >/dev/null; then \
