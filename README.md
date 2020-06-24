@@ -4,6 +4,8 @@
 [![Vagrant](https://img.shields.io/badge/vagrant-2.2.9-blue.svg)](https://shields.io/)
 [![Docker](https://img.shields.io/badge/docker-19.03.11-lightblue.svg)](https://shields.io/)
 
+<p align="center"><img width=200" src="./logo.png"></p>
+
 # Warhorse
 
 The warhorse is my hero for my daily professional and private work. It is an
