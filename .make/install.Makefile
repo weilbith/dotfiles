@@ -1,16 +1,16 @@
 #
-##@ Preparation Targets
+##@ Installation Targets
 #
 
-.PHONY: prepare-all prepare-provision prepare-testing
+.PHONY: install install-provision install-testing
 
-prepare-all: prepare-provision prepare-testing ## Prepare everything for provision, testing and general contribution
+install: install-provision install-testing ## Setup everything for this project
 
-prepare-provision: install-trizen ## Prepare and setup tools for provisioning
+install-provision: install-trizen ## Setup tools for provisioning
 	@echo Install Ansible with plugins...
 	@trizen -S --needed --noconfirm ansible ansible-aur-git
 
-prepare-testing: install-trizen ## Setup tools for testing
+install-testing: install-trizen ## Setup tools for testing
 	@echo Install Pre-commit and its hooks...
 	@trizen -S --needed --noconfirm python-pre-commit --overwrite='*'
 	@pre-commit install
@@ -21,7 +21,7 @@ prepare-testing: install-trizen ## Setup tools for testing
 	@echo 'It might need a restart of the OS to make the network component working when building Vagrant!'
 	@trizen -S --needed --noconfirm circleci-cli-bin docker --overwrite='/usr/bin/circleci'
 
-install-trizen: ## Install Trizen as AUR helper
+install-trizen: ## Setup Trizen as AUR helper (dependency for other targets)
 	@if ! command -v trizen >/dev/null; then \
 		git clone https://aur.archlinux.org/trizen.git /tmp/trizen | true && \
 		cd /tmp/trizen && \

@@ -2,12 +2,12 @@
 ##@ Provision Targets
 #
 
-.PHONY:
+.PHONY: provide provide-group provide-list
 
 
 ASK_BECOME_PASS_ARG := $(shell [ $$USER != 'vagrant' -a $$USER != 'circleci' ] && echo '--ask-become-pass' || echo '')
 
-provide-all: ## Provide everything
+provide: ## Provide everything
 	@ansible-playbook ./main.yaml $(ASK_BECOME_PASS_ARG)
 
 provide-group: ## Provide a specific group (add GROUP=<name-here>)

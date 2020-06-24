@@ -2,11 +2,11 @@
 ##@ Testing Targets
 #
 
-.PHONY: test-all test-lint
+.PHONY: test test-lint test-vagrant test-push-docker-image test-build-docker-image
 
 DOCKER_HUB_REPOSITORY_NAME := "warhorse-circleci"
 
-test-all: test-lint ## Run all testing related targets
+test: test-lint test-vagrant ## Run all actively testing targets
 
 test-lint: ## Run linter for the setup configuration
 	@echo Run linter...

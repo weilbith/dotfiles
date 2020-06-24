@@ -2,8 +2,8 @@ $script = <<-SCRIPT
 set -e
 sudo pacman -S --needed --noconfirm --quiet base-devel git 2> /dev/null
 cd /vagrant
-make prepare-provision
-make provide-all-vagrant
+make install-provision
+make provide-all
 SCRIPT
 
 

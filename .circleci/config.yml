@@ -12,10 +12,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run preparation
-          command: make prepare-testing
+          name: Install testing setup
+          command: make install-testing
       - run:
-          name: Run test lint
+          name: Run tests for linting
           command: make test-lint
 
 workflows:

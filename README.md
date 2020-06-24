@@ -24,27 +24,27 @@ some certain tools, checkout their files in the according roles directories.
 The warhorse is expected to run on a machine with
 [ArchLinux](https://wiki.archlinux.org/) as operation system. Other OS are not
 supported and expected to fail. Besides that there are not requirements to
-handle manually. Just use the provided [setup](#setup) target to get ready.
-Please be aware that the setup is meant to run on the targeting machine. This is
-a requirement to make the configuration file linking working.
+handle manually. Just use the provided [installation](#installation) targets to
+get ready. Please be aware that the setup is meant to run on the targeting
+machine. This is a requirement to make the configuration file linking working.
 
-## Preparation
+## Installation
 
-This step is necessary for [provision](#provision), [testing](#testing) and
-regular contribution. It makes sure that all dependencies are available.
+This step is necessary for [provision](#provision) and [testing](#testing). It
+makes sure that all dependencies are available and well configured.
 
-Run `make prepare-all` to initialize the full setup. Checkout the section
-_Preparation Targets_ on `make help` for more focused sub-targets like only
+Run `make install` to initialize the full setup. Checkout the section
+_Installation Targets_ on `make help` for more focused sub-targets like only
 testing.
 
 Please be aware that these targets actually install packages on your operation
-system and is not limited to this projects repository. Anyways you can still
+system which are not limited to this projects repository. Anyways you can still
 cancel when get asked to provide your password for executing commands with root
 permissions.
 
 ## Provision
 
-This is the actual heart of this project. It provides your **local** machine tojtan
+This is the actual heart of this project. It provides your **local** machine to
 become the workhorse. Thereby it makes sure that everything is fully installed,
 completely configured and synchronized. There are even more targets to sync data
 from the mail server and similar sources. The whole setup is idempotent. Means
