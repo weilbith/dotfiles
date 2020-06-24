@@ -1,3 +1,9 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CircleCI](https://circleci.com/gh/weilbith/dotfiles/tree/ansible-circleci.svg?style=shield)](https://circleci.com/gh/weilbith/dotfiles/tree/ansible/circleci)
+[![Ansible](https://img.shields.io/badge/ansible-2.9.9-red.svg)](https://shields.io/)
+[![Vagrant](https://img.shields.io/badge/vagrant-2.2.9-blue.svg)](https://shields.io/)
+[![Docker](https://img.shields.io/badge/docker-19.03.11-lightblue.svg)](https://shields.io/)
+
 # Warhorse
 
 The warhorse is my hero for my daily professional and private work. It is an
@@ -38,7 +44,7 @@ permissions.
 
 ## Provision
 
-This is the actual heart of this project. It provides your **local** machine to
+This is the actual heart of this project. It provides your **local** machine tojtan
 become the workhorse. Thereby it makes sure that everything is fully installed,
 completely configured and synchronized. There are even more targets to sync data
 from the mail server and similar sources. The whole setup is idempotent. Means
