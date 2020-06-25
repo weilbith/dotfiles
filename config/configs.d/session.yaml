@@ -17,6 +17,8 @@ dotfiles:
   i3wm:
     actions:
       - install_by_package_manager i3-gaps
+      - install_by_package_manager i3-easyfocus-git
+      # TODO: install i3-utils
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/i3'
     src: i3
 
@@ -60,6 +62,7 @@ dotfiles:
   xautolock:
     actions:
       - install_by_package_manager xautolock
+      # TODO: install i3-utils (has i3-lock-color included)
       - install_by_package_manager i3-lock-color
       - enable_start_service_user_custom xautostart.service
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/xautostart'

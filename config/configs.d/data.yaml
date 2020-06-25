@@ -19,8 +19,8 @@ dotfiles:
   ranger:
     actions:
       - install_by_package_manager ranger
-      - install_by_package_manager python-paramiko
-      - install_by_package_manager python-pillow
+      - install_by_package_manager python-paramiko # TODO: asdeps
+      - install_by_package_manager python-pillow # TODO: asdeps
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/ranger'
     src: ranger
 

@@ -2,7 +2,7 @@
 Description=Automatic screen locking for X11
 
 [Service]
-ExecStart=xautolock -corners ---- -time 1 -locker "zsh -c i3-lock" -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
+ExecStart=xautolock -corners ---- -time 1 -locker i3-lock -notify 10 -notifier "notify-send i3lock 'The screen will be locked soon! Do some action to prevent.'"
 
 [Install]
 WantedBy=default.target

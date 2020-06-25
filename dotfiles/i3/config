@@ -71,7 +71,7 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 ## Select window by easy-focus.
-bindsym $mod+space exec --no-startup-id $shell 'i3-easyfocus --all'
+bindsym $mod+space exec --no-startup-id $shell 'i3-easyfocus --all --color-unfocused-bg=FFFFFF'
 
 ## Move focused window.
 bindsym $mod+Shift+h move left
@@ -222,11 +222,11 @@ mode $mark_mode {
 }
 
 ## Interactiv go to by mark
-bindsym $mod+g exec $shell i3-goto
+bindsym $mod+g exec $shell i3-goto-mark
 
 ## Interactive go to by title
 
-bindsym $mod+f exec $shell i3-find
+bindsym $mod+f exec $shell 'rofi -show window'
 # ---
 
 
@@ -290,6 +290,7 @@ client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
 # Window Preferences
 for_window [class="Yad"] floating enable
 for_window [instance="floating"] floating enable
+for_window [window_role="pop-up"] floating enable
 for_window [class="Rocket.Chat" instance="rocket.chat"] move scratchpad, scratchpad show
 
 # ---
