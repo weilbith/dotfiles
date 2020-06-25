@@ -18,7 +18,7 @@ test-lint: ## Run linter for the setup configuration
 test-vagrant: ## Create or start the Vagrant machine and do provision
 	@echo Evaluate Vagrant box status and run provision...
 	@vagrant status | grep -q 'paused' && vagrant resume --no-provision || true
-	@vagrant status | grep -q -E 'not created|shutoff' && vagrant up --no-provision || true
+	@vagrant status | grep -q -E 'not created|shutoff|poweroff' && vagrant up --no-provision || true
 	@vagrant rsync
 	@vagrant provision
 	@printf "\n"
