@@ -16,7 +16,7 @@ install-testing: install-trizen ## Setup tools for testing
 	@pre-commit install
 	@pre-commit install-hooks
 	@echo Install Vagrant with middleware
-	@trizen -S --needed --noconfirm vagrant virtualbox virtualbox-host-modules-arch
+	@trizen -S --needed --noconfirm vagrant virtualbox virtualbox-host-modules-arch perl-net-ssleay
 	@vagrant plugin install virtualbox
 	@echo 'It might need a restart of the OS to make the network component working when building Vagrant!'
 	@trizen -S --needed --noconfirm circleci-cli-bin docker --overwrite='/usr/bin/circleci'
