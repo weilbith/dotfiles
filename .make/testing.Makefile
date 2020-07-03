@@ -4,6 +4,7 @@
 
 .PHONY: test test-lint test-vagrant test-push-docker-image test-build-docker-image
 
+DOCKER_IMAGE_NAME := "warhorse-circleci"
 DOCKER_HUB_REPOSITORY_NAME := "warhorse-circleci"
 
 test: test-lint test-vagrant ## Run all actively testing targets
@@ -32,12 +33,10 @@ test-vagrant: ## Create or start the Vagrant machine and do provision
 test-push-docker-image: test-build-docker-image ## Upload the most recent image version to DockerHub
 	@echo Upload new build image to DockerHub...
 	@docker login
-	@docker_username=$$(docker info | sed '/Username:/!d;s/.* //')
-	@image_version=$$(date +%s)
-	@docker tag warhorse-circleci $$(docker info | sed '/Username:/!d;s/.* //')/$(DOCKER_HUB_REPOSITORY_NAME)
+	@docker tag $(DOCKER_IMAGE_NAME) $$(docker info | sed '/Username:/!d;s/.* //')/$(DOCKER_HUB_REPOSITORY_NAME)
 	@docker push $$(docker info | sed '/Username:/!d;s/.* //')/$(DOCKER_HUB_REPOSITORY_NAME)
 
 
 test-build-docker-image: ## Build new version of the Docker image for CircleCI
 	@echo Build Docker image...
-	@docker build --tag warhorse-circleci --file ./.circleci/Dockerfile .
+	@docker build --tag $(DOCKER_IMAGE_NAME) --file ./.circleci/Dockerfile .

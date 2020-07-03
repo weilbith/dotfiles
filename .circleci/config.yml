@@ -3,7 +3,7 @@ version: 2.1
 executors:
   arch_linux:
     docker:
-      - image: weilbith/warhorse-circleci
+      - image: weilbith/warhorse-circleci:latest # TODO: Use a fixed version
     working_directory: ~/repository
 
 jobs:
