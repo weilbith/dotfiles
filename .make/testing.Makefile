@@ -20,10 +20,11 @@ test-vagrant: ## Create or start the Vagrant machine and do provision
 	@vagrant status | grep -q 'paused|saved' && vagrant resume --no-provision || true
 	@vagrant status | grep -q -E 'not created|shutoff|poweroff' && vagrant up --no-provision || true
 	@vagrant provision
+	@vagrant suspend
 	@printf "\n"
 	@printf "\033[0;31m +-----------------------------------------------------------+\n"
 	@printf "\033[0;31m |...........................................................|\n"
-	@printf "\033[0;31m |... Don't forget to suspend/halt/destroy the box later! ...|\n"
+	@printf "\033[0;31m |....... Don't forget to halt/destroy the box later! .......|\n"
 	@printf "\033[0;31m |...........................................................|\n"
 	@printf "\033[0;31m +-----------------------------------------------------------+\n"
 	@printf "\n"
