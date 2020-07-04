@@ -15,6 +15,7 @@ test-lint: ## Run linter for the setup configuration
 	@pre-commit run ansible-lint --all-files
 	@pre-commit run vagrant --all-files
 	@pre-commit run circleci-config-validate --all-files
+	@pre-commit run dockerfilelint --all-files
 
 test-vagrant: ## Create or start the Vagrant machine and do provision
 	@echo Evaluate Vagrant box status and run provision...

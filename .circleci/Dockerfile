@@ -1,4 +1,4 @@
-FROM archlinux
+FROM archlinux:20200605
 
 RUN pacman -Syu --noconfirm
 RUN pacman -S --noconfirm sudo base-devel git
