@@ -18,8 +18,20 @@ jobs:
           name: Run tests for linting
           command: make test-lint
 
+  provide:
+    executor: arch_linux
+    steps:
+      - checkout
+      - run:
+          name: Install provision setup
+          command: make install-provision
+      - run:
+          name: Run provision
+          command: make provide
+
 workflows:
   version: 2
   default:
     jobs:
       - lint
+      - provide
