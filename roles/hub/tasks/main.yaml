@@ -1,0 +1,10 @@
+- name: Install package
+  aur: name=hub
+  become: yes
+
+- name: Decrypt and copy configuration with OAuth token
+  copy:
+    src: "{{ role_path }}/files/hub"
+    dest: "{{ xdg_config_home }}/hub"
+    force: yes
+  become: true
