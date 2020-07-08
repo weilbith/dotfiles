@@ -1,7 +1,8 @@
 $script = <<-SCRIPT
 set -e
 sudo pacman -S --needed --noconfirm --quiet base-devel git 2> /dev/null
-mv /vagrant /home/vagrant
+cp -rf /vagrant /home/vagrant/dotfiles
+cd /home/vagrant/dotfiles
 make install-provision
 make provide
 SCRIPT
