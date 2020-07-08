@@ -2,8 +2,9 @@ $script = <<-SCRIPT
 set -e
 
 sudo pacman -S --needed --noconfirm --quiet base-devel git 2> /dev/null
-cp -rf /vagrant /home/vagrant/dotfiles
-cd /home/vagrant/dotfiles
+rm -rf dotfiles
+cp -rf /vagrant dotfiles
+cd dotfiles
 make install-provision
 
 if [[ -z "$GROUP" ]]; then
