@@ -10,7 +10,7 @@ ASK_BECOME_PASS_ARG := $(shell [ $$USER != 'vagrant' -a $$USER != 'circleci' ] &
 provide: ## Provide everything
 	@ansible-playbook ./main.yaml $(ASK_BECOME_PASS_ARG)
 
-provide-group: ## Provide a specific group (add GROUP=<name-here>)
+provide-group: ## Provide a specific group (add GROUP=<name-here>) (checkout 'provide-list')
 	@ansible-playbook ./playbooks/${GROUP}.yaml $(ASK_BECOME_PASS_ARG)
 
 provide-list: ## List group names that can be targeted

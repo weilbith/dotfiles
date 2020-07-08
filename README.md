@@ -94,7 +94,9 @@ provision step of this machine the setup of the workhorse gets applied. Since
 Ansible works idempotent the provision step can be called over and over again to
 apply changes continuously to the same machine. In between the machine gets
 suspended. The `make test-vagrant` target provides a convenient approach to do
-all of this.
+all of this. The target does also allow to define a `GROUP` variable to select
+a specific playbook, speeding up the tests. This get simply forwarded to the
+`make provision-group` target.
 
 To verify or debug the setup you can SSH into the virtual machine. The data of
 the setup get synchronized automatically thanks to Vagrant.
