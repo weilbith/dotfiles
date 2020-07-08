@@ -6,11 +6,17 @@ executors:
       - image: weilbith/warhorse-circleci:latest # TODO: Use a fixed version
     working_directory: ~/repository
 
+commands:
+  synchronize_packages:
+    steps:
+      - run: sudo pacman -Sy
+
 jobs:
   lint:
     executor: arch_linux
     steps:
       - checkout
+      - synchronize_packages
       - run:
           name: Install testing setup
           command: make install-testing
@@ -22,6 +28,7 @@ jobs:
     executor: arch_linux
     steps:
       - checkout
+      - synchronize_packages
       - run:
           name: Install provision setup
           command: make install-provision
