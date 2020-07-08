@@ -19,7 +19,7 @@ test-lint: ## Run linter for the setup configuration
 
 test-vagrant: ## Create or start the Vagrant machine and do provision (forwards GROUP variable)
 	@echo Evaluate Vagrant box status and run provision...
-	@vagrant status | grep -q 'paused|saved' && vagrant resume --no-provision || true
+	@vagrant status | grep -q -E 'paused|saved' && vagrant resume --no-provision || true
 	@vagrant status | grep -q -E 'not created|shutoff|poweroff' && vagrant up --no-provision || true
 	@GROUP=$(GROUP) vagrant provision
 	@vagrant suspend
