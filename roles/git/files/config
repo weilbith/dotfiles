@@ -7,14 +7,18 @@
   gpgsign = true
   verbose = true
 
+[pull]
+  rebase = false
+
 [core]
   pager = less -F -X
   excludesfile = ~/.config/git/gitignore
 
 [alias]
-  s = status
+  s  = status
   ss = status .
   rv = remote -v
+  c  = checkout
   ch = checkout HEAD
   cb = checkout -b
   cm = checkout master
@@ -38,5 +42,4 @@
   clean = black -
   smudge = black -l 120 -
 
-[hub]
-  protocol = git
+# vim: filetype=gitconfig

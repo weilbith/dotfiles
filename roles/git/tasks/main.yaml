@@ -1,4 +1,4 @@
-- name: Install git package
+- name: Install package
   aur: name=git
   become: yes
 
