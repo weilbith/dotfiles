@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CircleCI](https://circleci.com/gh/weilbith/dotfiles/tree/ansible-circleci.svg?style=shield)](https://circleci.com/gh/weilbith/dotfiles/tree/ansible/circleci)
+[![CircleCI](https://circleci.com/gh/weilbith/dotfiles/tree/ansible.svg?style=shield)](https://circleci.com/gh/weilbith/dotfiles/tree/ansible)
 [![Ansible](https://img.shields.io/badge/ansible-2.9.9-red.svg)](https://shields.io/)
 [![Vagrant](https://img.shields.io/badge/vagrant-2.2.9-blue.svg)](https://shields.io/)
 [![Docker](https://img.shields.io/badge/docker-19.03.11-lightblue.svg)](https://shields.io/)
