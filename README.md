@@ -30,9 +30,13 @@ The warhorse is expected to run on a machine with
 supported and expected to fail. Besides that there are only two packages needed.
 These are `base-devel`, to enable the usage of the `Makefile`, and `git` to
 checkout the sources and install the basic package manager. Everything else can
-be setup with the provided [installation](#installation) targets. Please be
-aware that the setup is meant to run on the targeting machine. This is
-a requirement to make the configuration file linking working.
+be setup with the provided [installation](#installation) targets.
+
+Please be aware that the setup is meant to run on the targeting machine. This is
+a requirement to make it work that the configuration files get linked.
+Furthermore must the provision targets be run by the correct user to secure the
+file relation and permission. Moreover he will need access `sudo` to get root
+permissions for installing system packages and similar.
 
 ## Installation
 
@@ -60,9 +64,10 @@ provisioning multiple times without any changes leaves your system unaffected.
 
 Run `make provide` to do a full setup. For more focused provision the different
 roles are group into diverse Ansible playbooks. The main book simply includes
-all of them. You can select a single book with `make provide-book BOOK=<name-here>`. Checkout `provide-book-list` to get a full list off all
-available book names. The same goes for the `make provide-role ROLE=<name-here>`
-target to focus a single role only.
+all of them. You can select a single book with `provide-book BOOK=<name-here>`.
+Checkout `provide-book-list` to get a full list off all available book names.
+The same goes for the `provide-role ROLE=<name-here>` target to focus a single
+role only.
 
 The dotfiles themselves are symbolically linked in the file system. Thereby you
 must not call the provision again to update them. Concurrently it allows to edit
@@ -101,8 +106,22 @@ to select a specific playbook or role. This allows to speed up the tests and
 focus them to the current development. This variables get simply forwarded to
 the according provision targets.
 
+Per default the `test-vagrant` target will also automatically suspend the
+virtual machine at the end. This is a compromise to be relatively fast in
+resuming the machine and suspending it. If you want to free the RAM, use
+`vagrant halt`. The next time running a test will take significantly longer to
+get the machine up and running.
+If you plan to run the tests multiple times in a row (e.g. adding a new role and
+focus on it with the `ROLE` variable), it make sense to define the `FAST`
+variable. This will prevent the virtual machine from becoming suspended. Thereby
+the next run will be faster and also connecting to the machine via SSH works out
+of the box.
+
 To verify or debug the setup you can SSH into the virtual machine. The data of
-the setup get synchronized automatically thanks to Vagrant.
+the setup get synchronized automatically thanks to Vagrant. Remind that the
+`test-vagrant` target will suspend the machine per default as long as the `FAST`
+mode is not set. Therefore it is necessary to first resume the machine with
+`vagrant resume && vagrant ssh`.
 
 Unfortunately can't Ansible handle breaking changes. While it is idempotent it
 does not automatically clean up old runs according to a diff with a more recent

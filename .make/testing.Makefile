@@ -17,19 +17,22 @@ test-lint: ## Run linter for the setup configuration
 	@pre-commit run circleci-config-validate --all-files
 	@pre-commit run dockerfilelint --all-files
 
-test-vagrant: ## Create or start the Vagrant machine and do provision (forwards ROLE and BOOK variable)
+test-vagrant: ## Create or start the Vagrant machine and do provision (forwards ROLE and BOOK variable) (speed up with FAST)
 	@echo Evaluate Vagrant box status and run provision...
 	@vagrant status | grep -q -E 'paused|saved' && vagrant resume --no-provision || true
 	@vagrant status | grep -q -E 'not created|shutoff|poweroff' && vagrant up --no-provision || true
 	@ROLE=$(ROLE) BOOK=$(BOOK) vagrant provision
-	@vagrant suspend
-	@printf "\n"
-	@printf "\033[0;31m +-----------------------------------------------------------+\n"
-	@printf "\033[0;31m |...........................................................|\n"
-	@printf "\033[0;31m |....... Don't forget to halt/destroy the box later! .......|\n"
-	@printf "\033[0;31m |...........................................................|\n"
-	@printf "\033[0;31m +-----------------------------------------------------------+\n"
-	@printf "\n"
+	@if [[ -z "$(FAST)" ]]; then \
+		vagrant suspend
+	else \
+		printf "\n"; \
+		printf "\033[0;31m +-----------------------------------------------------------+\n"; \
+		printf "\033[0;31m |...........................................................|\n"; \
+		printf "\033[0;31m |... Don't forget to suspend/halt/destroy the box later! ...|\n"; \
+		printf "\033[0;31m |...........................................................|\n"; \
+		printf "\033[0;31m +-----------------------------------------------------------+\n"; \
+		printf "\n"; \
+	fi
 
 test-push-docker-image: test-build-docker-image ## Upload the most recent image version to DockerHub
 	@echo Upload new build image to DockerHub...
