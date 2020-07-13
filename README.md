@@ -58,9 +58,11 @@ it always makes sure that the system is aligned with the configuration here.
 Thereby it can be used for initialization, but also to update. Running the
 provisioning multiple times without any changes leaves your system unaffected.
 
-Run `make provide-all` to do a full setup. If you want to provide only
-a sub-group of the setup, use the `make provide-group GROUP=<name-here>` target.
-Checkout `make provide-list` to get a list of available group names.
+Run `make provide` to do a full setup. For more focused provision the different
+roles are group into diverse Ansible playbooks. The main book simply includes
+all of them. You can select a single book with `make provide-book BOOK=<name-here>`. Checkout `provide-book-list` to get a full list off all
+available book names. The same goes for the `make provide-role ROLE=<name-here>`
+target to focus a single role only.
 
 The dotfiles themselves are symbolically linked in the file system. Thereby you
 must not call the provision again to update them. Concurrently it allows to edit
@@ -94,9 +96,10 @@ provision step of this machine the setup of the workhorse gets applied. Since
 Ansible works idempotent the provision step can be called over and over again to
 apply changes continuously to the same machine. In between the machine gets
 suspended. The `make test-vagrant` target provides a convenient approach to do
-all of this. The target does also allow to define a `GROUP` variable to select
-a specific playbook, speeding up the tests. This get simply forwarded to the
-`make provision-group` target.
+all of this. The target does also allow to define the `BOOK` and `ROLE` variable
+to select a specific playbook or role. This allows to speed up the tests and
+focus them to the current development. This variables get simply forwarded to
+the according provision targets.
 
 To verify or debug the setup you can SSH into the virtual machine. The data of
 the setup get synchronized automatically thanks to Vagrant.

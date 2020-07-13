@@ -7,10 +7,12 @@ cp -rf /vagrant dotfiles
 cd dotfiles
 make install-provision
 
-if [[ -z "$GROUP" ]]; then
-  make provide
+if [[ -n "$ROLE" ]]; then
+  make provide-role ROLE="$ROLE"
+elif [[ -n "$BOOK" ]]; then
+  make provide-book BOOK="$BOOK"
 else
-  make provide-group GROUP="$GROUP"
+  make provide
 fi
 SCRIPT
 
@@ -22,5 +24,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell",
     inline: $script,
     privileged: false,
-    env: {GROUP:ENV['GROUP']}
+    env: {BOOK:ENV['BOOK'], ROLE:ENV['ROLE']}
 end

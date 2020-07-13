@@ -17,11 +17,11 @@ test-lint: ## Run linter for the setup configuration
 	@pre-commit run circleci-config-validate --all-files
 	@pre-commit run dockerfilelint --all-files
 
-test-vagrant: ## Create or start the Vagrant machine and do provision (forwards GROUP variable)
+test-vagrant: ## Create or start the Vagrant machine and do provision (forwards ROLE and BOOK variable)
 	@echo Evaluate Vagrant box status and run provision...
 	@vagrant status | grep -q -E 'paused|saved' && vagrant resume --no-provision || true
 	@vagrant status | grep -q -E 'not created|shutoff|poweroff' && vagrant up --no-provision || true
-	@GROUP=$(GROUP) vagrant provision
+	@ROLE=$(ROLE) BOOK=$(BOOK) vagrant provision
 	@vagrant suspend
 	@printf "\n"
 	@printf "\033[0;31m +-----------------------------------------------------------+\n"
