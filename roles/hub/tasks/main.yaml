@@ -7,4 +7,3 @@
     src: "{{ role_path }}/files/hub"
     dest: "{{ xdg_config_home }}/hub"
     force: yes
-  become: true

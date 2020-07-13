@@ -1,0 +1,40 @@
+- name: Install base packages
+  aur: name=udisks2
+  become: yes
+
+- name: Install optional dependency packages
+  aur:
+    name:
+      - ntfs-3g # Support NTFS
+  become: yes
+
+- name: Create rule and media directory
+  file:
+    path: "{{ item }}"
+    state: directory
+  with_items:
+    - "/etc/udev/rules.d/"
+    - "/etc/tmpfiles.d/"
+  become: yes
+
+# Linked files seem to cause issues
+- name: Link rule files
+  copy:
+    src: "{{ item }}"
+    dest: "/etc/udev/rules.d/"
+  with_fileglob:
+    - "{{ role_path }}/files/*.rules"
+  become: yes
+
+- name: Link media configuration file
+  copy:
+    src: "{{ role_path }}/files/media.conf"
+    dest: "/etc/tmpfiles.d/"
+  become: yes
+
+- name: Enable and start SystemD service
+  systemd:
+    name: udisks2.service
+    enabled: yes
+    state: started
+  become: yes

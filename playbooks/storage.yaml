@@ -3,3 +3,5 @@
   roles:
     - git
     - hub
+    - ranger
+    - udisks
