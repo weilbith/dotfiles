@@ -1,0 +1,17 @@
+- name: Install base package
+  aur: name=bluez
+  become: yes
+
+- name: Install optional dependency packages
+  aur:
+    name:
+      - bluez-utils # Get command-line interface
+      - pulseaudio-bluetooth # Pulse Audio integration
+  become: yes
+
+- name: Enable and start SystemD service
+  systemd:
+    name: bluetooth.service
+    enabled: yes
+    state: started
+  become: yes

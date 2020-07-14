@@ -1,4 +1,4 @@
-- name: Install base packages
+- name: Install base package
   aur: name=udisks2
   become: yes
 
@@ -18,7 +18,7 @@
   become: yes
 
 # Linked files seem to cause issues
-- name: Link rule files
+- name: Copy rule files
   copy:
     src: "{{ item }}"
     dest: "/etc/udev/rules.d/"
@@ -26,7 +26,7 @@
     - "{{ role_path }}/files/*.rules"
   become: yes
 
-- name: Link media configuration file
+- name: Copy media configuration file
   copy:
     src: "{{ role_path }}/files/media.conf"
     dest: "/etc/tmpfiles.d/"
