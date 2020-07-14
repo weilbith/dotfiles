@@ -5,3 +5,6 @@
     - hub
     - ranger
     - udisks
+    - bashmount
+    - restic
+    - syncthing

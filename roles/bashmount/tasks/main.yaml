@@ -1,0 +1,10 @@
+- name: Install package
+  aur: name=bashmount
+
+  # For some reason trizen does complain here about root rights if given...
+- name: Link configuration files
+  file:
+    src: "{{ role_path }}/files/"
+    dest: "{{ xdg_config_home }}/bashmount"
+    state: link
+    force: yes
