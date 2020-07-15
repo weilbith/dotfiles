@@ -1,0 +1,22 @@
+- name: Install base package
+  aur: name=openssh
+  become: yes
+
+- name: Create cache directory
+  file:
+    path: "{{ cache_directory }}"
+    state: directory
+
+- name: Link configuration file
+  file:
+    src: "{{ role_path }}/files/config"
+    dest: "{{ config_directory }}/config"
+    state: link
+    force: yes
+
+- name: Link script for password caching
+  file:
+    src: "{{ role_path }}/files/enable_cache.sh"
+    dest: "{{ config_directory }}/enable_cache.sh"
+    state: link
+    force: yes

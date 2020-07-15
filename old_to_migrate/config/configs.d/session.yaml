@@ -27,15 +27,6 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/picom'
     src: picom
 
-  pulse_audio:
-    actions:
-      - install_by_package_manager pulseaudio
-      - install_by_package_manager xf86-input-synaptics
-      - enable_start_service_user pulseaudio.service
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
-
   rofi:
     actions: install_by_package_manager rofi
       install_by_package_manager rofi-dmenu
@@ -65,14 +56,6 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/xautostart'
     src: xautostart
 
-  ssh:
-    actions:
-      - install_by_package_manager openssh
-      - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/ssh'
-    dst: '{{@@ env["HOME"] @@}}/.ssh/'
-    link: link_children
-    src: ssh
-
   autorandr:
     actions:
       - install_by_package_manager autorandr
@@ -98,14 +81,6 @@ dotfiles:
   desktop_files:
     actions:
       - link_permissioned desktop-entries/* /usr/share/applications/
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
-
-  ntp:
-    actions:
-      - install_by_package_manager ntp
-      - enable_start_service ntpd.service
       - remove_fake_file
     dst: /tmp/fake
     src: fake

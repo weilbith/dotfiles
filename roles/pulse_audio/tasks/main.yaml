@@ -1,0 +1,16 @@
+- name: Install base package
+  aur: name=pulseaudio
+  become: yes
+
+- name: Install optional dependency packages
+  aur:
+    name:
+      - xf86-input-synaptics # Support laptop media keys
+  become: yes
+
+- name: Enable and start SystemD service
+  systemd:
+    name: pulseaudio.service
+    enabled: yes
+    state: started
+    scope: user

@@ -1,0 +1,8 @@
+- name: Setup focused on system related stuff
+  hosts: all
+  roles:
+    - fwupd
+    - ntp
+    - ssh
+    - pulse_audio
+    - htop

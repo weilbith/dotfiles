@@ -1,3 +1,4 @@
-- import_playbook: ./playbooks/storage.yaml
 - import_playbook: ./playbooks/session.yaml
+- import_playbook: ./playbooks/storage.yaml
+- import_playbook: ./playbooks/system.yaml
 - import_playbook: ./playbooks/networking.yaml

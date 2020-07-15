@@ -1,0 +1,2 @@
+config_directory: "{{ lookup('env', 'HOME') }}/.ssh"
+cache_directory: "{{ xdg_cache_home }}/ssh"

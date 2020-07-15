@@ -23,7 +23,7 @@ test-vagrant: ## Create or start the Vagrant machine and do provision (forwards 
 	@vagrant status | grep -q -E 'not created|shutoff|poweroff' && vagrant up --no-provision || true
 	@ROLE=$(ROLE) BOOK=$(BOOK) vagrant provision
 	@if [[ -z "$(FAST)" ]]; then \
-		vagrant suspend
+		vagrant suspend; \
 	else \
 		printf "\n"; \
 		printf "\033[0;31m +-----------------------------------------------------------+\n"; \

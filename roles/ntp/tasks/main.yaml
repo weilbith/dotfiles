@@ -1,0 +1,10 @@
+- name: Install base package
+  aur: name=ntp
+  become: yes
+
+- name: Enable and start SystemD service
+  systemd:
+    name: ntpd.service
+    enabled: yes
+    state: started
+  become: yes

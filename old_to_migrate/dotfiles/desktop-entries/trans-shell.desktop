@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=TransShell
 Comment=CLI based translation tool
-Exec=kitty --detach --class TransShell sh -c "trans --shell"
+Exec=kitty --name floating --class TransShell --detach -o initial_window_width=450 -o initial_window_height=570 -o remember_window_size=no trans --shell
 Type=Application

@@ -1,0 +1,10 @@
+- name: Install base package
+  aur: name=htop
+  become: yes
+
+- name: Link configuration files
+  file:
+    src: "{{ role_path }}/files/"
+    dest: "{{ xdg_config_home }}/htop"
+    state: link
+    force: yes

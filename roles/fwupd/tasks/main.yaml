@@ -1,0 +1,4 @@
+- name: Install base package
+  aur: name=fwupd
+  become: yes
+# TODO: Research if SystemD services and timers are useful
