@@ -5,5 +5,5 @@
 - name: Decrypt and copy configuration with OAuth token
   copy:
     src: "{{ role_path }}/files/hub"
-    dest: "{{ xdg_config_home }}/hub"
+    dest: "{{ configuration_directory }}"
     force: yes

@@ -12,6 +12,6 @@
 - name: Link configuration files
   file:
     src: "{{ role_path }}/files/"
-    dest: "{{ xdg_config_home }}/ranger"
+    dest: "{{ configuration_directory }}"
     state: link
     force: yes

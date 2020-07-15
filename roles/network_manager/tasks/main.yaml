@@ -11,7 +11,7 @@
 - name: Copy dispatcher hooks
   copy:
     src: "{{ role_path }}/files/dispatcher.d/"
-    dest: "/etc/NetworkManager/dispatcher.d/"
+    dest: "{{ dispatcher_directory }}"
     mode: 0755
   become: yes
 

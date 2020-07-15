@@ -1,0 +1,1 @@
+configuration_directory: "{{ xdg_config_home }}/ranger"

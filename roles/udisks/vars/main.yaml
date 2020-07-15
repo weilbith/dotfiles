@@ -1,0 +1,2 @@
+rules_directory: "/etc/udev/rules.d/"
+media_directory: "/etc/tmpfiles.d/"

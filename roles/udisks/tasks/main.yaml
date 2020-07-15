@@ -13,15 +13,15 @@
     path: "{{ item }}"
     state: directory
   with_items:
-    - "/etc/udev/rules.d/"
-    - "/etc/tmpfiles.d/"
+    - "{{ rules_directory }}"
+    - "{{ media_directory }}"
   become: yes
 
 # Linked files seem to cause issues
 - name: Copy rule files
   copy:
     src: "{{ item }}"
-    dest: "/etc/udev/rules.d/"
+    dest: "{{ rules_directory }}"
   with_fileglob:
     - "{{ role_path }}/files/*.rules"
   become: yes
@@ -29,7 +29,7 @@
 - name: Copy media configuration file
   copy:
     src: "{{ role_path }}/files/media.conf"
-    dest: "/etc/tmpfiles.d/"
+    dest: "{{ media_directory }}"
   become: yes
 
 - name: Enable and start SystemD service

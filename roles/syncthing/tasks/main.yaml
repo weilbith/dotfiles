@@ -10,15 +10,10 @@
 
 # Syncthing mixes the keys and certificates into the configuration directory.
 # Therefore I can't put all of them into the dotfiles and need to split it.
-- name: Create configuration directory
-  file:
-    path: "{{ xdg_config_home }}/syncthing"
-    state: directory
-
 - name: Link single configuration file
   file:
     src: "{{ role_path }}/files/config.xml"
-    dest: "{{ xdg_config_home }}/syncthing/config.xml"
+    dest: "{{ configuration_directory }}/config.xml"
     state: link
     force: yes
 
