@@ -1,12 +1,5 @@
-- name: Install base package
-  aur: name=networkmanager
-  become: yes
-
-- name: Install optional dependency packages
-  aur:
-    name:
-      - macchanger # Change MAC address via custom dispatcher
-  become: yes
+- include_role:
+    name: _install_packages
 
 - name: Copy dispatcher hooks
   copy:
@@ -15,16 +8,5 @@
     mode: 0755
   become: yes
 
-- name: Enable and start SystemD base service
-  systemd:
-    name: NetworkManager.service
-    enabled: yes
-    state: started
-  become: yes
-
-- name: Enable and start SystemD dispatcher service
-  systemd:
-    name: NetworkManager-dispatcher.service
-    enabled: yes
-    state: started
-  become: yes
+- include_role:
+    name: _enable_start_services

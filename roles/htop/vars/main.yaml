@@ -1,1 +1,2 @@
+package_names: ["htop"]
 configuration_directory: "{{ xdg_config_home }}/htop"

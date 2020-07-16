@@ -1,10 +1,5 @@
-- name: Install package
-  aur: name=bashmount
+- include_role:
+    name: _install_packages
 
-  # For some reason trizen does complain here about root rights if given...
-- name: Link configuration files
-  file:
-    src: "{{ role_path }}/files/"
-    dest: "{{ configuration_directory }}"
-    state: link
-    force: yes
+- include_role:
+    name: _link_configuration

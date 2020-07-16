@@ -1,4 +1,3 @@
-- name: Install base package
-  aur: name=fwupd
-  become: yes
+- include_role:
+    name: _install_packages
 # TODO: Research if SystemD services and timers are useful

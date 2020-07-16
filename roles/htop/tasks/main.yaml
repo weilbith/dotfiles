@@ -1,10 +1,5 @@
-- name: Install base package
-  aur: name=htop
-  become: yes
+- include_role:
+    name: _install_packages
 
-- name: Link configuration files
-  file:
-    src: "{{ role_path }}/files/"
-    dest: "{{ configuration_directory }}"
-    state: link
-    force: yes
+- include_role:
+    name: _link_configuration

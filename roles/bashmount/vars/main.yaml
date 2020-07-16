@@ -1,1 +1,2 @@
+package_names: ["bashmount"]
 configuration_directory: "{{ xdg_config_home }}/bashmount"

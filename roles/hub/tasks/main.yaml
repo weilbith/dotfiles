@@ -1,9 +1,8 @@
-- name: Install package
-  aur: name=hub
-  become: yes
+- include_role:
+    name: _install_packages
 
 - name: Decrypt and copy configuration with OAuth token
   copy:
-    src: "{{ role_path }}/files/hub"
+    src: "{{ role_path }}/files/config/hub"
     dest: "{{ configuration_directory }}"
     force: yes

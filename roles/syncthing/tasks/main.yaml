@@ -1,12 +1,5 @@
-- name: Install base package
-  aur: name=syncthing
-  become: yes
-
-- name: Install optional dependency packages
-  aur:
-    name:
-      - inotify-tools # Observe filesystem events for auto-sync
-  become: yes
+- include_role:
+    name: _install_packages
 
 # Syncthing mixes the keys and certificates into the configuration directory.
 # Therefore I can't put all of them into the dotfiles and need to split it.
@@ -17,9 +10,5 @@
     state: link
     force: yes
 
-- name: Enable and start SystemD service
-  systemd:
-    name: syncthing.service
-    enabled: yes
-    state: started
-    scope: user
+- include_role:
+    name: _enable_start_services

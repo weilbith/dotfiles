@@ -1,24 +1,5 @@
-- name: Install base package
-  aur: name=cups
-  become: yes
+- include_role:
+    name: _install_packages
 
-- name: Install optional dependency packages
-  aur:
-    name:
-      - avahi # Network discovery of printers
-      - nss-mdns # Host name resolution
-  become: yes
-
-- name: Enable and start SystemD base service
-  systemd:
-    name: org.cups.cupsd.service
-    enabled: yes
-    state: started
-  become: yes
-
-- name: Enable and start SystemD discovery service
-  systemd:
-    name: avahi-daemon.service
-    enabled: yes
-    state: started
-  become: yes
+- include_role:
+    name: _enable_start_services

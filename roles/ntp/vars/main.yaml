@@ -1,0 +1,2 @@
+package_names: ["ntp"]
+service_names: ["ntpd.service"]

@@ -1,3 +1,0 @@
-dependencies:
-  - role: xdg_directories
-  - role: udisks

@@ -1,12 +1,10 @@
-- name: Install base package
-  aur: name=openssh
-  become: yes
+- include_role:
+    name: _install_packages
 
-- name: Create cache directory
-  file:
-    path: "{{ cache_directory }}"
-    state: directory
+- include_role:
+    name: _create_directories
 
+# Link single file to ignore private keys etc.
 - name: Link configuration file
   file:
     src: "{{ role_path }}/files/config"
@@ -14,6 +12,7 @@
     state: link
     force: yes
 
+# TODO: intergrate as profile
 - name: Link script for password caching
   file:
     src: "{{ role_path }}/files/enable_cache.sh"

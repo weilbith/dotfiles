@@ -1,0 +1,7 @@
+package_names:
+  - bluez # base
+  - bluez-utils # command-line interface
+  - pulseaudio-bluetooth # pulse-audio integration
+
+service:
+  name: bluetooth.service
