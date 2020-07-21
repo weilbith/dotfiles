@@ -38,6 +38,10 @@ Furthermore must the provision targets be run by the correct user to secure the
 file relation and permission. Moreover he will need access `sudo` to get root
 permissions for installing system packages and similar.
 
+Finally you will eventually need a file called `.vault.pwd` in the projects root
+directory. It is necessary to decrypt secrets stored for the Ansible setup (e.g.
+configuration files with an OAuth token).
+
 ## Installation
 
 This step is necessary for [provision](#provision) and [testing](#testing). It
@@ -133,3 +137,7 @@ a new virtual machine, running the provision from zero.
 Finally the continuous integration tests make sure that the setup is actually
 working. This is meant as a last check in case the git hooks and the virtual
 machine tests have not been maintained locally.
+
+The CircleCI workflow creates a dummy password file for ansible-vault. The setup
+has been customized to not throw decryption errors when they occur within
+a CircleCI job.
