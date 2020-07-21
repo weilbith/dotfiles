@@ -5,4 +5,3 @@
     new_directories: ["{{ xdg_cache_home }}/ssh"]
     configuration_destination: "{{ lookup('env', 'HOME') }}/.ssh"
     link_configuration_children: true
-# TODO: use profile script for the caching

@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 SSH_AGENT_CACHE="$XDG_CACHE_HOME/ssh/cache"
 
 # Check if agent is running.

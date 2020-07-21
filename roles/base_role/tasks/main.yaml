@@ -6,4 +6,5 @@
 - import_tasks: make_directories.yaml
 - import_tasks: link_configuration.yaml
 - import_tasks: link_environment.yaml
+- import_tasks: link_profile.yaml
 - import_tasks: enable_systemd_units.yaml
