@@ -1,0 +1,70 @@
+- name: "{{ origin_role_name }} - create parent configuration directory"
+  when: not link_configuration_children
+  file:
+    path: "{{ configuration_destination | dirname }}"
+    state: directory
+    mode: "{{ configuration_mode }}"
+
+- name: "{{ origin_role_name }} - create configuration directory"
+  when: link_configuration_children
+  file:
+    path: "{{ configuration_destination }}"
+    state: directory
+    mode: "{{ configuration_mode }}"
+
+- name: "{{ origin_role_name }} - force purge existing configuration directory"
+  when: not link_configuration_children and force_to_overwrite
+  file:
+    path: "{{ configuration_destination }}"
+    state: absent
+
+- name: "{{ origin_role_name }} - link configuration directory"
+  when: not link_configuration_children
+  file:
+    src: "{{ configuration_source }}"
+    dest: "{{ configuration_destination }}"
+    state: link
+    mode: "{{ configuration_mode }}"
+    force: yes
+
+- name: "{{ origin_role_name }} - collect children from source configuration directory"
+  find:
+    paths: "{{ configuration_source }}"
+    file_type: any
+  register: configuration_directory_children
+  when: link_configuration_children
+
+- name: "{{ origin_role_name }} - force purge existing children in the configuration directory"
+  when: link_configuration_children and force_to_overwrite
+  file:
+    path: "{{ configuration_destination }}/{{ item | relpath(configuration_source) }}"
+    state: absent
+  with_items:
+    - "{{ configuration_directory_children.files | map(attribute='path') | list }}"
+
+- name: "{{ origin_role_name }} - link configuration children into target directory"
+  when: link_configuration_children
+  file:
+    src: "{{ item }}"
+    dest: "{{ configuration_destination }}/{{ item | relpath(configuration_source) }}"
+    state: link
+    mode: "{{ configuration_mode }}"
+    force: yes
+  with_items:
+    - "{{ configuration_directory_children.files | map(attribute='path') | list }}"
+
+- name: "{{ origin_role_name }} - search for encrypted configuration files"
+  find:
+    paths: "{{ configuration_source }}"
+    contains: \$ANSIBLE_VAULT\;
+    recurse: yes
+  register: encrypted_files
+
+- name: "{{ origin_role_name }} - decrypt and copy encrypted configuration files"
+  copy:
+    src: "{{ item }}"
+    dest: "{{ configuration_destination }}/{{ item | relpath(configuration_source) }}"
+    mode: 0400
+    force: yes
+  with_items:
+    - "{{ encrypted_files.files | map(attribute='path') | list }}"

@@ -1,4 +1,4 @@
-- name: "{{ ansible_parent_role_names[0] }} - create directory(ies)"
+- name: "{{ ansible_parent_role_names[0] }} - make directory(ies)"
   file:
     path: "{{ item }}"
     state: directory

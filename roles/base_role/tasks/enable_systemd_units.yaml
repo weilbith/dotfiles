@@ -1,0 +1,15 @@
+- name: "{{ origin_role_name }} - search for custom systemd unit files"
+  find:
+    paths: "{{ origin_role_files}}"
+    patterns: "*.service,*.timer,*.socket,*target"
+  register: custom_unit_files
+
+- name: "{{ origin_role_name }} - enable systemd unit(s)"
+  systemd:
+    name: "{{ item }}"
+    scope: "{{ systemd_scope }}"
+    enabled: yes
+  become: "{{ systemd_scope == 'system' }}"
+  with_items:
+    - "{{ systemd_units }}"
+    - "{{ custom_unit_files.files | map(attribute='path') | list }}"

@@ -20,4 +20,4 @@ provide-role: ## Provide a specific role (add ROLE=<name-here>) (checkout 'provi
 	@ansible-playbook ./main.yaml --tags=$(ROLE) $(ASK_BECOME_PASS_ARG)
 
 provide-role-list: ## List role names that can be targeted
-	@find ./roles/ -mindepth 1 -maxdepth 1 -type d  -exec basename {} \;
+	@find ./roles/ -mindepth 1 -maxdepth 1 -type d  -exec basename {} \; | grep --invert-match 'base_role'

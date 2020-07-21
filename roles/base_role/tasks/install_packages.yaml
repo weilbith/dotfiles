@@ -1,0 +1,15 @@
+- name: "{{ origin_role_name }} - install package(s) from registry"
+  aur:
+    name: "{{ item }}"
+  become: "{{ install_packages_as_root }}"
+  with_items:
+    - "{{ base_package }}"
+    - "{{ additional_packages }}"
+
+- name: "{{ origin_role_name }} - install package(s) by PKGBUILD files"
+  shell: >
+    cd $(mktemp -d);
+    curl -O "{{ item }}";
+    makepkg --syncdeps --install --needed --noconfirm
+  with_items:
+    - "{{ pkgbuild_urls }}"

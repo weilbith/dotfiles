@@ -1,9 +1,0 @@
-- name: "{{ ansible_parent_role_names[0] }} - enable and start systemd service(s)"
-  systemd:
-    name: "{{ item }}"
-    enabled: yes
-    state: started
-    scope: "{{ service_scope | default('system') }}"
-  become: "{{ service_scope | default('system') == 'system' }}"
-  with_items:
-    - "{{ service_names }}"

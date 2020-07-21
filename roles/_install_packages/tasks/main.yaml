@@ -1,6 +1,0 @@
-- name: "{{ ansible_parent_role_names[0] }} - install package(s)"
-  aur:
-    name: "{{ item }}"
-  become: yes
-  with_items:
-    - "{{ package_names }}"

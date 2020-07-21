@@ -1,0 +1,13 @@
+- stat:
+    path: "{{ configuration_source }}"
+  register: configuration_source_directory
+
+- import_tasks: install_packages.yaml
+- import_tasks: make_directories.yaml
+- import_tasks: link_configuration.yaml
+  when: >
+    configuration_source_directory.stat.exists and
+    configuration_source_directory.stat.isdir
+  become: "{{ link_as_root }}"
+
+- import_tasks: enable_systemd_units.yaml
