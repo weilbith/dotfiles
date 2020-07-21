@@ -1,2 +1,2 @@
-- include_role:
-    name: _install_packages
+- import_role:
+    name: base_role

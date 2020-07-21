@@ -1,5 +1,8 @@
-- include_role:
-    name: _install_packages
-
-- include_role:
-    name: _enable_start_services
+- import_role:
+    name: base_role
+  vars:
+    base_package: pulseaudio
+    additional_packages:
+      - xf86-input-synaptics # Support laptop media keys
+    systemd_units: [pulseaudio.service]
+    systemd_scope: user

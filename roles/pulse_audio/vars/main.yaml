@@ -1,6 +1,0 @@
-package_names:
-  - pulseaudio # base
-  - xf86-input-synaptics # Support laptop media keys
-
-service_names: ["pulseaudio.service"]
-service_scope: user

@@ -1,0 +1,9 @@
+- import_role:
+    name: base_role
+  vars:
+    additional_packages:
+      - avahi # Network discovery of printers
+      - nss-mdns # Host name resolution
+    systemd_units:
+      - org.cups.cupsd.service
+      - avahi-daemon.service

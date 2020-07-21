@@ -1,7 +1,0 @@
-package_names:
-  - syncthing # base
-  - inotify-tools # Observe filesystem events for auto-sync
-
-configuration_directory: "{{ xdg_config_home }}/syncthing"
-service_names: ["syncthing.service"]
-service_scope: user

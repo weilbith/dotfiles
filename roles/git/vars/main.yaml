@@ -1,2 +1,0 @@
-package_names: ["git"]
-configuration_directory: "{{ xdg_config_home }}/git"

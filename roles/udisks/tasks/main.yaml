@@ -1,32 +1,36 @@
-- include_role:
-    name: _install_packages
+- import_role:
+    name: base_role
+  vars:
+    base_package: udisks2
+    additional_packages:
+      - ntfs-3g # Support NTFS
+    directory_paths:
+      - /etc/udev/rules.d
+      - /etc/tmpfiles.d
+    systemd_units: udisks2.service
 
-- include_role:
-    name: _create_directories
-    apply:
-      become: yes
+- name: Find rule files
+  find:
+    paths: "{{ role_path }}/files"
+    patterns: "*.rules"
+  register: rule_files
 
-# TODO: Solve issue of linking
-- name: Copy rule files
-  copy:
+- name: Link rule files
+  file:
     src: "{{ item }}"
-    dest: "{{ rules_directory }}"
-  with_fileglob:
-    - "{{ role_path }}/files/*.rules"
+    dest: "/etc/udev/rules.d/{{ item | basename }}"
+    state: link
+    mode: 0644
+    force: yes
   become: yes
+  with_items:
+    - "{{ rule_files.files | map(attribute='path') | list }}"
 
-- name: Copy media configuration file
-  copy:
+- name: Link media configuration file
+  file:
     src: "{{ role_path }}/files/media.conf"
-    dest: "{{ media_directory }}"
-  become: yes
-
-- include_role:
-    name: _enable_start_services
-
-- name: Enable and start SystemD service
-  systemd:
-    name: udisks2.service
-    enabled: yes
-    state: started
+    dest: /etc/tmpfiles.d/media.conf
+    state: link
+    mode: 0644
+    force: yes
   become: yes

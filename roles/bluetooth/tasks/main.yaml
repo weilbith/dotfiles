@@ -1,5 +1,0 @@
-- include_role:
-    name: _install_packages
-
-- include_role:
-    name: _enable_start_services

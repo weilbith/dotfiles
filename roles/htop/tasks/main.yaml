@@ -1,5 +1,2 @@
-- include_role:
-    name: _install_packages
-
-- include_role:
-    name: _link_configuration
+- import_role:
+    name: base_role

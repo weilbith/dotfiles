@@ -1,8 +1,0 @@
-package_names:
-  - cups # base
-  - avahi # Network discovery of printers
-  - nss-mdns # Host name resolution
-
-service_names:
-  - org.cups.cupsd.service
-  - avahi-daemon.service

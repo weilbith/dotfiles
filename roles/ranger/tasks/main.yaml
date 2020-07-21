@@ -1,17 +1,6 @@
-- name: Install base package
-  aur: name=ranger
-  become: yes
-
-- name: Install optional dependency packages
-  aur:
-    name:
+- import_role:
+    name: base_role
+  vars:
+    additional_packages:
       - python-pillow # Show images in terminal
       - python-paramiko # Custom command to upload files via SSH
-  become: yes
-
-- name: Link configuration files
-  file:
-    src: "{{ role_path }}/files/"
-    dest: "{{ configuration_directory }}"
-    state: link
-    force: yes

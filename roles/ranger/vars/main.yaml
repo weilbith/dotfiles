@@ -1,6 +1,0 @@
-package_names:
-  - ranger # base
-  - python-pillow # Show images in terminal
-  - python-paramiko # Custom command to upload files via SSH
-
-configuration_directory: "{{ xdg_config_home }}/ranger"

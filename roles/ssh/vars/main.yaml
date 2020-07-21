@@ -1,3 +1,0 @@
-package_names: ["openssh"]
-directory_paths: ["{{ xdg_cache_home }}/ssh"]
-config_directory: "{{ lookup('env', 'HOME') }}/.ssh"

@@ -1,9 +1,0 @@
-package_names:
-  - networkmanager # base
-  - macchanger # Change MAC address via custom dispatcher
-
-service_names:
-  - NetworkManager.service
-  - NetworkManager-dispatcher.service
-
-dispatcher_directory: "/etc/NetworkManager/dispatcher.d/"

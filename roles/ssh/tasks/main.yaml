@@ -1,21 +1,8 @@
-- include_role:
-    name: _install_packages
-
-- include_role:
-    name: _create_directories
-
-# Link single file to ignore private keys etc.
-- name: Link configuration file
-  file:
-    src: "{{ role_path }}/files/config"
-    dest: "{{ config_directory }}/config"
-    state: link
-    force: yes
-
-# TODO: intergrate as profile
-- name: Link script for password caching
-  file:
-    src: "{{ role_path }}/files/enable_cache.sh"
-    dest: "{{ config_directory }}/enable_cache.sh"
-    state: link
-    force: yes
+- import_role:
+    name: base_role
+  vars:
+    base_package: openssh
+    directory_paths: ["{{ xdg_cache_home }}/ssh"]
+    configuration_destination: "{{ lookup('env', 'HOME') }}/.ssh"
+    link_configuration_children: true
+# TODO: use profile script for the caching
