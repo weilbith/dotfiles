@@ -2,4 +2,3 @@
     name: base_role
   vars:
     link_configuration_children: true
-# TODO: add environment.d entry for HUB_CONFIG

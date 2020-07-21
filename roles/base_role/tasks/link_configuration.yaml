@@ -18,7 +18,7 @@
 
     - name: "{{ origin_role_name }} - force purge existing configuration directory"
       when:
-        - link_configuration_children
+        - not link_configuration_children
         - force_to_overwrite_configuration
       file:
         path: "{{ configuration_destination }}"

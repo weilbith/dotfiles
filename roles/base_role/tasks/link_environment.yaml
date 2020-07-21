@@ -1,0 +1,16 @@
+- name: "{{ origin_role_name }} - Block: link environment"
+  when: lookup('check_role_directory_existence', 'environment')
+  block:
+    - name: "{{ origin_role_name }} - create environment directory"
+      file:
+        path: "{{ environment_directory }}"
+        state: directory
+
+    - name: "{{ origin_role_name }} - link environment files"
+      file:
+        src: "{{ item }}"
+        dest: "{{ environment_directory }}/{{ item | basename }}"
+        state: link
+        mode: 0700
+      with_items:
+        - "{{ lookup('files_in_role_directory', 'environment', wantlist=True) }}"
