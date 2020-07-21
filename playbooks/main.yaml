@@ -1,0 +1,4 @@
+- import_playbook: desktop.yaml
+- import_playbook: networking.yaml
+- import_playbook: storage.yaml
+- import_playbook: system.yaml

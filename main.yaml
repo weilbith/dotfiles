@@ -1,4 +1,0 @@
-- import_playbook: ./playbooks/desktop.yaml
-- import_playbook: ./playbooks/networking.yaml
-- import_playbook: ./playbooks/storage.yaml
-- import_playbook: ./playbooks/system.yaml
