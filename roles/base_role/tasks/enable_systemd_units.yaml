@@ -6,4 +6,4 @@
   become: "{{ systemd_scope == 'system' }}"
   with_items:
     - "{{ systemd_units }}"
-    - "{{ lookup('files_in_role_directory', 'systemd', wantlist=True) }}"
+    - "{{ lookup('role_directory_entries', 'systemd', wantlist=True) }}"
