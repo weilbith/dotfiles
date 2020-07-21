@@ -1,7 +1,6 @@
 - name: "{{ origin_role_name }} - install package(s) from registry"
   aur:
     name: "{{ item }}"
-  become: "{{ install_packages_as_root }}"
   with_items:
     - "{{ base_package }}"
     - "{{ additional_packages }}"

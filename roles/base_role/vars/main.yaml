@@ -15,7 +15,6 @@ origin_role_files: "{{ ansible_parent_role_paths[0] }}/files"
 base_package: "{{ origin_role_name }}"
 additional_packages: []
 pkgbuild_urls: []
-install_packages_as_root: true
 
 new_directories: []
 
