@@ -34,7 +34,7 @@ jobs:
           command: make install-provision
       - run:
           name: Create placeholder password file for ansible-vault
-          command: touch ./.vault.pwd
+          command: echo 'invalid' > ./.vault.pwd
       - run:
           name: Run provision
           command: make provide
