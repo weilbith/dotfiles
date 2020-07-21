@@ -5,3 +5,4 @@ xdg_runtime_dir: "{{ lookup('env', 'HOME') }}/.runtime"
 
 environment_directory: "{{ xdg_config_home }}/environment.d"
 profile_directory: "{{ xdg_config_home }}/profile.d"
+autostart_directory: "{{ xdg_config_home }}/autostart.d"

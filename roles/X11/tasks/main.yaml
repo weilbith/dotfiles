@@ -7,3 +7,4 @@
       - xsel # Work with mouse selection
       - xclip # Command-line interface for clipboard
       - xdotool # Remote xorg server control
+      - feh # Display wallpaper image
