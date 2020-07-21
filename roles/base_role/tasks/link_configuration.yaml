@@ -54,6 +54,7 @@
     - "{{ configuration_directory_children.files | map(attribute='path') | list }}"
 
 - name: "{{ origin_role_name }} - search for encrypted configuration files"
+  when: link_configuration_children
   find:
     paths: "{{ configuration_source }}"
     contains: \$ANSIBLE_VAULT\;
@@ -61,6 +62,7 @@
   register: encrypted_files
 
 - name: "{{ origin_role_name }} - decrypt and copy encrypted configuration files"
+  when: link_configuration_children
   copy:
     src: "{{ item }}"
     dest: "{{ configuration_destination }}/{{ item | relpath(configuration_source) }}"
