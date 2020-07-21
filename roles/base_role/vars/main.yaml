@@ -17,14 +17,14 @@ additional_packages: []
 pkgbuild_urls: []
 install_packages_as_root: true
 
-directory_paths: []
+new_directories: []
 
 configuration_source: "{{ origin_role_files }}/configuration"
 configuration_destination: "{{ xdg_config_home }}/{{ origin_role_name }}"
 configuration_mode: 0700
 link_configuration_children: false
-link_as_root: no
-force_to_overwrite: false
+link_configuration_as_root: no
+force_to_overwrite_configuration: false
 
 systemd_units: []
 systemd_scope: system

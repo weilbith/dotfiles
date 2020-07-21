@@ -1,6 +1,6 @@
 - name: "{{ origin_role_name }} - Block: link configuration"
   when: lookup('check_role_directory_existence', 'configuration')
-  become: "{{ link_as_root }}"
+  become: "{{ link_configuration_as_root }}"
   block:
     - name: "{{ origin_role_name }} - create parent configuration directory"
       when: not link_configuration_children
@@ -19,7 +19,7 @@
     - name: "{{ origin_role_name }} - force purge existing configuration directory"
       when:
         - link_configuration_children
-        - force_to_overwrite
+        - force_to_overwrite_configuration
       file:
         path: "{{ configuration_destination }}"
         state: absent
@@ -43,7 +43,7 @@
     - name: "{{ origin_role_name }} - force purge existing children in the configuration directory"
       when:
         - link_configuration_children
-        - force_to_overwrite
+        - force_to_overwrite_configuration
       file:
         path: "{{ configuration_destination }}/{{ item | relpath(configuration_source) }}"
         state: absent

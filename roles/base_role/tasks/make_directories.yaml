@@ -3,4 +3,4 @@
     path: "{{ item }}"
     state: directory
   with_items:
-    - "{{ directory_paths }}"
+    - "{{ new_directories }}"

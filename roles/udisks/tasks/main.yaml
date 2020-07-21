@@ -4,7 +4,7 @@
     base_package: udisks2
     additional_packages:
       - ntfs-3g # Support NTFS
-    directory_paths:
+    new_directories:
       - /etc/udev/rules.d
       - /etc/tmpfiles.d
     systemd_units: udisks2.service

@@ -6,8 +6,8 @@
       - macchanger # Change MAC address via custom dispatcher
     configuration_destination: "/etc/NetworkManager"
     link_configuration_children: true
-    link_as_root: yes
-    force_to_overwrite: true
+    link_configuration_as_root: yes
+    force_to_overwrite_configuration: true
     configuration_mode: 0744
     systemd_units:
       - NetworkManager.service
