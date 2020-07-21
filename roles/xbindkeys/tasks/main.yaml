@@ -1,0 +1,6 @@
+- import_role:
+    name: base_role
+  vars:
+    install_packages_as_root: no # For some reason it fails for this case
+
+# TODO: create alias profile

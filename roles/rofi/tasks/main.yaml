@@ -1,0 +1,7 @@
+- import_role:
+    name: base_role
+  vars:
+    additional_packages:
+      - rofi-dmenu # Rofi replacement for dmenu
+      - rofi-calc # Calculator plugin
+      - rofi-greenclip # Clipboard integration

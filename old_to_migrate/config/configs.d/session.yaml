@@ -3,51 +3,8 @@ config:
   link_dotfile_default: link
 
 dotfiles:
-  x11_basics:
-    actions:
-      - install_by_package_manager xorg
-      - install_by_package_manager xsel
-      - install_by_package_manager xclip
-      - install_by_package_manager xbindkeys
-      - install_by_package_manager xdotool
-      - link_permissioned X11/xorg.conf.d /etc/X11/
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/X11'
-    src: X11
-
-  i3wm:
-    actions:
-      - install_by_package_manager i3-gaps
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/i3'
-    src: i3
-
-  picom:
-    actions:
-      - install_by_package_manager picom
-      - enable_start_service_user_custom picom.service
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/picom'
-    src: picom
-
-  rofi:
-    actions: install_by_package_manager rofi
-      install_by_package_manager rofi-dmenu
-      install_by_package_manager rofi-calc
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/rofi'
-    src: rofi
-
-  dunst:
-    actions:
-      - install_by_package_manager dunst
-      - enable_start_service_user dunst.service
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/dunst'
-    src: dunst
-
-  redshift:
-    actions:
-      - install_by_package_manager redshift-minimal
-      - enable_start_service_user redshift.service
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/redshift'
-    src: redshift
-
+  # synaptics?
+  #
   xautolock:
     actions:
       - install_by_package_manager xautolock
@@ -59,6 +16,7 @@ dotfiles:
   autorandr:
     actions:
       - install_by_package_manager autorandr
+        # Service!
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/autorandr'
     src: autorandr
 

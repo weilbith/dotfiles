@@ -1,0 +1,9 @@
+- import_role:
+    name: base_role
+  vars:
+    base_package: i3-gaps
+    additional_packages:
+      - i3ipc-glib-git # Fix bug for dependency issues by easyfocus
+      - i3-easyfocus-git # Focus windows via interactive selection
+    pkgbuild_urls:
+      - https://raw.githubusercontent.com/weilbith/i3-utils/master/PKGBUILD

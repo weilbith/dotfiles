@@ -1,0 +1,9 @@
+! Cursor
+Xcursor.size:   40
+
+! Font
+Xft.dpi:        96
+Xft.hinting:    1
+Xft.hintstyle:  hintslight
+Xft.rgba:       rgb
+Xft.antialias:  1

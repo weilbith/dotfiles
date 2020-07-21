@@ -1,0 +1,18 @@
+#!/bin/bash
+
+X11_CONFIG_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+
+xrdb -merge "$X11_CONFIG_DIR/xresources"
+xmodmap "$X11_CONFIG_DIR/xmodmap"
+
+command -v xbindkeys >/dev/null && xbindkeys # TODO: alias including --file...
+command -v autorandr >/dev/null && autorandr --change
+command -v dex >/dev/null && dex -a &
+
+# TODO: Fix that by the systemd script
+systemctl --user import-environment DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS
+systemctl --user restart xautolock redshift picom unclutter greenclip
+
+exec i3
+
+# vim: filetype=sh

@@ -1,0 +1,9 @@
+- import_role:
+    name: base_role
+  vars:
+    base_package: xorg # actually a big group of packages
+    additional_packages:
+      - xorg-xinit # Start xorg server, window manger etc.
+      - xsel # Work with mouse selection
+      - xclip # Command-line interface for clipboard
+      - xdotool # Remote xorg server control

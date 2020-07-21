@@ -1,4 +1,0 @@
-- name: Setup focused on session related stuff
-  hosts: all
-  roles:
-    - i3wm

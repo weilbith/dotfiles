@@ -1,0 +1,10 @@
+- name: Setup focused on the desktop environment
+  hosts: all
+  roles:
+    - X11
+    - xbindkeys
+    - i3
+    - picom
+    - rofi
+    - dunst
+    - redshift

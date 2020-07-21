@@ -51,4 +51,3 @@ entry {
   text-color: @color-steel-blue-1;
   border-color: @color-steel-blue-1;
 }
-
