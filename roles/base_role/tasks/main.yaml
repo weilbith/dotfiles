@@ -5,7 +5,13 @@
 - import_tasks: install_packages.yaml
 - import_tasks: make_directories.yaml
 - import_tasks: link_configuration.yaml
-- import_tasks: link_environment.yaml
-- import_tasks: link_profile.yaml
-- import_tasks: link_autostart.yaml
 - import_tasks: enable_systemd_units.yaml
+
+- name: "{{ origin_role_name }} - Block: link shared resources"
+  include_tasks: link_shared_resource.yaml
+  loop:
+    - { kind: "environment", directory: "{{ environment_directory }}" }
+    - { kind: "profile", directory: "{{ profile_directory }}" }
+    - { kind: "autostart", directory: "{{ autostart_directory }}" }
+  loop_control:
+    loop_var: resource

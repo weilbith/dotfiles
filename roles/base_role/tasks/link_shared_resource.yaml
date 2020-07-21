@@ -1,0 +1,16 @@
+- name: "{{ origin_role_name }} - Block: link shared resources of kind '{{ resource.kind }}'"
+  when: lookup('role_directory_entries', resource.kind) | length > 0
+  block:
+    - name: "{{ origin_role_name }} - create {{ resource.kind }} directory"
+      file:
+        path: "{{ resource.directory }}"
+        state: directory
+
+    - name: "{{ origin_role_name }} - link {{ resource.kind }} files"
+      file:
+        src: "{{ item }}"
+        dest: "{{ resource.directory }}/{{ item | basename }}"
+        state: link
+        mode: 0700
+      with_items:
+        - "{{ lookup('role_directory_entries', resource.kind, wantlist=True) }}"
