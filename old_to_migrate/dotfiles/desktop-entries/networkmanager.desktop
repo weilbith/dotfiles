@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=NetworkManager
-Comment=CLI based network manager
-Exec=kitty --name floating --class NetworkManager --detach -o initial_window_width=450 -o initial_window_height=570 -o remember_window_size=no nmtui
-Type=Application
