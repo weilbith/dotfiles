@@ -34,6 +34,10 @@ test-vagrant: ## Create or start the Vagrant machine and do provision (forwards 
 		printf "\n"; \
 	fi
 
+test-vagrant-gui: ## Starts Vagrant machine with GUI (e.g. to test a visual setup like xorg)
+	@vagrant halt
+	@GUI=true vagrant up --no-provision
+
 test-push-docker-image: test-build-docker-image ## Upload the most recent image version to DockerHub
 	@echo Upload new build image to DockerHub...
 	@docker login

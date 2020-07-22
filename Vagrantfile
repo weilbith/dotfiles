@@ -20,7 +20,9 @@ SCRIPT
 Vagrant.configure("2") do |config|
   config.vm.box = "archlinux/archlinux"
   config.vm.hostname = "warhorse"
-  config.vm.provider "virtualbox"
+  config.vm.provider :virtualbox do |vb|
+    vb.gui = ENV['GUI'] || false
+  end
   config.vm.provision "shell",
     inline: $script,
     privileged: false,

@@ -127,6 +127,11 @@ the setup get synchronized automatically thanks to Vagrant. Remind that the
 mode is not set. Therefore it is necessary to first resume the machine with
 `vagrant resume && vagrant ssh`.
 
+If there is the need to verify a setup visually like if a xorg configuration
+works well, the command `make test-vagrant-gui` can be used to restart the
+virtual machine with a graphical interface. The default login is user-name and
+password `vagrant`.
+
 Unfortunately can't Ansible handle breaking changes. While it is idempotent it
 does not automatically clean up old runs according to a diff with a more recent
 version. So if there are breaking changes necessary, it is advised to recreate
