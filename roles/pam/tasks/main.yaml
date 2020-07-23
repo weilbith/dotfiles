@@ -1,0 +1,6 @@
+- name: Link configuration file with basic environment variables
+  copy:
+    src: "{{ role_path }}/files/pam_env.conf"
+    dest: /etc/security/pam_env.conf
+    mode: 0644
+  become: yes
