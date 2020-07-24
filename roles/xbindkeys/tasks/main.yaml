@@ -1,2 +1,4 @@
 - import_role:
     name: base_role
+  vars:
+    systemd_scope: user

@@ -1,0 +1,8 @@
+[Unit]
+Description=Key bindings for X11
+
+[Service]
+ExecStart=xbindkeys --nodaemon --file $XBINDKEYS_CONFIG_FILE
+
+[Install]
+WantedBy=default.target
