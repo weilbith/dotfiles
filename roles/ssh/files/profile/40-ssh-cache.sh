@@ -1,15 +1,8 @@
-#!/usr/bin/bash
-
-SSH_AGENT_CACHE="$XDG_CACHE_HOME/ssh/cache"
-
-# Check if agent is running.
+# Start agent if not already running and update cache.
 if ! pgrep -u "$USER" ssh-agent >/dev/null; then
-  # Start and cache variables for next shell.
-  ssh-agent >"$SSH_AGENT_CACHE"
-fi
+  ssh-agent >"$SSH_AGENT_CACHE_FILE"
 
-# Check if the variables are exported already.
-if [[ "$SSH_AGENT_PID" == "" ]]; then
-  # Load variables from cache.
-  eval "$(<"$SSH_AGENT_CACHE")"
+# Load agents cache if not already present.
+elif [[ -z "$SSH_AGENT_PID" ]]; then
+  eval "$(<"$SSH_AGENT_CACHE_FILE")" >/dev/null
 fi
