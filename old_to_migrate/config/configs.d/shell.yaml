@@ -4,25 +4,6 @@ config:
   keepdot: true # Required for zsh
 
 dotfiles:
-  kitty:
-    actions:
-      - install_by_package_manager kitty
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/kitty'
-    src: kitty
-
-  environment_d:
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/environment.d'
-    src: environment.d
-
-  zsh:
-    actions:
-      - install_by_package_manager zsh
-      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/zsh'
-      - zsh_set_configuration_directory
-      - zsh_set_as_default_shell
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/zsh'
-    src: zsh
-
   antibody:
     actions:
       - install_by_package_manager antibody

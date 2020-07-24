@@ -2,3 +2,4 @@
 - import_playbook: networking.yaml
 - import_playbook: storage.yaml
 - import_playbook: system.yaml
+- import_playbook: shell.yaml

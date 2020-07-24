@@ -1,0 +1,5 @@
+- name: Setup focused on the shell and terminal
+  hosts: all
+  roles:
+    - zsh
+    - kitty
