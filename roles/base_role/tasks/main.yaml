@@ -1,7 +1,3 @@
-- stat:
-    path: "{{ configuration_source }}"
-  register: configuration_source_directory
-
 - import_tasks: install_packages.yaml
 - import_tasks: make_directories.yaml
 - import_tasks: link_configuration.yaml
