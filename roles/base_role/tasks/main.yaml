@@ -10,5 +10,6 @@
     - { kind: "profile", directory: "{{ profile_directory }}" }
     - { kind: "autostart", directory: "{{ autostart_directory }}" }
     - { kind: "applications", directory: "{{ applications_directory }}" }
+    - { kind: "plugins", directory: "{{ plugins_directory }}" }
   loop_control:
     loop_var: resource
