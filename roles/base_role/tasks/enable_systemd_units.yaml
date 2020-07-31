@@ -7,3 +7,17 @@
   with_items:
     - "{{ systemd_units }}"
     - "{{ lookup('role_directory_entries', 'systemd', wantlist=True) }}"
+
+# Limit this to the user space so far.
+- name: "{{ origin_role_name }} - make sure timer related services are only linked"
+  when: lookup('role_directory_entries', 'systemd') | length > 0
+  shell: |
+    timer_services=$(systemctl --user list-timers --all --plain --no-legend --full | awk 'NF>1{print $NF}')
+    for service in $timer_services; do
+      unit_enabled=$(systemctl --user list-units $service --plain --no-legend)
+      if [[ -n "$unit_enabled" ]]; then
+        unit_path=$(systemctl --user show --property FragmentPath $service | cut -d "=" -f2)
+        systemctl --user disable $service
+        systemctl --user link $unit_path
+      fi
+    done
