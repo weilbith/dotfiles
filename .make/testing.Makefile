@@ -20,7 +20,7 @@ test-lint: ## Run linter for the setup configuration
 test-vagrant: ## Create or start the Vagrant machine and do provision (forwards ROLE and BOOK variable) (speed up with FAST)
 	@echo Evaluate Vagrant box status and run provision...
 	@vagrant status | grep -q -E 'paused|saved' && vagrant resume --no-provision || true
-	@vagrant status | grep -q -E 'not created|shutoff|poweroff' && vagrant up --no-provision || true
+	@vagrant status | grep -q -E 'not created|shutoff|poweroff|aborted' && vagrant up --no-provision || true
 	@ROLE=$(ROLE) BOOK=$(BOOK) vagrant provision
 	@if [[ -z "$(FAST)" ]]; then \
 		vagrant suspend; \
