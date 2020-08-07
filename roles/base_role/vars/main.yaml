@@ -26,4 +26,4 @@ link_configuration_as_root: no
 force_to_overwrite_configuration: false
 
 systemd_units: []
-systemd_scope: system
+systemd_scope: user

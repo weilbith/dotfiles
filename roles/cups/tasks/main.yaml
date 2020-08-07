@@ -7,3 +7,4 @@
     systemd_units:
       - org.cups.cupsd.service
       - avahi-daemon.service
+    systemd_scope: system

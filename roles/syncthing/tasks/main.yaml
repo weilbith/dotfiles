@@ -5,4 +5,3 @@
       - inotify-tools # Observe filesystem events for auto-sync
     link_configuration_children: true
     systemd_units: [syncthing.service]
-    systemd_scope: user

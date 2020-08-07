@@ -12,3 +12,4 @@
     systemd_units:
       - NetworkManager.service
       - NetworkManager-dispatcher.service
+    systemd_scope: system

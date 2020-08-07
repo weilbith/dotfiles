@@ -8,6 +8,7 @@
       - /etc/udev/rules.d
       - /etc/tmpfiles.d
     systemd_units: udisks2.service
+    systemd_scope: system
 
 - name: Find rule files
   find:

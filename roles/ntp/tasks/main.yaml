@@ -2,3 +2,4 @@
     name: base_role
   vars:
     systemd_units: [ntpd.service]
+    systemd_scope: system
