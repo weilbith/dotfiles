@@ -4,27 +4,6 @@ config:
   keepdot: true # Required for zsh
 
 dotfiles:
-  antibody:
-    actions:
-      - install_by_package_manager antibody
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/zsh'
-    src: zsh
-
-  tmux:
-    actions:
-      - install_by_package_manager tmux
-      - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/tmux/plugins'
-      - clone_free https://github.com/weilbith/tpm.git '{{@@ env["XDG_CACHE_HOME"] @@}}/tmux/plugins/tpm'
-      - message 'Make sure to install the plugins via the plugin manager using `prefix + I`.'
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/tmux'
-    src: tmux
-
-  fzf:
-    actions:
-      - install_by_package_manager fzf
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/fzf'
-    src: fzf
-
   fasd:
     actions:
       - install_by_package_manager fasd-git

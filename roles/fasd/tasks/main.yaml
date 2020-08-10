@@ -1,0 +1,7 @@
+- import_role:
+    name: base_role
+  vars:
+    base_package: fasd-git
+    new_directories:
+      - "{{ xdg_data_home }}/fasd"
+      - "{{ xdg_cache_home }}/fasd"
