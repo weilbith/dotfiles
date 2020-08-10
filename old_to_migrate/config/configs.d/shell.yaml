@@ -53,31 +53,9 @@ dotfiles:
 
   tool_collection:
     actions:
-      - install_by_package_manager ripgrep-all-git
-      - install_by_package_manager exa
-      - install_by_package_manager bat
-      - install_by_package_manager htop
-      - install_by_package_manager pdfgrep
-      - install_by_package_manager nmon
-      - install_by_package_manager wuzz
-      - install_by_package_manager thefuck
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
-
-profiles:
-  shell:
-    dotfiles:
-      - kitty
-      - environment_d
-      - zsh
-      - antibody
-      - tmux
-      - fzf
-      - fasd
-      - cheatsh
-      - translate_shell
-      - wget
-      - tool_collection
+      - install_by_package_manager ripgrep-all-git # has config
+      - install_by_package_manager exa # has environment
+      - install_by_package_manager bat # has config
+      - install_by_package_manager htop # has config
 
 # vim: nospell
