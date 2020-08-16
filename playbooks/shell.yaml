@@ -3,6 +3,6 @@
   roles:
     - zsh
     - zplug
-    - kitty
+    - alacritty
     - fzf
     - fasd

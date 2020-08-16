@@ -1,0 +1,31 @@
+window:
+  class:
+    instance: Alacritty
+
+scrolling:
+  history: 0 # Use TMux instead
+
+font:
+  size: 5
+
+  # Style property adopts automatically for bold or italic text
+  normal:
+    family: Source Code Pro
+    style: Regular
+
+  glyph_offset:
+    y: -1 # Fix shifted special characters
+
+colors:
+  primary:
+    background: "#000000"
+    foreground: "#5fd7ff"
+
+  selection:
+    text: "#282a2e"
+    background: "#d7ff5f"
+
+background_opacity: 0.7
+
+selection:
+  save_to_clipboard: true

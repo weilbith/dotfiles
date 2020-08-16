@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Bashmount
 Comment=CLI based device manager
-Exec=kitty --name floating --class Bashmount --detach -o initial_window_width=480 -o initial_window_height=570 -o remember_window_size=no bashmount
+Exec=alacritty --class floating --dimensions 77 21 --title Bashmount --command bashmount
 Type=Application

@@ -77,4 +77,3 @@
 [i3lock]
     summary = "i3lock"
     new_icon = /home/thore/.local/share/icons/hicolor/24x24/app/app-lock.png
-    action = "kitty bashmount"

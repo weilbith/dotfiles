@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Nmui
+Name=NetworkManager
 Comment=CLI based network manager
-Exec=kitty --name floating --class Nmui --detach -o initial_window_width=450 -o initial_window_height=570 -o remember_window_size=no nmtui
+Exec=alacritty --class floating --dimensions 55 34 --title NetworkManager --command nmtui
 Type=Application

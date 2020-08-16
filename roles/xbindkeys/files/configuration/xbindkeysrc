@@ -77,7 +77,7 @@
 
 # MISC
 ## Open terminal emulator
-"kitty"
+"alacritty"
   Mod4 + Return
 
 ## Rofi

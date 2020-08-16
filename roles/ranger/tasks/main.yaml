@@ -2,5 +2,5 @@
     name: base_role
   vars:
     additional_packages:
-      - python-pillow # Show images in terminal
+      - w3m # Show images in terminal
       - python-paramiko # Custom command to upload files via SSH
