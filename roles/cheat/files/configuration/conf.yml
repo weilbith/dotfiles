@@ -1,0 +1,13 @@
+colorize: true
+style: monokai
+formatter: terminal16m
+cheatpaths:
+  - name: community
+    path: ~/.local/share/cheat/community
+    tags: [community]
+    readonly: true
+
+  - name: personal
+    path: ~/.local/share/cheat/personal
+    tags: [personal]
+    readonly: false

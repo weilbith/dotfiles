@@ -1,0 +1,16 @@
+- import_role:
+    name: base_role
+  vars:
+    new_directories: ["{{ xdg_data_home }}/cheat"]
+
+- name: "Link personal cheat sheets to data directory"
+  file:
+    src: "{{ role_path }}/files/sheets"
+    dest: "{{ xdg_data_home }}/cheat/personal"
+    state: link
+
+- name: "Download community cheat sheets to data directory"
+  git:
+    repo: https://github.com/cheat/cheatsheets
+    dest: "{{ xdg_data_home }}/cheat/community"
+    depth: 1
