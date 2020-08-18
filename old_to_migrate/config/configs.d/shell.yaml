@@ -4,13 +4,6 @@ config:
   keepdot: true # Required for zsh
 
 dotfiles:
-  fasd:
-    actions:
-      - install_by_package_manager fasd-git
-      - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/fasd'
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/fasd'
-    src: fasd
-
   cheatsh:
     actions:
       - install_by_package_manager cht.sh

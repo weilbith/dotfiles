@@ -3,13 +3,12 @@
 - import_tasks: link_configuration.yaml
 - import_tasks: enable_systemd_units.yaml
 
-- name: "{{ origin_role_name }} - Block: link shared resources"
-  include_tasks: link_shared_resource.yaml
+- name: "{{ origin_role_name }} - Block: link shared directories"
+  include_tasks: link_shared_directory.yaml
   loop:
-    - { kind: "environment", directory: "{{ environment_directory }}" }
-    - { kind: "profile", directory: "{{ profile_directory }}" }
-    - { kind: "autostart", directory: "{{ autostart_directory }}" }
-    - { kind: "applications", directory: "{{ applications_directory }}" }
-    - { kind: "plugins", directory: "{{ plugins_directory }}" }
+    - "{{ environment_directory }}"
+    - "{{ profile_directory }}"
+    - "{{ plugin_directory }}"
+    - "{{ applications_directory }}"
   loop_control:
-    loop_var: resource
+    loop_var: directory
