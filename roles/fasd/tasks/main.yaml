@@ -1,7 +1,10 @@
 - import_role:
     name: base_role
   vars:
-    base_package: fasd-git
+    base_package: "" # Unset and use pkgbuild_urls only.
+    pkgbuild_urls:
+      # Adopted PKGBUILD using a fork that supports XDG-base-directories.
+      - https://gist.githubusercontent.com/weilbith/cfd58e0306c21ea0c1b04e4da49fdc8a/raw/d7578141afbcd1cb169fd95d4422ba4e773918e0/PKGBUILD
     new_directories:
       - "{{ xdg_data_home }}/fasd"
       - "{{ xdg_cache_home }}/fasd"
