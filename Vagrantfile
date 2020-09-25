@@ -1,19 +1,42 @@
 $script = <<-SCRIPT
 set -e
 
-sudo pacman -S --needed --noconfirm --quiet base-devel git 2> /dev/null
-rm -rf dotfiles
-cp -rf /vagrant dotfiles
-cd dotfiles
-make install-provision
+DOTFILE_DIRECTORY=$HOME/dotfiles
 
-if [[ -n "$ROLE" ]]; then
-  make provide-role ROLE="$ROLE"
-elif [[ -n "$BOOK" ]]; then
-  make provide-book BOOK="$BOOK"
-else
-  make provide
-fi
+function updateSystemOnNewMachine() {
+  local remember_update_file=/var/inital_update_done
+
+  if [[ ! -f "$remember_update_file" ]]; then
+    sudo pacman --sync --refresh --sysupgrade --noconfirm
+    sudo touch "$remember_update_file"
+  fi
+}
+
+function syncDataToHomeDirectory() {
+  rm -rf "$DOTFILE_DIRECTORY"
+  cp -rf /vagrant "$DOTFILE_DIRECTORY"
+}
+
+function installDependencies() {
+  sudo pacman -S --needed --noconfirm --quiet base-devel git 2> /dev/null
+  cd "$DOTFILE_DIRECTORY"
+  make install-provision
+}
+
+function runProvision() {
+  if [[ -n "$ROLE" ]]; then
+    make provide-role ROLE="$ROLE"
+  elif [[ -n "$BOOK" ]]; then
+    make provide-book BOOK="$BOOK"
+  else
+    make provide
+  fi
+}
+
+updateSystemOnNewMachine
+syncDataToHomeDirectory
+installDependencies
+runProvision
 SCRIPT
 
 
