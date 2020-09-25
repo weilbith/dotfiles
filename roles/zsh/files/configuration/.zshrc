@@ -10,6 +10,7 @@ for file in $XDG_CONFIG_HOME/profile.d/*; do source $file; done
 # Vi-mode
 bindkey -v
 bindkey '\e' vi-cmd-mode # Fix escape insert mode issues
+bindkey '^?' backward-delete-char # Allow backspace in insert mode
 setopt vi
 set KEYTIMEOUT=1
 zle-line-init() { zle -K vicmd; }

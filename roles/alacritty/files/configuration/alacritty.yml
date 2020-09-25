@@ -1,3 +1,7 @@
+env:
+  # Fix variating font size issues on different displays
+  WINIT_X11_SCALE_FACTOR: "1"
+
 window:
   class:
     instance: Alacritty
@@ -6,7 +10,7 @@ scrolling:
   history: 0 # Use TMux instead
 
 font:
-  size: 5
+  size: 10
 
   # Style property adopts automatically for bold or italic text
   normal:
