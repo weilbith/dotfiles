@@ -1,6 +1,7 @@
 - name: "{{ origin_role_name }} - install package(s) from registry"
   aur:
     name: "{{ item }}"
+  when: item != ""
   with_items:
     - "{{ base_package }}"
     - "{{ additional_packages }}"
