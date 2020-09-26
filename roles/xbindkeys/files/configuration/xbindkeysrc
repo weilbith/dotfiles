@@ -80,6 +80,9 @@
 "alacritty"
   Mod4 + Return
 
+"tdrop --auto-detect-wm --monitor-aware --width 50% --height 50% -x 25% -y 25% alacritty"
+  Mod4 + Shift + Return
+
 ## Rofi
 "rofi -no-lazy-grab -show drun"
   Mod4 + semicolon
