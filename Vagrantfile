@@ -45,6 +45,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "warhorse"
   config.vm.provider :virtualbox do |vb|
     vb.gui = ENV['GUI'] || false
+    vb.customize ["modifyvm", :id, "--vram", "128"]
   end
   config.vm.provision "shell",
     inline: $script,
