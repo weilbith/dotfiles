@@ -1,9 +1,10 @@
 [Unit]
 Description=Key bindings for X11
+After=xorg-server.service
 
 [Service]
 # Need to put command into a shell to make it getting interpreted correctly.
 ExecStart=/bin/sh -c 'xbindkeys --nodaemon --file $(mktemp | xargs -I 'target-file' sh -c "cat $XBINDKEYS_CONFIG_DIR/*.ini > target-file; echo target-file")'
 
 [Install]
-WantedBy=default.target
+WantedBy=xorg-server.service

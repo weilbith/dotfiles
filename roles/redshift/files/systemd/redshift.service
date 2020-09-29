@@ -1,0 +1,10 @@
+[Unit]
+Description=Display color temperature adjustment for day and night time
+After=xorg-server.service
+
+[Service]
+ExecStart=/usr/bin/redshift
+Restart=on-failure
+
+[Install]
+WantedBy=xorg-server.service

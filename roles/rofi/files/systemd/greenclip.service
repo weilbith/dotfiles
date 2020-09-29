@@ -1,0 +1,11 @@
+[Unit]
+Description=Clipboard history manager
+After=xorg-server.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/greenclip daemon
+Restart=on-failure
+
+[Install]
+WantedBy=xorg-server.service

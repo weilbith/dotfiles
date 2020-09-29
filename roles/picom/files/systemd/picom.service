@@ -1,8 +1,9 @@
 [Unit]
 Description=Window compositor for X11
+After=xorg-server.service
 
 [Service]
 ExecStart=picom
 
 [Install]
-WantedBy=default.target
+WantedBy=xorg-server.service
