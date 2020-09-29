@@ -4,7 +4,7 @@ After=xorg-server.service
 
 [Service]
 Type=oneshot
-ExecStart=xmodmap ${XMODMAP_CONFIG_FILE}
+ExecStart=/usr/bin/xmodmap ${XMODMAP_CONFIG_FILE}
 
 [Install]
 WantedBy=xorg-server.service

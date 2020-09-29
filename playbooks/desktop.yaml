@@ -4,6 +4,7 @@
     - X11
     - xbindkeys
     - xmodmap
+    - xrdb
     - i3
     - picom
     - rofi

@@ -1,10 +1,5 @@
 #!/bin/bash
 
-command -v xrdb >/dev/null && xrdb -merge "$XRDB_CONFIG_FILE"
-command -v autorandr >/dev/null && autorandr --change
-command -v dex >/dev/null && dex -a &
-
-# TODO: Fix that by the systemd script
 systemctl --user import-environment DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS
 systemctl --user restart xautolock redshift picom unclutter greenclip xbindkeys
 

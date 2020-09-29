@@ -1,0 +1,10 @@
+[Unit]
+Description=Merging X server resource database
+After=xorg-server.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xrdb -merge ${XRDB_CONFIG_FILE}
+
+[Install]
+WantedBy=xorg-server.service
