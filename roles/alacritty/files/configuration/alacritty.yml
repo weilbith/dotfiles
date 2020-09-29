@@ -25,6 +25,16 @@ colors:
     background: "#000000"
     foreground: "#5fd7ff"
 
+  normal:
+    black: "#000000"
+    red: "#cc0403"
+    green: "#19cb00"
+    yellow: "#cecb00"
+    blue: "#0d73cc"
+    magenta: "#cb1ed1"
+    cyan: "#0dcdcd"
+    white: "#dddddd"
+
   selection:
     text: "#282a2e"
     background: "#d7ff5f"
