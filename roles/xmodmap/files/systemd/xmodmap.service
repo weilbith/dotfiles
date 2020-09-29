@@ -1,0 +1,10 @@
+[Unit]
+Description=Modifying key mappings in X
+After=xorg-server.service
+
+[Service]
+Type=oneshot
+ExecStart=xmodmap ${XMODMAP_CONFIG_FILE}
+
+[Install]
+WantedBy=xorg-server.service

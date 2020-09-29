@@ -3,6 +3,7 @@
   roles:
     - X11
     - xbindkeys
+    - xmodmap
     - i3
     - picom
     - rofi

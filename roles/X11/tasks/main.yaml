@@ -8,3 +8,12 @@
       - xclip # Command-line interface for clipboard
       - xdotool # Remote xorg server control
       - feh # Display wallpaper image
+
+# Manually link this service unit and **NOT** enable it.
+# Other services that should run after the server has started can use this as
+# reference. The initialization script of the server will start this unit to
+# trigger all depending services.
+# This is a work around until I manage to run the server as service itself
+# behind a socket.
+- name: Link systemd unit as artificial synchronization point
+  shell: systemctl --user link "{{ role_path }}/files/xorg-server.service"
