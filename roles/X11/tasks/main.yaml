@@ -7,7 +7,6 @@
       - xsel # Work with mouse selection
       - xclip # Command-line interface for clipboard
       - xdotool # Remote xorg server control
-      - feh # Display wallpaper image
 
 # Manually link this service unit and **NOT** enable it.
 # Other services that should run after the server has started can use this as
