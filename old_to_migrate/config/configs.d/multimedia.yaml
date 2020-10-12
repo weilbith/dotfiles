@@ -51,10 +51,4 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/digikamrc'
     src: digikamrc
 
-  rawtherapee:
-    actions:
-      - install_by_package_manager rawtherapee-git
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/RawTherapee'
-    src: RawTherapee
-
 # vim: nospell
