@@ -57,11 +57,4 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/RawTherapee'
     src: RawTherapee
 
-  gimp:
-    actions:
-      - install_by_package_manager gimp
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/GIMP/2.10'
-    link: link_children
-    src: gimp
-
 # vim: nospell

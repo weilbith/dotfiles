@@ -1,0 +1,4 @@
+- name: Setup focused on multimedia related stuff
+  hosts: all
+  roles:
+    - gimp

@@ -233,47 +233,47 @@ style "gimp-icons"
     { "images/smudge.svg", *, *, "gtk-button" },
     { "images/smudge.svg", *, *, * }
   }
-  stock["gimp-tool-text"] = 
+  stock["gimp-tool-text"] =
   {
     { "images/text.svg", *, *, "gtk-button" },
     { "images/text.svg", *, *, * }
   }
-  stock["gimp-tool-threshold"] = 
+  stock["gimp-tool-threshold"] =
   {
     { "images/threshold.svg", *, *, "gtk-button" },
     { "images/threshold.svg", *, *, * }
   }
-  stock["gimp-tool-zoom"] = 
+  stock["gimp-tool-zoom"] =
   {
   { "images/zoom.svg", *, *, "gtk-button" },
   { "images/zoom.svg", *, *, * }
   }
-  stock["gimp-navigation"] = 
+  stock["gimp-navigation"] =
   {
   {"images/navigation.svg", *, *, "gtk-button" },
   { "images/navigation.svg", *, *, * }
   }
-  stock["gimp-colors"] = 
+  stock["gimp-colors"] =
   {
   { "images/colors.svg", *, *, "gtk-button" },
   { "images/colors.svg", *, *, * }
   }
-  stock["gimp-tool-options"] = 
+  stock["gimp-tool-options"] =
   {
   { "images/tool-options.svg", *, *, "gtk-button" },
   { "images/tool-options.svg", *, *, * }
   }
-  stock["gimp-layers"] = 
+  stock["gimp-layers"] =
   {
   { "images/layers.svg", *, *, "gtk-button" },
   { "images/layers.svg", *, *, * }
   }
-  stock["gimp-tool-preset"] = 
+  stock["gimp-tool-preset"] =
   {
   { "images/tool-preset.svg", *, *, "gtk-button" },
   { "images/tool-preset.svg", *, *, * }
   }
-  
+
 ###############################################################
                         # UI Icons
 ###############################################################
@@ -343,7 +343,7 @@ stock["gimp-close"] = {
     stock["gimp-selection-none"] = {{"ui/gimp-none.svg"}}
     stock["gimp-selection-replace"] = {{"ui/gimp-square.svg"}}
     stock["gimp-selection-to-channel"] = {{"ui/gimp-save.svg"}}
-    
+
     stock["gimp-selection-to-path"] = {{"ui/gimp-selection-to-path.svg"}}
     stock["gimp-selection-stroke"] = {{"ui/gimp-selection-stroke.svg"}}
     stock["gimp-selection"] = {{"ui/gimp-selection.svg"}}
@@ -357,7 +357,7 @@ stock["gimp-close"] = {
     stock["gimp-path"] = {{"ui/gimp-path.svg"}}
     stock["gimp-paths"] = {{"ui/gimp-paths.svg"}}
     stock["gimp-path-stroke"] = {{"ui/gimp-path-stroke.svg"}}
-    
+
     stock["gtk-undo"] = {{"ui/gimp-undo.svg"}}
     stock["gtk-redo"] = {{"ui/gimp-redo.svg"}}
     stock["gtk-clear"] = {{"ui/gimp-clear.svg"}}
@@ -367,30 +367,30 @@ stock["gimp-close"] = {
     stock["gimp-zoom-follow-window"] = {{ "ui/gimp-zoom-fit-12.svg"}}
     stock["gtk-zoom-in"] = {{ "ui/gimp-zoom-in.svg"}}
     stock["gtk-zoom-out"] = {{ "ui/gimp-zoom-out.svg"}}
-    stock["gtk-remove"] = {{"ui/gimp-remove.svg"}} 
-    stock["gtk-goto-bottom"] = {{"ui/gimp-go-down.svg"}}    
-    stock["gtk-goto-top"] = {{"ui/gimp-go-up.svg"}} 
-    stock["gtk-save"] = {{"ui/gimp-save-file.svg"}} 
-    stock["gtk-save-as"] = {{"ui/gimp-save-file.svg"}} 
+    stock["gtk-remove"] = {{"ui/gimp-remove.svg"}}
+    stock["gtk-goto-bottom"] = {{"ui/gimp-go-down.svg"}}
+    stock["gtk-goto-top"] = {{"ui/gimp-go-up.svg"}}
+    stock["gtk-save"] = {{"ui/gimp-save-file.svg"}}
+    stock["gtk-save-as"] = {{"ui/gimp-save-file.svg"}}
     stock["gimp-edit"] = {{"ui/gimp-edit.svg"}}
     stock["gtk-quit"] = {{"ui/gimp-quit.svg"}}
     stock["gimp-web"] = {{"ui/gimp-web.svg"}}
-    
-    stock["gtk-page-setup"] = {{"ui/gimp-page-setup.svg"}}    
-    stock["gtk-print"] = {{"ui/gimp-print.svg"}}  
-    stock["gtk-close"] = {{"ui/gimp-close-view.svg"}} 
-    stock["gimp-close"] = {{"ui/gimp-close-circle.svg"}} 
-    
-    stock["gtk-info"] = {{"ui/gimp-info-64.svg"}}   
+
+    stock["gtk-page-setup"] = {{"ui/gimp-page-setup.svg"}}
+    stock["gtk-print"] = {{"ui/gimp-print.svg"}}
+    stock["gtk-close"] = {{"ui/gimp-close-view.svg"}}
+    stock["gimp-close"] = {{"ui/gimp-close-circle.svg"}}
+
+    stock["gtk-info"] = {{"ui/gimp-info-64.svg"}}
     stock["gimp-plugin"] = {{"ui/gimp-plug.svg"}}
     stock["gimp-undo-history"] = {{"ui/gimp-undo-circle.svg"}}
     stock["gtk-about"] = {{"ui/gimp-star.svg"}}
-    stock["gtk-help"] = {{"ui/gimp-question-64.svg"}}     
+    stock["gtk-help"] = {{"ui/gimp-question-64.svg"}}
     stock["gimp-gegl"] = {{"ui/gimp-gegl.svg"}}
     stock["gimp-shape-circle"] = {{"ui/gimp-shape-circle.svg"}}
     stock["gimp-shape-diamond"] = {{"ui/gimp-shape-diamond.svg"}}
     stock["gimp-shape-square"] = {{"ui/gimp-shape-square.svg"}}
-    
+
     stock["gimp-dynamics"] = {{"ui/gimp-dynamics.svg"}}
     stock["gimp-display-filter"] = {{"ui/gimp-display-filter.svg"}}
     #####################here####################################
@@ -399,7 +399,7 @@ stock["gimp-close"] = {
     stock["gimp-display-filter-lcms"] = {{ "ui/gimp-display-filter-lcms.svg"}}
     stock["gimp-display-filter-proof"] = {{ "ui/gimp-display-filter-proof.svg"}}
     stock["gimp-tool-unified-transform"] = {{"ui/gimp-tool-unified-transform.svg"}}
-    
+
     ###########################################################3
     stock["gimp-visible"] = {{"ui/gimp-visible-eye.svg"}}
     stock["gimp-resize"] = {{"ui/gimp-resize.svg"}}
@@ -409,32 +409,32 @@ stock["gimp-close"] = {
     stock["gimp-join-bevel"] = {{"ui/gimp-join-bevel.svg"}}
     stock["gimp-join-miter"] = {{ "ui/gimp-join-miter.svg"}}
     stock["gimp-join-round"] = {{"ui/gimp-join-round.svg"}}
-    
+
     stock["gimp-flip-horizontal"] = {{"ui/gimp-flip-horizontal.svg"}}
     stock["gimp-flip-vertical"] = {{"ui/gimp-flip-vertical.svg"}}
     stock["gimp-layer-to-imagesize"] = {{"ui/gimp-layer-to-imagesize.svg"}}
     stock["gimp-scale"] = {{ "ui/gimp-scale.svg" }}
     stock["gimp-sample-point"] = {{"ui/gimp-sample-point.svg"}}
-    
+
     stock["gimp-colormap"] = {{ "ui/gimp-colormap.svg" }}
     stock["gimp-channels"] = {{ "ui/gimp-channels.svg" }}
     stock["gimp-histogram"] = {{"ui/gimp-histogram-logarithmic.svg"}}
     stock["gimp-histogram-linear"] = {{"ui/gimp-histogram-logarithmic.svg"}}
     stock["gimp-histogram-logarithmic"] = {{"ui/gimp-histogram-logarithmic.svg"}}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 class "GtkWidget" style "gimp-icons"
