@@ -4,12 +4,6 @@ config:
   keepdot: true # Required for zsh
 
 dotfiles:
-  cheatsh:
-    actions:
-      - install_by_package_manager cht.sh
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/chtsh'
-    src: chtsh
-
   translate_shell:
     actions:
       - install_by_package_manager translate-shell

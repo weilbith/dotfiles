@@ -1,10 +1,4 @@
-config:
-  dotpath: ../../dotfiles
-  link_dotfile_default: link
-
 dotfiles:
-  # synaptics?
-  #
   xautolock:
     actions:
       - install_by_package_manager xautolock
@@ -13,7 +7,7 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/xautostart'
     src: xautostart
 
-  autorandr:
+ autorandr:
     actions:
       - install_by_package_manager autorandr
         # Service!
@@ -30,19 +24,6 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/powerstatus10k'
     src: powerstatus10k
 
-  autostart:
-    actions:
-      - install_by_package_manager dex
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/autostart'
-    src: autostart
-
-  desktop_files:
-    actions:
-      - link_permissioned desktop-entries/* /usr/share/applications/
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
-
   greenclip:
     actions:
       - install_by_package_manager rofi-greenclip
@@ -57,24 +38,5 @@ dotfiles:
       - enable_start_service_user_custom unclutter.service
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/unclutter'
     src: unclutter
-
-profiles:
-  session:
-    dotfiles:
-      - x11_basics
-      - i3wm
-      - picom
-      - pulse_audio
-      - rofi
-      - dunst
-      - redshift
-      - xautolock
-      - ssh
-      - autorandr
-      - powerstatus10k
-      - autostart
-      - desktop_files
-      - greenclip
-      - unclutter
 
 # vim: nospell

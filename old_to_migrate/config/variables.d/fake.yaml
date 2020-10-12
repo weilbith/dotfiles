@@ -1,6 +1,0 @@
-variables:
-  # Fake file for dotfile entries which have no actual own file.
-  fake_file_source: fake
-  fake_file_destination: /tmp/fake
-
-# vim: nospell

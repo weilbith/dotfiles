@@ -82,25 +82,4 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/khard'
     src: khard
 
-  orgatimer:
-    actions:
-      - install_by_script https://raw.githubusercontent.com/weilbith/orgatimer/master/install.sh install
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/orgatimer'
-    src: orgatimer
-
-profiles:
-  organization:
-    dotfiles:
-      - mutt
-      - isync
-      - notmuch
-      - notmuch_hooks
-      - msmtp
-      - urlscan
-      - mailcap
-      - vdirsyncer
-      - khal
-      - khard
-      - orgatimer
-
 # vim: nospell

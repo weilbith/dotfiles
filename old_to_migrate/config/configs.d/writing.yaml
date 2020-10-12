@@ -36,13 +36,6 @@ dotfiles:
     dst: '{{@@ env["HOME"] @@}}/.ctags.d'
     src: ctags
 
-  editor_config:
-    actions:
-      - install_by_package_manager editorconfig-core-c
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
-
   languagetool:
     actions:
       - install_by_package_manager languagetool
@@ -108,17 +101,5 @@ dotfiles:
       - install_by_package_manager vim-language-server
       - install_by_package_manager vue-language-server
       - install_by_package_manager yaml-language-server-bin
-      # - install_by_package_manager lua-dkjson
-
-profiles:
-  writing:
-    dotfiles:
-      - neovim
-      - latex
-      - ctags
-      - editor_config
-      - linting
-      - formatting
-      - completion
 
 # vim: nospell

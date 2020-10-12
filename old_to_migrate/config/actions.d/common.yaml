@@ -1,8 +1,0 @@
-actions:
-  post:
-    make_directory: mkdir -p {0}
-    change_mode: sudo chmod -R {0} {1}
-    change_owner: sudo chown -R {0}:{0} {1}
-    message: echo -e "\e[1;32m {{@@ _dotfile_key @@}} - {0}\e[0m"
-
-# vim: nospell
