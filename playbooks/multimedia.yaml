@@ -1,6 +1,9 @@
 - name: Setup focused on multimedia related stuff
   hosts: all
   roles:
+    # photos/images
     - gimp
     - rawtherapee
     - digikam
+    # documents
+    - zathura

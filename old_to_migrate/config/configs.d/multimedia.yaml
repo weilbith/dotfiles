@@ -3,8 +3,8 @@ dotfiles:
     actions:
       - install_by_package_manager mopidy
       - install_by_package_manager mopidy-local
-      - install_by_package_manager mopidy-mpd
       - install_by_package_manager alsa-lib
+      - install_by_package_manager mopidy-mpd
       - make_directory '{{@@ env["MOPIDY_CACHE_DIR"] @@}}'
       - make_directory '{{@@ env["MOPIDY_DATA_DIR"] @@}}'
       - make_directory '{{@@ env["MOPIDY_DATABASE_DIR"] @@}}'
@@ -33,13 +33,5 @@ dotfiles:
       - make_directory '{{@@ env["BEETS_CACHE_DIR"] @@}}'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/beets'
     src: beets
-
-  zathura:
-    actions:
-      - install_by_package_manager zathura
-      - install_by_package_manager zathura-pdf-mupdf
-      - install_by_package_manager tabbed
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/zathura'
-    src: zathura
 
 # vim: nospell
