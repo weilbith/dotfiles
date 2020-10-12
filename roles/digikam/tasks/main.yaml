@@ -1,0 +1,11 @@
+- import_role:
+    name: base_role
+  vars:
+    additional_packages:
+      - qt5-imageformats # Additional RAW file format support
+    new_directories:
+      - "{{ xdg_cache_home }}/digikam"
+      - "{{ xdg_data_home }}/digikam"
+    # Directly link configuration without directory
+    link_configuration_children: true
+    configuration_destination: "{{ xdg_config_home }}"

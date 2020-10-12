@@ -42,13 +42,4 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/zathura'
     src: zathura
 
-  digikam:
-    actions:
-      - install_by_package_manager digikam
-      - install_by_package_manager qt5-imageformats
-      - make_directory '{{@@ env["DIGIKAM_CACHE_DIR"] @@}}'
-      - make_directory '{{@@ env["DIGIKAM_DATA_DIR"] @@}}'
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/digikamrc'
-    src: digikamrc
-
 # vim: nospell

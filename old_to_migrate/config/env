@@ -32,9 +32,6 @@ NCMPCPP_LYRICS_DIR=$NCMPCPP_CACHE_DIR/lyrics
 BEETS_DATA_DIR=$XDG_DATA_HOME/beets
 BEETS_CACHE_DIR=$XDG_CACHE_HOME/beets
 
-DIGIKAM_CACHE_DIR=$XDG_CACHE_HOME/digikam
-DIGIKAM_DATA_DIR=$XDG_DATA_HOME/digikam
-
 GPG_TTY=$(tty) # Fix pinentry for gpg decryption
 
 # vim: nospell filetype=sh
