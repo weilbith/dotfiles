@@ -7,7 +7,10 @@ function updateSystemOnNewMachine() {
   local remember_update_file=/var/inital_update_done
 
   if [[ ! -f "$remember_update_file" ]]; then
+    sudo pacman-key --init
+    sudo pacman-key --populate archlinux
     sudo pacman --sync --refresh --sysupgrade --noconfirm
+    sudo pacman --sync --clean --clean
     sudo touch "$remember_update_file"
   fi
 }
