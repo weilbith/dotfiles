@@ -1,4 +1,5 @@
 - name: "{{ origin_role_name }} - enable (custom) systemd unit(s)"
+  when: lookup('env', 'USER') != 'circleci'
   systemd:
     name: "{{ item }}"
     scope: "{{ systemd_scope }}"
@@ -10,7 +11,9 @@
 
 # Limit this to the user space so far.
 - name: "{{ origin_role_name }} - make sure timer related services are only linked"
-  when: lookup('role_directory_entries', 'systemd') | length > 0
+  when:
+    - lookup('role_directory_entries', 'systemd') | length > 0
+    - lookup('env', 'USER') != 'circleci'
   shell: |
     timer_services=$(systemctl --user list-timers --all --plain --no-legend --full | awk 'NF>1{print $NF}')
     for service in $timer_services; do
