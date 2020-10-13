@@ -5,5 +5,7 @@
     - gimp
     - rawtherapee
     - digikam
+    # videos
+    - mpv
     # documents
     - zathura
