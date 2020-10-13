@@ -14,7 +14,7 @@ something really personal to me. It includes a lot of research, hard work and
 passion over many years. It got extended continuously with new tools, tool
 exchanges, setup configuration reworks as well as conceptual reorientations.
 Therefore it is my desire to fix this setup in a replicable manner. Having it,
-I can make any computer become my workhorse. And it even allows me to
+I can make any computer become my Workhorse. And it even allows me to
 synchronize within a herd. In fact it is a more powerful [dotfile
 repository](https://github.com/search?q=dotfiles).
 
@@ -59,7 +59,7 @@ root permissions.
 ## Provision
 
 This is the actual heart of this project. It provides your **local** machine to
-become the workhorse. Thereby it makes sure that everything is fully installed,
+become the Workhorse. Thereby it makes sure that everything is fully installed,
 completely configured and synchronized. There are even more targets to sync data
 from the mail server and similar sources. The whole setup is idempotent. Means
 it always makes sure that the system is aligned with the configuration here.
@@ -80,7 +80,7 @@ these files at their target location where the tools expect them.
 ## Testing
 
 There are different targets to test the setup. They intend to test the validity
-of the workhorse setup, not the dotfiles that get provisioned. Watch-out for the
+of the Workhorse setup, not the dotfiles that get provisioned. Watch-out for the
 `Testing Targets` section when you call `make help`. They require to install
 some dependencies first via `make install-testing`. Such include the git hooks,
 the virtual machine testing with Vagrant and the local CircleCI version.
@@ -99,44 +99,47 @@ environment.
 
 ### Virtual Machine with Vagrant
 
-To test the setup in practice without applying it to the active OS, a virtual
-machine is used. Such gets described using Vagrant and its `Vagrantfile`. In the
-provision step of this machine the setup of the workhorse gets applied. Since
-Ansible works idempotent the provision step can be called over and over again to
-apply changes continuously to the same machine. In between the machine gets
-suspended. The `make test-vagrant` target provides a convenient approach to do
-all of this. The target does also allow to define the `BOOK` and `ROLE` variable
-to select a specific playbook or role. This allows to speed up the tests and
-focus them to the current development. This variables get simply forwarded to
-the according provision targets.
+To test the setup in practice without applying it to the active system,
+a virtual machine is used. This machine is managed with Vagrant, described with
+in the `Vagrantfile`. During the provision step, the setup of the Workhorse gets
+applied to the test machine. Since Ansible works idempotent the provision can be
+run over and over again to apply changes to the same machine continuously. In
+between the machine gets suspended. The `make test-vagrant-provide` target
+provides a convenient approach to do all of this at once. The target does also
+allow to define the `BOOK` and `ROLE` variables to select a specific playbook or
+role accordingly. This allows to speed up the tests and focus them to the
+current development. These variables get simply forwarded to the according
+provision targets.
 
-Per default the `test-vagrant` target will also automatically suspend the
+Per default the `test-vagrant-provide` target will also automatically suspend the
 virtual machine at the end. This is a compromise to be relatively fast in
 resuming the machine and suspending it. If you want to free the RAM, use
 `vagrant halt`. The next time running a test will take significantly longer to
 get the machine up and running.
 If you plan to run the tests multiple times in a row (e.g. adding a new role and
 focus on it with the `ROLE` variable), it make sense to define the `FAST`
-variable. This will prevent the virtual machine from becoming suspended. Thereby
-the next run will be faster and also connecting to the machine via SSH works out
-of the box.
+variable (any truthy value). This will prevent the virtual machine from becoming
+suspended. Thereby the next run will be faster and also connecting to the
+machine via SSH works out of the box.
 
-To verify or debug the setup you can SSH into the virtual machine. The data of
-the setup get synchronized automatically thanks to Vagrant. Remind that the
-`test-vagrant` target will suspend the machine per default as long as the `FAST`
-mode is not set. Therefore it is necessary to first resume the machine with
-`vagrant resume && vagrant ssh`.
+To verify or debug the provided setup, you can SSH into the virtual machine. The
+data of the setup get synchronized automatically thanks to Vagrant. Remind that
+the `test-vagrant-provide` target will suspend the machine per default as long
+as the `FAST` mode is not set. Therefore it is necessary to first resume the
+machine with `vagrant resume && vagrant ssh`.
 
-If there is the need to verify a setup visually like if a xorg configuration
-works well, the command `make test-vagrant-gui` can be used to restart the
-virtual machine with a graphical interface. The default login is user-name and
-password `vagrant`.
+If there is the need to verify a setup visually like (e.g. test the X11 role),
+the command `make test-vagrant-gui` can be used to restart the virtual machine
+with a graphical interface. The default login is user-name and password
+`vagrant`.
 
 Furthermore can specific roles ask to get test data copied into the virtual
 machine. The data can then be used to test the application practically. This can
 be for example a PDF document or some images. The role itself specifies which
 type of data it needs. The test data gets copied to the home directory of the
 test user, attempting to follow the directory structure of the actual system.
+To remove the copied data again, run the `make test-vagrant-remove-test-data`
+target.
 
 Unfortunately can't Ansible handle breaking changes. While it is idempotent it
 does not automatically clean up old runs according to a diff with a more recent
