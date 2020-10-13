@@ -1,0 +1,7 @@
+- name: "{{ origin_role_name }} - copy data to test applications (e.g. images)"
+  when: lookup('env', 'USER') == 'vagrant'
+  copy:
+    src: "{{ role_path }}/files/test_data/{{ item }}"
+    dest: "{{ lookup('env','HOME') }}"
+  with_items:
+    - "{{ provide_test_data }}"

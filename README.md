@@ -132,6 +132,12 @@ works well, the command `make test-vagrant-gui` can be used to restart the
 virtual machine with a graphical interface. The default login is user-name and
 password `vagrant`.
 
+Furthermore can specific roles ask to get test data copied into the virtual
+machine. The data can then be used to test the application practically. This can
+be for example a PDF document or some images. The role itself specifies which
+type of data it needs. The test data gets copied to the home directory of the
+test user, attempting to follow the directory structure of the actual system.
+
 Unfortunately can't Ansible handle breaking changes. While it is idempotent it
 does not automatically clean up old runs according to a diff with a more recent
 version. So if there are breaking changes necessary, it is advised to recreate

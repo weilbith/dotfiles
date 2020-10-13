@@ -27,3 +27,5 @@ force_to_overwrite_configuration: false
 
 systemd_units: []
 systemd_scope: user
+
+provide_test_data: []
