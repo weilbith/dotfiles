@@ -3,7 +3,7 @@
 # Unfortunately it is not possible to get this list from the directory structure
 # at the base role. Because this script gets executed on the Vagrant machine,
 # there is no access to the origin host file-system.
-test_data_directories=("documents")
+test_data_directories=("documents" "images")
 
 echo "Find and remove eventually copied test data..."
 
