@@ -4,3 +4,5 @@
     new_directories:
       - "{{ xdg_cache_home }}/ncmpcpp"
       - "{{ xdg_cache_home }}/lyrics"
+    provide_test_data:
+      - audio

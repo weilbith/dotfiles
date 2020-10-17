@@ -8,6 +8,7 @@
     # audio/music
     - mopidy
     - ncmpcpp
+    - beets
     # videos
     - mpv
     # documents

@@ -1,0 +1,14 @@
+- import_role:
+    name: base_role
+  vars:
+    additional_packages:
+      - python-confuse # Parsing configuration files
+      - python-requests # Required by fetchart plugin
+      - python-pylast # Required by lastgenre plugin
+      - python-pyacoustid # Required by chroma plugin
+      - imagemagick # Requied for art related plugins
+    new_directories:
+      - "{{ xdg_cache_home }}/beets"
+      - "{{ xdg_data_home }}/beets"
+    provide_test_data:
+      - audio
