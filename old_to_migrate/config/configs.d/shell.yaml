@@ -1,7 +1,0 @@
-dotfiles:
-  tool_collection:
-    actions:
-      - install_by_package_manager htop # has config
-      - less # variable
-
-# vim: nospell

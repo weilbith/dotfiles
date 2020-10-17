@@ -1,0 +1,7 @@
+# Although bat is used as a less replacement, make sure that any less usage does
+# follow the xdg-dirs specification.
+- import_role:
+    name: base_role
+  vars:
+    new_directories:
+      - "{{ xdg_cache_home }}/less"
