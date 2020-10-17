@@ -1,0 +1,5 @@
+- import_role:
+    name: base_role
+  vars:
+    new_directories:
+      - "{{ xdg_cache_home }}/wget"
