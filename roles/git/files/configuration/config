@@ -11,17 +11,17 @@
   rebase = false
 
 [core]
-  pager = less -F -X
   excludesfile = ~/.config/git/gitignore
 
 [alias]
   s  = status
   ss = status .
   rv = remote -v
-  c  = checkout
   ch = checkout HEAD
-  cb = checkout -b
-  cm = checkout master
+  sm = switch master
+  ll = log --oneliner
+  lm = log --oneliner master..
+  fw = "!git log --pretty=oneline --all | grep -B1 `git rev-parse HEAD` | head -n1 | egrep -o '[a-f0-9]{20,}' | xargs git checkout"
   bv = branch -vv
   recent = "!r(){ git for-each-ref --sort=-committerdate refs/heads --color=always --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)'|column -ts'|';}; r"
   graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
@@ -41,5 +41,3 @@
 [filter "black"]
   clean = black -
   smudge = black -l 120 -
-
-# vim: filetype=gitconfig
