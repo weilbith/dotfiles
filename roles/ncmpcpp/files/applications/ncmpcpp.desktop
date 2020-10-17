@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=ncmpcpp
+Comment=NCurses Music Player as interface to a music player daemon
+Exec=alacritty --class floating --dimensions 170 55 --title Music --command ncmpcpp
+Type=Application

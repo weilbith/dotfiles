@@ -7,10 +7,10 @@ def_key "j"
   scroll_down
 
 def_key "ctrl-u"
-  page_up 
+  page_up
 
 def_key "ctrl-d"
-  page_down 
+  page_down
 
 def_key "l"
   next_column

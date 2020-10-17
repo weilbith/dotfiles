@@ -7,6 +7,7 @@
     - digikam
     # audio/music
     - mopidy
+    - ncmpcpp
     # videos
     - mpv
     # documents

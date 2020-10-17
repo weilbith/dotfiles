@@ -1,12 +1,4 @@
 dotfiles:
-  ncmpcpp:
-    actions:
-      - install_by_package_manager ncmpcpp
-      - make_directory '{{@@ env["NCMCPP_CACHE_DIR"] @@}}'
-      - make_directory '{{@@ env["NCMCPP_LYRICS_DIR"] @@}}'
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/ncmpcpp'
-    src: ncmpcpp
-
   beets:
     actions:
       - install_by_package_manager beets
