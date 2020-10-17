@@ -1,15 +1,4 @@
-config:
-  dotpath: ../../dotfiles
-  link_dotfile_default: link
-  keepdot: true # Required for zsh
-
 dotfiles:
-  translate_shell:
-    actions:
-      - install_by_package_manager translate-shell
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/translate-shell'
-    src: translate-shell
-
   wget:
     actions:
       - install_by_package_manager wget

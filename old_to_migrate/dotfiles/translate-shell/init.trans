@@ -1,8 +1,0 @@
-{
-  :verbose		true
-  :view			false
-  :show-original	false
-  :h1			"de"
-  :t1			["en", "de"]
-  :theme		"happiness.trans"
-}

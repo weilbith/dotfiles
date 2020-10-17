@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Translate Shell
+Comment=CLI based translation tool
+Exec=alacritty --class floating --dimensions 70 50 --title Translate --command trans --shell
+Type=Application
