@@ -1,7 +1,6 @@
 dotfiles:
   tool_collection:
     actions:
-      - install_by_package_manager ripgrep-all-git # has config and environment
       - install_by_package_manager exa # has environment
       - install_by_package_manager bat # has config
       - install_by_package_manager htop # has config
