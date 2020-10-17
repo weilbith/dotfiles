@@ -10,3 +10,4 @@
     - translate_shell
     - wget
     - ripgrep
+    - exa

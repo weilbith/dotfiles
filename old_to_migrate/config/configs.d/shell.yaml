@@ -1,8 +1,7 @@
 dotfiles:
   tool_collection:
     actions:
-      - install_by_package_manager exa # has environment
-      - install_by_package_manager bat # has config
+      - install_by_package_manager bat # has config and profile
       - install_by_package_manager htop # has config
       - less # variable
 
