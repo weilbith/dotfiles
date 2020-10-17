@@ -11,3 +11,4 @@
     - wget
     - ripgrep
     - exa
+    - bat
