@@ -235,7 +235,6 @@ bindsym $mod+Shift+m mode $music_mode
 
 mode $music_mode {
   # Execute and exit mode immediately.
-  bindsym p exec --no-startup-id dex /usr/share/applications/ncmpcpp.desktop; mode $default_mode
   bindsym space exec --no-startup-id $shell 'control-music toggle_play' > /tmp/fuck 2>&1; mode $default_mode
   bindsym r exec --no-startup-id $shell 'control-music toggle_random'; mode $default_mode
   bindsym s exec --no-startup-id $shell 'control-music stop'; mode $default_mode
