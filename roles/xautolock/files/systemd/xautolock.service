@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatic screen locking for X server
+After=xorg-server.service
+
+[Service]
+ExecStart=xautolock -corners ---- -time 1 -locker i3-lock -notify 10 -notifier "notify-send i3lock 'The screen will be locked in 10s! Do some action to prevent.'"
+
+[Install]
+WantedBy=xorg-server.service

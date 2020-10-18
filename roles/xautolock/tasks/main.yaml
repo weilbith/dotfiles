@@ -1,0 +1,10 @@
+- import_role:
+    name: base_role
+  vars:
+    additional_packages:
+      - libnotify # Notify user of soon locking screen
+      - xdotool # Hotkey mapping to control cursor and prevent locking
+    pkgbuild_urls:
+      - https://raw.githubusercontent.com/weilbith/i3-utils/master/PKGBUILD
+# Depends on the wallpaper role that provides the image file and sets the
+# environment variable that i3-lock uses per default. Do not duplicate here.

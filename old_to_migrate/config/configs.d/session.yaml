@@ -1,12 +1,4 @@
 dotfiles:
-  xautolock:
-    actions:
-      - install_by_package_manager xautolock
-      - install_by_package_manager i3-lock-color
-      - enable_start_service_user_custom xautostart.service
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/xautostart'
-    src: xautostart
-
  autorandr:
     actions:
       - install_by_package_manager autorandr
