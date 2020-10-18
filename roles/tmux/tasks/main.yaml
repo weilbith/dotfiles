@@ -1,0 +1,4 @@
+- import_role:
+    name: base_role
+  vars:
+    new_directories: ["{{ xdg_runtime_dir }}/tmux"]

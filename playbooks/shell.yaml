@@ -4,6 +4,7 @@
     - zsh
     - zplug
     - alacritty
+    - tmux
     - fzf
     - fasd
     - cheat
