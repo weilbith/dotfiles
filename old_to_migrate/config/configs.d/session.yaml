@@ -1,11 +1,4 @@
 dotfiles:
- autorandr:
-    actions:
-      - install_by_package_manager autorandr
-        # Service!
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/autorandr'
-    src: autorandr
-
   powerstatus10k:
     actions:
       - install_by_script https://raw.githubusercontent.com/weilbith/powerstatus10k/master/install.sh install
