@@ -24,14 +24,6 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/powerstatus10k'
     src: powerstatus10k
 
-  greenclip:
-    actions:
-      - install_by_package_manager rofi-greenclip
-      - make_directory '{{@@ env["XDG_CACHE_HOME"] @@}}/greenclip'
-      - enable_start_service_user greenclip.service
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/greenclip.cfg'
-    src: greenclip.cfg
-
   unclutter:
     actions:
       - install_by_package_manager unclutter

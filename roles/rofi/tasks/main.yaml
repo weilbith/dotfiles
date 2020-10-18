@@ -4,4 +4,4 @@
     additional_packages:
       - rofi-dmenu # Rofi replacement for dmenu
       - rofi-calc # Calculator plugin
-      - rofi-greenclip # Clipboard integration
+      # Greenclip has its own role and provids a plugin for Rofi as well
