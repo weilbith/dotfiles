@@ -29,13 +29,6 @@ dotfiles:
     dst: /tmp/fake
     src: fake
 
-  ctags:
-    actions:
-      - install_by_package_manager universal-ctags-git
-      - clone_tool https://github.com/jszakmeister/markdown2ctags.git markdown2ctags
-    dst: '{{@@ env["HOME"] @@}}/.ctags.d'
-    src: ctags
-
   languagetool:
     actions:
       - install_by_package_manager languagetool

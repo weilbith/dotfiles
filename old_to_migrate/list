@@ -7,6 +7,7 @@
 - docker
 - font
 - brightness-/music-control
+- screenshot
 - npm/pnpm/yarn/nvm/n/npx/zsh-plugins
 - rustup/cargo
 - go (set variable before installing yay)
