@@ -1,8 +1,9 @@
 [Unit]
 Description=Hide mouse cursors on inactivity
+After=xorg-server.service
 
 [Service]
 ExecStart=unclutter
 
 [Install]
-WantedBy=default.target
+WantedBy=xorg-server.service

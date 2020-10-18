@@ -5,6 +5,7 @@
     - xbindkeys
     - xmodmap
     - xrdb
+    - unclutter
     - i3
     - greenclip
     - wallpaper

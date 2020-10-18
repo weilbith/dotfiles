@@ -24,11 +24,4 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/powerstatus10k'
     src: powerstatus10k
 
-  unclutter:
-    actions:
-      - install_by_package_manager unclutter
-      - enable_start_service_user_custom unclutter.service
-    dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/unclutter'
-    src: unclutter
-
 # vim: nospell
