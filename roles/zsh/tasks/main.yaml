@@ -15,3 +15,31 @@
     name: "{{ lookup('env', 'USER') }}"
     shell: /usr/bin/zsh
   become: yes
+
+# Get rid of old bash files (in a "friendly" recoverable manner)
+
+- name: Create bash carantine directory
+  shell: mktemp --directory --suffix=bash_carantine
+  register: carantine_directory
+
+- name: Move obsolete bash files into carantine directory
+  shell: "mv $HOME/.bash* {{ carantine_directory.stdout }}/"
+  ignore_errors: yes # Happens when there are no files to move (anymore)
+  register: moved_bash_files
+
+- name: Warning message
+  when: moved_bash_files.rc == 0
+  debug:
+    msg:
+      - ""
+      - ""
+      - "+-------------------------------------------------------------------------------------+"
+      - "|                                                                                     |"
+      - "|                                !!! WARNING !!!                                      |"
+      - "|                                                                                     |"
+      - "|  All former bash related files in the home directory have been put into carantine.  |"
+      - "|   You can revor them from '{{ carantine_directory.stdout }}' until the next start.  |"
+      - "|                                                                                     |"
+      - "+-------------------------------------------------------------------------------------+"
+      - ""
+      - ""

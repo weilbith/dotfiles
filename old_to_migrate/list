@@ -11,4 +11,3 @@
 - go (set variable before installing yay)
 - python/pipx (has home variable)/poetry/zsh plugins/pyenv/
 - solidity
-- yay (set go variable)
