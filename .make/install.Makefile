@@ -23,7 +23,8 @@ install-testing: install-yay ## Setup tools for testing
 
 install-yay: ## Setup Yay as AUR helper (dependency for other targets)
 	@if ! command -v yay >/dev/null; then \
+		GO_DIRECTORY=$$(mktemp --directory) && \
 		git clone https://aur.archlinux.org/yay.git /tmp/yay | true && \
 		cd /tmp/yay && \
-		makepkg --syncdeps --install --needed --noconfirm; \
+		GOPATH="$$GO_DIRECTORY" makepkg --syncdeps --install --needed --noconfirm; \
 	fi
