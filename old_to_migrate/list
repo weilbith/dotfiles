@@ -4,11 +4,11 @@
   - install_by_package_manager inotify-tools
   - install_by_package_manager bluez-tools
   - install_by_package_manager python
-- docker
-- font
 - brightness-/music-control
 - screenshot
 - npm/pnpm/yarn/nvm/n/npx/zsh-plugins
-- rustup/cargo
+- rustup/cargo/racer/lint/format
 - go (set variable before installing yay)
-- python/pipx (has home variable)/poetry/zsh plugins
+- python/pipx (has home variable)/poetry/zsh plugins/pyenv/
+- solidity
+- yay (set go variable)

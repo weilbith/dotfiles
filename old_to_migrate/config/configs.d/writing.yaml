@@ -10,6 +10,8 @@ dotfiles:
       - install_by_package_manager python-pynvim
       - install_by_package_manager neovim-remote
       - install_by_package_manager yad
+      - languagetool
+      - texlive-most
       - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/session'
       - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/spell'
       - make_directory '{{@@ env["XDG_DATA_HOME"] @@}}/nvim/tags'
@@ -20,20 +22,6 @@ dotfiles:
       - message 'Start NeoVim once to trigger installation of plugins automatically in asynchronous mode.'
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/nvim'
     src: nvim
-
-  latex:
-    actions:
-      - install_by_package_manager texlive-most
-      - remove_fake_file
-      # Linting is separated
-    dst: /tmp/fake
-    src: fake
-
-  languagetool:
-    actions:
-      - install_by_package_manager languagetool
-    dst: '{{@@ env["XDG_CONFIG_HOME"]}}/'
-    src: languagetool.cfg
 
   linting:
     actions:
@@ -70,13 +58,6 @@ dotfiles:
     dst: '{{@@ env["XDG_CONFIG_HOME"] @@}}/'
     link: link_children
     src: formatting
-
-  completion:
-    actions:
-      - install_by_package_manager tern # JavaScript
-      - remove_fake_file
-    dst: /tmp/fake
-    src: fake
 
   language_servers:
     actions:
