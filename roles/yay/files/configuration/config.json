@@ -1,0 +1,10 @@
+{
+  "buildDir": "$XDG_CACHE_HOME/yay",
+  "editor": "nvim",
+  "answerclean": "NotInstalled",
+  "answerdiff": "NotInstalled",
+  "answeredit": "NotInstalled",
+  "answerupgrade": "",
+  "removemake": "true",
+  "cleanAfter": true
+}

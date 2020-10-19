@@ -22,7 +22,7 @@ function syncDataToHomeDirectory() {
 }
 
 function installDependencies() {
-  sudo pacman -S --needed --noconfirm --quiet base-devel git 2>/dev/null
+  sudo pacman --sync --needed --noconfirm --quiet base-devel git 2>/dev/null
   cd "$DOTFILE_DIRECTORY"
   make install-provision
 }

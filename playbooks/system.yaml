@@ -1,6 +1,7 @@
 - name: Setup focused on system related stuff
   hosts: all
   roles:
+    - yay
     - pam
     - fwupd
     - ntp
