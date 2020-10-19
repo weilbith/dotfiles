@@ -8,4 +8,5 @@
     - ssh
     - pulse_audio
     - htop
+    - docker
     - font
