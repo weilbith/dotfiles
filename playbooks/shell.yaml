@@ -2,7 +2,7 @@
   hosts: all
   roles:
     - zsh
-    - zplug
+    - zinit
     - alacritty
     - tmux
     - fzf

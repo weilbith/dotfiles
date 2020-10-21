@@ -1,0 +1,11 @@
+- import_role:
+    name: base_role
+  vars:
+    base_package: "" # Unset and use pkgbuild_urls only.
+    pkgbuild_urls:
+      # Custom PKGBUILD to install zinit as package.
+      - https://raw.githubusercontent.com/weilbith/pkgbuild-collection/master/zinit.PKGBUILD
+    additional_packages:
+      - tree # Used for the `zinit ls` command.
+    new_directories:
+      - "{{ xdg_cache_home }}/zinit"
