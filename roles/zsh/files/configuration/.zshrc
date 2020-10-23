@@ -1,6 +1,3 @@
-# Get an instant prompt (MUST appear at first).
-[[ -r $POWERLEVEL10K_CACHE_FILE ]] && source $POWERLEVEL10K_CACHE_FILE
-
 autoload -Uz compinit
 compinit -d $ZSH_COMPLETION_DUMP
 

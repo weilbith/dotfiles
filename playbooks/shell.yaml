@@ -5,6 +5,7 @@
     - zinit
     - alacritty
     - tmux
+    - powerlevel10k
     - fzf
     - fasd
     - cheat
