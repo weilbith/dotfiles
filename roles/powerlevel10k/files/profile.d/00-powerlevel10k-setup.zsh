@@ -5,4 +5,6 @@
 
 [[ -r $POWERLEVEL9K_CACHE_FILE ]] && source "$POWERLEVEL9K_CACHE_FILE"
 source "$POWERLEVEL9K_CONFIG_FILE"
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+# Do not source p10k itself in this script, but pretty late in the profile list.
+# This allows other roles to extend the segment lists.
