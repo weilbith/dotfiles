@@ -3,3 +3,16 @@
   vars:
     additional_packages:
       - docker-compose-bin # Docker environment orchestration tool
+    systemd_units: [docker.service]
+    systemd_scope: system
+
+- name: Ensure group for Docker users exists (should be by package installation already)
+  group:
+    name: docker
+    state: present
+
+- name: Add user to Docker group
+  user:
+    name: "{{ lookup('env', 'USER') }}"
+    group: docker
+  become: yes
