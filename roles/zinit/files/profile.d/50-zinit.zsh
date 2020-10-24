@@ -17,5 +17,5 @@ source /usr/share/zsh/scripts/zinit/zinit.zsh
 # (( ${+_comps} )) && _comps[zinit]=_zinit
 
 set -a
-for file in "$ZSH_PLUGIN_LIST_DIR"/*; do source "$file"; done
+for file in "$ZSH_PLUGIN_LIST_DIR"/*.zsh; do source "$file"; done
 set +a
