@@ -12,5 +12,6 @@
     - "{{ plugin_directory }}"
     - "{{ applications_directory }}"
     - "{{ hotkey_directory }}"
+    - "{{ cheat_directory }}"
   loop_control:
     loop_var: directory

@@ -5,6 +5,7 @@
   - install_by_package_manager bluez-tools
   - install_by_package_manager python
 - brightness-/music-control
+- pacman (config, cheat, zsh?)
 - screenshot
 - npm/pnpm/yarn/nvm/n/npx/zsh-plugins
 - rustup/cargo/racer/lint/format
