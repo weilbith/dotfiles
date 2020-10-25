@@ -1,2 +1,5 @@
 - import_role:
     name: base_role
+  vars:
+    additional_packages:
+      - gtk3 # Includes gtk-launch to start desktop files with their name only.
