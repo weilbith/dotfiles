@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This should be the first profile script to load. If it starts/connects to
+# TMux, all scripts afterwards must not be loaded anymore.
+
 AVAILABLE_SESSION_NAMES=(Berlin Paris Amsterdam London Edinburgh Glasgow NewYork Washington)
 
 function getSessionName() {
@@ -23,7 +26,7 @@ function startSession() {
   eval "$command"
 }
 
-function isInteractiveShell() {
+function isInteractiveShellOrInsideTmux() {
   if [[ ! -o login ]] && [[ -z "$TMUX" ]]; then
     return 0
   else
@@ -31,4 +34,4 @@ function isInteractiveShell() {
   fi
 }
 
-isInteractiveShell && startSession "$(getSessionName)"
+isInteractiveShellOrInsideTmux && startSession "$(getSessionName)"
