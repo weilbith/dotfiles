@@ -10,6 +10,6 @@
   shell: >
     cd $(mktemp --directory);
     curl --output PKGBUILD "{{ item }}";
-    makepkg --syncdeps --install --needed --noconfirm
+    pikaur --pkgbuild --install --needed --noconfirm
   with_items:
     - "{{ pkgbuild_urls }}"
