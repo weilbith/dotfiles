@@ -12,14 +12,14 @@ install-provision: install-pikaur ## Setup tools for provisioning
 
 install-testing: install-pikaur ## Setup tools for testing
 	@echo Install Pre-commit and its hooks...
-	@pikaur -S --needed --noconfirm python-pre-commit --overwrite='*'
+	@pikaur --sync --needed --noconfirm python-pre-commit --overwrite='*'
 	@pre-commit install
 	@pre-commit install-hooks
 	@echo Install Vagrant with middleware
-	@pikaur -S --needed --noconfirm vagrant virtualbox virtualbox-host-modules-arch perl-net-ssleay
+	@pikaur --sync --needed --noconfirm vagrant virtualbox virtualbox-host-modules-arch perl-net-ssleay
 	@vagrant plugin install virtualbox
 	@echo 'It might need a restart of the OS to make the network component working when building Vagrant!'
-	@pikaur -S --needed --noconfirm circleci-cli-bin docker --overwrite='/usr/bin/circleci'
+	@pikaur --sync --needed --noconfirm circleci-cli-bin docker --overwrite='/usr/bin/circleci'
 
 install-pikaur: ## Setup Pikaur as AUR helper (dependency for other targets)
 	@if ! command -v pikaur >/dev/null; then \

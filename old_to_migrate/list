@@ -1,15 +1,9 @@
-- powerstatus10k
-  - install_by_script https://raw.githubusercontent.com/weilbith/powerstatus10k/master/install.sh install
-  - install_by_package_manager nerd-fonts-source-code-pro
-  - install_by_package_manager inotify-tools
-  - install_by_package_manager bluez-tools
-  - install_by_package_manager python
+- polybar
 - brightness-/music-control
 - pacman (config, cheat, zsh?)
-- screenshot
+- screenshot (scrot vs. flameshot)
 - npm/pnpm/yarn/nvm/n/npx/zsh-plugins
 - rustup/cargo/racer/lint/format
-- go (set variable before installing yay)
 - python/pipx (has home variable)/poetry/zsh plugins/pyenv/
 - solidity
 - vagrant
