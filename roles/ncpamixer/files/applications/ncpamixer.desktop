@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Ncpamixer
+Comment=A curses graphical interface to the PulseAudio sound system for the terminal
+Exec=alacritty --class floating --dimensions 100 35 --title Ncpamixer --command ncpamixer
+Type=Application
