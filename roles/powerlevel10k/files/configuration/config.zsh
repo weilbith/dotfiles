@@ -35,7 +35,6 @@
   typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
   typeset -g POWERLEVEL9K_MODE=nerdfont-complete
   typeset -g POWERLEVEL9K_ICON_PADDING=none
-  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=same-dir
   typeset -g POWERLEVEL9K_ICON_BEFORE_CONTENT=true
   typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
   typeset -g POWERLEVEL9K_SHOW_RULER=false
@@ -81,13 +80,12 @@
   typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=32
 
   # VCS Status
-  typeset -gA __p9k_vcs_states=(
-    'CLEAN'         '81'
-    'MODIFIED'      '3'
-    'UNTRACKED'     '32'
-    'LOADING'       '239'
-    'CONFLICTED'    '197'
-  )
+  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=81
+  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=3
+  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=32
+  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=239
+  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=197
+
   typeset -g POWERLEVEL9K_VCS_{STAGED,UNSTAGED,UNTRACKED,CONFLICTED,COMMITS_AHEAD,COMMITS_BEHIND}_MAX_NUM=-1
 
 
@@ -143,8 +141,23 @@
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VISUAL_IDENTIFIER_EXPANSION=''
 
 
+  # Transient Prompt
+  # Do not use default transient feature to allow customizing how the prompt
+  # looks like in the history of the shell.
+  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=off
+
+  function p10k-on-pre-prompt() {
+    p10k display 'empty_line|1'=show
+  }
+
+  function p10k-on-post-prompt() {
+    if [[ $PWD == ${my_last_dir-} ]]; then
+      p10k display 'empty_line|1'=hide
+    fi
+    typeset -g my_last_dir=$PWD
+  }
+
   # If p10k is already loaded, reload configuration.
-  # This works even with POWERLEVEL9K_DISABLE_HOT_RELOAD=true.
   (( ! $+functions[p10k] )) || p10k reload
 }
 
