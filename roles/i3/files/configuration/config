@@ -1,6 +1,4 @@
 # Variables
-set $shell zsh -c
-
 ## Standard mark names
 set $mark1 1
 set $mark2 2
@@ -13,7 +11,6 @@ set $default_mode default
 set $resize_mode resize
 set $move_mode move
 set $mark_mode mark
-set $music_mode music
 
 ## Workspace names
 set $workspace1 
@@ -71,7 +68,7 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 ## Select window by easy-focus.
-bindsym $mod+space exec --no-startup-id $shell 'i3-easyfocus --all --color-unfocused-bg=FFFFFF'
+bindsym $mod+space exec --no-startup-id i3-easyfocus --all --color-unfocused-bg=FFFFFF
 
 ## Move focused window.
 bindsym $mod+Shift+h move left
@@ -222,39 +219,15 @@ mode $mark_mode {
 }
 
 ## Interactiv go to by mark
-bindsym $mod+g exec $shell i3-goto-mark
+bindsym $mod+g exec i3-goto-mark
 
 ## Interactive go to by title
 
-bindsym $mod+f exec $shell 'rofi -show window'
-# ---
-
-
-# Music Control
-bindsym $mod+Shift+m mode $music_mode
-
-mode $music_mode {
-  # Execute and exit mode immediately.
-  bindsym space exec --no-startup-id $shell 'control-music toggle_play' > /tmp/fuck 2>&1; mode $default_mode
-  bindsym r exec --no-startup-id $shell 'control-music toggle_random'; mode $default_mode
-  bindsym s exec --no-startup-id $shell 'control-music stop'; mode $default_mode
-
-  # Execute possibly multiple times before exit mode.
-  bindsym n exec --no-startup-id $shell 'control-music next'
-  bindsym p exec --no-startup-id $shell 'control-music previous'
-
-  # Exit to the default mode.
-  bindsym Return mode $default_mode
-}
-
-# ---
-
+bindsym $mod+f exec rofi -show window
 
 # Scratchpad
 bindsym $mod+Shift+s move scratchpad
 bindsym $mod+s scratchpad show
-
-# ---
 
 
 # i3 Control
