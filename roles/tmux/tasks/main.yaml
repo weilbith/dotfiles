@@ -2,3 +2,5 @@
     name: base_role
   vars:
     new_directories: ["{{ xdg_runtime_dir }}/tmux"]
+    pkgbuild_urls:
+      - https://raw.githubusercontent.com/weilbith/pkgbuild-collection/master/tmux-thumbs.PGKBUILD # Smart copy plugin
