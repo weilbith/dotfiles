@@ -6,4 +6,5 @@
       - i3ipc-glib-git # Fix bug for dependency issues by easyfocus
       - i3-easyfocus-git # Focus windows via interactive selection
     pkgbuild_urls:
-      - https://raw.githubusercontent.com/weilbith/i3-utils/master/PKGBUILD
+      - https://raw.githubusercontent.com/weilbith/AUR/master/i3-goto-mark-git/PKGBUILD
+      - https://raw.githubusercontent.com/weilbith/AUR/master/i3-win-info-git/PKGBUILD

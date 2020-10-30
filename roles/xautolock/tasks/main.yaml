@@ -5,6 +5,7 @@
       - libnotify # Notify user of soon locking screen
       - xdotool # Hotkey mapping to control cursor and prevent locking
     pkgbuild_urls:
-      - https://raw.githubusercontent.com/weilbith/i3-utils/master/PKGBUILD
+      - https://raw.githubusercontent.com/weilbith/AUR/master/i3-lock-git/PKGBUILD # Used as actual lock program
+
 # Depends on the wallpaper role that provides the image file and sets the
 # environment variable that i3-lock uses per default. Do not duplicate here.
