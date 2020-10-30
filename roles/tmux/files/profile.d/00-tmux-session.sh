@@ -23,7 +23,7 @@ function startSession() {
   local session_name="$1"
   local command="tmux new-session -t $TMUX_DEFAULT_GROUP_NAME"
   [[ -n "$session_name" ]] && command+=" -s $session_name"
-  eval "$command"
+  eval "exec $command"
 }
 
 function isInteractiveShellOrInsideTmux() {
