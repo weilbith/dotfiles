@@ -9,7 +9,7 @@
 - name: "{{ origin_role_name }} - install package(s) by PKGBUILD files"
   shell: >
     cd $(mktemp --directory);
-    curl --output PKGBUILD "{{ item }}";
+    curl --remote-name "{{ item }}";
     pikaur --pkgbuild --install --needed --noconfirm
   with_items:
     - "{{ pkgbuild_urls }}"

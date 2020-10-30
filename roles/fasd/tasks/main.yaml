@@ -4,7 +4,7 @@
     base_package: "" # Unset and use pkgbuild_urls only.
     pkgbuild_urls:
       # Adopted PKGBUILD using a fork that supports XDG-base-directories.
-      - https://raw.githubusercontent.com/weilbith/pkgbuild-collection/master/fasd.PKGBUILD
+      - https://raw.githubusercontent.com/weilbith/AUR/master/fasd-git/PKGBUILD
     new_directories:
       - "{{ xdg_data_home }}/fasd"
       - "{{ xdg_cache_home }}/fasd"
