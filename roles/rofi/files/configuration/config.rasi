@@ -6,7 +6,7 @@ configuration {
 
   // Appearance
   show-icons: true;
-  theme: "themes/list_view.rasi";
+  theme: "themes/blue_planet.rasi";
   icon-theme: "Paper";
 
   // Key mappings
