@@ -1,0 +1,5 @@
+super + shift + t
+  gtk-launch translate-shell
+
+
+# vim: filetype=sxhkdrc

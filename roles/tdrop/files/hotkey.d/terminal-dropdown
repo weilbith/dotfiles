@@ -1,0 +1,4 @@
+super + shift + Return
+  tdrop --auto-detect-wm --monitor-aware --width 50% --height 50% -x 25% -y 25% alacritty
+
+# vim: filetype=sxhkdrc

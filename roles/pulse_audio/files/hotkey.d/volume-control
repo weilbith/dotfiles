@@ -1,0 +1,23 @@
+# Double bind to non-functional keys
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+super + F1
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+super + F2
+  pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+super + F3
+  pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+
+# vim: filetype=sxhkdrc

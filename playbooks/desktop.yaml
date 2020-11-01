@@ -2,7 +2,7 @@
   hosts: all
   roles:
     - X11
-    - xbindkeys
+    - sxhkd
     - xmodmap
     - xrdb
     - unclutter

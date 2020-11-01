@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple X hotkey daemon
+After=xorg-server.service
+
+[Service]
+# Need to put command into a shell to make glob working
+ExecStart=/bin/sh -c '/usr/bin/sxhkd ${HOTKEY_CONFIG_DIR}/*'
+
+[Install]
+WantedBy=xorg-server.service

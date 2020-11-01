@@ -1,0 +1,4 @@
+super + F4
+  autorandr --change
+
+# vim: filetype=sxhkdrc

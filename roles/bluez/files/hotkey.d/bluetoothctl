@@ -1,0 +1,4 @@
+super + shift + b
+  gtk-launch bluetoothctl
+
+# vim: filetype=sxhkdrc

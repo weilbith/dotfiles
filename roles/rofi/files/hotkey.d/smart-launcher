@@ -1,0 +1,4 @@
+super + semicolon
+  rofi -no-lazy-grab -show drun
+
+# vim: filetype=sxhkdrc
