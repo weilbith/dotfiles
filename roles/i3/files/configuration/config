@@ -119,7 +119,7 @@ mode $resize_mode {
 }
 
 # Move floated windows
-bindsym $mod+m mode $move_mode; focus floating
+bindsym $mod+Shift+m mode $move_mode; focus floating
 
 mode $move_mode {
   # Switch to next window.

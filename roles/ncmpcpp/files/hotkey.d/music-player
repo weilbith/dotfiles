@@ -1,0 +1,4 @@
+super + m + p
+  gtk-launch ncmpcpp
+
+# vim: filetype=sxhkdrc

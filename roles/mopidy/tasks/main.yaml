@@ -5,6 +5,7 @@
       - mopidy-local # Plugin to play local audio files
       - mopidy-mpd # Pluin to support MPD interface
       - alsa-lib # Fix audio output
+      - mpc # Remote control via Music Player Daemon interface
     new_directories:
       - "{{ xdg_cache_home }}/mopidy"
       - "{{ xdg_data_home }}/mopidy"
