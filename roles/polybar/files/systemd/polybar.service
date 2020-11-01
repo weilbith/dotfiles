@@ -1,0 +1,10 @@
+[Unit]
+Description=Status bar
+After=xorg-server.service
+
+[Service]
+ExecStart=/usr/bin/polybar --reload top
+Restart=on-failure
+
+[Install]
+WantedBy=xorg-server.service

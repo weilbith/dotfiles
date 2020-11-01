@@ -1,0 +1,23 @@
+[global/wm]
+include-file = ~/.config/polybar/colors.ini
+include-directory = ~/.config/polybar/modules
+
+[bar/main]
+width = 100%
+height = 22
+
+background = #00000000
+foreground = ${color.white}
+
+font-0 = SauceCodePro Nerd Font:style=Bold:size=11;3
+font-1 = SauceCodePro Nerd Font:style=Bold:size=13;3
+
+[bar/top]
+inherit = bar/main
+
+modules-left = network separator-between-left mpd separator-outer-left
+modules-center = separator-center-left window i3 separator-center-right
+modules-right = separator-outer-right cpu separator-inner-right memory separator-inner-right volume separator-between-right battery separator-between-right time separator-inner-right date
+enable-ipc = true
+
+; vim: filetype=dosini
