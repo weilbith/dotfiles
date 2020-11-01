@@ -1,8 +1,0 @@
-# Although Yay gets already installed via Makefile, this provides the
-# configuration etc.
-- import_role:
-    name: base_role
-  vars:
-    base_package: ""
-    new_directories:
-      - "{{ xdg_cache_home }}/yay"

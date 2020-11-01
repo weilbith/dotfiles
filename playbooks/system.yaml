@@ -1,7 +1,7 @@
 - name: Setup focused on system related stuff
   hosts: all
   roles:
-    - yay
+    - pikaur
     - pam
     - fwupd
     - ntp
