@@ -7,3 +7,7 @@ zinit wait lucid light-mode for \
   atinit"EASY_MOTION_HIGHLIGHT_2_FIRST='fg=197,bold'" \
   atinit"EASY_MOTION_HIGHLIGHT_2_SECOND='fg=197,bold'" \
   IngoMeyer441/zsh-easy-motion
+
+# Does not work?
+#   atinit"zstyle 'zle:exchange' highlight 'fg=239,bg=291'" \
+#   okapia/zsh-viexchange
