@@ -1,23 +1,28 @@
 [global/wm]
 include-file = ~/.config/polybar/colors.ini
+include-file = ~/.config/polybar/layout.ini
 include-directory = ~/.config/polybar/modules
 
-[bar/main]
+[bar/top]
 width = 100%
 height = 22
+module-margin = 1
 
-background = #00000000
-foreground = ${color.white}
+background = ${colors.transparent}
+foreground = ${colors.white}
 
-font-0 = SauceCodePro Nerd Font:style=Bold:size=11;3
-font-1 = SauceCodePro Nerd Font:style=Bold:size=13;3
+border-size = 6
+border-color = ${self.background}
+# TODO: use underline (not working) instead to have no margin at top and sides.
 
-[bar/top]
-inherit = bar/main
+font-0 = Sauce Code Pro:style=Bold:size=11;3
+font-1 = Sauce Code Pro:style=Bold:size=19;5
 
-modules-left = network separator-between-left mpd separator-outer-left
-modules-center = separator-center-left window i3 separator-center-right
-modules-right = separator-outer-right cpu separator-inner-right memory separator-inner-right volume separator-between-right battery separator-between-right time separator-inner-right date
+modules-left = network mpd volume
+modules-center = i3
+modules-right = cpu memory battery time date
+
 enable-ipc = true
+
 
 ; vim: filetype=dosini
