@@ -1,5 +1,4 @@
-- brightness-/music-control
-- pacman (config, cheat, zsh?)
+- brightness-control
 - screenshot (scrot vs. flameshot)
 - npm/pnpm/yarn/nvm/n/npx/zsh-plugins
 - rustup/cargo/racer/lint/format

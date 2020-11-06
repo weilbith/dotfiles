@@ -42,3 +42,5 @@
 [filter "black"]
   clean = black -
   smudge = black -l 120 -
+
+# vim: filetype=gitconfig
