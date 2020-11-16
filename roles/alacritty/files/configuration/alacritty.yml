@@ -17,9 +17,6 @@ font:
     family: Source Code Pro
     style: Regular
 
-  glyph_offset:
-    y: -1 # Fix shifted special characters
-
 colors:
   primary:
     background: "#000000"
