@@ -37,8 +37,10 @@ setopt NO_BEEP
 # Vi-mode
 setopt VI
 
-bindkey -M viins '\e' vi-cmd-mode # Fix escape insert mode issues
+bindkey -M viins '\e' vi-cmd-mode
 bindkey -M viins '^?' vi-backward-delete-char
+bindkey -M vicmd '^[[3~' delete-char
 
+# Always be in normal/vicmd mode on new prompt.
 zle-line-init() { zle -K vicmd; }
 zle -N zle-line-init
