@@ -1,6 +1,7 @@
 - import_role:
     name: base_role
   vars:
+    base_package: tmux-git # Get pop-up feature, switch back if it got included to stable release
     new_directories: ["{{ xdg_runtime_dir }}/tmux"]
     pkgbuild_urls:
       - https://raw.githubusercontent.com/weilbith/AUR/master/tmux-thumbs-git/PKGBUILD # Smart copy plugin
