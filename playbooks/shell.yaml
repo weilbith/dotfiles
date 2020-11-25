@@ -7,7 +7,6 @@
     - tmux
     - powerlevel10k
     - fzf
-    - fasd
     - cheat
     - translate_shell
     - wget

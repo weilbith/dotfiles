@@ -1,6 +1,0 @@
-# vim: filetype=sh
-# shellcheck disable=SC2034
-
-_FASD_DATA=$XDG_DATA_HOME/fasd/data
-_FASD_VIMINFO=$XDG_DATA_HOME/nvim/files/info/viminfo
-_FASD_BACKENDS="native"
