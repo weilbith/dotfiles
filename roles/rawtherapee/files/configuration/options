@@ -2,7 +2,7 @@
 TabbedEditor=false
 StoreLastProfile=true
 StartupDirectory=last
-StartupPath=/home/thore/Bilder
+StartupPath=/home/thore/images/photos/pets/Makalani
 DateFormat=%y-%m-%d
 AdjusterMinDelay=100
 AdjusterMaxDelay=200
@@ -10,10 +10,15 @@ MultiUser=true
 Language=English (US)
 LanguageAutoDetect=true
 Theme=RawTherapee-GTK3-20_
-Version=5.4-1012-g5cb42f29e
+Version=5.8-2629-g7d763f7df
 DarkFramesPath=
 FlatFieldsPath=
 Verbose=false
+Cropsleep=50
+Reduchigh=0.84999999999999998
+Reduclow=0.84999999999999998
+Detectshape=true
+Fftwsigma=true
 
 [External Editor]
 EditorKind=1
@@ -32,6 +37,7 @@ ThumbnailSizeTab=160
 ThumbnailSizeQueue=160
 SameThumbSize=0
 MaxPreviewHeight=250
+MaxPreviewWidth=800
 MaxCacheEntries=20000
 ParseExtensions=3fr;arw;arq;cr2;crf;crw;dcr;dng;fff;iiq;jpg;jpeg;kdc;mef;mos;mrw;nef;nrw;orf;pef;png;raf;raw;rw2;rwl;rwz;sr2;srf;srw;tif;tiff;x3f;
 ParseExtensionsEnabled=1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;1;1;1;1;1;1;1;1;1;1;1;
@@ -52,7 +58,7 @@ menuGroupFileOperations=true
 menuGroupProfileOperations=true
 menuGroupExtProg=true
 MaxRecentFolders=15
-RecentFolders=/home/thore;/home/thore/Bilder;/home/thore/Bilder/Urlaub/2018-08_Schottland;/home/thore/Bilder/Urlaub;/home/thore/Bilder/SecretSentences;/home/thore/Bilder/Screenshots;/home/thore/Bilder/Sport/Wakeboarden/2019-06/RAW;/home/thore/Bilder/Urlaub/2018-08_Schottland/RAW;/home/thore/Bilder/Urlaub/2018-11_Malta/RAW;/home/thore/Bilder/Urlaub/2018-10_LindenhofHabernis/RAW;/home/thore/Bilder/Katzen/RAW;/home/thore/Bilder/Feiertage/2018_Silvester/RAW;/home/thore/Bilder/Feiertage/2018_Silvester;
+RecentFolders=/home/thore/images/photos/pets/Makalani;/home/thore/images/photos/vacations/2020-09_Kaernten;/home/thore;/home/thore/Bilder;/home/thore/Bilder/Urlaub/2018-08_Schottland;/home/thore/Bilder/Urlaub;/home/thore/Bilder/SecretSentences;/home/thore/Bilder/Screenshots;/home/thore/Bilder/Sport/Wakeboarden/2019-06/RAW;/home/thore/Bilder/Urlaub/2018-08_Schottland/RAW;/home/thore/Bilder/Urlaub/2018-11_Malta/RAW;/home/thore/Bilder/Urlaub/2018-10_LindenhofHabernis/RAW;/home/thore/Bilder/Katzen/RAW;/home/thore/Bilder/Feiertage/2018_Silvester/RAW;/home/thore/Bilder/Feiertage/2018_Silvester;
 
 [Clipping Indication]
 HighlightThreshold=253
@@ -66,6 +72,12 @@ MaxInspectorBuffers=2
 InspectorDelay=0
 PreviewDemosaicFromSidecar=1
 SerializeTiffRead=true
+Measure=0
+ChunkSizeAMAZE=2
+ChunkSizeRCD=2
+ChunkSizeRGB=2
+ChunkSizeXT=2
+ChunkSizeCA=2
 ThumbnailInspectorMode=0
 
 [Output]
@@ -108,10 +120,11 @@ CustomProfileBuilderPath=
 CustomProfileBuilderKeys=2
 
 [GUI]
-WindowWidth=1200
-WindowHeight=680
+Favorites=
+WindowWidth=2556
+WindowHeight=1402
 WindowX=0
-WindowY=0
+WindowY=34
 WindowMonitor=0
 MeowMonitor=-1
 MeowFullScreen=false
@@ -131,16 +144,17 @@ PreferencesHeight=600
 SaveAsDialogWidth=920
 SaveAsDialogHeight=680
 ToolPanelWidth=446
-BrowserToolPanelWidth=1753
+BrowserToolPanelWidth=465
 BrowserToolPanelHeight=569
 BrowserToolPanelOpened=false
-EditorFilmStripOpened=true
+EditorFilmStripOpened=false
 BrowserDirPanelOpened=true
 HistoryPanelWidth=330
 FontFamily=default
 FontSize=10
 CPFontFamily=default
 CPFontSize=8
+PseudoHiDPISupport=false
 LastPreviewScale=5
 LastShowAllExif=false
 PanAccelFactor=4
@@ -152,9 +166,9 @@ ShowInfo=true
 MainNBVertical=true
 ShowClippedHighlights=false
 ShowClippedShadows=false
-FrameColor=0
+FrameColor=3
 ProcessingQueueEnbled=true
-ToolPanelsExpanded=1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;
+ToolPanelsExpanded=1;0;1;1;1;0;1;1;1;1;1;1;1;1;1;0;0;0;0;0;0;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;
 ToolPanelsExpandedAutoSave=true
 MultiDisplayMode=0
 CutOverlayBrush=0;0;0;0.66698710612649725;
@@ -165,10 +179,12 @@ HistogramGreen=true
 HistogramBlue=true
 HistogramLuma=true
 HistogramChroma=false
-HistogramRAW=false
 HistogramBar=true
-HistogramHeight=163
+HistogramHeight=166
 HistogramDrawMode=0
+HistogramScopeType=0
+HistogramShowOptionButtons=false
+HistogramTraceBrightness=1
 NavigatorRGBUnit=0
 NavigatorHSVUnit=0
 ShowFilmStripToolBar=true
@@ -176,6 +192,8 @@ FileBrowserToolbarSingleRow=false
 HideTPVScrollbar=false
 HistogramWorking=false
 CurveBBoxPosition=1
+Showtooltip=true
+Complexity=2
 
 [Crop Settings]
 PPI=600
@@ -193,16 +211,16 @@ Autocielab=true
 RGBcurvesLumamode_Gamut=true
 Intent=1
 MonitorBPC=true
-AdobeRGB=RTv4_Medium
-ProPhoto=RTv4_Large
-WideGamut=RTv4_Wide
+AdobeRGB=RTv2_Medium
+ProPhoto=RTv2_Large
+WideGamut=RTv2_Wide
 sRGB=RTv4_sRGB
-Beta=RTv4_Beta
-Best=RTv4_Best
-Rec2020=RTv4_Rec2020
-Bruce=RTv4_Bruce
-ACES-AP0=RTv4_ACES-AP0
-ACES-AP1=RTv4_ACES-AP1
+Beta=RTv2_Beta
+Best=RTv2_Best
+Rec2020=RTv2_Rec2020
+Bruce=RTv2_Bruce
+ACES-AP0=RTv2_ACES-AP0
+ACES-AP1=RTv2_ACES-AP1
 WhiteBalanceSpotSize=8
 GamutICC=true
 GamutLch=true
@@ -213,7 +231,23 @@ CRI=0
 DenoiseLabgamma=2
 CBDLlevel0=0
 CBDLlevel123=30
+Itcwb_thres=34
+Itcwb_sort=false
+Itcwb_greenrange=0
+Itcwb_greendeltatemp=2
+Itcwb_forceextra=true
+Itcwb_sizereference=3
+Itcwb_delta=1
+Itcwb_stdobserver10=true
+Itcwb_precis=5
 ClutsDirectory=./cluts
+Previewselection=5
+Cbdlsensi=1
+
+[Wavelet]
+Edghi=3
+Edglo=0.5
+Limrad=20
 
 [ICC Profile Creator]
 PimariesPreset=sRGB
@@ -233,7 +267,7 @@ Copyright=Copyright RawTherapee 2018, CC0
 AppendParamsToDesc=false
 
 [Batch Processing]
-AdjusterBehavior=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;
+AdjusterBehavior=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;
 
 [Sounds]
 Enable=true
@@ -283,6 +317,7 @@ LastLabCurvesDir=/home/thore/.config/RawTherapee/profiles
 LastRetinexDir=/home/thore/.config/RawTherapee/profiles
 LastDenoiseCurvesDir=/home/thore/.config/RawTherapee/profiles
 LastWaveletCurvesDir=/home/thore/.config/RawTherapee/profiles
+LastlocalCurvesDir=/home/thore/.config/RawTherapee/profiles
 LastPFCurvesDir=/home/thore/.config/RawTherapee/profiles
 LastHsvCurvesDir=/home/thore/.config/RawTherapee/profiles
 LastBWCurvesDir=/home/thore/.config/RawTherapee/profiles
@@ -291,6 +326,7 @@ LastVibranceCurvesDir=/home/thore/.config/RawTherapee/profiles
 LastProfilingReferenceDir=/home/thore/.config/RawTherapee/profiles
 LastLensProfileDir=
 LastICCProfCreatorDir=/home/thore/.config/RawTherapee/profiles
+LastCopyMovePath=
 GimpPluginShowInfoDialog=true
 
 [Lensfun]
