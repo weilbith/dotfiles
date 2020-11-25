@@ -1,5 +1,5 @@
 library: ~/.local/share/beets/library.db
-directory: ~/audio/music
+directory: ~/audio/staging/target
 asciify_paths: yes
 import:
   write: yes
