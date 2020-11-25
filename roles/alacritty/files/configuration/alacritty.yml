@@ -22,15 +22,16 @@ colors:
     background: "#000000"
     foreground: "#5fd7ff"
 
+  # The default colors are too opinionated and not clean.
   normal:
     black: "#000000"
-    red: "#cc0403"
-    green: "#19cb00"
-    yellow: "#cecb00"
-    blue: "#0d73cc"
-    magenta: "#cb1ed1"
-    cyan: "#0dcdcd"
-    white: "#dddddd"
+    white: "#ffffff"
+    red: "#ff0000"
+    green: "#00ff00"
+    blue: "#0000ff"
+    yellow: "#ffff00"
+    magenta: "#ff00ff"
+    cyan: "#00ffff"
 
   selection:
     text: "#282a2e"
