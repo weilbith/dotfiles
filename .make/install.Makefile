@@ -13,8 +13,8 @@ install-provision: install-pikaur ## Setup tools for provisioning
 install-testing: install-pikaur ## Setup tools for testing
 	@echo Install Pre-commit and its hooks...
 	@pikaur --sync --needed --noconfirm python-pre-commit --overwrite='*'
-	@pre-commit install
-	@pre-commit install-hooks
+	# @pre-commit install
+	# @pre-commit install-hooks
 	@echo Install Vagrant with middleware
 	@pikaur --sync --needed --noconfirm vagrant virtualbox virtualbox-host-modules-arch perl-net-ssleay
 	@vagrant plugin install virtualbox

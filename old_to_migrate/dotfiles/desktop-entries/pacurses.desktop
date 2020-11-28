@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Pacurses
-Comment=A curses graphical interface to the PulseAudio sound system for the terminal
-Exec=kitty --name floating --class Pacurses --detach -o initial_window_width=450 -o initial_window_height=570 -o remember_window_size=no pipx run pacurses
-Type=Application
