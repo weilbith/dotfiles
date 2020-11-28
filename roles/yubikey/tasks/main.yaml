@@ -5,6 +5,5 @@
     additional_packages:
       - pcsclite # Smartcard middleware library
       - ccid # Smartcard interface driver
-    systemd_units:
+    systemd_units_system:
       - pcscd.service
-    systemd_scope: system

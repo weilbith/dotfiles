@@ -4,4 +4,5 @@
     additional_packages:
       - inotify-tools # Observe filesystem events for auto-sync
     link_configuration_children: true
-    systemd_units: [syncthing.service]
+    systemd_units_user:
+      - syncthing.service

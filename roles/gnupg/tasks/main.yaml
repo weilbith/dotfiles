@@ -2,6 +2,6 @@
     name: base_role
   vars:
     link_configuration_children: true
-    systemd_units:
+    systemd_units_user:
       - gpg-agent.service
       - gpg-agent-ssh.socket

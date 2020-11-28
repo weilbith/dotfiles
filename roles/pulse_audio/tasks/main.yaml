@@ -4,4 +4,5 @@
     base_package: pulseaudio
     additional_packages:
       - xf86-input-synaptics # Support laptop media keys
-    systemd_units: [pulseaudio.service]
+    systemd_units_user:
+      - pulseaudio.service

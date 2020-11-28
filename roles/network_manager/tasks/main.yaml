@@ -9,7 +9,6 @@
     link_configuration_as_root: yes
     force_to_overwrite_configuration: true
     configuration_mode: 0744
-    systemd_units:
+    systemd_units_system:
       - NetworkManager.service
       - NetworkManager-dispatcher.service
-    systemd_scope: system

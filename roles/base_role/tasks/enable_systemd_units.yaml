@@ -1,15 +1,33 @@
-- name: "{{ origin_role_name }} - enable (custom) systemd unit(s)"
+- name: "{{ origin_role_name }} - enable systemd units for user scope"
   when: lookup('env', 'USER') != 'circleci'
   systemd:
     name: "{{ item }}"
-    scope: "{{ systemd_scope }}"
+    scope: user
     enabled: yes
-  become: "{{ systemd_scope == 'system' }}"
   with_items:
-    - "{{ systemd_units }}"
+    - "{{ systemd_units_user }}"
+
+- name: "{{ origin_role_name }} - enable systemd units for system scope"
+  when: lookup('env', 'USER') != 'circleci'
+  systemd:
+    name: "{{ item }}"
+    scope: system
+    enabled: yes
+  become: yes
+  with_items:
+    - "{{ systemd_units_system }}"
+
+- name: "{{ origin_role_name }} - enable custom systemd units for defined scope"
+  when: lookup('env', 'USER') != 'circleci'
+  systemd:
+    name: "{{ item }}"
+    scope: "{{ systemd_custom_scope }}"
+    enabled: yes
+  become: "{{ systemd_custom_scope == 'system' }}"
+  with_items:
     - "{{ lookup('role_directory_entries', 'systemd', wantlist=True) }}"
 
-# Limit this to the user space so far.
+# Limit this to the user scope so far.
 - name: "{{ origin_role_name }} - make sure timer related services are only linked"
   when:
     - lookup('role_directory_entries', 'systemd') | length > 0

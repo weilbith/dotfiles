@@ -4,5 +4,5 @@
     additional_packages:
       - bluez-utils # command-line interface
       - pulseaudio-bluetooth # pulse-audio integration
-    systemd_units: [bluetooth.service]
-    systemd_scope: system
+    systemd_units_system:
+      - bluetooth.service

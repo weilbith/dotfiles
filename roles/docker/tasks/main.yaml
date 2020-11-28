@@ -3,8 +3,8 @@
   vars:
     additional_packages:
       - docker-compose-bin # Docker environment orchestration tool
-    systemd_units: [docker.service]
-    systemd_scope: system
+    systemd_units_system:
+      - docker.service
 
 - name: Ensure group for Docker users exists (should be by package installation already)
   group:

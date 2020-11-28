@@ -7,8 +7,8 @@
     new_directories:
       - /etc/udev/rules.d
       - /etc/tmpfiles.d
-    systemd_units: udisks2.service
-    systemd_scope: system
+    systemd_units_system:
+      - udisks2.service
 
 - name: Find rule files
   find:
