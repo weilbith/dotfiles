@@ -4,6 +4,6 @@
     base_package: yubikey-manager
     additional_packages:
       - yubikey-touch-detector # Get notifications when YubiKey asks for touch interaction
-    configuration_destination: "{{ lookup('env', 'XDG_CONFIG_HOME') }}/yubikey-touch-detector"
+    configuration_destination: "{{ xdg_config_home }}/yubikey-touch-detector"
     systemd_units_user:
       - yubikey-touch-detector.service
