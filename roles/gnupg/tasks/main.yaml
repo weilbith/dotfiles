@@ -1,7 +1,12 @@
 - import_role:
     name: base_role
   vars:
+    additional_packages:
+      - pcsclite # Smartcard middleware library
+      - ccid # Smartcard interface driver
     link_configuration_children: true
     systemd_units_user:
       - gpg-agent.service
       - gpg-agent-ssh.socket
+    systemd_units_system:
+      - pcscd.service

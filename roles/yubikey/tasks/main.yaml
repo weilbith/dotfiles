@@ -2,8 +2,3 @@
     name: base_role
   vars:
     base_package: yubikey-manager
-    additional_packages:
-      - pcsclite # Smartcard middleware library
-      - ccid # Smartcard interface driver
-    systemd_units_system:
-      - pcscd.service

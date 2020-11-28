@@ -21,9 +21,9 @@
   when: lookup('env', 'USER') != 'circleci'
   systemd:
     name: "{{ item }}"
-    scope: "{{ systemd_custom_scope }}"
+    scope: "{{ systemd_units_custom_scope }}"
     enabled: yes
-  become: "{{ systemd_custom_scope == 'system' }}"
+  become: "{{ systemd_units_custom_scope == 'system' }}"
   with_items:
     - "{{ lookup('role_directory_entries', 'systemd', wantlist=True) }}"
 
