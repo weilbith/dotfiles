@@ -23,7 +23,9 @@ first place just for me. In second to share with others. My only hope could be
 that this inspires you. If you are only interested into the configuration for
 some certain tools, checkout their files in the according role directories.
 
-## Pre-requisites
+## Usage
+
+### Pre-requisites
 
 The warhorse is expected to run on a machine with
 [ArchLinux](https://wiki.archlinux.org/) as operation system. Other OS are not
@@ -42,7 +44,7 @@ Finally you will eventually need a file called `.vault.pwd` in the projects root
 directory. It is necessary to decrypt secrets stored for the Ansible setup (e.g.
 configuration files with an OAuth token).
 
-## Installation
+### Installation
 
 This step is necessary for [provision](#provision) and [testing](#testing). It
 makes sure that all dependencies are available and well configured.
@@ -56,7 +58,7 @@ system. They are not limited to this projects repository. Anyways you can still
 cancel when you get asked to provide your password for executing commands with
 root permissions.
 
-## Provision
+### Provision
 
 This is the actual heart of this project. It provides your **local** machine to
 become the Workhorse. Thereby it makes sure that everything is fully installed,
@@ -77,7 +79,7 @@ The dotfiles themselves are symbolically linked in the file system. Thereby you
 must not call the provision again to update them. Concurrently it allows to edit
 these files at their target location where the tools expect them.
 
-## Testing
+### Testing
 
 There are different targets to test the setup. They intend to test the validity
 of the Workhorse setup, not the dotfiles that get provisioned. Watch-out for the
@@ -85,7 +87,7 @@ of the Workhorse setup, not the dotfiles that get provisioned. Watch-out for the
 some dependencies first via `make install-testing`. Such include the git hooks,
 the virtual machine testing with Vagrant and the local CircleCI version.
 
-### Linting & Formatting with Pre-commit
+#### Linting & Formatting with Pre-commit
 
 When you installed the full setup you will have got established the Pre-commit
 hooks for git already. Besides some basic checks there are a bunch of linting
@@ -97,7 +99,7 @@ Formatting is checked as well, but there is no target to actually fix formatting
 issues. It is recommended to install such tools manually to your development
 environment.
 
-### Virtual Machine with Vagrant
+#### Virtual Machine with Vagrant
 
 To test the setup in practice without applying it to the active system,
 a virtual machine is used. This machine is managed with Vagrant, described with
@@ -146,7 +148,7 @@ does not automatically clean up old runs according to a diff with a more recent
 version. So if there are breaking changes necessary, it is advised to recreate
 a new virtual machine, running the provision from zero.
 
-### Continuous Integration with CircleCI
+#### Continuous Integration with CircleCI
 
 Finally the continuous integration tests make sure that the setup is actually
 working. This is meant as a last check in case the git hooks and the virtual
@@ -155,3 +157,134 @@ machine tests have not been maintained locally.
 The CircleCI workflow creates a dummy password file for ansible-vault. The setup
 has been customized to not throw decryption errors when they occur within
 a CircleCI job.
+
+---
+
+## Concepts & Design
+
+### Base Role
+
+Each role should inheriting the `base_role`. It provides most-likely all features
+a role needs in a generic manner. While most roles just work out of the box,
+some need more specification and fine tuning via variables. Everything that is not
+achievable with the base role because it is special for this specific role must
+be done in additional task definitions.
+
+Example:
+
+```yaml
+- import_role:
+    name: base_role
+  vars:
+    additional_packages:
+      - pcsclite # Smartcard middleware library
+      - ccid # Smartcard interface driver
+    link_configuration_children: true
+    systemd_units_user:
+      - gpg-agent.service
+      - gpg-agent-ssh.socket
+    systemd_units_system:
+      - pcscd.service
+```
+
+The Following lists all task-modules of the base role, what they do and the
+configuration variables. A whole module or some tasks of it get ignored if there
+is nothing defined for the current role. The console output will always
+reference the original role name instead of `base_role` where the tasks are
+actually defined.
+The order of the modules is fixed, because they partially can have dependencies
+to each other (like first a package must be installed).
+
+#### Install Packages
+
+Makes sure that certain packages are installed on the system. Uses an AUR helper
+(`pikaur` per default) to also resolve user repositories. Requires to handle
+local `PKGBUILD` files as well.
+
+| Variable              |    Type    |     Default      | Description                                                   |
+| :-------------------- | :--------: | :--------------: | :------------------------------------------------------------ |
+| `base_package`        |  `string`  | name of the role | Fundamental package of the role, set as empty string to omit. |
+| `additional_packages` | `string[]` |       `[]`       | List of more package names to install if necessary.           |
+| `pkgbuild_urls`       | `string[]` |       `[]`       | List of URLs that resolve to `PKGBUILD` files to install.     |
+
+#### Make Directories
+
+Makes sure that certain directories exist at the system. This is for example
+useful if a tool can't create its own configured cache directory (`"{{ xdg_config_home }}/tool"`).
+
+| Variable          |    Type    | Default | Description                                           |
+| :---------------- | :--------: | :-----: | :---------------------------------------------------- |
+| `new_directories` | `string[]` |  `[]`   | List of absolute paths to create if not existing yet. |
+
+#### Link Configuration
+
+Creates a symbolic link of the configuration directory or files from the local
+repository to the required location. Kinda the core of each dotfile management
+repository. Though this module behaves quite complex. The directory must be
+strictly named and being part of the role its files (i.e.
+`<role_name>/files/configuration`). The module will search for such directory
+and skip if it does not exist. The rest should be possible to derive from the
+variable descriptions.
+
+| Variable                           |   Type    |            Default             | Description                                                                                                 |
+| :--------------------------------- | :-------: | :----------------------------: | :---------------------------------------------------------------------------------------------------------- |
+| `configuration_destination`        | `string`  | `$XDG_CONFIG_HOME/<role-name>` | Path for symbolic link target or directory to create for linked children.                                   |
+| `configuration_mode`               | `number`  |             `0700`             | File system mode for link target or new directory.                                                          |
+| `link_configuration_children`      | `boolean` |            `false`             | Do not link directory, but create destination path and link all children from source.                       |
+| `link_configuration_as_root`       | `boolean` |            `false`             | Make use of root privileges to link configuration (e.g. under `/etc/`).                                     |
+| `force_to_overwrite_configuration` | `boolean` |            `false`             | Use the force flag when linking or creating the destination in case there is already something per default. |
+
+#### Enable SystemD Units
+
+Links and enables units (services, timers, sockets, ...) for SystemD. Handles
+units for user and system scope. Units are always enabled, but never started.
+Furthermore it detects custom unit files at `<role_name>/files/systemd/`. If
+there is a custom service **and** timer with the same name, the service gets
+only linked, while the timer gets enabled. Non-custom units must be installed
+via the required packages from the module above.
+
+For the CircleCI test environment these tasks do not get executed, since they
+basically do not work.
+
+| Variable                     |        Type        | Default | Description                                                                |
+| :--------------------------- | :----------------: | :-----: | :------------------------------------------------------------------------- |
+| `systemd_units_user`         |     `string[]`     |  `[]`   | List of unit names to enable for user scope.                               |
+| `systemd_units_system`       |     `string[]`     |  `[]`   | List of unit names to enable for system scope (requires root permissions). |
+| `systemd_units_custom_scope` | `user` or `system` | `user`  | Scope to apply for detected custom unit files.                             |
+
+#### Copy Test Data
+
+This is only relevant for the Vagrant test environment to allow further testing
+of the applied roles. Such data can be images, documents or anything else. Roles
+can defined which kind of data they need to get provided within the test
+environment. The source data is stored within the base role itself, not by the
+role using it (i.e. `base_role/files/<data_kind>`). Files get placed under the
+home directory, following the directory structure from the source. This always
+tries to imitate the future directory structure as used by me and thereby how
+the applications expect it (if they have such kind of configuration).
+
+If necessary, all test data can be removed from the current Vagrant box with the
+`make test-vagrant-remove-test-data` command target.
+
+| Variable            |    Type    | Default | Description                                                                                     |
+| :------------------ | :--------: | :-----: | :---------------------------------------------------------------------------------------------- |
+| `provide_test_data` | `string[]` |  `[]`   | List of folder names from the source directory to copy recursively (e.g. `[audio, documents]`). |
+
+#### Link Shared Directories
+
+This is a looped task and runs for the below listed items. It implements the
+[shared directory feature](#shared-directories) for each role if they have such.
+Therefore it checks if the role has any of these directories
+`<role_name>/files/<shared_directory>/*`. If so, it links all its children to
+the system directory shared between all roles. If this is the first role using this
+shared directory, it will create they system directory. Checkout the above
+linked section for more details of this concept.
+
+Shared directories (roles must have directory with name of last path segment):
+
+- `$XDG_CONFIG_HOME/environment.d`
+- `$XDG_CONFIG_HOME/profile.d`
+- `$XDG_CONFIG_HOME/plugin.d`
+- `$XDG_DATA_HOME/applications`
+- `$XDG_CONFIG_HOME/hotkey.d`
+- `$XDG_CONFIG_HOME/cheat.d`
