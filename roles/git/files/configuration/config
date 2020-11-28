@@ -1,7 +1,7 @@
 [user]
   name = Thore Weilbier
   email = thore@weilbier.net
-  signingkey = DBEFB434
+  signingkey = 0A2ABC21BD50D9FF
 
 [commit]
   gpgsign = true
