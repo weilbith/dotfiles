@@ -8,3 +8,5 @@
     pkgbuild_urls:
       - https://raw.githubusercontent.com/weilbith/AUR/master/i3-goto-mark-git/PKGBUILD
       - https://raw.githubusercontent.com/weilbith/AUR/master/i3-win-info-git/PKGBUILD
+    new_directories:
+      - "{{ xdg_runtime_dir }}/i3"
