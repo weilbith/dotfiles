@@ -288,6 +288,7 @@ Shared directories (roles must have directory with name of last path segment):
 - `$XDG_DATA_HOME/applications`
 - `$XDG_CONFIG_HOME/hotkey.d`
 - `$XDG_CONFIG_HOME/cheat.d`
+- `$XDG_CONFIG_HOME/notifications.d`
 
 ### Shared Directories
 
@@ -404,6 +405,13 @@ used to collect cheat sheets for individual tools. The handler is `cheat`. Files
 in this directory take precedence over the in parallel installed community
 sheets. There is no order of the files. `cheat` does also support the usage of
 sub-directories as long as their names still equals the command name.
+
+#### Notifications
+
+Target directory is `$XDG_CONFIG_HOME/notifications.d`. This is a new shared
+directory to customize notifications. It allows to filter send notifications and
+manipulate them (e.g. change color or icon). The handler is `dunst`. Their order
+does not matter.
 
 #### Polybar Segments
 

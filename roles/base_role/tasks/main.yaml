@@ -13,5 +13,6 @@
     - "{{ applications_directory }}"
     - "{{ hotkey_directory }}"
     - "{{ cheat_directory }}"
+    - "{{ notification_directory }}"
   loop_control:
     loop_var: directory

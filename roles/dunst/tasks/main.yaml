@@ -1,5 +1,2 @@
 - import_role:
     name: base_role
-  vars:
-    systemd_units_user:
-      - dunst.service

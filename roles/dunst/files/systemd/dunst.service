@@ -1,0 +1,11 @@
+[Unit]
+Description=Dunst notification daemon
+After=xorg-server.service
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.Notifications
+ExecStart=/bin/sh -c '/usr/bin/dunst -config $(mktemp | xargs -I 'target-file' sh -c "cat $XDG_CONFIG_HOME/dunst/* > target-file; cat $NOTIFICATIONS_DIR/*.ini >> target-file; echo target-file")'
+
+[Install]
+WantedBy=xorg-server.service
