@@ -45,12 +45,6 @@
     class = Dunst
     startup_notification = false
 
-[shortcuts]
-    close = mod4+n
-    close_all = mod4+shift+n
-    history = mod4+ctrl+n
-    context = mod4+c
-
 [urgency_low]
     background = "#5fd7ff"
     foreground = "#282a2e"
@@ -77,3 +71,6 @@
 [i3lock]
     summary = "i3lock"
     new_icon = /home/thore/.local/share/icons/hicolor/24x24/app/app-lock.png
+
+
+# vim: filetype=toml

@@ -1,0 +1,13 @@
+super + n
+  dunstctl close
+
+super + shift + n
+  dunstctl close-all
+
+super + ctrl + n
+  dunstctl history-pop
+
+super + alt + n
+  dunstctl action
+
+# vim: filetype=sxhkdrc
