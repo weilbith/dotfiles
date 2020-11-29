@@ -270,7 +270,7 @@ If necessary, all test data can be removed from the current Vagrant box with the
 | :------------------ | :--------: | :-----: | :---------------------------------------------------------------------------------------------- |
 | `provide_test_data` | `string[]` |  `[]`   | List of folder names from the source directory to copy recursively (e.g. `[audio, documents]`). |
 
-#### Link Shared Directories
+#### Link Shared Directory
 
 This is a looped task and runs for the below listed items. It implements the
 [shared directory feature](#shared-directories) for each role if they have such.
@@ -288,3 +288,131 @@ Shared directories (roles must have directory with name of last path segment):
 - `$XDG_DATA_HOME/applications`
 - `$XDG_CONFIG_HOME/hotkey.d`
 - `$XDG_CONFIG_HOME/cheat.d`
+
+### Shared Directories
+
+The concept of shared directories is nothing newly invented here. Rather it is
+an effective approach that gets used and extended. The point is that all roles
+should remain as independent of each other as possible. This is also the reason
+why there is no usage of `meta` files. If there is one role provided, no other
+role gets ever installed automatically as well (note that the `base_role` is
+kind of an exception). Such an approach could result into an uncontrolled chain
+of dependencies that is not wished (at least not within this repository).
+Furthermore it would be hard to decide which are hard requirements and what are
+just nice to have extenstions. Even more important should no role include any
+configuration or reference to another application that is out of this roles
+scope. For example a tool that is used for global hotkeys should not include all
+the commands that actually get installed by other roles. It should only provide
+the feature that you can define hotkeys.
+
+The approach is that each role can provide files that get collected into
+a single directory. From there they get consumed by a handler who is responsible
+for them. This means as long as the role providing the handler of a shared
+directory is not installed, these shared files will not take effect. This
+concept makes sure that roles remain independent on a configuration file
+level. If a role should be removed, it must not be worried that at any place
+their is something left of this role and its applications. No environment
+variable, not shell script, no hotkey, nothing. This follows the
+open-closed-principle. Handlers are open to get easily extended, while their
+own configuration is closed (does not change), as long as this basic
+functionality must not been touched. This also leads to a beautiful clean
+version control history. Each change in any configuration is always only
+related to the according role.
+
+This eventually becomes more obvious when taking about already widely
+established shared directories. Note that while many of those have a system global
+version as well, we only care about their user version here. An example is
+the `$XDG_DATA_HOME/applications` directory. Every application can place its
+`.desktop` files there. A tool like `rofi` can then list these files with a nice
+UI presentation (including icon etc.) and let the user search/filter them and
+finally start the selected application. Another example is the
+`$XDG_CONFIG_HOME/environment.d` directory. Each file defines a list of
+variables. They get sourced by SystemD and enhance the user scope environment.
+This environment is then sourced by a Shell (no default behavior).
+Shared directories on system level are for the network manager, package manger,
+UDev and many more.
+
+Usually (but not always) these directories have a naming scheme of `<name>.d`.
+This comes from the fact there is often a file with `<name>.<extension>` next to
+the directory that is responsible to source all files in the directory. Any
+newly added shared directory in this repository sticks to this convention to
+make them more obvious to see.
+Files in these directories often have a leading number in their file name
+(`01-<name>.<extension>`). This is used to get a strict loading order of all
+files. This is for example relevant when the variables of one file reference
+other variables that must be defined before (e.g. XDG-base-directories).
+Watch-out for the existing files to determine their scheme order.
+
+It is not uncommon that shared directory handler roles inject their own files
+themselves. Handlers are meant to be exchangeable without (much) work to the
+roles providing shared files. But this is not always the case/achievable (e.g.
+specific syntax used).
+
+Here comes a list of all supported shared directories (via the according [base
+role module](#link-shared-directory)).
+
+#### Environment
+
+Target directory is `$XDG_CONFIG_HOME/environment.d`. This is a native feature
+by SystemD that constructs a list of environment variables. The advantage is
+that these variables are also available within all user services. The build
+environment gets also sourced by the Shell (`.zshenv` in this case). The order
+matters to make inherited variables get resolved correctly. Each role that needs
+to define an environment variable should define it via this shared directory.
+Only if the variables value contains more complex text (unfortunately are spaces
+part of it), this should be moved to a profile.
+
+#### Profiles
+
+Target directory is `$XDG_CONFIG_HOME/profile.d`. This is kind of an adopted
+native feature by some Shells (probably it gets abused here). This is basically
+a collection of scripts that should get sourced by the Shell. Their purpose is
+to initialize tools, define alias and functions, add plugins etc. Their order of
+loading might be relevant if one profile depends on that another has been
+sourced before. The handler of this shared directory is the `zsh` role (i.e. in
+`.zshrc`)
+
+#### Plugins
+
+Target directory is `$XDG_CONFIG_HOME/profile.d`. This is a new shared directory
+used by the plugin manager for Zsh plugins (`zinit` at the current state). Each
+role can add plugins (e.g. to provide completion support for an application)
+that then get automatically detected and managed by the plugin manager who is
+the handler of this shared directory. The handler gets sourced itself as
+a profile of the shell. The order of plugins might matter.
+
+#### Applications
+
+Target directory is `$XDG_DATA_HOME/applications`. This is a native feature of
+Unix operation systems. The files inside usually share the `.desktop` extension.
+The handler can be multiple. Here they are made accessible with `rofi`. Note
+that some packages might provide their own desktop files, also those take place
+at the global `/usr/share/applications` directory. The files do not have any
+order.
+
+#### Hotkeys
+
+Target directory is `$XDG_CONFIG_HOME/hotkey.d`. This is a new shard directory
+used by the hotkey manager. Roles can define their hotkeys that allow to trigger
+actions globally within a desktop environment (e.g. volume, lock screen, ..).
+The handler here is `sxhkd`. Their order does not matter.
+
+#### Cheats
+
+Target directory is `$XDG_CONFIG_HOME/cheat.d`. This is a new shared directory
+used to collect cheat sheets for individual tools. The handler is `cheat`. Files
+in this directory take precedence over the in parallel installed community
+sheets. There is no order of the files. `cheat` does also support the usage of
+sub-directories as long as their names still equals the command name.
+
+#### Polybar Segments
+
+> TODO
+> Not yet implemented, but there is a need to for it. Some technical issues for
+> an exact implementation are not resolved yet.
+
+### SystemD
+
+> TODO
+> SystemD units as first class citizen with all their high power.
+> Explain custom artificial dependencies for desktop related services to Xorg.
