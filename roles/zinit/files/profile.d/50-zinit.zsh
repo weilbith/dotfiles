@@ -13,9 +13,6 @@ ZINIT[OPTIMIZE_OUT_DISK_ACCESSES]=1
 
 source /usr/share/zsh/scripts/zinit/zinit.zsh
 
-# autoload -Uz _zinit
-# (( ${+_comps} )) && _comps[zinit]=_zinit
-
 set -a
 for file in "$ZSH_PLUGIN_LIST_DIR"/*.zsh; do source "$file"; done
 set +a
