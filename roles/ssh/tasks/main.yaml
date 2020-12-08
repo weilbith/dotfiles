@@ -2,7 +2,6 @@
     name: base_role
   vars:
     base_package: openssh
-    new_directories: ["{{ xdg_cache_home }}/ssh"]
     configuration_destination: "{{ lookup('env', 'HOME') }}/.ssh"
     link_configuration_children: true
     additional_packages:
