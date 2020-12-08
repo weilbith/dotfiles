@@ -83,10 +83,10 @@ ToolTips Show Video Frame Rate=true
 TreeView Font=Sans Serif,9,-1,5,50,0,0,0,0,0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=31
+CurrentIndex=30
 Expansion=0,1,16,20,17,46,2,41,3,4,5,40,14,6,7,45,18,30,31,21,22,28,23,29,27,47,48,8,32,33,34,35,36,37,38,39,44,42,43,9,10,11,49,-2
 RestoreChecked=false
-Selection=31
+Selection=30
 SortColumn=0
 SortOrder=0
 
@@ -153,7 +153,7 @@ FullScreen Hide StatusBar=false
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=false
 Height 1440=1386
-LastTargetAlbum=31
+LastTargetAlbum=30
 LossLessFormat=0
 Manual Rename String=[date:Unix Time Stamp]{unique}
 OnFlyBox Expanded=false
@@ -843,7 +843,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwKBgYE=
+Database Encrypted Password=AwL5+fk=
 Database Hostname=
 Database Name=/home/thore/.cache/digikam/database/
 Database Name Face=/home/thore/.cache/digikam/database/
@@ -870,7 +870,7 @@ Minimized=false
 RestoreSize=-1
 
 [Digikam Right Sidebar]
-ActiveTab=7
+ActiveTab=0
 DigikamProperties Expanded=true
 FileProperties Expanded=true
 ItemProperties Expanded=true
@@ -1747,9 +1747,9 @@ eDP-1 HDMI-2 XPosition=0
 eDP-1 HDMI-2 YPosition=0
 
 [MainWindow]
-InitialAlbumID=31
+InitialAlbumID=30
 SplitterState=AAAA/wAAAAEAAAADAAABNQAABNsAAAEuAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAaIAAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABogAAABXAP///wAABogAAAUgAAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAaIAAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABogAAABXAP///wAABogAAARaAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 AlbumComboBox-Checked=
