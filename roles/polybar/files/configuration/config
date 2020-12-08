@@ -18,7 +18,7 @@ border-color = ${self.background}
 font-0 = Sauce Code Pro:style=Bold:size=11;3
 font-1 = Sauce Code Pro:style=Bold:size=19;5
 
-modules-left = network mpd volume
+modules-left = network mpd volume yubikey
 modules-center = i3
 modules-right = cpu memory battery time date
 

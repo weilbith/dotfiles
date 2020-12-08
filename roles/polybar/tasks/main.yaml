@@ -1,4 +1,2 @@
 - import_role:
     name: base_role
-  vars:
-    base_package: polybar-git
