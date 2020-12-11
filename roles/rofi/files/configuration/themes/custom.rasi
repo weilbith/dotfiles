@@ -1,0 +1,67 @@
+* {
+  background-color: #ff0000;
+  background-color: #98989da0;
+  text-color: #000000;
+  font: "Sauce Code Pro 13";
+}
+
+#window {
+  width: 40%;
+  y-offset: -20%;
+  transparency: "real";
+  border-radius: 10px;
+}
+
+#inputbar {
+  children: [ textbox-prompt-colon, entry ];
+}
+
+#textbox-prompt-colon {
+  content: "";
+  expand: false;
+  padding: 15px 5px 0 25px;
+}
+
+#entry,
+element {
+  padding: 15px;
+  border: 1px 0 0 0;
+  border-color: #7b7b82;
+}
+
+#entry {
+  highlight: bold;
+  placeholder: "Rofi Search";
+  placeholder-color: #67676b;
+}
+
+#element-icon {
+  size: 30px;
+  padding: 0 10px 0 0;
+}
+
+#listview {
+  scrollbar: true;
+  dynamic: true;
+}
+
+#scrollbar {
+  background-color: #7b7b82;
+  handle-color: #67676b;
+  handle-width: 10px;
+}
+
+#mode-switcher {
+  background-color: #7b7b82;
+}
+
+#button {
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#element.selected,
+button.selected {
+  text-color: #ffffff;
+  background-color: #0a84ff;
+}
