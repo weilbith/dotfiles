@@ -1,21 +1,9 @@
-AddKeysToAgent yes
-
 host github.com
   HostName github.com
   User git
-  IdentityFile ~/.ssh/github
+  IdentityFile ~/.ssh/thore.pub
 
 host gitlab.tubit.tu-berlin.de
   HostName gitlab.tubit.tu-berlin.de
   User git
   IdentityFile ~/.ssh/tu_gitlab
-
-host cubietruck
-  HostName cubietruck
-  User weilbith
-  IdentityFile ~/.ssh/cubietruck
-
-host ibot
-  HostName 134.209.253.144
-  User root
-  IdentityFile ~/.ssh/give_away
