@@ -54,6 +54,7 @@ font xft:SauceCodePro Nerd Font:size=6
 
 show_marks yes
 
+
 # ---
 
 
@@ -245,9 +246,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i
 
 # i3 Gaps Configuration
 ## Gap between windows.
-gaps inner 10
-gaps outer 5
-smart_gaps on
+gaps inner 8
+gaps outer 3
 
 ## The window title height.
 new_window pixel 2
@@ -257,7 +257,6 @@ new_window pixel 2
 client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
 
 # ---
-
 
 # Window Preferences
 for_window [class="Yad"] floating enable
