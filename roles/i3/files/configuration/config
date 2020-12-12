@@ -253,8 +253,8 @@ gaps outer 3
 new_window pixel 2
 
 ## Colors
-### class       border      backgr.     text    indicator   child_border
-client.focused  #5fd7ff     #5fd7ff     #5fd7ff #5fd7ff     #5fd7ff
+### class       border      backgr.     text        indicator   child_border
+client.focused  #f1f1f2     #f1f1f2     #f1f1f2     #f1f1f2     #f1f1f2
 
 # ---
 
