@@ -1,26 +1,23 @@
 [global/wm]
 include-file = ~/.config/polybar/colors.ini
-include-file = ~/.config/polybar/layout.ini
 include-directory = ~/.config/polybar/modules
 
 [bar/top]
 width = 100%
-height = 22
+height = 23
 module-margin = 1
 
-background = ${colors.transparent}
-foreground = ${colors.white}
-
-border-size = 6
-border-color = ${self.background}
-# TODO: use underline (not working) instead to have no margin at top and sides.
+background = ${colors.background}
+foreground = ${colors.black}
 
 font-0 = Sauce Code Pro:style=Bold:size=11;3
-font-1 = Sauce Code Pro:style=Bold:size=19;5
+font-1 = Sauce Code Pro:style=Bold:size=14;3
+font-2 = Sauce Code Pro:style=Bold:size=20;5
+font-3 = Sauce Code Pro:style=Bold:size=25;6
+font-4 = Sauce Code Pro:style=Bold:size=9;0
 
-modules-left = network mpd volume yubikey
-modules-center = i3
-modules-right = cpu memory battery time date
+modules-left = workspaces window
+modules-right = yubikey services cpu cloud mail bluetooth network volume battery date notifications
 
 enable-ipc = true
 
