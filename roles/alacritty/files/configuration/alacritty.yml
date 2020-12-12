@@ -20,7 +20,7 @@ font:
 colors:
   primary:
     background: "#000000"
-    foreground: "#5fd7ff"
+    foreground: "#ffffff"
 
   # The default colors are too opinionated and not clean.
   normal:
