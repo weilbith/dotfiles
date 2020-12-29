@@ -83,10 +83,10 @@ ToolTips Show Video Frame Rate=true
 TreeView Font=Sans Serif,9,-1,5,50,0,0,0,0,0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=30
+CurrentIndex=31
 Expansion=0,1,16,20,17,46,2,41,3,4,5,40,14,6,7,45,18,30,31,21,22,28,23,29,27,47,48,8,32,33,34,35,36,37,38,39,44,42,43,9,10,11,49,-2
 RestoreChecked=false
-Selection=30
+Selection=31
 SortColumn=0
 SortOrder=0
 
@@ -152,8 +152,12 @@ FullScreen Hide SideBars=false
 FullScreen Hide StatusBar=false
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=false
+HDMI-2 Height 1440=1391
+HDMI-2 Width 2560=1261
+HDMI-2 XPosition=1286
+HDMI-2 YPosition=36
 Height 1440=1386
-LastTargetAlbum=30
+LastTargetAlbum=31
 LossLessFormat=0
 Manual Rename String=[date:Unix Time Stamp]{unique}
 OnFlyBox Expanded=false
@@ -164,7 +168,7 @@ Script=
 ScriptingBox Expanded=true
 ShowLog=false
 SplitterState=AAAA/wAAAAEAAAACAAAOnAAAAS4B/////wAAAAABAQ==
-State=AAAA/wAAAAD9AAAAAAAABOgAAAUCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABO0AAAUVAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 Template=0
 ToolBarsMovable=Disabled
 TurnHighQualityThumbs=false
@@ -843,7 +847,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwL5+fk=
+Database Encrypted Password=AwKvr68=
 Database Hostname=
 Database Name=/home/thore/.cache/digikam/database/
 Database Name Face=/home/thore/.cache/digikam/database/
@@ -870,7 +874,7 @@ Minimized=false
 RestoreSize=-1
 
 [Digikam Right Sidebar]
-ActiveTab=0
+ActiveTab=4
 DigikamProperties Expanded=true
 FileProperties Expanded=true
 ItemProperties Expanded=true
@@ -881,7 +885,7 @@ VideoProperties Expanded=true
 
 [Digikam Right Sidebar][Captions Tags Properties Tab]
 Contact Expanded=true
-ItemDescEdit Tab=2
+ItemDescEdit Tab=0
 ItemDescEditTab CaptionsLang=x-default
 ItemDescEditTab SearchBarCaseSensitive=0
 ItemDescEditTab TagCheckViewCurrentIndex=51
@@ -1165,6 +1169,10 @@ FullScreen Hide SideBars=true
 FullScreen Hide StatusBar=true
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=true
+HDMI-2 Height 1440=1391
+HDMI-2 Width 2560=2534
+HDMI-2 XPosition=13
+HDMI-2 YPosition=36
 Height 1080=1056
 Height 1440=1416
 Icon Theme=
@@ -1174,7 +1182,7 @@ Show Only Face Tags For Assigning Name=true
 Show Permanent Delete Dialog=true
 Show Splash=true
 Show Trash Delete Dialog=false
-State=AAAA/wAAAAD9AAAAAAAACfwAAAUgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAACeYAAAUVAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 String Comparison Type=0
 ToolBarsMovable=Disabled
 Use Large Thumbs=true
@@ -1189,7 +1197,7 @@ eDP-1 HDMI-2 XPosition=2
 eDP-1 HDMI-2 YPosition=36
 eDP-1 Height 1440=1402
 eDP-1 Width 2560=2556
-eDP-1 XPosition=2
+eDP-1 XPosition=13
 eDP-1 YPosition=36
 
 [Geolocation Edit Settings]
@@ -1465,7 +1473,7 @@ IgnoreNames=mgr_data pgr_mgr
 
 [Import MainWindow]
 SplitterState=AAAA/wAAAAEAAAABAAABdgH/////AAAAAAEB
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAD/////AAAAVwD///8AAAOeAAAFAgAAAAQAAAAEAAAACAAAAAj8AAAAAA==
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAOjAAABevwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAOjAAAAVwD///8AAAOjAAAFFQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 
 [Import Settings]
 Default Icon Size=142
@@ -1747,9 +1755,9 @@ eDP-1 HDMI-2 XPosition=0
 eDP-1 HDMI-2 YPosition=0
 
 [MainWindow]
-InitialAlbumID=30
+InitialAlbumID=31
 SplitterState=AAAA/wAAAAEAAAADAAABNQAABNsAAAEuAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAaIAAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABogAAABXAP///wAABogAAARaAAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAZ5AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABnkAAABXAP///wAABnkAAARPAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 AlbumComboBox-Checked=
@@ -1831,6 +1839,9 @@ Write Metadata To RAW Files=true
 
 [MetadataSelectorView Search Text Tool]
 CaseSensitive=0
+
+[Notification Messages]
+DontAskAgainToDeleteItemsFromCamera=true
 
 [People Sidebar]
 CurrentIndex=32
