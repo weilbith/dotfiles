@@ -2,7 +2,7 @@
 TabbedEditor=false
 StoreLastProfile=true
 StartupDirectory=last
-StartupPath=/home/thore/images/photos/pets/Makalani
+StartupPath=/home/thore/images/photos/pets/horses
 DateFormat=%y-%m-%d
 AdjusterMinDelay=100
 AdjusterMaxDelay=200
@@ -58,7 +58,7 @@ menuGroupFileOperations=true
 menuGroupProfileOperations=true
 menuGroupExtProg=true
 MaxRecentFolders=15
-RecentFolders=/home/thore/images/photos/pets/Makalani;/home/thore/images/photos/vacations/2020-09_Kaernten;/home/thore;/home/thore/Bilder;/home/thore/Bilder/Urlaub/2018-08_Schottland;/home/thore/Bilder/Urlaub;/home/thore/Bilder/SecretSentences;/home/thore/Bilder/Screenshots;/home/thore/Bilder/Sport/Wakeboarden/2019-06/RAW;/home/thore/Bilder/Urlaub/2018-08_Schottland/RAW;/home/thore/Bilder/Urlaub/2018-11_Malta/RAW;/home/thore/Bilder/Urlaub/2018-10_LindenhofHabernis/RAW;/home/thore/Bilder/Katzen/RAW;/home/thore/Bilder/Feiertage/2018_Silvester/RAW;/home/thore/Bilder/Feiertage/2018_Silvester;
+RecentFolders=/home/thore/images/photos/pets/horses;/home/thore;/home/thore/images/photos/pets/Makalani;/home/thore/images/photos/vacations/2020-09_Kaernten;/home/thore/Bilder;/home/thore/Bilder/Urlaub/2018-08_Schottland;/home/thore/Bilder/Urlaub;/home/thore/Bilder/SecretSentences;/home/thore/Bilder/Screenshots;/home/thore/Bilder/Sport/Wakeboarden/2019-06/RAW;/home/thore/Bilder/Urlaub/2018-08_Schottland/RAW;/home/thore/Bilder/Urlaub/2018-11_Malta/RAW;/home/thore/Bilder/Urlaub/2018-10_LindenhofHabernis/RAW;/home/thore/Bilder/Katzen/RAW;/home/thore/Bilder/Feiertage/2018_Silvester/RAW;
 
 [Clipping Indication]
 HighlightThreshold=253
@@ -97,7 +97,7 @@ TiffBpsBatch=8
 TiffFloatBatch=false
 TiffUncompressedBatch=true
 SaveProcParamsBatch=true
-PathTemplate=%p2/%f
+PathTemplate=%p1/%f
 PathFolder=
 AutoSuffix=true
 ForceFormatOpts=true
@@ -121,9 +121,9 @@ CustomProfileBuilderKeys=2
 
 [GUI]
 Favorites=
-WindowWidth=2556
-WindowHeight=1402
-WindowX=0
+WindowWidth=2534
+WindowHeight=1391
+WindowX=11
 WindowY=34
 WindowMonitor=0
 MeowMonitor=-1
@@ -144,7 +144,7 @@ PreferencesHeight=600
 SaveAsDialogWidth=920
 SaveAsDialogHeight=680
 ToolPanelWidth=446
-BrowserToolPanelWidth=465
+BrowserToolPanelWidth=443
 BrowserToolPanelHeight=569
 BrowserToolPanelOpened=false
 EditorFilmStripOpened=false
@@ -168,7 +168,7 @@ ShowClippedHighlights=false
 ShowClippedShadows=false
 FrameColor=3
 ProcessingQueueEnbled=true
-ToolPanelsExpanded=1;0;1;1;1;0;1;1;1;1;1;1;1;1;1;0;0;0;0;0;0;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;
+ToolPanelsExpanded=1;0;0;1;1;1;1;1;1;1;1;1;1;1;1;0;0;0;0;0;1;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;
 ToolPanelsExpandedAutoSave=true
 MultiDisplayMode=0
 CutOverlayBrush=0;0;0;0.66698710612649725;
