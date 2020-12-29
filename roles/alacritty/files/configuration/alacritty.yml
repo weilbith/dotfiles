@@ -34,8 +34,8 @@ colors:
     cyan: "#00ffff"
 
   selection:
-    text: "#282a2e"
-    background: "#d7ff5f"
+    text: "#131416"
+    background: "#76cce0"
 
 background_opacity: 0.7
 
