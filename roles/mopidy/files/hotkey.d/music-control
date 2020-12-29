@@ -1,4 +1,4 @@
-super + m : {space,n,N,r,s}
+super + m ; {space,n,N,r,s}
   mpc {toggle,next,prev,random,stop}
 
 XF86Audio{Play,Next,Prev}
