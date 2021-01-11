@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=BluetoothCtl
 Comment=Control bluetooth from the command line
-Exec=alacritty --class floating --dimensions 50 30 --title BluetoothCtl --command bluetoothctl
+Exec=alacritty --class floating --option window.dimensions.columns=50 --option window.dimensions.lines=30 --title BluetoothCtl --command bluetoothctl
 Type=Application

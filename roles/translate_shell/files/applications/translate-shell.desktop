@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Translate Shell
 Comment=CLI based translation tool
-Exec=alacritty --class floating --dimensions 70 50 --title Translate --command trans --shell
+Exec=alacritty --class floating --option window.dimensions.columns=70 --option window.dimensions.lines=50 --title Translate --command trans --shell
 Type=Application

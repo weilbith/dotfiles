@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Bashmount
 Comment=CLI based device manager
-Exec=alacritty --class floating --dimensions 77 30 --title Bashmount --command bashmount
+Exec=alacritty --class floating --option window.dimensions.columns=77 --option window.dimensions.lines=30 --title Bashmount --command bashmount
 Type=Application
