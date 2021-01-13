@@ -83,10 +83,10 @@ ToolTips Show Video Frame Rate=true
 TreeView Font=Sans Serif,9,-1,5,50,0,0,0,0,0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=31
-Expansion=0,1,16,20,17,46,2,41,3,4,5,40,14,6,7,45,18,30,31,21,22,28,23,29,27,47,48,8,32,33,34,35,36,37,38,39,44,42,43,9,10,11,49,-2
+CurrentIndex=50
+Expansion=0,1,16,20,17,46,2,41,3,4,5,40,14,6,7,45,50,18,30,31,21,22,28,23,29,27,47,48,8,32,33,34,35,36,37,38,39,44,42,43,9,10,11,49,-2
 RestoreChecked=false
-Selection=31
+Selection=50
 SortColumn=0
 SortOrder=0
 
@@ -122,6 +122,8 @@ Sync Digikam to Baloo=false
 BqmBottomSplitter=AAAA/wAAAAEAAAACAAAAhQAAAIUB/////wEAAAABAA==
 BqmTopSplitter=AAAA/wAAAAEAAAADAAAAhQAAAIMAAACgAf////8BAAAAAQA=
 BqmVerticalSplitter=AAAA/wAAAAEAAAACAAAAiwAAAH8B/////wEAAAACAA==
+HDMI-2 XPosition=0
+HDMI-2 YPosition=0
 Height 1440=1386
 State=AAAA/wAAAAD9AAAAAAAABOgAAAUWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
@@ -157,7 +159,7 @@ HDMI-2 Width 2560=1261
 HDMI-2 XPosition=1286
 HDMI-2 YPosition=36
 Height 1440=1386
-LastTargetAlbum=31
+LastTargetAlbum=50
 LossLessFormat=0
 Manual Rename String=[date:Unix Time Stamp]{unique}
 OnFlyBox Expanded=false
@@ -185,7 +187,7 @@ eDP-1 XPosition=1287
 eDP-1 YPosition=51
 
 [CameraGui Sidebar Right]
-ActiveTab=3
+ActiveTab=1
 Minimized=false
 RestoreSize=-1
 
@@ -847,7 +849,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwKvr68=
+Database Encrypted Password=AwKWlpY=
 Database Hostname=
 Database Name=/home/thore/.cache/digikam/database/
 Database Name Face=/home/thore/.cache/digikam/database/
@@ -1313,6 +1315,8 @@ FullScreen Hide SideBars=false
 FullScreen Hide StatusBar=false
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=false
+HDMI-2 XPosition=0
+HDMI-2 YPosition=0
 HEIFCompression=9
 HEIFLossLess=true
 Height 1440=1386
@@ -1488,8 +1492,8 @@ Icon Show Tags=true
 Icon Show Title=true
 IconView Font=Sans Serif,9,-1,5,50,0,0,0,0,0
 Image Separation Mode=1
-Image Sort Order=0
-Image Sorting=0
+Image Sort Order=1
+Image Sorting=2
 Item Left Click Action=0
 Preview Each Item While Downloading it=false
 Preview Load Full Image Size=false
@@ -1578,11 +1582,15 @@ Clear On Close=false
 FullScreen Hide SideBars=false
 FullScreen Hide StatusBar=false
 FullScreen Hide ToolBars=false
+HDMI-2 Height 1440=1391
+HDMI-2 Width 2560=1261
+HDMI-2 XPosition=1286
+HDMI-2 YPosition=36
 Height 1440=1386
 Horizontal Splitter State=AAAA/wAAAAEAAAADAAABLgAACqoAAAEuAf////8AAAAAAQE=
 Navigate By Pair=false
 Show Thumbbar=true
-State=AAAA/wAAAAD9AAAAAAAABOgAAAUQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABO0AAAUVAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 2560=1256
 eDP-1 HDMI-2 XPosition=0
@@ -1746,7 +1754,7 @@ Version Properties View Mode=2
 
 [LightTable Thumbbar]
 Height 1440=1296
-State=AAAA/wAAAAD9AAAAAQAAAAIAAAS4AAABBvwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABLgAAABXAP///wAABLgAAAQEAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAS9AAABBvwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABL0AAABXAP///wAABL0AAAQJAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 2560=1208
 eDP-1 HDMI-2 Height 1440=1296
@@ -1755,7 +1763,7 @@ eDP-1 HDMI-2 XPosition=0
 eDP-1 HDMI-2 YPosition=0
 
 [MainWindow]
-InitialAlbumID=31
+InitialAlbumID=50
 SplitterState=AAAA/wAAAAEAAAADAAABNQAABNsAAAEuAf////8AAAAAAQE=
 ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAZ5AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABnkAAABXAP///wAABnkAAARPAAAABAAAAAQAAAAIAAAACPwAAAAA
 
@@ -1903,8 +1911,10 @@ SortOrder=0
 CaseSensitive=0
 
 [Setup Dialog]
+HDMI-2 Height 1440=613
+HDMI-2 Width 2560=800
 Height 1440=613
-Setup Page=2
+Setup Page=5
 Template Tab=0
 Width 2560=800
 
