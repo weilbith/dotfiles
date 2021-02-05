@@ -5,6 +5,8 @@ After=xorg-server.service
 [Service]
 # Need to put command into a shell to make glob working
 ExecStart=/bin/sh -c '/usr/bin/sxhkd ${HOTKEY_CONFIG_DIR}/*'
+# Do not kill children as result of hotkey actions.
+KillMode=process
 
 [Install]
 WantedBy=xorg-server.service
