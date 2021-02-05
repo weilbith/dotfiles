@@ -83,10 +83,10 @@ ToolTips Show Video Frame Rate=true
 TreeView Font=Sans Serif,9,-1,5,50,0,0,0,0,0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=50
+CurrentIndex=31
 Expansion=0,1,16,20,17,46,2,41,3,4,5,40,14,6,7,45,50,18,30,31,21,22,28,23,29,27,47,48,8,32,33,34,35,36,37,38,39,44,42,43,9,10,11,49,-2
 RestoreChecked=false
-Selection=50
+Selection=31
 SortColumn=0
 SortOrder=0
 
@@ -159,7 +159,7 @@ HDMI-2 Width 2560=1261
 HDMI-2 XPosition=1286
 HDMI-2 YPosition=36
 Height 1440=1386
-LastTargetAlbum=50
+LastTargetAlbum=31
 LossLessFormat=0
 Manual Rename String=[date:Unix Time Stamp]{unique}
 OnFlyBox Expanded=false
@@ -257,7 +257,7 @@ RenderingIntent=0
 WorkProfileFile[$e]=/usr/share/digikam/profiles/srgb-d65.icm
 
 [CoreDB Settings]
-Recently Used Tags=56,32,286,285,279,37,276,30,22,284
+Recently Used Tags=32,56,286,285,279,37,276,30,22,284
 
 [DMetadata Settings][readCommentNamespaces][#0001]
 alternativeName=
@@ -849,7 +849,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwKWlpY=
+Database Encrypted Password=AwLAwMA=
 Database Hostname=
 Database Name=/home/thore/.cache/digikam/database/
 Database Name Face=/home/thore/.cache/digikam/database/
@@ -1584,8 +1584,8 @@ FullScreen Hide StatusBar=false
 FullScreen Hide ToolBars=false
 HDMI-2 Height 1440=1391
 HDMI-2 Width 2560=1261
-HDMI-2 XPosition=1286
-HDMI-2 YPosition=36
+HDMI-2 XPosition=0
+HDMI-2 YPosition=0
 Height 1440=1386
 Horizontal Splitter State=AAAA/wAAAAEAAAADAAABLgAACqoAAAEuAf////8AAAAAAQE=
 Navigate By Pair=false
@@ -1763,9 +1763,9 @@ eDP-1 HDMI-2 XPosition=0
 eDP-1 HDMI-2 YPosition=0
 
 [MainWindow]
-InitialAlbumID=50
-SplitterState=AAAA/wAAAAEAAAADAAABNQAABNsAAAEuAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAZ5AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABnkAAABXAP///wAABnkAAARPAAAABAAAAAQAAAAIAAAACPwAAAAA
+InitialAlbumID=31
+SplitterState=AAAA/wAAAAEAAAADAAABHwAACIkAAAEuAf////8AAAAAAQE=
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAdmAAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAB2YAAABXAP///wAAB2YAAAUVAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 AlbumComboBox-Checked=
