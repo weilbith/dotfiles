@@ -2,7 +2,7 @@
 TabbedEditor=false
 StoreLastProfile=true
 StartupDirectory=last
-StartupPath=/home/thore/images/photos/learning
+StartupPath=/home/thore/images/photos/pets/horses
 DateFormat=%y-%m-%d
 AdjusterMinDelay=100
 AdjusterMaxDelay=200
@@ -58,7 +58,7 @@ menuGroupFileOperations=true
 menuGroupProfileOperations=true
 menuGroupExtProg=true
 MaxRecentFolders=15
-RecentFolders=/home/thore/images/photos/learning;/home/thore/images/photos/holidays;/home/thore/images/photos/pets/horses;/home/thore;/home/thore/images/photos/pets/Makalani;/home/thore/images/photos/vacations/2020-09_Kaernten;/home/thore/Bilder;/home/thore/Bilder/Urlaub/2018-08_Schottland;/home/thore/Bilder/Urlaub;/home/thore/Bilder/SecretSentences;/home/thore/Bilder/Screenshots;/home/thore/Bilder/Sport/Wakeboarden/2019-06/RAW;/home/thore/Bilder/Urlaub/2018-08_Schottland/RAW;/home/thore/Bilder/Urlaub/2018-11_Malta/RAW;/home/thore/Bilder/Urlaub/2018-10_LindenhofHabernis/RAW;
+RecentFolders=/home/thore/images/photos/pets/horses;/home/thore/images/photos/learning;/home/thore/images/photos/holidays;/home/thore;/home/thore/images/photos/pets/Makalani;/home/thore/images/photos/vacations/2020-09_Kaernten;/home/thore/Bilder;/home/thore/Bilder/Urlaub/2018-08_Schottland;/home/thore/Bilder/Urlaub;/home/thore/Bilder/SecretSentences;/home/thore/Bilder/Screenshots;/home/thore/Bilder/Sport/Wakeboarden/2019-06/RAW;/home/thore/Bilder/Urlaub/2018-08_Schottland/RAW;/home/thore/Bilder/Urlaub/2018-11_Malta/RAW;/home/thore/Bilder/Urlaub/2018-10_LindenhofHabernis/RAW;
 
 [Clipping Indication]
 HighlightThreshold=253
@@ -168,7 +168,7 @@ ShowClippedHighlights=false
 ShowClippedShadows=false
 FrameColor=3
 ProcessingQueueEnbled=true
-ToolPanelsExpanded=1;1;1;0;0;1;0;1;1;1;1;0;1;0;0;0;0;0;0;0;1;0;0;0;1;0;1;1;1;1;1;1;1;1;1;1;1;1;1;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;1;0;0;0;0;0;0;1;1;0;1;
+ToolPanelsExpanded=1;1;1;0;0;1;0;0;0;1;1;0;1;0;0;0;0;0;0;0;1;0;0;0;0;1;0;1;1;1;1;1;1;1;1;1;1;1;1;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;1;0;0;0;0;0;0;1;1;0;1;
 ToolPanelsExpandedAutoSave=true
 MultiDisplayMode=0
 CutOverlayBrush=0;0;0;0.66698710612649725;
