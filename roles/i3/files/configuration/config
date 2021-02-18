@@ -262,7 +262,7 @@ client.focused  #f1f1f2     #f1f1f2     #f1f1f2     #f1f1f2     #f1f1f2
 for_window [class="Yad"] floating enable
 for_window [instance="floating"] floating enable
 for_window [window_role="pop-up"] floating enable
-for_window [class="Rocket.Chat" instance="rocket.chat"] move scratchpad, scratchpad show
+for_window [class="Ferdi" instance="ferdi"] move scratchpad, scratchpad show
 for_window [class="zoom"] move container to workspace $workspace4
 
 # ---
