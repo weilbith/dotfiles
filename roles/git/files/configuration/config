@@ -29,13 +29,13 @@
   files = diff-tree --no-commit-id --name-only -r
 
 [merge]
-  tool = fugitive
+  tool = vimdiff
 
 [mergetool]
   keepBackup = false
 
-[mergetool "fugitive"]
-  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+[mergetool "vimdiff"]
+  path = nvim
 
 [rebase]
   autosquash = true
