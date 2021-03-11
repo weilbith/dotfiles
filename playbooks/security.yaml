@@ -1,0 +1,4 @@
+- name: Setup focused on security and anonymity
+  hosts: all
+  roles:
+    - microcode

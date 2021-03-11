@@ -1,0 +1,10 @@
+- import_role:
+    name: base_role
+  vars:
+    base_package: intel-ucode
+    additional_packages:
+      - iucode-tool # Manually check for updates
+
+- name: Enable early microcode update loading on boot
+  shell: grub-mkconfig --ouput /boot/grub/grub.cfg
+  become: yes
