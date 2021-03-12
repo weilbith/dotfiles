@@ -22,7 +22,7 @@
   systemd:
     name: "{{ item }}"
     scope: "{{ systemd_units_custom_scope }}"
-    enabled: yes
+    enabled: "{{ systemd_units_custom_enabled }}"
   become: "{{ systemd_units_custom_scope == 'system' }}"
   with_items:
     - "{{ lookup('role_directory_entries', 'systemd', wantlist=True) }}"
