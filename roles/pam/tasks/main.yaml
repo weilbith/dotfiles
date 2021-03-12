@@ -4,3 +4,10 @@
     dest: /etc/security/pam_env.conf
     mode: 0644
   become: yes
+
+- name: Add delay for failed logins
+  shell: >
+    grep --quiet pam_faildelay /etc/pam.d/system-login ||
+    echo 'auth       optional   pam_faildelay.so     delay=6000000' >>
+    /etc/pam.d/system-login
+  become: yes
