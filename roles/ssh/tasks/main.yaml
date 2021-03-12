@@ -6,3 +6,10 @@
     link_configuration_children: true
     additional_packages:
       - x11-ssh-askpass # Password input when not in terminal
+
+- name: Place system-wide daemon configuration
+  copy:
+    src: "{{ role_path }}/files/sshd_config"
+    dest: /etc/ssh/sshd_config
+    mode: 0644
+  become: yes
