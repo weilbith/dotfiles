@@ -2,3 +2,6 @@
   hosts: all
   roles:
     - microcode
+# Note: These are only the roles which exclusively are for security and have no
+# other purpose. Many roles in the other playbooks have security aspects too.
+# Examples are PAM, SSH or GnuPG.
