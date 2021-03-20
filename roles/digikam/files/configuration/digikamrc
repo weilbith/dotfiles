@@ -849,7 +849,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwLAwMA=
+Database Encrypted Password=AwK4uLg=
 Database Hostname=
 Database Name=/home/thore/.cache/digikam/database/
 Database Name Face=/home/thore/.cache/digikam/database/
@@ -1765,7 +1765,7 @@ eDP-1 HDMI-2 YPosition=0
 [MainWindow]
 InitialAlbumID=31
 SplitterState=AAAA/wAAAAEAAAADAAABHwAACIkAAAEuAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAdmAAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAB2YAAABXAP///wAAB2YAAAUVAAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAECAAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAAQIAAABXAP///wAAAQIAAARPAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 AlbumComboBox-Checked=

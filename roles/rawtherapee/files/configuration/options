@@ -10,7 +10,7 @@ MultiUser=true
 Language=English (US)
 LanguageAutoDetect=true
 Theme=RawTherapee-GTK3-20_
-Version=5.8-2629-g7d763f7df
+Version=5.8-2745-g408636141
 DarkFramesPath=
 FlatFieldsPath=
 Verbose=false
@@ -168,7 +168,7 @@ ShowClippedHighlights=false
 ShowClippedShadows=false
 FrameColor=3
 ProcessingQueueEnbled=true
-ToolPanelsExpanded=1;1;1;0;0;1;0;0;0;1;1;0;1;0;0;0;0;0;0;0;1;0;0;0;0;1;0;1;1;1;1;1;1;1;1;1;1;1;1;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;1;0;0;0;0;0;0;1;1;0;1;
+ToolPanelsExpanded=1;1;1;0;0;1;0;1;0;1;1;0;1;0;0;0;0;0;0;0;0;1;0;0;0;1;0;1;1;1;1;1;1;1;1;1;1;1;1;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;1;0;0;0;0;0;0;1;1;0;1;
 ToolPanelsExpandedAutoSave=true
 MultiDisplayMode=0
 CutOverlayBrush=0;0;0;0.66698710612649725;
@@ -194,6 +194,8 @@ HistogramWorking=false
 CurveBBoxPosition=1
 Showtooltip=true
 Complexity=2
+InspectorWindow=false
+ZoomOnScroll=true
 
 [Crop Settings]
 PPI=600
