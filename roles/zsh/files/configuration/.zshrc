@@ -45,3 +45,9 @@ bindkey -M vicmd '^[[3~' delete-char
 # Always be in normal/vicmd mode on new prompt.
 zle-line-init() { zle -K vicmd; }
 zle -N zle-line-init
+
+# Colors
+zle_highlight=(
+  region:fg='#000000',bg='#76cce0'
+  paste: # remove default ugly inverse highlighting
+)
