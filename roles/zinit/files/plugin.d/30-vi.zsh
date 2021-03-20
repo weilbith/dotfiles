@@ -1,5 +1,6 @@
 zinit wait lucid light-mode for \
   zsh-vi-more/vi-motions \
+  atinit"zstyle :zle:evil-registers ctrl-r true" \
   zsh-vi-more/evil-registers \
   atload"bindkey -M vicmd '  ' vi-easy-motion" \
   atinit"EASY_MOTION_DIM='fg=239'" \
