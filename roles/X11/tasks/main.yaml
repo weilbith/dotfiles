@@ -7,6 +7,10 @@
       - xsel # Work with mouse selection
       - xclip # Command-line interface for clipboard
 
+- name: Set keyboard mapping to support international characters with `altgr`
+  shell: localectl --no-convert set-x11-keymap us pc104 altgr-intl
+  become: yes
+
 # Manually link this service unit and **NOT** enable it.
 # Other services that should run after the server has started can use this as
 # reference. The initialization script of the server will start this unit to
