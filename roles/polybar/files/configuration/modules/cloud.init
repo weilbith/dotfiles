@@ -1,6 +1,6 @@
 [module/cloud]
 type = custom/script
-exec = curl -s -H "X-API-Key: cKYVKL5SbTaR9AmNVFJg4TSUAez6J5FY" 'http://localhost:8384/rest/system/config' | jq '.folders[].id' | xargs -L1 -I {} echo "http://localhost:8384/rest/db/status?folder={}" | xargs -L1 curl -s -H "X-API-Key: cKYVKL5SbTaR9AmNVFJg4TSUAez6J5FY" | jq .state | grep --silent --invert-match "idle" && echo "ﲳ"
+exec = curl -s -H "X-API-Key: cKYVKL5SbTaR9AmNVFJg4TSUAez6J5FY" 'http://localhost:8384/rest/system/config' | jq '.folders[].id' | xargs --replace={} echo "http://localhost:8384/rest/db/status?folder={}" | xargs --max-lines=1 curl -s -H "X-API-Key: cKYVKL5SbTaR9AmNVFJg4TSUAez6J5FY" | jq .state | grep --silent --invert-match "idle" && echo "ﲳ"
 format-font = 4
 
 ; TODO: Get token out of here (although access is limited to localhost)
