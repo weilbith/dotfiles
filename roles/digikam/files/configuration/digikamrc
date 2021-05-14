@@ -14,6 +14,7 @@ Album Monitoring=false
 Album Sort Role=0
 All Groups Open=false
 Default Icon Size=394
+Default Tree Face Size=48
 Default Tree Icon Size=22
 Icon Show Aspect Ratio=false
 Icon Show Comments=true
@@ -81,6 +82,7 @@ ToolTips Show Video Codec=true
 ToolTips Show Video Duration=true
 ToolTips Show Video Frame Rate=true
 TreeView Font=Sans Serif,9,-1,5,50,0,0,0,0,0
+Update Type=0
 
 [AlbumFolderView Sidebar]
 CurrentIndex=31
@@ -123,7 +125,9 @@ BqmBottomSplitter=AAAA/wAAAAEAAAACAAAAhQAAAIUB/////wEAAAABAA==
 BqmTopSplitter=AAAA/wAAAAEAAAADAAAAhQAAAIMAAACgAf////8BAAAAAQA=
 BqmVerticalSplitter=AAAA/wAAAAEAAAACAAAAiwAAAH8B/////wEAAAACAA==
 HDMI-2 XPosition=0
+HDMI-2 XPosition 2560x1440=0
 HDMI-2 YPosition=0
+HDMI-2 YPosition 2560x1440=0
 Height 1440=1386
 State=AAAA/wAAAAD9AAAAAAAABOgAAAUWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
@@ -155,9 +159,13 @@ FullScreen Hide StatusBar=false
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=false
 HDMI-2 Height 1440=1391
+HDMI-2 Height 2560x1440=1391
 HDMI-2 Width 2560=1261
+HDMI-2 Width 2560x1440=1261
 HDMI-2 XPosition=1286
+HDMI-2 XPosition 2560x1440=1286
 HDMI-2 YPosition=36
+HDMI-2 YPosition 2560x1440=36
 Height 1440=1386
 LastTargetAlbum=31
 LossLessFormat=0
@@ -169,7 +177,7 @@ RenameCustomizer Expanded=true
 Script=
 ScriptingBox Expanded=true
 ShowLog=false
-SplitterState=AAAA/wAAAAEAAAACAAAOnAAAAS4B/////wAAAAABAQ==
+SplitterState=AAAA/wAAAAEAAAACAAAOnAAAAVIB/////wAAAAABAQ==
 State=AAAA/wAAAAD9AAAAAAAABO0AAAUVAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 Template=0
 ToolBarsMovable=Disabled
@@ -246,7 +254,7 @@ EnableCM=true
 GamutCheckMaskColor=126,255,255
 LastMismatchBehavior=2049
 LastMissingProfileBehavior=2050
-LastSpecifiedAssignProfile=
+LastSpecifiedAssignProfile[$e]=/usr/share/digikam/profiles/
 LastSpecifiedInputProfile=
 LastUncalibratedBehavior=2080
 ManagedPreviews=true
@@ -849,7 +857,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwK4uLg=
+Database Encrypted Password=AwLn5+c=
 Database Hostname=
 Database Name=/home/thore/.cache/digikam/database/
 Database Name Face=/home/thore/.cache/digikam/database/
@@ -1040,6 +1048,7 @@ Width 2560=800
 
 [Face Detection Settings]
 Detection Accuracy=0.8
+Use Yolo V3=false
 
 [Face Management Settings]
 AlbumComboBox-Checked=
@@ -1166,15 +1175,20 @@ Application Style=fusion
 Apply Sidebar Changes Directly=true
 Clean core DB At Start=true
 Draw Frames To Grouped Items=true
+Expand New Current Item On Click=true
 Face Scanner First Run=true
 FullScreen Hide SideBars=true
 FullScreen Hide StatusBar=true
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=true
 HDMI-2 Height 1440=1391
+HDMI-2 Height 2560x1440=1391
 HDMI-2 Width 2560=2534
+HDMI-2 Width 2560x1440=2534
 HDMI-2 XPosition=13
+HDMI-2 XPosition 2560x1440=13
 HDMI-2 YPosition=36
+HDMI-2 YPosition 2560x1440=36
 Height 1080=1056
 Height 1440=1416
 Icon Theme=
@@ -1197,8 +1211,8 @@ eDP-1 HDMI-2 Height 1440=1402
 eDP-1 HDMI-2 Width 2560=2556
 eDP-1 HDMI-2 XPosition=2
 eDP-1 HDMI-2 YPosition=36
-eDP-1 Height 1440=1402
-eDP-1 Width 2560=2556
+eDP-1 Height 1440=1391
+eDP-1 Width 2560=2534
 eDP-1 XPosition=13
 eDP-1 YPosition=36
 
@@ -1316,7 +1330,9 @@ FullScreen Hide StatusBar=false
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=false
 HDMI-2 XPosition=0
+HDMI-2 XPosition 2560x1440=0
 HDMI-2 YPosition=0
+HDMI-2 YPosition 2560x1440=0
 HEIFCompression=9
 HEIFLossLess=true
 Height 1440=1386
@@ -1357,7 +1373,7 @@ SlideShowPrintTags=false
 SlideShowPrintTitle=false
 SlideShowProgressIndicator=true
 SlideShowStartCurrent=false
-SplitterState=AAAA/wAAAAEAAAACAAAAkAAAAS4B/////wAAAAABAQ==
+SplitterState=AAAA/wAAAAEAAAACAAAAkAAAAVIB/////wAAAAABAQ==
 State=AAAA/wAAAAD9AAAAAAAABOgAAAUQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 TIFFCompression=false
 ToolBarsMovable=Disabled
@@ -1477,7 +1493,7 @@ IgnoreNames=mgr_data pgr_mgr
 
 [Import MainWindow]
 SplitterState=AAAA/wAAAAEAAAABAAABdgH/////AAAAAAEB
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAOjAAABevwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAOjAAAAVwD///8AAAOjAAAFFQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAOjAAABevwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAOjAAAAVwD///8AAAN/AAAFFQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 
 [Import Settings]
 Default Icon Size=142
@@ -1583,11 +1599,15 @@ FullScreen Hide SideBars=false
 FullScreen Hide StatusBar=false
 FullScreen Hide ToolBars=false
 HDMI-2 Height 1440=1391
+HDMI-2 Height 2560x1440=1391
 HDMI-2 Width 2560=1261
+HDMI-2 Width 2560x1440=1261
 HDMI-2 XPosition=0
+HDMI-2 XPosition 2560x1440=1286
 HDMI-2 YPosition=0
+HDMI-2 YPosition 2560x1440=36
 Height 1440=1386
-Horizontal Splitter State=AAAA/wAAAAEAAAADAAABLgAACqoAAAEuAf////8AAAAAAQE=
+Horizontal Splitter State=AAAA/wAAAAEAAAADAAABUgAACqoAAAFSAf////8AAAAAAQE=
 Navigate By Pair=false
 Show Thumbbar=true
 State=AAAA/wAAAAD9AAAAAAAABO0AAAUVAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
@@ -1764,8 +1784,8 @@ eDP-1 HDMI-2 YPosition=0
 
 [MainWindow]
 InitialAlbumID=31
-SplitterState=AAAA/wAAAAEAAAADAAABHwAACIkAAAEuAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAECAAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAAQIAAABXAP///wAAAQIAAARPAAAABAAAAAQAAAAIAAAACPwAAAAA
+SplitterState=AAAA/wAAAAEAAAADAAABHwAACIkAAAFSAf////8AAAAAAQE=
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAdCAAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAB0IAAABXAP///wAAB0IAAARPAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 AlbumComboBox-Checked=
