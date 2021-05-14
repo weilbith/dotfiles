@@ -38,7 +38,7 @@ setopt NO_BEEP
 setopt VI
 
 bindkey -M viins '\e' vi-cmd-mode
-bindkey -M viins '^?' vi-backward-delete-char
+bindkey -M viins '^?' backward-delete-char
 bindkey -M viins '^[[3~' delete-char
 bindkey -M vicmd '^[[3~' delete-char
 
