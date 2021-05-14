@@ -5,5 +5,5 @@
       - avahi # Network discovery of printers
       - nss-mdns # Host name resolution
     systemd_units_system:
-      - org.cups.cupsd.service
+      - cups.service
       - avahi-daemon.service
