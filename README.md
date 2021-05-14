@@ -424,3 +424,12 @@ does not matter.
 > TODO
 > SystemD units as first class citizen with all their high power.
 > Explain custom artificial dependencies for desktop related services to Xorg.
+
+---
+
+## List of Useful Tools
+
+These packages are tend to be installed temporally only when needed for special
+cases. So they do not have their own roles here.
+
+- `tuc` disk usage visualization as graph
