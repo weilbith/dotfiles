@@ -10,3 +10,20 @@
       - gpg-agent-ssh.socket
     systemd_units_system:
       - pcscd.service
+
+
+- name: Note to remember the hardware key import
+  debug:
+    msg:
+      - ""
+      - ""
+      - "+-------------------------------------------------------------------------------------+"
+      - "|                                                                                     |"
+      - "|                                   REMEMBER                                          |"
+      - "|                                                                                     |"
+      - "|  Do not forget to import the public keys from the hardware key. Therefore plug in   |"
+      - "|  the key and type the command `gpg --card-edit`. Inside the REPL execute `fetch`.   |"
+      - "|                                                                                     |"
+      - "+-------------------------------------------------------------------------------------+"
+      - ""
+      - ""

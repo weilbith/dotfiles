@@ -11,4 +11,5 @@
     - docker
     - font
     - brightnessctl
+    - gnupg
     - yubikey
