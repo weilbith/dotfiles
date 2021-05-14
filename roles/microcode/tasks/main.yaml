@@ -6,5 +6,5 @@
       - iucode-tool # Manually check for updates
 
 - name: Enable early microcode update loading on boot
-  shell: grub-mkconfig --ouput /boot/grub/grub.cfg
+  shell: grub-mkconfig --output /boot/grub/grub.cfg
   become: yes
