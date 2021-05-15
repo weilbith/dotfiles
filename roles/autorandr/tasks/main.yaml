@@ -3,3 +3,8 @@
   vars:
     systemd_units_system:
       - autorandr.service
+
+- name: Make hooks scripts executable
+  file:
+    destination: "{{ xdg_config_home }}/autorandr/postswitch"
+    mode: 755
