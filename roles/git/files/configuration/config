@@ -45,3 +45,6 @@
   smudge = black -l 120 -
 
 # vim: filetype=gitconfig
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
