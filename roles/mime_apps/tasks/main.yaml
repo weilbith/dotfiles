@@ -1,6 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    base_package: xdg-utils # Includes `xdg-open`
-    configuration_destination: "{{ xdg_config_home }}/"
-    link_configuration_children: true

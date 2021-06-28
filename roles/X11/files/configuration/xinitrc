@@ -1,6 +1,0 @@
-#!/bin/bash
-
-systemctl --user import-environment DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS
-systemctl --user start xorg-server
-
-exec i3

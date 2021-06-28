@@ -1,6 +1,0 @@
-include "/home/thore/.config/GIMP/2.10/themes/gimp-dark/gtkrc"
-
-style "gimp-large-preview"
-{
-  GimpPreview::size = 256
-}

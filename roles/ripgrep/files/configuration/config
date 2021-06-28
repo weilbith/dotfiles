@@ -1,3 +1,0 @@
---glob=!venv/*
---glob=!node_modules/*
---hidden

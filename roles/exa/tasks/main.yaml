@@ -1,5 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    additional_packages:
-      - lscolors-git # Color definitions for filetypes

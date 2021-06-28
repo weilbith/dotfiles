@@ -1,4 +1,0 @@
-[mypy]
-cache_dir = ~/.cache/mypy
-
-# vim: filetype=toml

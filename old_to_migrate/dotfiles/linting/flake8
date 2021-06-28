@@ -1,5 +1,0 @@
-[flake8]
-# Compatibility to black
-max-line-length = 88
-
-# vim: filetype=toml

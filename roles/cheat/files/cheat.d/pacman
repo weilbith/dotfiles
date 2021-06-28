@@ -1,2 +1,0 @@
-# Clean cache aggressively (remove on 'c' to reduce)
-pacman -Scc

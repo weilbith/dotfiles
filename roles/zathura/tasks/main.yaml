@@ -1,8 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    additional_packages:
-      - zathura-pdf-mupdf # Support for MuPDF framework
-      - tabbed # Use tabs to show multiple PDFs
-    provide_test_data:
-      - documents

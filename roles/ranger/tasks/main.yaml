@@ -1,6 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    additional_packages:
-      - w3m # Show images in terminal
-      - python-paramiko # Custom command to upload files via SSH

@@ -1,9 +1,0 @@
-cmdargs:
-  color: true
-  severity: style_problem
-  env:
-    neovim: true
-
-policies:
-  ProhibitSetNoCompatible:
-    enabled: false

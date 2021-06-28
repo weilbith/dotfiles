@@ -1,6 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    additional_packages:
-      - jq # For the cloud module executor
-      - nmap # For the yubikey module executor

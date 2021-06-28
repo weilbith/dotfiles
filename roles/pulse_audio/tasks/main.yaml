@@ -1,8 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    base_package: pulseaudio
-    additional_packages:
-      - xf86-input-synaptics # Support laptop media keys
-    systemd_units_user:
-      - pulseaudio.service

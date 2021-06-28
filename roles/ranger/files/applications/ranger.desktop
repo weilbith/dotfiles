@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Ranger
-Comment=CLI based file manager
-Exec=alacritty --class floating --option window.dimensions.columns=170 --option window.dimensions.lines=55 --title Ranger --command ranger
-Type=Application

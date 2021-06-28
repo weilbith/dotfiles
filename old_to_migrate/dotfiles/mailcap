@@ -1,4 +1,0 @@
-text/html; lynx -dump -width=78 -nolist %s; copiousoutput; needsterminal; nametemplate=%s.html
-application/ics; bash print_ics %s; copiousoutput;
-application/pgp-keys; pgp -f < %s ; copiousoutput
-application/*; background-xdg-open.sh %s

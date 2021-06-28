@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=NetworkManager
-Comment=CLI based network manager
-Exec=alacritty --class floating --option window.dimensions.columns=55 --option window.dimensions.lines=34 --title NetworkManager --command nmtui
-Type=Application

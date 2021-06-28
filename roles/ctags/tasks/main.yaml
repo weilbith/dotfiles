@@ -1,7 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    base_package: universal-ctags-git
-    additional_packages:
-      - markdown2ctags # Markdown filetype support
-    configuration_destination: "{{ lookup('env', 'HOME') }}/.ctags.d"

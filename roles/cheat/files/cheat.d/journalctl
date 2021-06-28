@@ -1,5 +1,0 @@
-# Since last boot
-journalctl (--user) --boot (--priority=err)
-
-# For specific unit
-journalctl (--user) --unit=<unit.type>

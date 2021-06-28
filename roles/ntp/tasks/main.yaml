@@ -1,5 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    systemd_units_system:
-      - ntpd.service

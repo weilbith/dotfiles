@@ -1,3 +1,0 @@
---langdef=snippets
---langmap=snippets:.snippets
---regex-snippets=/^snippet (.*)/\1/s,snippet/

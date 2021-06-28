@@ -1,8 +1,0 @@
-- import_role:
-    name: base_role
-
-- name: "Download community cheat sheets to data directory"
-  git:
-    repo: https://github.com/cheat/cheatsheets
-    dest: "{{ xdg_data_home }}/cheat.d"
-    depth: 1

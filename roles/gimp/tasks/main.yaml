@@ -1,5 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    link_configuration_children: true
-    provide_test_data: [images]

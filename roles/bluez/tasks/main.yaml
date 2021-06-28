@@ -1,8 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    additional_packages:
-      - bluez-utils # command-line interface
-      - pulseaudio-bluetooth # pulse-audio integration
-    systemd_units_system:
-      - bluetooth.service

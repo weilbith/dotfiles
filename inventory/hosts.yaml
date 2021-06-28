@@ -1,5 +1,0 @@
-all:
-  hosts:
-    warhorse:
-      ansible_host: localhost
-      ansible_connection: local

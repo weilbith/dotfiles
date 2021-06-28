@@ -1,9 +1,0 @@
-host github.com
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/github
-
-host gitlab.tubit.tu-berlin.de
-  HostName gitlab.tubit.tu-berlin.de
-  User git
-  IdentityFile ~/.ssh/tu_gitlab

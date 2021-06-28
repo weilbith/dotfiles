@@ -1,3 +1,0 @@
-! Map caps-lock and escape
-clear Lock
-keycode 66 = Escape

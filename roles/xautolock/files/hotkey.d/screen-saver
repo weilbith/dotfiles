@@ -1,9 +1,0 @@
-super + ctrl + l
- xautolock -locknow
-
-# Prevent locking by moving cursor to top left corner
-super + alt + l
-  xdotool mousemove 0 0
-
-
-# vim: filetype=sxhkdrc

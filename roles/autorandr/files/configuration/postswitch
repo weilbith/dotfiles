@@ -1,9 +1,0 @@
-#! /usr/bin/bash
-
-# Fix sizing of broken visual components if resolution has changes
-systemctl --user restart wallpaper.service || true
-systemctl --user restart polybar.service || true
-
-notify-send -i display "Display profile" "Changed to: '$AUTORANDR_CURRENT_PROFILE'"
-
-# vim: filetype=sh

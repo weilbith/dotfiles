@@ -1,4 +1,0 @@
-[Desktop Entry]
-Name=Shutdown
-Exec=systemctl shutdown
-Type=Application

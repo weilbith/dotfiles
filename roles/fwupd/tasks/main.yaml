@@ -1,3 +1,0 @@
-- import_role:
-    name: base_role
-# TODO: Check if systemd_units are useful

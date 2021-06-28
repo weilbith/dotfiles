@@ -1,8 +1,0 @@
-White #ffffff (15)
-SteelBlue1 #5fd7ff (81)
-DeepSkyBlue2 #00afd7 (38)
-DeepSkyBlue3 #0087d7 (32)
-DeepSkyBlue4 #005f87 (24) 
-Gray30 #282a2e (239)
-DarkOliveGreen1 #d7ff5f (191)
-DeepPink2 #ff005f (197)

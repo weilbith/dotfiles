@@ -1,4 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    base_package: ripgrep-all-bin

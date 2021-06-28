@@ -1,6 +1,0 @@
-- name: Setup focused on network related stuff
-  hosts: all
-  roles:
-    - network_manager
-    - bluez
-    - cups

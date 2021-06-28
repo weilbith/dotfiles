@@ -1,7 +1,0 @@
-env/
-.tern-port
-.nvimrc
-.exrc
-vault.pwd
-__pycache__/
-.notags

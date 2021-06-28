@@ -1,6 +1,0 @@
-[Unit]
-Description=Xorg server
-
-[Service]
-Type=oneshot
-ExecStart=echo 'This is just a dump unit used to artificially syncing dependent services'
