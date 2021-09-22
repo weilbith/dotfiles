@@ -18,3 +18,9 @@ git checkout <BRANCH> -- <FILE>
 
 # Reference history
 git reflog
+
+# List files of a commit
+git diff-tree --no-commit-id --name-only -r <COMMIT>
+
+# Ignore file locally only
+echo '<FILE>' >> .git/info/exclude
