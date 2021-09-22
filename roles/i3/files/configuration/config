@@ -25,9 +25,8 @@ set $workspace9 9
 
 ## Monitor outputs
 set $internal_laptop eDP-1
-set $external_hdmi HDMI-2
-set $external_display_port DP-1
-set $docking_display_port DP-2-2
+set $external_hdmi HDMI-1
+set $docking_display_port DP-3
 
 ## Step sizes (mind high resolution display)
 ### Window resizing
@@ -270,10 +269,10 @@ for_window [class="Gscreenshot"] floating enable
 
 
 # Workspace Preferences
-workspace $workspace1 output $internal_laptop $docking_display_port
-workspace $workspace2 output $internal_laptop $external_display_port
-workspace $workspace3 output $internal_laptop $docking_display_port
-workspace $workspace4 output $internal_laptop $external_display_port
+workspace $workspace1 output $internal_laptop $external_hdmi
+workspace $workspace2 output $internal_laptop $docking_display_port
+workspace $workspace3 output $internal_laptop $external_hdmi
+workspace $workspace4 output $internal_laptop $docking_display_port
 
 
 # vim: filetype=i3
