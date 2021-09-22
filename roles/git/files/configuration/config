@@ -19,9 +19,10 @@
   ss = status .
   rv = remote -v
   ch = checkout HEAD
-  sm = switch master
+  sm = "!git switch $(git master-or-main)"
   ll = log --oneline
-  lm = log --oneline master..
+  lm = "!git log --oneline $(git master-or-main).."
+  master-or-main = "!git branch --format='%(refname:short)' | grep master || echo 'main'"
   fw = "!git log --pretty=oneline --all | grep -B1 `git rev-parse HEAD` | head -n1 | egrep -o '[a-f0-9]{20,}' | xargs git checkout"
   bv = branch -vv
   recent = "!r(){ git for-each-ref --sort=-committerdate refs/heads --color=always --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)'|column -ts'|';}; r"
