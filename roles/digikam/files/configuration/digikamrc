@@ -857,16 +857,17 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwLn5+c=
+Database Encrypted Password=AwKLi4s=
 Database Hostname=
-Database Name=/home/thore/.cache/digikam/database/
-Database Name Face=/home/thore/.cache/digikam/database/
-Database Name Similarity=/home/thore/.cache/digikam/database/
-Database Name Thumbnails=/home/thore/.cache/digikam/database/
+Database Name=/home/thore/.cache/digikam/database
+Database Name Face=/home/thore/.cache/digikam/database
+Database Name Similarity=/home/thore/.cache/digikam/database
+Database Name Thumbnails=/home/thore/.cache/digikam/database
 Database Port=-1
 Database Type=QSQLITE
 Database Username=
 Internal Database Server=false
+Internal Database Server Mysql Admin Command=mysqladmin
 Internal Database Server Mysql Init Command=
 Internal Database Server Mysql Server Command=
 Internal Database Server Path=
