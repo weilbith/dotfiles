@@ -1,16 +1,10 @@
 # Variables
-## Standard mark names
-set $mark1 1
-set $mark2 2
-set $mark3 3
-set $mark4 4
-set $mark5 5
-
 ## Mode names (variables are not allowed to start with 'mode'!)
 set $default_mode default
 set $resize_mode resize
 set $move_mode move
-set $mark_mode mark
+set $set_mark_mode set_mark
+set $goto_mark_mode goto_mark
 
 ## Workspace names
 set $workspace1 1
@@ -41,8 +35,9 @@ set $move_step_big 50
 
 
 # Basics
-## Define the mod key. Here: Super/Win
-set $mod Mod4
+## Use better names for the modifier keys
+set $super Mod4
+set $alt Mod1
 
 ## Focus
 focus_follows_mouse yes
@@ -59,47 +54,47 @@ show_marks yes
 
 # Windows
 ## Kill focused window.
-bindsym $mod+q kill
+bindsym $super+q kill
 
 ## Move between windows.
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $super+h focus left
+bindsym $super+j focus down
+bindsym $super+k focus up
+bindsym $super+l focus right
 
 ## Select window by easy-focus.
-bindsym $mod+space exec --no-startup-id i3-easyfocus --all --color-unfocused-bg=FFFFFF
+bindsym $super+space exec --no-startup-id i3-easyfocus --all --color-unfocused-bg=FFFFFF
 
 ## Move focused window.
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $super+Shift+h move left
+bindsym $super+Shift+j move down
+bindsym $super+Shift+k move up
+bindsym $super+Shift+l move right
 
 ## Change windows split. (default horizontal)
-bindsym $mod+Control+h split h
-bindsym $mod+Control+v split v
+bindsym $super+Control+h split h
+bindsym $super+Control+v split v
 
 ## Toogle fullscreen for active window.
-bindsym $mod+Shift+f fullscreen toggle
+bindsym $super+Shift+f fullscreen toggle
 
 ## Change window layout.
-# bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# bindsym $super+s layout stacking
+bindsym $super+w layout tabbed
+bindsym $super+e layout toggle split
 
 ## Floating Windows
 ### Toogle floating for active window.
-bindsym $mod+Shift+space floating toggle
+bindsym $super+Shift+space floating toggle
 
 ### Switch between tiled and floated windows.
-bindsym $mod+Mod1+space focus mode_toggle
+bindsym $super+$alt+space focus mode_toggle
 
 ### Toggle current floating window sticky ability.
-bindsym $mod+Control+space sticky toggle
+bindsym $super+Control+space sticky toggle
 
 ## Resize focused window.
-bindsym $mod+r mode $resize_mode
+bindsym $super+r mode $resize_mode
 
 mode $resize_mode {
   # Grow and shrink the width and height.
@@ -119,7 +114,7 @@ mode $resize_mode {
 }
 
 # Move floated windows
-bindsym $mod+Shift+m mode $move_mode; focus floating
+bindsym $super+Shift+m mode $move_mode; focus floating
 
 mode $move_mode {
   # Switch to next window.
@@ -146,99 +141,99 @@ mode $move_mode {
 
 # Container
 ## Focus parent or child container.
-bindsym $mod+a focus parent
-bindsym $mod+d focus child
+bindsym $super+a focus parent
+bindsym $super+d focus child
 
 ## Move focused container to workspace.
-bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace $workspace7
-bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace $workspace9
-
-## Move focused container between outputs.
-bindsym $mod+Mod1+j move container to output left
-bindsym $mod+Mod1+k move container to output right
+bindsym $super+Shift+1 move container to workspace $workspace1
+bindsym $super+Shift+2 move container to workspace $workspace2
+bindsym $super+Shift+3 move container to workspace $workspace3
+bindsym $super+Shift+4 move container to workspace $workspace4
+bindsym $super+Shift+5 move container to workspace $workspace5
+bindsym $super+Shift+6 move container to workspace $workspace6
+bindsym $super+Shift+7 move container to workspace $workspace7
+bindsym $super+Shift+8 move container to workspace $workspace8
+bindsym $super+Shift+9 move container to workspace $workspace9
 
 ## Swap container
-bindsym $mod+Control+s exec i3-input -F 'swap container with mark %s' -P 'Mark Name: '
+bindsym $super+Control+s exec i3-input -F 'swap container with mark %s' -P 'Mark Name: '
 
 # ---
 
 
 # Workspaces
 ## Switch workspace.
-bindsym $mod+1 workspace $workspace1
-bindsym $mod+2 workspace $workspace2
-bindsym $mod+3 workspace $workspace3
-bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace $workspace5
-bindsym $mod+6 workspace $workspace6
-bindsym $mod+7 workspace $workspace7
-bindsym $mod+8 workspace $workspace8
-bindsym $mod+9 workspace $workspace9
+bindsym $super+1 workspace $workspace1
+bindsym $super+2 workspace $workspace2
+bindsym $super+3 workspace $workspace3
+bindsym $super+4 workspace $workspace4
+bindsym $super+5 workspace $workspace5
+bindsym $super+6 workspace $workspace6
+bindsym $super+7 workspace $workspace7
+bindsym $super+8 workspace $workspace8
+bindsym $super+9 workspace $workspace9
 
 ## Move focused workspace between outputs.
-bindsym $mod+Control+j move workspace to output left
-bindsym $mod+Control+k move workspace to output right
+bindsym $super+$alt+h move workspace to output left
+bindsym $super+$alt+j move workspace to output down
+bindsym $super+$alt+k move workspace to output up
+bindsym $super+$alt+l move workspace to output right
 
 # ---
 
 
 # Marks & Find
-bindsym $mod+grave mode $mark_mode
+bindsym $super+m mode $set_mark_mode
 
-mode $mark_mode {
-  # Hard-coded focus binding.
+mode $set_mark_mode {
+  bindsym m exec i3-input -F 'mark %s' -P 'Mark name: '; mode $default_mode
+
+  bindsym 1 mark 1; mode $default_mode
+  bindsym 2 mark 2; mode $default_mode
+  bindsym 3 mark 3; mode $default_mode
+  bindsym 4 mark 4; mode $default_mode
+  bindsym 5 mark 5; mode $default_mode
+
+  bindsym Escape mode $default_mode
+}
+
+bindsym $super+grave mode $goto_mark_mode
+
+mode $goto_mark_mode {
   bindsym f [class="(?i)firefox"] focus; mode $default_mode
 
-  # Mark and jump to windows.
-  bindsym m exec i3-input -F 'mark %s' -P 'Mark name: '; mode $default_mode
   bindsym g exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '; mode $default_mode
 
-  # Quick mark assign by numbers.
-  bindsym Shift+1 mark $mark1; mode $default_mode
-  bindsym Shift+2 mark $mark2; mode $default_mode
-  bindsym Shift+3 mark $mark3; mode $default_mode
-  bindsym Shift+4 mark $mark4; mode $default_mode
-  bindsym Shift+5 mark $mark5; mode $default_mode
+  bindsym 1 [con_mark=1] focus; mode $default_mode
+  bindsym 2 [con_mark=2] focus; mode $default_mode
+  bindsym 3 [con_mark=3] focus; mode $default_mode
+  bindsym 4 [con_mark=4] focus; mode $default_mode
+  bindsym 5 [con_mark=5] focus; mode $default_mode
 
-  # Quick mark jump to numbers.
-  bindsym 1 [con_mark=$mark1] focus; mode $default_mode
-  bindsym 2 [con_mark=$mark2] focus; mode $default_mode
-  bindsym 3 [con_mark=$mark3] focus; mode $default_mode
-  bindsym 4 [con_mark=$mark4] focus; mode $default_mode
-  bindsym 5 [con_mark=$mark5] focus; mode $default_mode
-
-  # Exit to the default mode (only necessary if do nothing)
-  bindsym Return mode $default_mode
+  bindsym Escape mode $default_mode
 }
 
 ## Interactiv go to by mark
-bindsym $mod+g exec i3-goto-mark
+bindsym $super+g exec i3-goto-mark
 
 ## Interactive go to by title
 
-bindsym $mod+f exec rofi -show window
+bindsym $super+f exec rofi -show window
 
 # Scratchpad
-bindsym $mod+Shift+s move scratchpad
-bindsym $mod+s scratchpad show
+bindsym $super+Shift+s move scratchpad
+bindsym $super+s scratchpad show
 
 
 # i3 Control
 ## Reload configuration.
-bindsym $mod+Shift+c reload
+bindsym $super+Shift+c reload
 
 ## Restart in place (do not logout).
-bindsym $mod+Shift+r restart
+bindsym $super+Shift+r restart
 
 ## Exit (with logout)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -b 'Yes' 'i3-msg exit'"
+bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -b 'Yes' 'i3-msg exit'"
 
 # ---
 
