@@ -6,7 +6,6 @@ configuration {
   fixed-num-lines: false;
   show-icons: true;
   normal-window: true;
-  theme: "themes/custom.rasi";
 
   kb-remove-to-eol: "";
   kb-remove-char-back: "BackSpace";
@@ -14,5 +13,7 @@ configuration {
   kb-mode-previous: "Shift+Tab";
   kb-row-tab: "";
 }
+
+@theme "themes/custom.rasi"
 
 // vim: filetype=scss
