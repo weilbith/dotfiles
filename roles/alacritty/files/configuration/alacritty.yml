@@ -3,6 +3,7 @@ env:
   WINIT_X11_SCALE_FACTOR: "1"
 
 window:
+  opacity: 0.7
   class:
     instance: Alacritty
 
@@ -36,8 +37,6 @@ colors:
   selection:
     text: "#131416"
     background: "#76cce0"
-
-background_opacity: 0.7
 
 selection:
   save_to_clipboard: true
