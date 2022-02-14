@@ -3,3 +3,6 @@ pacman -Scc
 
 # List files of package
 pacman -Qlq <package> | grep -v '/$' | xargs -r du -h | sort -h
+
+# Find package that owns a file
+pacman --query --owns /path/to/file
