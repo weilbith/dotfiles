@@ -25,9 +25,8 @@
   become: yes
 
 - name: Copy Thinkfan configuration
-  file:
+  copy:
     src: "{{ role_path }}/files/thinkfan.conf"
     dest: /etc/thinkfan.conf
     mode: 0644
-    force: yes
   become: true
