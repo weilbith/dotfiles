@@ -22,6 +22,8 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     status
     background_jobs
+    pyenv
+    virtualenv
   )
 
   # Basic Options
@@ -132,6 +134,14 @@
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND=196
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VISUAL_IDENTIFIER_EXPANSION=''
 
+  # PyEnv
+  typeset -g POWERLEVEL9K_PYENV_FOREGROUND=#646464
+  typeset -g POWERLEVEL9K_PYENV_BACKGROUND=#ffd43b
+
+  # VirtualEnv
+  typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND=15
+  typeset -g POWERLEVEL9K_VIRTUALENV_BACKGROUND=#306998
+  typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_WITH_PYENV=if-different
 
   # Transient Prompt
   # Do not use default transient feature to allow customizing how the prompt
