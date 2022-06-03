@@ -11,7 +11,7 @@ ZINIT[SNIPPETS_DIR]="$XDG_CACHE_HOME/zinit/snippets"
 ZINIT[ZCOMPDUMP_PATH]="$ZSH_COMPLETION_DUMP"
 ZINIT[OPTIMIZE_OUT_DISK_ACCESSES]=1
 
-source /usr/share/zinit/zinit.zsh
+source /usr/share/zsh/scripts/zinit/zinit.zsh
 
 set -a
 for file in "$ZSH_PLUGIN_LIST_DIR"/*.zsh; do source "$file"; done
