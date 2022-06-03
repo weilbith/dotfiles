@@ -3,3 +3,6 @@
   vars:
     additional_packages:
       - github-cli
+
+- name: Install GitHub CLI extensions
+  shell: gh extension install seachicken/gh-poi
