@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Desktop notifications
+pipx run not-much-fire
+
+# vim: filetype=sh

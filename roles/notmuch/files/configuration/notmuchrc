@@ -1,0 +1,20 @@
+[database]
+path=mails
+
+[user]
+name=Thore Strassburg
+primary_email=thore@weilbier.net
+other_email=thore@brainbot.com;thore.strassburg@brainbot.com;thore.weilbier@brainbot.com;weilbier@brainbot.com;thore.h.weilbier@campus.tu-berlin.de
+
+[new]
+tags=unread;inbox;
+ignore=
+
+[search]
+exclude_tags=deleted;spam;
+
+[maildir]
+synchronize_flags=true
+
+[crypto]
+gpg_path=gpg

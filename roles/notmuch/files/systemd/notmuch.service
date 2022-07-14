@@ -1,0 +1,9 @@
+[Unit]
+Description=Update database for all mail directories
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/notmuch new
+
+[Install]
+WantedBy=default.target
