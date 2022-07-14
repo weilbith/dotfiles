@@ -1,0 +1,6 @@
+- import_role:
+    name: base_role
+  vars:
+    base_package: isync
+    new_directories:
+      - "{{ xdg_cache_home }}/mbsync"

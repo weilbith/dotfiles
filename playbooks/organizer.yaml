@@ -1,4 +1,5 @@
 - name: Setup focused on organizer stuff like mail and calendar
   hosts: all
   roles:
+    - mbsync
     - notmuch

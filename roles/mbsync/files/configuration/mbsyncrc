@@ -1,0 +1,79 @@
+######################
+####### Global #######
+######################
+SyncState ~/.cache/mbsync/
+Expunge Both
+CopyArrivalDate yes
+Create Both
+Remove Both
+
+
+######################
+###### Brainbot ######
+######################
+
+IMAPAccount brainbot
+Host mail.brainbot.com
+User thore
+PassCmd "gpg --for-your-eyes-only --no-tty --batch --quiet --decrypt --recipient 483DA28D /home/thore/.config/mutt/accounts/brainbot_pass"
+SSLType IMAPS
+CertificateFile ~/.config/mutt/accounts/brainbot_cert
+
+# Remote
+IMAPStore brainbot-remote
+Account brainbot
+
+# Local
+MaildirStore brainbot-local
+Path ~/mails/brainbot/
+Inbox ~/mails/brainbot/Inbox
+
+Channel brainbot-inbox
+Master :brainbot-remote:"INBOX"
+Slave :brainbot-local:inbox
+
+Group brainbot
+Channel brainbot-inbox
+
+
+######################
+###### Private  ######
+######################
+
+IMAPAccount private
+Host imap.1und1.de
+User thore@weilbier.net
+PassCmd "gpg --for-your-eyes-only --no-tty --batch --quiet --decrypt --recipient 483DA28D /home/thore/.config/mutt/accounts/private_pass"
+SSLType IMAPS
+CertificateFile ~/.config/mutt/accounts/private_cert
+
+# Remote
+IMAPStore private-remote
+Account private
+
+# Local
+MaildirStore private-local
+Path ~/mails/private/
+Inbox ~/mails/private/Inbox
+
+Channel private-inbox
+Master :private-remote:"INBOX"
+Slave :private-local:inbox
+
+Channel private-sent
+Master :private-remote:"Sent"
+Slave :private-local:sent
+
+Channel private-drafts
+Master :private-remote:"Drafts"
+Slave :private-local:drafts
+
+Channel private-spam
+Master :private-remote:"Spam"
+Slave :private-local:spam
+
+Group private
+Channel private-inbox
+Channel private-sent
+Channel private-drafts
+Channel private-spam

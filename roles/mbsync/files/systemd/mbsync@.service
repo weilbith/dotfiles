@@ -1,0 +1,9 @@
+[Unit]
+Description=Synchronizing mail directory with server (for %i)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mbsync --config ${MBSYNC_CONFIG_FILE} %i
+
+[Install]
+WantedBy=default.target
