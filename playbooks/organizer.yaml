@@ -4,5 +4,6 @@
     - mbsync
     - notmuch
     - neomutt
+    - vdirsyncer
     - khal
     - khard

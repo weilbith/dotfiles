@@ -1,0 +1,6 @@
+- import_role:
+    name: base_role
+  new_directories:
+    - "{{ xdg_cache_home }}/vdirsyncer"
+    - "{{ lookup('env', 'HOME') }}/contacts"
+    - "{{ lookup('env', 'HOME') }}/calendars"
