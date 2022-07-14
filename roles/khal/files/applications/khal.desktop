@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Khal
+Comment=CLI based calender tool
+Exec=alacritty --class floating --option window.dimensions.columns=80 --option window.dimensions.lines=40 --title Calendar --command ikhal
+Type=Application
