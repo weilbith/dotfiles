@@ -1,0 +1,163 @@
+# Global variables
+set my_mail_folder = "/home/thore/mails"
+set my_virtual_query_base = "notmuch://?query"
+
+# Notmuch
+set nm_default_uri = "notmuch://$my_mail_folder"
+tag-transforms \
+  "attachment" " " \
+  "replied" " " \
+  "flagged" " " \
+  "signed" " " \
+  "encrypted" " " \
+
+tag-formats \
+  "attachment" "GA" \
+  "replied" "GR" \
+  "flagged" "GF" \
+  "signed" "GS" \
+  "encrypted" "GE" \
+
+set hidden_tags = ""
+macro index,pager <f10> "<sync-mailbox><shell-escape>notmuch new --quiet<enter>" "Update notmuch database"
+bind index,pager \\ vfolder-from-query
+bind index,pager \Cv sidebar-toggle-virtual
+
+# startup-hook 'exec mbsync -a && notmuch new --quiet'
+# shutdown-hook 'push "<shell-escape>notmuch new<enter>"'
+
+# Accounts
+set my_acc_private = ~/.config/neomutt/accounts/private
+set my_acc_brainbot = ~/.config/neomutt/accounts/brainbot
+
+source $my_acc_private
+
+macro index,pager <f2> "<sync-mailbox><refresh><enter-command>source $my_acc_private<enter><change-folder>!<enter>"
+macro index,pager <f3> "<sync-mailbox><refresh><enter-command>source $my_acc_brainbot<enter><change-folder>!<enter>"
+
+
+# Send Mails
+set sendmail = "msmtp -a $my_account"
+set realname = "Thore Weilbier"
+set sendmail = "/usr/bin/msmtp --file /home/thore/.config/msmtp/config -a private"
+set abort_noattach = ask-no
+set abort_noattach_regex = "\<attach(|ed|ments?)|Anhang|Anhänge\\>"
+set use_from
+set edit_headers
+set fast_reply
+set include
+set forward_format = "Fwd: %s"
+set reverse_name
+set reverse_realname
+
+# Sourcing
+source ~/.config/neomutt/colors
+
+# Charset
+set charset = "utf-8"
+set send_charset = "utf-8"
+set assumed_charset = "utf-8"
+
+# Format Strings
+set date_format = "%H:%M %a %d.%m.%Y"
+set index_format = "  %-20.20F  %?M?%M פּ ?%s %GA%GR%GF%GS%GE%*    %D "
+set sidebar_format = "  %-8.8B %?F?%F ?%* %N/%-5S "
+set status_format = "                                %?f?%f?%?u?   %u?%?t?   %t?%?F?   %F?%?d?   %d?%> %P  "
+set compose_format = "                                Compose  %?a?   %a? "
+set pager_format = "                                 %F  -  %s "
+
+# Index Pane
+set sort = threads
+set sort_aux = "last-date-received"
+set collapse_all
+unset collapse_unread
+set uncollapse_jump
+
+# Pager Pane
+ignore *
+unignore from: to subject date cc bcc
+unhdr_order *
+hdr_order from to Subject date cc bcc
+set pager_index_lines = 15
+
+## Autoviews
+auto_view text/html
+auto_view application/ics
+
+# Sidebar
+set sidebar_visible
+set mail_check_stats
+set sidebar_width = 30
+set sidebar_divider_char = '  '
+set sidebar_short_path
+set sidebar_component_depth = 1
+set sidebar_delim_chars = '/'
+
+# More Bindings
+## Index & Pager
+bind index,pager <f8> help
+bind index,pager \C\<Return> entire-thread
+bind index,pager r group-reply
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+## Index
+bind index G last-entry
+bind index \Cu half-up
+bind index \Cd half-down
+bind index j next-entry
+bind index k previous-entry
+bind index ? search-reverse
+bind index N search-opposite
+bind index u toggle-new
+bind index U read-thread
+bind index z collapse-thread
+bind index D undelete-message
+macro index c "<change-folder>?"
+macro index <f9> "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc $my_account && notmuch new --quiet<enter>" "Syncronise account $my_account"
+
+## Pager
+bind pager g top
+bind pager G bottom
+bind pager k previous-line
+bind pager j next-line
+bind pager \Cu half-up
+bind pager \Cd half-down
+bind pager \Ck previous-entry
+bind pager \Cj next-entry
+macro pager A "<pipe-message>ripmime -i - -d "
+macro pager U "<pipe-message> urlscan --compact<Enter>"
+
+
+# Contacts
+set query_command = "khard email --parsable '%s'"
+bind editor <Tab> complete-query
+bind editor ^T complete
+bind query k previous-line
+bind query j next-line
+
+# Caching
+set header_cache = ~/.cache/neomutt/header
+set header_cache_backend = "gdbm"
+
+# Behavior
+unset wait_key
+unset mark_old
+unset menu_move_off
+set menu_scroll
+set pager_stop
+unset confirmappend
+unset delete
+
+# Crypto
+set crypt_autosign
+# set crypt_opportunistic_encrypt
+set pgp_default_key = "0x0A2ABC21BD50D9FF"
+
+# MISC
+unset markers
+unset help
+
+
+# vim: filetype=neomuttrc

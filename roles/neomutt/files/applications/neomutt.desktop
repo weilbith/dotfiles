@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Neomutt
+Comment=CLI based mail interface
+Exec=alacritty --class floating --option window.dimensions.columns=170 --option window.dimensions.lines=55 --title NeoMutt --command neomutt %u
+Type=Application
+MimeType=x-scheme-handler/mailto;
