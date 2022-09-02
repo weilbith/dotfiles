@@ -3,6 +3,6 @@
   vars:
     additional_packages:
       - zathura-pdf-mupdf # Support for MuPDF framework
-      - tabbed # Use tabs to show multiple PDFs
+      - tabbed-git # Use tabs to show multiple PDFs
     provide_test_data:
       - documents
