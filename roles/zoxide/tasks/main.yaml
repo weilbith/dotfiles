@@ -1,4 +1,4 @@
 - import_role:
     name: base_role
   vars:
-    base_package: zoxide-bin
+    base_package: zoxide
