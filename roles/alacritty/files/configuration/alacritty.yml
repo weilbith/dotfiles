@@ -2,6 +2,9 @@ env:
   # Fix variating font size issues on different displays
   WINIT_X11_SCALE_FACTOR: "1"
 
+shell:
+  program: /usr/bin/zsh
+
 window:
   opacity: 0.7
   class:
