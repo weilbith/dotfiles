@@ -2,7 +2,7 @@
     name: base_role
   vars:
     additional_packages:
-      - docker-compose-bin # Docker environment orchestration tool
+      - docker-compose # Docker environment orchestration tool
     systemd_units_system:
       - docker.service
 
