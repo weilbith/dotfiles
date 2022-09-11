@@ -1,0 +1,13 @@
+- import_role:
+    name: base_role
+  vars:
+    additional_packages:
+      # - tlp-rdw # Radio device wizard
+    systemd_units_system:
+      - tlp.service
+ 
+- name: Disable conflicting Systemd-RFKill
+  shell: |
+    systemctl mask systemd-rfkill.service
+    systemctl mask systemd-rfkill.socket
+  become: true
