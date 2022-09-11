@@ -1,0 +1,8 @@
+- import_role:
+    name: base_role
+  vars:
+    base_package: github-cli
+    link_configuration_children: true
+
+- name: Install GitHub CLI extensions          
+  shell: gh extension install seachicken/gh-poi
