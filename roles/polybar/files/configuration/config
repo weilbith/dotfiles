@@ -4,20 +4,20 @@ include-directory = ~/.config/polybar/modules
 
 [bar/top]
 width = 100%
-height = 23
+height = 30
 module-margin = 1
 
 background = ${colors.background}
 foreground = ${colors.black}
 
-font-0 = SauceCodePro Nerd Font Mono:style=Bold:size=11;3
+font-0 = SauceCodePro Nerd Font Mono:style=Bold:size=13;3
 font-1 = SauceCodePro Nerd Font Mono:style=Bold:size=14;3
 font-2 = SauceCodePro Nerd Font Mono:style=Bold:size=20;5
-font-3 = SauceCodePro Nerd Font Mono:style=Bold:size=25;6
+font-3 = SauceCodePro Nerd Font Mono:style=Bold:size=24;6
 font-4 = SauceCodePro Nerd Font Mono:style=Bold:size=9;0
 
 modules-left = workspaces window
-modules-right = yubikey services cpu cloud mail bluetooth network volume battery date notifications
+modules-right = yubikey services cpu cloud bluetooth network volume battery date notifications
 
 enable-ipc = true
 
