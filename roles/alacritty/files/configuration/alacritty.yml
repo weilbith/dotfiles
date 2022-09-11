@@ -1,6 +1,6 @@
 env:
   # Fix variating font size issues on different displays
-  WINIT_X11_SCALE_FACTOR: "1"
+  WINIT_X11_SCALE_FACTOR: "1.2"
 
 shell:
   program: /usr/bin/zsh
