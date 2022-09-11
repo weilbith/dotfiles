@@ -2,7 +2,7 @@
   hosts: all
   roles:
     - git
-    - hub
+    - gh
     - ranger
     - udisks
     - bashmount
