@@ -7,11 +7,10 @@ configuration {
   show-icons: true;
   normal-window: true;
 
-  kb-remove-to-eol: "";
   kb-remove-char-back: "BackSpace";
+  kb-element-next: "Control+Shift+Tab";
   kb-mode-next: "Tab";
   kb-mode-previous: "Shift+Tab";
-  kb-row-tab: "";
 }
 
 @theme "themes/custom.rasi"

@@ -2,12 +2,12 @@
   background-color: #ff0000;
   background-color: #98989da0;
   text-color: #000000;
-  font: "Sauce Code Pro 13";
+  font: "Sauce Code Pro 14";
 }
 
 #window {
   width: 40%;
-  y-offset: -20%;
+  height: 50%;
   transparency: "real";
   border-radius: 10px;
 }
@@ -18,8 +18,9 @@
 
 #textbox-prompt-colon {
   content: "";
+  font: "Sauce Code Pro 22";
   expand: false;
-  padding: 15px 5px 0 25px;
+  padding: 20px 25px 25px 30px;
 }
 
 #entry,
@@ -33,11 +34,16 @@ element {
   highlight: bold;
   placeholder: "Rofi Search";
   placeholder-color: #67676b;
+  padding: 28px 0 25px 0;
 }
 
 #element-icon {
   size: 30px;
-  padding: 0 10px 0 0;
+  padding: 0 10px 0 10px;
+}
+
+#element-text {
+  padding: 10px;
 }
 
 #listview {
@@ -60,7 +66,19 @@ element {
   padding: 4px;
 }
 
-#element.selected,
+#element.selected {
+  background-color: #0a84ff;
+}
+
+#element-text.selected {
+  text-color: #ffffff;
+  background-color: #0a84ff;
+}
+
+#element-icon.selected {
+  background-color: #0a84ff;
+}
+
 button.selected {
   text-color: #ffffff;
   background-color: #0a84ff;
