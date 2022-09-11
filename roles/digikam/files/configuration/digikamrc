@@ -956,12 +956,12 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwIPDw8=
+Database Encrypted Password=AwJpaWk=
 Database Hostname=
-Database Name=/home/thore/.cache/digikam/database/
-Database Name Face=/home/thore/.cache/digikam/database/
-Database Name Similarity=/home/thore/.cache/digikam/database/
-Database Name Thumbnails=/home/thore/.cache/digikam/database/
+Database Name=/home/thore/images/photos/digikam_database/
+Database Name Face=/home/thore/images/photos/digikam_database/
+Database Name Similarity=/home/thore/images/photos/digikam_database/
+Database Name Thumbnails=/home/thore/images/photos/digikam_database/
 Database Port=-1
 Database Type=QSQLITE
 Database Username=
