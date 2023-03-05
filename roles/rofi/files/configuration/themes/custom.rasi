@@ -9,7 +9,7 @@
   width: 40%;
   height: 50%;
   transparency: "real";
-  border-radius: 10px;
+  border-radius: 1%;
 }
 
 #inputbar {
@@ -62,7 +62,6 @@ element {
 }
 
 #button {
-  border-radius: 4px;
   padding: 4px;
 }
 
