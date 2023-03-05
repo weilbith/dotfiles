@@ -11,7 +11,7 @@
   rebase = false
 
 [core]
-  pager = bat --paging=auto
+  pager = delta
   excludesfile = ~/.config/git/gitignore
 
 [alias]
@@ -40,6 +40,10 @@
 
 [rebase]
   autosquash = true
+
+[delta]
+  navigate = true
+  side-by-side = true
 
 [filter "black"]
   clean = black -
