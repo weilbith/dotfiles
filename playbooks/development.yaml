@@ -1,0 +1,4 @@
+- name: Setup focused on development tooling
+  hosts: all
+  roles:
+    - terraform
