@@ -2,15 +2,16 @@ output HDMI-1
 off
 output DP-1
 off
-output DP-2
-off
 output eDP-1
-crtc 1
+off
+output DP-2
+crtc 0
 gamma 1.0:0.909:0.833
-mode 1920x1080
+mode 3840x2160
 pos 0x0
+primary
 rate 60.00
-x-prop-max_bpc 16
+x-prop-max_bpc 8
 x-prop-non_desktop 0
 x-prop-scaling_mode None
 x-prop-underscan off
