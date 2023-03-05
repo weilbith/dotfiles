@@ -8,7 +8,7 @@
   verbose = true
 
 [pull]
-  rebase = false
+  rebase = true
 
 [core]
   pager = delta
@@ -39,7 +39,7 @@
   cmd = "nvim -c DiffviewOpen"
 
 [rebase]
-  autosquash = true
+  autostash = true
 
 [delta]
   navigate = true
