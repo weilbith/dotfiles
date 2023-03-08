@@ -1,7 +1,7 @@
 [user]
   name = Thore Strassburg
   email = thore@weilbier.net
-  signingkey = 0A2ABC21BD50D9FF
+  signingkey = 0xF43A942CE4BA15B7
 
 [commit]
   gpgsign = true
@@ -28,6 +28,7 @@
   recent = "!r(){ git for-each-ref --sort=-committerdate refs/heads --color=always --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)'|column -ts'|';}; r"
   graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
   files = diff-tree --no-commit-id --name-only -r
+  retry-commit = "!f() { git commit --edit --file=$(git rev-parse --git-dir)/COMMIT_EDITMSG; }; f"
 
 [merge]
   tool = vimdiff
