@@ -1,0 +1,10 @@
+*.rs    diff=rust
+*.kt    diff=kotlin
+*.java  diff=java
+*.tex   diff=tex
+*.bib   diff=bibtex
+*.go    diff=golang
+*.html  diff=html
+*.md    diff=markdown
+*.py    diff=python
+*.sh    diff=bash
