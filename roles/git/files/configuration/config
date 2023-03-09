@@ -12,7 +12,6 @@
 
 [core]
   pager = delta
-  excludesfile = ~/.config/git/gitignore
 
 [alias]
   s  = status
@@ -41,6 +40,9 @@
 
 [rebase]
   autostash = true
+
+[log]
+  follow = true
 
 [delta]
   navigate = true
