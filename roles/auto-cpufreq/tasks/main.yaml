@@ -1,0 +1,5 @@
+- import_role:
+    name: base_role
+  vars:
+    systemd_units_system:
+      - auto-cpufreq.service

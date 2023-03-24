@@ -1,0 +1,5 @@
+- name: Setup focused on battery saving related tools
+  hosts: all
+  roles:
+    - auto-cpufreq
+    - powertop

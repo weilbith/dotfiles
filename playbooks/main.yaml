@@ -1,3 +1,4 @@
+- import_playbook: battery.yaml
 - import_playbook: desktop.yaml
 - import_playbook: development.yaml
 - import_playbook: multimedia.yaml
