@@ -5,4 +5,6 @@
     link_configuration_children: true
 
 - name: Install GitHub CLI extensions          
-  shell: gh extension install seachicken/gh-poi
+  shell: |
+    gh extension list | grep --quiet gh-poi ||
+    gh extension install seachicken/gh-poi
