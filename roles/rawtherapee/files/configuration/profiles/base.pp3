@@ -1,5 +1,5 @@
 [Version]
-AppVersion=5.8-2794-g02a5040a6
+AppVersion=5.8-3161-g93aac4510
 Version=349
 
 [General]
@@ -165,8 +165,8 @@ Uniformity=5
 [White Balance]
 Enabled=true
 Setting=Camera
-Temperature=4477
-Green=1.018
+Temperature=5053
+Green=1.02
 Equal=1
 TemperatureBias=0
 
@@ -283,8 +283,8 @@ Lab=false
 Enabled=false
 X=0
 Y=0
-W=4012
-H=6028
+W=6056
+H=4032
 FixedRatio=true
 Ratio=As Image
 Orientation=As Image
@@ -306,14 +306,14 @@ Degree=0
 Amount=0
 
 [LensProfile]
-LcMode=none
+LcMode=lfmanual
 LCPFile=
 UseDistortion=true
 UseVignette=true
 UseCA=false
 LFCameraMake=Nikon Corporation
-LFCameraModel=Nikon D5200
-LFLens=
+LFCameraModel=Nikon Z 6
+LFLens=Nikon NIKKOR Z 24-70mm f/2.8 S
 
 [Perspective]
 Method=simple
@@ -371,14 +371,16 @@ Method=Lanczos
 DataSpecified=3
 Width=900
 Height=900
+LongEdge=900
+ShortEdge=900
 AllowUpscaling=false
 
 [PostDemosaicSharpening]
 Enabled=true
-Contrast=12
+Contrast=6
 AutoContrast=true
 AutoRadius=true
-DeconvRadius=0.96999999999999997
+DeconvRadius=0.64000000000000001
 DeconvRadiusOffset=0
 DeconvIterCheck=true
 DeconvIterations=20
@@ -409,9 +411,28 @@ ApplyHueSatMap=true
 DCPIlluminant=0
 WorkingProfile=ProPhoto
 WorkingTRC=none
+Will=D50
+Wprim=def
 WorkingTRCGamma=2.3999999999999999
 WorkingTRCSlope=12.92
+Redx=0.73470000000000002
+Redy=0.26529999999999998
+Grex=0.15959999999999999
+Grey=0.84040000000000004
+Blux=0.036600000000000001
+Bluy=0.0001
+LabGridcieALow=0.51763000000000003
+LabGridcieBLow=-0.33582000000000001
+LabGridcieAHigh=-0.75163000000000002
+LabGridcieBHigh=-0.81799999999999995
+LabGridcieGx=-0.69164000000000003
+LabGridcieGy=-0.70909
+LabGridcieWx=-0.18964
+LabGridcieWy=-0.16636000000000001
+Preser=0
+Fbw=false
 OutputProfile=RTv4_sRGB
+aIntent=Relative
 OutputProfileIntent=Relative
 OutputBPC=true
 
@@ -429,7 +450,6 @@ Iter=0
 MaxLev=7
 TilesMethod=full
 complexMethod=normal
-denMethod=12low
 mixMethod=mix7
 sliMethod=sli
 quaMethod=cons
@@ -523,7 +543,6 @@ blcurve=1;0;0;0;0.34999999999999998;0.5;0;0.34999999999999998;0.3499999999999999
 Pastlev=0;2;30;20;
 Satlev=30;45;130;100;
 OpacityCurveRG=1;0;0.5;0.34999999999999998;0.34999999999999998;1;0.5;0.34999999999999998;0.34999999999999998;
-Levalshc=1;0;1;0.34999999999999998;0.34999999999999998;0.14999999999999999;0.90000000000000002;0.34999999999999998;0.34999999999999998;0.40000000000000002;0.80000000000000004;0.34999999999999998;0.34999999999999998;0.40000000000000002;0.5;0.34999999999999998;0.34999999999999998;0.5;0.5;0.34999999999999998;0.34999999999999998;0.5;0.20000000000000001;0.34999999999999998;0.34999999999999998;0.80000000000000004;0.10000000000000001;0.34999999999999998;0.34999999999999998;1;0;0.34999999999999998;0.34999999999999998;
 OpacityCurveBY=1;0;0.5;0.34999999999999998;0.34999999999999998;1;0.5;0.34999999999999998;0.34999999999999998;
 wavdenoise=1;0;1;0.34999999999999998;0.34999999999999998;0.5;1;0.34999999999999998;0.34999999999999998;1;1;0.34999999999999998;0.34999999999999998;
 wavdenoiseh=1;0;1;0.34999999999999998;0.34999999999999998;0.5;1;0.34999999999999998;0.34999999999999998;1;1;0.34999999999999998;0.34999999999999998;
@@ -569,6 +588,9 @@ Residualgamma=1
 HueRangeResidual=0
 HueRange=-260;-250;-130;-140;
 Contrast=0
+
+[Spot removal]
+Enabled=false
 
 [Directional Pyramid Equalizer]
 Enabled=false
@@ -686,13 +708,14 @@ DCBIterations=2
 DCBEnhance=true
 LMMSEIterations=2
 DualDemosaicAutoContrast=true
-DualDemosaicContrast=13
+DualDemosaicContrast=7
 PixelShiftMotionCorrectionMethod=1
 PixelShiftEperIso=0
 PixelShiftSigma=1
 PixelShiftShowMotion=false
 PixelShiftShowMotionMaskOnly=false
 pixelShiftHoleFill=true
+pixelShiftAverage=false
 pixelShiftMedian=false
 pixelShiftGreen=true
 pixelShiftBlur=true
@@ -723,8 +746,21 @@ GreenExponent=1.5
 BlueRatio=0.85999999999999999
 ColorSpace=1
 RefInput=0;0;0;
-RefOutput=2739.947021484375;2740.07568359375;2740.035400390625;
-BackCompat=0
+RefOutput=2739.948486328125;2740.07568359375;2739.714111328125;
 
 [RAW Preprocess WB]
 Mode=1
+
+[IPTC]
+City=;
+Copyright=© Thore Strassburg;
+Country=;
+Creator=Thore Strassburg;
+CreatorJobTitle=;
+Credit=;
+DateCreated=20220924;
+Instructions=;
+Keywords=vacation;USA;
+Province=;
+Source=;
+SupplementalCategories=
