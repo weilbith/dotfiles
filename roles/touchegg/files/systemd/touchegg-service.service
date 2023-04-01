@@ -1,0 +1,10 @@
+[Unit]
+Description=Multitouch gesture recognizer client
+After=touchegg.service
+
+[Service]
+Type=simple
+ExecStart=touchegg
+
+[Install]
+WantedBy=touchegg.service

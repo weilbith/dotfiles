@@ -164,6 +164,9 @@ bindsym $super+Control+s exec i3-input -F 'swap container with mark %s' -P 'Mark
 
 # Workspaces
 ## Switch workspace.
+bindsym $super+Tab workspace next
+bindsym $super+Shift+Tab workspace prev
+
 bindsym $super+1 workspace $workspace1
 bindsym $super+2 workspace $workspace2
 bindsym $super+3 workspace $workspace3
