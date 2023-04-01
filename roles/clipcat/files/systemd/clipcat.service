@@ -4,7 +4,7 @@ After=xorg-server.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/greenclip daemon
+ExecStart=/usr/bin/clipcatd --no-daemon
 Restart=on-failure
 
 [Install]

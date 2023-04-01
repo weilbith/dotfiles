@@ -1,7 +1,0 @@
-- import_role:
-    name: base_role
-  vars:
-    base_package: rofi-greenclip # Includes Rofi integration per default
-    configuration_destination: "{{ xdg_config_home }}"
-    link_configuration_children: true
-    new_directories: ["{{ xdg_cache_home }}/greenclip"]
