@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=digiKam
-GenericName=Photo Management Program
-Exec=bash -c "systemctl --user stop redshift; digikam; systemctl --user start redshift"
-Icon=digikam
-Type=Application

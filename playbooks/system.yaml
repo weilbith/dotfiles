@@ -13,5 +13,4 @@
     - brightnessctl
     - gnupg
     - yubikey
-    - thinkpad
-    - tlp
+    - clight

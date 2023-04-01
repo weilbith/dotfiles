@@ -1,9 +1,9 @@
 [Unit]
-Description=Display color temperature adjustment for day and night time
+Description=Ambient light dependent backlight control
 After=xorg-server.service
 
 [Service]
-ExecStart=/usr/bin/redshift
+ExecStart=/usr/bin/clight
 Restart=on-failure
 
 [Install]
