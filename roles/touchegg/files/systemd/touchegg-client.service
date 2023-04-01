@@ -1,10 +1,10 @@
 [Unit]
 Description=Multitouch gesture recognizer client
-After=touchegg.service
+After=xorg-server.service
 
 [Service]
 Type=simple
-ExecStart=touchegg
+ExecStart=touchegg --client
 
 [Install]
-WantedBy=touchegg.service
+WantedBy=xorg-server.service
