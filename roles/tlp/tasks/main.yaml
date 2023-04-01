@@ -1,8 +1,6 @@
 - import_role:
     name: base_role
   vars:
-    additional_packages:
-      # - tlp-rdw # Radio device wizard
     systemd_units_system:
       - tlp.service
  

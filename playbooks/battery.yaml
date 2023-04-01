@@ -3,3 +3,4 @@
   roles:
     - auto-cpufreq
     - powertop
+    - tlp
