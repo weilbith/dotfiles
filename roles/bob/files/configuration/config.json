@@ -1,0 +1,4 @@
+{
+  "installation_location": "$XDG_DATA_HOME/bob-install",
+  "downloads_dir": "$XDG_DATA_HOME/bob-download"
+}
