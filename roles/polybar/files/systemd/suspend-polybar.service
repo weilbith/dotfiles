@@ -1,0 +1,9 @@
+[Unit]
+Before=suspend.target
+
+[Service]
+Type=simple
+ExecStart=/bin/systemctl stop polybar.service
+
+[Install]
+WantedBy=suspend.target
