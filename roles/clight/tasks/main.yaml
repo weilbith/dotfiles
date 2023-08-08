@@ -3,3 +3,5 @@
   vars:
     configuration_destination: "{{ xdg_config_home }}"
     link_configuration_children: true
+    systemd_units_user:
+      - clight.service
