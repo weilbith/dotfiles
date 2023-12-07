@@ -17,7 +17,7 @@ font-3 = SauceCodePro Nerd Font Mono:size=24;7
 font-4 = SauceCodePro Nerd Font Mono:size=11;0
 
 modules-left = workspaces window
-modules-right = services cpu cloud bluetooth network volume battery date notifications
+modules-right = services cpu bluetooth network volume battery date notifications
 
 enable-ipc = true
 

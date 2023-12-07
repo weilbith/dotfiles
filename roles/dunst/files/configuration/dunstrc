@@ -3,14 +3,14 @@
     monitor = 0
     geometry = "300x5-6+30"
     indicate_hidden = yes
-    shrink = no
+    shrink = yes
     transparency = 0
     notification_height = 50
     separator_height = 1
     frame_width = 3
     padding = 10
     horizontal_padding = 10
-    frame_color = "0"
+    frame_color = "#00000000"
     separator_color = frame
     sort = yes
     idle_threshold = 60
@@ -29,13 +29,15 @@
     show_indicators = yes
 
     ### Icons ###
-    icon_position = right
-    max_icon_size = 24
     # icon_path = /usr/share/icons/Adwaita/24x24/
 
     ### History ###
     sticky_history = yes
     history_length = 20
+
+    ### Progress Bar ###
+    progress_bar_height = 7
+    progress_bar_corner_radius = 7
 
     ### Misc/Advanced ###
     dmenu = /usr/bin/dmenu -p dunst:
@@ -44,18 +46,15 @@
     title = Dunst
     class = Dunst
     startup_notification = false
+    idle_threshold = 60
 
-[urgency_low]
-    background = "#5fd7ff"
-    foreground = "#282a2e"
-    timeout = 10
-    # icon = /path/to/icon
-
-[urgency_normal]
-    background = "#005f87"
+    corner_radius = 10
+    background = "#98989d"
     foreground = "#ffffff"
-    timeout = 10
-    #icon = /path/to/icon
+    highlight = "#0a84ff"
+    transparency = 10
+
+    timeout = 5
 
 [urgency_critical]
     background = "#ff005f"
@@ -67,5 +66,16 @@
 [rocketchat]
     appname = Rocket.Chat
     new_icon = /home/thore/.local/share/icons/hicolor/24x24/app/app-rocketchat.png
+
+[volume]
+    appname = Volume
+    timeout = 2
+    alignment = center
+    set_transient = yes
+    history_ignore = yes
+    hide_text = yes
+    icon_position = center
+    new_icon = /home/thore/downloads/brightness.png
+    icon_position = top
 
 # vim: filetype=dosini

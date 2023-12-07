@@ -1,0 +1,6 @@
+rules:
+  subject-empty: [2, never]
+  header-max-length: [2, always, 50]
+  body-leading-blank: [2, always]
+  body-case: [2, always]
+  footer-leading-blank: [1, always]

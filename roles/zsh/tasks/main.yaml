@@ -11,9 +11,7 @@
   become: yes
 
 - name: Change users default shell
-  user:
-    name: "{{ lookup('env', 'USER') }}"
-    shell: /usr/bin/zsh
+  shell: "homectl update {{ lookup('env', 'USER') }} --shell /usr/bin/zsh"
   become: yes
 
 # Get rid of old bash files (in a "friendly" recoverable manner)

@@ -1,5 +1,5 @@
 configuration {
-  modi: "drun,calc,clipboard:clipcatctl list --no-id";
+  modi: "drun,calc";
   sidebar-mode: true;
   scroll-method: 1;
   lines: 10;
