@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Bluetuith
+Comment=Control Bluetooth from the command line
+Exec=alacritty --class floating --option window.dimensions.columns=150 --option window.dimensions.lines=30 --title Bluetuith --command bluetuith
+Type=Application
