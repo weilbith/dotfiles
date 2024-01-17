@@ -2,7 +2,8 @@
     name: base_role
   vars:
     additional_packages:
-      - bluetuith # command-line interface
+      - bluez-utils # command-line utilities
+      - bluetuith # TUI tool
       - pulseaudio-bluetooth # pulse-audio integration
     systemd_units_system:
       - bluetooth.service
