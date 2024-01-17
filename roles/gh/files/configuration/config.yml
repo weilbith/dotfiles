@@ -1,3 +1,4 @@
 editor: nvim
 pager: less
 browser: firefox
+version: "1"
