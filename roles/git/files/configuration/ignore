@@ -5,3 +5,4 @@ env/
 vault.pwd
 __pycache__/
 .notags
+.dotenv
