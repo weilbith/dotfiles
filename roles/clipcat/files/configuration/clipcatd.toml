@@ -1,6 +1,5 @@
 daemonize = false
 max_history = 50
-history_file_path = '$XDG_CACHE_HOME/clipcat/clipcatd/db'
 log_level = 'INFO'
 
 [monitor]
