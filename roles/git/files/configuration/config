@@ -1,11 +1,18 @@
 [user]
   name = Thore Strassburg
-  email = thore@weilbier.net
-  signingkey = 0xF43A942CE4BA15B7
+  email = thore@strassburg.me
+  signingkey = ~/.ssh/thore.pub
+  ; signingkey = 0A2ABC21BD50D9FF
 
 [commit]
   gpgsign = true
   verbose = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed-signers-file
 
 [pull]
   rebase = true
