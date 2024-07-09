@@ -1,4 +1,4 @@
-export $(systemctl --user show-environment)
+export $(systemctl --user show-environment | grep --invert-match PATH)
 
 # Dir-stack
 export DIRSTACKSIZE=20
