@@ -9,10 +9,12 @@ AdjusterMaxDelay=200
 MultiUser=true
 Language=English (US)
 LanguageAutoDetect=true
-Theme=RawTherapee-GTK3-20_
-Version=5.8-3161-g93aac4510
+Theme=TooWaGrey - Bright-GTK3-20_
+Version=5.10
 DarkFramesPath=
 FlatFieldsPath=
+CameraProfilesPath=
+LensProfilesPath=
 Verbose=false
 Cropsleep=50
 Reduchigh=0.84999999999999998
@@ -29,6 +31,11 @@ OutputDir=0
 CustomOutputDir=/tmp
 Float32=false
 BypassOutputProfile=false
+Names=GIMP;
+Commands=gimp;
+NativeCommands=true;
+IconsSerialized=('themed', <['gimp', 'gimp-symbolic']>);
+EditorIndex=0
 
 [File Browser]
 BrowseOnlyRaw=false
@@ -62,7 +69,9 @@ menuGroupFileOperations=true
 menuGroupProfileOperations=true
 menuGroupExtProg=true
 MaxRecentFolders=15
-RecentFolders=/home/thore/images/photos/vacations/2022-07_HoheTatra;/home/thore/images/photos/vacations/2022-09_USA;/home/thore/images/photos;/home/thore/images/photos/vacations/2022-06_Mallorca;/home/thore/images/photos/vacations/2022-01_SaudiArabia;/home/thore/images/photos/learning;/home/thore/images/photos/vacations/2021-08_Madeira;/home/thore/images/screenshots;/home/thore/images/photos/pets/horses;/home/thore/images/photos/holidays;/home/thore;/home/thore/images/photos/pets/Makalani;/home/thore/images/photos/vacations/2020-09_Kaernten;/home/thore/Bilder;/home/thore/Bilder/Urlaub/2018-08_Schottland;
+RecentFolders=/home/thore/Downloads;/home/thore/downloads;/home/thore/images/photos;/home/thore/images/photos/vacations/2022-07_HoheTatra;/home/thore/images/photos/vacations/2022-09_USA;/home/thore/images/photos/vacations/2022-06_Mallorca;/home/thore/images/photos/vacations/2022-01_SaudiArabia;/home/thore/images/photos/learning;/home/thore/images/photos/vacations/2021-08_Madeira;/home/thore/images/screenshots;/home/thore/images/photos/pets/horses;/home/thore/images/photos/holidays;/home/thore;/home/thore/images/photos/pets/Makalani;/home/thore/images/photos/vacations/2020-09_Kaernten;
+SortMethod=0
+SortDescending=false
 
 [Clipping Indication]
 HighlightThreshold=255
@@ -92,6 +101,7 @@ PngBps=8
 TiffBps=8
 TiffFloat=false
 TiffUncompressed=true
+BigTiff=false
 SaveProcParams=true
 FormatBatch=png
 JpegQualityBatch=100
@@ -125,10 +135,11 @@ CustomProfileBuilderKeys=2
 
 [GUI]
 Favorites=
-WindowWidth=2230
-WindowHeight=1446
+FavoritesCloneTools=false
+WindowWidth=1894
+WindowHeight=1002
 WindowX=11
-WindowY=43
+WindowY=65
 WindowMonitor=0
 MeowMonitor=-1
 MeowMaximized=true
@@ -147,7 +158,7 @@ PreferencesHeight=600
 SaveAsDialogWidth=920
 SaveAsDialogHeight=680
 ToolPanelWidth=426
-BrowserToolPanelWidth=-12792
+BrowserToolPanelWidth=-13128
 BrowserToolPanelHeight=569
 BrowserToolPanelOpened=false
 EditorFilmStripOpened=false
@@ -157,7 +168,7 @@ FontFamily=default
 FontSize=10
 CPFontFamily=default
 CPFontSize=8
-PseudoHiDPISupport=false
+PseudoHiDPISupport=true
 LastPreviewScale=5
 LastShowAllExif=false
 PanAccelFactor=4
@@ -238,15 +249,9 @@ CRI=0
 DenoiseLabgamma=2
 CBDLlevel0=0
 CBDLlevel123=30
-Itcwb_thres=34
-Itcwb_sort=false
-Itcwb_greenrange=0
-Itcwb_greendeltatemp=2
-Itcwb_forceextra=true
-Itcwb_sizereference=3
-Itcwb_delta=1
-Itcwb_stdobserver10=true
-Itcwb_precis=5
+Itcwb_enable=true
+Itcwb_deltaspec=0.074999999999999997
+Itcwb_powponder=0.14999999999999999
 ClutsDirectory=./cluts
 Previewselection=5
 Cbdlsensi=1
@@ -274,7 +279,7 @@ Copyright=Copyright RawTherapee 2018, CC0
 AppendParamsToDesc=false
 
 [Batch Processing]
-AdjusterBehavior=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;
+AdjusterBehavior=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;
 
 [Sounds]
 Enable=false
@@ -321,6 +326,8 @@ fastexport_use_fast_pipeline=1
 LastIccDir=/usr/share/color/icc
 LastDarkframeDir=
 LastFlatfieldDir=
+LastCameraProfilesDir=
+LastLensProfilesDir=
 LastRgbCurvesDir=/home/thore/.config/RawTherapee/profiles
 LastLabCurvesDir=/home/thore/.config/RawTherapee/profiles
 LastRetinexDir=/home/thore/.config/RawTherapee/profiles
@@ -340,3 +347,7 @@ GimpPluginShowInfoDialog=true
 
 [Lensfun]
 DBDirectory=
+
+[Metadata]
+XMPSidecarStyle=std
+XMPSynchronization=none
