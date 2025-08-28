@@ -20,8 +20,12 @@ text = "#131416"
 size = 10
 
 [font.normal]
-family = "Source Code Pro"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Medium Italic"
 
 [scrolling]
 history = 0
