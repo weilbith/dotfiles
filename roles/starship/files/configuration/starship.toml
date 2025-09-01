@@ -1,0 +1,58 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$directory\
+$direnv\
+$git_branch\
+$line_break\
+$character
+"""
+
+right_format = """
+$cmd_duration\
+$status
+"""
+
+continuation_prompt = '󰇘'
+palette = 'default'
+
+[palettes.default]
+black = '#000000'
+white = '#ffffff'
+grey = '#3a3a3a'
+red = '#f53126'
+blue = '#0a84ff'
+green = '#28cd41'
+foo = "rgb(255, 0, 0)"
+
+[directory]
+format = '[$path ]($style)[$read_only]($read_only_style)[](fg:prev_bg bg:black)'
+read_only = '  '
+read_only_style = 'bg:red fg:white'
+home_symbol = '   '
+truncation_length = 5
+truncation_symbol =  ' … '
+truncate_to_repo = false
+style = 'bg:grey fg:white'
+repo_root_style = 'bold bg:grey fg:white'
+before_repo_root_style = 'italic bg:grey fg:white'
+
+[git_branch]
+format = '[](fg:black bg:blue)[  $branch(:$remote_branch) ](fg:white bg:blue)[](fg:blue bg:none)'
+
+[character]
+vimcmd_symbol = '[  ](bold bg:grey fg:white)[](fg:grey)'
+success_symbol = '[ 󰰅 ](bold bg:blue fg:black)[](fg:blue)'
+error_symbol = '[ 󰰅 ](bold bg:blue fg:black)[](fg:blue)'
+
+[cmd_duration]
+format = '[](fg:red)[ 󱫌 $duration ](fg:white bg:red)[](fg:black bg:red)'
+
+[status]
+disabled = false
+recognize_signal_code = false
+style = 'fg:white bg:red'
+format = '[](fg:red )[  $status ]($style)'
+pipestatus = true
+pipestatus_segment_format = ' $status '
+pipestatus_format = '[](fg:red )[  $pipestatus ]($style)'
