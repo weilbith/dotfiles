@@ -11,7 +11,7 @@
     - translate_shell
     - wget
     - ripgrep
-    - exa
+    - eza
     - bat
     - fd
     - less
