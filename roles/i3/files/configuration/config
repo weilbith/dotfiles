@@ -63,9 +63,6 @@ bindsym $super+j focus down
 bindsym $super+k focus up
 bindsym $super+l focus right
 
-## Select window by easy-focus.
-bindsym $super+space exec --no-startup-id i3-easyfocus --all --color-unfocused-bg=FFFFFF
-
 ## Move focused window.
 bindsym $super+Shift+h move left
 bindsym $super+Shift+j move down
