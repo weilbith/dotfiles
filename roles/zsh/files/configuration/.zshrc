@@ -41,6 +41,8 @@ bindkey -M viins '\e' vi-cmd-mode
 bindkey -M viins '^?' backward-delete-char
 bindkey -M viins '^[[3~' delete-char
 bindkey -M vicmd '^[[3~' delete-char
+bindkey -M vicmd 'k' up-line-or-history
+bindkey -M vicmd 'j' down-line-or-history
 
 # Always be in normal/vicmd mode on new prompt.
 zle-line-init() { zle -K vicmd; }
