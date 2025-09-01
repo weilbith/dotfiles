@@ -1,4 +1,4 @@
 - import_role:
     name: base_role
   vars:
-    base_package: zsh-theme-powerlevel10k
+    base_package: zsh-theme-powerlevel10k-bin-git
