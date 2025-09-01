@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-# Fix sizing of broken visual components if resolution has changes
+# Fix sizing of broken visual component if resolution has changed.
 systemctl --user restart wallpaper.service || true
 systemctl --user restart polybar.service || true
 
