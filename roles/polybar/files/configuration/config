@@ -10,11 +10,10 @@ module-margin = 1
 background = ${colors.background}
 foreground = ${colors.white}
 
-font-0 = SauceCodePro Nerd Font Mono:size=15;5
-font-1 = SauceCodePro Nerd Font Mono:size=16;5
-font-2 = SauceCodePro Nerd Font Mono:size=22;7
-font-3 = SauceCodePro Nerd Font Mono:size=24;7
-font-4 = SauceCodePro Nerd Font Mono:size=11;0
+font-0 = Maple Mono NF:size=15;5
+font-1 = Maple Mono NF:size=16;5
+font-2 = Maple Mono NF:size=22;7
+font-3 = Maple Mono NF:size=24;7
 
 modules-left = workspaces window
 modules-right = services cpu bluetooth network volume battery date notifications

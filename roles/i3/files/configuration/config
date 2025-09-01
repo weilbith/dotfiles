@@ -45,7 +45,7 @@ focus_on_window_activation smart
 default_border pixel 0
 
 ## Define the font to use for the windows.
-font xft:SauceCodePro Nerd Font:size=6
+font xft:Maple Mono NF:size=6
 
 show_marks yes
 

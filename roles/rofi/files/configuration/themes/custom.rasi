@@ -2,7 +2,7 @@
   background-color: #ff0000;
   background-color: #98989da0;
   text-color: #000000;
-  font: "Sauce Code Pro 14";
+  font: "Maple Mono NF 14";
 }
 
 #window {
@@ -18,7 +18,7 @@
 
 #textbox-prompt-colon {
   content: "";
-  font: "Sauce Code Pro 22";
+  font: "Maple Mono NF 22";
   expand: false;
   padding: 20px 25px 25px 30px;
 }
