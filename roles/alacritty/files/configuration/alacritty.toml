@@ -33,7 +33,7 @@ history = 0
 [selection]
 save_to_clipboard = true
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/zsh"
 
 [window]
