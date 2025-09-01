@@ -284,7 +284,6 @@ Shared directories (roles must have directory with name of last path segment):
 
 - `$XDG_CONFIG_HOME/environment.d`
 - `$XDG_CONFIG_HOME/profile.d`
-- `$XDG_CONFIG_HOME/plugin.d`
 - `$XDG_DATA_HOME/applications`
 - `$XDG_CONFIG_HOME/hotkey.d`
 - `$XDG_CONFIG_HOME/cheat.d`

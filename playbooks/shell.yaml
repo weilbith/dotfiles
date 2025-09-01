@@ -2,10 +2,9 @@
   hosts: all
   roles:
     - zsh
-    - zinit
     - alacritty
     - tmux
-    - powerlevel10k
+    - starship
     - fzf
     - cheat
     - translate_shell

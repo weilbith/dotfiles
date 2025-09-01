@@ -5,7 +5,6 @@ xdg_runtime_dir: "{{ lookup('env', 'HOME') }}/.runtime"
 
 environment_directory: "{{ xdg_config_home }}/environment.d"
 profile_directory: "{{ xdg_config_home }}/profile.d"
-plugin_directory: "{{ xdg_config_home }}/plugin.d"
 applications_directory: "{{ xdg_data_home }}/applications"
 hotkey_directory: "{{ xdg_config_home }}/hotkey.d"
 cheat_directory: "{{ xdg_config_home }}/cheat.d"

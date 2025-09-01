@@ -9,7 +9,6 @@
   loop:
     - "{{ environment_directory }}"
     - "{{ profile_directory }}"
-    - "{{ plugin_directory }}"
     - "{{ applications_directory }}"
     - "{{ hotkey_directory }}"
     - "{{ cheat_directory }}"
