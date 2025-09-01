@@ -6,3 +6,4 @@ vault.pwd
 __pycache__/
 .notags
 .dotenv
+.envrc
