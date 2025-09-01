@@ -245,7 +245,8 @@ bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit
 # i3 Gaps Configuration
 ## Gap between windows.
 gaps inner 8
-gaps outer 3
+smart_gaps on
+hide_edge_borders smart_no_gaps
 
 ## The window title height.
 new_window pixel 2
